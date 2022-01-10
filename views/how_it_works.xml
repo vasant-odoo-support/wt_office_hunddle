@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="how_it_work">
+		<t t-call="website.layout">
+			  <div id="wrap" class="how_it_works_main_cl">
+      <section class="header-image">
+        <div class="header-text">
+          <div class="tablet">
+            <h2>The Game Plan That <br/>Winning Businesses Follow</h2>
+            <p>In your journey of entrepreneurship,  there will be times that it's just gonna be too much. As you work it out, workload just seems to drown you even more. Eventually, you won't even know where to begin. You made the right choice to be here because you are 4 steps away from winning in business. The Game Plan is a simplified framework that allows you to systematize and tune up core aspects of your company. At the end of the program, you'll be moving your best foot forward in business everytime, at all times. </p>
+          </div>
+          <div class="row desktop">
+            <div class="header-column">
+              <h2>The Game Plan That <br/>Winning Businesses Follow</h2>
+              <p>In your journey of entrepreneurship,  there will be times that it's just gonna be too much. As you work it out, workload just seems to drown you even more. Eventually, you won't even know where to begin. You made the right choice to be here because you are 4 steps away from winning in business. The Game Plan is a simplified framework that allows you to systematize and tune up core aspects of your company. At the end of the program, you'll be moving your best foot forward in business everytime, at all times. </p>
+            </div>
+            <div class="column">
+							</div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="banner-area-2 text-center">
+          <h1>The Seven Success Systems</h1>
+          <img src="/wt_office_hunddle/static/src/images/7_success-new.png" class="center"/>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="banner-area-2 container">
+          <div class="row desktop">
+            <div class="stage1-column-1">
+              <img src="/wt_office_hunddle/static/src/images/stage-1.png" class="stage-1"/>
+            </div>
+            <div class="stages-column">
+              <h3>Stage One</h3>
+              <h4>The Locker Room</h4>
+              <p>Your business foundation has to be solidified for everything else to function well. Layout the tools that compose your core as it's time to polish each.</p>
+              <!--<button class="btn btn-primary download-btn" data-original-title="" title="" aria-describedby="tooltip865572"/>-->
+              <a href="/roadmap" class="btn download-btn-hwit">
+              		DOWNLOAD THE SUCCESS ROADMAP
+          	  </a>
+              <img src="/wt_office_hunddle/static/src/images/stage-1-line.png" class="line" data-original-title="" title="" aria-describedby="tooltip375291"/>
+            </div>
+          </div>
+          <div class="tablet">
+            <img src="/wt_office_hunddle/static/src/images/stage-1.png" class="stage-1"/>
+            <h3>Stage One</h3>
+            <h4>The Locker Room</h4>
+            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+            <button class="download-btn btn btn-primary">DOWNLOAD THE GAME PLAN</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="section-4-bg"/>
+      </section>
+      <section class="section-5">
+        <div class="banner-area-2 container">
+          <div class="row desktop">
+            <div class="stage1-column-1">
+              <img src="/wt_office_hunddle/static/src/images/stage-2.png" class="stage-1"/>
+            </div>
+            <div class="stages-column">
+              <h3>Stage Two</h3>
+              <h4>The Design Suite</h4>
+              <p>Now that you have brought out your equipment, next is to work on the design. Create a system that will resolve and refine the rusty areas of your business. An enhanced approach built with well planned action courses will allow you to better support your organization. </p>
+              <a href="/roadmap" class="btn download-btn-hwit">
+              		DOWNLOAD THE SUCCESS ROADMAP
+          	  </a>
+              <img src="/wt_office_hunddle/static/src/images/stage-2-line.png" class="line-2" data-original-title="" title="" aria-describedby="tooltip471772"/>
+            </div>
+          </div>
+          <div class="tablet">
+            <img src="/wt_office_hunddle/static/src/images/stage-2.png" class="stage-1"/>
+            <h3>Stage Two</h3>
+            <h4>The Design Suite</h4>
+            <p>Now that you have brought out your equipment, next is to work on the design. Create a system that will resolve and refine the rusty areas of your business. An enhanced approach built with well planned action courses will allow you to better support your organization. </p>
+            <button class="download-btn btn btn-primary"    onclick="location.href='http://officehuddle.com/roadmap'">DOWNLOAD THE GAME PLAN</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-6">
+        <div class="section-6-bg"/>
+      </section>
+      <section class="section-7">
+        <div class="banner-area-2 container">
+          <div class="row desktop">
+            <div class="stage1-column-1">
+              <img src="/wt_office_hunddle/static/src/images/stage-3.png" class="stage-1"/>
+            </div>
+            <div class="stages-column">
+              <h3>Stage Three</h3>
+              <h4>The Dojo</h4>
+              <p>This is your training field where you can use as your testing center. Evaluate the performance of your innovations and find out what works and what does not. From there, you can apply necessary adjustments to enable you implement solutions in a larger scale.</p>
+              <a href="/roadmap" class="btn download-btn-hwit">
+              		DOWNLOAD THE SUCCESS ROADMAP
+          	  </a>
+              <img src="/wt_office_hunddle/static/src/images/stage-3-line.png" class="line-3" data-original-title="" title="" aria-describedby="tooltip740465"/>
+            </div>
+          </div>
+          <div class="tablet">
+            <img src="/wt_office_hunddle/static/src/images/stage-3.png" class="stage-1"/>
+            <h3>Stage Three</h3>
+            <h4>The Dojo</h4>
+            <p>This is your training field where you can use as your testing center. Evaluate the performance of your innovations and find out what works and what does not. From there, you can apply necessary adjustments to enable you implement solutions in a larger scale.</p>
+            <button class="download-btn btn btn-primary">DOWNLOAD THE GAME PLAN</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-8">
+        <div class="section-8-bg" style="background-repeat: no-repeat; background-size: cover; background-image: url('/wt_office_hunddle/static/src/images/section-7-bg.jpg'); background-size: cover; height:750px; padding-top:80px;"/>
+      </section>
+      <section class="section-9">
+        <div class="banner-area-2 container">
+          <div class="row desktop">
+            <div class="stage1-column-1">
+              <img src="/wt_office_hunddle/static/src/images/stage-4.png" class="stage-1"/>
+            </div>
+            <div class="stages-column stage-4">
+              <h3>Stage Four</h3>
+              <h4>The Game</h4>
+              <p>You have now turned your business into a mature one after laying out the tools, designing the approach, and putting it to test. The Game is where you launch the system you have created in an expansive format by activating and implementing the 7 Success Systems.</p>
+              <a href="/roadmap" class="btn download-btn-hwit">
+              		DOWNLOAD THE SUCCESS ROADMAP
+          	  </a>
+              <img src="/wt_office_hunddle/static/src/images/stage-4-line.png" class="line-4" data-original-title="" title="" aria-describedby="tooltip702224"/>
+            </div>
+          </div>
+          <div class="tablet">
+            <img src="/wt_office_hunddle/static/src/images/stage-4.png" class="stage-1"/>
+            <h3>Stage Four</h3>
+            <h4>The Game</h4>
+            <p>You have now turned your business into a mature one after laying out the tools, designing the approach, and putting it to test. The Game is where you launch the system you have created in an expansive format by activating and implementing the 7 Success Systems.</p>
+            <a href="/roadmap" class="btn download-btn-hwit">
+              		DOWNLOAD THE SUCCESS ROADMAP
+          	  </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-10">
+        <div class="banner-area-2 container">
+          <div class="row desktop">
+            <div class="column">
+              <img src="/wt_office_hunddle/static/src/images/first-session-bg.png" class="stage-1"/>
+            </div>
+            <div class="stages-column first-session">
+              <h3>Your first session is on us!</h3>
+              <p>Take your best foot forward.</p>
+              <p>No more delays; start working on your business with a clearer path! Our whole team is ready to hear you out and we are thrilled to present the approach that will change your game play. Don't let yourself miss another opportunity to score. Take on this first step to unleash the absolute solution to your business problem and find  powerful strategies towards financial freedom.</p>
+              <a href="/page/assessment" class="download-btn btn btn-primary">
+                GET STARTED
+              </a>
+            </div>
+          </div>
+          <div class="tablet">
+            <img src="/wt_office_hunddle/static/src/images/first-session-bg.png" class="first-session"/>
+            <h3>Your first session is on us!</h3>
+            <p>Take your best foot forward.</p>
+            <p>No more delays; start working on your business with a clearer path! Our whole team is ready to hear you out and we are thrilled to present the approach that will change your game play. Don't let yourself miss another opportunity to score. Take on this first step to unleash the absolute solution to your business problem and find  powerful strategies towards financial freedom.</p>
+            <a href="/page/assessment" class="download-btn btn btn-primary">
+                GET STARTED
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+		</t>
+	</template>
+</odoo>

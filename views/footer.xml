@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+	<template id="footer_copyrihgt_default" inherit_id="web.frontend_layout" name="custom footer copyright">
+		<xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+			<attribute name="class" add="d-none" separator=" "/>
+		</xpath>
+	</template>
+	<template id="footer_default" inherit_id="website.footer_custom" name="custom footer">
+		<xpath expr="//div[@id='footer']" position="attributes">
+			<attribute name="class" add="d-none" separator=" "/>
+		</xpath>
+		<xpath expr="//div[@id='footer']" position="after">
+			
+            <section class="trust-section">
+                <div class="container">
+                    <h3 class="t-title">our business owners trust us </h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="trust-box">
+                                <img src="/wt_office_hunddle/static/src/images/qb.png" alt="qb" title="qb"/>
+                                <p>A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months.  Office Huddle team already knew what I need before I need it.. </p>
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="/wt_office_hunddle/static/src/images/srt1.png"/>
+                                    </div>
+                                    <div class="author-content">
+                                        <h4>Cortez Springer,</h4>
+                                        <span>Wealth Strategist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="trust-box">
+                                <img src="/wt_office_hunddle/static/src/images/qb.png" alt="qb" title="qb"/>
+                                <p>They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world.  They can do wonders and take your business to the next level where you desire to go. </p>
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="/wt_office_hunddle/static/src/images/srt2.png"/>
+                                    </div>
+                                    <div class="author-content">
+                                        <h4>Lemzel Johnson,</h4>
+                                        <span>Motivational Speaker</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="trust-box">
+                                <img src="/wt_office_hunddle/static/src/images/qb.png" alt="qb" title="qb"/>
+                                <p>Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create.  Having my Office Huddle team around me has taken my business to the next level.  They freed me up to be able to get things done and get better for my clients.</p>
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="/wt_office_hunddle/static/src/images/srt3.png"/>
+                                    </div>
+                                    <div class="author-content">
+                                        <h4>Oginga Carr,</h4>
+                                        <span>High Performance Coach</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="logos-section">
+                <div class="container">
+                    <h4>Just A Few Trusted Brands That We Value and Serve.</h4>
+                    <div class="container-fluid">
+                        <div class="brnads-section">
+                            <img src="/wt_office_hunddle/static/src/images/logos.jpg" alt="" title="" class="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="contact-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="contact-info">
+                                <h3>Ready to speak with a BusIness Growth Solutions Expert? Let’s chat!</h3>
+                                <div class="phone-mail">
+                                    <h5 class="mb-30"><img src="/wt_office_hunddle/static/src/images/phone-contact.png" alt="" title=""/> 601-348-9977</h5>
+                                    <h5><img src="/wt_office_hunddle/static/src/images/envelope.png" alt="" title=""/> sales@officehuddle.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-outer">
+                                <form action="/crm/lead" method="post" class="row s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <div class="col-md-6">
+                                        <div class="form-element">
+                                            <input class="form-control o_website_form_input" type="text" name="name" placeholder="Company Name"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-element">
+                                            <input class="form-control o_website_form_input" type="text" name="email" placeholder="Email"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-element">
+                                            <span><select id="service" name="service" t-attf-class="form-control">
+                                                <option value="">service...</option>
+                                                <t t-foreach="request.env['service.service'].search([])" t-as="service">
+                                                    <option t-att-value="service.id" t-att-selected="service.id == (service and service.id or -1)">
+                                                        <t t-esc="service.name" />
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </span>
+                                        
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-element">
+                                            <input class="form-control o_website_form_input" type="text" name="planned_revenue" placeholder="Monthly Budget"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-element">
+                                            <textarea class="form-control o_website_form_input" name="description" placeholder="Project Details"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12"><a href="#">
+                                        <button type="submit"  value="Submit" class=" float-right btn-orange">Submit</button></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <div class="container-fluid custom_footer_cl">
+                <div class="d-flex justify-content-between align-items-center ptb-30">
+                    <div class="footer-brand">
+                        <a href="javascript:;"><img src="/wt_office_hunddle/static/src/images/logo.png" alt="officehuddle-logo" class="img-fluid"/></a>
+                    </div>
+                    <div class="footer-social m-auto justify-content-center align-items-center">
+                        <ul>
+                            <li><a href="javascript:;"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="javascript:;"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="javascript:;"><i class="fa fa-soundcloud"></i></a></li>
+                            <li><a href="javascript:;"><i class="fa fa-google"></i></a></li>
+                            <li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h5><img src="/wt_office_hunddle/static/src/images/phone-contact.png" alt="" title=""/> 601-348-9977</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright copyright_footer_custom">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="javascript:;" style="color: white;text-decoration: none;">Terms of use</a>
+                        <p>2020 All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

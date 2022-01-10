@@ -1,0 +1,280 @@
+ /* Style the counter cards */
+ .tshirt_printing_wrap .team-middle h1{
+    color: rgb(58, 129, 223);
+    text-shadow: 4px 4px #020202;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 450px;
+    font-weight:bold ;
+    line-height: 4rem;
+    font-size: 70px;
+}
+.tshirt_printing_wrap .team-middle{
+    background: url("/wt_office_hunddle/static/src/tshirt-printing/print-background.png") center;  
+    background-color: rgb(13, 63, 121);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.tshirt_printing_wrap hr{
+    opacity: 1;
+}
+.tshirt_printing_wrap section.team-middle{
+    border-radius: 50px;
+}
+
+.tshirt_printing_wrap .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    margin-top: 50px;
+    border-right: solid rgb(109, 107, 107) 3px;
+  }
+  
+  .tshirt_printing_wrap .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    padding-left: 100px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.5rem;
+  }
+   
+  
+  
+  .tshirt_printing_wrap .sidebar a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .tshirt_printing_wrap .sidebar a.active {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .tshirt_printing_wrap div.content {
+    margin-left: 600px;  
+    height: 100%;
+    padding-bottom: 65%;
+    margin-top: -70%;
+
+  }
+  
+
+
+
+.tshirt_printing_wrap .virtual-middle{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    align-items: center;
+    height: auto;
+    margin-bottom: -100px;
+}
+  
+.tshirt_printing_wrap .virtual-middle h1{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 60px;
+}
+  
+.tshirt_printing_wrap .virtual-middle .row h2:first-child{
+    font-size: 25px;
+}
+  
+.tshirt_printing_wrap .virtual-middle .row:nth-child(2) .col-lg-3 h2{  
+    font-size: 25px;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+  
+  
+  
+.virtual-middle .row:nth-child(2) .inside{
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(160, 160, 160, 0.466)); 
+    border-radius: 15px 15px;
+    box-shadow: 5px 5px 5px 5px #7d858a;
+    margin: 20px 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+  
+.tshirt_printing_wrap .virtual-middle button{
+    color: rgb(0, 0, 0);
+    background-color: #2480a5;
+    padding: 10px 30px;
+    border-radius: 5px 5px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 40px 0px;
+}
+
+
+.tshirt_printing_wrap .card { 
+  text-align: center;
+  margin-left: 20%;
+  border: none !important;
+  
+}
+
+  /* column 1 and 2 */
+.tshirt_printing_wrap .card h3.active1 {
+    background-repeat: no-repeat;
+    background-color: rgb(39, 39, 124);
+    padding: 20px 5px 20px 5px;
+    color: white;
+    background-size: cover;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    font-size: 30px;
+    font-weight: bold; 
+  }
+.tshirt_printing_wrap .card .active1::after {
+        content: "";
+        position: absolute;
+        top: 16%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 30px;
+        border-style: solid;
+        border-color: rgb(39, 39, 124) transparent transparent transparent;
+  }
+
+
+.tshirt_printing_wrap .card h3.active2 {
+    background-repeat: no-repeat;
+      background-color: rgb(88, 88, 88);
+      padding: 20px 5px 20px 5px;
+      color: white;
+      background-size: cover;
+      border-top-left-radius:20px ;
+      border-top-right-radius:20px ;
+      font-size: 30px;
+      font-weight: bold;
+}
+.tshirt_printing_wrap .card .active2::after {
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: rgb(88, 88, 88) transparent transparent transparent;
+}
+
+
+
+.tshirt_printing_wrap .card p{
+    text-align: justify;
+}
+.tshirt_printing_wrap .card h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.tshirt_printing_wrap .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30% !important;
+    margin-top: 50px;
+  }
+.tshirt_printing_wrap .card img:hover {
+    -ms-transform: scale(1,5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+    transition: transform .5s;
+  }
+
+.tshirt_printing_wrap .row.\31 0 {
+  margin-top: 700px;
+  width: 75% !important;
+  margin-left: -400px;
+}
+.tshirt_printing_wrap .row2 .inside{
+    width: 50%;
+}
+.tshirt_printing_wrap p a{
+    color: white !important;
+}
+
+
+
+.tshirt_printing_wrap .bg-white {
+    background-color: white;
+}
+.tshirt_printing_wrap .lep {
+    width: 30%;
+}
+  
+.tshirt_printing_wrap .mid {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+  
+.tshirt_printing_wrap .rit {
+    width: 25%;
+    text-align: right;
+    padding-left: -50px;
+}
+.tshirt_printing_wrap .rit a {
+    padding-left: -50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.tshirt_printing_wrap .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: orange;
+    align-items: center;
+}
+
+.tshirt_printing_wrap .img-fluid {
+    height: 100%;
+    width: 100%;
+    margin-right: 400px;
+}
+.tshirt_printing_wrap .container.d-flex.align-items-center{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+
+/* Float four columns side by side */
+.tshirt_printing_wrap .column {
+    float: center;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .tshirt_printing_wrap .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .tshirt_printing_wrap .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

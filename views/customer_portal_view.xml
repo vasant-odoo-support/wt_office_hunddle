@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="customer_portal_officehuddle_template" name="Customer Portal">
+    <t t-call="website.layout">
+      <div id="wrap" class="customer_portal_wrap">
+        <!-- ======= Team Middle Section ======= -->
+        <section id="team-middle" class="container-fluid">
+          <h1>CUSTOMER <br/> PORTAL</h1>
+          <hr style="width: 70%; border: solid 1px; color: rgb(0, 0, 0);"/>
+        </section>
+        <!-- End Team Middle Section  -->
+
+        <section id="virtual-middle" class="container-fluid">
+          <div id="sidebar" class="container container-fluid col-md-6 col-lg-4 col-xl-3">
+
+            <a href="#news">MY ACCOUNT</a>
+            <a href="#order products">ORDER PRODUCTS</a>
+            <a href="#my orders">MY ORDERS</a>
+            <a href="#save design">SAVE DESIGN</a><br/>
+            <a href="#account">ACCOUNT</a>
+            <a href="#preference">PREFERENCE</a>
+            <a href="#change my info">CHANGE MY INFO</a>
+            <a href="#contacts">CONTACTS</a>
+            <a href="#credits cards">CREDITS CARDS</a>
+            <a href="#account address">ACCOUNT ADDRESS</a>
+            <a href="#billing address">BILLING ADDRESS</a>
+            <a href="#shipping settings">SHIPPING SETTINGS</a>
+          </div>
+
+
+          <div class="container content">
+            <div class="row">
+              <div class="row 1">
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>GRAPHIC DESIGN / VIDEO EDITING</h2>
+                    <a href="#" class="button1 buttons">SIGN UP NOW</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>WEBSITE DEVELOPMENT</h2><br/>
+                    <a href="#" class="button2 buttons">GET STARTED</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>BUSINESS COACHING</h2><br/>
+                    <a href="#" class="button3 buttons">HIRE US</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row 2">
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>PRINTING</h2><br/>
+                    <a href="/graphic" class="button4 buttons">GET STARTED</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>ENTERPREUERIAL TRAINING</h2><br/>
+                    <a href="#" class="button5 buttons">HIRE US</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>VIRTUAL STAFFING</h2><br/>
+                    <a href="#" class="button6 buttons">HIRE US</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row 3">
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>EVENTS</h2><br/>
+                    <a href="#" class="button7 buttons">SPONSOR</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>MERCHANDISE</h2><br/>
+                    <a href="#" class="button8 buttons">BUY</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>EVENTS TICKETS</h2><br/>
+                    <a href="#" class="button9 buttons">BUY</a>
+                  </div>
+                </div>
+              </div>
+              <hr style="width: 95%; border: solid rgb(109, 107, 107) 2px; margin-left: 20px;"/>
+              <div class="row 4">
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h1>GET A GAME PLAN</h1><br/>
+                    <a href="#" class="button10">GET STARTED</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br/><br/>
+          </div>
+        </section>
+
+        <section class= "bg-white">
+          <div class="" style="padding: 0;">
+            <div class="row">
+              <div class="credits col-lg-6" style="width: 100%; margin-left: 25%;margin-top: -6%;">
+                <div class="container d-flex align-items-center">
+                  <a href="index.html" class="lep"><img src="/wt_office_hunddle/static/src/customerportal/OH_Logo.png" alt="" class="img-fluid" width="250px" /></a>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                  <div class="mid">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-soundcloud"></a>
+                  <a href="#" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  </div>
+                  <div class="rit">
+                  <a href="tel:6013489977"><i class="bi bi-telephone-inbound" aria-hidden="true"></i>601-348-9977</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </t>
+  </template>
+</odoo>

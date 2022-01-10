@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_slide_channel_form_extended" model="ir.ui.view">
+        <field name="name">slide.form</field>
+        <field name="model">slide.channel</field>
+        <field name="inherit_id" ref="website_slides.view_slide_channel_form"/>
+        <field name="arch" type="xml">
+            <field name="tag_ids" position="after">
+                <group>
+                    <group>
+                        <field name="trainer"/>
+                    </group>
+                </group>
+            </field>
+        </field>
+    </record>
+</odoo>

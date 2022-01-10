@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- assessment tree view  -->
+    <record id="assessment_tree" model="ir.ui.view">
+        <field name="name">assessment.tree</field>
+        <field name="model">assessment.assessment</field>
+        <field name="arch" type="xml">
+            <tree string="Assessment"> 
+                <field name="sequence" widget="handle" readonly="1"/>     
+                <field name='name'/>
+                <field name='company_name'/>
+                <field name='email'/>
+                <field name='business_phone'/>
+                <field name="annual_revenue"/>
+                <field name="start_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- assessment form view  -->
+    <record id="acassessment_form" model="ir.ui.view">
+        <field name="name">assessment.form</field>
+        <field name="model">assessment.assessment</field>
+        <field name="arch" type="xml">
+            <form string="Assessment">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name='name'/>
+                            <field name='company_name'/>
+                            <field name='start_date'/>
+                            <label for="" name="mailing_address">
+                                <b>Mailing Address</b>
+                            </label>
+                            <div class="o_address_format">
+                                
+                                <field name='mailing_address' class="o_address_street"/>
+                                <field name="city" placeholder="City" class="o_address_city"/>
+                                <field name="state_id" class="o_address_state" placeholder="State" options="{&quot;no_open&quot;: True}"/>
+                                <field name="zipcode" placeholder="ZIP" class="o_address_zip"/>
+                            </div>
+
+                            <label for="" name="physical_address">
+                                <b>Physical Address</b>
+                            </label>
+                            <div class="o_address_format">
+                                <field name='physical_address' class="o_address_street"/>
+                                <field name="city2" placeholder="City" class="o_address_city"/>
+                                <field name="state_id2" class="o_address_state" placeholder="State" options="{&quot;no_open&quot;: True}"/>
+                                <field name="zipcode2" placeholder="ZIP" class="o_address_zip"/>
+                            </div>
+                        </group>
+
+                        <group>
+                            <field name='website'/>
+                            <field name='website2'/>
+                            <field name='email'/>
+                            <field name='business_phone'/>
+                            <field name='cell_phone'/>
+                            <field name='phone'/>
+                            <field name='no_of_employee'/>
+                            <field name='annual_revenue'/>
+                            <field name='no_of_leaders_report'/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page  string="Assessment Result Line">
+                            <field name="assessment_list_ids">
+                                <tree editable="Bottom">
+                                    <field name="name"/>
+                                    <field name="question_type"/>
+                                    <field name="result"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- assessment action  -->
+    <record id="action_assessment" model="ir.actions.act_window">
+        <field name="name">Assessment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">assessment.assessment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add a new Assessment
+            </p>
+        </field>
+    </record>
+
+    <!-- question tree view  -->
+    <record id="question_tree" model="ir.ui.view">
+        <field name="name">question.question.tree</field>
+        <field name="model">question.question</field>
+        <field name="arch" type="xml">
+            <tree string="Question">
+                <field name="sequence" widget="handle" readonly="1"/>      
+                <field name='name'/>
+                <field name='question_type'/>
+                <field name='result'/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- question form view  -->
+    <record id="question_form" model="ir.ui.view">
+        <field name="name">question.question.form</field>
+        <field name="model">question.question</field>
+        <field name="arch" type="xml">
+            <form string="Question">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name='name'/>
+                            <field name='result'/>
+                            <field name='question_type'/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name='yes_popup'/>
+                    </group>
+                    <group>
+                        <field name='no_popup'/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- question system action  -->
+    <record id="action_question" model="ir.actions.act_window">
+        <field name="name">Question</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">question.question</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add a new Question
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="assessment_root_menu" name="Assessments" parent="crm.crm_menu_root" sequence="22"/>
+    <menuitem id="assessment_menu" name="Assessment" parent="wt_office_hunddle.assessment_root_menu" action="wt_office_hunddle.action_assessment"/>
+    <menuitem id="question_menu" name="Question" parent="wt_office_hunddle.assessment_root_menu" action="wt_office_hunddle.action_question"/>
+</odoo>

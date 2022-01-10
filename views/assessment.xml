@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="progress_bar_assetment" name="progressbar Assessment">
+		<div class="prog">
+			<div class="progress_step_cl active">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_1.png" width="20px" height="20px"/>
+				<h6>Leadershp<br/>Development<br/>System</h6>
+
+			</div>
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_2.png" width="20px" height="20px"/>
+				<h6>Marketing<br/>System</h6>
+
+			</div>
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_3.png" width="20px" height="20px"/>
+				<h6>Financial<br/>System</h6>
+
+			</div>
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_4.png" width="20px" height="20px"/>
+				<h6>Team<br/>Development<br/>System</h6>
+
+			</div>
+
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_5.png" width="20px" height="20px"/>
+				<h6>Lead<br/>Generation<br/>System</h6>
+
+			</div>
+
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_6.png" width="20px" height="20px"/>
+				<h6>Lead<br/>Conversion<br/>System</h6>
+
+			</div>
+
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_7.png" width="20px" height="20px"/>
+				<h6>Customer<br/>Fulfillment<br/>System</h6>
+
+			</div>
+
+			<div class="progress_step_cl">
+				<img src="/wt_office_hunddle/static/src/assess_imgs/Logo_7.png" width="20px" height="20px"/>
+				<h6>Complete!</h6>
+			</div>   
+		</div>
+	</template>
+	<template id="assessment_tmpl" name="Assessment">
+		<t t-call="website.layout">
+			<div id="wrap" class="assessment_hunddle_main_cl">
+				<div id="dialogoverlay"></div>
+				<div id="dialogbox">
+					<div>
+						<div id="dialogboxhead"></div>
+						<div id="dialogboxbody"></div>
+						<div id="dialogboxfoot"></div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					function CustomAlert(){
+					this.render = function(dialog){
+					var winW = window.innerWidth;
+					var winH = window.innerHeight;
+					var dialogoverlay = document.getElementById('dialogoverlay');
+					var dialogbox = document.getElementById('dialogbox');
+					dialogoverlay.style.display = "block";
+					dialogoverlay.style.height = winH+"px";
+					dialogbox.style.left = (winW/2) - (650 * .5)+"px";
+					dialogbox.style.top = "100px";
+					dialogbox.style.display = "block";
+					document.getElementById('dialogboxhead').innerHTML = "Definition";
+					document.getElementById('dialogboxbody').innerHTML = dialog;
+					document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+					}
+					this.ok = function(){
+					document.getElementById('dialogbox').style.display = "none";
+					document.getElementById('dialogoverlay').style.display = "none";
+
+					}
+
+					}
+					var Alert = new CustomAlert();
+				</script>
+				<div class="container pt64">
+					<div class="row">
+						<img class="w-100" src="/wt_office_hunddle/static/src/assess_imgs/Line_Vector.png"/>
+						<div class="col-12 pt16 pb8">
+							<h1 style="font-size: 25px;"><b>May we take some of your time? Please answer a few questions so we can get to know each other better</b> <br/> <br/></h1>
+						</div>
+						<t t-call="wt_office_hunddle.progress_bar_assetment"/>
+						<form action="/assesment/submit" method="post" class="col-12">
+							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+							<p class="pb16"><br/>* All fields are required unless otherwise noted<br/></p>
+							<div class="tab w-100 active">
+								<div class="row">
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Company Legal Name</label>
+										<input type="text" name="legalname" class="form-control invalid" id="legalname" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Website</label>
+										<input type="text" class="form-control invalid" name="website" id="website" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Business Phone</label>
+										<input type="text" class="form-control invalid" name="businessphone" id="businessphone" oninput="this.className = ''"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label>Contact First Name</label>
+										<input type="text" name="firstname" class="form-control invalid" id="firstname" oninput="this.className = ''" required=""/>
+									</div>
+
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label>Last Name</label>
+										<input type="text" class="form-control invalid" name="lastname" id="lastname" oninput="this.className = ''" required=""/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Mailing Address</label>
+										<input type="text" name="mailingadd" class="form-control invalid" id="mailingadd" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>City</label>
+										<input type="text" class="form-control invalid" name="city" id="city" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-2 form-group mt-3 mt-md-0">
+										<label>State</label>
+										<input type="text" class="form-control invalid" name="state" id="state" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-2 form-group mt-3 mt-md-0">
+										<label>Zip Code</label>
+										<input type="text" class="form-control invalid" name="zipcode" id="zipcode" oninput="this.className = ''"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Physical Address</label>
+										<input type="text" name="physicaladd" class="form-control invalid" id="physicaladd" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>City</label>
+										<input type="text" class="form-control invalid" name="city2" id="city2" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-2 form-group mt-3 mt-md-0">
+										<label>State</label>
+										<input type="text" class="form-control invalid" name="state2" id="state2" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-2 form-group mt-3 mt-md-0">
+										<label>Zip Code</label>
+										<input type="text" class="form-control invalid" name="zipcode2" id="zipcode2" oninput="this.className = ''"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Email</label>
+										<input type="text" name="Email2" class="form-control invalid" id="email2" oninput="this.className = ''" required=""/>
+									</div>
+									<div class="col-md-4 form-group mt-3 mt-md-0">
+										<label>Website</label>
+										<input type="text" class="form-control invalid" name="Website" id="website" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-2 form-group mt-3 mt-md-0">
+										<label>Business Phone</label>
+										<input type="text" class="form-control invalid" name="phone2" id="phone2" oninput="this.className = ''"/>
+									</div>
+									<div class="col-md-2 form-group mt-3 mt-md-0">
+										<label>Cell Phone</label>
+										<input type="text" class="form-control invalid" name="cellphone" id="cellphone" oninput="this.className = ''" required=""/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label>How many employees do you have?</label>
+										<input type="text" name="employees" class="form-control invalid" id="employees" oninput="this.className = ''"/>
+									</div>
+
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label><b>WHAT WAS YOUR ANNUAL REVENUE?</b></label>
+										<select list="leaders" placeholder="Please Select" class="form-control" name="annual" cols="50">
+
+											<option value="0-50K"> 0-50K </option>
+											<option value="50K-100K"> 50K-100K </option>
+											<option value="100K-200K"> 100K-200K </option>
+											<option value="200K-500K"> 200K-500K </option>
+											<option value="500K-1M"> 500K-1M </option>
+											<option value="1M-5M"> 1M-5M </option>
+											<option value="OVER 5M"> OVER 5M </option>
+
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label>How many leaders report directly to you?</label>
+										<select list="leaders" placeholder="Please Select" class="form-control" name="leaders" cols="50">
+
+											<option value="1"> 1 </option>
+											<option value="2"> 2 </option>
+											<option value="3"> 3 </option>
+											<option value="4"> 4 </option>
+											<option value="5"> 5 </option>
+											<option value="6"> 6 </option>
+											<option value="7"> 7 </option>
+
+										</select>
+									</div>
+
+									<div class="col-md-6 form-group">
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 form-group">
+										<label>What month and year did you start your business?</label>
+										<input type="date" id="business date" name="date" cols="50" class="form-control invalid"/>
+									</div>
+
+									<div class="col-md-6 form-group ">
+
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 2-->
+							<t t-set="i" t-value="0"/>
+							<div class="tab">
+								<h1 style="text-align: center;"><br/><br/>Marketing System<br/><br/></h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="marketing_ids" t-as="marketing" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="marketing.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{marketing.id}" t-attf-name="#{marketing.id}" t-attf-value="yes" />
+
+										<label t-attf-for="#{marketing.id}">Yes</label>  
+										<input type="radio" t-attf-id="#{marketing.id}" t-attf-name="#{marketing.id}" t-attf-value="no" />
+										<label t-attf-for="#{marketing.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 3-->        
+							<div class="tab">
+								<h1 style="text-align: center;">
+									<br/><br/>Financial System<br/><br/>
+								</h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="financial_ids" t-as="finance" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="finance.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{finance.id}" t-attf-name="#{finance.id}" t-attf-value="yes" />
+										<label t-attf-for="#{finance.id}">Yes</label>  
+										<input type="radio" t-attf-id="#{finance.id}" t-attf-name="#{finance.id}" t-attf-value="no" />
+										<label t-attf-for="#{finance.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 4-->        
+							<div class="tab">
+								<h1 style="text-align: center;"><br/><br/>Team Development System<br/><br/></h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="team_development_ids" t-as="team_development" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="team_development.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{team_development.id}" t-attf-name="#{team_development.id}" t-attf-value="yes" />
+										<label t-attf-for="#{team_development.id}">Yes</label>  
+										<input type="radio" t-attf-id="#{team_development.id}" t-attf-name="#{team_development.id}" t-attf-value="no" />
+										<label t-attf-for="#{team_development.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 5-->
+							<div class="tab">
+								<h1 style="text-align: center;"><br/><br/>Lead Generation System<br/><br/></h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="lead_generation_ids" t-as="lead" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="lead.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{lead.id}" t-attf-name="#{lead.id}" t-attf-value="yes" />
+										<label t-attf-for="#{lead.id}">Yes</label>  
+										<input type="radio" t-attf-id="#{lead.id}" t-attf-name="#{lead.id}" t-attf-value="no" />
+										<label t-attf-for="#{lead.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 6-->          
+							<div class="tab">
+								<h1 style="text-align: center;"><br/><br/>Lead Conversion System<br/><br/></h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="lead_conversion_ids" t-as="lead_conv" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="lead_conv.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{lead_conv.id}" t-attf-name="#{lead_conv.id}" t-attf-value="yes" />
+										<label t-attf-for="#{lead_conv.id}">Yes</label>  
+										<input type="radio" t-attf-id="#{lead_conv.id}" t-attf-name="#{lead_conv.id}" t-attf-value="no" />
+										<label t-attf-for="#{lead_conv.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 7-->          
+							<div class="tab">
+								<h1 style="text-align: center;"><br/><br/>Customer Fulfillment System<br/><br/></h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="customer_fulfillment_ids" t-as="customer_fulfillment" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="customer_fulfillment.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{customer_fulfillment.id}" t-attf-name="#{customer_fulfillment.id}" t-attf-value="yes" />
+										<label t-attf-for="#{customer_fulfillment.id}">Yes</label>  
+										<input type="radio" t-attf-id="#{customer_fulfillment.id}" t-attf-name="#{customer_fulfillment.id}" t-attf-value="no" />
+										<label t-attf-for="#{customer_fulfillment.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<!--ARTBOARD 8-->          
+							<div class="tab">
+								<h1 style="text-align: center;"><br/><br/>Submission of Form<br/><br/></h1>
+								<div class="row">
+									<div class="col-md-12 form-group" t-foreach="form_submission_ids" t-as="submission" style="display: inline-flex;">
+										<p style="width: 100%;">
+											<t t-set="i" t-value="i+1"/>
+											<span t-esc="i"/>.
+											<t t-esc="submission.name"/>
+										</p>                  
+										<input type="radio" t-attf-id="#{submission.id}" t-attf-name="#{submission.id}" t-attf-value="yes" />
+										<label t-attf-for="#{submission.id}">Yes</label>
+										<input type="radio" t-attf-id="#{submission.id}" t-attf-name="#{submission.id}" t-attf-value="no" />
+										<label t-attf-for="#{submission.id}">No</label>
+									</div>
+								</div>
+							</div>
+							<div class="nexpev" style="overflow:auto;">
+								<div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+									<button class="btn" type="button" id="prevBtn">Previous</button>
+									<button class="btn" type="button" id="nextBtn">Next</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</t>
+	</template>
+</odoo>
+

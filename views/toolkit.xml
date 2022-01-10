@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="toolkit_template">
+		<t t-call="website.layout">
+			<div class="text-center auto">
+				<h1>AUTOMATION TOOLKIT</h1> 
+			</div>
+
+			<section id="categories" class="categories">
+				<div class="container container-fluid">
+					<div class="row">
+						<div class="col-12 img-text media mt-5">
+							<h2> CATEGORIES</h2>
+						</div>
+						<div class="col-lg-4 order-2 order-lg-1">
+							<div class="circle d-flex">
+								<img class="toolkit_img_fix" src="/wt_office_hunddle/static/src/images/circle.png" alt=""/>
+								<a href="#LEAD">
+									<h3>Lead Generation<br/> Resources</h3>
+								</a>
+							</div>
+
+							<div class="circle2 d-flex">
+								<img class="toolkit_img_fix" src="/wt_office_hunddle/static/src/images/circle2.png" alt=""/>
+								<a href="#SEO"><h3>SEO Resources</h3></a>
+							</div>
+						</div>
+						<div class="col-lg-4 order-2 order-lg-1">
+							<div class="circle3 d-flex">
+								<img class="toolkit_img_fix" src="/wt_office_hunddle/static/src/images/circle3.png" alt=""/>
+								<a href="#Access"><h3>Access to Capital<br/> Resources</h3></a>
+							</div>
+							<div class="circle4 d-flex">
+								<img class="toolkit_img_fix" src="/wt_office_hunddle/static/src/images/circle4.png" alt=""/>
+								<a href="#Credit"><h3>Business Credit<br/> Resources</h3></a>
+							</div>
+						</div>
+						<div class="col-lg-4 order-2 order-lg-1">
+							<img class="image-bee" src="/wt_office_hunddle/static/src/images/bee.png" alt=""/>
+						</div>       
+					</div>
+				</div>
+			</section>
+
+			<section id="events" class="events">
+				<div class="container">
+					<div class="row" t-if="lead_generation_obj">
+						<h1><b>TOOLS BY TYPE</b></h1>
+						<h2>
+							<a id="LEAD"></a><b>LEAD GENERATION RESOURCES</b>
+						</h2>
+					</div>
+					<!-- LEAD GENERATION RESOURCE -->
+					<div class="row" data-aos="fade-up" t-if="lead_generation_obj">
+						<div class="col-lg-4 col-md-6 d-flex align-items-stretch" t-foreach="lead_generation_obj" t-as="lead">
+							<div class="card">
+								<div class="card-img">
+									<div clas="col-lg-3">
+										<a t-att-href="lead.url" target="_blank">
+											<img itemprop="image"  t-att-src="website.image_url(lead, 'image')" alt="Lights" class="img-fluid"/>
+										</a>
+										<h5 class="card-title"><a t-att-href="lead.url" target="_blank"><span t-field="lead.name"/></a></h5>
+									</div>
+								</div>
+								<div class="card-body">
+									<t t-if="lead.priority == '1'">
+										<img src="/wt_office_hunddle/static/src/images/optin_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="lead.priority == '2'">
+										<img src="/wt_office_hunddle/static/src/images/unbounce_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="lead.priority == '3'">
+										<img src="/wt_office_hunddle/static/src/images/qualaroo_rate.png" class="rate" alt="..."/>
+									</t>
+									<!-- <t t-if="lead.priority == '4'">
+										<img src="/wt_office_hunddle/static/src/images/optin_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="lead.priority == '5'">
+										<img src="/wt_office_hunddle/static/src/images/optin_rate.png" class="rate" alt="..."/>
+									</t> -->
+									<p class="card-text" t-field="lead.description"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- SEO Resources -->
+					<div class="row text-center" t-if="seo_obj">
+          				<h2>
+          					<a id="SEO"><b>SEO RESOURCES</b></a>
+          				</h2>
+        			</div>
+        			<div class="row" data-aos="fade-up" t-if="seo_obj">
+			          	<div class="col-lg-4 col-md-6 d-flex align-items-stretch" t-foreach="seo_obj" t-as="seo">
+			            	<div class="card">
+			              		<div class="card-img">
+			                  		<div clas="col-3">
+			                  			<a t-att-href="seo.seo_url" target="_blank">
+			                  				<img itemprop="image" t-att-src="website.image_url(seo, 'seo_image')" alt="Lights" class="img-fluid"/>
+			                  			</a>
+			                    		<h5 class="card-title">
+			                    			<a t-att-href="seo.seo_url" target="_blank">
+			                    				<span t-field="seo.name"/>
+			                    			</a>
+			                    		</h5>
+			                  		</div>
+			              		</div>
+			              		<div class="card-body">
+			                		<t t-if="seo.seo_priority == '1'">
+										<img src="/wt_office_hunddle/static/src/images/optin_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="seo.seo_priority == '2'">
+										<img src="/wt_office_hunddle/static/src/images/unbounce_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="seo.seo_priority == '3'">
+										<img src="/wt_office_hunddle/static/src/images/qualaroo_rate.png" class="rate" alt="..."/>
+									</t>
+			                		<p class="card-text" t-field="seo.seo_description"/>
+			              		</div>
+			            	</div>
+			          	</div>
+			         </div>
+
+			         <!-- ACCESS TO CAPITAL RESOURCES -->
+			        <div class="row text-center" t-if="access_capital_obj">
+          				<h2>
+          					<a id="Access"><b>ACCESS TO CAPITAL RESOURCES</b></a>
+          				</h2>
+        			</div>
+        			<div class="row" data-aos="fade-right" t-if="access_capital_obj">
+          				<div class="col-lg-4 col-md-6 d-flex align-items-stretch" t-foreach="access_capital_obj" t-as="access_capital">
+            				<div class="card">
+				              	<div class="card-img">
+				                  	<div clas="col-3">
+				                  		<a t-att-href="access_capital.capital_url" target="_blank">
+				                    		<img itemprop="image" t-att-src="website.image_url(access_capital, 'capital_image')" alt="Lights" class="img-fluid"/>
+				                    	</a>
+				                    	<h5 class="card-title">
+				                    		<a t-att-href="access_capital.capital_url" target="_blank">
+				                    			<span t-field="access_capital.name"/>
+				                    		</a>
+				                    	</h5>
+				                  	</div>
+				              	</div>
+				              	<div class="card-body">
+				                	<t t-if="access_capital.capital_priority == '1'">
+										<img src="/wt_office_hunddle/static/src/images/optin_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="access_capital.capital_priority == '2'">
+										<img src="/wt_office_hunddle/static/src/images/unbounce_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="access_capital.capital_priority == '3'">
+										<img src="/wt_office_hunddle/static/src/images/qualaroo_rate.png" class="rate" alt="..."/>
+									</t>
+				                	<p class="card-text" t-field="access_capital.capital_description"/>
+				              	</div>
+				            </div>
+				        </div>
+				    </div>
+
+				    <!-- BUSINESS CREDIT RESOURCES -->
+				    <div class="row text-center" t-if="business_credit_obj">
+          				<h2><a id="Credit">
+          					<b>BUSINESS CREDIT RESOURCES</b></a>
+          				</h2>
+        			</div>
+			        <div class="row" data-aos="fade-right" t-if="business_credit_obj"> 
+				         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" t-foreach="business_credit_obj" t-as="business">
+				            <div class="card">
+				              	<div class="card-img">
+				                  	<div clas="col-3">
+				                  		<a t-att-href="business.business_url" target="_blank">
+				                    		<img itemprop="image" t-att-src="website.image_url(business, 'business_image')" alt="Lights" class="img-fluid"/>
+				                    	</a>
+				                    	<h5 class="card-title">
+				                    		<a t-att-href="business.business_url" target="_blank">
+				                    			<span t-field="business.name" />
+				                    		</a>
+				                    	</h5>
+				                  	</div>
+				              	</div>
+				              	<div class="card-body">
+				                	<t t-if="business.business_priority == '1'">
+										<img src="/wt_office_hunddle/static/src/images/optin_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="business.business_priority == '2'">
+										<img src="/wt_office_hunddle/static/src/images/unbounce_rate.png" class="rate" alt="..."/>
+									</t>
+									<t t-if="business.business_priority == '3'">
+										<img src="/wt_office_hunddle/static/src/images/qualaroo_rate.png" class="rate" alt="..."/>
+									</t>
+				                	<p class="card-text" t-field="business.business_description"/>
+				              	</div>
+				            </div>
+			          </div>
+			        </div>
+				</div>
+			</section>
+		</t>
+	</template>
+</odoo>

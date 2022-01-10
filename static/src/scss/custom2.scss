@@ -1,0 +1,1616 @@
+.erp_hunddle_main_cl{
+	.coaching-item a{
+		text-decoration: none;
+	}
+	#erp-banner {
+		padding: 200px 0 50px 0;
+		width: 100%;
+		height: auto;
+		min-height: 100%;
+		background: url("/wt_office_hunddle/static/src/images/erp_banner.png") center center;
+		/* Full height */
+		background-size: cover;
+		background-position: relative;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+	}
+		@media only screen and (max-width: 990px) {
+		  #erp-banner { 
+		    width: 100%;
+		    height: 80vh;
+		  }
+		}
+
+		@media only screen and (max-width: 768px) {
+		  #erp-banner { 
+		    width: 100%;
+		    height: auto;
+		  }
+		}
+
+
+		@media only screen and (max-width: 640px) {
+		  #erp-banner { 
+		    width: 100%;
+		    height: auto;
+		  }
+		}
+
+		#erp-banner h1{
+		  font-family: "Antonio bold", sans-serif !important;
+		  font-style: bold !important;
+		  color: black !important;
+		  text-align: center !important;
+		  text-transform: uppercase !important;
+		  font-size: 60px !important;
+		}
+		#erp-banner p{
+		  font-family: "Poppins medium", sans-serif;
+		  font-style: bold;
+		  color: black;
+		  text-align: center;
+		  font-size: 20px;
+		}
+
+		@media (max-width: 768px) {
+		  #erp-banner .row h1{
+		    padding-bottom: 10px;
+		  }
+
+		  #erp-banner h1{
+		    font-style: bold;
+		    color: black;
+		    text-align: center;
+		    font-size: 30px; 
+		    margin-left: 60px;
+		    margin-top: 0px;
+		  }
+		}
+
+		@media (max-width: 640px) {
+		  #erp-banner .container-fluid .row{
+		    padding-bottom: 0;
+		  }
+
+		  #erp-banner .container-fluid .row img{
+		    margin-top: 0;
+		  }
+		  
+
+		  #erp-banner h1{
+		    font-style: bold;
+		    color: black;
+		    text-align: center;
+		    font-size: 30px; 
+		    margin-top: -10%; 
+		    margin-bottom: 5%;
+		    margin-left: 0;
+		  }
+		}
+		.get-team-btn {
+			background: #104b92;
+			color: #fff;
+			border-radius: 10px;
+			border-top-width: 10px;
+			border-top: #1f1f1f;
+			padding: 10px 10px;
+			white-space: nowrap;
+			transition: 0.3s;
+			font-size: 24px;
+			font-weight: 700;
+			text-align: center;
+			display: inline-block;
+		}
+
+		#erp-banner{
+			.get-team-btn:hover {
+		  	color: #ff8903 !important;
+		  	text-decoration: none;
+			}
+		}
+		
+		.video-section3 {
+			    position: relative;
+			    width: 100%;
+			    height: 850px;
+			    display: inline-block;
+			    overflow: hidden;
+			    padding-top: 0;
+
+			    .video-text-box {
+				  position: absolute;
+				  z-index: 15;
+				  width: 100%;
+				  padding-top: 15%;
+				}
+
+				.video-text-box h2 {
+				  color: #fff;
+				  font-size: 3.3rem;
+				  font-weight: 700;
+				  white-space: nowrap;
+				  line-height: 82px;
+				}
+
+				@media only screen and (min-width: 640px){
+				  .video-text-box h2 { 
+				    font-size: 2rem;
+				  }
+				  
+				}
+
+
+				@media only screen and (max-width: 980px){
+				  .video-text-box h2 {  
+				    white-space: normal;
+				    font-size: 2rem;
+				  }
+				}
+
+				@media (max-width: 768px) {
+				  .video-text-box h2 {  
+				    white-space: normal;
+				    font-size: 2rem;
+				  }
+				}
+				.btn:not(:disabled):not(.disabled) {
+	  				cursor: pointer;
+				}
+
+				.btn {
+				  display: inline-block;
+				  font-weight: 400;
+				  color: #212529;
+				  text-align: center;
+				  vertical-align: middle;
+				  user-select: none;
+				  background-color: transparent;
+				  border: 1px solid transparent;
+				  padding: 0.375rem 0.75rem;
+				  font-size: 0.875rem;
+				  line-height: 1.5;
+				  border-radius: 0.25rem;
+				  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+				}
+			}
+
+			.modal_main_cl{
+				.modal-dialog {
+				  transition: transform 0.3s ease-out;
+				  transform: translate(0, -50px);
+				}
+				@media (min-width: 576px){
+					.modal-dialog {
+				    height: 100%;
+				    padding: 1.75rem 0;
+				    margin: 0 auto;
+					}
+				}
+				.modal-dialog {
+				  position: relative;
+				  width: auto;
+				  pointer-events: none;
+				}
+				.modal-content {
+				  position: relative;
+				  display: -webkit-box;
+				  display: -webkit-flex;
+				  display: flex;
+				  -webkit-box-orient: vertical;
+				  -webkit-box-direction: normal;
+				  -webkit-flex-direction: column;
+				  flex-direction: column;
+				  width: 100%;
+				  pointer-events: auto;
+				  background-color: #FFFFFF;
+				  background-clip: padding-box;
+				  border: 1px solid rgba(0, 0, 0, 0.2);
+				  border-radius: 0.3rem;
+				  outline: 0;
+				}
+
+				.modal-content iframe{
+				  height: 90vh;
+				  margin-top: 50px;
+				}
+				iframe {
+				    border: 0;
+				}
+
+			}
+
+		.services_main_cl_sec{
+			.box-bg i{
+			  color: #02293d;
+			  size: 100px;
+			}
+
+			.box-bg h3{
+			  font-style: bold;
+			  color: black;
+			  text-align: center;
+			  font-size: 24px;
+			}
+
+			.box-bg h4{
+			  color: black;
+			  text-align: left;
+			  font-size: 20px;
+			}
+
+			.box-bg p{
+			  font-style: bold;
+			  color: black;
+			  text-align: center;
+			  font-size: 16px;
+			}
+
+			.box-bg{
+			  background-color: #d7eafd;
+			  margin-top: -6px;
+			  align-items: center;
+			  text-align: center;
+			}
+
+			.box-bg .first-col{
+			  padding: 15px 15px;
+			}
+
+			.box-bg .second-col{
+			  padding: 15px 15px;
+			}
+
+			.box-bg .third-col{
+			  padding: 15px 15px;
+			}
+
+			.box-bg .fourth-col{
+			  padding: 15px 15px;
+			}
+
+			.box-bg .first-col, .box-bg .second-col, .box-bg .third-col , .box-bg .fourth-col{
+			 
+			  background-color: #005aa8;
+			  opacity: 0.8;
+			  color: white;
+			  cursor: pointer;
+			}
+
+			.box-bg .first-col:hover{
+			 
+			  background: url("/wt_office_hunddle/static/src/images/erp1.jpg") center center; 
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-attachment: scroll;
+			  background-color: #060c60;
+			  opacity: 0.8;
+			  color: white;
+			  cursor: pointer;
+			}
+
+			.box-bg .first-col h4 , .box-bg .first-col p, .box-bg .first-col h3{
+			  color: white;
+			  text-align: center;
+			}
+
+			.box-bg .first-col i{
+			  color: white;
+			}
+			  
+			.box-bg .second-col:hover{
+			  background: url("/wt_office_hunddle/static/src/images/erp2.jpg") center center; 
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-attachment: scroll;
+			  background-color: #060c60;
+			  opacity: 0.8;
+			  cursor: pointer;
+			}
+
+			.box-bg .second-col i{
+			  color: white;
+			}
+
+			.box-bg .second-col h4 , .box-bg .second-col p, .box-bg .second-col h3{
+			  color: white;
+			  text-align: center;
+			}
+
+
+			.box-bg .third-col:hover{
+			  background: url("/wt_office_hunddle/static/src/images/erp3.jpg") center center; 
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-attachment: scroll;
+			  background-color: #060c60;
+			  opacity: 0.8;
+			  cursor: pointer;
+			}
+
+			.box-bg .third-col i{
+			  color: white;
+			}
+
+			.box-bg .third-col h4 , .box-bg .third-col p, .box-bg .third-col h3{
+			  color: white;
+			  text-align: center;
+			}
+
+			.box-bg .fourth-col:hover{
+			  background: url("/wt_office_hunddle/static/src/images/erp4.jpg") center center; 
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-attachment: scroll;
+			  background-color: #060c60;
+			  opacity: 0.8;
+			  cursor: pointer;
+			}
+
+			.box-bg .fourth-col i{
+			  color: white;
+			}
+
+			.box-bg .fourth-col h4 , .box-bg .fourth-col p, .box-bg .fourth-col h3{
+			  color: white;
+			  text-align: center;
+			}
+
+		}
+
+		.container-benefits{
+		  background: url("/wt_office_hunddle/static/src/images/ERP_line.png") center center; 
+		  background-repeat:no-repeat;
+		  background-size: cover;
+		  background-position:center;
+		 
+		}
+
+		@media (max-width: 640px){
+		  .container-benefits{
+		    background: url("/wt_office_hunddle/static/src/images/ERP_line.png") center center; 
+		    background-repeat:no-repeat;
+		    background-size: contain;
+		    background-position:center;
+		   
+		  }
+		  .container-benefits h1{
+		    padding-bottom: 0;
+		   
+		  }
+		}
+
+		.container-benefits h1{
+		  // padding-bottom: 160vh;
+		 
+		}
+
+		.container-benefits .row .second-col{
+		  margin-top: 30px;
+		}
+
+		@media (max-width: 980px){
+		  .container-benefits{
+		    background: url("/wt_office_hunddle/static/src/images/ERP_line.png") center center; 
+		    background-repeat:no-repeat;
+		    background-size: contain;
+		    background-position:center;
+
+		  }
+		  .container-benefits h1{
+		    padding-bottom: 0;
+		   
+		  }
+		}
+
+		.container-benefits h1{
+		  // padding-bottom: 160vh;
+		 
+		}
+
+		.container-benefits .row .second-col{
+		  margin-top: 30px;
+		}
+ 
+ 	.erp-middle{
+  
+	  width: 100%;
+	  height: 150vh;
+	  background: url("/wt_office_hunddle/static/src/images/erp-bg3.jpg") top center; 
+	  background-repeat:no-repeat;
+	  background-size: cover;
+	  background-position:center;
+	}
+
+	.erp-middle button{
+	  margin-top: 600px;
+	  padding: 15px 35px;
+	  background-color: #104b92;
+	  color: white ;
+	  border-radius: 5px 5px;
+	  font-weight: bold;
+	  box-shadow: white;
+	  text-align: left;
+	}
+	.coaching{
+		padding: 50px 0;
+  		overflow: hidden;
+	}
+
+}
+
+/*--------------------------------------------------------------
+# Graphics
+--------------------------------------------------------------*/
+
+.graphic_design_main_cl {
+	.coaching-item a{
+		text-decoration: none;
+	}
+	#graphics{
+	  width: 100%;
+	  height: auto;
+	  background: url("/wt_office_hunddle/static/graphic_bg.png") center center;
+	   /* Full height */
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-color: rgb(83, 83, 83);
+	  padding: 150px;
+	}
+
+	.graphics .row .col{
+	  padding-right: 350px;
+	}
+
+	.graphics h6{
+	  color: white;
+	}
+
+	.graphics button:first-child{
+	  background-color: transparent;
+	  box-shadow: 0;
+	  color: white;
+	  padding: 10px 35px;
+	  border-radius: 5px 5px;
+	  border: 1px solid white;
+	}
+
+	.graphics a:nth-child(2) button{
+	  background-color: #fb8904;
+	  box-shadow: 0;
+	  color: white;
+	  padding: 10px 35px;
+	  border-radius: 5px 5px;
+	  margin: 50px 50px;
+	}
+
+	.graphics h2{
+	  padding-bottom: 20px;
+	  margin-top: 30px;
+	  text-align: center;
+	  cursor: pointer;
+	  font-size: 45px;
+	  margin: 50px 50px;
+	}
+
+	.img-text h1{
+	  padding-bottom: 15px;
+	  margin: auto;
+	  text-align: center;
+	  cursor: pointer;
+	  font-size: 50px;
+	  font-weight: bold;
+	  color: white;
+	  position: relative;
+	  margin-top: 80px;
+	}
+
+	@media only screen and (max-width: 640px) {
+	  .image-bee{
+	    margin-top: 10%;
+	    width: 30%;
+	    margin-left: 30%;
+	  }
+
+	  .img-text h1{
+	    padding-bottom: 15px;
+	    margin: auto;
+	    text-align: center;
+	    cursor: pointer;
+	    font-size: 30px;
+	    font-weight: bold;
+	    color: white;
+	    position: relative;
+	    margin-top: 30px;
+	  
+	  }
+	}
+
+	@media only screen and (max-width: 980px) {
+	  .image-bee{
+	    margin-top: 10%;
+	    width: 50%;
+	    margin-left: 30%;
+	  }
+
+	  .img-text h1{
+	    padding-bottom: 15px;
+	    margin: auto;
+	    text-align: center;
+	    cursor: pointer;
+	    font-size: 40px;
+	    font-weight: bold;
+	    color: white;
+	    position: relative;
+	    margin-top: 30px;
+	  
+	  }
+	}
+
+	.team-bottom .row{
+	  text-align: center;
+	  text-align: center;
+	}
+
+	.team-bottom .row:nth-child(3) button{
+	  color: #ff2424;
+	  background-color: #ffffff;
+	  border: 1px solid #ffb9b9;
+	  padding: 10px 15px;
+	  border-radius: 5px 5px;
+	  font-size: 20px;
+	  margin-bottom: 50px;
+	}
+
+	.team-bottom .row:nth-child(5) {
+	  margin-top: 50px;
+	}
+
+	.team-bottom .row:nth-child(5) button{
+	  color: #ff2424;
+	  background-color: #ffffff;
+	  border: 1px solid #f06b76;
+	  padding: 10px 50px;
+	  border-radius: 5px 5px;
+	  font-size: 20px;
+	  margin: 10px 15px;
+	}
+
+	.team-bottom .row:nth-child(5) button:nth-child(2){
+	  color: white;
+	  background-color: #ff8903;
+	  border: 1px solid #ffb9b9;
+	  padding: 10px 80px;
+	  border-radius: 5px 5px;
+	  font-size: 20px;
+	  margin: 10px 15px;
+	}
+
+	.team-bottom h4{
+	  font-family: "poppins" , sans-serif !important;
+	  letter-spacing: 1px;
+	  font-size: 25px;
+	  color: #000;
+	}
+
+	.team-bottom .row:first-child{
+	  margin-bottom: 50px;
+	}
+
+	.team-bottom h1{
+	  letter-spacing: 1px;
+	  text-transform: uppercase;
+	  font-size: 40px;
+	  color: #444444;
+	}
+
+	.team-bottom img{
+	  height: auto;
+	  width: 50%;
+	  transition: all 0.3s ease-in-out;
+	  margin-bottom: 30px;
+	}
+
+	@media (max-width: 640px) {
+	  .team-bottom .row:not(:first-child){
+	    margin-left: 50px;
+	  }
+	}
+
+	.team-bottom:hover img {
+	  transform: scale(1.1);
+	}
+
+	.team-bottom .row {
+	  padding: 5px 5px;
+	}
+
+	.team-bottom .row{
+	  text-align: center;
+	  text-align: center;
+	}
+
+	.team-bottom .row:nth-child(3) button{
+	  color: #ff2424;
+	  background-color: #ffffff;
+	  border: 1px solid #ffb9b9;
+	  padding: 10px 15px;
+	  border-radius: 5px 5px;
+	  font-size: 20px;
+	  margin-bottom: 50px;
+	}
+	.h2, h2 {
+    font-size: 2rem !important;
+	}
+	.team-bottom, .what-we-do-2{
+		padding: 30px 0;
+    	overflow: hidden;
+	}
+	.graphic_paragraph{
+		font-size: 17px;
+	}
+
+	.what-we-do {
+	 display: none;
+	 padding: 30px 0;
+	}
+
+	.what-we-do h4{
+	  color: black;
+	  font-weight: bold;
+	}
+
+	.what-we-do .row:first-child{
+	  margin-bottom: 50px;
+	}
+
+	.what-we-do .row:nth-child(2){
+	  margin-left: 100px;
+	}
+
+	.what-we-do .row:nth-child(3){
+	  margin-top: 50px;
+	}
+
+	.what-we-do ul{
+	  list-style-image: url("/wt_office_hunddle/static/src/images/circle_small.png");
+	  
+	}
+	.what-we-do ul li{
+	  font-weight: bold;
+	  font-size: 15px;
+	 
+	}
+
+	.what-we-do-2 {
+	  display: none;
+	 }
+	 .team-bottom .row:nth-child(5), .team-bottom .row:nth-child(5) button:nth-child(2){
+	 	outline: none;
+	 	&:hover, &:focus{
+	 		outline: none;
+	 	}
+	 }
+	 .team-bottom .row:nth-child(5) button:hover {
+	    background-color: whitesmoke;
+	    transition: 200ms;
+	    outline: none;
+	}
+	.team-bottom .row:nth-child(5) button:nth-child(2):hover {
+	    background-color: brown;
+	    transition: 200ms;
+	    outline: none;
+	}
+	 .what-we-do-2 h4{
+	   color: black;
+	   font-weight: bold;
+	 }
+	 
+	 .what-we-do-2 .row:first-child{
+	   margin-bottom: 50px;
+	 }
+	 
+	 .what-we-do-2 .row:nth-child(2){
+	   margin-left: 100px;
+	 }
+
+	 .what-we-do-2 .row:nth-child(3){
+	  margin-top: 50px;
+	}
+	 
+	 .what-we-do-2 ul{
+	   list-style-image: url("/wt_office_hunddle/static/src/images/circle_small.png");
+	   
+	 }
+	 
+	 .what-we-do-2 ul li{
+	   font-weight: bold;
+	   font-size: 15px;
+	  
+	 }
+
+}
+
+/* ------------------------------------------------------------
+ 							virtual staffing
+ ------------------------------------------------------------*/
+
+.virtual_staffing_main_cl{
+
+	#virtual{
+	  background-image: url("/wt_office_hunddle/static/src/images/virtual_banner.png");
+
+	  /* Full height */
+	  height: 100vh;
+	  /* Center and scale the image nicely */
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	}
+
+
+	.virtual h6{
+	  color: white;
+	  font-size: 24px;
+	  margin: 50px 0px;
+	}
+
+
+	.virtual button{
+	  background-color: #fb8904;
+	  box-shadow: 0;
+	  color: white;
+	  padding: 10px 35px;
+	  border-radius: 5px 5px;
+	  margin: 50px 0px;
+	  font-size: 32px;
+	  font-weight: 600;
+	}
+
+	.virtual h1{
+	  padding-bottom: 20px;
+	  cursor: pointer;
+	  font-size: 45px;
+	  margin: 50px 0px;
+	}
+
+
+	.img-virtual h1{
+	  
+	  text-align: left;
+	  font-size: 3rem;
+	  font-weight: bold;
+	  color: white;
+	  position: relative;
+
+	}
+
+
+	.image-virtual{
+	  width: 70%;
+	  padding: 5px 5px;
+	  
+	}
+
+
+	@media only screen and (max-width: 640px) {
+	  .image-virtual{
+	    width: 30%;
+	    margin-left: 30%;
+	  }
+	}
+
+	@media only screen and (max-width: 980px) {
+	  .image-virtual{
+	 
+	    width: 30%;
+	    margin-left: 30%;
+	  }
+	}
+
+	@media only screen and (max-width: 980px) {
+	  #virtual { 
+	    width: 100%;
+	    height: 80vh;
+	  }
+
+	  #virtual button{
+	    background-color: #fb8904;
+	    box-shadow: 0;
+	    color: white;
+	    padding: 10px 35px;
+	    border-radius: 5px 5px;
+	    margin: 30px 0px;
+	    font-size: 28px;
+	    font-weight: 600;
+	  }
+	  
+	  #virtual h1{
+	    padding-bottom: 20px;
+	    cursor: pointer;
+	    font-size: 38px;
+	    margin: 30px 0px;
+	  }
+
+	  .img-virtual h1{
+	  
+	    text-align: left;
+	    font-size: 2rem;
+	    font-weight: bold;
+	    color: white;
+	    position: relative;
+	  
+	  }
+
+	  .virtual h6{
+	    color: white;
+	    font-size: 24px;
+	    margin: 30px 0px;
+	  }
+	}
+
+	@media only screen and (max-width: 768px) {
+	  #virtual { 
+	    width: 100%;
+	    height: auto;
+	  }
+
+	  #virtual button{
+	    background-color: #fb8904;
+	    box-shadow: 0;
+	    color: white;
+	    padding: 10px 35px;
+	    border-radius: 5px 5px;
+	    margin: 30px 0px;
+	    font-size: 28px;
+	    font-weight: 600;
+	  }
+	  
+	  #virtual h1{
+	    padding-bottom: 20px;
+	    cursor: pointer;
+	    font-size: 38px;
+	    margin: 30px 0px;
+	  }
+
+	  .img-virtual h1{
+	  
+	    text-align: left;
+	    font-size: 2rem;
+	    font-weight: bold;
+	    color: white;
+	    position: relative;
+	  
+	  }
+
+	  .virtual h6{
+	    color: white;
+	    font-size: 24px;
+	    margin: 30px 0px;
+	  }
+	}
+
+	@media only screen and (max-width: 640px) {
+	  #virtual { 
+	    width: 100%;
+	    height: auto;
+	  }
+
+	  #virtual button{
+	    background-color: #fb8904;
+	    box-shadow: 0;
+	    color: white;
+	    padding: 10px 35px;
+	    border-radius: 5px 5px;
+	    margin: 30px 0px;
+	    font-size: 28px;
+	    font-weight: 600;
+	  }
+	  
+	  #virtual h1{
+	    padding-bottom: 20px;
+	    cursor: pointer;
+	    font-size: 38px;
+	    margin: 30px 0px;
+	  }
+
+	  .img-virtual h1{
+	  
+	    text-align: left;
+	    font-size: 2rem;
+	    font-weight: bold;
+	    color: white;
+	    position: relative;
+	  
+	  }
+
+	  .virtual h6{
+	    color: white;
+	    font-size: 24px;
+	    margin: 30px 0px;
+	  	}
+	}
+	.video-text-box2 h2 {
+	    color: #fff !important;
+	    font-size: 2.0rem !important;
+	    font-weight: 700 !important;
+	    white-space: nowrap !important;
+	    line-height: 82px !important;
+	}
+
+	.team-virtual .row:nth-child(5) {
+	  margin-top: 50px;
+	}
+
+	.team-virtual .row:nth-child(5) button{
+	  color: #ff2424;
+	  background-color: #ffffff;
+	  border: 1px solid #f06b76;
+	  padding: 10px 50px;
+	  border-radius: 5px 5px;
+	  font-size: 20px;
+	  margin: 10px 15px;
+	}
+
+	.team-virtual button{
+	  color: white;
+	  background-color: #2480a5;
+	  border: 1px solid #ffb9b9;
+	  padding: 10px 30px;
+	  border-radius: 5px 5px;
+	  font-size: 25px;
+	  margin: 10px 15px;
+	  font-weight: bold;
+	  line-height: 30px;
+	}
+
+	@media (max-width: 640px) {
+	  .team-virtual button{
+	    margin-right: 15%;
+	  }
+	}
+
+	.team-virtual h4{
+	  font-family: "poppins" , sans-serif !important;
+	  letter-spacing: 1px;
+	  font-size: 25px;
+	  color: #000;
+	}
+
+	.team-virtual .row:first-child{
+	  margin-bottom: 50px;
+	}
+
+	.team-virtual h1{
+	  letter-spacing: 1px;
+	  text-transform: uppercase;
+	  font-size: 40px;
+	}
+
+	.team-virtual img{
+	  height: auto;
+	  width: 50%;
+	  transition: all 0.3s ease-in-out;
+	  margin-bottom: 30px;
+	}
+
+	@media (max-width: 640px) {
+	  .team-virtual .row:not(:first-child){
+	    margin-left: 50px;
+	  }
+	}
+
+	.team-virtual:hover img {
+	  transform: scale(1.1);
+	}
+
+	.team-virtual .row {
+	  padding: 5px 5px;
+	}
+
+	.virtual-middle{
+	  background: url("/wt_office_hunddle/static/src/images/virtual-middle-bg.jpg") center center; 
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	  align-items: center;
+	  height: auto;
+	}
+	.virtual-middle{
+		padding: 50px 0;
+    	overflow: hidden;
+	}
+
+	.virtual-middle h1{
+	  color: black;
+	  font-weight: bold;
+	}
+
+	.virtual-middle .row h2:first-child{
+	  font-size: 25px;
+	}
+
+	.virtual-middle .row:nth-child(2) .col-lg-3 h2{  
+	  font-size: 25px;
+	  padding: 20px 0px;
+	}
+
+
+
+	.virtual-middle .row:nth-child(2) .img-inside{
+	  background-color: #ffffff;
+	  border-radius: 15px 15px;
+	  box-shadow: 5px 5px 5px 5px #7d858a;
+	  margin: 20px 13px;
+	}
+
+	.virtual-middle button{
+	  color: white;
+	  background-color: #2480a5;
+	  padding: 10px 30px;
+	  border-radius: 5px 5px;
+	  font-size: 25px;
+	  font-weight: bold;
+	  line-height: 30px;
+	  margin: 40px 0px;
+	}
+
+	.virtual-middle .row:first-child img{
+	  margin-top:  1150px;
+	}
+	
+	.coaching{
+		padding: 50px 0;
+  		overflow: hidden;
+	}
+
+
+}
+.erp_banner_img_third{
+	    top: -1rem;
+    position: relative;
+}
+.erp_banner_img_four{
+	    position: relative;
+    top: -5rem;
+}
+.img_button_take_assetment_cl{
+    padding: 15px 35px;
+    background-color: #104b92;
+    color: white;
+    border-radius: 5px 5px;
+    font-weight: bold;
+    box-shadow: white;
+    text-align: left;
+
+}
+.toolkit_img_fix{
+	width: 84px;
+    height: 84px;
+}
+
+.assessment_output{
+	#output {
+    padding-top: 5%;
+    padding-bottom: 20px;
+    width: auto;
+    height: auto;
+    background: url("/wt_office_hunddle/static/src/assess_out/Output_Background_Logo.png") center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #output h1{
+    font-size: 41px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+  }
+	  p {
+	    width: 100%;
+	    padding-top: 10px;
+	    font-size: 1rem;
+	}
+	  /* Style the buttons that are used to open and close the accordion panel */
+	#output .accordion1 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 130px;
+	}
+	#output .accordion2 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 160px;
+	}
+	#output .accordion3 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 152px;
+	}
+	#output .accordion4 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 152px;
+	}
+	#output .accordion5 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 152px;
+	}
+	#output .accordion6 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 170px;
+	}
+	#output .accordion7 {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		font-size: 35px;
+		margin-top: 152px;
+	}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	#output .active, .accordion1:hover {
+		background-color: #ccc;
+	}
+	#output .active, .accordion2:hover {
+		background-color: #ccc;
+	}
+	#output .active, .accordion3:hover {
+		background-color: #ccc;
+	}
+	#output .active, .accordion4:hover {
+		background-color: #ccc;
+	}
+	#output .active, .accordion5:hover {
+		background-color: #ccc;
+	}
+	#output .active, .accordion6:hover {
+		background-color: #ccc;
+	}
+	#output .active, .accordion7:hover {
+		background-color: #ccc;
+	}
+
+	/* Style the accordion panel. Note: hidden by default */
+	#output .panel {
+		padding: 0 18px;
+		background-color: #abaaaa;
+		max-height: 0;
+		color: black;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+	#output .accordion1:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	#output .accordion2:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	#output .accordion3:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	#output .accordion4:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	#output .accordion5:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	#output .accordion6:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	#output .accordion7:after {
+		content: '\002B';
+		color: #d02a3e;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	#output .active:after {
+	content: "\2212"; /* Unicode character for "minus" sign (-) */
+	}
+
+	.progress-pie-chart {
+		width: 128px;
+		height: 128px;
+		border-radius: 50%;
+		background-color: #ececec;
+		position: relative;
+	}
+	.progress-pie-chart.gt-50 {
+		background-color: orange;
+	}
+	.progress-pie-chart.red .ppc-progress-fill {
+		background: red;
+	}
+	.progress-pie-chart.red span {
+		color: red;
+	}
+	.progress-pie-chart.orange .ppc-progress-fill {
+		background: orange;
+	}
+	.progress-pie-chart.orange span {
+		color: orange;
+	}
+	.progress-pie-chart.green.gt-50,
+	.progress-pie-chart.green .ppc-progress-fill {
+		background: green;
+	}
+	.progress-pie-chart.green span {
+		color: green;
+	}
+
+	.ppc-progress {
+		content: "";
+		position: absolute;
+		border-radius: 50%;
+		left: calc(50% - 64px);
+		top: calc(50% - 64px);
+		width: 128px;
+		height: 128px;
+		clip: rect(0, 128px, 128px, 64px);
+	}
+	.ppc-progress .ppc-progress-fill {
+		content: "";
+		position: absolute;
+		border-radius: 50%;
+		left: calc(50% - 64px);
+		top: calc(50% - 64px);
+		width: 128px;
+		height: 128px;
+		clip: rect(0, 64px, 128px, 0);
+		transform: rotate(60deg);
+	}
+	.gt-50 .ppc-progress {
+		clip: rect(0, 64px, 128px, 0);
+	}
+	.gt-50 .ppc-progress .ppc-progress-fill {
+		clip: rect(0, 128px, 128px, 64px);
+		background: #E5E5E5;
+	}
+
+	.ppc-percents {
+		content: "";
+		position: absolute;
+		border-radius: 50%;
+		left: calc(50% - 111.30435px/2);
+		top: calc(50% - 111.30435px/2);
+		width: 111.30435px;
+		height: 111.30435px;
+		background: #fff;
+		text-align: center;
+		display: table;
+	}
+	.ppc-percents span {
+		display: block;
+		font-size: 18px;
+	}
+	.ppc-percents span cite {
+		font-size: 35px;
+	}
+
+	.pcc-percents-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.progress-pie-chart {
+		margin: 0 auto 0;
+		margin-top: 115px;
+	}
+
+	.get-started-btn {
+	    margin-left: 22px;
+	    background: #ff8903;
+	    color: #fff;
+	    border-radius: 5px;
+	    padding: 8px 35px;
+	    white-space: nowrap;
+	    transition: 0.3s;
+	    font-size: 14px;
+	    display: inline-block;
+	}
+	.button {
+	    display: flex;
+	    justify-content: center;
+	    margin-top: 20px;
+	    width: 100%;
+	}
+	.button1 {
+	    justify-content: center;
+	    color: #4f4d4d;
+	    background-color: #b2acac;
+	    border: solid 1px;
+	    border-radius: 3px;
+	    width: auto;
+	}
+	section {
+	    padding: 10px;
+	    overflow: hidden;
+	}
+	.bg-orange {
+	    background-color: orange;
+	    color: white;
+	    display: flex;
+	}
+	.tool h3{
+	    text-align: center;
+	    font-weight: bold;
+	    font-size: 45px;
+	    color: orange;
+	}
+
+	.back-to-top {
+	    position: fixed;
+	    visibility: hidden;
+	    opacity: 0;
+	    right: 15px;
+	    bottom: 15px;
+	    z-index: 996;
+	    background: #ff8903;
+	    width: 40px;
+	    height: 40px;
+	    border-radius: 50px;
+	    transition: all 0.4s;
+	}
+	  
+	.back-to-top i {
+	    font-size: 28px;
+	    color: #fff;
+	    line-height: 0;
+	}
+	.row2 {
+      display: block;
+    }
+    .row1 {
+      padding-left: 15%;
+      padding-right: 15%;
+      margin-top: 100px;
+    }
+    /* Make sure that padding behaves as expected */
+    * {box-sizing:border-box}
+    
+    /* Container for skill bars */
+    .container00 {
+      width: 100%; /* Full width */
+      background-image: linear-gradient(#dddedf, #c9c9ca ); /* Grey background */
+    }
+    
+    .skills {
+      text-align: right; /* Right-align text */
+      padding-top: 10px; /* Add top padding */
+      padding-bottom: 10px; /* Add bottom padding */
+      color: white; /* White text color */
+    }
+            
+    .LDS {
+    	background-image: linear-gradient(#d85c57,#d2263e); 
+    	border-bottom-right-radius: 20px; 
+    	border-top-right-radius: 20px;
+    } 
+     
+  /* animated pie chart */
+	.circle-wrap {
+	  margin: 50px auto;
+	  width: 150px;
+	  height: 150px;
+	  background: #e6e2e7;
+	  border-radius: 50%;
+	}
+	.circle-wrap .circle .mask,
+	.circle-wrap .circle .fill {
+	  width: 150px;
+	  height: 150px;
+	  position: absolute;
+	  border-radius: 50%;
+	}
+	.circle-wrap .circle .mask {
+	  clip: rect(0px, 150px, 150px, 75px);
+	}
+	.circle-wrap .circle .mask .fill {
+	  clip: rect(0px, 75px, 150px, 0px);
+	  background-color: #665959;
+	}
+	.circle-wrap .circle .mask.full,
+	.circle-wrap .circle .fill {
+	  animation: fill ease-in-out 3s;
+	  transform: rotate(126deg);
+	}
+	 
+	@keyframes fill {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(126deg);
+	  }
+	}
+	.circle-wrap .inside-circle {
+	  width: 130px;
+	  height: 130px;
+	  border-radius: 50%;
+	  background: orange;
+	  line-height: 130px;
+	  text-align: center;
+	  margin-top: 10px;
+	  margin-left: 10px;
+	  position: absolute;
+	  z-index: 100;
+	  font-weight: 700;
+	  font-size: 2em;
+	  color: #fff;
+	}
+}
+@include media-breakpoint-only(xs) {
+		.erp_hunddle_main_cl #erp-banner h1{
+		font-size: 46px !important;
+	}
+	.img_button_take_assetment_cl{
+		position: relative;
+	    left: 7%;
+	    top: -146px;
+	}
+	.erp_hunddle_main_cl #erp-banner{
+		padding: 60px 0 50px 0;
+	    background-size: auto;
+	}
+}
+@include media-breakpoint-only(sm) {
+		.erp_hunddle_main_cl #erp-banner{
+			padding: 60px 0 50px 0;
+		    width: 100%;
+		    height: auto;
+		    min-height: 100%;
+		    background: url(/wt_office_hunddle/static/src/images/erp_banner.png) center center;
+		    background-size: auto;
+		    background-position: relative;
+		    background-repeat: no-repeat;
+		    background-attachment: scroll;
+		}
+		.erp_hunddle_main_cl #erp-banner h1{
+		font-size: 46px !important;
+	}
+	.img_button_take_assetment_cl{
+		position: relative;
+    left: 7%;
+    top: -146px;
+	}
+}
+@include media-breakpoint-only(md) {
+	.erp_hunddle_main_cl #erp-banner{
+		padding: 200px 0 50px 0;
+	    width: 100%;
+	    height: auto;
+	    min-height: 100%;
+	    background: url(/wt_office_hunddle/static/src/images/erp_banner.png) center center;
+	    background-size: auto;
+	    background-position: relative;
+	    background-repeat: no-repeat;
+	    background-attachment: scroll;
+	}
+	.erp_hunddle_main_cl #erp-banner h1{
+		font-size: 46px !important;
+	}
+	.img_button_take_assetment_cl{
+		    position: relative;
+	        left: 7%;
+	    top: -260px;
+	}
+}
+@include media-breakpoint-only(lg) {
+	.erp_hunddle_main_cl #erp-banner{
+		padding: 200px 0 50px 0;
+	    width: 100%;
+	    height: auto;
+	    min-height: 100%;
+	    background: url(/wt_office_hunddle/static/src/images/erp_banner.png) center center;
+	    background-size: auto;
+	    background-position: relative;
+	    background-repeat: no-repeat;
+	    background-attachment: scroll;
+	}
+	.img_button_take_assetment_cl{
+		    position: relative;
+	        left: 7%;
+	    top: -260px;
+	}
+}
+@include media-breakpoint-only(xl) {
+	.erp_hunddle_main_cl #erp-banner{
+		padding: 200px 0 50px 0;
+	    width: 100%;
+	    height: auto;
+	    min-height: 100%;
+	    background: url(/wt_office_hunddle/static/src/images/erp_banner.png) center center;
+	    background-size: auto;
+	    background-position: relative;
+	    background-repeat: no-repeat;
+	    background-attachment: scroll;
+	}
+	.img_button_take_assetment_cl{
+		    position: relative;
+	        left: 7%;
+	    top: -260px;
+	}
+}

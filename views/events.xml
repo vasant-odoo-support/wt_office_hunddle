@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<template id="registration_template_tmpl_id" name="registation form">
+		<t t-set="tickets_available" t-value="event.seats_available or event.seats_availability == 'unlimited'"/>
+	    <t t-set="buy" t-value="tickets_available and event.state == 'confirm'"/>
+	    <form t-if="buy" id="registration_form" t-attf-action="/event/#{slug(event)}/registration/new" method="post" itemscope="itemscope" itemprop="offers" itemtype="http://schema.org/AggregateOffer" class="mb-5">
+	        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+	        <div id="o_wevent_tickets" class="bg-white rounded shadow-sm">
+	             <t t-set="tickets" t-value="event.event_ticket_ids.filtered(lambda t: not t.is_expired)"/>
+				<t t-if="len(event.event_ticket_ids) &gt; 1"> <!-- If some tickets expired and there is only one type left, we keep the same layout -->
+				    <div class="d-flex align-items-center py-2 pl-3 pr-2 border-bottom">
+				        <span class="btn text-left pl-0">
+				            Tickets
+				        </span>
+				    </div>
+				    <div id="o_wevent_tickets_collapse">
+				        <div t-foreach="tickets" t-as="ticket" class="row mx-0 bg-light border-bottom">
+				            <div class="col-md-8 text-left py-3" itemscope="itemscope" itemtype="http://schema.org/Offer">
+				                <h5 itemprop="name" t-field="ticket.name" class="my-0"/>
+				                <small t-if="ticket.deadline" class="text-muted mr-3" itemprop="availabilityEnds">Sales end on <span itemprop="priceValidUntil" t-field="ticket.deadline"/></small>
+				            </div>
+				            <div class="col-md-4 py-3 pl-md-0">
+				                <div class="d-flex align-items-center">
+				                    <t t-if="ticket.price or editable">
+				                        <t t-if="(ticket.price-website.get_current_pricelist().currency_id._convert(ticket.price_reduce, event.company_id.sudo().currency_id, event.company_id, datetime.date.today())) &gt; 1 and website.get_current_pricelist().discount_policy == 'without_discount'">
+				                            <del class="text-danger mr-1" t-field="ticket.price" t-options="{'widget': 'monetary', 'from_currency': event.company_id.sudo().currency_id, 'display_currency': website.get_current_pricelist().currency_id}"/>
+				                        </t>
+				                        <span t-field="ticket.price_reduce" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_excluded"/>
+				                        <span t-field="ticket.price_reduce_taxinc" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_included"/>
+				                        <span itemprop="price" class="d-none" t-esc="ticket.price"/>
+				                        <span itemprop="priceCurrency" class="d-none" t-esc="website.pricelist_id.currency_id.name"/>
+				                    </t>
+				                    <span t-if="not ticket.price and not editable" class="font-weight-bold text-uppercase">Free</span>
+				                    <select t-attf-name="nb_register-#{ticket.id}" class="w-auto ml-auto custom-select">
+				                        <t t-set="seats_max_ticket" t-value="(ticket.seats_availability == 'unlimited' or ticket.seats_available &gt; 9) and 10 or ticket.seats_available + 1"/>
+				                        <t t-set="seats_max_event" t-value="(event.seats_availability == 'unlimited' or event.seats_available &gt; 9) and 10 or event.seats_available + 1"/>
+				                        <t t-set="seats_max" t-value="min(seats_max_ticket, seats_max_event)"/>
+				                        <t t-foreach="range(0, seats_max)" t-as="nb">
+				                            <option t-esc="nb" t-att-selected="len(ticket) == 0 and nb == 0 and 'selected'"/>
+				                        </t>
+				                    </select>
+				                </div>
+				            </div>
+				            <div t-if="ticket.product_id.description_sale" class="col-12">
+				                <p itemprop="description" t-field="ticket.product_id.description_sale" class="small py-2 border-top"/>
+				            </div>
+				        </div>
+				        <div class="row no-gutters">
+				            <div class="col-md-4 offset-md-8 py-2 pl-md-0 pr-md-2">
+				                <button type="submit" class="btn btn-primary o_wait_lazy_js btn-block a-submit" t-att-disabled="not tickets_available or None" t-attf-id="#{event.id}">Register<t t-if="event.seats_availability != 'unlimited'">(Available seats: <t t-esc="event.seats_available"/>)</t></button>
+				            </div>
+				        </div>
+				    </div>
+				</t>
+				<t t-else="">
+				    <t t-call="website_event.ticket">
+				        <t t-set="name"><span t-field="tickets.name"/></t>
+				        <t t-set="price">
+				            <t t-if="tickets.price or editable">
+				                <t t-if="(tickets.price-website.get_current_pricelist().currency_id._convert(tickets.price_reduce, event.company_id.sudo().currency_id, event.company_id, datetime.date.today())) &gt; 1 and website.get_current_pricelist().discount_policy == 'without_discount'">
+				                    <del class="text-danger mr-1" t-field="tickets.price" t-options="{'widget': 'monetary', 'from_currency': event.company_id.sudo().currency_id, 'display_currency': website.get_current_pricelist().currency_id}"/>
+				                </t>
+				                <span t-field="tickets.price_reduce" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_excluded"/>
+				                <span t-field="tickets.price_reduce_taxinc" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_included"/>
+				                <span itemprop="price" class="d-none" t-esc="tickets.price"/>
+				                <span itemprop="priceCurrency" class="d-none" t-esc="website.pricelist_id.currency_id.name"/>
+				            </t>
+				            <span t-if="not tickets.price and not editable" class="font-weight-bold text-uppercase">Free</span>
+				        </t>
+				        <t t-if="tickets.product_id.description_sale" t-set="description">
+				            <span t-field="tickets.product_id.description_sale"/>
+				        </t>
+				        <t t-set="registration_end">
+				            <t t-if="tickets.deadline">Sales end on <span itemprop="priceValidUntil" t-field="tickets.deadline"/></t>
+				        </t>
+				        <t t-set="quantity">
+				            <select t-attf-name="nb_register-#{tickets.id}" class="w-auto custom-select">
+				                <t t-set="seats_max_ticket" t-value="(tickets.seats_availability == 'unlimited' or tickets.seats_available &gt; 9) and 10 or tickets.seats_available + 1"/>
+				                <t t-set="seats_max_event" t-value="(event.seats_availability == 'unlimited' or event.seats_available &gt; 9) and 10 or event.seats_available + 1"/>
+				                <t t-set="seats_max" t-value="min(seats_max_ticket, seats_max_event)"/>
+				                <t t-foreach="range(0, seats_max)" t-as="nb">
+				                    <option t-esc="nb" t-att-selected="len(tickets) == 1 and nb == 1 and 'selected'"/>
+				                </t>
+				            </select>
+				        </t>
+				    </t>
+				</t>
+	        </div>
+	    </form>
+	    <div t-if="not buy" class="alert alert-info mb-5" role="status">
+	        <span t-if="event.state == 'draft'" itemprop="availability" content="http://schema.org/OutOfStock">
+	            <b>Event registration not yet started.</b>
+	        </span>
+	        <span t-if="event.state != 'draft'" itemprop="availability" content="http://schema.org/Discontinued">
+	            <b>Event registration is closed.</b>
+	        </span>
+	        <a t-if="request.env.user.has_group('event.group_event_manager')" t-attf-href="/web#id=#{event.id}&amp;view_type=form&amp;model=event.event" class="float-right">
+	            <i class="fa fa-pencil mr-2" role="img" aria-label="Create" title="Create"/><em>Configure Event Registration</em>
+	        </a>
+	    </div>
+	</template>
+	<template id="event_hunddle" name="Event">
+		<t t-call="website.layout">
+			<div id="wrap" class="event_office_hunddle_main_cl">
+				<div class="oe_structure"/>
+				<section id="sec_1" class="header-bottom autoheight o_not_editable" contenteditable="false" t-if="event">
+			        <div class="home-bg"></div>
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-lg-12">
+			                    <h1><b t-esc="event.name"/></h1>
+			                    <h6 t-if="event.desc" t-esc="event.desc"/>
+			                    <h6 t-else=""> The best preparation for tomorrow is doing your best today...</h6>
+			                    <h2><i class="ri-calendar-line"></i><b>  <t t-esc="event.with_context(tz=event.date_tz).date_begin.strftime('%Y/%m/%d')"/> - <t t-esc="event.with_context(tz=event.date_tz).date_end.strftime('%Y/%m/%d')"/> </b></h2>
+			                    <h6><i class="ri-time-line"></i> <t t-esc="event.with_context(tz=event.date_tz).date_begin.strftime('%H:%M')"/> - <t t-esc="event.with_context(tz=event.date_tz).date_end.strftime('%H:%M')"/></h6>
+			                    <h6 t-if="event.address_id and event.address_id.country_id"><i class="ri-map-pin-line"></i> <t t-esc="event.address_id.city"/> / <t t-esc="event.address_id.country_id.name"/></h6>
+			                    <button>Read Details</button>
+			                    <button role="button" class="collapsed" data-toggle="collapse" data-target="#o_wevent_book_collapse">Register Online</button>
+			                    <t t-set="tickets_available" t-value="event.seats_available or event.seats_availability == 'unlimited'"/>
+							    <t t-set="buy" t-value="tickets_available and event.state == 'confirm'"/>
+							    <div id="o_wevent_book_collapse" class="collapse mt16">
+							    	<t t-call="wt_office_hunddle.registration_template_tmpl_id"/>
+	            				</div>
+			                </div>
+			            </div>  
+			        </div>
+			    </section>
+			    <section class="features text-center" id="features" contenteditable="false">
+			        <div class="row">
+			            <div class="container col-lg-6 col-md-12 features-md about-bg overlay-about set-width" style="position: relative;">
+			                <div class="row">
+			                    <div class="col-md-12">
+			                        <div class="features-wrapper">
+			                            <div class="col-md-12 wow animated fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.5s">
+			                                <div class="icon" style="color:#fff">
+			                                    <h2><b>LOREM IPSUM</b></h2>
+			                                </div>
+			                                </div>
+			                            <div class="clearfix"></div></div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="col-lg-6 col-sm-12 nopadding">
+			                <figure class="block-hover vimeo-video ">
+			                    <a target="_self">
+			                        <img src="/wt_office_hunddle/static/src/images/vdo-icn.png" alt="video_hover"/>
+			                        <span>VIDEO</span>
+			                    </a> 
+			                </figure>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="middle" contenteditable="false">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col">
+			                    <h6> Our Upcoming</h6>
+			                    <h2> SCHEDULE EVENTS </h2>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="middle-body" contenteditable="false">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col d-flex" t-foreach="upcomming_event_ids" t-as="up_event">
+			                    <button class="w-100"><t t-esc="event.name"/></button>
+			                </div>
+			            </div>
+			            <div class="row">   
+			                <div class="col clapping">
+			                    
+			                </div>
+			            </div>
+			            <div class="row">   
+			                <div class="col d-flex" t-foreach="event.sponsor_ids" t-as="sponsor">
+			                    <button class="w-100"><t t-esc="sponsor.partner_id.name"/></button>
+			                </div>
+			            </div>
+
+			            <div class="heading-clearfix">
+			                <div class="row">   
+			                    <div class="col-md-2 col-sm-4 col-xs-2 ">
+			                        <img src="/wt_office_hunddle/static/src/images/member.jpg"/>
+			                    </div>
+
+			                    <div class="col-md-10 col-sm-8 col-xs-12 hc1">
+			                        <span class="time"><a><i class="ri-time-line"></i> 09:00 am 10:30am</a></span>
+			                        <span class="time"><a><i class="ri-map-pin-line"></i> Business Hall Room C</a> </span>
+			                        <h2>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing...</h2>
+			                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+			                    </div>
+			                </div>
+
+			                <div class="row">   
+			                    <div class="col-md-2 col-sm-4 col-xs-2">
+			                        <img src="/wt_office_hunddle/static/src/images/member.jpg"/>
+			                    </div>
+
+			                    <div class="col-md-10 col-sm-8 col-xs-10 hc1">
+			                        <span class="time"><a><i class="ri-time-line"></i>09:00 am 10:30am</a></span>
+			                        <span class="time"><a><i class="ri-map-pin-line"></i> Business Hall Room C</a></span>
+			                        <h2>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing...</h2>
+			                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+			                    </div>
+			                </div>
+			            </div>
+
+			            <div class="heading-clearfix-2">
+			                <div class="row">
+			                    <div class="col-lg-7 col-md-6">
+			                        <img src="/wt_office_hunddle/static/src/images/courtyard.png" style="width:100%;"/>
+			                                          
+			                    </div>
+
+			                    <div class="col-lg-4 col-md-6 text-center second-col">
+			                        <h1><i class="ri-map-pin-line"></i></h1>
+			                        <h2>Venue Address</h2>
+			                        <p>P.O. Box 45</p>
+			                        <p>Crowder Mississippi 38622</p>
+			                        <p>just dial 16014338649 on your phone</p>
+			                        <p>Call for directionsand details</p>
+			                    </div>
+			                </div>
+			                <div class="row text-center">
+			                    <div class="col-lg-12 col-md-12">
+			                        <button> View More Details</button>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="bottom-speaker" contenteditable="false">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col">
+			                   <h5>Our Upcoming</h5> <h3>SPEAKERS</h3>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="speaker-slider" t-if="event.speaker_ids" contenteditable="false">
+			        <div class="container">
+			            <div class="row">
+			                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": "true","autoPlay": "true"}'>
+			                    <div class="gallery-cell" t-foreach="event.speaker_ids" t-as="speaker">
+			                        <img t-attf-src="/web/image/res.partner/#{speaker.id}/image_1920" width="250" height="250" alt="slide1.jpeg" />
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="bottom-speaker-slider" contenteditable="false">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col"> 
+			                    <button> View More Details</button>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <div class="oe_structure"/>
+			    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+			    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"/>
+			</div>
+		</t>
+	</template>
+</odoo>

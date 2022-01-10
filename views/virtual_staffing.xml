@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="virtual_staffing">
+		<t t-call="website.layout">
+			<div id="wrap" class="virtual_staffing_main_cl">
+				<section id="virtual" class="virtual">
+					<div class="virtual-2">
+						<div class="container container-fluid">
+							<div class="row">
+								<div class="col">
+									<div class="img-virtual">
+										<h1> Get the absolute help <br/>
+										you need through <br/>
+										Virtual Staffing.</h1>
+										<h6> Cover bigger responsibilities, <br/>
+										grab more pportunities.
+										</h6>
+									</div>
+								</div>  
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<a href="https://calendly.com/henrybdorris/60min?month=2021-08" target="_blank">
+										<button> GET STARTED </button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="modal fade pt-5 ceo_modal_main_cl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  					<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    					<div class="modal-content">
+          					 <iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_five_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true"></iframe>
+    					</div>
+  					</div>
+				</div>
+				<section class="video-section2 pt-5">
+					<div class="video-text-box2">
+					    <div class="container">
+					      	<div class="row">
+					        	<div class="col">
+                					<h2 class="veer"> Veer away from missing the significant <br/>
+                    				events of your life because <br/>
+                    				you are drowning in work. <br/>
+                    				Work better and live easier with our Virtual Staff.</h2>
+					        	</div>
+					        	<div class="col-12">
+					          		<button type="button" class="btn " data-toggle="modal" data-target="#myModal" data-src="/wt_office_hunddle/static/src/videos/train_video.mp4">
+					            		<img src="/wt_office_hunddle/static/src/images/play.png" alt="play" title="play" height="150"/>
+					         		</button>
+					        	</div>
+					      	</div>
+					    </div>
+					</div>
+					<video src="/wt_office_hunddle/static/src/videos/train_video.mp4" loop="" muted="" autoplay="" width="100%"></video>
+				</section>
+
+				<section class="team-virtual">
+        			<div class="container">
+          
+          				<div class="row" data-aos="fade-right">
+            				<div class="col-lg-4 col-md-6  col-sm-12  align-items-stretch mt-4 mt-md-0 align-items-center">
+              					<div class="coaching-item text-center">
+                					<img src="/wt_office_hunddle/static/src/images/stuck.png" class="img-fluid" alt="..."/>
+                    				<h4>
+                    					<b>Stuck in the daily
+                        				grind of everyday routine?</b> <br/>
+                    				</h4> 
+              					</div>
+            				</div>
+            				<div class="col-lg-4 col-md-6 col-sm-12  align-items-stretch mt-4 mt-md-0 align-items-center" >
+              					<div class="coaching-item text-center">
+                					<img src="/wt_office_hunddle/static/src/images/notime.png" class="img-fluid" alt="..."/>
+				                    <h4>
+				                    	<b>No time for other
+				                        important matter?</b><br/>
+				                    </h4>
+              					</div>
+           	 				</div>
+            				<div class="col-lg-4 col-md-6 col-sm-12  align-items-stretch mt-4 mt-md-0 align-items-center">
+              					<div class="coaching-item text-center">
+                					<img src="/wt_office_hunddle/static/src/images/missing.png" class="img-fluid" alt="..."/>
+                    				<h4>
+                    					<b>Missing significant events of your life
+                        				because youe are drowning in work?</b><br/>
+                    				</h4>
+              					</div>
+            				</div>
+          				</div>
+			         	<div class="row" >
+			            	<div class="col text-center">
+			              		<button> Learn More </button>
+			            	</div>
+			          	</div>
+			        </div>
+      			</section>
+
+      			<section class="virtual-middle">
+					<div class="container">
+					    <div class="row">
+					        <div class="col text-center">
+					            <h1> Our Virtual Staffing Skills
+					            </h1>
+					        </div>
+					    </div>
+
+					    <div class="row text-center">
+					       	<div class="col-lg-3 col-md-6 ">
+					            <div class="img-inside">
+					              	<img src="/wt_office_hunddle/static/src/images/team-assist.png" class="img-fluid" alt="..." />
+					              	<h2 class="team-assist">Team Assist</h2>
+					            </div>
+					        </div>
+					        <div class=" col-lg-3  col-md-6">
+					            <div class="img-inside">
+					              	<img src="/wt_office_hunddle/static/src/images/lead-generation.png" class="img-fluid" alt="..."/>
+					              	<h2>Lead Generation</h2>
+					            </div>
+					        </div>
+					        <div class=" col-lg-3 col-md-6 ">
+					            <div class="img-inside">
+					              	<img src="/wt_office_hunddle/static/src/images/bookkeeping.png" class="img-fluid" alt="..." />
+					              	<h2>Bookkeeping</h2>
+					            </div>
+					        </div>
+					        <div class=" col-lg-3 col-md-6 ">
+					            <div class="img-inside">
+					              	<img src="/wt_office_hunddle/static/src/images/sales-report.png" class="img-fluid" alt="..." /> 
+					              	<h2>Sales Report</h2>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="row">
+					        <div class="col text-center">
+					            <button>Take the Assestment</button>
+					        </div>
+					    </div>
+					</div>
+				</section>
+
+				<section id="coaching" class="coaching" t-if="virtual_staffing_blog">
+			      	<div class="container" data-aos="fade-up">
+			        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			            	<h1 data-aos="zoom-in" data-aos-delay="100">
+			            		<b>WE LOVE  BUSINESS COACHING. CHECK OUT OUR ARTICLES.</b>
+			            	</h1>
+			            </div>
+			            
+			            <div class="row" data-aos="zoom-in" data-aos-delay="100" >
+				            <div class="col-lg-4" t-foreach="virtual_staffing_blog" t-as="virtual">
+				            	<div class="coaching-item">
+				              		<img itemprop="image" t-att-src="website.image_url(virtual, 'bg_image')" alt="Lights" class="img-fluid" style="height: 240px;"/>
+				              		<p t-esc="virtual.name" class="business-blog"/>
+				              		<div class="coaching-content">
+				                  		<h4 class="justify-content-between mb-3">
+				                  			<t t-esc="virtual.name"/>
+				                  		</h4>
+				                  		<p>
+				                			<t t-esc="virtual.teaser"/>
+				                		</p>
+				                		<div class="trainer row justify-content-between align-items-center">
+				                			<div class="trainer-rank align-items-center">
+						                		<i class="fa fa-user-o"></i>
+						                		&amp;nbsp; <t t-esc="virtual.author_id.name" t-if="virtual.author_id"/>
+						                		&amp;nbsp; 
+						                		<i class="fa fa-comments"></i>
+						                		&amp;nbsp; 0
+						              		</div>
+						              		<div class="trainer-profile d-flex align-items-center">
+						                		<span>Read More</span>
+						                		<img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt=""/>
+						              		</div>
+						            	</div>
+						          	</div>
+						        </div>
+						    </div>
+						</div>
+
+						<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			          		<div class="d-flex justify-content-center w-100 align-items-stretch mt-4 mt-lg-0">
+			            		<a href="/blog" class="get-book-btn">
+			            			SEE MORE GREAT ARTICLES</a>
+			          		</div>
+			        	</div>
+
+					</div>
+				</section>
+			</div>
+		</t>
+	</template>
+</odoo>

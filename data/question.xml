@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate='0'>
+        <record id="que_1" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Written Mision Statement?</field>
+            <field name="question_type">marketing</field>
+            <field name="yes_popup">Good! Having a mission statement is important for setting the direction of your business.</field>
+            <field name="no_popup">Having a mission statement is important for setting the direction of your business. All efforts should be directed toward accomplishing your mission statement. This should be shared with all your employees so you, as a business owner, can focus your energies on being on top of your business than being just a technician in your own business.</field>
+        </record>
+        <record id="que_2" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Written Vison Statement?</field>
+            <field name="yes_popup">Good! Having a written vission statement sets an emotional goal for the entire team that will help your business achieve its goals!</field>
+            <field name="no_popup">Having a written vision statement is an emotional statement of intent. primarily focusing on being able to deliver on a promise to your customer, that you and all of your employee must share.</field>
+        </record>
+        <record id="que_3" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Logo?</field>
+            <field name="yes_popup">Good! Having a logo means you consider having a symbol of what your company stands for.</field>
+            <field name="no_popup">Having a logo provides companies with a rallying symbol. It can serve as a rallying point which you can shapre your mission and vision from. Moreover an attractive logo can give a good first impression on your business.</field>
+        </record>
+        <record id="que_4" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a straegic Position?</field>
+            <field name="yes_popup">Good! Having a written strategic position gives a clear and measurable goal for yourself and your employees. You can literally place your business relative to the current business conditions.</field>
+            <field name="no_popup">Having written strategic position gives a clear and measurable goal for yourself and your employees. This will give your business a position to allocate resources when needed to satisfy measurable goals.</field>
+        </record>
+        <record id="que_5" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Know Your Mst Probable Customer?</field>
+            <field name="yes_popup">Good! You know which type of customer your efforts are aimed at. This is very important step in designing your product and shaping your business strategy.</field>
+            <field name="no_popup">Knowing your most probable customer is very important in setting very important aspects of your business. One is the product that you will be selling. Two, the form and delivery of your marketing campaign. Three, how you, as a business owner, can relate to the customers you are aimed to deliver your product to.</field>
+        </record>
+        <record id="que_6" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Make Your Dcisions Based on Numbers?</field>
+            <field name="yes_popup">Good! This means you do not decide based on feelings. Any business decisions you are making are based on measurable parameters.</field>
+            <field name="no_popup">Numbers are very important in running a business. Being oblivious to your fiscal position is a perfect recipe for failure. Not knowing your market data will make it difficult for you to design your products and services. All decisions should consider all the data in hand to set the proper direction of your company. Guesswork has a higher rate of failure than making decisions based on strong data.</field>
+        </record>
+        <record id="que_7" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have an Admnistrative Assistant?</field>
+            <field name="yes_popup">Good! This means you do not tire yourself taking on routinary tasks. You can free yourself up to pay attention to matters that can benefit your business more.</field>
+            <field name="no_popup">Having administrative assistant is important to enable you to pay attention to any other part of your business. One big reason why small businesses do not grow is that the business owners tend to run all of the affairs themselves. Being on top of your business means you need to delegate, the first to delegate are routines that can be endorsed to an administrative assistant who can, for instancem provide important data relating to how the business is running.</field>
+        </record>
+        <record id="que_8" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Use Reportsto Measure Performance?</field>
+            <field name="yes_popup">Good! Even if you decide based on numbers, you use reports to make it easier for you to see the situation more clearly. Moreover, reports are opportunities for your leaders to make their recommendations based on the data contained herein.</field>
+            <field name="no_popup">Deciding based on numbers will help you, as a business owners, make the most probable correct decisions. Reports supplement these numbers by presenting them in more readable formats that can be shared with all important personnel involved in your business. Best of all, a well-written report can give a full assessment of your business` health</field>
+        </record>
+        <record id="que_9" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Use Stated oals Each Month in All Departments?</field>
+            <field name="yes_popup">Good! Successful business leaders set goals at regular intervals. This will help each department make adjustments accordingly to help with the business achieve its overall goal.</field>
+            <field name="no_popup">Having stated goals each month is important in plotting the direction your business is heading in. Apart from setting overall goals for the entire business enterprise, each department should have its own set of goals to accomplish. You, as a CEO, can evaluate each department`s performance and can make adjustments accordingly based on how each department was able to perform based on the goals set for them.</field>
+        </record>
+        <record id="que_10" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Leadrship Development System?</field>
+            <field name="yes_popup">Good! A mark of a successful business is having a strong team. Having implemented a system for developing your leadership will help your business become stronger and more resilient through ever-changing business conditions.</field>
+            <field name="no_popup">A mark of a sucessful business is having a strong team. Starting from the top, all component leaders should also be very knowledgeable of their work. Having well-developed leaders that are well-versed in their task, targets, mission, vission, and technical know-how, are important in making a well-run business achieve its goals. Note that strong businesses have to be adaptable to surviv ever-changing business conditions. Hence, all leaders should be trained regularly. And for this, there needs to be a system to implement this.</field>
+        </record>
+        <record id="que_11" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Markting System?</field>
+            <field name="yes_popup">Good! Having considerd implementing a system for your marketing will help you convert leads into paying customers efficiently.</field>
+            <field name="no_popup">Having a simple marketing strategy is not sufficient for growth. There are many things to consider to reach your target market, to convert leads into customers, and to convert customers into clients. This will require a well-trained leader implementing a system that can help the business reach out and deliver its promise to customers consistently over adverse business conditions.</field>
+        </record>
+        <record id="que_12" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Finace System?</field>
+            <field name="yes_popup">Good! Considering implementing a finance system is helping your business free from being oblivious to fiscal issues.</field>
+            <field name="no_popup">Having a system in handling finance is one of the most important aspects of the business in determingin its health and direction. But managing finances takes into consideration all the resources coming in and all the resources coming out. One also needs to consider the chaning value of inventory as well as other overhead costs. This is complicated and important. For you business to grow you need to implement a robust system in handling your financial matters to prevent: wrong decisions based on guesswork, unknowingly plunging your own business to furhter debt, evaluating if certain business are benefitting or harming overall business health, detecting cash leaks, and others.</field>
+        </record>
+        <record id="que_13" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a TeamDevelopment System?</field>
+            <field name="yes_popup">Good! Having a system of developing your employees will keep them aligned and be on one page with you on your business`s mission and vision. All members of your team are also armed with the technical know-how of the jobs they have on hand.</field>
+            <field name="no_popup">A strong business has all its elements aligned to its mission and vision. Not only are the leaders to be developed regularly but also the subordinates. Having a sense of purpose in their work is very important in every employee. Moreover, the technical aspects of their work should always be updated. This can be, for instance, machine operators having to learn a different method of crafting, or marketing employees being familiar with the latest trends.</field>
+        </record>
+        <record id="que_14" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a LeadGeneration System?</field>
+            <field name="yes_popup">Good! Having a system for lead generation will help you generate prospective customers.</field>
+            <field name="no_popup">Lead generation is important for business growth. New customers from new markets have to be tapped to increase revenue and business growth. Doing this systematically is important to make sure the market strategies are in place early and resources allocated for lead generation are used efficiently.</field>
+        </record>
+        <record id="que_15" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a LeadConversion System?</field>
+            <field name="yes_popup"> Good! Having a system for converting leads means you serious about taking customers in</field>
+            <field name="no_popup">Now that you have reached your market you must convert inquiries into paying customers. You need to have a system to formulate strategies that can convince prospective buyers to make purchase. This could be, for intance, promotions, a welcoming atmosphere in the store, people trained to welcome customers into your store.</field>
+        </record>
+        <record id="que_16" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Have a Cliet Fulfillment System?</field>
+            <field name="yes_popup">!Good! Having a system for converting customers into clients means your business is really serious about developing a good realtionship with your customers.</field>
+            <field name="no_popup">For a business to grow it is important to make sure customers are satisfied enough so that they will return later. A returning customer will become a client. To do this, the business has to build a good relationship with the customer to turn them into clients. To do this on a larger scale a system must make sure the good relationship formed between the business and its customers is preserved.</field>
+        </record>
+        <record id="que_17" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Have You Been Idenifying Your Strengths on a Monthly Basis?</field>
+            <field name="yes_popup">Good! Knowing your strenghts and checking it monthly is a good sign of trying to identify the health of your business relative to its strenghts.</field>
+            <field name="no_popup">Gauging your business strenght regularly is important. The business, should at first, list down its strenghts and place measurable indexes on each. This has to be evaluated and checked monthly to prevent complacency. Along with Weaknesses, Opportunities, and Threats, evaluating your business` strenght places how healthy your business is at this point.</field>
+        </record>
+        <record id="que_18" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Have You Been Idenifying Your Weakness on a Monthly Basis?</field>
+            <field name="yes_popup">Good! Knowing your weaknesses regularly will help your business make improvements and adjustments promptly.</field>
+            <field name="no_popup">Gauging the weaknesses of your business is as important as gauging your strenghts. This places you, as a business owner, along with your leaders, in a position to decide to make adjustments to minimize the impact of your business` weakness. More importantly, identifying your weakness may prevent your business from failing later on as you and your team, can make sound decisions to prevent failure from happening later on.</field>
+        </record>
+        <record id="que_19" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Already Kno The Opportunities on a Monthly Basis?</field>
+            <field name="yes_popup">Good! Regularly scanning opportunities around you is a good sign of proactive attitude that will help your business gain traction if opportunities are feasible.</field>
+            <field name="no_popup">Opportunities are favorable external factors that could potentially benefits your business if exploited properly. Growth can be achieved. Or in more dire circumstances, the survival of the business would depend on the proper action based on opportunities known.</field>
+        </record>
+        <record id="que_20" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Already Kno Your Threats on a Monthly Basis?</field>
+            <field name="yes_popup">Good! Regularly checking your threats to your business will help your leaders prevent potential lethal issues that might arise.</field>
+            <field name="no_popup">Threats are factors that will potentially harm an organization. This should be checked regularly as events, such as weather, government regulations, or, for instance the pandemic, will adversely affect your business. Evaluating the threats regularly can place your business leadership in a position to decide on actions that will prevent your business from failure.</field>
+        </record>
+        <record id="que_21" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Set Your Mothly Goals?</field>
+            <field name="yes_popup">Good! Setting goals regularly(such as monthly) is going to help your business eventually meet its annual goals.</field>
+            <field name="no_popup">Having stated goals each month is important in plotting the direction your business is heading in. You, as a CEO, can evaluate your business` performance and can make adjustments accordingly based on how your business has performed based on how monthly goals are meant.</field>
+        </record>
+        <record id="que_22" model="question.question">
+            <field name="question_type">marketing</field>
+            <field name="name">Do You Use Force Feld Analysis?</field>
+            <field name="yes_popup">Good! Being methodical in your decision-making process, such as using Force Field Analysis, is safer than deciding based on feeling.</field>
+            <field name="no_popup">Force field analysis is a decision-making tool used before making a change. Factors considered are, on one side, factors that will favor change, and on the other side are factors that will resist a change. This will prevent a decision made solely on ``feeling`` but rather on measurable factors that will be given grades and be considered in a balance manner. A decision will be made if the factors favoring change win out.</field>
+        </record>
+        <record id="que_23" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Do You Spend up to5% of your revenue for your marketing expenses?</field>
+            <field name="yes_popup">Good! Spending 5% of your revenue on your marketing expenses has been based on years of previous marketing experience and feedback from successful companies you are seeking</field>
+            <field name="no_popup">As a general rule of thumb in the marketing world, you should aim to spend between 2% and 5% of your sales revenue on marketing. This 5% rule has based on years of previous marketing experience and feedback from successful companies.</field>
+        </record>
+        <record id="que_24" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Does your social mdia activities produce and broadcast quality content which gives you a direct communication line with customers?</field>
+            <field name="yes_popup">Good! Staying in touch on social media through active engagements will help your product`s image and improve the rate of conversion of leads into customers.</field>
+            <field name="no_popup">Social media is a powerful tool use in advertising. Any content posted on your business page has the potential to be shared therby improving your products` visibility and reach. Staying in touch with the reactions and comments will help your product`s image and improve the rate of conversion of leads into customers.</field>
+        </record>
+        <record id="que_25" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Do You Have Marketng Collateral Like Business Cards, Flyers, and Brochures Ready?</field>
+            <field name="yes_popup">Good! You realize that these traditional forms of print-based media have a potential for multiple lead generation.</field>
+            <field name="no_popup">Paper-based advertising medium has the potential in reaching more than one possible lead. Occasionally, these are kept and referred to at a later time sometimes by a different person than the one these flyers and brochures were originally handed to. Business cards, on the other hand, are a statement of intent in building a lasting relationship with a lead.</field>
+        </record>
+        <record id="que_26" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Have You Identifie Your Competitor?</field>
+            <field name="yes_popup">Good! You know that your competitor is just as important as knowing your own business`s strenghts and weaknesses as well as your target market.</field>
+            <field name="no_popup">Knowing your competitor is just as knowing your strenghts and weaknesses as well as your target market. Company direction can be geared towards being better than your competitor by either learning from them or keeping up with their quality and pricing to gain a competitive advantage.</field>
+        </record>
+        <record id="que_27" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Do You Have the Ablity to Know Who's Most Likely to Buy Your Products?</field>
+            <field name="yes_popup">Good!You know that business aspects such as product design, quality, delivery, marketing, pricing, should be tuned to satisfy your target market.</field>
+            <field name="no_popup">All aspects of your business operations should be directed to delivering a promise to your customers. But your business leadership should know who to sell your products to. All aspects such as product design, quality, delivery, marketing, pricing, should tuned to satisfy your target market. In marketing, a campaign should be designed to send a message to a particular market segment that will probably make purchases.</field>
+        </record>
+        <record id="que_28" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Do You take every ossible moment to learn new things in improving your marketing skills?</field>
+            <field name="yes_popup">Good! You know that improving marketing skills is one way to help your business adapt to changes in the business environment.</field>
+            <field name="no_popup">A strong business should be sensitive to market sentiment. At times the composition of the market changes and business owners should be sensitivce to these changes in order to maintain the level of sales to survive and grow. Improving marketing skills is one way to help your business adapt to these changes.</field>
+        </record>
+        <record id="que_29" model="question.question">
+            <field name="question_type">finance</field>
+            <field name="name">Are You Actively Prticipating in Social Media?</field>
+            <field name="yes_popup">Good! Staying in touch with the reactions and comments will help your product`s image and imrpove the rate of conversion of leads into customers. Actively participating in social media helping you, or your marketing leader gets a feel of the market environment in real-time.</field>
+            <field name="no_popup">Social media is a powerful tool to use in advertising. Any content posted on your business page has the potential to be shared therby improving your products` visibility and reach. Staying in touch with reactions and comments will help your product`s image and improve the rate of conversion of leads. Actively participating in social media can help you, or your marketing leader gets a feel of the market environment in real-time.</field>
+        </record>
+        <record id="que_30" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Is Your Personal Credit Score Lower than 800?</field>
+            <field name="yes_popup">Good! With a score of 800, it will be very easy for you to borrow money from leaders wherever in the States.</field>
+            <field name="no_popup">FICO Scores are used by many lenders and often range from 300 to 850. Generally, a FICO Score above 670 is considered a good credit score on these models, and a score above 800 is usually perceived to be exceptional. With a score of 800, it will be very easy for a person to borrow money from lenders wherever in the States.</field>
+        </record>
+        <record id="que_31" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Is Your Business Credit Score Lower than 75?</field>
+            <field name="yes_popup">Good! With a business credit score of 75, it will be easier to get loans with good payment terms and depending on credit bureaus, lower interest rates.</field>
+            <field name="no_popup">A Business credit score between 75 and 80 can be considered ``medium risk`` among lenders. It will be easier to get loans with good payment terms and depending on credit bureaus, lower interest rates, if your business`s credit score is above 75 than below it.</field>
+        </record>
+        <record id="que_32" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do you invest inside of your business?</field>
+            <field name="yes_popup">Good! It`s like being a CEO drawing a salary from the business while leaving the profits to be cash assets that can be re-invested into the business when decided to.</field>
+            <field name="no_popup">Some business owners take all of the profit to be their income, they are, after all, the only stakeholders. However, some business owners draw a salary as a CEO while leaving the profits to be cash assets that can be re-invested into the business when decided to.</field>
+        </record>
+        <record id="que_33" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do you invest outside of your business?</field>
+            <field name="yes_popup">Good! To diversify you are using the savings generated from profit and placing it in another business to either bet on it making a sizeable profit or to gain some control in the affairs of that business.</field>
+            <field name="no_popup">Some business owners would opt to palce their stakes in another business outside its scope. They may use the savings generated from profit and place it in another business to either bet on it making a sizeable profit or to gain some control in the affairs of another business.</field>
+        </record>
+        <record id="que_34" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do You Have a Financial Adviser?</field>
+            <field name="yes_popup">Good! You have a Financial Adviser responsible for interpreting financial data to make recommendations that will help in your business`s financial health.</field>
+            <field name="no_popup">A strong business requires sound financial decisions. A Financial Adviser responsible for interpreting financial data to make recommendations that will help in a business`s financial health.</field>
+        </record>
+        <record id="que_35" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do You Use Quickbooks for your Finance Processes?</field>
+            <field name="yes_popup">Good! Using Quickbooks is helping you and your accountant keep your financial matters in order.</field>
+            <field name="no_popup">Quickbooks is an accounting software package geared mainly toward small and medium-sized business enterprises and offer on-premise accounting applications as well as cloud-based versions that accept business payments, manage and pay bills, and payroll functions.</field>
+        </record>
+        <record id="que_36" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do You Use Odoo for your Finance Processess?</field>
+            <field name="yes_popup">Good! You are using a suite of business management software tools including CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management among others that are helping your business keep up with all the important financial data in close touch.</field>
+            <field name="no_popup">Unlike Quickbooks, Odoo is a suite of business management software tools including CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management among others</field>
+        </record>
+        <record id="que_37" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do You Use Xero for your Finance Processess?</field>
+            <field name="yes_popup">Good!  Using Xero is helping you and your accountant keep your financial matters in order.</field>
+            <field name="no_popup">Like Quickbooks, Xero is an accounting software package also designed and targeted for small and medium-sized business enterprises for their accounting applications.  Features include business payments, manage and pay bills, payroll functions, and managing tax payment schedules.</field>
+        </record>
+        <record id="que_38" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do You Use FreshBooks for Your Finance Processes?</field>
+            <field name="yes_popup">Good! Using FreshBooks is helping you and your accountant keep up your financial matters in order.</field>
+            <field name="no_popup">Freshbooks is an accounting management software whose features include invoicing, accounts payable, expense tracking, time tracking, retainers, fixed asset depreciation, purchase orders, payroll integration, double-entry accounting, and industry-standard business and management reporting. Data are stored in a cloud and can be accessed anywhere regardless of location.</field>
+        </record>
+        <record id="que_39" model="question.question">
+            <field name="question_type">team_development</field>
+            <field name="name">Do You Take Every Possible Moment to Learn New Things in Improving You Financial Reporting Skills?</field>
+            <field name="yes_popup">Good! You realize that to aspire for growth, you need to constantly find ways to make financial data reporting easier and readily available.</field>
+            <field name="no_popup">Making sound financial decisions are very important in maintaining the health and well-being of your business enterprise. But to aspire for growth, the business owner needs to constantly find ways to make financial data reporting easier and readily available. Therefore seeking ways to improve financial reporting skills is a necessary action to achieve this.</field>
+        </record>
+
+        <!-- Lead Generation System -->
+        <record id="que_40" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Marketing Manager?</field>
+            <field name="yes_popup">Good! Having a Marketing Manager is helping you develop marketing and pricing strategies, generate leads, and oversee your business` marketing staff. Your Marketing Manager should help you make business decisions based on marketing trends and sales performance.</field>
+            <field name="no_popup">A Marketing Manager is in charge of promoting your business, services, products and br/ands. A Marketing Manager will help you develop marketing and pricing strategies, generate leads, and oversee your business` marketing staff. Your Marketing Manager should help you make business decisions based on marketing trends and sales performance.</field>
+        </record>
+        <record id="que_41" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Copywriter?</field>
+            <field name="yes_popup">Good! Having a copywriter is like having a salesman but is focused on using writing skills, to apply in various media.</field>
+            <field name="no_popup">A copywriter is a salesman that uses words to convey your business` promise of delivering satisfactions for your products to all your customers. A copywriter can use different mediums such as print ads, websites, blogs, promotional materials, etc.</field>
+        </record>
+        <record id="que_42" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have an SEO expert?</field>
+            <field name="yes_popup">Good! You realize the importance of gaining leads is by improving your reach and exposure by having your webpage queueing first when searched on the internet.</field>
+            <field name="no_popup">A SEO (Search Engine Optimization) expert will study websites for enhancement, have a thorough knowledge of keyword research, know SEO copywriting to make sure your business` website can queue first when searched thereby improving your business` visibility and reach on the internet.</field>
+        </record>
+        <record id="que_43" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Video Editor?</field>
+            <field name="yes_popup">Good! You have help in reaching out to leads by using one of today’s powerful marketing tools:  videos.</field>
+            <field name="no_popup">A video editor oversees the video content to be put out by your business.  Not only will your video editor make a video watchable but should also respond to the recommendations of the business owner or marketing manager to preach a message that will reflect your business and product image to your customers.</field>
+        </record>
+        <record id="que_44" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Graphic Designer?</field>
+            <field name="yes_popup">Good!  Having graphic designers on board will help your marketing campaign with visible and easily relatable content through powerful imagery.</field>
+            <field name="no_popup">Graphic designers combine art and technology to communicate your business’ message through images and layout of web screens and printed pages.  They work on various media and develop their overall layout and production design.</field>
+        </record>
+        <record id="que_45" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Social Media Manager?</field>
+            <field name="yes_popup">Good!  By having your own social media manager, you realize the potential of gaining more reach through this medium.  Moreover, you also can reach out to your customers directly through social media.</field>
+            <field name="no_popup">A social media manager oversees content posted on social media apps to make sure your business’ message and image are clearly expressed.  A social media manager should also be capable of using techniques to gain a wider reach among social media apps by coordinating with the marketing team.</field>
+        </record>
+        <record id="que_46" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Bookkeeper?</field>
+            <field name="yes_popup">Good!  Having a bookkeeper is helping you organize the flow of cash going in, going out, and staying in your company.  You realize that having a bookkeeper’s help in keeping fiscal affairs in order is very important in keeping the health of your business.</field>
+            <field name="no_popup">A well-run business requires its financial records to be accurate.  A bookkeepers job is to make sure all financial records are kept in order and checked for accuracy.</field>
+        </record>
+        <record id="que_47" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have an Accountant?</field>
+            <field name="yes_popup">Good!  Having hired an accountant is helping you keep your financial affairs in order.  Moreover, your accountant can keep up with schedules of payments and is helping you keep in step with government regulations.</field>
+            <field name="no_popup">An accountant is a professional responsible for keeping and interpreting financial records.  They are also tasked to ensure the accuracy of financial documents and compliance with relevant laws and regulations.  Among other tasks, they are responsible for preparing tax documents and ensure that these are paid on time.  Wider responsibilities can include preparing financial reports and making recommendations to help your business cut cost and maximize profits legally.</field>
+        </record>
+        <record id="que_48" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Sales Person?</field>
+            <field name="yes_popup">Good!  Having someone at the counter, or going door-to-door is helping you concentrate in other important matters on your business.</field>
+            <field name="no_popup">The general term of a salesperson is an employee whose primary responsibility is to reach out to clients to make a sale.  This could include a store employee who will approach prospective customers, an employee who goes door-to-door to demonstrate your product or an employee who makes cold calls to attempt to attract prospective customers, among others.</field>
+        </record>
+        <record id="que_49" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have an Operations Manager?</field>
+            <field name="yes_popup">Good!  Having someone in charge of material flow and production through an operations manager is freeing you up to look after all the other important segments of your business such as marketing, finance, customer relations, among others.</field>
+            <field name="no_popup">An operations manager is responsible for the aspects of operations and production within a company.  An operations manager oversees the production of goods and does whatever is possible to increase the efficiency of the business.</field>
+        </record>
+        <record id="que_50" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Customer Service Representative?</field>
+            <field name="yes_popup">Good!  Having a customer service representative is helping you preserve the good relations you have with your customers by being able to respond to your customers promptly.</field>
+            <field name="no_popup">A customer service representative answer questions or requests from customers or the public.  They typically provide services by phone, but some also interact with customers face to face, by email or text, via live chat, and through social media.</field>
+        </record>
+        <record id="que_51" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Does Every Team Member Understands Company's Goals, Products, and Capabilities?</field>
+            <field name="yes_popup">Good!  You know that having a strong business is having your entire team sharing the same goals with you by also being able to understand your company’s products and capabilities.</field>
+            <field name="no_popup">A strong business should have all employees share a common vision and mission.  One way to do this is for all team members to have a proper grasp and knowledge of the company’s goals, products, and capabilities.  This way it is easier for the business leaders to set the company direction and reach company goals efficiently.</field>
+        </record>
+        <record id="que_52" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Does You Have a Marketing Leader Who Is Responsible for Stating What Your Company Promises to Your Clients?</field>
+            <field name="yes_popup">Good!  You realize that a strong business delivers on a promise to its clients.  Having a Marketing Manager preserve this is very important.</field>
+            <field name="no_popup">The objective of running a business is to deliver a product related to the needs of its target market.  A marketing leader should be aware of the fact that, to deliver these needs, it has to start with a promise and ensure its delivery.</field>
+        </record>
+        <record id="que_53" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Finance Leader Who Is Responsible for Managing the Credibility and Accountability of Your Company's Finances?</field>
+            <field name="yes_popup">Good!  You realize that your business needs a financial leader to stay on top of managing the credibility and accountability of your company’s finances.  Your finance manager is helping you make sound decisions based on financial data.</field>
+            <field name="no_popup">The strongest parameter used in making proper business decisions is having accurate and credible financial data.  A Finance Leader should make sure that proper accountability is preserved constantly to avoid: driving the business into more debts, making rash financial decisions, running into legal troubles, and acquiring unnecessary assets among others.</field>
+        </record>
+        <record id="que_54" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Human Resource Leader Who is Responsible for Managing the Quality of the Leads that Come to Your Company?</field>
+            <field name="yes_popup">Good!  You realize that a strong business has a human resource leader looking after the development of your entire team.  The goals you set for your business can be easily achieved if your team is well developed and shares in your mission and vision.</field>
+            <field name="no_popup">A successful company should be robust and adaptable to ever-changing business conditions.   Change is always expected and improvement of employees is the most important way to adapt to changes.  The Human Resource Leader should be sensitive to the requirements of all employees to help the business to be adaptable by initiating and overseeing the development of skills, mindset, and culture among others.</field>
+        </record>
+        <record id="que_55" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Lead Generations Leader Who's Responsible for Managing the Quality of the Leads that Come to Your Company?</field>
+            <field name="yes_popup">Good!  You have a Lead Generation Leader being able to manage how relationships between your company and prospective clients are cultivated by being able to be knowledgeable about their needs and to be able to deliver on your company’s promises efficiently.</field>
+            <field name="no_popup">The Lead Generation Leader should not only be just in charge of advertising and maximizing your business’ visibility and reach. The Lead Generation Leader should also be able to manage how relationships between your company and prospective clients can be cultivated by being able to be knowledgeable about their needs and to be able to deliver on your company’s promises efficiently.</field>
+        </record>
+        <record id="que_56" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have a Sales Leader Who's Responsible For Converting Leads to Clients?</field>
+            <field name="yes_popup">Good!  You have a Sales Leader who helps ensure a strong revenue stream by developing a good relationship with customers turning them into clients.</field>
+            <field name="no_popup">A successful business needs a marketing system that converts leads into paying customers.  But in front of this system facing the customers is the Sales Team.  The Sales Leader should be able to help ensure a strong revenue stream by developing a good relationship with customers.  A customer that keeps coming back is called clients.</field>
+        </record>
+        <record id="que_57" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have an Operations Leader Who's Responsible for Products or Service Fulfillment including Shipping if Necessary?</field>
+            <field name="yes_popup">Good! You have an operations Leader being able to satisfy and fulfill its responsibility by ensuring the products are delivered in time with whatever means, that is legally plausible, if necessary.</field>
+            <field name="no_popup">An Operations Leader is responsible for the aspects of operations and production within a company.  But the Operations Leader should be able to satisfy and fulfill its responsibility by ensuring the products are delivered in time with whatever means, that is legally plausible, necessary.</field>
+        </record>
+        <record id="que_58" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have Reliable Recruiting Data That Gives You The Complete Picture of Your Hiring Activity?</field>
+            <field name="yes_popup">Good!  You realize that hiring activities should rely on accurate data to make sure the proper slots are filled-up with qualified personnel.</field>
+            <field name="no_popup">Preserving a strong team will rely on being able to hire the right persons for the job that will be assigned to them.  This will help training your future employees easier.  Later on, this will make it easier for employees to share in your mission and vision for your company once they are hired and working.  But hiring activities should rely on accurate data to make sure the proper slots are filled-up with qualified personnel.</field>
+        </record>
+        <record id="que_59" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Is Your Org Chart Already Filled-Out?</field>
+            <field name="yes_popup">Good, you realize that a strong business organization should have all components of its Organizational Chart properly filled-out.</field>
+            <field name="no_popup">An Organizational Chart in a business outlines the hierarchy in a company.  It is also an illustration of the delegation of responsibility by showing in simple terms who will be directly accountable to whom.  Depending on the size of the company an organization chart can come in many shapes and sizes.  Ideally, a strong business organization should have all components of its Organizational Chart properly filled-out.</field>
+        </record>
+        <record id="que_60" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Delegate Responsibilities You Enjoy To Your Employees So They Could Develop Their Skills and Free-up Your Time?</field>
+            <field name="yes_popup">Good!  You realize that leaving a favorite task is necessary to oversee the bigger picture of the business such as studying the prospects for growth or allocating time for marketing.  You know that a well-run business should have business owners who place a premium on improving their employees’ skills to allow for the business owners to take on other tasks that will be vital to the business’ growth.</field>
+            <field name="no_popup">To aspire for growth, business owners should be able to work on their business rather than staying in the business.  That is, business owners may tend to stay on doing what they enjoy doing for as long as they are running their business.  Leaving a favorite task is necessary in order to oversee the bigger picture of the business such as studying the prospects for growth or allocating time for marketing.  A well-run business should have business owners who place a premium on improving their employees’ skill to allow for the business owners to take on other tasks that will be vital to the business’ growth.</field>
+        </record>
+        <record id="que_61" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Consider Having a Complete Remote Workforce?</field>
+            <field name="yes_popup">Good!  You realize that due to limitations presented by space, personnel cost, and availability of specialized skills, your business outsources some of its business functions.  For instance, customer service representatives, e-mail teams, and telemarketers are assigned to companies that can provide these services remotely.</field>
+            <field name="no_popup">Once a business grows so will its workforce. But due to limitations presented by space, personnel cost, and availability of specialized skills, some businesses consider outsourcing some of their business functions.  For instance, customer service representatives, e-mail teams, and telemarketers are assigned to companies that can provide these services remotely.</field>
+        </record>
+        <record id="que_62" model="question.question">
+            <field name="question_type">lead_generation</field>
+            <field name="name">Do You Have the Flexibility of Hiring and Firing Your Employees Based On Your Project Demands?</field>
+            <field name="yes_popup">Good!  You realize that your products have demands that fluctuate seasonally.  You realize that to keep up with these regular changes, your business has to either sub-contract to make up for fluctuating demands or hire a surplus workforce to supplement the base requirement for employees on fixed terms.</field>
+            <field name="no_popup">Not all businesses can operate on constant volume production.  Some products have demands that fluctuate seasonally.  To keep up with these regular changes, businesses have to either sub-contract to make up for fluctuating demands or hire a surplus workforce to supplement the base requirement for employees on fixed terms.</field>
+        </record>
+
+        <!-- Lead Conversion System -->
+        <record id="que_63" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Does Your Explainer Video Clearly Gives Buyers Crisp and Intuitive Descriptions of Your Products and Services?</field>
+            <field name="yes_popup">Good!  This makes your videos easy to understand and relatable to your customers.  Videos done this way will help you make a sale through your videos.</field>
+            <field name="no_popup">Video is a powerful marketing tool.  But its advantages need to be exploited efficiently.  One efficient way of maximizing the impact of your videos is by presenting clearly to prospective buyers your product in an easy-to-understand and relatable manner.</field>
+        </record>
+        <record id="que_64" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Is Your Call To Action Clearly Visible?</field>
+            <field name="yes_popup">Good!  This means you are considering how your prospective customers behave when landing on your webpage.  A visible call to action makes it easy for them to do what you want them to.</field>
+            <field name="no_popup">Your prospective customer should find it easy to avail of your services once they enter your website or if they receive your emails.  If a lead has to leaf through your content there will be a small probability of not making a sale.  Call to Action is a clickable object in your website that will lead prospective leads to execute a deal.  This should be visible and smoothly in the flow of how your website is presented.</field>
+        </record>
+        <record id="que_65" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Have You Decided Your Target Market?</field>
+            <field name="yes_popup">Good!  That means you are on your way to giving your business the proper direction on how to design, make, and deliver your products.</field>
+            <field name="no_popup">All aspects of your business operations should be directed to delivering a promise to your customers.  But your business leadership should know who to sell your products to.  All aspects such as product design, quality, delivery, marketing, pricing, should be tuned to satisfy your target market.  In marketing, a campaign should be designed to send a message to a particular market segment that will probably make purchases.</field>
+        </record>
+        <record id="que_66" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Does Your Sales Team Use Live Chat Tools?</field>
+            <field name="yes_popup">Good!  This means your business is really serious about maintaining a good relationship with your customers.  Moreover, your business is using the current latest technology to improve your sales performance and customer relations.</field>
+            <field name="no_popup">One of the more important marketing trends today is being able to connect with your customers.  It is important to build a good relationship with your customers, being able to use live chat tools is one way to be in touch with them. This is one way to gather important data your business leadership can use to gauge the general well-being of your sales performance.</field>
+        </record>
+        <record id="que_67" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Do you Have Any Lead Generation Process Ready?</field>
+            <field name="yes_popup">Good!  Having a lead generation process in place is helping you gather prospective customers through different channels.  You also have a team looking at the data to help your business focus on its marketing campaign.</field>
+            <field name="no_popup">A Lead Generation Process is a system within, or outsourced, by your business organization whose primary aim is to gain potential customers.  A team handling this system could be running one or several of these tools to generate leads: Website; Social Media Page; YouTube Chanel; E-mail Marketing Team; Telemarketing Team; among others.</field>
+        </record>
+        <record id="que_68" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Does Your Lead Generation Script Discusses the Right Topics When Talking To Customers?</field>
+            <field name="yes_popup">Good!  This means your website and/or social media page easily turn site visits into paying customers easily.</field>
+            <field name="no_popup">The objective of lead generation tools is to ultimately turn site visits into paying customers.  Sending the right message of delivering a promise of a satisfying product should be held as a priority when considering constructing a website, e-mail, or the general marketing campaign.</field>
+        </record>
+        <record id="que_69" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Are You Creating Diversified Content to Help our Users?</field>
+            <field name="yes_popup">Good!  Diversifying your content by adding videos and images is going to help your site gain more visibility and reach.  This will thereby lead to more customers later on.</field>
+            <field name="no_popup">Diversification in content is important to expand your user base.   Adding content to your websites such as videos, long articles (which gains favorable SEO), and useful links will make site visits more pleasant to your users and will have a high probability of being shared.</field>
+        </record>
+        <record id="que_70" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Do You Have a De-cluttered Landing Page?</field>
+            <field name="yes_popup">Good!  You realize the behavior of your site visitors by making your landing page easy to scan.  Moreover, your call to action should be clear to achieve the objectives of your webpage.</field>
+            <field name="no_popup">A cluttered landing page on your website gives a bad impression on your business.  Not only is your message can’t be delivered properly, but the call to action will also be difficult to find, assuming your prospective customer will try to look for it.   For your website to work for you, the site visit must be as pleasant and easy for the user as possible.</field>
+        </record>
+        <record id="que_71" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Do You Go to Events and Expos That Can Help You In Generating Leads?</field>
+            <field name="yes_popup">Good!  This means you realize that this is one of the most effective ways to gather leads.  Being in trade events and expos exposes your products directly to leads interested in looking for something new.  You also realize the value of gaining a productive network that can help you expand your reach.</field>
+            <field name="no_popup">Trade shows and expos lead to more conversations, more leads, and more sales than any other marketing events and activities. Note that 92% of people attending expos and trade shows come to see new products and services.  This is a perfect opportunity to introduce a new product or an improved service for your business.  Most importantly, this is a perfect venue for getting in touch with your existing and prospective clients personally.</field>
+        </record>
+        <record id="que_72" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Do You Use Statistical Data About Your Most Probable Customer to Determine How You Will Communicate with Them?</field>
+            <field name="yes_popup">Good!  Using statistical data is a better gauge in knowing your probable customer than feeling does.  You realize that to aspire for growth, you need an analytical method of reaching out to your customers better.</field>
+            <field name="no_popup">Knowing your most probable customer is important.  But to retain your market you need to determine in measurable terms how to keep satisfying them.  The best way is to compile and read statistical data so your business leadership can make strong decisions accordingly.</field>
+        </record>
+        <record id="que_73" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Do You Rely On Your CRM Tool To Spot Trends And Optimize Your Lead Generation Efforts?</field>
+            <field name="yes_popup">Good!  You are using an excellent analytical tool to consolidate the data from multiple sources to help lead your lead generation efforts.</field>
+            <field name="no_popup">Customer Relationship Management (CRM) is one, or a set of tools (such as software) that manage your customer relationships across sales, marketing, customer service, and e-commerce.  Proper use of this will help business owners make strong decisions on how to improve or optimize their marketing strategy based on the data supplied by multiple sources.</field>
+        </record>
+        <record id="que_74" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Do You Have a Sales Funnel Using a CRM Ready?</field>
+            <field name="yes_popup">Good!  Your sales team is more efficient by designing their sales funnel using CRM tools.</field>
+            <field name="no_popup">A Sales Funnel is a process to turn leads into customers.  Using CRM to optimize your marketing strategy will help you build a good sales funnel to turn your leads into customers.  For example, if your Social Media holds promise then your sales funnel will be designed like this: Social Media-Webinar-Sales Demo-Purchase.</field>
+        </record>
+        <record id="que_75" model="question.question">
+            <field name="question_type">lead_conversion</field>
+            <field name="name">Does Your Website Load Fast?</field>
+            <field name="yes_popup">Good!  You have been considering that some prospective customers might be subjective to narrower bandwidths and can still access your website.</field>
+            <field name="no_popup">A well-designed website will help gather leads.  If the website design does not consider areas with lower bandwidths then your business could lose opportunities from prospective site visits in that area.</field>
+        </record>
+        <record id="que_76" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do You Use Sales Reports to Easily Understand Your Company's Sales Status?</field>
+            <field name="yes_popup">Good!  You realize that compiling sales data into reports will show you how your company’s sales are performing.  You know that reports can potentially tell more of the story than raw numbers can.</field>
+            <field name="no_popup">Sales reports are the most direct gauge in showing your business sales performance.  These reports need to properly illustrate how revenue is generated.  This means sales performance among product lines and to which market segments should be considered.  This will help business leaders to make good decisions relating to marketing strategy, pricing, and production among others.</field>
+        </record>
+        <record id="que_77" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Does Your Product Meet Your Custom er's Needs?</field>
+            <field name="yes_popup">Good!  You realize that one characteristic of a successful business is being able to satisfy its customers’ needs.</field>
+            <field name="no_popup">One primary consideration in starting a business is to respond to a customer’s needs.  Measurable data such as sales reports and market surveys are the best tools to place yourself in a proper position to determine if your product meets your customer’s needs.</field>
+        </record>
+        <record id="que_78" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do you Have Ways to Obtain More Email Addresses?</field>
+            <field name="yes_popup">Good!  You understand that email campaigns are one of the best ways to turn leads into customers.  Obtaining email addresses is an important step.</field>
+            <field name="no_popup">An e-mail campaign is a more personalized marketing tool that, if used properly, can turn leads into clients more efficiently than most marketing tools.  However, the quantity of emails sent is important.  Email addresses should also be sent to target markets to benefit your business efficiently.  A process of obtaining email addresses for your target market is important to make sure the percentages of leads turning into clients remain high.</field>
+        </record>
+        <record id="que_79" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do you send emails to Prospective buyers?</field>
+            <field name="yes_popup">Good!  You understand that email campaigns are one of the best ways to turn leads into customers.  Obtaining email addresses is an important step.</field>
+            <field name="no_popup">An e-mail campaign is a more personalized marketing tool that, if used properly, can turn leads into clients more efficiently than most marketing tools.  However, the quantity of emails sent is important.  Email addresses should also be sent to target markets to benefit your business efficiently.  A process of obtaining email addresses for your target market is important to make sure the percentages of leads turning into clients remain high.</field>
+        </record>
+        <record id="que_80" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do You Have an Email Manager?</field>
+            <field name="yes_popup">Good!  You understand that email is a powerful tool to turn leads into customers.  By having an email manager, you also have help in reaching out to your customers directly.</field>
+            <field name="no_popup">An email manager oversees marketing efforts using email as a medium.  An email manager is in charge of how the content of emails should be made and how the response should be made when: generating leads, converting leads, turning customers into clients, and responding to customer claims (or complaints).</field>
+        </record>
+        <record id="que_81" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do You Measure your lead conversion rate? (Meaning how many customers/How many leads)</field>
+            <field name="yes_popup">Good!  This means you monitor if your lead conversion efforts are bearing fruit.  This will help you decide which lead conversion efforts will yield more to save cost for you.</field>
+            <field name="no_popup">Lead conversion rate is used to judge if a lead conversion, or selling, effort is working or not.  This will help business owners and/or marketing team decide on which marketing strategy they will be employing.</field>
+        </record>
+        <record id="que_82" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do You Have Product Packages designed specifically for first customers? (example: Special offers, freebies, gifts)</field>
+            <field name="yes_popup">Good!  You are considering this as an investment to expand your customer base by offering leads a first taste of your product at lower prices.</field>
+            <field name="no_popup">Initial product offers can either offering products at a lower price or offering products at packaged bundles for first time buyers.  Merchants and business owners use this sales tactic to entice new customers or if they intend to penetrate a different market segment or if they are introducing a new product.</field>
+        </record>
+        <record id="que_83" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do You constantly follow-up on emails sent to prospective customers?</field>
+            <field name="yes_popup">Good!  You realize the value of following-up initial emails sent leads to a higher lead conversion rate.</field>
+            <field name="no_popup">Following-up initial emails sent at least 5 times result in 80% higher lead conversion rate.  If done well (say, personalized with a friendly tone) this will help nurture a good relationship between you, the business owner, and your prospective customers.</field>
+        </record>
+        <record id="que_84" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do any in your team engage directly with comments in your social media account?</field>
+            <field name="yes_popup">Good!  Engaging directly in social media account has a higher percentage of lead conversion for the least amount of cost and time</field>
+            <field name="no_popup">Social media is an excellent ground for generating leads.  Queries are a sign of generating leads.  Responding to these directly has a high chance of converting leads.</field>
+        </record>
+        <record id="que_85" model="question.question">
+            <field name="question_type">customer_fulfillment</field>
+            <field name="name">Do you take telephone skills seriously (for all those involved with talking directly with customers or prospective cuntomers)</field>
+            <field name="yes_popup">Good!  You know that being friendly over the telephone will prevent good relationships from being jeopardized and developing relationships with prospective customers.</field>
+            <field name="no_popup">Telephone (either by landline or by cel) is the most direct way of interacting with all people outside your business.  There will be some product queries that could come in.  Having good telephone skills is a way of building and nurturing good relationships with current and prospective clients.  Lacking good telephone skills can jeopardize the business by scaring away current and prospective customers</field>
+        </record>
+
+        <record id="que_86" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Do You Have Necessary Operations Report to Keep You On Top of Things?</field>
+            <field name="yes_popup">Good!  You stay on top of things by always having in hand your data operations report that includes material flow, productivity, quality performance, and scrappage rate among others.  This is helping you to preside over improvements that will help the enterprise run properly and in line with its goals.</field>
+            <field name="no_popup">Running a strong organization requires a business leader to keep in touch with day-to-day operations.  The most important data operations report should include material flow, productivity, quality performance, and scrappage rate among others.  This will help the business owner preside over improvements that will help the enterprise run properly and in line with its goals.</field>
+        </record>
+        <record id="que_87" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Do You Take Every Possible Moment to Learn New Things in Improving Your Customer Service Skills?</field>
+            <field name="yes_popup">Good! This means you address the concerns of your clients promptly, not only to prevent losing them but to gain more customers by making sure services are delivered that will satisfy them.</field>
+            <field name="no_popup">Building a good relationship with your client base is very important.  This means the concerns of your clients should be served in a timely manner, not only to prevent losing them but to gain more customers by making sure services are delivered that will satisfy them.  Customer satisfaction data has to be analyzed regularly to improve the relationship the business has with its customers.</field>
+        </record>
+        <record id="que_88" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Do You Use an Automated System in Managing Your Inventory?</field>
+            <field name="yes_popup">Good! You are helping lower the cost associated with keeping a certain level of inventory and also help with responding to fluctuating demands by controlling both supply and finished products through an automated system of managing your inventory.</field>
+            <field name="no_popup">Hidden costs and cash leaks can appear after taking into account the total inventory.  Implementing an automated system in managing your inventory cuts short the time required to do this properly.  Moreover, inventory can be managed in real-time.  This will help lower the cost associated with keeping a certain level of inventory and help with responding to fluctuating demands by controlling both supply and finished products.</field>
+        </record>
+        <record id="que_89" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Do You Want to Improve the Order Fulfillment Process in Your Warehouse?</field>
+            <field name="yes_popup">Good!  You will be achieving lower inventory costs and improve customer satisfaction by improving the time between production to delivery of products through an order fulfillment process implemented in your warehouse.</field>
+            <field name="no_popup">Order fulfillment process typically involves receiving foods, short-term storage in a warehouse in the distribution center, customer order processing (picking and packaging), and shipping and logistics.  A business to aspire for growth will need to consider improving the efficiency of this process.  This will achieve a lower inventory cost and improve customer satisfaction by improving the time between production to delivery of products.</field>
+        </record>
+        <record id="que_90" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Does your company solicit customer feedbacks?</field>
+            <field name="yes_popup">Good!  You realize that to maintain a good relationship with your customers, you solicit customer feedback through various fronts such as asking customers to fill up survey forms, asking customers directly through phone or email, or reviewing comments posted online among others.</field>
+            <field name="no_popup">Maintaining a good relationship with customers requires business owners to gauge how customers feel about the quality of products and services purchased.  One way is to solicit customer feedbacks through various fronts such as asking customers to fill up survey forms, asking customers directly through phone or email, or reviewing comments posted online among others.</field>
+        </record>
+        <record id="que_91" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Does your company maintain proactive customer relation?</field>
+            <field name="yes_popup">Good!  You are maintaining good relationships with customers by gauging how customers feel about the quality of products and services purchased.  You are looking for ways to seek all possible channels to stay in touch with customer sentiment.</field>
+            <field name="no_popup">Maintaining a good relationship with customers requires business owners to gauge how customers feel about the quality of products and services purchased.  Another way is to seek all possible channels to stay in touch with customer sentiment.  The company should be able to respond to these actively.</field>
+        </record>
+        <record id="que_92" model="question.question">
+            <field name="question_type">form_submission</field>
+            <field name="name">Do you put extra effort into meeting your client requirements?</field>
+            <field name="yes_popup">Good!  You can enhance the image of your business by being able to respond to the requirements of your clients promptly.  Actively reaching out to your clients is one way to make them feel that there is a good relationship between them and your company.</field>
+            <field name="no_popup">Building relationship with your clients is vital to your business’s growth.  Being able to respond to their requirements in promptly will help enhance the image of your company.  Actively reaching out to your clients is one way to make them feel that there is a good relationship between them and your company.</field>
+        </record>
+    </data>
+</odoo>

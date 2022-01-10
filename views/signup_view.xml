@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="auth_signup.signup" name="Sign up login">
+    <t t-call="web.login_layout">
+      <div id="wrap" class="signup_wrap">
+        <section id="sign-up" class="container-fluid">
+	        <div class="row">
+	            <div class="column-left container">
+	                <div class="title">
+	                    <h2>Sign Up</h2>
+	                    <p>Sign up for faster checkout</p>
+	                </div>
+	                <form id="sign-up-form" class="" role="form" method="post" t-if="not message">
+	                		<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+	                		<p class="alert alert-danger" t-if="error" role="alert">
+		                        <t t-esc="error"/>
+		                    </p>
+	                        <div class="form-group">
+	                            <input type="text" id="firstname" style="margin-bottom: -15px;" name="firstname" class="form-control padz" placeholder="First Name" required="required"/>
+	                            <!-- <label for="First Name" invisible="1">First Name</label> -->
+	                        </div>
+	                        <br/>
+	                        <div class="form-group">
+	                            <input type="text" id="lastname" style="margin-bottom: -15px;" name="lastname" class="form-control padz" placeholder="Last Name" required="required"/>
+	                            <!-- <label for="Last Name" invisible="1">Last Name</label> -->
+	                        </div>
+	                        <br/>
+	                        <div class="form-group">
+	                            <input type="text" id="company_name" name="company_name" class="form-control padz" placeholder="Company" required="required"/>
+	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <input type="url" id="website_link" name="website_link" class="form-control padz" placeholder="Website URL(Ex. https://officehuddle.com)" required="required"/>
+	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <input type="text" id="bussiness_phone" name="bussiness_phone" class="form-control padz" placeholder="Bussiness phone" required="required"/>
+	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <input required="required" id="login" type="email" name="login" class="form-control padz" placeholder="Email"/>
+	                            <!-- <label for="Email" hidden>Email</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <input required="required" id="login_confirm" type="email" name="login_confirm" class="form-control padz" placeholder="Confirm Email"/>
+	                            <!-- <label for="Confirm Email" hidden>Confirm Email</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <input type="password" required="required" id="password" name="password" class="form-control padz" placeholder="Password"/>
+	                            <!-- <label for="Passowrd" hidden>Password</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <input type="password" required="required" id="confirm_password" name="confirm_password" class="form-control padz"
+	                                placeholder="Confirm Password"/>
+	                            <!-- <label for="Confirm Password" hidden>Confirm Passowrd</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="referrer_type"><b>Referrer Type</b></label>
+	                            <br/>
+	                            <select required="required" name="referrer_type" id="referrer_type" form="sign-up-form" style="padding: 10px;">
+	                                <option value="">Please Select an Option</option>
+	                                <option value="Bing">Bing</option>
+	                                <option value="Coupon">Coupon</option>
+	                                <option value="Facebook">Facebook</option>
+	                                <option value="Google">Google</option>
+	                                <option value="Instagram">Instagram</option>
+	                                <option value="LinkedIn">LinkedIn</option>
+	                                <option value="MailAdvertisement">Mail Advertisement</option>
+	                                <option value="MSN">MSN</option>
+	                                <option value="Other">Other</option>
+	                                <option value="RadioAdvertisement">Radio Advertisement</option>
+	                                <option value="Reddit">Reddit</option>
+	                                <option value="ReferralsorFriends">Referrals or Friends</option>
+	                                <option value="ReturningCustomer">Returning Customer</option>
+	                                <option value="SportsAdvertisement">Sports Advertisement</option>
+	                                <option value="TikTok">TikTok</option>
+	                                <option value="Tradeshow">Tradeshow</option>
+	                                <option value="TVAdvertisement">TV Advertisement</option>
+	                                <option value="Yahoo">Yahoo</option>
+	                                <option value="Youtube">Youtube</option>
+	                            </select>
+	                        </div>
+	                        <div>
+	                        	<div class="row">
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label>How many employees do you have?</label>
+										<input type="text" name="employees" class="form-control invalid" id="employees" required="required"/>
+									</div>
+
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label><b>WHAT WAS YOUR ANNUAL REVENUE?</b></label>
+										<select list="leaders" placeholder="Please Select" class="form-control" name="annual" cols="50">
+
+											<option value="0-50K"> 0-50K </option>
+											<option value="50K-100K"> 50K-100K </option>
+											<option value="100K-200K"> 100K-200K </option>
+											<option value="200K-500K"> 200K-500K </option>
+											<option value="500K-1M"> 500K-1M </option>
+											<option value="1M-5M"> 1M-5M </option>
+											<option value="OVER 5M"> OVER 5M </option>
+
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<label>How many leaders report directly to you?</label>
+										<select list="leaders" placeholder="Please Select" class="form-control" name="leaders" cols="50">
+											<option value="1"> 1 </option>
+											<option value="2"> 2 </option>
+											<option value="3"> 3 </option>
+											<option value="4"> 4 </option>
+											<option value="5"> 5 </option>
+											<option value="6"> 6 </option>
+											<option value="7"> 7 </option>
+										</select>
+									</div>
+
+									<div class="col-md-6 form-group">
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 form-group">
+										<label>What month and year did you start your business?</label>
+										<input type="date" id="business_date" required="required" name="business_date" cols="50" class="form-control invalid"/>
+									</div>
+
+									<div class="col-md-6 form-group ">
+
+									</div>
+								</div>
+							</div>
+	                        <div class="form-group">
+	                            <br/>
+	                            <p>Do you want to receive discount and the latest product information?</p><br/><br/>
+	                            <div class="toggle-button-cover">
+	                                <div class="button-cover">
+	                                    <div class="button b2" id="button-16">
+	                                        <input type="checkbox" name="is_need_product_info" id="is_need_product_info" class="checkbox"/>
+	                                        <div class="knobs"></div>
+	                                        <div class="layer"></div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <input type="checkbox" id="agreement" name="agreement" value="agreement" required="required"/>
+	                            <label for="agreement">I agree to the <a href="#">Terms and Conditions</a>.</label><br/><br/>
+	                        </div>
+	                        <div class="form-group">
+	                        	<input type="checkbox" name="is_correct_captcha" id="is_correct_captcha" class="checkbox" required="required"/>
+	                        </div>
+	                        <div class="wrapper">
+	                            <div class="captcha-area">
+	                                <div class="captcha-img">
+	                                    <img src="/wt_office_hunddle/static/src/signup/captcha-bg.png" alt="Captch Background"/>
+	                                    <span class="captcha"></span>
+	                                </div>
+	                                <div style="padding:5px;color:#b90e0e;border: solid;text-align: center;" class="reload-btn"><i class="fa fa-refresh" style="color: #7b7474;font-size: 25px;text-align: center;"></i></div>
+	                            </div>
+	                            <div class="input-area">
+	                                <input type="text" id="captcha" name="captcha" placeholder="Enter captcha" maxlength="6" spellcheck="false" required="required"/>
+	                                <div style="padding:10px; background-color:cyan;" class="check-btn">Check</div>
+	                                <div class="status-text"></div>
+	                            </div>
+	                        </div>
+	                    <!-- <button class="sign-btn">Sign Up</button> -->
+	                    <div class="text-center oe_login_buttons pt-3">
+	                        <button type="submit" class="btn btn-primary btn-block sign-btn" style="max-width: 30% !important;"> Sign up</button>
+	                        <!-- <a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm" role="button">Already have an account?</a> -->
+	                        <div class="o_login_auth"/>
+	                    </div>
+	                </form>
+	            </div>
+	            <div class="column-right container">
+	                <div class="title">
+	                    <h2>Log In</h2>
+	                    <p>Have an account?<a href="/web/login"> Log In</a></p>
+	                </div>
+	                <div class="col col-sm col-md col-lg col-xl"> 
+	                    <img src="/wt_office_hunddle/static/src/signup/check.png" width="70px" align="left" style="margin-right: 10px;"/>
+	                    <h5>Faster Checkout</h5>
+	                    <p>Store multiple shipping addresses and<br/>
+	                    payment options for a faster checkout.</p><br/>
+	                </div>
+	                <div class="col col-sm col-md col-lg col-xl">
+	                    <img src="/wt_office_hunddle/static/src/signup/check.png" width="70px" align="left" style="margin-right: 10px;"/>
+	                    <h5>Quick  Easy Reorders</h5>
+	                    <p>Running out? Easily order more with a single click.</p><br/>
+	                </div>
+	                <div class="col col-sm col-md col-lg col-xl">
+	                    <img src="/wt_office_hunddle/static/src/signup/check.png" width="70px" align="left" style="margin-right: 10px;"/>
+	                    <h5>Track Order Status</h5>
+	                    <p>Access your account and track your oders with ease.</p><br/>
+	                </div>
+	                <div class="col col-sm col-md col-lg col-xl">
+	                    <img src="/wt_office_hunddle/static/src/signup/check.png" width="70px" align="left" style="margin-right: 10px;"/>
+	                    <h5>Save Your Designs</h5>
+	                    <p>Don't want to lose your order designs?<br/>
+	                    Save them in your account!</p><br/>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+        <!-- <section class= "bg-white">
+          <div class="" style="padding: 0;">
+            <div class="row">
+              <div class="credits col-lg-6" style="width: 100%; margin-left: 25%;margin-top: -6%;">
+                <div class="container d-flex align-items-center">
+                  <a href="index.html" class="lep"><img src="/wt_office_hunddle/static/src/customerportal/OH_Logo.png" alt="" class="img-fluid" width="250px" /></a>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                  <div class="mid">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-soundcloud"></a>
+                  <a href="#" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  </div>
+                  <div class="rit">
+                  <a href="tel:6013489977"><i class="bi bi-telephone-inbound" aria-hidden="true"></i>601-348-9977</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      </div>
+    </t>
+  </template>
+</odoo>

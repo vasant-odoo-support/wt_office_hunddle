@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="web.frontend_layout" name="Frontend Layout" inherit_id="web.layout" primary="True">
+        <xpath expr="//head/link[last()]" position="after">
+            <t t-call-assets="web.assets_common" t-js="false"/>
+            <t t-call-assets="web.assets_frontend" t-js="false"/>
+        </xpath>
+        <xpath expr="//head/script[@id='web.layout.odooscript'] | //head/script[last()]" position="after">
+            <script type="text/javascript">
+                odoo.session_info = <t t-raw="json.dumps(request.env['ir.http'].get_frontend_session_info())"/>;
+            </script>
+            <t t-call-assets="web.assets_common_minimal_js" t-css="false" defer_load="True"/>
+            <t t-call-assets="web.assets_frontend_minimal_js" t-css="false" defer_load="True"/>
+            <t t-call="web.conditional_assets_tests"/>
+            <t t-call-assets="web.assets_common_lazy" t-css="false" lazy_load="True"/>
+            <t t-call-assets="web.assets_frontend_lazy" t-css="false" lazy_load="True"/>
+        </xpath>
+        <xpath expr="//t[@t-raw='0']" position="replace">
+            <div id="wrapwrap" t-attf-class="#{pageName or ''}">
+                <header t-if="not no_header" id="top" data-anchor="true">
+                    <img class="img-responsive d-block mx-auto"
+                        t-attf-src="/web/binary/company_logo"
+                        alt="Logo"/>
+                </header>
+                <main>
+                    <t t-raw="0"/>
+                </main>
+                <footer t-if="not no_footer" id="bottom" data-anchor="true" class="bg-light o_footer">
+                    <div id="footer"/>
+                    <div class="o_footer_copyright">
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-sm text-center text-sm-left text-muted">
+                                    <t t-call="web.debug_icon"/>
+                                    <span>Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name">Company name</span>
+                                </div>
+                                <div class="col-sm text-center text-sm-right">
+                                    <t t-call="web.brand_promotion"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="web.login_layout" name="Login Layout">
+        <t t-call="web.frontend_layout">
+            <t t-set="html_data" t-value="{'style': 'height: 100%;'}"/>
+            <t t-set="body_classname" t-value="'bg-100'"/>
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+
+            <div class="container py-5">
+                <div t-attf-class="card border-0 mx-auto bg-100 {{login_card_classes}} o_database_list" style="max-width: 300px;">
+                    <div class="card-body">
+                        <div t-attf-class="text-center pb-3 border-bottom {{'mb-3' if form_small else 'mb-4'}}">
+                            <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}" alt="Logo" style="max-height:120px; max-width: 100%; width:auto"/>
+                        </div>
+                        <t t-raw="0"/>
+                        <div class="text-center small mt-4 pt-3 border-top" t-if="not disable_footer">
+                            <t t-if="not disable_database_manager">
+                                <a class="border-right pr-2 mr-1" href="/web/database/manager">Manage Databases</a>
+                            </t>
+                            <a href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" target="_blank">Powered by <span>Odoo</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="web.login" name="Login">
+        <t t-call="web.login_layout">
+            <!-- ======= Breadcrumbs ======= -->
+            <div class="breadcrumbs">
+                <div class="container">
+                  <p>OFFICEHUDDLE: Increasing Business Success Using Professional and Proven Tools. </p>
+                </div>
+            </div><!-- End Breadcrumbs -->
+            <div class="row main-background">
+                <div class="col-lg-6 order-2 order-lg-1 align-items-center" data-aos="fade-right">
+                    <form class="oe_login_form form-custom" role="form" t-attf-action="/web/login" method="post" onsubmit="this.action = this.action + location.hash">
+                        <div class="form-containt-left">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <h2 style="color:black;" class="text-left"><b>Log In</b></h2>
+                            <div class="form-group field-db mt-4" t-if="databases and len(databases) &gt; 1">
+                                <!-- <label for="db" class="col-form-label">Database</label> -->
+                                <div t-attf-class="input-group {{'input-group-sm' if form_small else ''}}">
+                                    <input type="text" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/>
+                                    <span class="input-group-append">
+                                        <a role="button" href="/web/database/selector" class="btn btn-secondary">Select <i class="fa fa-database" role="img" aria-label="Database" title="Database"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group field-login mt-4">
+                                <!-- <label for="login">Email</label> -->
+                                <input type="text" placeholder="Email Address" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autofocus="autofocus" autocapitalize="off"/>
+                            </div>
+
+                            <div class="form-group field-password mt-4">
+                                <!-- <label for="password">Password</label> -->
+                                <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+                            </div>
+
+                            <p class="alert alert-danger" t-if="error" role="alert">
+                                <t t-esc="error"/>
+                            </p>
+                            <p class="alert alert-success" t-if="message" role="status">
+                                <t t-esc="message"/>
+                            </p>
+                            <div class="form-group mt-4">
+                                <span class="psw">Forgot password? <a href="/web/reset_password">Reset your password</a></span>
+                            </div>
+                            <div t-attf-class="clearfix oe_login_buttons text-center mb-1 {{'pt-2' if form_small else 'pt-3'}}">
+                                <button type="submit" class="btn btn-primary btn-block login-button-custom">Log in</button>
+                                <!-- <t t-if="debug">
+                                    <button type="submit" name="redirect" value="/web/become" class="btn btn-link btn-sm btn-block">Log in as superuser</button>
+                                </t> -->
+                                <div class="o_login_auth"/>
+                            </div>
+                            <input type="hidden" name="redirect" t-att-value="redirect"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 pt-4 pt-lg-0 text-center custom-second-part" style="padding-top: 20%;">
+                    <div class="form-containt-right">
+                        <h1>GETTING <b>RELIABLE HELP</b> HAS</h1>
+                        <h1>NEVER BEEN</h1>
+                        <h1><b>EASIER</b></h1>
+                        <img src="/wt_office_hunddle/static/src/login/Layer 3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="auth_signup.login" inherit_id="web.login" name="Sign up - Reset Password">
+        <xpath expr="//button[@type='submit']" position="after">
+            <div class="justify-content-between mt-2 d-flex small">
+                <a t-if="signup_enabled" t-attf-href="/web/signup?{{ keep_query() }}">Don't have an account?</a>
+                <!-- <a t-if="reset_password_enabled" t-attf-href="/web/reset_password?{{ keep_query() }}">Reset Password</a> -->
+            </div>
+        </xpath>
+    </template>
+    <template id="auth_oauth.providers" name="OAuth Providers">
+        <t t-if="len(providers) &gt; 0">
+            <em style="display:none !important;" t-attf-class="d-block text-center text-muted small my-#{len(providers) if len(providers) &lt; 3 else 3}">- or -</em>
+            <div style="display:none;" class="o_auth_oauth_providers list-group mt-1 mb-1 text-left">
+                <a t-foreach="providers" t-as="p" class="list-group-item list-group-item-action py-2" t-att-href="p['auth_link']">
+                    <i t-att-class="p['css_class']"/>
+                    <t t-esc="p['body']"/>
+                </a>
+            </div>
+        </t>
+    </template>
+</odoo>

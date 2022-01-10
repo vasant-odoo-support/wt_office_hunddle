@@ -1,0 +1,76 @@
+.main-background{
+    width: 100%;
+    height: auto;
+    background: url("/wt_office_hunddle/static/src/login/background.png") center center;
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.breadcrumbs {
+    text-align: center;
+    background-color: #292929;
+    color: #c4c4c4;
+}
+
+.breadcrumbs p{
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.main-background .form-custom{
+    max-width: 60%;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 30%;
+}
+.main-background .custom-second-part{
+    margin-top: 7%;
+}
+.main-background .form-containt-right{
+    margin-right: 25%;
+}
+
+.main-background .form-containt-right h1{
+    font-size: 45px; 
+    color: black; 
+}
+.main-background .form-containt-right b{
+    font-weight:bold;
+}
+.main-background .form-group{
+    padding: 5px;
+}
+
+.main-background .form-control{
+    border-radius: 10px !important;
+    padding: 1.375rem 0.75rem;
+    height: calc(1.5em + 0.75rem + 20px);
+    font-weight: bold;
+}
+.main-background .oe_login_buttons{
+    text-align: left !important;
+    padding-top: 5px !important;
+}
+.main-background .psw{
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.main-background .login-button-custom{
+    background: #1675a5;
+    color: #fff;
+    border-radius: 20px;
+    border-top-width: 5px;
+    border-top: brown;
+    padding: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    max-width: 20%;
+    font-weight: bold !important;
+}

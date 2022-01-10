@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="website_blog_post" model="ir.ui.view">
+        <field name="name">website.blog.post</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.view_blog_post_form"/>
+        <field name="arch" type="xml">
+            <field name="website_id" position="after">
+                <field name="valid_page" width="300"/>
+                <field name="bg_image" widget="image" width="300"/>
+            </field>
+        </field>
+    </record>
+    <template id="extend_blog_navigatin" inherit_id="website_blog.blog_post_short">
+        <xpath expr="//t[@t-call='website_blog.blogs_nav']" position="replace"/>
+    </template>
+</odoo>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<template id="frontend_layout" name="hunddle Main Frontend Header Layout" inherit_id="portal.frontend_layout">
+		<xpath expr="//*[@id='top_menu']/li[1]" position="before">
+				<li class="cus-nav-list-item nav-item contact_info_header">
+                    <a href="tel:601-348-9977" class="nav-link mb-30" role="menuitem">
+                    	<span data-oe-model="website.menu" data-oe-id="165" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">
+                    		<img src="/wt_office_hunddle/static/src/images/phone.png" alt="" title=""/> 601-348-9977</span>
+                    </a>
+                </li>
+			</xpath>
+			<xpath expr="//*[@id='top_menu']/li[4]" position="replace">
+			</xpath>
+
+			<xpath expr="//*[@id='top_menu']/li[4]" position="replace">
+				<li groups="base.group_public" class="nav-item sing_in_btn_header">
+					<a t-attf-href="/web/login" class="nav-link">
+						<span class="btn btn-custom" style="">Sign in</span>
+					</a>
+				</li>
+			</xpath>
+		</template>
+	<!-- <template id="website_header" inherit_id="portal.frontend_layout">
+		 <xpath expr="//header" position="attributes">
+		 	<attribute name="class">o_header_affix affix ddd</attribute>
+	    </xpath>
+	</template> -->
+	<!-- <template id="website_header" inherit_id="portal.frontend_layout"
+		 name="Office Huddle Header">
+		<xpath expr="//div[@id='wrapwrap']/header" position="replace">
+		    <header class="sticky-top wow fadeIn">
+		        <div class="container-fluid">
+		            <nav class="navbar navbar-expand-lg navbar-light ">
+		              <a class="navbar-brand" href="/"><img src="/officehuddle_website/static/src/images/logo.png" alt="officehuddle-logo" class="img-fluid"/></a>
+		              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		                <span class="navbar-toggler-icon"></span>
+		              </button>
+
+		              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		                <ul class="navbar-nav ml-auto">
+		                  <li class="nav-item dropdown">
+		                    <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:;">WHAT WE DO</a>
+		                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		                        <a class="dropdown-item" href="#">LEAD GENERATION</a>
+		                        <a class="dropdown-item" href="#">CREDIT BUILDING</a>
+		                        <a class="dropdown-item" href="/businesscredit">ENTREPRENEURIAL TRAINING </a>
+		                        <a class="dropdown-item" href="#">BUSINESS  COACHING</a>
+		                        <a class="dropdown-item" href="#">ADMIN SUPPORT</a>
+		                    </div>
+		                  </li>
+		                  <li class="nav-item">
+		                    <a class="nav-link" href="javascript:;">TEAM </a>
+		                  </li>
+		                  <li class="nav-item">
+		                    <a class="nav-link" href="/events">EVENTS</a>
+		                  </li>
+		                  <li class="nav-item">
+		                    <a class="nav-link" href="javascript:;">RESOURCES</a>
+		                  </li>
+		                </ul>
+		                <div class="contact-info-header">
+		                    <div class="phone">
+		                        <img src="/officehuddle_website/static/src/images/phone.png" alt="phone-icon"/><span>601-348-9977</span>
+		                    </div>
+		                    <div class="account-btn">
+		                        <a href="/web/login" class="btn btn-orange">LOGIN</a>
+		                    </div>
+		                </div>
+		              </div>
+		            </nav>
+		        </div>
+		    </header>
+		</xpath>
+	</template> -->
+</odoo>
+

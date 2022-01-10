@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="generation_resources_tree" model="ir.ui.view">
+        <field name="name">lead.generation.resources.tree</field>
+        <field name="model">lead.generation.resources</field>
+        <field name="arch" type="xml">
+            <tree string="Lead Generation Resources">      
+                <field name='name'/>
+                <field name='url'/>
+                <field name='description'/>
+                <field name='priority' widget="priority"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="lead_generation_resources_form" model="ir.ui.view">
+        <field name="name">lead.generation.resources.form</field>
+        <field name="model">lead.generation.resources</field>
+        <field name="arch" type="xml">
+            <form string="Lead Generation Resources">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name='name'/>
+                            <field name='description'/>
+                            <field name='url'/>
+                            <field name='priority' widget="priority"/>
+                        </group>
+                        <group>
+                            <field name='image' widget='image' class="oe_avatar"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_lead_generation_resources" model="ir.actions.act_window">
+        <field name="name">Lead Generation Resources</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">lead.generation.resources</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add a new Toolkit
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="toolkit_root" name="Toolkit" parent="website.menu_website_configuration"/>
+    <menuitem id="lead_resources_menu" name="lead Generation Resources" parent="toolkit_root" action="action_lead_generation_resources"/>
+</odoo>

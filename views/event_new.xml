@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<template id="registration_template_tmpl_id" name="registation form">
+		<t t-set="tickets_available" t-value="event.seats_available or event.seats_availability == 'unlimited'"/>
+	    <t t-set="buy" t-value="tickets_available and event.state == 'confirm'"/>
+	    <form t-if="buy" id="registration_form" t-attf-action="/event/#{slug(event)}/registration/new" method="post" itemscope="itemscope" itemprop="offers" itemtype="http://schema.org/AggregateOffer" class="mb-5">
+	        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+	        <div id="o_wevent_tickets" class="bg-white rounded shadow-sm">
+	             <t t-set="tickets" t-value="event.event_ticket_ids.filtered(lambda t: not t.is_expired)"/>
+				<t t-if="len(event.event_ticket_ids) &gt; 1"> <!-- If some tickets expired and there is only one type left, we keep the same layout -->
+				    <div class="d-flex align-items-center ticket_title py-2 pl-3 pr-2 border-bottom">
+				        <span class="text-left pl-0">
+				            Tickets
+				        </span>
+				    </div>
+				    <div id="o_wevent_tickets_collapse">
+				        <div t-foreach="tickets" t-as="ticket" class="row mx-0 bg-light border-bottom">
+				            <div class="col-md-8 text-left py-3" itemscope="itemscope" itemtype="http://schema.org/Offer">
+				                <h5 itemprop="name" t-field="ticket.name" class="my-0"/>
+				                <small t-if="ticket.deadline" class="text-muted mr-3" itemprop="availabilityEnds">Sales end on <span itemprop="priceValidUntil" t-field="ticket.deadline"/></small>
+				            </div>
+				            <div class="col-md-4 py-3 pl-md-0">
+				                <div class="d-flex align-items-center">
+				                    <t t-if="ticket.price or editable">
+				                        <t t-if="(ticket.price-website.get_current_pricelist().currency_id._convert(ticket.price_reduce, event.company_id.sudo().currency_id, event.company_id, datetime.date.today())) &gt; 1 and website.get_current_pricelist().discount_policy == 'without_discount'">
+				                            <del class="text-danger mr-1" t-field="ticket.price" t-options="{'widget': 'monetary', 'from_currency': event.company_id.sudo().currency_id, 'display_currency': website.get_current_pricelist().currency_id}"/>
+				                        </t>
+				                        <span t-field="ticket.price_reduce" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_excluded"/>
+				                        <span t-field="ticket.price_reduce_taxinc" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_included"/>
+				                        <span itemprop="price" class="d-none" t-esc="ticket.price"/>
+				                        <span itemprop="priceCurrency" class="d-none" t-esc="website.pricelist_id.currency_id.name"/>
+				                    </t>
+				                    <span t-if="not ticket.price and not editable" class="font-weight-bold text-uppercase">Free</span>
+				                    <select t-attf-name="nb_register-#{ticket.id}" class="w-auto ml-auto custom-select">
+				                        <t t-set="seats_max_ticket" t-value="(ticket.seats_availability == 'unlimited' or ticket.seats_available &gt; 9) and 10 or ticket.seats_available + 1"/>
+				                        <t t-set="seats_max_event" t-value="(event.seats_availability == 'unlimited' or event.seats_available &gt; 9) and 10 or event.seats_available + 1"/>
+				                        <t t-set="seats_max" t-value="min(seats_max_ticket, seats_max_event)"/>
+				                        <t t-foreach="range(0, seats_max)" t-as="nb">
+				                            <option t-esc="nb" t-att-selected="len(ticket) == 0 and nb == 0 and 'selected'"/>
+				                        </t>
+				                    </select>
+				                </div>
+				            </div>
+				            <div t-if="ticket.product_id.description_sale" class="col-12">
+				                <p itemprop="description" t-field="ticket.product_id.description_sale" class="small py-2 border-top"/>
+				            </div>
+				        </div>
+				        <div class="row no-gutters">
+				            <div class="col-md-4 offset-md-8 py-2 pl-md-0 pr-md-2">
+				                <button type="submit" class="btn btn-primary o_wait_lazy_js btn-block a-submit" t-att-disabled="not tickets_available or None" t-attf-id="#{event.id}">Register<t t-if="event.seats_availability != 'unlimited'">(Available seats: <t t-esc="event.seats_available"/>)</t></button>
+				            </div>
+				        </div>
+				    </div>
+				</t>
+				<t t-else="">
+				    <t t-call="website_event.ticket">
+				        <t t-set="name"><span t-field="tickets.name"/></t>
+				        <t t-set="price">
+				            <t t-if="tickets.price or editable">
+				                <t t-if="(tickets.price-website.get_current_pricelist().currency_id._convert(tickets.price_reduce, event.company_id.sudo().currency_id, event.company_id, datetime.date.today())) &gt; 1 and website.get_current_pricelist().discount_policy == 'without_discount'">
+				                    <del class="text-danger mr-1" t-field="tickets.price" t-options="{'widget': 'monetary', 'from_currency': event.company_id.sudo().currency_id, 'display_currency': website.get_current_pricelist().currency_id}"/>
+				                </t>
+				                <span t-field="tickets.price_reduce" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_excluded"/>
+				                <span t-field="tickets.price_reduce_taxinc" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}" groups="account.group_show_line_subtotals_tax_included"/>
+				                <span itemprop="price" class="d-none" t-esc="tickets.price"/>
+				                <span itemprop="priceCurrency" class="d-none" t-esc="website.pricelist_id.currency_id.name"/>
+				            </t>
+				            <span t-if="not tickets.price and not editable" class="font-weight-bold text-uppercase">Free</span>
+				        </t>
+				        <t t-if="tickets.product_id.description_sale" t-set="description">
+				            <span t-field="tickets.product_id.description_sale"/>
+				        </t>
+				        <t t-set="registration_end">
+				            <t t-if="tickets.deadline">Sales end on <span itemprop="priceValidUntil" t-field="tickets.deadline"/></t>
+				        </t>
+				        <t t-set="quantity">
+				            <select t-attf-name="nb_register-#{tickets.id}" class="w-auto custom-select">
+				                <t t-set="seats_max_ticket" t-value="(tickets.seats_availability == 'unlimited' or tickets.seats_available &gt; 9) and 10 or tickets.seats_available + 1"/>
+				                <t t-set="seats_max_event" t-value="(event.seats_availability == 'unlimited' or event.seats_available &gt; 9) and 10 or event.seats_available + 1"/>
+				                <t t-set="seats_max" t-value="min(seats_max_ticket, seats_max_event)"/>
+				                <t t-foreach="range(0, seats_max)" t-as="nb">
+				                    <option t-esc="nb" t-att-selected="len(tickets) == 1 and nb == 1 and 'selected'"/>
+				                </t>
+				            </select>
+				        </t>
+				    </t>
+				</t>
+	        </div>
+	    </form>
+	    <div t-if="not buy" class="alert alert-info mb-5" role="status">
+	        <span t-if="event.state == 'draft'" itemprop="availability" content="http://schema.org/OutOfStock">
+	            <b>Event registration not yet started.</b>
+	        </span>
+	        <span t-if="event.state != 'draft'" itemprop="availability" content="http://schema.org/Discontinued">
+	            <b>Event registration is closed.</b>
+	        </span>
+	        <a t-if="request.env.user.has_group('event.group_event_manager')" t-attf-href="/web#id=#{event.id}&amp;view_type=form&amp;model=event.event" class="float-right">
+	            <i class="fa fa-pencil mr-2" role="img" aria-label="Create" title="Create"/><em>Configure Event Registration</em>
+	        </a>
+	    </div>
+	</template>
+	<template id="event_new_hunddle" name="Event">
+		<t t-call="website.layout">
+			<div id="wrap" class="event_new_office_hunddle_main_cl">
+				<div class="oe_structure"/>
+				<section id="home" class="divider" t-if="event and event.bg_image_ids">
+			      <div class="fullwidth-carousel zindex-0 owl-carousel owl-theme">
+			      	<t t-foreach="event.bg_image_ids" t-as="bg_image">
+				        <div class="item bg-img-cover fullscreen" t-attf-style="background-image: url('/web/image/event.background.slider/#{bg_image.id}/image');">
+				          <div class="display-table">
+				            <div class="display-table-cell">
+				              <div class="container">
+				                <div class="row">
+				                  <div class="col-md-12 text-center" t-if="event">
+				                    <h4 class="text-theme-colored font-30 mb-10"><t t-esc="event.name"/></h4>
+				                    <h1 class="font-66 text-white mt-10 mb-20 font-montserrat">Office Huddle</h1>
+				                    <h5 class="text-white font-20"><t t-esc="event.with_context(tz=event.date_tz).date_begin.strftime('%d')"/>- <t t-esc="event.with_context(tz=event.date_tz).date_end.strftime('%d %%B, %Y')"/>, <t t-esc="event.address_id.city"/></h5>
+				                  </div>
+				                </div>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				    </t>
+			      </div>
+			    </section>
+			    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+			        <div class="modal-content">
+			        	<div class="embed-responsive embed-responsive-16by9">
+			              <iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_six_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true">
+          				  </iframe>
+          				</div>
+			        </div>
+			      </div>
+			    </div>
+			    <section class="ev_video_section">
+			      <div class="ev_video_text-box">
+			        <div class="container">
+			          <div class="row">
+			            <div class="col">
+			              <h2> Train like a Champion. <br/> Play Business To Win.</h2>
+			              
+			            </div>
+			            <div class="col-md-3">
+			              <button type="button" class="btn " data-toggle="modal" data-target="#myModal" data-src="/wt_office_hunddle/static/src/videos/EVENTS_video.mp4">
+			                <img src="/wt_office_hunddle/static/src/images/play.png" alt="play" title="play" height="150"/>
+			             </button>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <video src="/wt_office_hunddle/static/src/videos/EVENTS_video.mp4" loop="" muted="" autoplay="" widtt="100%"></video>
+			    </section>
+			    <section class="event_overview_cl" t-if="event">
+			      <div class="container">
+			        <div class="row">
+			          <div class="col-md-12 text-center">
+			            <h3 class="sub-title font-28 text-gray-darkgray m-0 mt-0 mt-md-0">Overview</h3>
+			            <h2 class="title font-48 text-gray mt-0 mb-20">About the Conference</h2>
+			            <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam modi consequuntur maxime voluptates earum illo sunt, veritatis maiores doloribus ut id, nostrum. Temporibus odit quas illum eos dolores itaque facilis omnis beatae saepe eum. Odit labore vel temporibus quasi.</p>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam modi consequuntur maxime voluptates earum illo sunt, veritatis maiores doloribus ut id, nostrum. Temporibus odit quas illum eos dolores itaque facilis omnis beatae saepe eum. Odit labore vel temporibus.</p>
+			            <a class="btn btn-colored btn-theme-colored btn-lg text-uppercase smooth-scroll font-13 mt-30" href="#schedule">See Event Schedule</a>
+			            <a role="button" class="btn btn-dark-light btn-lg text-uppercase smooth-scroll font-13 mt-30 collapsed"  data-toggle="collapse" data-target="#o_wevent_book_collapse">Register Now</a>
+			            <div id="o_wevent_book_collapse" class="collapse mt16">
+							<t t-call="wt_office_hunddle.registration_template_tmpl_id"/>
+	            		</div>
+			            <div id="clock" class="countdown-timer mt-40" t-att-data-endingdate="event.with_context(tz=event.date_tz).date_begin.strftime('%Y/%m/%d')"/>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+
+			    <section id="schedule" t-if="event and event.schedule_ids">
+			      <div class="parallax s_parallax_is_fixed" data-scroll-background-ratio="0.5">
+			    	<span class="s_parallax_bg oe_img_bg layer-overlay overlay-darkblue oe_custom_bg" style="background-image: url('http://placehold.it/1920x1280'); background-position: 50% 0;"/>
+			        <div class="container pt-50 pb-50">
+			          <div class="section-title">
+			            <div class="row">
+			              <div class="col-md-6 offset-md-3  text-center">
+			                <h2 class="title text-white mb-0">Event Schedule</h2>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div style="background-image: url('http://placehold.it/1920x1280');background: lightgray;">
+			        <div class="container pt-80 pb-50">
+			          <div class="section-content">
+			            <div class="row">
+			              <div class="col-md-12">
+			                <table class="table table-striped table-schedule">
+			                  <thead>
+			                    <tr>
+			                      <th style="width: 20%;">Time</th>
+			                      <th style="width: 55%;">Schedule</th>
+			                      <th style="width: 25%;">Venue</th>
+			                    </tr>
+			                  </thead>
+			                  <tbody>
+			                    <tr t-foreach="event.schedule_ids" t-as="schedule_id">
+			                      <td><t t-esc="schedule_id.time"/></td>
+			                      <td><strong><t t-esc="schedule_id.schedule"/></strong></td>
+			                      <td><t t-esc="schedule_id.venue"/></td>
+			                    </tr>
+			                  </tbody>
+			                </table>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+
+			    <section t-if="event and event.speaker_ids">
+			      <div class="divider parallax layer-overlay overlay-darkblue" data-stellar-background-ratio="0.5" data-bg-img="http://placehold.it/1920x1280">
+			        <div class="container pt-50 pb-50">
+			          <div class="section-title">
+			            <div class="row">
+			              <div class="col-md-6 offset-md-3  text-center">
+			                <h2 class="title text-white mb-0">Our Speakers</h2>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="">
+			        <div class="container pt-80 pb-50">
+			          <div class="section-content">
+			            <div class="row multi-row-clearfix">
+			              <div class="col-xs-12 col-sm-6 col-md-3 mb-30" t-foreach="event.speaker_ids" t-as="speaker_id">
+			                <div class="team-member clearfix">
+			                  <div class="team-thumb"><img alt="" t-attf-src="/web/image/res.partner/#{speaker_id.id}/image_512" class="img-fullwidth"/></div>
+			                  <div class="overlay">
+			                    <div class="content text-center">
+			                      <h4 class="author mb-0"><a href="page-speakers-details.html"><t t-esc="speaker_id.name"/></a></h4>
+			                      <h6 class="title text-gray font-14 mt-5 mb-15"><t t-esc="speaker_id.function"/></h6>
+			                    </div>
+			                  </div>
+			                  <ul class="social-icons flat icon-white square mt-10">
+			                    <li class=""><a t-att-href="speaker_id.facebook_url"><i class="fa fa-facebook pr-10 pl-10"></i></a></li>
+			                    <li class=""><a t-att-href="speaker_id.twitter_url"><i class="fa fa-twitter pr-10 pl-10"></i></a></li>
+			                    <li><a t-att-href="speaker_id.google_plus_url"><i class="fa fa-google-plus pr-10 pl-10"></i></a></li>
+			                  </ul>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+
+				<section>
+			      <div class="">
+			        <div class="container pb-80 pt-60">
+			          <div class="section-title mb-30">
+			            <div class="row">
+			              <div class="col-md-6 offset-md-3  text-center">
+			                <h2 class="title text-theme-colored">Event Facilities</h2>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="section-content">
+			            <div class="row">
+			              <div class="col-md-4 mb-sm-20">
+			                <div class="event-facilities">
+			                  <div class="thumb">
+			                    <img class="img-fullwidth" src="/wt_office_hunddle/static/src/images/transport.jpg" alt=""/>
+			                    <div class="overlay">
+			                      <h4 class="title">Transport</h4>
+			                      <p>Lorem ipsum dolor sit amet, consec tetur adipis icing elit culpa volupt</p>
+			                      <a class="btn btn-colored btn-theme-colored btn-sm" href="#">Read More</a>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-md-4 mb-sm-20">
+			                <div class="event-facilities">
+			                  <div class="thumb">
+			                    <img class="img-fullwidth" src="/wt_office_hunddle/static/src/images/transport.jpg" alt=""/>
+			                    <div class="overlay">
+			                      <h4 class="title">Transport</h4>
+			                      <p>Lorem ipsum dolor sit amet, consec tetur adipis icing elit culpa volupt</p>
+			                      <a class="btn btn-colored btn-theme-colored btn-sm" href="#">Read More</a>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-md-4 mb-sm-20">
+			                <div class="event-facilities">
+			                  <div class="thumb">
+			                    <img class="img-fullwidth" src="/wt_office_hunddle/static/src/images/transport.jpg" alt=""/>
+			                    <div class="overlay">
+			                      <h4 class="title">Transport</h4>
+			                      <p>Lorem ipsum dolor sit amet, consec tetur adipis icing elit culpa volupt</p>
+			                      <a class="btn btn-colored btn-theme-colored btn-sm" href="#">Read More</a>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+
+				<section t-if="upcomming_event_ids">
+				  <div class="divider parallax layer-overlay overlay-darkblue" data-stellar-background-ratio="0.5" data-bg-img="assets/img/registration.jpg">
+				    <div class="container pt-50 pb-50">
+				      <div class="section-title">
+				        <div class="row">
+				          <div class="col-md-6 offset-md-3 text-center">
+				            <h2 class="title text-white mb-0">Upcoming Events</h2>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="divider">
+				    <div class="container pb-50 pt-80">
+				      <div class="section-content">
+				        <div class="row">
+				          <div class="col-sm-6 col-md-4 col-lg-4" t-foreach="upcomming_event_ids" t-as="up_event_id" t-if="upcomming_event_ids">
+				            <div class="schedule-box maxwidth500 mb-30 bg-lighter">
+				              <div class="thumb">
+				                <img class="img-fullwidth" alt="" t-attf-src="/web/image/event.event/#{up_event_id.id}/image"/>
+				                <div class="overlay">
+				                  <a href="#"><i class="fa fa-calendar mr-5"></i></a>
+				                </div>
+				              </div>
+				              <div class="schedule-details clearfix p-15 pt-10">
+				                <h5 class="font-16 title"><a t-attf-href="/event/register/#{slug(up_event_id)}"><t t-esc="up_event_id.name"/></a></h5>
+				                <ul class="list-inline font-11 mb-20">
+				                  <li class="text-uppercase"><i class="fa fa-calendar mr-5"></i><t t-esc="up_event_id.with_context(tz=event.date_tz).date_begin.strftime('%%b %d/%Y')"/></li>
+				                  <li t-if="up_event_id.address_id"><i class="fa fa-map-marker mr-5"></i><t t-esc="up_event_id.address_id.city"/></li>
+				                </ul>
+				                <p><t t-esc="up_event_id.desc"/></p>
+				                <div class="mt-10">
+				                 <a class="btn btn-colored btn-theme-colored btn-sm" t-attf-href="/event/register/#{slug(up_event_id)}">Register</a>
+				                 <a class="btn btn-colored btn-dark-light btn-sm" t-attf-href="/event/register/#{slug(up_event_id)}">Details</a>
+				                </div>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</section>
+			</div>
+		</t>
+	</template>
+</odoo>

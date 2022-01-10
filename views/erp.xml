@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="erp_development">
+		<t t-call="website.layout">
+			<div id="wrap" class="erp_hunddle_main_cl">
+				<section id="erp-banner" class="autoheight ">
+	        		<div class="container container-fluid text-center align-items-center">
+	            		<div class="row">
+	                		<div class="col-lg-12">
+	                    		<h1>
+	                    			<b>connecting processes and creating </b>
+	                    		</h1>
+	                    		<p>
+	                    			<b>  As the world continuously advance through innovation, our team sees to it that we are at par with the latest technology designed to lift businesses even more. And as part of our culture, it is integral in our organization to provide you thorough service that develops your business by using a simplified yet
+	                        		effective work method. 
+	                        		Our deep passion and expertise in providing business growth  solutions has lead us to share with you ERP.</b>
+	                        	</p>
+	                    		<a href="https://calendly.com/henrybdorris/60min?month=2021-08" target="_blank" class="get-team-btn">LET'S GET STARTED</a>
+	                		</div>
+	            		</div>  
+	        		</div>
+	    		</section>
+
+	    		<div class="modal fade modal_main_cl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	        		<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+				        <div class="modal-content">
+				            <iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_four_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true">
+          					</iframe>
+				        </div>
+	        		</div>
+	      		</div>
+	      
+	      		<section class="video-section3">
+	        		<div class="video-text-box">
+				        <div class="container">
+				            <div class="row">
+				              	<div class="col-12">
+				                	<h2> Train like a Champion. <br/> Play Business To Win.</h2>
+				              	</div>
+				              	<div class="col-md-3">
+				                	<button type="button" class="btn " data-toggle="modal" data-target="#exampleModal" data-src="/wt_office_hunddle/static/src/videos/ERP_video.mp4">
+				                  		<img src="/wt_office_hunddle/static/src/images/play.png" alt="play" title="play" height="150"/>
+				               		</button>
+				              	</div>
+				          	</div>
+				        </div>
+				    </div>
+				    <video src="/wt_office_hunddle/static/src/videos/ERP_video.mp4" loop="" muted="" autoplay="" widtt="100%"></video>
+				</section>
+
+				<div class="container-fluid container-services services_main_cl_sec">
+	            	<div class="row box-bg">
+	                	<div class="col-lg-3 col-md-6 col-sm-6 first-col">
+	                  		<div>
+	                    		<h1>
+	                    			<i class="ri-signal-tower-fill" style="font-size: 10vh;"></i>
+	                    		</h1>
+	                  		</div>
+		                    <h3>Websites</h3>
+		                    <p>Build great user experience</p>
+		                    <h4>Website Builder</h4>
+		                    <h4>eCommerce</h4>
+		                    <h4>Blogs</h4>
+		                    <h4>Forums</h4>
+		                    <h4>Events</h4>
+		                    <h4>Live Chat</h4>
+		                    <h4>eLearning</h4>
+		                    <h4> &amp;nbsp</h4>
+	                	</div>
+	                	<div class="col-lg-3 col-md-6 col-sm-6 second-col">
+	                  		<div>
+	                    		<h1>
+	                    			<i class="ri-money-dollar-box-line" style="font-size: 10vh;"></i>
+	                    		</h1>
+	                  		</div>
+	                    	<h3>Sales</h3>
+		                    <p>Boost your success rate</p>
+		                    <h4>Sales</h4>
+		                    <h4>CRM</h4>
+		                    <h4>Invoicing</h4>
+		                    <h4>Point of Sale</h4>
+		                    <h4>Subscriptions</h4>
+		                    <h4>Sign</h4>
+		                    <h4>Rental</h4>
+		                    <h4>Amazon Connector</h4>
+	                	</div>
+	                	<div class="col-lg-3 col-md-6 col-sm-6 third-col">
+	                  		<div>
+	                    		<h1>
+	                    			<i class="ri-terminal-window-fill" style="font-size: 10vh;"></i>
+	                    		</h1>
+	                  		</div>
+		                    <h3>Operations</h3>
+		                    <p>It's all about efficiency</p>
+		                    <h4>Accounting</h4>
+		                    <h4>Project</h4>
+		                    <h4>Human Resources</h4>
+		                    <h4>Inventory</h4>
+		                    <h4>Purchase</h4>
+		                    <h4>Manufacturing</h4>
+		                    <h4>Helpdesk</h4>
+		                    <h4>Field Service</h4>
+	                	</div>
+	                	<div class="col-lg-3 col-md-6 col-sm-6 fourth-col" >
+		                  	<div>
+		                    	<h1>
+		                    		<i class="ri-settings-3-fill" style="font-size: 10vh;"></i>
+		                    	</h1>
+		                  	</div>
+		                    <h3>Productivity Tools</h3>
+		                    <p>Great Tools = Happy People</p>
+		                    <h4>Communication</h4>
+		                    <h4>Timesheet</h4>
+		                    <h4>Marketing</h4>
+		                    <h4>Survey</h4>
+		                    <h4>Approvals</h4>
+		                    <h4>Appointments</h4>
+		                    <h4>Documents New</h4> 
+		                    <h4>Planning</h4>
+		                </div>
+	              	</div>
+	            </div>
+	            <div class="clearfix"/> 
+	            <img class="img w-100 erp_banner_img_third" src="/wt_office_hunddle/static/src/images/ERP_line.png"/>
+	            <div class="clearfix"/> 
+	            <img class="img w-100 erp_banner_img_four" src="/wt_office_hunddle/static/src/images/erp-bg3.jpg "/>
+	            <button class="img_button_take_assetment_cl">Take the Assestment</button>
+				<section id="coaching" class="coaching" t-if="erp_development_blog">
+			      	<div class="container" data-aos="fade-up">
+			        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			            	<h1 data-aos="zoom-in" data-aos-delay="100">
+			            		<b>WE LOVE  BUSINESS COACHING. CHECK OUT OUR ARTICLES.</b>
+			            	</h1>
+			            </div>
+			            
+			            <div class="row" data-aos="zoom-in" data-aos-delay="100" >
+				            <div class="col-lg-4" t-foreach="erp_development_blog" t-as="erp_blog">
+				            	<div class="coaching-item">
+				              		<img itemprop="image" t-att-src="website.image_url(erp_blog, 'bg_image')" alt="Lights" class="img-fluid" style="height: 240px;"/>
+				              		<p t-esc="erp_blog.name" class="business-blog"/>
+				              		<div class="coaching-content">
+				              			<a t-attf-href="/blog/{{slug(erp_blog.blog_id)}}/post/{{slug(erp_blog)}}">
+					                  		<h4 class="justify-content-between mb-3">
+					                  			<t t-esc="erp_blog.name"/>
+					                  		</h4>
+				                  		</a>
+				                  		<p>
+				                			<t t-esc="erp_blog.teaser"/>
+				                		</p>
+				                		<div class="trainer row justify-content-between align-items-center">
+				                			<div class="trainer-rank align-items-center">
+				                				<i class="fa fa-user"> Andrew </i>
+					                    			
+					                    		<i class="fa fa-comments"> 0 </i>
+				                			</div>
+				                			<div class="trainer-profile align-items-center">
+				                				<a t-attf-href="/blog/{{slug(erp_blog.blog_id)}}/post/{{slug(erp_blog)}}" class="text-decoration-none">
+									            	<span>Read More</span>
+									        	</a>
+									        </div>
+				                		</div>
+				                  	</div>
+				              	</div>
+				            </div>
+				        </div>
+			  
+			        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			          		<div class="d-flex justify-content-center w-100 align-items-stretch mt-4 mt-lg-0">
+			            		<a href="/blog" class="get-book-btn">
+			            			SEE MORE GREAT ARTICLES</a>
+			          		</div>
+			        	</div>
+		        	</div>
+		    	</section>
+			</div>
+		</t>
+	</template>
+</odoo>

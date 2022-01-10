@@ -1,0 +1,122 @@
+ul#spkr-social li {
+  display:inline;
+ 
+}
+ul#spkr-social{
+	margin-top:10px;
+}
+ul.contact-icon{
+	margin-top:10px;
+}
+button.btn.doc {
+    background: white;
+    border: 2px solid #cccccc;
+    border-radius: 0px;
+    color: #1b8af3;
+    margin-top: 10px;
+    height: 45px;
+    font-weight: 600;
+}
+.row.m-10 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+.b-gray {
+    border: solid 1px #cccccc;
+}
+.col-md-5.b-gray p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222222;
+}
+.col-md-5.b-gray {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.col-md-5.b-gray {
+    width: 49%;
+	margin-bottom:10px;
+}
+.row.session {
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+.section {
+    margin-top: 80px;
+}
+.speaker-bg {
+    animation: 60s ease 0s normal none infinite back_animation;
+    background: url(../img/speaker-detail/slider.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+a.learn-more-btn.btn-effect.wow.animated.fadeIn.text-center{
+    display:inline-block;
+    float:right;
+    margin: 18px 15px 0px;
+    padding: 10px;
+    width: 130px;
+}
+.col-lg-12.landing-text-pos.align-center{
+    margin-top: 13%;
+    margin-bottom: auto;
+}
+.name{
+    font-size: 22px; 
+    font-weight: 800; 
+    color: black;
+}
+.director{
+    margin-bottom:10px;
+}
+.session{
+     font-size: 17px; 
+    font-weight: 700; 
+    margin-bottom: 15px;
+}
+.time{
+    color:#429ef5; 
+    font-weight:600;
+}
+.room{
+    margin-left:20px;
+}
+.room-1{
+    color:#429ef5; 
+    font-weight:600;
+}
+
+.col-md-5.b-gray.text-1{
+    margin-left:20px;
+}
+
+div#asd{
+  display:none;
+}
+div#slider1_container{
+  height: 285px !important;
+}
+input.form-control{
+  background-image: ;
+  background-repeat: no-repeat; 
+  background-attachment: scroll; 
+  background-size: 16px 18px; 
+  background-position: 98% 50%;
+}
+.footer-bottom-bar-1{
+  background-color:#1b8af3;
+}
+.name-1{
+    border-radius: 0px;
+    box-shadow: none;
+    width: 104%;
+    height: 35px;
+}

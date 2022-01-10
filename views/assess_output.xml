@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="assess_output" name="Output From assessment">
+		<t t-call="website.layout">
+			<div id="wrap" class="assessment_output">
+				<section id="output" class="assessment" action="">
+               <div class="container" data-aos="fade-up">
+                  <div class="row">
+                     <div class="col-lg-12 pt-4 pt-lg-0 align-items-stretch content">
+                        <h1 style="font-size: 30px;">YOUR ASSESSMENT: THE SUCCESS SYSTEMS TRAFFIC LIGHT</h1>
+                        <img src="/wt_office_hunddle/static/src/assess_out/Line_bar.png" alt="" class="img-fluid" width="100%" />
+                        <span t-esc="assessment"/>
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-lg-6" style="width: 50%; justify-content: center;">
+                        <div class="progress-pie-chart" t-attf-data-percent="#{form_submission}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{marketing}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{finance}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{team_development}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{lead_generation}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{lead_conversion}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{customer_fulfillment}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div class="col-lg-6 pt-4 pt-lg-0 align-items-stretch" style="width: 50%; justify-content: center;">
+                        <button class="accordion accordion1">
+                           Leadership Development System
+                        </button>
+                        <div class="panel">
+                           <p>Your leadership skills will need to be improved for your business to at least survive.</p>
+                        </div>
+
+                        <button class="accordion accordion2">
+                           Marketing System
+                        </button>
+                        <div class="panel">
+                           <p>Your business has a sufficient marketing system to achieve enough visibility and reach. Generating leads and maintaining its current revenue stream can be achieve. But to grow, your business's marketing performance will still need to be improved.</p>
+                        </div>
+
+                        <button class="accordion accordion3">
+                           Financial System
+                        </button>
+                        <div class="panel">
+                           <p>Your business has sufficient financial management skills to survive. But there is still a threat of overlooking many items that may hurt your business's financial standing. These threats may hamper the growth of your business.</p>
+                        </div>
+
+                        <button class="accordion accordion4">
+                           Team Development System
+                        </button>
+                        <div class="panel">
+                           <p>Your business will probably grow by having a strong team. With a strong system in place, your business will grow and adapt to the ever-changing business environment helped with having a strong team.</p>
+                        </div>
+
+                        <button class="accordion accordion5">
+                           Lead Generation System
+                        </button>
+                        <div class="panel">
+                           <p>Your lead generation abilities may work just enough for your business to survive. But your business needs to improve more to help you generate more revenue.</p>
+                        </div>
+
+                        <button class="accordion accordion6">
+                           Lead Conversion System
+                        </button>
+                        <div class="panel">
+                           <p>Your business has sufficient capability of turning leads into paying customers at a level for it to survive. But to grow and take it to the next level, some more training will help in lead conversion.</p>
+                        </div>
+
+                        <button class="accordion accordion7">
+                           Customer Fulfillment System
+                        </button>
+                        <div class="panel">
+                           <p>Very good! Your business has been establishing good relations with your customers which have now become clients! This will help your company grow and expand.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="row1">
+                  <div class="col-lg-12 pt-4 pt-lg-0 align-items-stretch content">
+                     <p><b>Leadership Development System/<t t-esc="form_submission"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{form_submission}%;"></div>
+                     </div>
+
+                     <p><b>Marketing System/<t t-esc="marketing"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{marketing}%;"></div>
+                     </div>
+
+                     <p><b>Financial System/<t t-esc="finance"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{finance}%;"></div>
+                     </div>
+
+                     <p><b>Team Development System/<t t-esc="team_development"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{team_development}%;"></div>
+                     </div>
+
+                     <p><b>Lead Generation System/<t t-esc="lead_generation"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{lead_generation}%;"></div>
+                     </div>
+
+                     <p><b>Lead Conversion System/<t t-esc="lead_conversion"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{lead_conversion}%;"></div>
+                     </div>
+
+                     <p><b>Customer Fulfillment System/<t t-esc="customer_fulfillment"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{customer_fulfillment}%;"></div>
+                     </div>
+                  </div>  
+               </div>
+
+               <div class="row1">
+                  <div class="col-lg-12 pt-4 pt-lg-0 align-items-stretch content" style="text-align: center;">
+                     <h1 style="font-size: 20px;">OVERALL ASSESSMENT</h1>
+                  </div>
+               </div>
+               <div class="row" style="background-color: #c5c5c5; border-radius: 20px;margin-left:15%;margin-right:15%;">
+                  <div class="col-lg-6">
+                     <div class="progress-pie-chart" t-attf-data-percent="#{overall_assessment_total}" style="margin-top: 50px;">
+                        <div class="ppc-progress">
+                           <div class="ppc-progress-fill"></div>
+                        </div>
+                        <div class="ppc-percents">
+                           <div class="pcc-percents-wrapper">
+                              <span><b>%</b></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 align-items-stretch">
+                     <p><b><br/>
+                     Your business will probably survive in the next 5 years.<br/>
+                     Your business may struggle and not post growth for the next 5 years if improvements are not made.<br/><br/>
+                     Winning the Game of Business is reachable and we will be glad to lend you a helping hand. You may give us a call so we can share with you how we can do this.
+                     </b></p>
+                  </div>
+               </div>
+
+               <div class="button">
+                  <button class="button1">Send My Result</button>
+               </div>  
+            </section>
+         </div>
+      </t>
+   </template>
+</odoo>

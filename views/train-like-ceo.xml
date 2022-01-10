@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="train_like_ceo">
+		<t t-call="website.layout">
+			<div id="wrap" class="train_ceo_main_cl">
+				<section id="banner" class="bg-img">
+				  	<div class="container container-fluid">
+				    	<div class="row">
+				      		<div class="col">
+				       
+				      		</div>
+				    	</div>  
+				    </div>
+				</section>
+
+				<section id="banner-bottom">
+					<div class="container container-fluid">
+					    <div class="row row-fluid">
+					        <ul>
+					            <li>
+					            	<img src="/wt_office_hunddle/static/src/images/leadership_dev.jpg" class="img-fluid" alt="..."/> 
+					            	<h6>Leadership <br/> Development</h6>
+					            </li>
+					            <li>
+					            	<img src="/wt_office_hunddle/static/src/images/marketing.jpg" class="img-fluid" alt="..."/> 
+					            	<h6>Marketing</h6> 
+					            </li>
+					            <li> 
+					            	<img src="/wt_office_hunddle/static/src/images/access.jpg" class="img-fluid" alt="..."/> 
+					            	<h6>Access To <br/> Capital</h6>
+					            </li>
+					            <li>
+					            	<img src="/wt_office_hunddle/static/src/images/team_dev.jpg" class="img-fluid" alt="..."/>  
+					            	<h6>Team <br/> Development</h6>
+					            </li>
+					            <li>
+					            	<img src="/wt_office_hunddle/static/src/images/Sales.jpg" class="img-fluid" alt="..."/>  <h6>Sales </h6>
+					            </li>
+					        </ul>
+					    </div>  
+					</div>
+				</section>
+
+				<div class="modal fade pt-5 ceo_modal_main_cl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  				<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+	    				<div class="modal-content">
+	          				<iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_two_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay">
+	          				</iframe>
+	    				</div>
+	  				</div>
+				</div>
+				<section class="video-section2 pt-5">
+					<div class="video-text-box2">
+					    <div class="container">
+					      	<div class="row">
+					        	<div class="col">
+					          		<h2> Train like a Champion. <br/> Play Business To Win.</h2>
+					        	</div>
+					        	<div class="col-md-3">
+					          		<button type="button" class="btn " data-toggle="modal" data-target="#exampleModal" data-src="/wt_office_hunddle/static/src/videos/train_video.mp4">
+					            		<img src="/wt_office_hunddle/static/src/images/play.png" alt="play" title="play" height="150"/>
+					         		</button>
+					        	</div>
+					      	</div>
+					    </div>
+					</div>
+					<video src="/wt_office_hunddle/static/src/videos/train_video.mp4" loop="" muted="" autoplay="" width="100%"></video>
+				</section>
+
+				<section id="courses" class="courses" t-if="courses">
+				    <div class="container container-fluid" data-aos="fade-up">
+				        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+				        	<div class="col-12">
+				        		<h3><b>TOP COURSES</b></h3>
+				        	</div>
+				          	<div class="col-lg-4 col-md-6 d-flex align-items-stretch" t-foreach="courses" t-as='course'>
+				            	<div class="course-item">
+				            		<img itemprop="image"  t-att-src="website.image_url(course, 'image_1920')" alt="Lights" class="img-fluid" style="height: 230px;width:100%;"/>
+				              		<div class="course-content">
+				                		<div class="d-flex justify-content-between align-items-center mb-3">
+				                  			<h4 t-if="course.product_id">
+				                  				<span t-field="course.product_id.categ_id"/>
+				                  			</h4>
+				                  			<!-- <span t-field="website.currency_id.symbol"/> -->
+				                  			<p class="price" t-field="course.product_id.lst_price"/>
+				                		</div>
+				                		<h3>
+				                			<a t-attf-href="/slides/#{slug(course)}">
+				                				<span t-field="course.name"/>
+				                			</a>
+				                			 <!-- <a class="card-title h5 mb-2 o_wslides_desc_truncate_2" t-attf-href="/slides/#{slug(channel)}" t-esc="channel.name"/> -->
+				                		</h3>
+				                		<p t-field="course.description"/>
+				                		<div class="trainer d-flex justify-content-between align-items-center">
+				                  			<div class="trainer-profile d-flex align-items-center">
+				                    			<!-- <img src="/wt_office_hunddle/static/src/images/trainer-1.jpg" class="img-fluid" alt=""/> -->
+				                    			<img t-att-src="website.image_url(course.trainer, 'image_1920')" alt="Lights" class="img-fluid" t-if="course.trainer.image_1920 != False"/>
+				                    			<span t-esc="course.trainer.name" t-if="course.trainer"/>
+				                  			</div>
+				                  			<div class="trainer-rank d-flex align-items-center">
+					                    		<i class="fa fa-user-o"></i>&amp;nbsp; <t t-esc="course.total_views"/> &amp;nbsp;&amp;nbsp;
+					                    		<i class="fa fa-heart-o"></i>&amp;nbsp; <t t-esc="course.rating_count"/>
+				                  			</div>
+				                		</div>
+				              		</div>
+				            	</div>
+				          	</div> 
+				        </div>
+				    </div>
+				</section>
+
+				<section id="SignUp" class="bg-img">
+					<div class="container" style="padding-top:5%;">
+					    <div class="row">
+					      	<div class="col-lg-6 order-2 order-lg-1 text-center" style="padding-top: 10%;">
+					        	<h2>Discover how to train like a CEO to transform 	your company into a successful and consistent income generating enterprise!</h2>
+					      	</div>
+					      	<div class="col-lg-6 order-1 order-lg-2 pt-4 pt-lg-0 align-items-center" data-aos="fade-right">
+					        	<div class="text-center contact">
+					          		<form action="forms/sign_up.php" method="post" role="form" class="php-email-form2">
+					            		<h2 style="color:black;">
+					            			<b>Sign up now</b>
+					            		</h2>
+					            		<div class="row">
+					              			<div class="form-group">
+					                			<input type="text" name="name" class="form-control text-center" id="name" placeholder="What's your name..." required=""/>
+					              			</div>
+					              			<div class="form-group">
+					                			<input type="email" class="form-control text-center" name="email" id="email" placeholder="What's your email..." required=""/>
+					              			</div>
+							              	<div class="form-group">
+							                	<input type="number" class="form-control text-center" name="phone" id="phone" placeholder="Phone..." required=""/>
+							              	</div>
+							             	<div class="form-group">
+							                	<button type="submit" class="text-center">Get it!</button>
+							              	</div>
+					            		</div>
+					          		</form>
+					        	</div>
+					      	</div>
+					    </div>
+					</div>
+				</section>
+
+				<section id="coaching" class="coaching" t-if="train_ceo_blog">
+			      	<div class="container" data-aos="fade-up">
+			        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			            	<h1 data-aos="zoom-in" data-aos-delay="100">
+			            		<b>WE LOVE  BUSINESS COACHING. CHECK OUT OUR ARTICLES.</b>
+			            	</h1>
+			            </div>
+			            
+			            <div class="row" data-aos="zoom-in" data-aos-delay="100" >
+				            <div class="col-lg-4" t-foreach="train_ceo_blog" t-as="train_like_ceo_blog">
+				            	<div class="coaching-item">
+				              		<img itemprop="image" t-att-src="website.image_url(train_like_ceo_blog, 'bg_image')" alt="Lights" class="img-fluid" style="height: 240px;"/>
+				              		<p t-esc="train_like_ceo_blog.name" class="business-blog"/>
+				              		<div class="coaching-content">
+				              			<a t-attf-href="/blog/{{slug(train_like_ceo_blog.blog_id)}}/post/{{slug(train_like_ceo_blog)}}">
+					                  		<h4 class="justify-content-between mb-3">
+					                  			<t t-esc="train_like_ceo_blog.name"/>
+					                  		</h4>
+				                  		</a>
+				                  		<p>
+				                			<t t-esc="train_like_ceo_blog.teaser"/>
+				                		</p>
+				                		<div class="trainer row justify-content-between align-items-center">
+				                			<div class="trainer-rank align-items-center">
+						                		<i class="fa fa-user-o"></i>
+						                		&amp;nbsp; <t t-esc="train_like_ceo_blog.author_id.name" t-if="train_like_ceo_blog.author_id"/>
+						                		&amp;nbsp; 
+						                		<i class="fa fa-comments"></i>
+						                		&amp;nbsp; 0
+						              		</div>
+						              		<div class="trainer-profile d-flex align-items-center">
+						              			<a t-attf-href="/blog/{{slug(train_like_ceo_blog.blog_id)}}/post/{{slug(train_like_ceo_blog)}}" class="text-decoration-none">
+						                		<span>Read More</span>
+						                		</a>
+						                		<img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt=""/>
+						              		</div>
+						            	</div>
+						          	</div>
+						        </div>
+						    </div>
+						</div>
+
+						<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			          		<div class="d-flex justify-content-center w-100 align-items-stretch mt-4 mt-lg-0">
+			            		<a href="/blog" class="get-book-btn">
+			            			SEE MORE GREAT ARTICLES</a>
+			          		</div>
+			        	</div>
+
+					</div>
+				</section>
+			</div>
+
+		</t>
+	</template>
+</odoo>

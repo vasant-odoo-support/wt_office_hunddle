@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seo_resources_tree" model="ir.ui.view">
+        <field name="name">seo.resources.tree</field>
+        <field name="model">seo.resources</field>
+        <field name="arch" type="xml">
+            <tree string="SEO Resources">      
+                <field name='name'/>
+                <field name='seo_description'/>
+                <field name='seo_url'/>
+                <field name='seo_priority' widget="priority"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="seo_resources_form" model="ir.ui.view">
+        <field name="name">seo.resources.form</field>
+        <field name="model">seo.resources</field>
+        <field name="arch" type="xml">
+            <form string="SEO Resources">
+                <sheet>
+                    <group>
+                        <group>
+                           <field name='name'/>
+                            <field name='seo_description'/>
+                            <field name='seo_url'/>
+                            <field name='seo_priority' widget="priority"/>
+                        </group>
+                        <group>
+                            <field name='seo_image' widget='image' class="oe_avatar"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_seo_resources" model="ir.actions.act_window">
+        <field name="name">SEO Resources</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">seo.resources</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add a new Toolkit
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="seo_resources_menu" name="SEO Resources" parent="toolkit_root" action="wt_office_hunddle.action_seo_resources"/>
+</odoo>

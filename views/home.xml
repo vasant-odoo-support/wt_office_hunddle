@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    
+    <record id="homepage_template" model="ir.ui.view">
+	    <field name="name">Home</field>
+	    <field name="type">qweb</field>
+	    <field name="key">website.homepage.custom</field>
+	    <field name="arch" type="xml">
+	        <t t-name="homepage_template">
+	            <t t-call="website.layout">
+	            	<section class="hero-section">
+				            <div class="banner-area">
+				                <img src="/wt_office_hunddle/static/src/images/hero-banner.jpg" alt="hero-banner" title="hero-banner"/>
+				                <div class="over-banner">
+				                    <div class="container-fluid text-center justify-content-center align-items-center d-flex b-width" style="bottom: 330px;">
+				                        <h2>RELIABLE BUSINESS GROWTH SOLUTIONS</h2>
+				                        <p>With over 30 years of experience, we provide small businesses with reliable business growth solutions from design and print to digital marketing, to lead generation and strategy. We are your business solution provider that encompasses the values and services that will enable your company to advance effectively and efficiently.</p>
+				                        <a href="/how-it-works" class="btn btn-orange jambo">LET’S WORK TOGETHER</a>
+				                    </div>
+				                </div>
+				            </div>
+				    </section>
+				    <section class="cracked-section">
+			            <div class="container-fluid">
+			            	<div class="container">
+				                <div class="row">
+				                    <div class="col-md-5">
+				                        <div class="cracked-content">
+				                            <h2>WE HAVE CRACKED <br/>THE CODE.</h2>
+				                            <h5 class="sp-tag">Ask us how.</h5>
+				                            <p>We have discovered what every business needs to know in order to, not only, survive but to thrive in their businesses.  Take the assessment to find out how we can help you crack the code to win in business.</p>
+				                            <a href="/page/assessment" class="btn btn-orange jambo">Take The Assessment</a>                 
+				                        </div>
+				                    </div>
+				                    <div class="col-md-7">
+				                        <img src="/wt_office_hunddle/static/src/images/bee1.png" alt="bee1" title="" class="img-fluid img-ant-mobile"/>
+				                    </div>
+				                </div>
+				            </div>
+			            </div>
+			        </section>
+			        <section class="video-section">
+			            <div class="video-text-box"> 
+			            	<div class="container">
+				                <div class="row">
+				                    <div class="col-md-9 pl-0">
+				                        <h2>WE ARE YOUR <br/>BUSINESS SUPPORT TEAM.</h2>
+				                        <p>You are in business for yourself. Why be by yourself?</p>
+				                    </div>
+				                    <div class="col-md-3">
+				                        <button type="button" id="myBtn" class="btn video-btn video-play-image" data-toggle="modal" t-attf-data-src="#{request.website.embed_one_code}" data-target="#myModal">
+				                          <img src="/wt_office_hunddle/static/src/images/play.png" alt="play" title="play" height="150"/>
+				                        </button>  
+				                    </div>
+				                </div>
+				            </div>  
+			            </div> 
+			            <video src="/wt_office_hunddle/static/src/videos/bg-vid.mp4" loop="" muted="" autoplay="" wight="100%"></video>
+			        </section>
+			        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		              <div class="modal-dialog" role="document">
+		                <div class="modal-content">
+		                  <div class="modal-body">
+		                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                      <span>×</span>
+		                    </button>        
+				            <div class="embed-responsive embed-responsive-16by9">
+				              <iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_one_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true"></iframe>
+				            </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		            <section class="featured-section">
+			            <div class="container-fluid">
+			                <div class="sec-title">
+			                    <h2>Ready to transform your business?</h2>
+			                    <span class="black">Take the business asessment to get started</span>
+			                </div>
+			                <div class="row">
+			                    <div class="col-md-4">
+			                        <div class="featured-box">
+			                            <div class="ico-box">
+			                                <img src="/wt_office_hunddle/static/src/images/icon1.png" alt="ico1" title=""/>
+			                            </div>
+			                            <div class="featured-content">
+			                                <h4>Complete the<br/>Assessment</h4>
+			                                <p>Discover the questions that every successful business leader must answer.  Simply by answering the questions, you will uncover some issues that you never knew existed.  Guaranteed.</p>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-4">
+			                        <div class="featured-box">
+			                            <div class="ico-box">
+			                                <img src="/wt_office_hunddle/static/src/images/icon2.png" alt="ico1" title=""/>
+			                            </div>
+			                            <div class="featured-content">
+			                                <h4>Get A Free<br/>Game Plan</h4>
+			                                <p>After the Assessment, we will assign a personal Business Coach who will offer you a basic Strategic GamePlan that will identify your next action steps. </p>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-4">
+			                        <div class="featured-box">
+			                            <div class="ico-box">
+			                                <img src="/wt_office_hunddle/static/src/images/icon3.png" alt="ico1" title=""/>
+			                            </div>
+			                            <div class="featured-content">
+			                                <h4>Take Action</h4>
+			                                <p>Your Business Coach will challenge you, while keeping you focused on the important parts, that as your company’s leader, you should be focused on.</p>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="align-items-center d-flex justify-content-center">
+			                <a href="/page/assessment"  class="bl-btn">TAKE THE ASSESSMENT</a>
+			            </div>
+			        </section>
+			        <section class="testimonial-section">
+			            <div class="container-fluid">
+			                <div class="sec-title white">
+			                    <h2>real results from real business owners</h2>
+			                </div>
+			                <div class="testimonial-box">
+			                    <p>I was faced with a very difficult challenge trying to survive during this time of COVID -19. I was perplexed around certain issues on how to grow my business.  Together with my team at Office Huddle, we put together a solution that allowed us to actually thrive during the time when other businesses are not doing so well.</p>
+			                </div>
+			                <div class="client-overview">
+			                    <img src="/wt_office_hunddle/static/src/images/drtest.png" alt="Warren1" title="Warren1"/>
+			                    <h5>-Dr. Bryant S. Edwards, Iconic Infusions -</h5>
+			                </div>
+			            </div>
+			        </section>
+			        <section class="drivers-section sevensteps">
+			            <div class="container-fluid">
+			                <div class="sec-title orange">
+			                    <h2>The seven KEY SYSTEMs of Business Success.</h2>
+			                    <h5>With no shortage of things to do, it’s easy to get stuck just working in your business rather than on your business. But you can take your business where you need it to go. Office Huddle has helped tons of business owners reach their goals.
+			                    <br/><br/>The key is to invest in seven areas:<br/><br/></h5>
+			                </div>
+			                </div>
+			            
+			        </section>
+			        <section>
+			            <div class="grid_hover_box_cl">
+			                <figure class="effect-slideleft one-half">
+			                    <img src="/wt_office_hunddle/static/src/images/1leadership.png" alt="img01"/>
+			                    
+			                    <figcaption class="blue">
+			                        <p>Solidify the core of your business by polishing the fundamental attributes of your ogranization.</p>
+			                    </figcaption>           
+			                </figure>
+			                <figure class="effect-slidedown one-half">
+			                    <img src="/wt_office_hunddle/static/src/images/2marketing.png" alt="img02"/>
+			                    <figcaption class="gray">
+			                        <p>Conduct marketing tactics combined with an approach that refines audience segmentation to best demonstrate the value of your products/services.</p>
+			                    </figcaption>           
+			                </figure>
+			                <figure class="effect-slidedown one-half">
+			                    <img src="/wt_office_hunddle/static/src/images/3financial.png" alt="img07"/>
+			                    <figcaption class="blue">
+			                        <p>Drive your business towards stabilization, expansion, and growth despite limited resources through formation of healthy financial habits.</p>
+			                    </figcaption>           
+			                </figure>
+			                <figure class="effect-slideright one-half">
+			                    <img src="/wt_office_hunddle/static/src/images/4teamdev.png" alt="img01"/>
+			                    <figcaption class="blue">
+			                        <p>Cover more business opportunities through hiring a workforce that is aligned with your goal and vision.</p>
+			                    </figcaption>           
+			                </figure>
+			                <div class="last-align-half">
+			                    <figure class="effect-slidedown one-half">
+			                        <img src="/wt_office_hunddle/static/src/images/5leadgen.png" alt="img02"/>
+			                        <figcaption class="gray">
+			                            <p>Increase the number of opportunities in lead mining by knowing and applying effective methods in the game play of sourcing for potential clients, at the right place, and time.</p>
+			                        </figcaption>           
+			                    </figure>
+			                    <div class="last-align">
+			                        <figure class="effect-slidedown one-forth">
+			                            <img src="/wt_office_hunddle/static/src/images/6leadconver.png" alt="img01"/>
+			                            <figcaption class="blue">
+			                                <p>Make full use of the generated leads by converting activities, processes and effective presentations  that has the power to turn any potential client in to a loyal customer.</p>
+			                            </figcaption>           
+			                        </figure>
+			                        <figure class="effect-slideup one-forth">
+			                            <img src="/wt_office_hunddle/static/src/images/7marketing.png" alt="img02"/>
+			                            <figcaption class="gray">
+			                                <p>Create a system that delivers your products and services efficiently by understanding product design, production, delivery subsystem, and customer service.</p>
+			                            </figcaption>           
+			                        </figure> 
+			                    </div>
+			                </div>
+			            </div>
+			        </section>
+			        <div class="align-items-center d-flex justify-content-center w-100">
+                        <a href="/how-it-works" class="bl-btn">How It Works</a>
+                    </div>
+                    <section class="dedicated-growth">
+			            <div class="container-fluid">
+			                <div class="sec-title smaller">
+			                    <h2>We Love Empowering Businesses. Check Out Our Articles.</h2>
+			                </div>
+			                <div class="row"  t-if="blog_post_ids">
+			                    <div class="col-lg-4 s_latest_posts_post" t-foreach="blog_post_ids" t-as="blog_id">
+									<div class="article-box">
+										<img itemprop="image" t-att-src="website.image_url(blog_id, 'bg_image')" alt="Lights" style="height: 205px;" class="img-fluid"/>
+										
+										<div class="article-content">
+											<a href="javascript:;">
+												<h3><t t-esc="blog_id.name"/></h3>
+											</a>
+											<p><t t-esc="blog_id.teaser"/></p>
+											<div class="blog--item__meta">
+												<span><i class="fa fa-user"></i> Chris</span>
+												<span><i class="fa fa-comments"></i> 0</span>
+												<a t-att-href="blog_id.website_url" title="" aria-describedby="tooltip231649">Read More →</a>
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+			                    <div class="align-items-center d-flex justify-content-center w-100">
+			                        <a href="javascript:;" class="bl-btn">See More Great Articles</a>
+			                    </div>
+			                </div>
+			        </section>
+
+			        <section class="gridsteps">
+			            <div class="row mr-0">
+			                <div class="col-md-6 col-sm-12">
+			                    <div class="program">
+			                       <section class="processes">
+			                              <div class="contain">
+			                                 <div class="inner-wrapper">
+			                                    <ul class="card_float">
+			                                       <li data-parallax="{&quot;y&quot; : 20}">
+			                                          <div class="card pad management">
+			                                             <div class="heading">
+			                                                <img src="/wt_office_hunddle/static/src/images/entrepreneur.png" alt="EMyth The Seven Essential Systems: Management"/>
+			                                                <h3>Entrepreneur Training</h3>
+			                                             </div>
+			                                             <p class="body">Learn how to build and fine tune the core of your business. </p>
+			                                          </div>
+			                                       </li>
+			                                       <li data-parallax="{&quot;y&quot; : -10}">
+			                                          <div class="card pad finance">
+			                                             <div class="heading">
+			                                                <img src="/wt_office_hunddle/static/src/images/printing.png" alt="EMyth The Seven Essential Systems: Finance"/>
+			                                                <h3>Printing</h3>
+			                                             </div>
+			                                             <p class="body">Enhance your promotional tactics through exceptional print materials.</p>
+			                                          </div>
+			                                       </li>
+			                                       <li data-parallax="{&quot;y&quot; : 30}">
+			                                          <div class="card pad lead_conversion">
+			                                             <div class="heading">
+			                                                <img src="/wt_office_hunddle/static/src/images/graphicdesign.png" alt="EMyth The Seven Essential Systems: Lead conversion"/>
+			                                                <h3>Graphic design</h3>
+			                                             </div>
+			                                             <p class="body">Empower your business through implementation of creative visual presentation.</p>
+			                                          </div>
+			                                       </li>
+			                                       <li data-parallax="{&quot;y&quot; : 10}">
+			                                          <div class="card pad marketing">
+			                                             <div class="heading">
+			                                                <img src="/wt_office_hunddle/static/src/images/businesscoaching.png" alt="EMyth The Seven Essential Systems: Marketing"/>
+			                                                <h3>Business Coaching</h3>
+			                                             </div>
+			                                             <p class="body">Develop and polish your core as a business owner to be an effective leader.</p>
+			                                          </div>
+			                                       </li>
+			                                       <li data-parallax="{&quot;y&quot; : -10}">
+			                                          <div class="card pad leadership">
+			                                             <div class="heading">
+			                                                <img src="/wt_office_hunddle/static/src/images/leadgeneration.png" alt="EMyth The Seven Essential Systems: Leadership"/>
+			                                                <h3>Lead Generation</h3>
+			                                             </div>
+			                                             <p class="body">Create limitless income generation to live the life that you want.</p>
+			                                          </div>
+			                                       </li>
+			                                    </ul>
+			                                 </div>
+			                              </div>
+			                       </section>
+			                      </div>
+			                      <div class="program">
+			                       <section class="processes">
+			                            <div class="contain">
+			                                <div class="inner-wrapper">
+			                                    <ul class="card_float">
+			                                        <li data-parallax="{&quot;y&quot; : 10}" class="erp-development-card">
+			                                            <div class="card pad marketing2">
+			                                                <div class="heading">
+			                                                    <img src="/wt_office_hunddle/static/src/images/erpdevelopement.png" alt="EMyth The Seven Essential Systems: Marketing"/>
+			                                                    <h3>ERP Development</h3>
+			                                                </div>
+			                                                    <p class="body">Centralize all business functions and improve your business proesses by 95%.</p>
+			                                            </div>
+			                                       </li>
+			                                       <li data-parallax="{&quot;y&quot; : 20}" class="last-childli virtual-staffing-card">
+			                                          <div class="card pad marketing3">
+			                                                <div class="heading">
+			                                                    <img src="/wt_office_hunddle/static/src/images/Virtual.png" alt="EMyth The Seven Essential Systems: Marketing"/>
+			                                                    <h3>Virtual Staffing</h3>
+			                                                </div>
+			                                                    <p class="body">Cover more responsibilities through hiring the best workforce.</p>
+			                                            </div>
+			                                        </li>
+			                                        <li data-parallax="{&quot;y&quot; : 20}" class="first-childli sales-support-card"> 
+			                                            <div class="card pad management2 ">
+			                                                <div class="heading">
+			                                                    <img src="/wt_office_hunddle/static/src/images/sales.png" alt="EMyth The Seven Essential Systems: Management"/>
+			                                                    <h3>Sales Support </h3>
+			                                                </div>
+			                                                    <p class="body">Strategize and convert leads into your personal financial resource.  </p>
+			                                            </div>
+			                                       </li>
+			                                       
+			                                       
+			                                    </ul>
+			                                </div>
+			                            </div>
+			                        </section>
+			                    </div>
+			                </div>
+			                <div class="col-md-6   col-sm-12 pt-3">
+			                    <div class="content">
+			                        <h2 class="content-h2">"Make your life easier. <br/> Discover proven <br/> business BUILDING <br/> products.”</h2>
+			                        <p class="body floatbox">Our goal is to increase your business success rate and achieve financial freedom. There is only one reliable avenue that will bring you both - our specialized systems and products.</p>
+			                        
+			                    </div>
+			                        <div class="content btn-align">
+			                           <a href="javascript:;" class="bl-btn">DISCOVER OUR PRODUCTS</a>
+			                        </div>
+			                </div>
+			            </div>
+			        </section>
+
+			        
+	            </t>
+	        </t>
+	    </field>
+	</record>
+
+	
+    <record id="homepage_custom_template_menu" model="website.page">
+        <field name="website_published">True</field>
+        <field name="url">/home</field>
+        <field name="is_homepage">True</field>
+        <field name="view_id" ref="homepage_template" />
+    </record>
+</odoo>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="graphic_design">
+		<t t-call="website.layout">
+			<div id="wrap" class="graphic_design_main_cl">
+
+				<section id="graphics" class="graphics">
+      				<div class="container container-fluid">
+        				<div class="row">
+					        <div class="col text-center">
+					            <div class="img-text">
+					              	<h1> Unlimited Graphic &amp; Video Design <br/> At A Low Cost. For The Pros From The Pros.</h1>
+					              	<h6> Allows our experts to triple the power of your media. Enjoy<br/> unlimited design to solutions
+					                at a minimum monthly fee!
+					              	</h6>
+					            </div>
+					        </div>  
+					    </div>
+
+					    <div class="row">
+					        <div class="col text-center">
+					            <a href="/pricing"> <button> SEE PRICE </button></a>
+					            <a href="https://calendly.com/henrybdorris/60min"><button> SCHEDULE A DEMO </button></a>
+					       	</div>
+					    </div>
+					</div>
+				</section>
+
+				<section class="team-bottom">
+				    <div class="container">
+				      	<div class="row" data-aos="fade-up">
+				        	<div class="col">
+				          		<h2 class="h2">
+				          			<b>OFFICE HUDDLE PERKS</b> 
+				          		</h2>
+				          		<p class="graphic_paragraph">Never leave ideas in your imagination. Make your dream design come true while not breaking the bank through our team of video and graphic design experts. </p>
+				      		</div>
+				  		</div>
+
+				  		<div class="row" data-aos="fade-right">
+				    		<div class="col-lg-4 col-md-6  col-sm-12 d-flex align-items-stretch mt-4 mt-md-0 align-items-center">
+				      			<div class="coaching-item">
+				        			<img src="/wt_office_hunddle/static/src/images/Unlimited.png" class="img-fluid" alt="..."/>
+				        			<h4>
+				        				<b>Unlimited Design</b> <br/>
+				        			</h4>     
+				        			<p>Make the most out of your subscription fee by getting unlimited design requests, revisions, and consultations.</p>
+				        		</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch mt-4 mt-md-0 align-items-center" >
+				  				<div class="coaching-item">
+				    				<img src="/wt_office_hunddle/static/src/images/Fast.png" class="img-fluid" alt="..."/>     
+				    				<h4>
+				    					<b>Fast Turnaround</b> <br/>
+				    				</h4>
+				    				<p>In business, time is money. Get the design and results that you want straight away.</p>  
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch mt-4 mt-md-0 align-items-center">
+				  				<div class="coaching-item">
+				    				<img src="/wt_office_hunddle/static/src/images/Hidden.png" class="img-fluid" alt="..."/>
+				    
+				    				<h4>
+				    					<b>No Hidden Cost</b> <br/>
+				    				</h4>     
+				    				<p>Partnership means transparency. Expect no additional hidden charges; just a flat monthly rate.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch mt-4 mt-md-0 align-items-center">
+				  				<div class="coaching-item">
+				    				<img src="/wt_office_hunddle/static/src/images/Human.png" class="img-fluid" alt="..."/>
+				    
+				    				<h4>
+				    					<b>Get Human Support</b> <br/>
+				    				</h4>     
+				    				<p>100% count on our team with your business needs. We ensure that our Office Huddle represenatatives are dedicated and responsive.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+				  				<div class="coaching-item">
+				    				<img src="/wt_office_hunddle/static/src/images/Team-Collab.png" class="img-fluid" alt="..."/>
+				    
+				    				<h4>
+				    					<b>Team Collaboration</b> <br/>
+				    				</h4>     
+				    				<p>Your goals and our expertise go well together. We believe our contributions will make your business elevate from the rest.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-12  d-flex align-items-stretch">
+				  				<div class="coaching-item">
+				    				<img src="/wt_office_hunddle/static/src/images/Own.png" class="img-fluid" alt="..."/><br/>
+				    
+					    			<h4>
+					    				<b>Own Every Design</b> <br/>
+					    			</h4>     
+					    			<p>Get full ownership of the provided designs and use it as much as you want, 
+					    			anytime you want. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row" >
+						    <div class="col text-center">
+						      	<a href="/pricing"><button> Let's Get Started</button></a>
+						  	</div>
+						</div>
+
+						<div class="row" >
+						    <div class="col text-center">
+						      	<h1> PRODUCE VIDEO &amp; GRAPHIC DESIGN THAT BEST SUITS YOUR BUSINESS</h1>
+						      	<h6>Leave your design needs to our team of art and creative experts</h6>
+						  	</div>
+						</div>
+
+						<div class="row">
+						    <div class="col text-center">
+						    	<button onclick="showgraphic()" id="graphics-btn"> <b>GRAPHICS</b> </button>
+						    	<button onclick="showvideo()" id="video-btn"> <b>VIDEO</b> </button>
+					          <!-- <a href="/pricing"><button id="graphics-btn">
+					                <b>GRAPHICS</b>
+					              </button></a>
+					              <a href="/pricing"><button id="video-btn">
+					                <b>VIDEO</b>
+					              </button></a> -->
+					        </div>
+						</div>
+					</div>
+				</section>
+
+				<section class="what-we-do" id="wwd">
+			      	<div class="container">
+				        <div class="row">
+					        <div class="col text-center">
+					            <h4> What we do</h4>
+					        </div>  
+				        </div>
+
+				        <div class="row">
+				         	<div class="col-lg">
+					            <ul>
+					              	<li>Advance Infographics</li>
+					              	<li>Background Removal</li>
+					              	<li>Billboards</li>
+					              	<li>Blog Images</li>
+					              	<li>Book Covers</li>
+					              	<li>Booklets</li>
+					              	<li>Brochures</li>
+					              	<li>Business Cards</li>
+					              	<li>Business Reports</li>
+					              	<li>Character &amp; Mascots</li>
+					              	<li>Company Profiles</li>
+					              	<li>Corporate Folders</li>
+					              	<li>Custom Illustrations</li>
+					            </ul>
+					        </div>
+
+					        <div class="col-lg">
+					            <ul>
+					              	<li>Display Ads</li>
+					              	<li>Ebook Covers</li>
+					              	<li>Ebook Layouts</li>
+					              	<li>Email Signatures</li>
+					              	<li>Event Invitations</li>
+					              	<li>Flyers &amp; Posters</li>
+					              	<li>Icons</li>
+					              	<li>Landing Pages</li>
+					              	<li>Logos</li>
+					              	<li>Newsletters</li>
+					              	<li>Packaging &amp; Labels</li>
+					              	<li>Podcast Covers</li>
+					              	<li>Point of Sales Materials</li>
+					              	<li>Powerpoint Templates</li>
+					            </ul>
+					        </div>
+
+					        <div class="col-lg">
+					            <ul>
+					              	<li>Presentation Decks</li>
+					              	<li>Print Ads</li>
+					              	<li>Product Mock-ups</li>
+					              	<li>Promotional Materials</li>
+					              	<li>Restaurant Menus</li>
+					              	<li>Signage</li>
+					              	<li>Simple Infographics</li>
+					              	<li>Social Media Posts &amp; Ads</li>
+					              	<li>T-shirt Design</li>
+					              	<li>Tradeshow Banners</li>
+					              	<li>Vehicle Wraps</li>
+					              	<li>And just about anything that can be designed in PS, AI or</li>
+					            </ul>
+					        </div>
+					    </div>
+
+					    <div class="row">
+					        <div class="col text-center">
+					            <h6> click here to view our portfolio</h6>
+					        </div>
+					    </div>
+					</div>
+				</section>
+
+				<section class="what-we-do-2" id="wwd2">
+				    <div class="container">
+				        <div class="row">
+				          	<div class="col text-center">
+				            	<h4> What we do</h4>
+				          	</div>  
+				        </div>
+
+				        <div class="row">
+				          	<div class="col-lg">
+				            	<ul>
+				              		<li>Adding Thumbnails</li>
+				              		<li>Animating Static Designs</li>
+					              	<li>Combining/Editing Raw Footage</li>
+					              	<li>Demo Videos</li>
+					              	<li>Educational Videos</li>
+					              	<li>FAQ Videos</li>
+					              	<li>Logo Animations</li>
+				            	</ul>
+				          	</div>
+
+				          	<div class="col-lg">
+				            	<ul>
+				              		<li>Product Highlights Videos</li>
+				              		<li>Simple Explainer Videos</li>
+				              		<li>Social Media Videos</li>
+				              		<li>Testimonial Videos</li>
+				              		<li>Text Overlays</li>
+				              		<li>And More!</li>
+				            	</ul>
+				          	</div>
+
+				          	<div class="col-lg">
+				            
+				          	</div>
+				        </div>
+
+				        <div class="row">
+				          	<div class="col text-center">
+				            	<h6> click here to view our portfolio</h6>
+				          	</div>
+				        </div>
+				    </div>
+				</section>
+				<script>
+					function showgraphic(){
+						    document.getElementById('wwd').style.display='block';
+						    document.getElementById('wwd2').style.display='none';
+						}
+
+						function showvideo(){
+						    document.getElementById('wwd').style.display='none';
+						    document.getElementById('wwd2').style.display='block';
+						}
+				</script>
+				<div class="modal fade pt-5 ceo_modal_main_cl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  					<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    					<div class="modal-content">
+          					<iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_three_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true">
+          					</iframe>
+    					</div>
+  					</div>
+				</div>
+				<section class="video-section2 pt-5">
+					<div class="video-text-box2">
+					    <div class="container">
+					      	<div class="row">
+					        	<div class="col">
+					          		<h2> Train like a Champion. <br/> Play Business To Win.</h2>
+					        	</div>
+					        	<div class="col-12">
+					          		<button type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+					            		<img src="/wt_office_hunddle/static/src/images/play.png" alt="play" title="play" height="150"/>
+					         		</button>
+					        	</div>
+					      	</div>
+					    </div>
+					</div>
+					<video src="/wt_office_hunddle/static/src/videos/train_video.mp4" loop="" muted="" autoplay="" width="100%"></video>
+				</section>
+
+				<section id="coaching" class="coaching" t-if="graphic_design_blog">
+			      	<div class="container" data-aos="fade-up">
+			        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			            	<h1 data-aos="zoom-in" data-aos-delay="100">
+			            		<b>WE LOVE  BUSINESS COACHING. CHECK OUT OUR ARTICLES.</b>
+			            	</h1>
+			            </div>
+			            
+			            <div class="row" data-aos="zoom-in" data-aos-delay="100" >
+				            <div class="col-lg-4" t-foreach="graphic_design_blog" t-as="graphic">
+				            	<div class="coaching-item">
+				              		<img itemprop="image" t-att-src="website.image_url(graphic, 'bg_image')" alt="Lights" class="img-fluid" style="height: 240px;"/>
+				              		<p t-esc="graphic.name" class="business-blog"/>
+				              		<div class="coaching-content">
+				              			<a t-attf-href="/blog/{{slug(graphic.blog_id)}}/post/{{slug(graphic)}}">
+					                  		<h4 class="justify-content-between mb-3">
+					                  			<t t-esc="graphic.name"/>
+					                  		</h4>
+				                  		</a>
+				                  		<p>
+				                			<t t-esc="graphic.teaser"/>
+				                		</p>
+				                		<div class="trainer row justify-content-between align-items-center">
+				                			<div class="trainer-rank align-items-center">
+						                		<i class="fa fa-user-o"></i>
+						                		&amp;nbsp; Andrew
+						                		&amp;nbsp; 
+						                		<i class="fa fa-comments"></i>
+						                		&amp;nbsp; 0
+						              		</div>
+						              		<div class="trainer-profile d-flex align-items-center">
+						              			<a t-attf-href="/blog/{{slug(graphic.blog_id)}}/post/{{slug(graphic)}}" class="text-decoration-none">
+						                			<span>Read More</span>
+						                		</a>
+						              		</div>
+						            	</div>
+						          	</div>
+						        </div>
+						    </div>
+						</div>
+
+						<div class="row" data-aos="zoom-in" data-aos-delay="100">
+			          		<div class="d-flex justify-content-center w-100 align-items-stretch mt-4 mt-lg-0">
+			            		<a href="/blog" class="get-book-btn">
+			            			SEE MORE GREAT ARTICLES</a>
+			          		</div>
+			        	</div>
+
+					</div>
+				</section>
+			</div>
+		</t>
+	</template>
+</odoo>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="business_coatching">
+		<t t-call="website.layout">
+			<section id="heroo" class="">
+		    	<img id ="heroimage" src="/wt_office_hunddle/static/src/images/heroimage.png" class="img-fluid" alt=""/>
+		  	</section>
+
+		  	<section id="counts" class="counts section-bg">
+			    <div class="container conatiner-md">
+			      	<div class="row counters">
+			      		<div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+				          	<img id="group57" src="/wt_office_hunddle/static/src/images/Group 57.png" class="img-fluid" alt=""/>
+				          	<img id="layer137" src="/wt_office_hunddle/static/src/images/Layer 137.png" class="img-fluid" alt=""/>
+				          	<img id="layer138" src="/wt_office_hunddle/static/src/images/Layer 138.png" class="img-fluid" alt=""/>
+				            <img id="layer139" src="/wt_office_hunddle/static/src/images/Layer 139.png" class="img-fluid" alt=""/>
+				            <img id="layer140" src="/wt_office_hunddle/static/src/images/Layer 140.png" class="img-fluid" alt=""/>
+				            <img id="layer141" src="/wt_office_hunddle/static/src/images/Layer 141.png" class="img-fluid" alt=""/>
+				        </div>
+			        	<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+				          	<h2>
+				          		<b>Always move forward with <br/> a business coach behind your back.</b>
+				          	</h2>
+				            <br/>
+				            <br/>
+				            <br/>
+				            <p>
+				              A system built for every small business with a  mentor supporting not only every stage of your company but your growth as a leader too.
+				            </p>
+			        	</div>
+			      	</div>
+			    </div>
+			</section>
+
+		  	<section id="strategic" class="d-flex justify-content-center align-items-center">
+			    <div class="flex-column">
+			      <img src="/wt_office_hunddle/static/src/images/strategic.png" class="strat" style="width: 80%"  alt="..."/>
+			    </div>
+			</section>
+
+			<section id ="office">
+		      	<div class="container">
+		        	<div class="row">
+		          		<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-right" data-aos-delay="100" style="text-align: right;">
+		           			<img id= "leadership" src="/wt_office_hunddle/static/src/images/leadership.png" class="img-fluid" alt=""/>
+		          		</div>
+	          			<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+	            			<h3>
+	            				<b>The Office Huddle Game Plan: <br/> An Absolute System To <br/> Win The Game Of Business.</b>
+	            			</h3>
+	              			<p>The Office Huddle Game Plan is the result of  interconnected organized systems that target to guide companies operate in such a way without missing any critical component in business management. It is meticulously engineered to cover the foundation of your business up to customer experience to ensure that your organization is working at its best performance, you are yielding utmost possible reuslts and building game changing opportunities.</p>
+	              			<a href="courses.html" class="get-download-btn">DOWNLOAD THE <br/> GAME PLAN</a>
+	          			</div>
+	        		</div>
+	      		</div>
+	    	</section>
+
+	    	<section id ="officee">
+		      	<div class="container container-fluid">
+		        	<div class="row" style="margin-bottom: 30px">
+		          		<div class="row" style="margin-bottom: 30px">
+		          			<img id= "started" src="/wt_office_hunddle/static/src/images/started.png" class="img-fluid" style="width: 1500px" alt=""/>
+		          			<div class="col-lg-12 order-1 order-lg-2">
+					            <h2><b>Your first session <br/> session is on us!</b></h2>
+					        </div>
+
+          					<div class="col-lg-12 order-1 order-lg-2">
+            					<p>Take you best foot forward<br/> <br/>No more delays; start working on your business with a clearer path! Our whole team is ready to hear you out and we are thrilled to present the approach that will change your game play. Don't let yourself miss another opportunity to score. Take on this first step to unleash the absolute solution to your business problem and find  powerful strategies towards financial freedom.</p>  
+             					<a href="https://calendly.com/henrybdorris/60min" class="get-download2-btn">GET STARTED</a>
+          					</div>
+        				</div>
+      				</div>
+      			</div>
+    		</section>
+
+		    <section id="coaching" class="coaching" t-if="business_coatching_blog">
+		      	<div class="container" data-aos="fade-up">
+		        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+		            	<h1 data-aos="zoom-in" data-aos-delay="100">
+		            		<b>WE LOVE  BUSINESS COACHING. CHECK OUT OUR ARTICLES.</b>
+		            	</h1>
+		            </div>
+		            
+		            <div class="row" data-aos="zoom-in" data-aos-delay="100" >
+			            <div class="col-lg-4" t-foreach="business_coatching_blog" t-as="business_blog">
+			            	<div class="coaching-item">
+			              		<img itemprop="image" t-att-src="website.image_url(business_blog, 'bg_image')" alt="Lights" class="img-fluid" style="height: 240px;"/>
+			              		<p t-esc="business_blog.name" class="business-blog"/>
+			              		<div class="coaching-content">
+			              			<a t-attf-href="/blog/{{slug(business_blog.blog_id)}}/post/{{slug(business_blog)}}" class="text-decoration-none">
+				                  		<h4 class="justify-content-between mb-3">
+				                  			<t t-esc="business_blog.name"/>
+				                  		</h4>
+				                  	</a>
+			                  		<p>
+			                			<t t-esc="business_blog.teaser"/>
+			                		</p>
+			                		<div class="trainer row justify-content-between align-items-center">
+			                			<div class="trainer-rank align-items-center">
+			                				<i class="fa fa-user"> Andrew </i>
+				                    			
+				                    		<i class="fa fa-comments"> 0 </i>
+			                			</div>
+			                			<div class="trainer-profile align-items-center">
+			                				<a t-attf-href="/blog/{{slug(business_blog.blog_id)}}/post/{{slug(business_blog)}}" class="text-decoration-none">
+								            	<span>Read More</span>
+								        	</a>
+								        </div>
+			                		</div>
+			                  	</div>
+			              	</div>
+			            </div>
+			        </div>
+		  
+		        	<div class="row" data-aos="zoom-in" data-aos-delay="100">
+		          		<div class="d-flex justify-content-center w-100 align-items-stretch mt-4 mt-lg-0">
+		            		<a href="/blog" class="get-book-btn">
+		            			SEE MORE GREAT ARTICLES</a>
+		          		</div>
+		        	</div>
+		        </div>
+		    </section>
+      		<br/>
+		</t>
+	</template>
+</odoo>

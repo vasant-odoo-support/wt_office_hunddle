@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="t_shirt_printing_design_selection_officehuddle_template" name="TSHIRTS PRINTING">
+    <t t-call="website.layout">
+      <div id="wrap" class="tshirt_printing_wrap" style="margin-top: -15px;">
+        <!-- ======= Team Middle Section ======= -->
+        <section class="team-middle">
+          <h1>PRINTING</h1>
+          <hr style="width: 70%; border: solid 1px; color: rgb(0, 0, 0);"/>
+        </section>
+      <!-- End Team Middle Section  -->
+
+      <section class="virtual-middle container-fluid">
+        <div class="sidebar container container-fluid col-md-6 col-lg-4 col-xl-3">
+          <a class="active" href="#home">TSHIRTS</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          <a href="#news">LOREM IPSUM</a>
+          
+        </div>
+
+        <div class="content container container-fluid">
+          <div class="row">
+            <div class="column col col-sm col-md col-lg col-xl">
+              <div class="card">
+                <h3 class="active1">UPLOAD YOUR DESIGN HERE</h3>
+                <label for="photo_front" class="custom-file-upload">
+                  <img src="/wt_office_hunddle/static/src/tshirt-printing/Object1.png" alt="Paris" style="width:50%;"/>
+                </label>
+                <input type="file" class="form-control photo_front" id="photo_front" name="photo_front" accept=".png, .jpg, .jpeg" style="display:none;"/>
+                <!-- <a href="default.asp"><img src="/wt_office_hunddle/static/src/tshirt-printing/Object1.png" alt="Paris" style="width:50%;"/></a> -->
+                <h2>FAST AND EASY!</h2>
+                <p>Upload your print- ready files(s)(.TIF,.TIFF,.EPS,.AI,.PSD,.BMP,.GIF,.JPG,.PNG,.PDF) and choose either an instant screen proof or a manually processed proof and you're ready to go.</p>
+              </div>
+            </div>
+          
+            <div class="column col col-sm col-md col-lg col-xl">
+              <div class="card">
+                <h3 class="active2">LET US DESIGN FOR YOU!</h3>
+                <a href="/graphic"><img src="/wt_office_hunddle/static/src/tshirt-printing/Object2.png" alt="Paris" style="width:50%;"/></a>
+                <h2>NEED A WOWO FACTOR?</h2>
+                <p>Create a custom ook from scratch using our various design tools. Choose pre-design template or create your own design and layout by creating or adding images, text and your logo. Get an instant screen proof before approval.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section class= "bg-white">
+          <div class="" style="padding: 0;">
+            <div class="row">
+              <div class="credits col-lg-6" style="width: 100%; margin-left: 25%;margin-top: -6%;">
+                <div class="container d-flex align-items-center">
+                  <a href="index.html" class="lep"><img src="/wt_office_hunddle/static/src/tshirt-printing/OH_Logo.png" alt="" class="img-fluid" width="250px" /></a>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                  <div class="mid">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-soundcloud"></a>
+                  <a href="#" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  </div>
+                  <div class="rit">
+                  <a href="tel:6013489977"><i class="bi bi-telephone-inbound" aria-hidden="true"></i>601-348-9977</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>      
+      </div>
+    </t>
+  </template>
+</odoo>

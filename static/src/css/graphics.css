@@ -1,0 +1,475 @@
+.pcr-app{
+    top: 230px !important;
+    left: 1015.5px !important;
+}
+.graphic_design_form_cl header {
+    padding-top: 20px;
+}
+.img-fluid {
+    height: 100%;
+    width: 100%;
+    
+}
+.graphic_design_form_cl .container.d-flex.align-items-center{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+.graphic_design_form_cl header#header{
+    width: fit-content;  
+}
+
+.graphic_design_form_cl body {
+    max-width: 1980px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+.graphic_design_form_cl p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 50px;
+    font-family: 'Poppins';
+}
+.graphic_design_form_cl a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.graphic_design_form_cl a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.graphic_design_form_cl h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins'; 
+    margin-top: 20px;
+}
+
+.graphic_design_form_cl p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins';
+
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.graphic_design_form_cl .navbar {
+    padding: 0;
+}
+  
+.graphic_design_form_cl .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+  
+.graphic_design_form_cl .navbar li {
+    position: relative;
+}
+  
+.graphic_design_form_cl .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #37423b;
+    white-space: nowrap;
+    transition: 0.3s;
+    padding-left: 30px !important;
+}
+ 
+.graphic_design_form_cl .navbar a i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+  
+.graphic_design_form_cl .navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: #fcb42e;
+}
+  
+.graphic_design_form_cl .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+  
+.graphic_design_form_cl .navbar .dropdown ul li {
+    min-width: 200px;
+}
+  
+.graphic_design_form_cl .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+}
+  
+.graphic_design_form_cl .navbar .dropdown ul a i {
+    font-size: 12px;
+}
+  
+.graphic_design_form_cl .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: #ff8903;
+}
+  
+.graphic_design_form_cl .navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+  
+.graphic_design_form_cl .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+  
+.graphic_design_form_cl .navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+  
+
+  
+/*
+* Mobile Navigation 
+*/
+.graphic_design_form_cl .mobile-nav-toggle {
+    color: #37423b;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+  
+.graphic_design_form_cl .mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+  
+@media (max-width: 991px) {
+    .graphic_design_form_cl .mobile-nav-toggle {
+      display: block;
+    }
+    .graphic_design_form_cl .navbar ul {
+      display: none;
+    }
+}
+
+.graphic_design_form_cl .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(32, 38, 34, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.graphic_design_form_cl .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.graphic_design_form_cl .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.graphic_design_form_cl .navbar-mobile a {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #37423b;
+}
+
+.graphic_design_form_cl .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #ff8903;
+}
+
+.graphic_design_form_cl .navbar-mobile .getstarted {
+    margin: 15px;
+}
+
+.graphic_design_form_cl .navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+ 
+.graphic_design_form_cl .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+}
+
+.graphic_design_form_cl .navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+}
+  
+.graphic_design_form_cl .navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+}
+
+.graphic_design_form_cl .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+    color: #ff8903;
+}
+ 
+.graphic_design_form_cl .navbar-mobile .dropdown > .dropdown-active {
+    display: block;
+}
+
+/* Navigation End */
+
+.graphic_design_form_cl .get-started-btn {
+    margin-left: 22px;
+    background: #ff8903;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 35px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.graphic_design_form_cl .get-started-btn:hover {
+    background: #3ac162;
+    color: rgb(5, 5, 5);
+}
+
+.graphic_design_form_cl .team-upper{
+    background: #292929;
+}
+
+
+@media screen and (max-width:1024px){
+    .graphic_design_form_cl a.logo.me-auto{
+        width: 30%;
+    }
+    .graphic_design_form_cl .navbar a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .graphic_design_form_cl a.logo.me-auto{
+        width: 50%;
+    }
+}
+@media screen and (max-width:425px){
+    .graphic_design_form_cl a.logo.me-auto {
+        margin-right: 20% !important;
+}
+}
+
+
+/* 3rd section end */
+
+.graphic_design_form_cl .container-fluid {
+    padding-top: 5px !important;
+}
+
+/* css code end */
+
+.graphic_design_form_cl .form-group label {
+    color: black;
+    font-weight: 700;
+}
+
+.graphic_design_form_cl .form-group{
+    padding: 50px 20px 50px 20px;
+    background-image: url(/wt_office_hunddle/static/src/graphic/bgbot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.graphic_design_form_cl .container-fluid {
+    padding: 5% 5% 0% 5%;
+}
+.graphic_design_form_cl .form{
+    display: flex;
+    padding-bottom: 5%;
+}
+.graphic_design_form_cl .form-outline{
+    margin-bottom: 20px;
+}
+.graphic_design_form_cl .rit{
+    display: contents ;
+}
+
+/* footer section */
+.graphic_design_form_cl .bg-orange {
+    background-color: rgb(255, 101, 30);
+    color: white;
+    display: flex;
+}
+.graphic_design_form_cl .btn-submitt {
+    background-color: #fd7e14 !important;
+}
+.graphic_design_form_cl .btn-submitt:hover {
+    background-color: #fd7e14 !important;
+}
+
+.graphic_design_form_cl #bg-mid {
+    align-content: center;
+    background-image: url(/wt_office_hunddle/static/src/graphic/bgmid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.graphic_design_form_cl #bgtop {
+    background-image: url(/wt_office_hunddle/static/src/graphic/bgtopss.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+/* Item Information */
+.graphic_design_form_cl select {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+.graphic_design_form_cl select.card-sizes {
+    display: none;
+}
+.graphic_design_form_cl input#item1:checked ~ select.card-sizes {
+    display: block;
+}
+
+.graphic_design_form_cl select.postcard {
+    display: none;
+}
+.graphic_design_form_cl input#item2:checked ~ select.postcard {
+    display: block;
+}
+
+.graphic_design_form_cl select.flyers {
+    display: none;
+}
+.graphic_design_form_cl input#item3:checked ~ select.flyers {
+    display: block;
+}
+
+.graphic_design_form_cl select.vinyl-banner {
+    display: none;
+}
+.graphic_design_form_cl input#item6:checked ~ select.vinyl-banner {
+    display: block;
+}
+
+.graphic_design_form_cl select.cd-dvd {
+    display: none;
+}
+.graphic_design_form_cl input#item4:checked ~ select.cd-dvd {
+    display: block;
+}
+
+.graphic_design_form_cl select.brochure {
+    display: none;
+}
+.graphic_design_form_cl input#item5:checked ~ select.brochure {
+    display: block;
+}
+
+.graphic_design_form_cl select.sell-sheet {
+    display: none;
+}
+.graphic_design_form_cl input#item7:checked ~ select.sell-sheet {
+    display: block;
+}
+
+.graphic_design_form_cl select.door-hanger {
+    display: none;
+}
+.graphic_design_form_cl input#item8:checked ~ select.door-hanger {
+    display: block;
+}
+
+.graphic_design_form_cl select.newsletter {
+    display: none;
+}
+.graphic_design_form_cl input#item9:checked ~ select.newsletter {
+    display: block;
+}
+
+.graphic_design_form_cl select.poster {
+    display: none;
+}
+.graphic_design_form_cl input#item10:checked ~ select.poster {
+    display: block;
+}
+
+.graphic_design_form_cl select.presentation-folder {
+    display: none;
+}
+.graphic_design_form_cl input#item11:checked ~ select.presentation-folder {
+    display: block;
+}
+
+.graphic_design_form_cl select.event-ticket {
+    display: none;
+}
+.graphic_design_form_cl input#item12:checked ~ select.event-ticket {
+    display: block;
+}
+
+.graphic_design_form_cl select.me-nu {
+    display: none;
+}
+.graphic_design_form_cl input#item13:checked ~ select.me-nu {
+    display: block;
+}
+
+.graphic_design_form_cl #file-chosen{
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+  }

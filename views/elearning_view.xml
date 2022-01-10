@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="elearning_officehuddle_template" name="E-learning-Office Huddle">
+    <t t-call="website.layout">
+      <div id="wrap" class="elearning_wrap">
+        <!-- ======= Team Middle Section ======= -->
+        <section id="heroic-slides">
+          <div class="slider">
+            <input name="control" id="page1" type="radio" checked="checked" />
+            <input name="control" id="page2" type="radio" />
+            <input name="control" id="page3" type="radio" />
+            <input name="control" id="page4" type="radio" />
+            <div class="slider--el slider--el-1 anim-4parts">
+              <div class="slider--el-bg">
+                <div class="part top left"></div>
+                <div class="part top right"></div>
+                <div class="part bot left"></div>
+                <div class="part bot right"></div>
+              </div>
+              <div style="text-align: center;" class="slider--el-content">
+                <h2 class="slider--el-heading"><br/><br/>"BOOST THE GROWTH OF YOUR<br/>
+                  BUSINESS THROUGH ENHANCING<br/>
+                  YOUR SKILLS"<br/><br/></h2>
+                <a href="#courses" class="get-started-btn" style="border-radius: 30px; font-size: 20px;">FIND OUR COURSES</a>
+              </div>
+            </div>
+            <div class="slider--el slider--el-2 anim-9parts">
+              <div class="slider--el-bg">
+                <div class="part left-top"></div>
+                <div class="part mid-top"></div>
+                <div class="part right-top"></div>
+                <div class="part left-mid"></div>
+                <div class="part mid-mid"></div>
+                <div class="part right-mid"></div>
+                <div class="part left-bot"></div>
+                <div class="part mid-bot"></div>
+                <div class="part right-bot"></div>
+              </div>
+              <div style="text-align: center;" class="slider--el-content">
+                <h2 class="slider--el-heading"><br/><br/>"STRENGHTEN YOUR <br/>
+                  BUSINESS BY BUILDING<br/>
+                  ON YOUR KNOWLEDGE"<br/><br/></h2>
+                <a href="#courses" class="get-started-btn" style="border-radius: 30px; font-size: 20px;">FIND OUR COURSES</a>
+              </div>
+            </div>
+            <div class="slider--el slider--el-3 anim-5parts">
+              <div class="slider--el-bg">
+                <div class="part part-1"></div>
+                <div class="part part-2"></div>
+                <div class="part part-3"></div>
+                <div class="part part-4"></div>
+                <div class="part part-5"></div>
+              </div>
+              <div style="text-align: center;" class="slider--el-content">
+                <h2 class="slider--el-heading"><br/><br/>"FOR YOUR BUSINESS<br/>
+                  TO GROW, SO SHOULD<br/>
+                  YOUR KNOWLEDGE"<br/><br/></h2>
+                <a href="#courses" class="get-started-btn" style="border-radius: 30px; font-size: 20px;">FIND OUR COURSES</a>
+              </div>
+            </div>
+            <div class="slider--control left">
+              <label class="page1-left" for="page1"></label>
+              <label class="page2-left" for="page2"></label>
+              <label class="page3-left" for="page3"></label>
+            </div>
+            <div class="slider--control right">
+              <label class="page1-right" for="page1"></label>
+              <label class="page2-right" for="page2"></label>
+              <label class="page3-right" for="page3"></label>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="courses" class="courses">
+          <div class="container container-fluid" data-aos="fade-up">
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+              <h3 style="font-size: 40px; text-align: center; color: #f17a07; margin: 50px; padding-right: 100px;"><b>Available Online Courses</b>
+              </h3>
+            </div>
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+              <t t-foreach="channels" t-as="channel">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="course-item">
+                  <div class="zooom">
+                    <t t-set="course_image" t-value="website.image_url(channel, 'image_1024')"/>
+                    <a t-attf-href="/slides/#{slug(channel)}"><div t-attf-style="padding-top: 65%; background-image: url(#{course_image}); background-size: cover; background-position:center"/></a>
+                  </div>
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h3 style="height:100px; overflow: hidden;"><a t-attf-href="/slides/#{slug(channel)}"><t t-esc="channel.name"/></a></h3>
+                    </div>
+                    <p style="height:100px; overflow: hidden;">
+                      <t t-esc="channel.description"/>
+                    </p>
+                    <div class="trainer d-flex justify-content-between align-items-center">
+                      <div class="rating">
+                        <t t-if="channel.rating_avg >= 2">
+                          <span class="star checked">★</span>
+                        </t>
+                        <t t-if="not channel.rating_avg >= 2">
+                          <span class="star">★</span>
+                        </t>
+                        <t t-if="channel.rating_avg >= 4">
+                          <span class="star checked">★</span>
+                        </t>
+                        <t t-if="not channel.rating_avg >= 4">
+                          <span class="star">★</span>
+                        </t>
+
+                        <t t-if="channel.rating_avg >= 6">
+                          <span class="star checked">★</span>
+                        </t>
+                        <t t-if="not channel.rating_avg >= 6">
+                          <span class="star">★</span>
+                        </t>
+
+                        <t t-if="channel.rating_avg >= 8">
+                          <span class="star checked">★</span>
+                        </t>
+                        <t t-if="not channel.rating_avg >= 8">
+                          <span class="star">★</span>
+                        </t>
+
+                        <t t-if="channel.rating_avg >= 10">
+                          <span class="star checked">★</span>
+                        </t>
+                        <t t-if="not channel.rating_avg >= 10">
+                          <span class="star">★</span>
+                        </t>
+
+                        <!-- <span class="star checked"></span>
+                        <span class="star checked">★</span>
+                        <span class="star checked">★</span>
+                        <span class="star">★</span> -->
+                      </div>
+                      <div class="trainer-rank d-flex align-items-center">
+                        <t t-if="channel.enroll == 'public'">
+                          <p>Free</p>
+                        </t>
+                        <t t-if="channel.enroll == 'invite'">
+                          <p>Private</p>
+                        </t>
+                        <t t-if="channel.enroll == 'payment'">
+                          <p>$<t t-esc="channel.product_id.lst_price"/></p>
+                        </t>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+              </t>
+            </div>
+          </div>
+        </section><!-- End Courses Section -->
+
+        <!-- ======= Business Owners Section ======= -->
+        <section id="Business">
+          <div class="container container-fluid">
+            <div class="row">
+              <h1><br/></h1>
+              <h2 style="font-size: 30px;"><b>OUR BUSINESS OWNERS TRUST US</b></h2>
+              <div class="col-lg-4 order-2 order-lg-1">
+                <img src="assets/img/icon quote.png" class="img-fluid" alt=""/>
+                <p>A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a
+                  lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us
+                  and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my
+                  mind for about 6 months. Office Huddle team already knew what I need before I need it.. </p>
+              </div>
+
+              <div class="col-2 order-2 order-lg-2">
+                <img src="assets/img/Cortez Springer.png" class="img-fluid" id="picture" alt=""
+                  style="width: auto; height: auto;"/>
+              </div>
+              <div class="col-sm-2 order-2 order-lg-2">
+                <h5>Cortez Springer, </h5>
+                <h6>Wealth Strategist</h6>
+              </div>
+           
+
+              <div class="col-lg-4 order-2 order-lg-1">
+                <img src="assets/img/icon quote.png" class="img-fluid" alt=""/>
+                <p>They took my company at a point where I was struggling try to understand how to put branding out, those
+                  pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to
+                  many, many people across the country and across the world. They can do wonders and take your business to the
+                  next level where you desire to go.
+                </p>
+              </div>
+
+              <div class="col-2 order-2 order-lg-2">
+                <img src="assets/img/Lemzel Johnso.png" class="img-fluid" id="picture" alt=""
+                  style="width: auto; height: auto;"/>
+              </div>
+              <div class="col-sm-2 order-2 order-lg-2">
+                <h5>Lemzel Johnson, </h5>
+                <h6>Motivational Speaker</h6>
+              </div>
+
+              <div class="col-lg-4 order-2 order-lg-1">
+                <img src="assets/img/icon quote.png" class="img-fluid" alt=""/>
+                <p>Just when I get the chance to get a session with Office Huddle team, I automatically come out with some
+                  clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken
+                  my business to the next level. They freed me up to be able to get things done and get better for my
+                  clients.</p>
+              </div>
+
+              <div class="col-2 order-2 order-lg-2">
+                <img src="assets/img/Oginga Carr.png" class="img-fluid" id="picture" alt=""
+                  style="width: auto; height: auto;"/>
+              </div>
+              <div class="col-sm-2 order-2 order-lg-2">
+                <h5>Oginga Carr, </h5>
+                <h6>High Performance Coach</h6>
+                <h1><br/></h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ======= Branded Section ======= -->
+        <section id="Branded">
+          <div class="container container-fluid">
+            <h5><b>Just A Few Trusted Brands That We Value and Serve</b></h5>
+            <img src="assets/img/Divider.png" alt="" class="img-fluid"/>
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/Bridge.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/orangeauto.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/Iconic.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/Gentlemen.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/Lando.png" alt="" class="img-fluid"/>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/small_bz.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/St. Louis.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/Davidson.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/Woman of Character.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="col-lg-2">
+                <img src="assets/img/National Guard.png" alt="" class="img-fluid"/>
+              </div>
+            </div>
+            <img src="assets/img/Divider.png" alt="" class="img-fluid"/>
+          </div>
+        </section>
+
+        <section id="chat-bg contact" class="contact" style="background-color: #e6eaec; padding: 30px;">
+          <div class="container" data-aos="fade-up">
+            <div class="row">
+              <div class="col-lg-6 align-items-center" style=" text-align: center;">
+                <h1 style="font-family: 'Poppins'; font-size: 40px; line-height: 55px;"><strong>Ready to speak with a <br/> Business Growth <br/> Solutions Expert <br/> Let's chat!</strong></h1>
+                <a style="font-size: 24px; line-height: 40px;" href="tel:6013489977"><i class="bi bi-telephone-inbound" aria-hidden="true"></i> 601-348-9977</a> <br/>
+                <a style="font-size: 24px; line-height: 40px;" href="mailto:sales@officehuddle.com"><i class="bi bi-envelope"
+                    aria-hidden="true"></i> sales@officehuddle.com</a>
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 align-items-stretch" data-aos="fade-up">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Company Name" required="required"/>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="select" class="form-control" name="subject" id="subject" placeholder="Services" required="required"/>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Monthly Budget"
+                        required="required"/>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Project Details" required="required"></textarea>
+                  </div>
+
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <a href="submit-it.html" type="submit" class="get-download-btn2">SUBMIT</a>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section><!-- End Contact Section -->
+      </div>
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,105 @@
+<odoo>
+	<record id='res_partner_speaker_inherit_form_view' model='ir.ui.view'>
+		<field name="name">partner.view.speaker</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_partner_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//sheet/group/group/field[@name='category_id']" position="after">
+				<field name="is_speaker"/>
+			</xpath>
+			<xpath expr="//notebook" position="inside">
+				<page name="business_info" string="Bussiness Information">
+					<group>
+						<group>
+			                		<field name="company_name" string="Company Name"/>
+			                		<field name="website_link"/>
+			                		<field name="bussiness_phone"/>
+			                <field name="employees"/>
+			                <field name="annual"/>
+			                <field name="leaders"/>
+			                <field name="business_date"/>
+			            </group>
+			            <group>
+			                <field name="referrer_type"/>
+			                <field name="no_discount_on_product"/>
+			            </group>
+		            		</group>
+	            		</page>
+            		</xpath>
+		</field>
+	</record>
+	<record id='event_event_speaker_inherit_form_view' model='ir.ui.view'>
+		<field name="name">Event Speaker</field>
+		<field name="model">event.event</field>
+		<field name="inherit_id" ref="event.view_event_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//form//sheet//div[hasclass('oe_title')]" position="before">
+				<field name="image" widget="image" class="oe_avatar"/>
+			</xpath>
+			<xpath expr="//notebook//page[last()]" position="after">
+				<page  string="Speakers" name="event_speakers">
+					<field name="speaker_ids" context="{'default_is_speaker': True}">
+						<tree editable="bottom">
+							<field name="name"/>
+							<field name="function"/>
+							<field name="date_begin"/>
+							<field name="date_end"/>
+							<field name="facebook_url"/>
+							<field name="twitter_url"/>
+							<field name="google_plus_url"/>
+						</tree>
+					</field>
+				</page>
+				<page  string="Slider" name="event_bg_slider">
+					<field name="bg_image_ids">
+						<tree>
+							<field name="image" widget="image" class="oe_avatar"/>
+						</tree>
+						<form>
+							<field name="image" widget="image" width="100%" height="100%"/>
+						</form>
+					</field>
+				</page>
+				<page  string="Schedules" name="event_schedule_list">
+					<field name="schedule_ids">
+						<tree editable="bottom">
+							<field name="sequance" widget="handle"/>
+							<field name="time"/>
+							<field name="schedule"/>
+							<field name="venue"/>
+						</tree>
+					</field>
+				</page>
+			</xpath>
+			<field name="date_tz" position="after">
+				<field name="desc"/>
+				<field name="video_url"/>
+			</field>
+		</field>
+	</record>
+	<record id="view_website_form" model="ir.ui.view">
+        <field name="name">website.video.form</field>
+        <field name="model">website</field>
+        <field name="inherit_id" ref="website.view_website_form"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//div[@name='other']" position="inside">
+        		<div name="video_office">
+	        		<group name="video_office">
+	        			<field name="video_one"/>
+	        			<field name="video_two"/>
+	        			<field name="video_three"/>
+	        			<field name="video_four"/>
+	        			<field name="video_five"/>
+	        			<field name="video_six"/>
+	        			<field name="embed_one_code" invisible="1"/>
+	        			<field name="embed_two_code" invisible="1"/>
+	        			<field name="embed_three_code" invisible="1"/>
+	        			<field name="embed_four_code" invisible="1"/>
+	        			<field name="embed_five_code" invisible="1"/>
+	        			<field name="embed_six_code" invisible="1"/>
+	        		</group>
+	        	</div>
+        	</xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate='0'>
+        <record id="menu_what_we_do" model="website.menu">
+            <field name="name">WHAT WE DO</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+        <record id="menu_how_works" model="website.menu">
+            <field name="name">HOW IT WORKS</field>
+            <field name="url">/how-it-works</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">11</field>
+        </record>
+        <record id="menu_team" model="website.menu">
+            <field name="name">TEAM</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">13</field>
+        </record>
+        <record id="menu_resources" model="website.menu">
+            <field name="name">RESOURCE</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">14</field>
+        </record>
+
+        <!-- submenu -->
+
+        <record id="menu_business" model="website.menu">
+            <field name="name">BUSINESS COATCHING</field>
+            <field name="url">/business-coatching</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_entrepreneur" model="website.menu">
+            <field name="name">ENTREPRENEUR TRAINING</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+        </record>
+
+        <record id="menu_graphic" model="website.menu">
+            <field name="name">GRAPHIC DESIGN</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+        </record>
+        <record id="menu_printing" model="website.menu">
+            <field name="name">PRINTING</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_erp_development" model="website.menu">
+            <field name="name">ERP DEVELOPMENT</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+        </record>
+        <record id="menu_virtual_staffing" model="website.menu">
+            <field name="name">VIRTUAL STAFFING</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+        </record>
+        <record id="menu_events" model="website.menu">
+            <field name="name">EVENTS</field>
+            <field name="url">/event</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+    	</record>
+	<record id="menu_elearning" model="website.menu">
+            <field name="name">E-LEARNING</field>
+            <field name="url">/slides</field>
+            <field name="parent_id" ref="wt_office_hunddle.menu_what_we_do"/>
+        </record>
+        <record id="menu_tools" model="website.menu">
+            <field name="name">TOOLS</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="menu_what_we_do"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_blog" model="website.menu">
+            <field name="name">BLOG</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="menu_what_we_do"/>
+        </record>
+        <record id="menu_store" model="website.menu">
+            <field name="name">STORE</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="menu_what_we_do"/>
+        </record>
+        <delete model="website.menu" id="website_event.menu_events"/>
+        <delete model="website.menu" id="website_blog.menu_blog"/>
+        <delete model="website.menu" id="website.menu_contactus"/>
+    </data>
+</odoo>

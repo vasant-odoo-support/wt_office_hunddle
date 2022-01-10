@@ -1,0 +1,348 @@
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+
+***/
+
+.page-item {
+  &:first-child .page-link {
+      margin-left: 0;
+      border-radius: 5px 0 0 5px;
+  }
+  &:last-child .page-link {
+      border-radius: 0 5px 5px 0;
+  }
+  &.active .page-link {
+    z-index: 2;
+    background-color: #f8f8f8;
+    color: #aaa;
+    pointer-events: none; cursor:default;
+  }
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-left: -1px;
+  line-height: 35px;
+  width: 35px;
+  text-align:center;
+  color: #188fbb;
+  background-color: #fff;
+  border: .75px solid #d2d2d2;
+  @include hover-focus {
+    color: #188fbb;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    border-color: #d2d2d2;
+  }
+}
+
+.disabled .page-link,
+.page-link.disabled {
+  color: #d2d2d2;
+  pointer-events: none;
+  background-color: #f8f8f8;
+  cursor: default; 
+}
+
+
+.pager {
+  display:table;
+  list-style:none;
+  padding:0; 
+  font-size:12px;
+  @include clearfix;
+}
+
+.pager .page-link {
+  display:block; 
+  width:auto;
+  white-space:nowrap;
+  padding:0 10px;
+  float:left;
+
+  &:first-child {
+      border-radius: 5px 0 0 5px;
+  }
+  &:last-child {
+      border-radius: 0 5px 5px 0;
+  }
+
+}
+.pager span,
+.pager .material-icons {
+  display:block;
+  float:left;
+}
+
+
+.pagination .material-icons,
+.pager .material-icons {
+  font-size:16px; 
+  line-height:inherit;
+}
+
+
+.nav-class {
+    background: #1b8af3 !important;
+    padding: 5px 0;
+}
+.nav-class .navbar-default {
+    background: #1b8af3 !important;
+    
+}
+.content {
+    padding-top: 30px;
+}
+
+/* Heading */
+.heading {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading:after {
+    left: 50%;
+    height: 3px;
+    width: 50px;
+    content: " ";
+    bottom: -145px;
+    margin-left: -25px;
+    position: absolute;
+    background: #444;
+}
+
+.heading h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    color: #444;
+}
+
+.heading p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #8693a7;
+}
+.heading .desc{
+  white-space: nowrap; 
+  width: 100%;
+  height: 20px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Team Members */
+.team-members {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.team-members .team-avatar {
+    position: relative;
+}
+
+.team-members .team-avatar:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background: rgba(129, 129, 129, 0.1);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.team-members .team-avatar img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-members .team-desc {
+    left: auto;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.team-members .team-desc h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.team-members .team-desc span {
+    display: block;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.team-members:hover .team-avatar:after {
+    background: #2066adc2;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.team-members:hover .team-desc {
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+}
+
+.team-members:hover .team-desc {
+    opacity: 1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.team-avatar {
+    height: 370px;
+    width: 515px;
+}
+@media (min-width: 768px) and (max-width:991px) {
+    .team-avatar {
+        height: 370px;
+        width: 460px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px) {
+.team-avatar {
+        height: 370px;
+        width: 455px;
+    }
+
+}
+
+.current {
+  color: green;
+}
+
+#pagin li {
+  display: inline-block;
+}
+
+ul.pagination {
+    margin-left: 41%;
+    width: auto;
+    margin-right: 41%;
+}
+a.learn-more-btn.btn-effect.wow.animated.fadeIn.text-center{
+  display:inline-block;
+  float:right;
+  margin: 18px 15px 0px;
+  padding: 10px;
+  width: 130px;
+}
+.col-lg-12.landing-text-pos.align-center{
+  margin-top: auto;
+  margin-bottom: 1%;
+}
+div#asd{
+  display:none;
+}
+div#slider1_container{
+  height: 285px !important;
+}
+input.form-control{
+  background-image: ;
+  background-repeat: no-repeat; 
+  background-attachment: scroll; 
+  background-size: 16px 18px; 
+  background-position: 98% 50%;
+}
+.footer-bottom-bar-1{
+  background-color:#1b8af3;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	background: #f4f4f4;
+}
+
+.list-wrapper {
+	padding: 15px;
+	overflow: hidden;
+}
+
+.list-item {
+	border: 1px solid #EEE;
+	background: #FFF;
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.list-item h4 {
+	color: #FF7182;
+	font-size: 18px;
+	margin: 0 0 5px;
+}
+
+.list-item p {
+	margin: 0;
+}
+
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: #FF7182;
+	border-color: #FF7182;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: #e04e60;
+}

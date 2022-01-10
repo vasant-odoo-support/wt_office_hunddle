@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="business_credit_resources_tree" model="ir.ui.view">
+        <field name="name">business.credit.resources.tree</field>
+        <field name="model">business.credit.resources</field>
+        <field name="arch" type="xml">
+            <tree string="Busiess Credit Resources">      
+                <field name='name'/>
+                <field name='business_description'/>
+                <field name='business_url'/>
+                <field name='business_priority' widget="priority"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="business_credit_resources_form" model="ir.ui.view">
+        <field name="name">business.credit.resources.form</field>
+        <field name="model">business.credit.resources</field>
+        <field name="arch" type="xml">
+            <form string="Busiess Credit Resources">
+                <sheet>
+                    <group>
+                        <group>
+                           <field name='name'/>
+                            <field name='business_description'/>
+                            <field name='business_url'/>
+                            <field name='business_priority' widget="priority"/>
+                        </group>
+                        <group>
+                            <field name='business_image' widget='image' class="oe_avatar"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_business_credit_resources" model="ir.actions.act_window">
+        <field name="name">Busiess Credit Resources</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">business.credit.resources</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add a new Toolkit
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="business_resources_menu" name="Business Credit Resources" parent="toolkit_root" action="wt_office_hunddle.action_business_credit_resources"/>
+</odoo>
