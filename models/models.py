@@ -2,6 +2,85 @@
 from odoo import fields, api, models, _
 import re
 
+
+class FileImage(models.Model):
+	_name = 'file.images'
+	_description = 'File Images'
+
+	image = fields.Binary("Image File")
+	task_id = fields.Many2one('project.task',string='Task')
+	image_name = fields.Char('Image Name')
+	attachment_id = fields.Many2one('ir.attachment', string="Images")
+
+
+class FileVideo(models.Model):
+    _name = 'file.videos'
+    _description = 'File Videos'
+
+    video_data = fields.Binary("Video File")
+    task_id = fields.Many2one('project.task',string='Task')
+    video_name = fields.Char('Name')
+    attachment_id = fields.Many2one('ir.attachment', string="Video")
+
+
+class ProjectTask(models.Model):
+    _inherit = "project.task"
+
+    design_type = fields.Selection([('video', "Video"), ('graphic', "Graphic")])
+    is_design = fields.Boolean()
+    contact_name = fields.Char()
+    company_name = fields.Char()
+    phone = fields.Char()
+    fax =  fields.Char()
+    website = fields.Char()
+    email = fields.Char()
+    city_zip = fields.Char()
+    moto = fields.Text()
+    positioning_statement = fields.Text()
+    item_information = fields.Char()
+    size = fields.Char()
+    video_type = fields.Char()
+    colors = fields.Selection([("rgb", "RGB"), ("rgba", "RGBA"), ("cmyk", "CMYK")])
+    bleed = fields.Selection([('yes', "Yes"), ('no', "No")])
+    image_provided = fields.Selection([('provided', "Provided"), ('not_provided', "Not Provided")])
+    file_format = fields.Selection([('eps', ".EPS"), ('jpg', ".JPG"), ('ai', ".AI"), ('png', ".PNG"), ('psd', ".PSD"), ('pdf', "PDF"), ('mp4', "MP4"), ('mov', "MOV")])
+    cyan = fields.Char()
+    magenta = fields.Char()
+    yellow = fields.Char()
+    black = fields.Char()
+    red = fields.Char()
+    blue = fields.Char()
+    green = fields.Char()
+    alpha = fields.Char()
+    front_design_description = fields.Text()
+    back_design_description = fields.Text()
+    special_instruction = fields.Text()
+    design_description = fields.Text()
+
+    # Design Location
+    full_color_front = fields.Boolean("FULL COLOR FRONT")
+    full_color_back = fields.Boolean("FULL COLOR BACK")
+    bw_front = fields.Boolean("B/W FRONT")
+    bw_back = fields.Boolean("B/W BACK")
+    no_back = fields.Boolean("NO BACK")
+
+    # Graphic Colors
+    g_yellow = fields.Boolean("YELLOW")
+    g_red = fields.Boolean("RED")
+    g_blue = fields.Boolean("BLUE")
+    g_violet = fields.Boolean("VIOLET")
+    g_green = fields.Boolean("GREEN")
+    g_orange = fields.Boolean("ORANGE")
+    g_brown = fields.Boolean("BROWN")
+    g_gray = fields.Boolean("GRAY")
+    g_pink = fields.Boolean("PINK")
+    g_black = fields.Boolean("BLACK")
+
+
+    images_lines = fields.One2many('file.images','task_id',string='Attached Files')
+    videos_lines = fields.One2many('file.videos','task_id',string='Attached Files')
+
+
 class website_blog_post(models.Model):
     _inherit = "blog.post"
 

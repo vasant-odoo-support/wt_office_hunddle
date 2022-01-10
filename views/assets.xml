@@ -18,6 +18,7 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/scss/custom.scss"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/scss/custom2.scss"/>
     	    <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/customer_portal.css"/>
+	    <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/videopage.css"/>
         </xpath>
     	<xpath expr="//script[last()]" position="after">
             <script src="/wt_office_hunddle/static/src/js/aos.js"></script>

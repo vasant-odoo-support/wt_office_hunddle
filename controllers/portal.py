@@ -16,5 +16,4 @@ class CustomerPortal(CustomerPortal):
     @http.route(['/my', '/my/home'], type='http', auth="user", website=True)
     def home(self, **kw):
         values = self._prepare_home_portal_values()
-        print("------------- test test --------- ", values)
         return request.render("wt_office_hunddle.customer_portal_officehuddle_template")

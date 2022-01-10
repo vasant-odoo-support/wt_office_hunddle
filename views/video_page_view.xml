@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="video_design_officehuddle_template" name="Video Form">
+    <t t-call="website.layout">
+      <div id="wrap" class="video_page_wrap">
+        <form action="/submit-graphic-info" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <section id="bgtop" class="container-fluid">
+                <div class="left-col">
+                    <img src="/wt_office_hunddle/static/src/video_page/magicant.png" class="img-fluid" style="opacity: 0;"/>
+                </div>
+                <div class="right-col">
+                    <div class="par text-right">
+                        <h1><b><span style="color: #fdfd01;">VIDEO EDITING DESIGN FORM</span></b></h1>
+                    </div>
+
+                    <!-- information -->
+                    <div class="row">
+                        <P><span style="float: right; color: white;"><i>CUSTOMER INFORMATION</i></span></P>
+                        <div class="col-sm-3">
+                            <!--company Name input -->
+                            <div class="form-outline">
+                                <input type="checkbox" name="video" value="video" checked="checked" hidden="hidden"/>
+                                <input type="text" required="required" class="form-control" id="company_name" placeholder="COMPANY NAME"
+                                    name="company_name"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Name input -->
+                            <div class="form-outline">
+                                <input type="text" required="required" class="form-control" id="contact_name" placeholder="CONTACT NAME"
+                                    name="contact_name"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Email input -->
+                            <div class="form-outline">
+                                <input type="tel" required="required" class="form-control" id="phone" placeholder="PHONE" name="phone"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Email input -->
+                            <div class="form-outline">
+                                <input type="number" class="form-control" id="fax" placeholder="FAX" name="fax"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <!-- Name input -->
+                            <div class="form-outline">
+                                <input type="text" required="required" class="form-control" id="address" placeholder="ADDRESS" name="address"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Name input -->
+                            <div class="form-outline">
+                                <input type="text" class="form-control" id="website" placeholder="WEBSITE" name="website"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Email input -->
+                            <div class="form-outline">
+                                <input type="email" required="required" class="form-control" id="email" placeholder="EMAIL" name="email"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Email input -->
+                            <div class="form-outline">
+                                <input required="required" type="text" class="form-control" id="city_zip" placeholder="CITY/ZIP"
+                                    name="city_zip"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs cold-sm col-md col-lg">
+                            <!-- MOTTO -->
+                            <div class="form-outline">
+                                <textarea id="motto" name="motto" rows="6" placeholder="MOTTO"
+                                    class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs cold-sm col-md col-lg">
+                            <!-- POSITIONING STATEMENT -->
+                            <div class="form-outline">
+                                <textarea id="statement" name="statement" rows="6" placeholder="POSITIONING STATEMENT"
+                                    class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+
+            <section id="bg-mid" class="container-fluid">
+                <div class="row container">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-xs cold-sm col-md col-lg">
+                                <div class="form-check">
+                                    <P><i>ITEM INFORMATION</i></P>
+                                    <input class="form-check-input" type="checkbox" value="item0" id="item0" name="items"/>
+                                    <label class="form-check-label" for="item0">
+                                        LOGO
+                                    </label><br/><br/>
+
+                                    <input class="form-check-input" type="checkbox" value="video_sizes" id="video_sizes" name="video_sizes"/>
+                                    <label class="form-check-label" for="video_sizes">
+                                        VIDEO SIZE FOR
+                                    </label>
+                                    <div class="video-sizes">
+                                        <div class="col-xs cold-sm col-md col-lg">
+                                            <input class="form-check-input" type="radio" value="video_size1" id="video_size1"
+                                                name="videos"/>
+                                            <label class="form-check-label" for="video_size1">
+                                                1920px x 1080px<br/>(Youtube)
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_size2" id="video_size2"
+                                                name="videos"/>
+                                            <label class="form-check-label" for="video_size2">
+                                                YT Thumbnail
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_size3" id="video_size3"
+                                                name="videos"/>
+                                            <label class="form-check-label" for="video_size3">
+                                                1080px x 1920px<br/>(TikTok/IG)
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_size4" id="video_size4"
+                                                name="videos"/>
+                                            <label class="form-check-label" for="video_size4">
+                                                LINKEDIN (Square)
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_size5" id="video_size5"
+                                                name="videos"/>
+                                            <label class="form-check-label" for="video_size5">
+                                                in Thumbnail
+                                            </label><br/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs cold-sm col-md col-lg">
+                                <div class="form-check">
+                                    <P style="opacity: 0;"><i>ITEM INFORMATION</i></P>
+                                    <input class="form-check-input" type="checkbox" value="vtype" id="vtype" name="vtype"/>
+                                    <label class="form-check-label" for="vtype">
+                                        TYPES
+                                    </label>
+                                    <div class="typess">
+                                        <div class="col-xs cold-sm col-md col-lg">
+                                            <input class="form-check-input" type="radio" value="video_type_1" id="video_type_1"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_1">
+                                                2D Animation
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_type_2" id="video_type_2"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_2">
+                                                Motion Graphics
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_type_3" id="video_type_3"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_3">
+                                                Social Media Content/Ad
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_type_4" id="video_type_4"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_4">
+                                                Logo Animation
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_type_5" id="video_type_5"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_5">
+                                                Video Bumper
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_type_6" id="video_type_6"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_6">
+                                                Video Content
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="video_type_7" id="video_type_7"
+                                                name="video_types"/>
+                                            <label class="form-check-label" for="video_type_7">
+                                                Video Presentation
+                                            </label><br/><br/>
+                                        </div>
+                                    </div>
+
+                                    <input class="form-check-input" type="checkbox" value="formats" id="formats" name="formats"/>
+                                    <label class="form-check-label" for="formats">
+                                        FILE FORMAT
+                                    </label>
+                                    <div class="file-formats">
+                                        <div class="col-xs cold-sm col-md col-lg">
+                                            <input class="form-check-input" type="radio" value="format1" id="format1"
+                                                name="vformat"/>
+                                            <label class="form-check-label" for="format1">
+                                                MP4
+                                            </label><br/>
+
+                                            <input class="form-check-input" type="radio" value="format2" id="format2"
+                                                name="vformat"/>
+                                            <label class="form-check-label" for="format2">
+                                                MOV
+                                            </label><br/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <b style="padding-bottom:5px;">COLORS</b>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs cold-sm col-md col-lg">
+                                <input class="form-check-input" type="radio" value="rgba_colors" id="rgba_colors" name="cmyk_rgb_colors"/>
+                                <label class="form-check-label" for="rgba_colors">
+                                    RGBA
+                                </label>
+                                <div class="rgba">
+                                    <div class="col-xs cold-sm col-md col-lg">
+                                        <div class="form-outline">
+                                            <label for="r"></label>
+                                            <input class="form-check-input form-control" type="text" placeholder="RED"
+                                                id="red" name="red"/>
+                                        </div>
+                                        <div class="form-outline">
+                                            <label for="g"><br/></label>
+                                            <input class="form-check-input form-control" type="text" placeholder="GREEN"
+                                                id="green" name="green"/>
+                                        </div>
+                                        <div class="form-outline">
+                                            <label for="b"><br/></label>
+                                            <input class="form-check-input form-control" type="text" placeholder="BLUE"
+                                                id="blue" name="blue"/>
+                                        </div>
+                                        <div class="form-outline">
+                                            <label for="a"><br/></label>
+                                            <input class="form-check-input form-control" type="text" placeholder="ALPHA"
+                                                id="alpha" name="alpha"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs cold-sm col-md col-lg">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="cmyk_colors" id="cmyk_colors" name="cmyk_rgb_colors"/>
+                                    <label class="form-check-label" for="cmyk_colors">
+                                        CMYK
+                                    </label>
+                                    <div class="cmyks">
+                                        <div class="col-xs cold-sm col-md col-lg">
+                                            <div class="form-outline">
+                                                <label for="cmyk_cyan"></label>
+                                                <input class="form-check-input form-control" type="text" placeholder="CYAN"
+                                                    id="cmyk_cyan" name="cmyk_cyan"/>
+                                            </div>
+                                            <div class="form-outline">
+                                                <label for="cmyk_magenta"><br/></label>
+                                                <input class="form-check-input form-control" type="text"
+                                                    placeholder="MAGENTA" id="cmyk_magenta" name="cmyk_magenta"/>
+                                            </div>
+                                            <div class="form-outline">
+                                                <label for="cmyk_yellow"><br/></label>
+                                                <input class="form-check-input form-control" type="text"
+                                                    placeholder="YELLOW" id="cmyk_yellow" name="cmyk_yellow"/>
+                                            </div>
+                                            <div class="form-outline">
+                                                <label for="cmyk_black"><br/></label>
+                                                <input class="form-check-input form-control" type="text" placeholder="BLACK"
+                                                    id="cmyk_black" name="cmyk_black"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h1 class="text-center"><i>UPLOAD YOUR FILES HERE</i><br/><br/></h1>
+                        <div class="row">
+                            <div class="col-xs cold-sm col-md col-lg align-items-center" style="align-self: center;">
+                                <div class="text-center">
+                                    <input type="file" id="myfiles1" accept="video/mp4,video/mov,video/*" name="myfiles1" hidden="hidden"/>
+                                    <label for="myfiles1"><img src="/wt_office_hunddle/static/src/video_page/folder.png" class="img-fluid"/></label><br/>
+                                    <span id="file-chosen1"><i><b>File 1</b></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-xs cold-sm col-md col-lg align-items-center" style="align-self: center;">
+                                <div class="text-center">
+                                    <input name="myfiles2" type="file" accept="video/mp4,video/mov,video/*" id="myfiles2" hidden="hidden"/>
+                                    <label for="myfiles2"><img src="/wt_office_hunddle/static/src/video_page/folder.png" class="img-fluid"/></label><br/>
+                                    <span id="file-chosen2"><i><b>File 2</b></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-xs cold-sm col-md col-lg align-items-center" style="align-self: center;">
+                                <div class="text-center">
+                                    <input type="file" name="myfiles3" accept="video/mp4,video/mov,video/*" id="myfiles3" hidden="hidden"/>
+                                    <label for="myfiles3"><img src="/wt_office_hunddle/static/src/video_page/folder.png" class="img-fluid"/></label><br/>
+                                    <span id="file-chosen3"><i><b>File 3</b></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/>
+                        <div class="row">
+                            <div class="col-xs cold-sm col-md col-lg align-items-center" style="align-self: center;">
+                                <div class="form-check text-center">
+                                  <input type="file" name="myfiles4" accept="video/mp4,video/mov,video/*" id="myfiles4" hidden="hidden"/>
+                                  <label for="myfiles4"><img src="/wt_office_hunddle/static/src/video_page/folder.png" class="img-fluid"/></label><br/>
+                                  <span id="file-chosen4"><i><b>File 4</b></i></span>
+                                </div>
+                              </div>
+                        
+                              <div class="col-xs cold-sm col-md col-lg align-items-center" style="align-self: center;">
+                                <div class="form-check text-center">
+                                  <input type="file" name="myfiles5" accept="video/mp4,video/mov,video/*" id="myfiles5" hidden="hidden"/>
+                                  <label for="myfiles5"><img src="/wt_office_hunddle/static/src/video_page/folder.png" class="img-fluid"/></label><br/>
+                                  <span id="file-chosen5"><i><b>File 5</b></i></span>
+                                </div>
+                              </div>
+                        
+                              <div class="col-xs cold-sm col-md col-lg align-items-center" style="align-self: center;">
+                                <div class="form-check text-center">
+                                  <input type="file" name="myfiles6" accept="video/mp4,video/mov,video/*" id="myfiles6" hidden="hidden"/>
+                                  <label for="myfiles6"><img src="/wt_office_hunddle/static/src/video_page/folder.png" class="img-fluid"/></label><br/>
+                                  <span id="file-chosen6"><i><b>File 6</b></i></span>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="form-group container-fluid">
+                <label for="design_desc"><i>DESIGN DECRIPTION</i></label>
+                <textarea class="form-control" rows="10" name="design_desc" id="design_desc"></textarea>
+
+                <label for="special_ins"><i>SPECIAL INSTRUCTION</i></label>
+                <textarea class="form-control" rows="10" name="special_ins" id="special_ins"></textarea>
+
+                <div class="col text-center">
+                    <br/><br/>
+                    <button type="submit" class="btn-submitt">SUBMIT</button>
+                    <br/><br/>
+                </div>
+            </div>
+        </form>
+      </div>
+      <script>
+        const actualBtn1 = document.getElementById('myfiles1');
+        const actualBtn2 = document.getElementById('myfiles2');
+        const actualBtn3 = document.getElementById('myfiles3');
+        const actualBtn4 = document.getElementById('myfiles4');
+        const actualBtn5 = document.getElementById('myfiles5');
+        const actualBtn6 = document.getElementById('myfiles6');
+
+        const fileChosen1 = document.getElementById('file-chosen1');
+        const fileChosen2 = document.getElementById('file-chosen2');
+        const fileChosen3 = document.getElementById('file-chosen3');
+        const fileChosen4 = document.getElementById('file-chosen4');
+        const fileChosen5 = document.getElementById('file-chosen5');
+        const fileChosen6 = document.getElementById('file-chosen6');
+
+        actualBtn1.addEventListener('change', function () {
+            fileChosen1.textContent = this.files[0].name
+        })
+        actualBtn2.addEventListener('change', function () {
+            fileChosen2.textContent = this.files[0].name
+        })
+        actualBtn3.addEventListener('change', function () {
+            fileChosen3.textContent = this.files[0].name
+        })
+        actualBtn4.addEventListener('change', function () {
+            fileChosen4.textContent = this.files[0].name
+        })
+        actualBtn5.addEventListener('change', function () {
+            fileChosen5.textContent = this.files[0].name
+        })
+        actualBtn6.addEventListener('change', function () {
+            fileChosen6.textContent = this.files[0].name
+        })
+      </script>
+    </t>
+  </template>
+</odoo>

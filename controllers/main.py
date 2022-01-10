@@ -15,6 +15,12 @@ from odoo.tools.misc import get_lang
 import json
 from odoo.addons.auth_signup.controllers.main import AuthSignupHome
 from odoo.addons.website_slides.controllers.main import WebsiteSlides
+from odoo.addons.auth_signup.models.res_users import SignupError
+import ast
+import base64
+from odoo import http
+from odoo.tools.mimetypes import guess_mimetype
+
 
 _logger = logging.getLogger(__name__)
 
@@ -102,6 +108,7 @@ class WebsitAuthSignupHome(AuthSignupHome):
         self._signup_with_values(qcontext.get('token'), values)
         request.env.cr.commit()
 
+
 class WebsitBlogPost(Website):
     @http.route('/', type='http', auth="public", website=True)
     def index(self, **kw):
@@ -115,10 +122,714 @@ class WebsitBlogPost(Website):
 
 
 class WebsiteHuddleCustom(http.Controller):
-   
+    def check_get_mimetype(self, file_data, filename):
+        if filename.split(".")[-1] != "mp4":
+            return False
+        mimetype = guess_mimetype(file_data)
+        if mimetype == "application/octet-stream":
+            mimetype = "video/mp4"
+        return mimetype
+
+    @http.route('/submit-graphic-info', type='http', auth='public', website=True, methods=["POST"], csrf=False,)
+    def submit_graphic_form(self, **kw):
+        if request.env.user.id == request.env.ref('base.public_user').id:
+            return request.redirect('/web/login')
+        project_obj = request.env['project.project']
+        project = project_obj.sudo().search([('partner_id', '=', request.env.user.partner_id.id)])
+
+        graphic = False
+        video = False
+        design_type = False
+        if 'graphic' in kw and kw['graphic'] == 'graphic':
+            graphic = True
+            design_type = 'graphic'
+        if 'video' in kw and kw['video'] == 'video':
+            video = True
+            design_type = 'video'
+
+        if not project:
+            project_vals = {
+                'name': request.env.user.name + " Design",
+                'partner_id': request.env.user.partner_id.id,
+                'privacy_visibility': 'portal',
+            }
+            project = project_obj.sudo().create(project_vals)
+
+        item_name = ''
+        size = ''
+        if 'items' in kw and kw['items'] == 'item0':
+            item_name = 'Logo'
+            size = ""
+
+        if graphic and 'items' in kw and kw['items'] == 'item1':
+            item_name = 'BUSINESS CARD'
+            if kw['item1'] == '0':
+                size = '2" x 3.5" U.S Standard'
+            if kw['item1'] == '1':
+                size = '2.17" x 3.35" - European'
+            if kw['item1'] == '2':
+                size = '1.75" x 3 - Slim'
+            if kw['item1'] == '3':
+                size = '1.75" x 3"'
+            if kw['item1'] == '4':
+                size = '2" x 3" Folded'
+            if kw['item1'] == '5':
+                size = '3.5" x 4" pre-scored to fold to 2" x 3.5'
+
+        if graphic and 'items' in kw and kw['items'] == 'item2':
+            item_name = 'POSTCARD'
+            if kw['item2'] == '0':
+                size = '3" x 5"'
+            if kw['item2'] == '1':
+                size = '4" x 6" Standard'
+            if kw['item2'] == '2':
+                size = '4" x 6" Standard'
+            if kw['item2'] == '3':
+                size = '5.5" x 8.5"'
+            if kw['item2'] == '4':
+                size = '6" x 9"'
+            if kw['item2'] == '5':
+                size = '8.5" x 11"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item3':
+            item_name = 'FLYERS'
+            if kw['item3'] == '0':
+                size = '4" x 6"'
+            if kw['item3'] == '1':
+                size = '5" x 7"'
+            if kw['item3'] == '2':
+                size = '6" x 6"'
+            if kw['item3'] == '3':
+                size = '5.5" x 8.5"'
+            if kw['item3'] == '4':
+                size = '8" x 8"'
+            if kw['item3'] == '5':
+                size = '8.5" x 11"'
+            if kw['item3'] == '6':
+                size = '8.5" x 14"'
+            if kw['item3'] == '7':
+                size = '11" x 17"'
+            if kw['item3'] == '8':
+                size = '12" x 12"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item4':
+            item_name = 'CD/DVD INSERT'
+            if kw['item4'] == '0':
+                size = 'Double Panel'
+            if kw['item4'] == '1':
+                size = 'Single Panel'
+            if kw['item4'] == '2':
+                size = 'w/ Tray Card'
+            if kw['item4'] == '3':
+                size = 'w/o Tray Card'
+
+        if graphic and 'items' in kw and kw['items'] == 'item5':
+            item_name = 'BROCHURE'
+            if kw['item5'] == '0':
+                size = '6" x 9"'
+            if kw['item5'] == '1':
+                size = '8.5" x 11"'
+            if kw['item5'] == '2':
+                size = '8.5" x 14"'
+            if kw['item5'] == '3':
+                size = '9" x 12"'
+            if kw['item5'] == '4':
+                size = '11" x 17"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item6':
+            item_name = 'VINYL BANNER'
+            if kw['item6'] == '0':
+                size = '2ft x 4ft'
+            if kw['item6'] == '1':
+                size = '2ft x 5ft'
+            if kw['item6'] == '2':
+                size = '2ft x 6ft'
+            if kw['item6'] == '3':
+                size = '2ft x 7ft'
+            if kw['item6'] == '4':
+                size = '2ft x 8ft'
+            if kw['item6'] == '5':
+                size = '2ft x 9ft'
+            if kw['item6'] == '6':
+                size = '2ft x 10ft'
+            if kw['item6'] == '7':
+                size = '3ft x 4ft'
+            if kw['item6'] == '8':
+                size = '3ft x 5ft'
+            if kw['item6'] == '9':
+                size = '3ft x 6ft'
+            if kw['item6'] == '10':
+                size = '3ft x 7ft'
+            if kw['item6'] == '11':
+                size = '3ft x 8ft'
+            if kw['item6'] == '12':
+                size = '3ft x 9ft'
+            if kw['item6'] == '13':
+                size = '3ft x 10ft'
+            if kw['item6'] == '14':
+                size = '4ft x 10ft'
+
+        if graphic and 'items' in kw and kw['items'] == 'item7':
+            item_name = 'SELL SHEET'
+            if kw['item7'] == '0':
+                size = '4" x 6"'
+            if kw['item7'] == '1':
+                size = '8.5" x 11"'
+            if kw['item7'] == '2':
+                size = '11" x 17"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item8':
+            item_name = 'DOOR HANGER'
+            if kw['item8'] == '0':
+                size = '3.5" x 8.5"'
+            if kw['item8'] == '1':
+                size = '3.5" x 11"'
+            if kw['item8'] == '2':
+                size = '4.25" x 11"'
+            if kw['item8'] == '3':
+                size = '5.5" x 17"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item9':
+            item_name = 'NEWSLETTER'
+            if kw['item9'] == '0':
+                size = '3.5" x 8.5"'
+            if kw['item9'] == '1':
+                size = '3.5" x 11"'
+            if kw['item9'] == '2':
+                size = '4.25" x 11"'
+            if kw['item9'] == '3':
+                size = '5.5" x 17" (8pages)'
+
+        if graphic and 'items' in kw and kw['items'] == 'item10':
+            item_name = 'POSTER'
+            if kw['item10'] == '0':
+                size = '13" x 19"'
+            if kw['item10'] == '1':
+                size = '18" x 24"'
+            if kw['item10'] == '2':
+                size = '19" x 27"'
+            if kw['item10'] == '3':
+                size = '24" x 36"'
+            if kw['item10'] == '4':
+                size = '24" x 38"'
+            if kw['item10'] == '5':
+                size = '26" x 39"'
+            if kw['item10'] == '6':
+                size = '27" x 39"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item11':
+            item_name = 'PRESENTATION FOLDER'
+            if kw['item11'] == '0':
+                size = '4" x 6" Sm Press Kit'
+            if kw['item11'] == '1':
+                size = '6" x 9" Folder w/3" pockets'
+            if kw['item11'] == '2':
+                size = '6" x 9" Fodler w/4" pockets'
+            if kw['item11'] == '3':
+                size = '6" x 9" Sample Kit'
+            if kw['item11'] == '4':
+                size = '9" x 12" Standard Folder'
+
+        if graphic and 'items' in kw and kw['items'] == 'item12':
+            item_name = 'EVENT TICKET'
+            if kw['item12'] == '0':
+                size = '2" x 5.5"'
+            if kw['item12'] == '1':
+                size = '4" x 10"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item13':
+            item_name = 'MENU'
+            if kw['item13'] == '0':
+                size = '4" x 10"'
+            if kw['item13'] == '1':
+                size = '8.5" x 11"'
+
+        if graphic and 'items' in kw and kw['items'] == 'item14':
+            item_name = 'TSHIRT'
+            size = ''
+
+        if video and 'video_sizes' in kw and kw['video_sizes'] == 'video_sizes':
+            if 'videos' in kw and kw['videos'] == 'video_size1':
+                size = '1920px x 1080px(Youtube)'
+            if 'videos' in kw and kw['videos'] == 'video_size2':
+                size = 'YT Thumbnail'
+            if 'videos' in kw and kw['videos'] == 'video_size3':
+                size = '1080px x 1920px(TikTok/IG)'
+            if 'videos' in kw and kw['videos'] == 'video_size4':
+                size = 'LINKEDIN (Square)'
+            if 'videos' in kw and kw['videos'] == 'video_size5':
+                size = 'in Thumbnail'
+
+        video_type = ''
+        if video and 'vtype' in kw and kw['vtype']:
+            if 'video_types' in kw and kw['video_types'] == 'video_type_1':
+                video_type = '2D Animation'
+            if 'video_types' in kw and kw['video_types'] == 'video_type_2':
+                video_type = 'Motion Graphics'
+            if 'video_types' in kw and kw['video_types'] == 'video_type_3':
+                video_type = 'Social Media Content/Ad'
+            if 'video_types' in kw and kw['video_types'] == 'video_type_4':
+                video_type = 'Logo Animation'
+            if 'video_types' in kw and kw['video_types'] == 'video_type_5':
+                video_type = 'Video Bumper'
+            if 'video_types' in kw and kw['video_types'] == 'video_type_6':
+                video_type = 'Video Content'
+            if 'video_types' in kw and kw['video_types'] == 'video_type_7':
+                video_type = 'Video Presentation'
+
+        colors = False
+        c_cyan = ''
+        c_red = ''
+        c_blue = ''
+        c_green = ''
+        c_yellow = ''
+        c_magenta = ''
+        c_black = ''
+        c_alpha = ''
+        if 'cmyk_rgb_colors' in kw and kw['cmyk_rgb_colors'] == 'rgba_colors':
+            colors = 'rgba'
+            if 'red' in kw and kw['red']:
+                c_red = kw['red']
+            if 'green' in kw and kw['green']:
+                c_green = kw['green']
+            if 'blue' in kw and kw['blue']:
+                c_blue = kw['blue']
+            if 'alpha' in kw and kw['alpha']:
+                c_alpha = kw['alpha']
+
+        if 'cmyk_rgb_colors' in kw and kw['cmyk_rgb_colors'] == 'rgb_colors':
+            colors = 'rgb'
+            if 'rgb_red' in kw and kw['rgb_red']:
+                c_red = kw['rgb_red']
+            if 'rgb_green' in kw and kw['rgb_green']:
+                c_green = kw['rgb_green']
+            if 'rgb_blue' in kw and kw['rgb_blue']:
+                c_blue = kw['rgb_blue']
+
+        if 'cmyk_rgb_colors' in kw and kw['cmyk_rgb_colors'] == 'cmyk_colors':
+            colors = 'cmyk'
+            if 'cmyk_cyan' in kw and kw['cmyk_cyan']:
+                c_cyan = kw['cmyk_cyan']
+            if 'cmyk_magenta' in kw and kw['cmyk_magenta']:
+                c_magenta = kw['cmyk_magenta']
+            if 'cmyk_yellow' in kw and kw['cmyk_yellow']:
+                c_yellow = kw['cmyk_yellow']
+            if 'cmyk_black' in kw and kw['cmyk_black']:
+                c_black = kw['cmyk_black']
+
+        bleed = ""
+        if graphic and 'bleed' in kw and kw['bleed']:
+            if kw['bleed'] == 'bleed1':
+                bleed = "yes"
+            elif kw['bleed'] == 'bleed2':
+                bleed = "no"
+
+        image_provided = ""
+        if graphic and 'imagess' in kw and kw['imagess']:
+            if kw['imagess'] == 'images1':
+                image_provided = "provided"
+            elif kw['imagess'] == 'images2':
+                image_provided = "not_provided"
+
+        file_format = ""
+        if 'formats' in kw and kw['formats']:
+            if kw['formats'] == 'formats5':
+                file_format = "eps"
+            if kw['formats'] == 'formats6':
+                file_format = "jpg"
+            if kw['formats'] == 'formats7':
+                file_format = "ai"
+            if kw['formats'] == 'formats8':
+                file_format = "png"
+            if kw['formats'] == 'formats9':
+                file_format = "psd"
+            if kw['formats'] == 'formats10':
+                file_format = "pdf"
+            if 'vformat' in kw and kw['vformat'] == 'format1':
+                file_format = "mp4"
+            if 'vformat' in kw and kw['vformat'] == 'format2':
+                file_format = "mov"
+
+        g_yellow = False
+        g_red = False
+        g_blue = False
+        g_violet = False
+        g_green = False
+        g_orange = False
+        g_brown = False
+        g_gray = False
+        g_pink = False
+        g_black = False
+
+        full_color_front = False
+        full_color_back = False
+        bw_front = False
+        bw_back = False
+        no_back = False
+
+        if graphic:
+            if 'color1' in kw and kw['color1'] == 'yellow':
+                g_yellow = True
+            if 'color2' in kw and kw['color2'] == 'red':
+                g_red = True
+            if 'color3' in kw and kw['color3'] == 'blue':
+                g_blue = True
+            if 'color4' in kw and kw['color4'] == 'violet':
+                g_violet = True
+            if 'color5' in kw and kw['color5'] == 'green':
+                g_green = True
+            if 'color6' in kw and kw['color6'] == 'orange':
+                g_orange = True
+            if 'color7' in kw and kw['color7'] == 'brown':
+                g_brown = True
+            if 'color8' in kw and kw['color8'] == 'gray':
+                g_gray = True
+            if 'color9' in kw and kw['color9'] == 'pink':
+                g_pink = True
+            if 'color10' in kw and kw['color10'] == 'black':
+                g_black = True
+
+            # Design Location
+            if 'design1' in kw and kw['design1'] == 'design1':
+                full_color_front = True
+            if 'design2' in kw and kw['design2'] == 'design2':
+                full_color_back = True
+            if 'design3' in kw and kw['design3'] == 'design3':
+                bw_front = True
+            if 'design4' in kw and kw['design4'] == 'design4':
+                bw_back = True
+            if 'design5' in kw and kw['design5'] == 'design5':
+                no_back = True
+
+        front_comment = ''
+        back_comment = ''
+        special_comment = ''
+        design_description = ''
+        if graphic and 'front_comment' in kw:
+            front_comment = kw['front_comment']
+        if graphic and 'back_comment' in kw:
+            back_comment = kw['back_comment']
+        if graphic and 'special_comment' in kw:
+            special_comment = kw['special_comment']
+
+        if video and 'design_desc' in kw:
+            design_description = kw['design_desc']
+        if video and 'special_ins' in kw:
+            special_comment = kw['special_ins']
+        task_name = ''
+        if graphic:
+            task_name = "GRAPHIC DESIGN : " + item_name
+        if video:
+            task_name = "VIDEO DESIGN : " + item_name
+        task_vals = {
+            'design_type': design_type,
+            'is_design': True,
+            'project_id': project.id,
+            'name': task_name,
+            'partner_id': request.env.user.partner_id.id,
+            'company_name': kw['company_name'] or '',
+            'contact_name': kw['contact_name'] or '',
+            'phone': kw['phone'] or '',
+            'fax': kw['fax'] or '',
+            'website': kw['website'] or '',
+            'email': kw['email'] or '',
+            'city_zip': kw['city_zip'] or '',
+            'moto': kw['motto'] or '',
+            'positioning_statement': kw['statement'] or '',
+            'item_information': item_name,
+            'size': size or '',
+            'colors': colors or False,
+            'video_type': video_type,
+            'bleed': bleed or '',
+            'image_provided': image_provided or '',
+            'file_format': file_format or '',
+            'cyan': c_cyan or '',
+            'magenta': c_magenta or '',
+            'yellow': c_yellow or '',
+            'red': c_red or '',
+            'green': c_green or '',
+            'blue': c_blue or '',
+            'alpha': c_alpha or '',
+            'black': c_black or '',
+            'front_design_description': front_comment or '',
+            'back_design_description': back_comment or '',
+            'special_instruction': special_comment or '',
+            'design_description': design_description or '',
+            'g_yellow': g_yellow or False,
+            'g_red': g_red or False,
+            'g_blue': g_blue or False,
+            'g_violet': g_violet or False,
+            'g_green': g_green or False,
+            'g_orange': g_orange or False,
+            'g_brown': g_brown or False,
+            'g_gray': g_gray or False,
+            'g_pink': g_pink or False,
+            'g_black': g_black or False,
+            'full_color_front': full_color_front or False,
+            'full_color_back': full_color_back or False,
+            'bw_front': bw_front or False,
+            'bw_back': bw_back or False,
+            'no_back': no_back or False,
+        }
+        task_id = request.env['project.task'].sudo().create(task_vals)
+        values = request.params
+
+        video_data_1 = values.get("myfiles1")
+        if hasattr(video_data_1, "filename"):
+            file_data = base64.b64encode(video_data_1.read())
+            filename = video_data_1.filename
+            mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)
+            if mimetype:
+                attachment_id = request.env['ir.attachment'].create({
+                    'name': filename,
+                    'type': 'binary',
+                    'datas': file_data,
+                    'public': True,
+                    'res_model': 'project.task',
+                    'res_id' : task_id.id,
+                    'mimetype': mimetype,
+                })
+
+                video1 = request.env['file.videos'].create({
+                    'task_id' : task_id.id,
+                    'video_data' : file_data,
+                    'video_name' : filename,
+                    'attachment_id' : attachment_id.id,
+                })
+
+        video_data_2 = values.get("myfiles2")
+        if hasattr(video_data_2, "filename"):
+            file_data = base64.b64encode(video_data_2.read())
+            filename = video_data_2.filename
+            mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)
+            if mimetype:
+                attachment_id = request.env['ir.attachment'].create({
+                    'name': filename,
+                    'type': 'binary',
+                    'datas': file_data,
+                    'public': True,
+                    'res_model': 'project.task',
+                    'res_id' : task_id.id,
+                    'mimetype': mimetype,
+                })
+
+                video1 = request.env['file.videos'].create({
+                    'task_id' : task_id.id,
+                    'video_data' : file_data,
+                    'video_name' : filename,
+                    'attachment_id' : attachment_id.id,
+                })
+
+        video_data_3 = values.get("myfiles3")
+        if hasattr(video_data_3, "filename"):
+            file_data = base64.b64encode(video_data_3.read())
+            filename = video_data_3.filename
+            mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)
+            if mimetype:
+                attachment_id = request.env['ir.attachment'].create({
+                    'name': filename,
+                    'type': 'binary',
+                    'datas': file_data,
+                    'public': True,
+                    'res_model': 'project.task',
+                    'res_id' : task_id.id,
+                    'mimetype': mimetype,
+                })
+
+                video1 = request.env['file.videos'].create({
+                    'task_id' : task_id.id,
+                    'video_data' : file_data,
+                    'video_name' : filename,
+                    'attachment_id' : attachment_id.id,
+                })
+
+        video_data_4 = values.get("myfiles4")
+        if hasattr(video_data_4, "filename"):
+            file_data = base64.b64encode(video_data_4.read())
+            filename = video_data_4.filename
+            mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)
+            if mimetype:
+                attachment_id = request.env['ir.attachment'].create({
+                    'name': filename,
+                    'type': 'binary',
+                    'datas': file_data,
+                    'public': True,
+                    'res_model': 'project.task',
+                    'res_id' : task_id.id,
+                    'mimetype': mimetype,
+                })
+
+                video1 = request.env['file.videos'].create({
+                    'task_id' : task_id.id,
+                    'video_data' : file_data,
+                    'video_name' : filename,
+                    'attachment_id' : attachment_id.id,
+                })
+
+        video_data_5 = values.get("myfiles5")
+        if hasattr(video_data_5, "filename"):
+            file_data = base64.b64encode(video_data_5.read())
+            filename = video_data_5.filename
+            mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)
+            if mimetype:
+                attachment_id = request.env['ir.attachment'].create({
+                    'name': filename,
+                    'type': 'binary',
+                    'datas': file_data,
+                    'public': True,
+                    'res_model': 'project.task',
+                    'res_id' : task_id.id,
+                    'mimetype': mimetype,
+                })
+
+                video1 = request.env['file.videos'].create({
+                    'task_id' : task_id.id,
+                    'video_data' : file_data,
+                    'video_name' : filename,
+                    'attachment_id' : attachment_id.id,
+                })
+
+        video_data_6 = values.get("myfiles6")
+        if hasattr(video_data_1, "filename"):
+            file_data = base64.b64encode(video_data_6.read())
+            filename = video_data_6.filename
+            mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)
+            if mimetype:
+                attachment_id = request.env['ir.attachment'].create({
+                    'name': filename,
+                    'type': 'binary',
+                    'datas': file_data,
+                    'public': True,
+                    'res_model': 'project.task',
+                    'res_id' : task_id.id,
+                    'mimetype': mimetype,
+                })
+
+                video1 = request.env['file.videos'].create({
+                    'task_id' : task_id.id,
+                    'video_data' : file_data,
+                    'video_name' : filename,
+                    'attachment_id' : attachment_id.id,
+                })
+
+        if kw.get('file1_data', False):
+            file = ast.literal_eval(kw.get('file1_data'))
+            attachment_id = request.env['ir.attachment'].create({
+                'name': file.get('name'),
+                'type': 'binary',
+                'datas': file.get('data'),
+                'public': True,
+                'res_model': 'project.task',
+                'res_id' : task_id.id,
+            })
+
+            image1 = request.env['file.images'].create({
+                'task_id' : task_id.id,
+                'image' : file.get('data'),
+                'image_name' : file.get('name'),
+                'attachment_id' : attachment_id.id,
+            })
+
+        if kw.get('file2_data', False):
+            file = ast.literal_eval(kw.get('file2_data'))
+            attachment_id = request.env['ir.attachment'].create({
+                'name': file.get('name'),
+                'type': 'binary',
+                'datas': file.get('data'),
+                'public': True,
+                'res_model': 'project.task',
+                'res_id' : task_id.id,
+            })
+
+            image1 = request.env['file.images'].create({
+                'task_id' : task_id.id,
+                'image' : file.get('data'),
+                'image_name' : file.get('name'),
+                'attachment_id' : attachment_id.id,
+            })
+
+        if kw.get('file3_data', False):
+            file = ast.literal_eval(kw.get('file3_data'))
+            attachment_id = request.env['ir.attachment'].create({
+                'name': file.get('name'),
+                'type': 'binary',
+                'datas': file.get('data'),
+                'public': True,
+                'res_model': 'project.task',
+                'res_id' : task_id.id,
+            })
+
+            image1 = request.env['file.images'].create({
+                'task_id' : task_id.id,
+                'image' : file.get('data'),
+                'image_name' : file.get('name'),
+                'attachment_id' : attachment_id.id,
+            })
+
+        if kw.get('file4_data', False):
+            file = ast.literal_eval(kw.get('file4_data'))
+            attachment_id = request.env['ir.attachment'].create({
+                'name': file.get('name'),
+                'type': 'binary',
+                'datas': file.get('data'),
+                'public': True,
+                'res_model': 'project.task',
+                'res_id' : task_id.id,
+            })
+
+            image1 = request.env['file.images'].create({
+                'task_id' : task_id.id,
+                'image' : file.get('data'),
+                'image_name' : file.get('name'),
+                'attachment_id' : attachment_id.id,
+            })
+
+        if kw.get('file5_data', False):
+            file = ast.literal_eval(kw.get('file5_data'))
+            attachment_id = request.env['ir.attachment'].create({
+                'name': file.get('name'),
+                'type': 'binary',
+                'datas': file.get('data'),
+                'public': True,
+                'res_model': 'project.task',
+                'res_id' : task_id.id,
+            })
+
+            image1 = request.env['file.images'].create({
+                'task_id' : task_id.id,
+                'image' : file.get('data'),
+                'image_name' : file.get('name'),
+                'attachment_id' : attachment_id.id,
+            })
+
+        if kw.get('file6_data', False):
+            file = ast.literal_eval(kw.get('file6_data'))
+            attachment_id = request.env['ir.attachment'].create({
+                'name': file.get('name'),
+                'type': 'binary',
+                'datas': file.get('data'),
+                'public': True,
+                'res_model': 'project.task',
+                'res_id' : task_id.id,
+            })
+
+            image1 = request.env['file.images'].create({
+                'task_id' : task_id.id,
+                'image' : file.get('data'),
+                'image_name' : file.get('name'),
+                'attachment_id' : attachment_id.id,
+            })
+
+        url = "/my/tasks?filterby=" + str(project.id)
+        return request.redirect(url)
+
     @http.route('/how-it-works', type='http', auth='public', website=True)
     def web_how_works(self):
         return  request.render('wt_office_hunddle.how_it_work')
+
+    @http.route('/video-design', type='http', auth='public', website=True)
+    def video_design_office_huddle(self):
+        return  request.render('wt_office_hunddle.video_design_officehuddle_template')
 
     @http.route('/customer-portal', type='http', auth='public', website=True)
     def customer_portal_office_huddle(self):
@@ -126,6 +837,8 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/graphic', type='http', auth='public', website=True)
     def graphics_office_huddle(self):
+        if request.env.user.id == request.env.ref('base.public_user').id:
+            return request.redirect('/web/login')
         return  request.render('wt_office_hunddle.graphic_design_form')
 
     @http.route('/tshirt-printing', type='http', auth='public', website=True)

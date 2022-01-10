@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="inherit_project_task_view">
+        <field name="name">inherit.project.task</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='tag_ids']" position="after">
+            <field name="is_design" invisible="1"/>
+          </xpath>
+          <xpath expr="//notebook" position="inside">
+            <page string="Graphic Information" name="design_info" attrs="{'invisible': [('is_design', '!=', True)]}">
+              <separator string="CUSTOMER INFORMATION"/>
+              <group>
+                <group>
+                  <field name="design_type" invisible="1"/>
+                  <field name="company_name"/>
+                  <field name="phone"/>
+                  <field name="city_zip"/>
+                  <field name="moto"/>
+                </group>
+                <group>
+                  <field name="contact_name"/>
+                  <field name="fax"/>
+                  <field name="website"/>
+                  <field name="email"/>
+                  <field name="positioning_statement"/>
+                </group>
+              </group>
+
+              <separator string="DESIGN INFORMATION"/>
+              <group>
+                <group>
+                  <field name="item_information"/>
+                  <field name="size"/>
+                  <field name="bleed" attrs="{'invisible': [('design_type', '!=', 'graphic')]}"/>
+                  <field name="file_format"/>
+                  <field name="image_provided" attrs="{'invisible': [('design_type', '!=', 'graphic')]}"/>
+                </group>
+                <group string="Colors(RGB/RGBA/CMYK)">
+                  <field name="colors"/>
+                  <field name="cyan" attrs="{'invisible': [('colors', '!=', 'cmyk')]}"/>
+                  <field name="magenta" attrs="{'invisible': [('colors', '!=', 'cmyk')]}"/>
+                  <field name="yellow" attrs="{'invisible': [('colors', '!=', 'cmyk')]}"/>
+                  <field name="black" attrs="{'invisible': [('colors', '!=', 'cmyk')]}"/>
+                  <field name="red" attrs="{'invisible': [('colors', '!=', 'rgb'), ('colors', '!=', 'rgba')]}"/>
+                  <field name="green" attrs="{'invisible': [('colors', '!=', 'rgb'), ('colors', '!=', 'rgba')]}"/>
+                  <field name="blue" attrs="{'invisible': [('colors', '!=', 'rgb'), ('colors', '!=', 'rgba')]}"/>
+                  <field name="alpha" attrs="{'invisible': [('colors', '!=', 'rgba')]}"/>
+                </group>
+              </group>
+              <group attrs="{'invisible': [('design_type', '!=', 'graphic')]}">
+                <group string="DESIGN COLORS">
+                  <field name="g_yellow"/>
+                  <field name="g_red"/>
+                  <field name="g_blue"/>
+                  <field name="g_violet"/>
+                  <field name="g_green"/>
+                  <field name="g_orange"/>
+                  <field name="g_brown"/>
+                  <field name="g_gray"/>
+                  <field name="g_pink"/>
+                  <field name="g_black"/>
+                </group>
+                <group string="DESIGN LOCATIONS">
+                  <field name="full_color_front"/>
+                  <field name="full_color_back"/>
+                  <field name="bw_front"/>
+                  <field name="bw_back"/>
+                  <field name="no_back"/>
+                </group>
+              </group>
+
+              <separator string="EXTRA INFORMATION"/>
+              <group>
+                <group>
+                  <field name="design_description" attrs="{'invisible': [('design_type', '!=', 'video')]}"/>
+                  <field name="front_design_description" attrs="{'invisible': [('design_type', '!=', 'graphic')]}"/>
+                  <field name="special_instruction"/>
+                </group>
+                <group>
+                  <field name="back_design_description" attrs="{'invisible': [('design_type', '!=', 'graphic')]}"/>
+                </group>
+              </group>
+
+              <separator string="IMAGES INFORMATION" attrs="{'invisible': [('design_type', '!=', 'graphic')]}"/>
+              <field name="images_lines" readonly="1" attrs="{'invisible': [('design_type', '!=', 'graphic')]}">
+                <tree>
+                  <field name="image_name"/>
+                  <field name="image" string="Image" widget="image" class="oe_avatar"/>
+                  <field name="task_id" invisible="1"/>
+                  <field name="attachment_id" invisible="1"/>
+                </tree>
+                <form>
+                  <group>
+                    <group>
+                      <field name="image_name"/>
+                      <field name="image" string="Image" widget="image" class="oe_avatar custom_image"/>
+                      <field name="task_id" invisible="1"/>
+                      <field name="attachment_id" invisible="1"/>
+                    </group>
+                  </group>
+                </form>
+              </field>
+
+              <separator string="VIDEO INFORMATION" attrs="{'invisible': [('design_type', '!=', 'video')]}"/>
+              <field name="videos_lines" attrs="{'invisible': [('design_type', '!=', 'video')]}">
+                <tree>
+                  <field name="video_name"/>
+                  <field name="video_data" string="Video" />
+                  <field name="task_id" invisible="1"/>
+                  <field name="attachment_id" invisible="1"/>
+                </tree>
+                <form>
+                  <group>
+                    <group>
+                      <field name="video_name"/>
+                      <field name="video_data" string="Video" />
+                      <field name="task_id" invisible="1"/>
+                      <field name="attachment_id" invisible="1"/>
+                    </group>
+                  </group>
+                </form>
+              </field>
+            </page>
+          </xpath>
+        </field>
+    </record>
+  </data>
+</odoo>
+                          
