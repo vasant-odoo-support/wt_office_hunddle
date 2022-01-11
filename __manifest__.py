@@ -7,7 +7,7 @@
     'summary': 'Website',
     'category': 'Website',
     'author': 'Warlock Technologies',
-    'depends': ['website', 'website_event', 'sale', 'website_event_track', 'website_blog', 'portal', 'auth_signup', 'website_slides'],
+    'depends': ['website', 'website_event', 'sale', 'website_event_track', 'website_blog', 'portal', 'auth_signup', 'website_slides', 'base', 'web', 'mail'],
     'website': 'http://www.warlocktechnologies.com',
     'data':[
         'security/ir.model.access.csv',
@@ -43,6 +43,9 @@
         'views/elearning_view.xml',
         'views/project_task_view.xml',
         'views/video_page_view.xml',
+    ],
+    'qweb': [
+        'static/src/xml/binary_preview.xml',
     ],
     'license': 'LGPL-3',
     'installable': True,

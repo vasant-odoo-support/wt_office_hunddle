@@ -122,6 +122,46 @@ class WebsitBlogPost(Website):
 
 
 class WebsiteHuddleCustom(http.Controller):
+    @http.route(['/get/video/details'], type='json', auth="public", methods=['POST'], website=True)
+    def get_video_data(self, res_id=False, model=False, size=False, res_field=False, **kw):
+        video_data = None
+        if res_id and model and res_field and size:
+            query = """select id from ir_attachment
+                where res_model=%s and
+                res_id=%s and
+                res_field=%s"""
+            request.env.cr.execute(query, (model, res_id, res_field,))
+            attachment_ids = request.env.cr.fetchall()
+            if attachment_ids:
+                attachment_ids = [t[0] for t in attachment_ids]
+                datas = request.env['ir.attachment'].sudo().browse(attachment_ids)
+                if datas and len(datas) == 1:
+                    return {
+                        'name': datas.name or datas.dispay_name,
+                        'id': datas.id,
+                        'type': datas.mimetype,
+                    }
+                elif datas:
+                    if size[-2:] in ('Kb', 'kb'):
+                        div = 1024
+                    elif size[-2:] in ('Mb', 'mb'):
+                        div = 1024 * 1024
+                    elif size[-5:] in ('bytes', 'Bytes'):
+                        div = 1
+                        size = size[:-3]
+                    else:
+                        return video_data
+
+                    for d in datas:
+                        if float(size[:-3]) == round(d.file_size / div, 2):
+                            video_data = {
+                                'name': d.name or d.dispay_name,
+                                'id': d.id,
+                                'type': d.mimetype,
+                            }
+                            break
+        return video_data
+
     def check_get_mimetype(self, file_data, filename):
         if filename.split(".")[-1] != "mp4":
             return False
@@ -690,7 +730,7 @@ class WebsiteHuddleCustom(http.Controller):
                 })
 
         video_data_6 = values.get("myfiles6")
-        if hasattr(video_data_1, "filename"):
+        if hasattr(video_data_6, "filename"):
             file_data = base64.b64encode(video_data_6.read())
             filename = video_data_6.filename
             mimetype = self.check_get_mimetype(file_data=file_data, filename=filename)

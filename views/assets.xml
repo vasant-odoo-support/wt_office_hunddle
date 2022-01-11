@@ -31,6 +31,12 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/assessp.js"></script>
     	</xpath>
     </template>
+
+    <template id="assets_backend" name="board assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/js/binary_preview.js"/>
+        </xpath>
+    </template>
     
 
 </odoo>
