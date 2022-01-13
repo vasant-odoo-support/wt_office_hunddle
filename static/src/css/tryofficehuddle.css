@@ -1,0 +1,251 @@
+.tryofficehuddle_form_cl header {
+    padding-top: 20px;
+}
+.tryofficehuddle_form_cl .img-fluid {
+    height: 100%;
+    width: 100%;
+    
+}
+.tryofficehuddle_form_cl .container.d-flex.align-items-center{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+.tryofficehuddle_form_cl .container {
+    max-width: 1900px;
+    padding-left: 120px;
+}
+.tryofficehuddle_form_cl .container-fluid {
+    margin: 30px 0 30px 0 !important;
+    padding: 0px 100px 0px 100px !important;
+}
+.tryofficehuddle_form_cl .container-fluid-in {
+    margin: 0px 0 0px 0 !important;;
+    padding: 0px 0px 0px 0px !important;
+}
+.tryofficehuddle_form_cl .Footer .container-fluid{
+    margin:0px;
+}
+.tryofficehuddle_form_cl .col-sm.col-md.col-lg.bg-primary.bg-gradient{
+    background-image: linear-gradient(to bottom right, rgb(3, 45, 122), rgb(53, 148, 211)) !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tryofficehuddle_form_cl button.oh-btn3.center{
+    border-radius: 20px;
+    font-weight: bold;
+}
+.tryofficehuddle_form_cl header#header{
+    width: fit-content;  
+}
+
+.tryofficehuddle_form_cl {
+    max-width: 1980px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+.tryofficehuddle_form_cl h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins ExtraBold';
+    margin-top: 20px;
+}
+
+.tryofficehuddle_form_cl p {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Arial';
+}
+
+/* Codes Starts Here */
+.tryofficehuddle_form_cl .toppings {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: rgb(52, 142, 239);
+    text-align: center;
+}
+
+.tryofficehuddle_form_cl .oh-btn {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 73, 124);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+}
+.tryofficehuddle_form_cl .oh-btn:hover {
+    background-color: rgb(4, 149, 253);
+}
+.tryofficehuddle_form_cl .oh-btn2 {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 73, 124);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+}
+.tryofficehuddle_form_cl .oh-btn2:hover {
+    background-color: rgb(4, 149, 253);
+}
+
+.tryofficehuddle_form_cl .oh-btn3 {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(255, 255, 255);
+    background: #00548f;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+}
+.tryofficehuddle_form_cl .oh-btn3:hover {
+    background-color: rgb(4, 149, 253);
+}
+
+.tryofficehuddle_form_cl #one {
+    background-image: url(/wt_office_hunddle/static/src/tryofficehuddle/top-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tryofficehuddle_form_cl #two {
+    background-image: url(/wt_office_hunddle/static/src/tryofficehuddle/top2bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tryofficehuddle_form_cl #three {
+    background-color: #07132b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.tryofficehuddle_form_cl #six {
+    background-color: #16202a;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tryofficehuddle_form_cl #six hr {
+    height: 10px;
+    color: white;
+    background-color: currentColor;
+}
+
+.tryofficehuddle_form_cl ul.checked {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background: #fff;
+    padding-left: 0;
+}
+.tryofficehuddle_form_cl ul.checked li {
+    padding: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.tryofficehuddle_form_cl ul {
+    list-style: none;
+}
+.tryofficehuddle_form_cl ul.checked li i.fa {
+    padding: 11px 9px;
+    background: #f9f9f9;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-right: 6px;
+    width: auto;
+    margin-left: 0 !important;
+    display: inline-block;
+}
+.tryofficehuddle_form_cl ul.bullets {
+    padding: 0;
+    list-style-type: none;
+}
+.tryofficehuddle_form_cl ul.bullets li {
+    padding-bottom: 6px;
+    list-style-type: none;
+    margin-bottom: 6px;
+    padding-left: 2em;
+    font-size: 20px;
+}
+
+.tryofficehuddle_form_cl ul.bullets li i.fa {
+    margin-left: -2em;
+    margin-right: 0.71428571em
+}
+
+.tryofficehuddle_form_cl #ten {
+    background: #023f92; 
+}
+
+.tryofficehuddle_form_cl #Branded {
+    padding-top: 0;
+    padding-bottom: 20px;
+    background: #023f92;
+    margin-top: -30px;
+}
+
+.tryofficehuddle_form_cl #Branded h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.tryofficehuddle_form_cl #Branded .row {
+    text-align: center;
+    padding: 2% 0 0 5%;
+}
+
+.tryofficehuddle_form_cl .col-sm-2.order-2.order-lg-2 {
+    display: -webkit-inline-box;
+    width: fit-content;
+}
+.tryofficehuddle_form_cl h6 {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: arial;
+}
+.tryofficehuddle_form_cl section#ten {
+    padding-top: 50px !important;
+}
+.tryofficehuddle_form_cl button.oh-btn2{
+    border-radius: 15px;
+}
+.tryofficehuddle_form_cl section#seven {
+    padding-top: 50px !important;
+}
+.tryofficehuddle_form_cl button.oh-btn {
+    margin-top: 30px;
+}
+.tryofficehuddle_form_cl .col-sm.col-md.col-lg {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.tryofficehuddle_form_cl button.oh-btn3 {
+    border-radius: 15px;
+}
+.tryofficehuddle_form_cl .col-lg-2 {
+    width: 20%;
+}
+.tryofficehuddle_form_cl b {
+    font-size: 25px;
+}

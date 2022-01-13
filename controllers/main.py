@@ -871,6 +871,10 @@ class WebsiteHuddleCustom(http.Controller):
     def video_design_office_huddle(self):
         return  request.render('wt_office_hunddle.video_design_officehuddle_template')
 
+    @http.route('/tryofficehuddle.com', type='http', auth='public', website=True)
+    def try_office_huddle(self):
+        return  request.render('wt_office_hunddle.tryofficehuddle_form')
+
     @http.route('/customer-portal', type='http', auth='public', website=True)
     def customer_portal_office_huddle(self):
         return  request.render('wt_office_hunddle.customer_portal_officehuddle_template')
