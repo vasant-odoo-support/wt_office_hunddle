@@ -44,6 +44,7 @@
         'views/project_task_view.xml',
         'views/video_page_view.xml',
         'views/try_office_huddle_home_view.xml',
+        'views/new_assessment_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',

@@ -28,6 +28,7 @@
                         <group>
                             <field name='name'/>
                             <field name='company_name'/>
+                            <field name='user_id'/>
                             <field name='start_date'/>
                             <label for="" name="mailing_address">
                                 <b>Mailing Address</b>

@@ -15,17 +15,6 @@
 
                   <div class="row">
                      <div class="col-lg-6" style="width: 50%; justify-content: center;">
-                        <div class="progress-pie-chart" t-attf-data-percent="#{form_submission}">
-                           <div class="ppc-progress">
-                              <div class="ppc-progress-fill"></div>
-                           </div>
-                           <div class="ppc-percents">
-                              <div class="pcc-percents-wrapper">
-                                 <span><b>%</b></span>
-                              </div>
-                           </div>
-                        </div>
-
                         <div class="progress-pie-chart" t-attf-data-percent="#{marketing}">
                            <div class="ppc-progress">
                               <div class="ppc-progress-fill"></div>
@@ -92,16 +81,20 @@
                               </div>
                            </div>
                         </div>
+
+                        <div class="progress-pie-chart" t-attf-data-percent="#{form_submission}">
+                           <div class="ppc-progress">
+                              <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                              <div class="pcc-percents-wrapper">
+                                 <span><b>%</b></span>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      
                      <div class="col-lg-6 pt-4 pt-lg-0 align-items-stretch" style="width: 50%; justify-content: center;">
-                        <button class="accordion accordion1">
-                           Leadership Development System
-                        </button>
-                        <div class="panel">
-                           <p>Your leadership skills will need to be improved for your business to at least survive.</p>
-                        </div>
-
                         <button class="accordion accordion2">
                            Marketing System
                         </button>
@@ -143,17 +136,19 @@
                         <div class="panel">
                            <p>Very good! Your business has been establishing good relations with your customers which have now become clients! This will help your company grow and expand.</p>
                         </div>
+
+                        <button class="accordion accordion1">
+                           Leadership Development System
+                        </button>
+                        <div class="panel">
+                           <p>Your leadership skills will need to be improved for your business to at least survive.</p>
+                        </div>
                      </div>
                   </div>
                </div>
 
                <div class="row1">
                   <div class="col-lg-12 pt-4 pt-lg-0 align-items-stretch content">
-                     <p><b>Leadership Development System/<t t-esc="form_submission"/></b></p>
-                     <div class="container00">
-                        <div class="skills LDS" t-attf-style="width:#{form_submission}%;"></div>
-                     </div>
-
                      <p><b>Marketing System/<t t-esc="marketing"/></b></p>
                      <div class="container00">
                         <div class="skills LDS" t-attf-style="width:#{marketing}%;"></div>
@@ -182,6 +177,11 @@
                      <p><b>Customer Fulfillment System/<t t-esc="customer_fulfillment"/></b></p>
                      <div class="container00">
                         <div class="skills LDS" t-attf-style="width:#{customer_fulfillment}%;"></div>
+                     </div>
+
+                     <p><b>Leadership Development System/<t t-esc="form_submission"/></b></p>
+                     <div class="container00">
+                        <div class="skills LDS" t-attf-style="width:#{form_submission}%;"></div>
                      </div>
                   </div>  
                </div>

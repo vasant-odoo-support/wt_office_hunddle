@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="new_assessment_tmpl" name="Assessment Office Huddle">
+        <t t-call="website.layout">
+            <div id="wrap" class="new_assessment_cl">
+                <section id="new_assess" class="contact" action="">
+                    <div class="container" data-aos="fade-up" style="margin:0px; !important">
+                        <div class="row">
+                            <div class="prog img-fluid ">
+                                <!-- <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 1.png" width="20px" height="20px"/>
+                                    <h6>Leadershp<br/>Development<br/>System</h6>
+
+                                </div> -->
+                                <!-- <span class="step"></span> -->
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 2.png" width="20px" height="20px"/>
+                                    <h6>Marketing<br/>System</h6>
+                                </div>
+                                <span class="step"></span>
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 3.png" width="20px" height="20px"/>
+                                    <h6>Financial<br/>System</h6>
+
+                                </div>
+                                <span class="step"></span>
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 4.png" width="20px" height="20px"/>
+                                    <h6>Team<br/>Development<br/>System</h6>
+
+                                </div>
+                                <span class="step"></span>
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 5.png" width="20px" height="20px"/>
+                                    <h6>Lead<br/>Generation<br/>System</h6>
+
+                                </div>
+                                <span class="step"></span>
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 6.png" width="20px" height="20px"/>
+                                    <h6>Lead<br/>Conversion<br/>System</h6>
+
+                                </div>
+                                <span class="step"></span>
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 7.png" width="20px" height="20px"/>
+                                    <h6>Customer<br/>Fulfillment<br/>System</h6>
+
+                                </div>
+                                <span class="step"></span>
+                                <div>
+                                    <img src="/wt_office_hunddle/static/src/assessment/Logo 7.png" width="20px" height="20px"/>
+                                    <h6>Complete!</h6>
+                                </div>
+                                <span class="step"></span>
+
+                            </div>
+                            <form id="regForm" action="/assesment/submit" method="post">
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                <!-- Step 1 -->
+                                <div class="tab">
+                                    <div class="progress text-center">
+                                        <div class="bar1" style="width:14.28%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center" style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="hero1 container-fluid">
+                                            <div class="hero-content1">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">MARKETING</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Start -->
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                            <!-- 10 Rec -->
+                                        <t t-set="i" t-value="1"/>
+                                        <t t-set="display_arrow" t-value="0"/>
+                                        <t t-foreach="marketing_ids" t-as="marketing">
+                                            <t t-if="i &lt;= 10">
+                                                <div class="col-md-12 form-group" style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="marketing.name"/></p>
+                                                    <input type="radio" t-attf-id="#{marketing.id}" t-attf-name="#{marketing.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{marketing.id}">Yes</label>  
+                                                    <input type="radio" t-attf-id="#{marketing.id}" t-attf-name="#{marketing.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{marketing.id}">No</label>
+                                                </div>
+                                                <t t-set="i" t-value="i+1"/>
+                                            </t>
+                                            <!-- 10 END -->
+
+                                            <t t-if="i>=11">
+                                                <div class="col-md-12" t-if="display_arrow == 0">
+                                                    <input type="checkbox" name="arrow" id="arrow" value="arrow"
+                                                        data-toggle="collapse" data-target="#down-arrow"/>
+                                                    <label for="arrow"><img src="/wt_office_hunddle/static/src/assessment/arrow.png"/></label>
+                                                    <t t-set="display_arrow" t-value="1"/>
+                                                    <div id="down-arrow">
+                                                        <t t-set="st" t-value="0"/>
+                                                        <t t-foreach="marketing_ids" t-as="marketing">
+                                                            <t t-set="st" t-value="st+1"/>
+                                                            <t t-if="st >=11">
+                                                                <div class="col-md-12 form-group" style="display:inline-flex; align-items: center;">
+                                                                    <p><span t-esc="st"/>. <t t-esc="marketing.name"/></p>
+                                                                    <input type="radio" t-attf-id="#{marketing.id}" t-attf-name="#{marketing.id}" t-attf-value="yes" />
+                                                                    <label t-attf-for="#{marketing.id}">Yes</label>  
+                                                                    <input type="radio" t-attf-id="#{marketing.id}" t-attf-name="#{marketing.id}" t-attf-value="no" />
+                                                                    <label t-attf-for="#{marketing.id}">No</label>
+                                                                </div>
+                                                            </t>
+                                                        </t>
+                                                        <div class="nexpev" style="overflow:auto;">
+                                                            <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                                <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                                <button class="btn" type="button" id="nextBtn">Next</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                        </t>
+                                        </div>
+                                    </div>
+                                    <!-- END -->
+                                </div>
+                                <!-- Step 2 -->
+                                <div class="tab">
+                                    <div class="progress">
+                                        <div class="bar1" style="width:28.56%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center" style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="hero2 container-fluid">
+                                            <div class="hero-content2">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">FINANCIAL<br/>SYSTEM</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                            <t t-set="i" t-value="1"/>
+                                            <t t-foreach="financial_ids" t-as="finance">
+                                                <div class="col-md-12 form-group"
+                                                    style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="finance.name"/></p>
+                                                    <input type="radio" t-attf-id="#{finance.id}" t-attf-name="#{finance.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{finance.id}">Yes</label>  
+                                                    <input type="radio" t-attf-id="#{finance.id}" t-attf-name="#{finance.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{finance.id}">No</label>
+                                                    <t t-set="i" t-value="i+1"/>
+                                                </div>
+                                            </t>
+ 
+                                            <div class="nexpev" style="overflow:auto;">
+                                                <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                    <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                    <button class="btn" type="button" id="nextBtn">Next</button>
+                                                </div>
+                                            </div>                                   
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Step 3 -->
+                                <div class="tab">
+                                    <div class="progress">
+                                        <div class="bar1" style="width:42.84%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center" style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="hero3 container-fluid">
+                                            <div class="hero-content3">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">TEAM DEVELOPMENT<br/>SYSTEM</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                            <!-- <div class="col-md-12 form-group"
+                                                style="display: inline-flex; align-items: center;">
+                                                <p>1. Is Your Personal Credit Score Lower than 800?</p>
+                                                <input type="radio" id="yes1" name="boolean1" value="Yes"/>
+                                                <label for="yes1">Yes</label>
+                                                <input type="radio" id="no1" name="boolean1" value="No"/>
+                                                <label for="no1">No</label>
+                                            </div> -->
+                                            <t t-set="i" t-value="1"/>
+                                            <t t-foreach="team_development_ids" t-as="team_development">
+                                                <div class="col-md-12 form-group"
+                                                    style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="team_development.name"/></p>
+                                                    <input type="radio" t-attf-id="#{team_development.id}" t-attf-name="#{team_development.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{team_development.id}">Yes</label>  
+                                                    <input type="radio" t-attf-id="#{team_development.id}" t-attf-name="#{team_development.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{team_development.id}">No</label>
+                                                    <t t-set="i" t-value="i+1"/>
+                                                </div>
+                                            </t>
+                                              
+                                            <div class="nexpev" style="overflow:auto;">
+                                                <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                    <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                    <button class="btn" type="button" id="nextBtn">Next</button>
+                                                </div>
+                                            </div>                                 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Step 4 -->    
+                                <div class="tab">
+                                    <div class="progress">
+                                        <div class="bar1" style="width: 57.12%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center " style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="hero4 container-fluid">
+                                            <div class="hero-content4">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">LEAD GENERATION<br/>SYSTEM</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                        <t t-set="i" t-value="1"/>
+                                        <t t-set="display_arrow" t-value="0"/>
+                                        <t t-foreach="lead_generation_ids" t-as="lead_generation">
+                                            <t t-if="i &lt;= 10">
+                                                <div class="col-md-12 form-group"
+                                                    style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="lead_generation.name"/></p>
+                                                    <input type="radio" t-attf-id="#{lead_generation.id}" t-attf-name="#{lead_generation.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{lead_generation.id}">Yes</label>  
+                                                    <input type="radio" t-attf-id="#{lead_generation.id}" t-attf-name="#{lead_generation.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{lead_generation.id}">No</label>
+                                                </div>
+                                                <t t-set="i" t-value="i+1"/>
+                                            </t>
+                                            <t t-if="i>=11">
+                                                <div class="col-md-12" t-if="display_arrow == 0">
+                                                    <input type="checkbox" name="arrow1" id="arrow1" value="arrow1" data-toggle="collapse" data-target="#down-arrow1"/>
+                                                    <label for="arrow1"><img src="/wt_office_hunddle/static/src/assessment/arrow.png"/></label>
+                                                    <t t-set="display_arrow" t-value="1"/>
+                                                    <div id="down-arrow1">
+                                                        <t t-set="st" t-value="0"/>
+                                                        <t t-foreach="lead_generation_ids" t-as="lead_generation">
+                                                            <t t-set="st" t-value="st+1"/>
+                                                            <t t-if="st >=11">
+                                                                <div class="col-md-12 form-group" style="display:inline-flex; align-items: center;">
+                                                                    <p><span t-esc="st"/>. <t t-esc="lead_generation.name"/></p>
+                                                                    <input type="radio" t-attf-id="#{lead_generation.id}" t-attf-name="#{lead_generation.id}" t-attf-value="yes" />
+                                                                    <label t-attf-for="#{lead_generation.id}">Yes</label>  
+                                                                    <input type="radio" t-attf-id="#{lead_generation.id}" t-attf-name="#{lead_generation.id}" t-attf-value="no" />
+                                                                    <label t-attf-for="#{lead_generation.id}">No</label>
+                                                                </div>
+                                                            </t>
+                                                        </t>
+                                                        <!-- <div class="col-md-12 form-group"
+                                                            style="display:inline-flex; align-items: center;">
+                                                            <p>11. Do You Have a Customer Service Representative?</p>
+                                                            <input type="radio" id="yes9" name="boolean9" value="Yes"/>
+                                                            <label for="yes9">Yes</label>
+                                                            <input type="radio" id="no9" name="boolean9" value="No"/>
+                                                            <label for="no9">No</label>
+                                                        </div> -->
+                                                        
+                                                        <div class="nexpev" style="overflow:auto;">
+                                                            <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                                <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                                <button class="btn" type="button" id="nextBtn">Next</button>
+                                                            </div>
+                                                        </div>                               
+                                                    </div>
+                                                </div>
+                                            </t>                                  
+                                        </t>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 5 -->
+                                <div class="tab">
+                                    <div class="progress">
+                                        <div class="bar1" style="width:71.39%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center" style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="hero5 container-fluid">
+                                            <div class="hero-content5">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">LEAD CONVERSION<br/>SYSTEM</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                            <t t-set="i" t-value="1"/>
+                                            <t t-foreach="lead_conversion_ids" t-as="lead_conversion">
+                                                <div class="col-md-12 form-group"
+                                                    style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="lead_conversion.name"/></p>
+                                                    <input type="radio" t-attf-id="#{lead_conversion.id}" t-attf-name="#{lead_conversion.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{lead_conversion.id}">Yes</label>  
+                                                    <input type="radio" t-attf-id="#{lead_conversion.id}" t-attf-name="#{lead_conversion.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{lead_conversion.id}">No</label>
+                                                    <t t-set="i" t-value="i+1"/>
+                                                </div>
+                                            </t> 
+                                            <div class="nexpev" style="overflow:auto;">
+                                                <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                    <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                    <button class="btn" type="button" id="nextBtn">Next</button>
+                                                </div>
+                                            </div>                                 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 6 -->
+                                <div class="tab">
+                                    <div class="progress">
+                                        <div class="bar1" style="width:85.68%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center" style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="hero6 container-fluid">
+                                            <div class="hero-content6">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">CUSTOMER FULLFILMENT<br/>SYSTEM</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                            <t t-set="i" t-value="1"/>
+                                            <t t-foreach="customer_fulfillment_ids" t-as="customer_fullfill">
+                                                <div class="col-md-12 form-group"
+                                                    style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="customer_fullfill.name"/></p>
+                                                    <input type="radio" t-attf-id="#{customer_fullfill.id}" t-attf-name="#{customer_fullfill.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{customer_fullfill.id}">Yes</label>  
+                                                    <input type="radio" t-attf-id="#{customer_fullfill.id}" t-attf-name="#{customer_fullfill.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{customer_fullfill.id}">No</label>
+                                                    <t t-set="i" t-value="i+1"/>
+                                                </div>
+                                            </t>  
+                                            <div class="nexpev" style="overflow:auto;">
+                                                <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                    <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                    <button class="btn" type="button" id="nextBtn">Next</button>
+                                                </div>
+                                            </div>                 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 7 -->
+                                <div class="tab">
+                                    <div class="progress">
+                                        <div class="bar1" style="width:100%">
+                                        </div>
+                                    </div>
+                                    <div class="percent">
+                                        
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="col-sm col-md col-lg percent">
+                                            <p>7</p>
+                                        </div>
+                                        <!-- <div class="col-sm col-md col-lg percent">
+                                            <p>8</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="progress-name text-center " style="text-align: center;">
+                                        <div class="row">
+                                            <!-- <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Leadership<br/>Development<br/>System</p>
+                                            </div> -->
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Marketing<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Financial<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Team<br/>Development<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Generation<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Lead<br/>Conversion<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Customer<br/>Fullfilment<br/>System</p>
+                                            </div>
+                                            <div class="col-sm col-md col-lg align-items-center">
+                                                <p>Complete!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="hero7 container-fluid">
+                                            <div class="hero-content7">
+                                                <hr class="new1"/>
+                                                <h1 class="ferst">LEADERSHIP DEVELOPMENT<br/>SYSTEM</h1>
+                                                <hr class="new2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row blackie">
+                                        <div class="LDS container-fluid">
+                                            <t t-set="i" t-value="1"/>
+                                            <t t-foreach="form_submission_ids" t-as="form_submission">
+                                                <div class="col-md-12 form-group"
+                                                    style="display: inline-flex; align-items: center;">
+                                                    <p><span t-esc="i"/>. <t t-esc="form_submission.name"/></p>
+                                                    <input type="radio" t-attf-id="#{form_submission.id}" t-attf-name="#{form_submission.id}" t-attf-value="yes" />
+                                                    <label t-attf-for="#{form_submission.id}">Yes</label>
+                                                    <input type="radio" t-attf-id="#{form_submission.id}" t-attf-name="#{form_submission.id}" t-attf-value="no" />
+                                                    <label t-attf-for="#{form_submission.id}">No</label>
+                                                    <t t-set="i" t-value="i+1"/>
+                                                </div>
+                                            </t>   
+                                            <div class="nexpev" style="overflow:auto;">
+                                                <div style="float:right; margin-top: 20px; margin-bottom: 20px;">
+                                                    <button class="btn" type="button" id="prevBtn">Previous</button>
+                                                    <button class="btn" type="button" id="nextBtn">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

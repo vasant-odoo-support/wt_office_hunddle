@@ -890,7 +890,7 @@ class WebsiteHuddleCustom(http.Controller):
         return  request.render('wt_office_hunddle.t_shirt_printing_design_selection_officehuddle_template')
 
     @http.route('/page/assessment', type='http', auth='public', website=True)
-    def assessment(self):
+    def new_assessment(self):
         all_question_ids = request.env['question.question']
         marketing_ids = all_question_ids.sudo().search([('question_type', '=', 'marketing')])
         financial_ids = all_question_ids.sudo().search([('question_type', '=', 'finance')])
@@ -908,7 +908,50 @@ class WebsiteHuddleCustom(http.Controller):
             'customer_fulfillment_ids': customer_fulfillment_ids,
             'form_submission_ids': form_submission_ids,
         }
-        return  request.render('wt_office_hunddle.assessment_tmpl',vals)
+        return  request.render('wt_office_hunddle.new_assessment_tmpl', vals)
+
+    @http.route('/assesment/submit', type='http', auth='public', website=True)
+    def new_assessment_submit(self, **kw):
+        all_questions_id = request.env['question.question'].search([]).mapped('id')
+        vals = {
+            'user_id': request.env.user.id,
+        }
+        assessment = request.env['assessment.assessment'].create(vals)
+        assessment.onchnage_user_id()
+        if assessment:
+            question_line_ids = []
+            for i in all_questions_id:
+                if str(i) in kw.keys():
+                    question_line_ids.append((0, 0, {
+                        'name': int(i),
+                        'assessment_id': assessment.id,
+                        'result': kw.get(str(i))
+                        }))
+            if question_line_ids:
+                assessment.write({'assessment_list_ids': question_line_ids})
+
+        return request.redirect('/assessment/output?result_id=%s' %(assessment.id))
+
+    # @http.route('/page/assessment', type='http', auth='public', website=True)
+    # def assessment(self):
+    #     all_question_ids = request.env['question.question']
+    #     marketing_ids = all_question_ids.sudo().search([('question_type', '=', 'marketing')])
+    #     financial_ids = all_question_ids.sudo().search([('question_type', '=', 'finance')])
+    #     team_development_ids = all_question_ids.sudo().search([('question_type', '=', 'team_development')])
+    #     lead_generation_ids = all_question_ids.sudo().search([('question_type', '=', 'lead_generation')])
+    #     lead_conversion_ids = all_question_ids.sudo().search([('question_type', '=', 'lead_conversion')])
+    #     customer_fulfillment_ids = all_question_ids.sudo().search([('question_type', '=', 'customer_fulfillment')])
+    #     form_submission_ids = all_question_ids.sudo().search([('question_type', '=', 'form_submission')])
+    #     vals = {
+    #         'marketing_ids': marketing_ids,
+    #         'financial_ids': financial_ids,
+    #         'team_development_ids': team_development_ids,
+    #         'lead_generation_ids': lead_generation_ids,
+    #         'lead_conversion_ids': lead_conversion_ids,
+    #         'customer_fulfillment_ids': customer_fulfillment_ids,
+    #         'form_submission_ids': form_submission_ids,
+    #     }
+    #     return  request.render('wt_office_hunddle.assessment_tmpl',vals)
 
     @http.route('/assessment/output', type='http', auth='public', website=True)
     def assessment_output(self, **kw):
@@ -991,11 +1034,11 @@ class WebsiteHuddleCustom(http.Controller):
             overall_assessment_total = None
             if overall_assessment:
                 overall_assessment_total = round((total_fill_yes / overall_assessment)*100)
-
+            print("------ marketing_total ---- ", marketing_total)
             marketing_cl = None
-            if marketing_total <= 50:
+            if marketing_total and marketing_total <= 50:
                 marketing_cl = 'red'
-            elif marketing_total <= 80:
+            elif marketing_total and marketing_total <= 80:
                 marketing_cl = 'orange'
             else:
                 marketing_cl = 'green'
@@ -1012,71 +1055,71 @@ class WebsiteHuddleCustom(http.Controller):
             }
         return  request.render('wt_office_hunddle.assess_output',vals)
 
-    @http.route('/assesment/submit', type='http', auth='public', website=True)
-    def assessment_submit(self, **kw):
+    # @http.route('/assesment/submit', type='http', auth='public', website=True)
+    # def assessment_submit(self, **kw):
 
-        all_questions_id = request.env['question.question'].search([]).mapped('id')
-        annual_revenue = None
-        if kw.get('annual') == '0-50K':
-            annual_revenue = '0'
-        elif kw.get('annual') == '50-100K':
-            annual_revenue = '1'
-        elif kw.get('annual') == '100-200K':
-            annual_revenue = '2'
-        elif kw.get('annual') == '200-500K':
-            annual_revenue = '3'
-        elif kw.get('annual') == '500-1M':
-            annual_revenue = '4'
-        elif kw.get('annual') == '1M-5M':
-            annual_revenue = '5'
-        else:
-            annual_revenue = '0'
+    #     all_questions_id = request.env['question.question'].search([]).mapped('id')
+    #     annual_revenue = None
+    #     if kw.get('annual') == '0-50K':
+    #         annual_revenue = '0'
+    #     elif kw.get('annual') == '50-100K':
+    #         annual_revenue = '1'
+    #     elif kw.get('annual') == '100-200K':
+    #         annual_revenue = '2'
+    #     elif kw.get('annual') == '200-500K':
+    #         annual_revenue = '3'
+    #     elif kw.get('annual') == '500-1M':
+    #         annual_revenue = '4'
+    #     elif kw.get('annual') == '1M-5M':
+    #         annual_revenue = '5'
+    #     else:
+    #         annual_revenue = '0'
 
-        state_id = None
-        if kw.get('state'):
-            state_id = request.env['res.country.state'].search([('name', '=', kw.get('state').capitalize())])
+    #     state_id = None
+    #     if kw.get('state'):
+    #         state_id = request.env['res.country.state'].search([('name', '=', kw.get('state').capitalize())])
         
-        state_id2 = None
-        if kw.get('state2'):
-            state_id2 = request.env['res.country.state'].search([('name', '=', kw.get('state2').capitalize())])
+    #     state_id2 = None
+    #     if kw.get('state2'):
+    #         state_id2 = request.env['res.country.state'].search([('name', '=', kw.get('state2').capitalize())])
         
-        name = kw.get('firstname') + ' ' + kw.get('lastname') 
-        vals = {
-        'company_name': kw.get('legalname'),
-        'website': kw.get('website'),
-        'name': name,
-        'mailing_address': kw.get('mailingadd'),
-        'city': kw.get('city'),
-        'state_id': state_id.id if state_id else False,
-        'zipcode': kw.get('zipcode'),
-        'physical_address': kw.get('physicaladd'),
-        'city2': kw.get('city2'),
-        'state_id2': state_id2.id if state_id2 else False,
-        'zipcode2': kw.get('zipcode2'),
-        'email': kw.get('Email2'),
-        'website2': kw.get('Website'),
-        'business_phone': kw.get('businessphone'),
-        'phone': kw.get('phone2'),
-        'cell_phone': kw.get('cellphone'),
-        'no_of_employee': kw.get('employees'),
-        'annual_revenue': annual_revenue,
-        'no_of_leaders_report': kw.get('leaders'),
-        'start_date': kw.get('date'),
-        }
-        assessment = request.env['assessment.assessment'].create(vals)
-        if assessment:
-            question_line_ids = []
-            for i in all_questions_id:
-                if str(i) in kw.keys():
-                    question_line_ids.append((0, 0, {
-                        'name': int(i),
-                        'assessment_id': assessment.id,
-                        'result': kw.get(str(i))
-                        }))
-            if question_line_ids:
-                assessment.write({'assessment_list_ids': question_line_ids})
+    #     name = kw.get('firstname') + ' ' + kw.get('lastname') 
+    #     vals = {
+    #     'company_name': kw.get('legalname'),
+    #     'website': kw.get('website'),
+    #     'name': name,
+    #     'mailing_address': kw.get('mailingadd'),
+    #     'city': kw.get('city'),
+    #     'state_id': state_id.id if state_id else False,
+    #     'zipcode': kw.get('zipcode'),
+    #     'physical_address': kw.get('physicaladd'),
+    #     'city2': kw.get('city2'),
+    #     'state_id2': state_id2.id if state_id2 else False,
+    #     'zipcode2': kw.get('zipcode2'),
+    #     'email': kw.get('Email2'),
+    #     'website2': kw.get('Website'),
+    #     'business_phone': kw.get('businessphone'),
+    #     'phone': kw.get('phone2'),
+    #     'cell_phone': kw.get('cellphone'),
+    #     'no_of_employee': kw.get('employees'),
+    #     'annual_revenue': annual_revenue,
+    #     'no_of_leaders_report': kw.get('leaders'),
+    #     'start_date': kw.get('date'),
+    #     }
+    #     assessment = request.env['assessment.assessment'].create(vals)
+    #     if assessment:
+    #         question_line_ids = []
+    #         for i in all_questions_id:
+    #             if str(i) in kw.keys():
+    #                 question_line_ids.append((0, 0, {
+    #                     'name': int(i),
+    #                     'assessment_id': assessment.id,
+    #                     'result': kw.get(str(i))
+    #                     }))
+    #         if question_line_ids:
+    #             assessment.write({'assessment_list_ids': question_line_ids})
 
-        return request.redirect('/assessment/output?result_id=%s' %(assessment.id))
+    #     return request.redirect('/assessment/output?result_id=%s' %(assessment.id))
     
     @http.route('/crm/lead', type='http', auth='public', website=True)
     def web_myaccount_form(self, **kw):
