@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="view_assessments_officehuddle_template" name="Assessments">
+		<t t-call="website.layout">
+			<div id="wrap" class="assessment_view">
+				<h1 style="text-align: center;padding: 50px;">You can check your assessment results here </h1>
+				<div class="container" style="margin-bottom:50px;">
+					<t t-set="i" t-value="1"/>
+					<t t-foreach="assessments" t-as="assessment">
+						<div class="row">
+							<div class="col-lg" style="padding:5px;">
+							  <h3>Assessment : <t t-esc="i"/></h3>
+							</div>
+							<t t-set="i" t-value="i+1"/>
+							<div class="col-lg" style="padding:5px; color:blue;">
+							  <h3><a t-attf-href="/assessment/output?result_id={{assessment.id}}">CHECK ASSESSMENT</a></h3>
+							</div>
+						</div>
+					</t>
+				</div>
+
+			</div>
+		</t>
+	</template>
+</odoo>

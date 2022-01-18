@@ -16,7 +16,8 @@
             <a href="#news">MY ACCOUNT</a>
             <a href="#order products">ORDER PRODUCTS</a>
             <a href="#my orders">MY ORDERS</a>
-            <a href="#save design">SAVE DESIGN</a><br/>
+            <a href="#save design">SAVE DESIGN</a>
+            <a href="/my/assessment">ASSESSMENT</a><br/>
             <a href="#account">ACCOUNT</a>
             <a href="#preference">PREFERENCE</a>
             <a href="#change my info">CHANGE MY INFO</a>
@@ -34,14 +35,14 @@
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>GRAPHIC DESIGN / VIDEO EDITING</h2>
-                    <a href="#" class="button1 buttons">SIGN UP NOW</a>
+                    <a href="#" class="button1 buttons">GET STARTED</a>
                   </div>
                 </div>
 
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>WEBSITE DEVELOPMENT</h2><br/>
-                    <a href="#" class="button2 buttons">GET STARTED</a>
+                    <a href="/graphic" class="button2 buttons">GET STARTED</a>
                   </div>
                 </div>
 
