@@ -6,27 +6,37 @@
             <div id="hero-images">
               <div class="mySlides img-fluid">
                 <div class="numbertext">1 / 5</div>
-                <img src="/wt_office_hunddle/static/src/printing/banners1.png" style="width:100%; height:auto;"/>
+                <a t-attf-href="/shop/product/{{banners.id}}">
+                  <img src="/wt_office_hunddle/static/src/printing/banners1.png" style="width:100%; height:auto;"/>
+                </a>
               </div>
 
               <div class="mySlides img-fluid">
                 <div class="numbertext">2 / 5</div>
-                <img src="/wt_office_hunddle/static/src/printing/flyer.png" style="width:100%; height:auto;"/>
+                <a t-attf-href="/shop/product/{{flyers.id}}">
+                  <img src="/wt_office_hunddle/static/src/printing/flyer.png" style="width:100%; height:auto;"/>
+                </a>
               </div>
 
               <div class="mySlides img-fluid">
                 <div class="numbertext">3 / 5</div>
-                <img src="/wt_office_hunddle/static/src/printing/yard sign.png" style="width:100%; height:auto;"/>
+                <a t-attf-href="/shop/product/{{yard_sign.id}}">
+                  <img src="/wt_office_hunddle/static/src/printing/yard sign.png" style="width:100%; height:auto;"/>
+                </a>
               </div>
 
               <div class="mySlides img-fluid">
                 <div class="numbertext">4 / 5</div>
-                <img src="/wt_office_hunddle/static/src/printing/business card.png" style="width:100%; height:auto;"/>
+                <a t-attf-href="/shop/product/{{bussiness_card.id}}">
+                  <img src="/wt_office_hunddle/static/src/printing/business card.png" style="width:100%; height:auto;"/>
+                </a>
               </div>
 
               <div class="mySlides img-fluid">
                 <div class="numbertext">5 / 5</div>
-                <img src="/wt_office_hunddle/static/src/printing/tshrit.png" style="width:100%; height:auto;"/>
+                <a t-attf-href="/shop/product/{{tshirt.id}}">
+                  <img src="/wt_office_hunddle/static/src/printing/tshrit.png" style="width:100%; height:auto;"/>
+                </a>
               </div>
 
               <!-- <a class="prev img-fluid" onclick="plusSlides(-1)">&#10094;</a>
@@ -53,63 +63,63 @@
               <div class="row">
                 <div class="grid">
                   <div class="one">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{postcards.id}}">
                       <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/postcard.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Postcards</span>
                       </h2>
                     </a>
                   </div>
                   <div class="two">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{banners.id}}">
                       <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/banner.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Banners</span>
                       </h2>
                     </a>
                   </div>
                   <div class="three">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{bussiness_card.id}}">
                       <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/business card.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Business
                           Cards </span></h2>
                     </a>
                   </div>
                   <div class="four">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{stickers.id}}">
                       <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/sticker.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Sticker</span>
                       </h2>
                     </a>
                   </div>
                   <div class="five">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{brochures.id}}">
                       <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/brochure.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Brochures</span>
                       </h2>
                     </a>
                   </div>
                   <div class="six">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{yard_sign.id}}">
                       <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/yardsign.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Yard
                           Signs</span></h2>
                     </a>
                   </div>
                   <div class="seven">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{flyers.id}}">
                       <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/flyer.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Flyers </span>
                       </h2>
                     </a>
                   </div>
                   <div class="eight">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{car_magnets.id}}">
                       <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/carmagnet.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Car
                           Magnets</span></h2>
                     </a>
                   </div>
                   <div class="nine">
-                    <a href="#">
+                    <a t-attf-href="/shop/product/{{tshirt.id}}">
                       <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/tshirt.jpg"/>
                       <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Tshirts</span>
                       </h2>

@@ -891,7 +891,25 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/printing-products', type='http', auth='public', website=True)
     def printing_products_office_huddle(self):
+        flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers')])
+        bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Rounded Business Cards')])
+        banners = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Banners')])
+        yard_sign = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Yard Signs')])
+        tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt')])
+        postcards = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Postcards')])
+        stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
+        car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
+        brochures = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Brochures')])
         vals = {
+            'flyers': flyers,
+            'bussiness_card': bussiness_card,
+            'banners': banners,
+            'yard_sign': yard_sign,
+            'tshirt': tshirt,
+            'postcards': postcards,
+            'stickers': stickers,
+            'car_magnets': car_magnets,
+            'brochures': brochures,
         }
         return  request.render('wt_office_hunddle.printing_product_officehuddle_template', vals)
 
