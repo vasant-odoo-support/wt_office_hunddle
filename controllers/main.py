@@ -889,6 +889,12 @@ class WebsiteHuddleCustom(http.Controller):
     def tshirt_printing_office_huddle(self):
         return  request.render('wt_office_hunddle.t_shirt_printing_design_selection_officehuddle_template')
 
+    @http.route('/printing-products', type='http', auth='public', website=True)
+    def printing_products_office_huddle(self):
+        vals = {
+        }
+        return  request.render('wt_office_hunddle.printing_product_officehuddle_template', vals)
+
     @http.route('/my/assessment', type='http', auth='public', website=True)
     def my_assessments(self):
         assessments = request.env['assessment.assessment'].search([('user_id', '=', request.env.user.id)])

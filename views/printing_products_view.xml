@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="printing_product_officehuddle_template" name="Printing Products">
+        <t t-call="website.layout">
+          <div class="printing_product_wrap" id="printing_products">
+            <div id="hero-images">
+              <div class="mySlides img-fluid">
+                <div class="numbertext">1 / 5</div>
+                <img src="/wt_office_hunddle/static/src/printing/banners1.png" style="width:100%; height:auto;"/>
+              </div>
+
+              <div class="mySlides img-fluid">
+                <div class="numbertext">2 / 5</div>
+                <img src="/wt_office_hunddle/static/src/printing/flyer.png" style="width:100%; height:auto;"/>
+              </div>
+
+              <div class="mySlides img-fluid">
+                <div class="numbertext">3 / 5</div>
+                <img src="/wt_office_hunddle/static/src/printing/yard sign.png" style="width:100%; height:auto;"/>
+              </div>
+
+              <div class="mySlides img-fluid">
+                <div class="numbertext">4 / 5</div>
+                <img src="/wt_office_hunddle/static/src/printing/business card.png" style="width:100%; height:auto;"/>
+              </div>
+
+              <div class="mySlides img-fluid">
+                <div class="numbertext">5 / 5</div>
+                <img src="/wt_office_hunddle/static/src/printing/tshrit.png" style="width:100%; height:auto;"/>
+              </div>
+
+              <!-- <a class="prev img-fluid" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next img-fluid" onclick="plusSlides(1)">&#10095;</a> -->
+              <br/>
+            </div>
+
+            <section id="products">
+              <div class="container d-flex justify-content-center">
+                <div class="row" style="text-align: center; margin: auto;">
+                  <div class="header-text">
+                    <h1 style="font-family: 'Antonio'; font-size: 70px;">PRODUCT THAT BOOST YOUR BUSINESS.<br/></h1>
+                    <p style="text-align: left;">
+                      <br/>Reah your target markets and get your
+                      business image across traditional mediums with <br/>
+                      postcards, banners, flyers, brochures, and others. Even in the internet age, we can't ignore
+                      the <br/>
+                      importance of a handshake, eye contact, and the personal touch to reach your markets.
+                      <br/><br/><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="grid">
+                  <div class="one">
+                    <a href="#">
+                      <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/postcard.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Postcards</span>
+                      </h2>
+                    </a>
+                  </div>
+                  <div class="two">
+                    <a href="#">
+                      <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/banner.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Banners</span>
+                      </h2>
+                    </a>
+                  </div>
+                  <div class="three">
+                    <a href="#">
+                      <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/business card.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Business
+                          Cards </span></h2>
+                    </a>
+                  </div>
+                  <div class="four">
+                    <a href="#">
+                      <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/sticker.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Sticker</span>
+                      </h2>
+                    </a>
+                  </div>
+                  <div class="five">
+                    <a href="#">
+                      <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/brochure.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Brochures</span>
+                      </h2>
+                    </a>
+                  </div>
+                  <div class="six">
+                    <a href="#">
+                      <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/yardsign.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Yard
+                          Signs</span></h2>
+                    </a>
+                  </div>
+                  <div class="seven">
+                    <a href="#">
+                      <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/flyer.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Flyers </span>
+                      </h2>
+                    </a>
+                  </div>
+                  <div class="eight">
+                    <a href="#">
+                      <img alt="image description " src="/wt_office_hunddle/static/src/printing/printing/carmagnet.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Car
+                          Magnets</span></h2>
+                    </a>
+                  </div>
+                  <div class="nine">
+                    <a href="#">
+                      <img alt="iamge description " src="/wt_office_hunddle/static/src/printing/printing/tshirt.jpg"/>
+                      <h2 style="background-color: white; opacity: 0.8;"><span style="color: black;"> Tshirts</span>
+                      </h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="iconic">
+              <div class="container" style="padding-top:5%;">
+                <div>
+                  <h2>THE EXPERT FOR ALL YOUR PRINTING NEEDS:<br/></h2>
+                  <P><br/>At Office Huddle, we are proud to offer the highest quality custom online printing services
+                    for businesses
+                    and creative individuals. We offer competitive pricing and fast, friendly customer service.
+                    Whether you
+                    are a business owner or a graphic designer, our large selection of products will help you
+                    fulfill all of your
+                    printing needs. Choose from a variety of exclusive product lines including business cards,
+                    postcards,
+                    brochures, and much more.<br/><br/></P>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 order-2 order-lg-1" style="margin: auto;">
+                    <h2 style="text-align: center;"><img style="height: 100px;" src="/wt_office_hunddle/static/src/printing/icons/powerful.png"/>Powerful
+                      Design Tools<br/>
+                    </h2>
+                    <p><br/>Create attractive design layouts using our
+                      intuitive Designer tool that allows you to add
+                      images, text, logo, and virtually anthing you
+                      want. Our professionally designed templates are
+                      also available for those that are looking for
+                      inspiration and ideas.
+                    </p>
+
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2 pt-4 pt-lg-0" style="margin: auto;">
+                    <h2 style="text-align: center;"><img style="height: 100px;" src="/wt_office_hunddle/static/src/printing/icons/fast turn.png"/>Fast
+                      Turnaround Time<br/>
+                    </h2>
+                    <p><br/>Business expectations vary from one client to
+                      another and GotPrint makes sure to offer
+                      shipping options that suit every customer's
+                      needs. Orders are expected to be delivered as
+                      fast as 1-2days for those that choose quicker
+                      shipping options!
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 order-2 order-lg-1" style="margin: auto;">
+                    <h2 style="text-align: center;"><img style="height: 100px;" src="/wt_office_hunddle/static/src/printing/icons/variety.png"/>Variety of
+                      Paper Stocks Options<br/>
+                    </h2>
+                    <p><br/>Whether you're considering glossy or matte,
+                      recycled or uncoated, thick or premium paper,
+                      we have the perfect paper stock that fits your
+                      needs. Why compromise with less when you can
+                      have the best paper in paper options.
+                    </p>
+
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2 pt-4 pt-lg-0" style="margin: auto;">
+                    <h2 style="text-align: center;"><img style="height: 100px;" src="/wt_office_hunddle/static/src/printing/icons/high quality.png"/>High
+                      Quality Printing<br/>
+                    </h2>
+                    <p><br/>Quality is our priority. Our online printing services
+                      come with a 100% satisfaction guarantee for
+                      first-time customers. If any reason you are not
+                      entirely satisfied with your order, you may return
+                      it for a full refund of the printing cost.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 order-2 order-lg-1" style="margin: auto;">
+                    <h2 style="text-align: center;"><img style="height: 100px;"
+                        src="/wt_office_hunddle/static/src/printing/icons/variety of paper.png"/>Powerful Design Tools<br/>
+                    </h2>
+                    <p><br/>Honestly and reliability are what prompts
+                      thousands of business and professinal
+                      designers to use GotPrint to fulfill their custom
+                      prinitng needs.
+                    </p>
+
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2 pt-4 pt-lg-0" style="margin: auto;">
+                    <h2 style="text-align: center;"><img style="height: 100px;" src="/wt_office_hunddle/static/src/printing/icons/customer.png"/>Fast
+                      Turnaround Time<br/>
+                    </h2>
+                    <p><br/>Our customer support team will guide you
+                      through the entire ordeing process to ensure a
+                      great shopping experience. Customer service
+                      representatives are standing by to answer any
+                      questions about our online printing services via
+                      chat, phone, or email.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="virtual-middle" class="container-fluid" style="display: flex;">
+              <div id="sidebar" class="container container-fluid col-md-6 col-lg-4 col-xl-3">
+
+                <a href="#news">SCREEN PRINTING</a>
+                <a href="#order products">SIGNAGE/BANNER</a>
+                <a href="#my orders">BOOKLET</a>
+                <a href="#save design">BOOKMARKS</a>
+                <a href="#account">BROCHURES</a>
+                <a href="#preference">BUSINESS CARD</a>
+                <a href="#change my info">CALENDAR</a>
+                <a href="#contacts">CATALOGS</a>
+                <a href="#credits cards">CD/DVD PACKAGE</a>
+                <a href="#account address">DOOR HANGERS</a>
+                <a href="#billing address">ENVELOPES</a>
+                <a href="#shipping settings">EVENT TICKETS</a>
+                <a href="#news">FLYER</a>
+                <a href="#order products">FOLDERS</a>
+                <a href="#my orders">GREETING CARD</a>
+                <a href="#save design">HANGTAGS</a>
+                <a href="#account">LETTERHEADS</a>
+                <a href="#preference">POSTCARD</a>
+                <a href="#change my info">POSTER</a>
+                <a href="#contacts">ROLL LABELS</a>
+                <a href="#credits cards">STICKERS</a>
+              </div>
+
+              <div class="oh-products container container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC1.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC1.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 1</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC2.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC2.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 2</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC3.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC3.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 3</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- New Row -->
+                <div class="row">
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC4.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC4.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 4</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC5.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC5.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 5</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC6.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC6.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 6</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- New Row -->
+                <div class="row">
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC7.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC7.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 7</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC8.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC8.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 8</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product-grid">
+                      <div class="product-image">
+                        <a href="#" class="image">
+                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC9.jpg"/>
+                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC9.jpg"/>
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-content">
+                        <h3 class="title"><a href="#">Business Card 9</a></h3>
+                        <div class="rating">
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star checked">★</span>
+                          <span class="star">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </t>
+    </template>
+</odoo>

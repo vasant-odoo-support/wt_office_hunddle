@@ -20,6 +20,7 @@
     	    <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/videopage.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/tryofficehuddle.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/new_assessment.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/printing_products.css"/>
         </xpath>
     	<xpath expr="//script[last()]" position="after">
             <script src="/wt_office_hunddle/static/src/js/aos.js"></script>
@@ -30,6 +31,7 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/assessment.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/assessp.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/new_assessment.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/js/printing_products.js"></script>
     	</xpath>
     </template>
 
