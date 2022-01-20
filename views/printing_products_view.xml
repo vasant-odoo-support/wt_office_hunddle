@@ -3,6 +3,66 @@
     <template id="printing_product_officehuddle_template" name="Printing Products">
         <t t-call="website.layout">
           <div class="printing_product_wrap" id="printing_products">
+            <nav id="nav" class="navbar align-items-center">
+              <ul>
+                <li class="dropdown"><a href="index.html"><span>All<br/>Products</span></a>
+                  <ul class="">
+                    <li><h6>Print Products</h6></li>
+                    <li><a href="#">Booklets</a></li>
+                    <li><a href="#">Bookmarks</a></li>
+                    <li><a href="#">Brochures</a></li>
+                    <li><a href="#">Business Cards</a></li>
+                    <li><a href="#">Biz Card Magnets</a></li>
+                    <li><a href="#">Calendars</a></li>
+                    <li><a href="#">Catalogs</a></li>
+                    <li><a href="#">CD Packages</a></li>
+                    <li><a href="#">Club Flyers</a></li>
+                    <li><a href="#">Collectors Cards</a></li>
+                    <li><a href="#">Door Hangers</a></li>
+                    <li><a href="#">DVD Packages</a></li>
+                    <li><a href="#">Envelopes</a></li>
+                    <li><a href="#">Event Tickets</a></li>
+                    <li><a href="#">Flyers</a></li>
+                    <li><a href="#">Folders</a></li>
+                    <li><a href="#">Greeting Cards</a></li>
+                  </ul>
+                  <ul class="">
+                    <li><h6>Print Products</h6></li>
+                    <li><a href="#">Booklets</a></li>
+                    <li><a href="#">Bookmarks</a></li>
+                    <li><a href="#">Brochures</a></li>
+                    <li><a href="#">Business Cards</a></li>
+                    <li><a href="#">Biz Card Magnets</a></li>
+                    <li><a href="#">Calendars</a></li>
+                    <li><a href="#">Catalogs</a></li>
+                    <li><a href="#">CD Packages</a></li>
+                    <li><a href="#">Club Flyers</a></li>
+                    <li><a href="#">Collectors Cards</a></li>
+                    <li><a href="#">Door Hangers</a></li>
+                    <li><a href="#">DVD Packages</a></li>
+                    <li><a href="#">Envelopes</a></li>
+                    <li><a href="#">Event Tickets</a></li>
+                    <li><a href="#">Flyers</a></li>
+                    <li><a href="#">Folders</a></li>
+                    <li><a href="#">Greeting Cards</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="index.html"><span>Business<br/>Cards</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Marketing<br/>Material</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Signs &amp;<br/>Banners</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Invitations &amp;<br/>Stationary</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Gifts &amp;<br/>Decor</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Apparel</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Industry</span></a></li>
+                <li class="dropdown"><a href="index.html"><span>Services</span></a></li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <div class="breadcrumbs">
+              <div class="container">
+                
+              </div>
+            </div>
             <div id="hero-images">
               <div class="mySlides img-fluid">
                 <div class="numbertext">1 / 5</div>
@@ -218,296 +278,6 @@
                       questions about our online printing services via
                       chat, phone, or email.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="virtual-middle" class="container-fluid" style="display: flex;">
-              <div id="sidebar" class="container container-fluid col-md-6 col-lg-4 col-xl-3">
-
-                <a href="#news">SCREEN PRINTING</a>
-                <a href="#order products">SIGNAGE/BANNER</a>
-                <a href="#my orders">BOOKLET</a>
-                <a href="#save design">BOOKMARKS</a>
-                <a href="#account">BROCHURES</a>
-                <a href="#preference">BUSINESS CARD</a>
-                <a href="#change my info">CALENDAR</a>
-                <a href="#contacts">CATALOGS</a>
-                <a href="#credits cards">CD/DVD PACKAGE</a>
-                <a href="#account address">DOOR HANGERS</a>
-                <a href="#billing address">ENVELOPES</a>
-                <a href="#shipping settings">EVENT TICKETS</a>
-                <a href="#news">FLYER</a>
-                <a href="#order products">FOLDERS</a>
-                <a href="#my orders">GREETING CARD</a>
-                <a href="#save design">HANGTAGS</a>
-                <a href="#account">LETTERHEADS</a>
-                <a href="#preference">POSTCARD</a>
-                <a href="#change my info">POSTER</a>
-                <a href="#contacts">ROLL LABELS</a>
-                <a href="#credits cards">STICKERS</a>
-              </div>
-
-              <div class="oh-products container container-fluid">
-                <div class="row">
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC1.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC1.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 1</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC2.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC2.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 2</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC3.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC3.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 3</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- New Row -->
-                <div class="row">
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC4.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC4.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 4</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC5.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC5.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 5</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC6.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC6.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 6</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- New Row -->
-                <div class="row">
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC7.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC7.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 7</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC8.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC8.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 8</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="#" class="image">
-                          <img class="pic-1 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC9.jpg"/>
-                          <img class="pic-2 img-fluid" src="/wt_office_hunddle/static/src/printing/images/BC9.jpg"/>
-                        </a>
-                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <ul class="product-links">
-                          <li><a href="#"><i class="fa fa-search"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-random"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="product-content">
-                        <h3 class="title"><a href="#">Business Card 9</a></h3>
-                        <div class="rating">
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star checked">★</span>
-                          <span class="star">★</span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
