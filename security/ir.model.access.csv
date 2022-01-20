@@ -17,13 +17,15 @@ access_business_credit_resources_public,access.business.credit.resources,model_b
 access_event_background_slider,access_event_background_slider,model_event_background_slider,,1,1,1,1
 access_event_schedule_list,access_event_schedule_list,model_event_schedule_list,,1,1,1,1
 access_assessment_assessment,access.assessment.assessment,model_assessment_assessment,base.group_user,1,1,1,1
-access_assessment_assessment_portal,access.assessment.assessment,model_assessment_assessment,base.group_portal,1,0,0,0
+access_assessment_assessment_portal,access.assessment.assessment,model_assessment_assessment,base.group_portal,1,1,1,1
 access_assessment_assessment_public,access.assessment.assessment,model_assessment_assessment,base.group_public,1,0,0,0
 access_question_question,access.question.question,model_question_question,base.group_user,1,1,1,1
 access_question_question_portal,access.question.question,model_question_question,base.group_portal,1,0,0,0
 access_question_question_public,access.question.question,model_question_question,base.group_public,1,0,0,0
 access_assessment_result_line,access.assessment.result.line,model_assessment_result_line,base.group_user,1,1,1,1
-access_assessment_result_line_portal,access.assessment.result.line,model_assessment_result_line,base.group_portal,1,0,0,0
+access_assessment_result_line_portal,access.assessment.result.line,model_assessment_result_line,base.group_portal,1,1,1,1
 access_assessment_result_line_public,access.assessment.result.line,model_assessment_result_line,base.group_public,1,0,0,0
 access_file_images,access_file_images,model_file_images,base.group_user,1,1,1,1
 access_file_videos,access_file_videos,model_file_videos,base.group_user,1,1,1,1
+access_file_images_portal,access_file_images,model_file_images,base.group_portal,1,1,1,0
+access_file_videos_portal,access_file_videos,model_file_videos,base.group_portal,1,1,1,0

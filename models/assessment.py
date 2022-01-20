@@ -25,14 +25,35 @@ class websiteLeadGeneration(models.Model):
     cell_phone = fields.Char(string="Cell Phone")
     phone = fields.Char(string="Phone")
     no_of_employee = fields.Char(string="How many Employee company have")
-    annual_revenue = fields.Selection(string="Annual Revenue", selection=[
-        ('0', '0-50K'),
-        ('1', '50-100K'),
-        ('2', '100-200K'),
-        ('3', '200-500K'),
-        ('4', '500k-1M'),
-        ('5', '1M-5M'),
-        ('6', 'OVER 5M')
+    annual_revenue = fields.Selection([
+        ('0-50K', "0-50K"),
+        ('50K-100K', "50K-100K"),
+        ('100K-200K', "100K-200K"),
+        ('200K-500K', "200K-500K"),
+        ('500K-1M', "500K-1M"),
+        ('1M-5M', "1M-5M"),
+        ('OVER 5M', "OVER 5M")
+    ], "ANNUAL REVENUE")
+    referrer_type = fields.Selection([
+        ('Bing', 'Bing'),
+        ('Coupon', 'Coupon'),
+        ('Facebook', 'Facebook'),
+        ('Google', 'Google'),
+        ('Instagram', 'Instagram'),
+        ('LinkedIn', 'LinkedIn'),
+        ('MailAdvertisement', 'Mail Advertisement'),
+        ('MSN', 'MSN'),
+        ('Other', 'Other'),
+        ('Radio Advertisement', 'RadioAdvertisement'),
+        ('Reddit', 'Reddit'),
+        ('ReferralsorFriends', 'Referrals or Friends'),
+        ('ReturningCustomer', 'Returning Customer'),
+        ('SportsAdvertisement', 'Sports Advertisement'),
+        ('TikTok', 'TikTok'),
+        ('Tradeshow', 'Tradeshow'),
+        ('TVAdvertisement', 'TV Advertisement'),
+        ('Yahoo', 'Yahoo'),
+        ('Youtube', 'Youtube'),
     ])
     no_of_leaders_report = fields.Integer(string="How many Leaders report")
     start_date = fields.Date(string="Business Start Date")
@@ -60,6 +81,7 @@ class websiteLeadGeneration(models.Model):
             self.state_id2 = self.user_id.partner_id.state_id.id or False
             self.zipcode2 = self.user_id.partner_id.zip or ''
             self.name = self.user_id.name +  ' Assessment'
+            self.referrer_type = self.user_id.referrer_type
 
 
 class MarketingSystem(models.Model):

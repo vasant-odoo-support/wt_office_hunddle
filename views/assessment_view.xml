@@ -60,6 +60,7 @@
                             <field name='cell_phone'/>
                             <field name='phone'/>
                             <field name='no_of_employee'/>
+                            <field name="referrer_type"/>
                             <field name='annual_revenue'/>
                             <field name='no_of_leaders_report'/>
                         </group>

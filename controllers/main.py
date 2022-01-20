@@ -80,6 +80,10 @@ class WebsitAuthSignupHome(AuthSignupHome):
                             lang=user_sudo.lang,
                             auth_login=werkzeug.url_encode({'auth_login': user_sudo.email}),
                         ).send_mail(user_sudo.id, force_send=True)
+                if kw['assessment'] == '1':
+                    uid = request.session.authenticate(request.session.db, qcontext.get('login'), qcontext.get('password'))
+                    request.params['login_success'] = True
+                    return request.redirect("/page/assessment")
                 return self.web_login(*args, **kw)
             except UserError as e:
                 qcontext['error'] = e.name or e.value
@@ -923,6 +927,8 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/page/assessment', type='http', auth='public', website=True)
     def new_assessment(self):
+        if request.env.user.id == request.env.ref('base.public_user').id:
+            return request.redirect('/web/signup?assessment=1')
         all_question_ids = request.env['question.question']
         marketing_ids = all_question_ids.sudo().search([('question_type', '=', 'marketing')])
         financial_ids = all_question_ids.sudo().search([('question_type', '=', 'finance')])
