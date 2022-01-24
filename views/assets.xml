@@ -21,6 +21,8 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/tryofficehuddle.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/new_assessment.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/css/printing_products.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/home/css/home.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/home/css/home_responsive.css"/>
         </xpath>
     	<xpath expr="//script[last()]" position="after">
             <script src="/wt_office_hunddle/static/src/js/aos.js"></script>
@@ -32,6 +34,8 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/assessp.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/new_assessment.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/printing_products.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/owl.carousel.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/home.js"></script>
     	</xpath>
     </template>
 

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="officehuddle_home_page" name="Office Huddle">
+    <t t-call="web.login_layout">
+      <div id="wrap_homepage" class="homepage_wrap">
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+          <div class="container text-center text-md-left" data-aos="fade-up">
+            <div class="heroMain">
+              <h1>RELIABLE BUSINESS <br/>
+                GROWTH SOLUTIONS</h1>
+              <p>With over 30 years of experience, we provide small businesses with reliable business growth
+                solutions from design and print to digital marketing, to lead generation and strategy.
+                We are your business solution provider that encompasses the values and services that
+                will enable your company to advance effectively and efficiently.</p>
+              <a href="/how-it-works" class="btn-get-started scrollto">Let’s Work Together</a> </div>
+          </div>
+        </section>
+        <!-- End Hero -->
+
+        <main id="main"> 
+          <!-- ======= We have cracked  Section ======= -->
+          <section class="what-we-do ask-us">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="ask-left">
+                    <div class="askarrow"><img src="/wt_office_hunddle/static/src/home/images/askarrow.png" /></div>
+                    <h2>WE HAVE <br/>
+                      CRACKED<br/>
+                      THE CODE.</h2>
+                    <h4>ASK US HOW.</h4>
+                    <p>We have discovered what every business needs to know in order to, not only, survive but to thrive in their businesses. Take the assessment to find out how we can help you crack the code to win in business.</p>
+                    <div class="for-mobile"><img src="/wt_office_hunddle/static/src/home/images/for-mobile.jpg" alt="" class="img-fluid"/></div>
+                    <h6><a href="/page/assessment">Take The Assessment</a></h6>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="askRightImg"> <img src="/wt_office_hunddle/static/src/home/images/askmobile.png" /> </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End We have cracked Section -->
+
+          <!-- ======= Business support Section ======= -->
+          <section class="business-support">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="business-left">
+                    <h4>We Are Your</h4>
+                    <h2>BUSINESS <br/>
+                      SUPPORT <br/>
+                      TEAM</h2>
+                    <p>You are in business for yourself.<br/>
+                      Why be by yourself?</p>
+                    <h6><a href="#">Watch Video</a></h6>
+                  </div>
+                </div>
+                <div class="col-md-9"></div>
+              </div>
+            </div>
+          </section>
+          <!-- End Business support  Section --> 
+          
+          <!-- ======= Services Section ======= -->
+          <section class="services section-bg Support-team">
+            <div class="container" data-aos="fade-up">
+              <h2>BUSINESS SUPPORT TEAM</h2>
+              <h5>Take the business asessment to get started</h5>
+              <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box">
+                    <div class="icon"><img src="/wt_office_hunddle/static/src/home/images/list.png" alt="" class="img-fluid"/></div>
+                    <h4 class="title"><a href="#">Complete the Assessment</a></h4>
+                    <p class="description">Discover the questions that every successful business leader must answer. Simply by answering the questions, you will uncover some issues that you never knew existed. Guaranteed.</p>
+                    <a class="readmoreBtn" href="#">Read More</a> </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box">
+                    <div class="icon"><img src="/wt_office_hunddle/static/src/home/images/game.png" alt="" class="img-fluid"/></div>
+                    <h4 class="title"><a href="#">Get A Free Game Plan</a></h4>
+                    <p class="description">After the Assessment, we will assign a personal Business Coach who will offer you a basic Strategic GamePlan that will identify your next action steps.</p>
+                    <a class="readmoreBtn" href="#">Read More</a> </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box">
+                    <div class="icon"><img src="/wt_office_hunddle/static/src/home/images/rocket.png" alt="" class="img-fluid"/></div>
+                    <h4 class="title"><a href="#">Take Action</a></h4>
+                    <p class="description">Your Business Coach will challenge you, while keeping you focused on the important parts, that as your company’s leader, you should be focused on.</p>
+                    <a class="readmoreBtn" href="#">Read More</a> </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h6 class="service-btn"><a href="/page/assessment">Take The Assessment</a></h6>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Services Section -->
+
+          <!-- ======= We have cracked  Section ======= -->
+          <section class="real-result">
+              <div class="container">
+                <h2 style="margin-left:11%;">REAL RESULTS FROM REAL BUSINESS OWNERS</h2>
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="cl-img"><img src="/wt_office_hunddle/static/src/home/images/drtest.png" alt="" class="img-fluid"/></div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="real-business-left">                    
+                      <p>I was faced with a very difficult challenge trying to survive during this time of COVID -19. I was perplexed around certain issues on how to grow my business. Together with my team at Office Huddle, we put  together a solution that allowed us to actually thrive during the time when other businesses are not doing so well.</p>
+                      <h4>Dr. Bryant S. Edwards,</h4>
+                      <h6>Iconic Infusions</h6>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </section>
+          <!-- End We have cracked Section --> 
+          
+          <!-- ======= Seven key  Section ======= -->
+          <section class="Seven-key">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2>THE SEVEN KEY SYSTEMS <br/>
+                    OF BUSINESS SUCCESS.</h2>
+                  <p>With no shortage of things to do, it’s easy to get stuck just working in your business rather than on your business. But you can take your business where you need it to go.Office Huddle has helped tons of business owners reach their goals.</p>
+                  <h5>The key is to invest in seven areas:</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/team-leader.png" alt="" class="img-fluid"/></div>
+                    <h4>Leadership Development System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/megaphone.png" alt="" class="img-fluid"/></div>
+                    <h4>Marketing System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/financial-bar-chart.png" alt="" class="img-fluid"/></div>
+                    <h4>Financial System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/networking.png" alt="" class="img-fluid"/></div>
+                    <h4>Team Development System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/magnet.png" alt="" class="img-fluid"/></div>
+                    <h4>Lead Generation System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/funnel.png" alt="" class="img-fluid"/></div>
+                    <h4>Lead Conversion System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes">
+                    <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/customer.png" alt="" class="img-fluid"/></div>
+                    <h4>Customer Fulfillment System</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="seven-boxes blue-bg">
+                    <h4>How It Works</h4>
+                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End seven key Section --> 
+          
+          <!-- ======= We love Section ======= -->
+          <section class="we-love">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="love-text"> <img src="/wt_office_hunddle/static/src/home/images/branding-copyright-design-spaceship-graphic-concept.jpg" alt="" class="img-fluid"/>
+                    <div class="content-div">
+                      <h3><a href="#">What is the Different Between Branding &amp; Marketing</a></h3>
+                      <p>Get Graphics and Videos for 7 Days Free! ** If you are an owner of a small business who wants your business to grow, here is your chance to have a dedicated team of professionals who can make engagin...</p>
+                      <ul>
+                        <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/> Henry</a></li>
+                        <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
+                        <li><a href="#">See More...</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="love-text"> <img src="/wt_office_hunddle/static/src/home/images/bg_image-2.jpg" alt="" class="img-fluid"/>
+                    <div class="content-div">
+                      <h3><a href="#">What is the Different Between Branding &amp; Marketing</a></h3>
+                      <p>Get Graphics and Videos for 7 Days Free! ** If you are an owner of a small business who wants your business to grow, here is your chance to have a dedicated team of professionals who can make engagin...</p>
+                      <ul>
+                        <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/> Henry</a></li>
+                        <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
+                        <li><a href="#">See More...</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="love-text"> <img src="/wt_office_hunddle/static/src/home/images/bg_image-3.jpg" alt="" class="img-fluid"/>
+                    <div class="content-div">
+                      <h3><a href="#">What is the Different Between Branding &amp; Marketing</a></h3>
+                      <p>Get Graphics and Videos for 7 Days Free! ** If you are an owner of a small business who wants your business to grow, here is your chance to have a dedicated team of professionals who can make engagin...</p>
+                      <ul>
+                        <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/> Henry</a></li>
+                        <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
+                        <li><a href="#">See More...</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row space-f-top">
+                <div class="col-md-8">
+                  <div class="love-bottom">
+                    <h2>WE LOVE EMPOWERING BUSINESS.</h2>
+                    <h5>CHECK OUT OUR ARTICLES</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="love-btn"><a href="#">See More Great Articles</a></h6>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End web love Section --> 
+          
+          <!-- ======= Make Life  Section ======= -->
+          <section class="life-make">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="life-img"><img src="/wt_office_hunddle/static/src/home/images/happy-young-man-using-laptop-computer.jpg" alt="" class="img-fluid"/></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="make-life">
+                    <h2>"MAKE YOUR LIFE <br/>
+                      EASIER. DISCOVER <br/>
+                      PROVEN BUSINESS <br/>
+                      BUILDING PRODUCTS.”</h2>
+                    <p>Our goal is to increase your business success rate and achieve financial freedom. There is only one reliable avenue that will bring you both - our specialized systems and products.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Make life Section --> 
+          
+          <!-- ======= eight cols  Section ======= -->
+          <section class="enter-train">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t red">
+                    
+                    <h3>ENTREPRENEUR TRAINING</h3>
+                    <p>Learn how to build and fine tune the core of your business.</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t blue">
+                    
+                    <h3>PRINTING</h3>
+                    <p>Enhance your promotional tactics through expectation print materials</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t green">
+                    
+                    <h3>GRAPHIC DESIGN</h3>
+                    <p>Empower your business through implementation of creative visual presentation</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t purple">
+                    
+                    <h3>LEAD GENERATION</h3>
+                    <p>Create limitless income generation to live the life that you want.</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t red">
+                    
+                    <h3>BUSINESS COACHING</h3>
+                    <p>Develop and polish your core as a business owner to be an effective leader.</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t blue">
+                    
+                    <h3>SALES <br/>
+                      SUPPORT</h3>
+                    <p>Startergize and convert leads into your personal financial resource.</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t green">
+                    
+                    <h3>ERP DEVELOPMENT</h3>
+                    <p>Centralize all businees functions and improve your business processes by 95%</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="enter-t purple">
+                    
+                    <h3>VIRTUAL STAFFING</h3>
+                    <p>Cover more responsibilities through hiring thebest workforce.</p>
+                    <a class="readmoreBtn" href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End eight cols Section -->
+
+          <!-- Start Testimonials Section -->
+          <section class="testimonials section-bg">
+            <div class="container">
+              <h2>OUR BUSINESS <br/>
+                OWNERS <span>TRUST US</span></h2>
+                <div class="owl-carousel">
+                <div class="item">
+                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+                      <h3>Cortez Springer,</h3>
+                      <h4>Wealth Strategist</h4>
+                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                    </div>
+                  </div>
+
+                <div class="item">
+                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+                          <h3>Lemzel Johnson,</h3>
+                          <h4>Motivational Speaker</h4>
+                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                        </div>
+                </div>
+             <div class="item">
+              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+                      <h3>Oginga Carr,</h3>
+                      <h4>High Performance Coach</h4>
+                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                    </div>
+             </div>
+             <div class="item">
+                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+                      <h3>Cortez Springer,</h3>
+                      <h4>Wealth Strategist</h4>
+                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                    </div>
+                  </div>
+
+                <div class="item">
+                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+                          <h3>Lemzel Johnson,</h3>
+                          <h4>Motivational Speaker</h4>
+                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                        </div>
+                </div>
+             <div class="item">
+              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+                      <h3>Oginga Carr,</h3>
+                      <h4>High Performance Coach</h4>
+                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                    </div>
+             </div>
+             <div class="item">
+                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+                      <h3>Cortez Springer,</h3>
+                      <h4>Wealth Strategist</h4>
+                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                    </div>
+                  </div>
+
+                <div class="item">
+                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+                          <h3>Lemzel Johnson,</h3>
+                          <h4>Motivational Speaker</h4>
+                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                        </div>
+                </div>
+             <div class="item">
+              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+                      <h3>Oginga Carr,</h3>
+                      <h4>High Performance Coach</h4>
+                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                    </div>
+             </div>
+          </div>
+          </div>
+        </section>
+        <!-- End Testimonials Section -->
+          
+          <!-- ======= Client logo  Section ======= -->
+          <!-- <section class="brand">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>Just A Few Trusted Brands That We Value and Serve.</h4>
+                  <div class="brand-img"></div>
+                  <div class="custlogosrow">
+                    <ul>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos1.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos2.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos3.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos4.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos5.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos6.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos7.png" /></li>
+                      <li><img src="/wt_office_hunddle/static/src/home/images/logos8.png" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
+          <!-- End Client Logo Section --> 
+        </main>
+      </div>
+    </t>
+  </template>
+</odoo>

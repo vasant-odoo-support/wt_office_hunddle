@@ -12,7 +12,7 @@
 		</xpath>
 		<xpath expr="//div[@id='footer']" position="after">
 			
-            <section class="trust-section">
+            <!-- <section class="trust-section">
                 <div class="container">
                     <h3 class="t-title">our business owners trust us </h3>
                     <div class="row">
@@ -63,9 +63,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="logos-section">
+            <!-- <section class="logos-section">
                 <div class="container">
                     <h4>Just A Few Trusted Brands That We Value and Serve.</h4>
                     <div class="container-fluid">
@@ -74,7 +74,50 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
+            <div class="homepage_wrap">
+                <section class="brand">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h4>Just A Few Trusted Brands That We Value and Serve.</h4>
+                          <div class="brand-img"></div>
+                          <div class="custlogosrow">
+                            <ul>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos1.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos2.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos3.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos4.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos5.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos6.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos7.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/logos8.png" /></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+
+                <footer id="footer">
+                    <div class="container-fluid ">
+                        <div class="container d-md-flex py-4">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="footer-logo"><img src="/wt_office_hunddle/static/src/home/images/footer-logo.png" alt="" class="img-fluid"/></div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="social-links text-center text-md-right pt-3 pt-md-0"> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/facebook-app-symbol.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/linkedin.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/youtube.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/cloud-computing.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/google-glass-logo.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/instagram.png" alt="" class="img-fluid"/></a> </div>
+                            </div>
+                            <div class="col-md-4"> <a href="#" class="phn-footer"><img src="/wt_office_hunddle/static/src/home/images/phone-call.png" alt="" class="img-fluid"/> 601-348-9977</a> </div>
+                          </div>
+                        </div>
+                    </div>
+                      <div class="me-md-auto text-center text-md-start">
+                        <div class="copyright"> Terms of use 2022 All rights reserved. </div>
+                      </div>
+                </footer>
+            </div>
 
             <!-- <section class="contact-section">
                 <div class="container">
@@ -139,7 +182,7 @@
                 </div>
             </section> -->
 
-            <div class="container-fluid custom_footer_cl">
+            <!-- <div class="container-fluid custom_footer_cl">
                 <div class="d-flex justify-content-between align-items-center ptb-30">
                     <div class="footer-brand">
                         <a href="javascript:;"><img src="/wt_office_hunddle/static/src/images/logo.png" alt="officehuddle-logo" class="img-fluid"/></a>
@@ -166,7 +209,7 @@
                         <p>2020 All rights reserved.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </xpath>
     </template>
 </odoo>

@@ -47,6 +47,7 @@
         'views/new_assessment_view.xml',
         'views/view_assessments_template_view.xml',
         'views/printing_products_view.xml',
+        'views/home_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',

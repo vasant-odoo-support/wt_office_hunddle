@@ -1,0 +1,805 @@
+@media (min-width: 1200px) and (max-width:1280px) {
+.homepage_wrap .ask-us {
+    padding: 70px 0 70px;
+}
+.homepage_wrap .ask-left {
+    padding: 0 0 0 140px;
+}
+}
+ @media (min-width: 1024px) and (max-width:1199px) {
+.homepage_wrap .ask-left {
+    padding: 0 0 0 40px;
+}
+.homepage_wrap .ask-left h2 {
+    font-size: 60px;
+    line-height: 67px;
+}
+.homepage_wrap .enter-t h3 {
+    font-size: 22px;
+}
+.homepage_wrap .testimonials .testimonial-item h3 {
+    padding-top: 13%;
+}
+.homepage_wrap .make-life h2 {
+    font-size: 40px;
+    line-height: 45px;
+}
+}
+ @media (min-width: 768px) and (max-width:1023px) {
+.homepage_wrap .ask-left {
+    padding: 0;
+}
+.homepage_wrap #hero p {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 150px;
+    margin-top: 2%;
+}
+.homepage_wrap .ask-left h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.homepage_wrap section.services.section-bg.Support-team h2 {
+    font-size: 50px;
+}
+.homepage_wrap .services .icon-box {
+    margin-bottom: 20px;
+}
+.homepage_wrap section.real-result h2 {
+    font-size: 30px;
+}
+.homepage_wrap section.Seven-key h2 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.homepage_wrap .seven-boxes {
+    padding: 20px 20px;
+    height: 200px;
+}
+.homepage_wrap .seven-boxes h4 {
+    font-size: 18px;
+    line-height: 21px;
+}
+.homepage_wrap .seven-boxes.blue-bg h4 {
+    font-size: 37px;
+    line-height: 35px;
+}
+.homepage_wrap .love-text .content-div h3 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.homepage_wrap .love-text .content-div h3 {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.homepage_wrap .love-text .content-div ul li {
+    width: 40%;
+    font-size: 12px;
+}
+.homepage_wrap .love-text .content-div {
+    padding: 0 10px;
+}
+.homepage_wrap .love-bottom h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.homepage_wrap h6.love-btn a {
+    padding: 15px 18px;
+    font-size: 15px;
+}
+.homepage_wrap .make-life h2 {
+    font-size: 30px;
+    line-height: 33px;
+}
+.homepage_wrap .make-life p {
+    font-size: 16px;
+    padding-right: 0;
+}
+.homepage_wrap .enter-t h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.homepage_wrap .enter-t {
+    margin-bottom: 15px;
+    border-radius: 25px;
+    padding: 20px 8px;
+    height: 230px;
+}
+.homepage_wrap .enter-t p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.homepage_wrap .testimonials .testimonial-item h3 {
+    padding-top: 15%;
+}
+.homepage_wrap #footer .social-links a {
+    width: 27px;
+    height: 30px;
+}
+.homepage_wrap a.phn-footer {
+    font-size: 16px;
+}
+.homepage_wrap .ask-us {
+    padding: 50px 0 60px;
+}
+.homepage_wrap .business-support {
+    padding: 60px 0 60px;
+}
+}
+ @media (min-width: 320px) and (max-width:767px) {
+.homepage_wrap #hero {
+    padding: 70px 0 70px;
+}
+.homepage_wrap #hero p {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 0px;
+    margin-top: 30%;
+}
+.homepage_wrap #hero .btn-get-started {
+    padding: 12px 40px;
+}
+.homepage_wrap .ask-left {
+    padding: 0 0 0 0;
+    text-align: center;
+}
+.homepage_wrap .ask-left h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.homepage_wrap .ask-left h6 a {
+    width: 100%;
+}
+.homepage_wrap .business-left h2 {
+    font-size: 60px;
+    line-height: 60px;
+}
+.homepage_wrap section.services.section-bg.Support-team .icon-box {
+    margin-bottom: 15px;
+}
+.homepage_wrap h6.service-btn a {
+    padding: 10px 55px;
+}
+.homepage_wrap .cl-img {
+    text-align: center;
+}
+.homepage_wrap section.Seven-key h2 {
+    font-size: 25px;
+    line-height: 31px;
+}
+.homepage_wrap section.Seven-key p {
+    padding: 0 0;
+}
+.homepage_wrap .love-bottom h2 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.homepage_wrap .make-life h2 {
+    font-size: 30px;
+    line-height: 33px;
+}
+.homepage_wrap .make-life p {
+    padding-right: 0;
+    font-size: 16px;
+}
+.homepage_wrap section.testimonials.section-bg h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.homepage_wrap .footer-logo img {
+    width: 100%;
+}
+.homepage_wrap #footer .social-links a {
+    width: 30px;
+    height: 30px;
+}
+.homepage_wrap a.phn-footer {
+    text-align: center;
+    margin-top: 18px;
+}
+.homepage_wrap .header-social-links.d-flex.align-items-center .sign-in {
+    display: none !important;
+}
+.homepage_wrap #header .logo img {
+    width: 100%;
+}
+.homepage_wrap .header-social-links {
+    float: left;
+    width: 100%;
+}
+.homepage_wrap .header-social-links a {
+    font-size: 12px;
+}
+.homepage_wrap section.services.section-bg.Support-team h2 {
+    font-size: 37px;
+    line-height: 42px;
+}
+.homepage_wrap section.services.section-bg.Support-team h5 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.homepage_wrap section.real-result h2 {
+    font-size: 31px;
+    font-weight: 700;
+}
+.homepage_wrap .for-mobile {
+    display: block;
+}
+.homepage_wrap .seven-boxes.blue-bg {
+    padding: 90px 0;
+}
+.homepage_wrap .real-business-left {
+    text-align: center;
+}
+.homepage_wrap .love-text {
+    margin-bottom: 15px;
+}
+.homepage_wrap .ask-us {
+    padding: 200px 0 70px;
+}
+.homepage_wrap .business-support {
+    padding: 60px 0 60px;
+}
+.homepage_wrap section {
+    padding: 30px 0;
+}
+.homepage_wrap .copyright {
+    width: 100%;
+}
+.homepage_wrap .enter-t {
+    height: auto;
+}
+.homepage_wrap h6.love-btn {
+    margin-top: 50px;
+}
+.homepage_wrap .we-love {
+    padding: 60px 0 60px;
+}
+.homepage_wrap .space-f-top {
+    margin-top: 30px;
+}
+.homepage_wrap #header {
+    padding: 0 0;
+}
+.homepage_wrap .love-bottom {
+    text-align: center;
+}
+.homepage_wrap .love-bottom h5 {
+    font-size: 20px;
+}
+.homepage_wrap .make-life {
+    text-align: center;
+}
+}
+
+/********** 21-jan-2022  **************/
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+.homepage_wrap .header-social-links a.phn {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.homepage_wrap .header-social-links {
+    position: relative;
+}
+.homepage_wrap #header {
+    top: 30px;
+}
+.homepage_wrap #hero {
+    height: auto;
+}
+.homepage_wrap #hero h1 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.homepage_wrap .custTopBar p {
+    font-size: 11px;
+    line-height: 14px;
+}
+.homepage_wrap #hero p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: normal;
+}
+.homepage_wrap .ask-us {
+    padding: 50px 0 40px;
+}
+.homepage_wrap .ask-left h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.homepage_wrap .ask-left h2 br {
+    display: none;
+}
+.homepage_wrap .ask-left h4 {
+    font-size: 24px;
+}
+.homepage_wrap .ask-left p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap .askRightImg {
+    display: none;
+}
+.homepage_wrap #hero .btn-get-started, .homepage_wrap .ask-left h6 a, .homepage_wrap .business-left h6 a, .homepage_wrap h6.service-btn a, .homepage_wrap h6.love-btn a {
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: auto;
+}
+.homepage_wrap .business-left {
+    text-align: center;
+}
+.homepage_wrap .business-left h2, .homepage_wrap section.services.section-bg.Support-team h2, .homepage_wrap section.real-result h2, .homepage_wrap .love-bottom h2, .homepage_wrap .make-life h2, .homepage_wrap section.testimonials.section-bg h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.homepage_wrap section.services.section-bg.Support-team h5 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.homepage_wrap .business-left h2 br {
+    display: none;
+}
+.homepage_wrap .business-left h4 {
+    font-size: 20px;
+}
+.homepage_wrap .business-left p, .homepage_wrap .make-life p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap section.services.section-bg.Support-team .icon-box p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap h6.service-btn {
+    margin-top: 20px;
+}
+.homepage_wrap section.real-result h2 {
+    padding: 0;
+}
+.homepage_wrap .real-business-left p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.homepage_wrap .real-business-left h4 {
+    font-size: 16px;
+}
+.homepage_wrap .real-business-left h6 {
+    font-size: 14px;
+}
+.homepage_wrap section.Seven-key h2 {
+    font-size: 30px;
+}
+.homepage_wrap section.Seven-key p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap section.Seven-key h5 {
+    font-size: 15px;
+}
+.homepage_wrap .seven-boxes {
+    height: auto;
+    width: 90%;
+    margin: 0 auto 25px auto;
+}
+.homepage_wrap .love-bottom h5 {
+    font-size: 17px;
+}
+.homepage_wrap h6.love-btn {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.homepage_wrap .testimonials .swiper-pagination {
+    margin-top: 0;
+}
+.homepage_wrap .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 50px;
+    height: 5px;
+}
+.homepage_wrap .custlogosrow ul li {
+    width: 50%;
+}
+.homepage_wrap .custlogosrow ul li img {
+    height: 60px;
+}
+.homepage_wrap #footer .social-links a {
+    padding: 5px 5px;
+}
+.homepage_wrap #footer {
+    padding: 0;
+}
+.homepage_wrap a.phn-footer {
+    width: 100%;
+}
+.homepage_wrap .askarrow {
+    display: none;
+}
+.homepage_wrap .seven-boxes img {
+    width: 50px;
+}
+.homepage_wrap .footer-logo {
+    text-align: center;
+}
+.homepage_wrap .footer-logo img {
+    width: 250px;
+}
+.homepage_wrap .for-mobile img {
+    width:250px;
+}
+}
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+.homepage_wrap .header-social-links a.phn {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.homepage_wrap .header-social-links {
+    position: relative;
+}
+.homepage_wrap #header {
+    top: 30px;
+}
+.homepage_wrap #hero {
+    height: auto;
+}
+.homepage_wrap #hero h1 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.homepage_wrap .custTopBar p {
+    font-size: 11px;
+    line-height: 14px;
+}
+.homepage_wrap #hero p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: normal;
+}
+.homepage_wrap .ask-us {
+    padding: 50px 0 40px;
+}
+.homepage_wrap .ask-left h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.homepage_wrap .ask-left h2 br {
+    display: none;
+}
+.homepage_wrap .ask-left h4 {
+    font-size: 24px;
+}
+.homepage_wrap .ask-left p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap .askRightImg {
+    display: none;
+}
+.homepage_wrap #hero .btn-get-started, .homepage_wrap .ask-left h6 a, .homepage_wrap .business-left h6 a, .homepage_wrap h6.service-btn a, .homepage_wrap h6.love-btn a {
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: auto;
+}
+.homepage_wrap .business-left {
+    text-align: center;
+}
+.homepage_wrap .business-left h2, .homepage_wrap section.services.section-bg.Support-team h2, .homepage_wrap section.real-result h2, .homepage_wrap .love-bottom h2, .homepage_wrap .make-life h2, .homepage_wrap section.testimonials.section-bg h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.homepage_wrap section.services.section-bg.Support-team h5 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.homepage_wrap .business-left h2 br {
+    display: none;
+}
+.homepage_wrap .business-left h4 {
+    font-size: 20px;
+}
+.homepage_wrap .business-left p, .homepage_wrap .make-life p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap section.services.section-bg.Support-team .icon-box p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap h6.service-btn {
+    margin-top: 20px;
+}
+.homepage_wrap section.real-result h2 {
+    padding: 0;
+}
+.homepage_wrap .real-business-left p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.homepage_wrap .real-business-left h4 {
+    font-size: 16px;
+}
+.homepage_wrap .real-business-left h6 {
+    font-size: 14px;
+}
+.homepage_wrap section.Seven-key h2 {
+    font-size: 30px;
+}
+.homepage_wrap section.Seven-key p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.homepage_wrap section.Seven-key h5 {
+    font-size: 15px;
+}
+.homepage_wrap .seven-boxes {
+    height: 230px;
+    width: 90%;
+    margin: 0 auto 25px auto;
+}
+.homepage_wrap .love-bottom h5 {
+    font-size: 17px;
+}
+.homepage_wrap h6.love-btn {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.homepage_wrap .testimonials .swiper-pagination {
+    margin-top: 0;
+}
+.homepage_wrap .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 50px;
+    height: 5px;
+}
+.homepage_wrap .custlogosrow ul li {
+    width: 50%;
+}
+.homepage_wrap .custlogosrow ul li img {
+    height: 60px;
+}
+.homepage_wrap #footer .social-links a {
+    padding: 5px 5px;
+}
+.homepage_wrap #footer {
+    padding: 0;
+}
+.homepage_wrap a.phn-footer {
+    width: 100%;
+}
+.homepage_wrap .askarrow {
+    display: none;
+}
+.homepage_wrap .seven-boxes img {
+    width: 50px;
+}
+.homepage_wrap section.services.section-bg.Support-team img {
+    width: 15%;
+}
+.homepage_wrap .seven-boxes.blue-bg h4 {
+    font-size: 32px;
+    line-height: 35px;
+}
+.homepage_wrap .make-life {
+    margin-top: 50px;
+}
+.homepage_wrap .footer-logo {
+    text-align: center;
+}
+.homepage_wrap .footer-logo img {
+    width: 250px;
+}
+.homepage_wrap .for-mobile img {
+    width:350px;
+}
+}
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+.homepage_wrap #hero {
+    height: auto;
+}
+.homepage_wrap #hero p {
+    font-size: 15px;
+}
+.homepage_wrap #hero h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.homepage_wrap .askarrow {
+    display: none;
+}
+.homepage_wrap .ask-left h6 a, .homepage_wrap #hero .btn-get-started, .homepage_wrap .business-left h6 a {
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.homepage_wrap .askRightImg img {
+    max-width: 380px;
+}
+.homepage_wrap .business-left h2, .ask-left h2, .homepage_wrap section.services.section-bg.Support-team h2, .homepage_wrap section.Seven-key h2, .homepage_wrap .love-bottom h2, .homepage_wrap section.testimonials.section-bg h2 {
+    font-size: 38px;
+    line-height: 42px;
+}
+.homepage_wrap .ask-left h4 {
+    font-size: 28px;
+}
+.homepage_wrap .business-left p, .homepage_wrap .ask-left p {
+    font-size: 15px;
+    line-height: 26px;
+}
+.homepage_wrap section.services.section-bg.Support-team h5 {
+    font-size: 18px;
+}
+.homepage_wrap section.Seven-key h5 {
+    font-size: 18px;
+}
+.homepage_wrap .seven-boxes {
+    height: 170px;
+}
+.homepage_wrap .seven-boxes h4 {
+    font-size: 14px;
+    line-height: 19px;
+}
+.homepage_wrap .seven-boxes.blue-bg {
+    padding: 80px 0;
+}
+.homepage_wrap .seven-boxes.blue-bg h4 {
+    font-size: 23px;
+    line-height: 26px;
+}
+.homepage_wrap .custlogosrow ul li img {
+    height: 60px;
+}
+.homepage_wrap .footer-logo img {
+    width: 70%;
+}
+.homepage_wrap #footer .social-links a {
+    padding: 5px 5px;
+}
+.homepage_wrap #footer .social-links a img {
+    width: 17px;
+}
+.homepage_wrap .enter-t {
+    height: 270px;
+}
+.homepage_wrap .customicon {
+    font-size: 31px;
+    margin: -10px 0 10px 0;
+}
+.homepage_wrap h6.love-btn a {
+    padding: 12px 20px;
+font-size: 13px;
+letter-spacing: 1px;
+}
+}
+@media only screen and (min-width : 992px) and (max-width : 1023px) {
+.homepage_wrap #hero {
+    height: auto;
+}
+.homepage_wrap #hero h1 {
+    font-size: 70px;
+    line-height: 80px;
+}
+.homepage_wrap .askRightImg img {
+    max-width: 400px;
+}
+.homepage_wrap .business-left h2, .homepage_wrap .ask-left h2, .homepage_wrap section.services.section-bg.Support-team h2, .homepage_wrap section.Seven-key h2, .homepage_wrap .love-bottom h2, .homepage_wrap section.testimonials.section-bg h2 {
+    font-size: 50px;
+    line-height: 52px;
+}
+.homepage_wrap .business-left h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.homepage_wrap .business-left p, .homepage_wrap .ask-left p {
+    font-size: 15px;
+    line-height: 26px;
+}
+.homepage_wrap section.real-result h2 {
+    font-size: 50px;
+}
+.homepage_wrap .custlogosrow ul li img {
+    height: 80px;
+}
+.homepage_wrap .footer-logo img {
+    width: 60%;
+}
+.homepage_wrap #footer .social-links a {
+    padding: 5px;
+}
+}
+@media only screen and (min-width : 1024px) and (max-width : 1199px) {
+.homepage_wrap #hero {
+    height: auto;
+}
+.homepage_wrap #hero h1 {
+    font-size: 70px;
+    line-height: 80px;
+}
+.homepage_wrap .askRightImg img {
+    max-width: 400px;
+}
+.homepage_wrap .business-left h2, .homepage_wrap .ask-left h2, .homepage_wrap section.services.section-bg.Support-team h2, .homepage_wrap section.Seven-key h2, .homepage_wrap .love-bottom h2, .homepage_wrap section.testimonials.section-bg h2 {
+    font-size: 50px;
+    line-height: 52px;
+}
+.homepage_wrap .business-left h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.homepage_wrap .business-left p, .homepage_wrap .ask-left p {
+    font-size: 15px;
+    line-height: 26px;
+}
+.homepage_wrap section.real-result h2 {
+    font-size: 50px;
+}
+.homepage_wrap .custlogosrow ul li img {
+    height: 80px;
+}
+.homepage_wrap .footer-logo img {
+    width: 60%;
+}
+.homepage_wrap #footer .social-links a {
+    padding: 5px;
+}
+.homepage_wrap .enter-t {
+    padding:20px 15px;
+    height:220px;
+}
+
+.homepage_wrap .enter-t h3 {
+    font-size: 19px;
+    line-height: 21px;
+}
+.homepage_wrap .enter-t p {
+    font-size:14px;
+    line-height:21px;
+    margin-bottom:10px;
+}
+.homepage_wrap h6.love-btn a {
+    font-size:15px;
+    letter-spacing:1px;
+    padding:12px 40px;
+}
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1400px) {
+    .homepage_wrap #hero h1 {
+        font-size:70px;
+        line-height:70px;
+    }
+    .homepage_wrap .ask-left h2 , .homepage_wrap .business-left h2 , .homepage_wrap section.services.section-bg.Support-team h2  , .homepage_wrap section.Seven-key h2 , .homepage_wrap section.testimonials.section-bg h2 {
+        font-size:60px;
+        line-height:60px;
+    }
+    .homepage_wrap .ask-left h6 a, .homepage_wrap #hero .btn-get-started, .homepage_wrap .business-left h6 a {
+        letter-spacing: 1px;
+        font-size:16px;
+        padding:12px 40px;
+    }
+    .homepage_wrap section.services.section-bg.Support-team h5 {
+        font-size:20px;
+    }
+    .homepage_wrap .enter-t {
+        height:290px;
+    }
+    .homepage_wrap .askRightImg img {
+        max-width: 420px;
+    }
+    .homepage_wrap .enter-t {
+        padding:20px 15px;
+        height:220px;
+    }
+    
+    .homepage_wrap .enter-t h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .homepage_wrap .enter-t p {
+        font-size:14px;
+        line-height:21px;
+        margin-bottom:10px;
+    }
+}

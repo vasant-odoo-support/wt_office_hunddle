@@ -893,6 +893,10 @@ class WebsiteHuddleCustom(http.Controller):
     def tshirt_printing_office_huddle(self):
         return  request.render('wt_office_hunddle.t_shirt_printing_design_selection_officehuddle_template')
 
+    @http.route('/homepage', type='http', auth='public', website=True)
+    def tshirt_printing_office_huddle(self):
+        return  request.render('wt_office_hunddle.officehuddle_home_page')
+
     @http.route('/printing-products', type='http', auth='public', website=True)
     def printing_products_office_huddle(self):
         flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers')])
