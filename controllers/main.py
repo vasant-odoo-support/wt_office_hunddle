@@ -895,7 +895,8 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/homepage', type='http', auth='public', website=True)
     def tshirt_printing_office_huddle(self):
-        return  request.render('wt_office_hunddle.officehuddle_home_page')
+        blog_post_ids = request.env['blog.post'].search([], limit=3)
+        return  request.render('wt_office_hunddle.officehuddle_home_page', {'blog_post_ids': blog_post_ids})
 
     @http.route('/printing-products', type='http', auth='public', website=True)
     def printing_products_office_huddle(self):

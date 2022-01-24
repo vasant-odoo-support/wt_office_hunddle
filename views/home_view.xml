@@ -56,13 +56,27 @@
                       TEAM</h2>
                     <p>You are in business for yourself.<br/>
                       Why be by yourself?</p>
-                    <h6><a href="#">Watch Video</a></h6>
+                    <h6><a href="#" data-toggle="modal" data-target="#myModal">Watch Video</a></h6>
                   </div>
                 </div>
                 <div class="col-md-9"></div>
               </div>
             </div>
           </section>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span>×</span>
+                    </button>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_one_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true"></iframe>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <!-- End Business support  Section --> 
           
           <!-- ======= Services Section ======= -->
@@ -76,21 +90,21 @@
                     <div class="icon"><img src="/wt_office_hunddle/static/src/home/images/list.png" alt="" class="img-fluid"/></div>
                     <h4 class="title"><a href="#">Complete the Assessment</a></h4>
                     <p class="description">Discover the questions that every successful business leader must answer. Simply by answering the questions, you will uncover some issues that you never knew existed. Guaranteed.</p>
-                    <a class="readmoreBtn" href="#">Read More</a> </div>
+                  </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                   <div class="icon-box">
                     <div class="icon"><img src="/wt_office_hunddle/static/src/home/images/game.png" alt="" class="img-fluid"/></div>
                     <h4 class="title"><a href="#">Get A Free Game Plan</a></h4>
                     <p class="description">After the Assessment, we will assign a personal Business Coach who will offer you a basic Strategic GamePlan that will identify your next action steps.</p>
-                    <a class="readmoreBtn" href="#">Read More</a> </div>
+                  </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
                   <div class="icon-box">
                     <div class="icon"><img src="/wt_office_hunddle/static/src/home/images/rocket.png" alt="" class="img-fluid"/></div>
                     <h4 class="title"><a href="#">Take Action</a></h4>
                     <p class="description">Your Business Coach will challenge you, while keeping you focused on the important parts, that as your company’s leader, you should be focused on.</p>
-                    <a class="readmoreBtn" href="#">Read More</a> </div>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -179,7 +193,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes blue-bg">
                     <h4>How It Works</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    <a href="/how-it-works"><![CDATA[&nbsp;]]></a> </div>
                 </div>
               </div>
             </div>
@@ -189,21 +203,21 @@
           <!-- ======= We love Section ======= -->
           <section class="we-love">
             <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="love-text"> <img src="/wt_office_hunddle/static/src/home/images/branding-copyright-design-spaceship-graphic-concept.jpg" alt="" class="img-fluid"/>
+              <div class="row" t-if="blog_post_ids">
+                <div class="col-md-4" t-foreach="blog_post_ids" t-as="blog_id">
+                  <div class="love-text"> <img t-att-src="website.image_url(blog_id, 'bg_image')" alt="Lights" class="img-fluid"/>
                     <div class="content-div">
-                      <h3><a href="#">What is the Different Between Branding &amp; Marketing</a></h3>
-                      <p>Get Graphics and Videos for 7 Days Free! ** If you are an owner of a small business who wants your business to grow, here is your chance to have a dedicated team of professionals who can make engagin...</p>
+                      <h3><a href="#"><t t-esc="blog_id.name"/></a></h3>
+                      <p><t t-esc="blog_id.teaser"/></p>
                       <ul>
                         <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/> Henry</a></li>
                         <li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
-                        <li><a href="#">See More...</a></li>
+                        <li><a t-att-href="blog_id.website_url" title="" aria-describedby="tooltip231649">Read More →</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                   <div class="love-text"> <img src="/wt_office_hunddle/static/src/home/images/bg_image-2.jpg" alt="" class="img-fluid"/>
                     <div class="content-div">
                       <h3><a href="#">What is the Different Between Branding &amp; Marketing</a></h3>
@@ -228,7 +242,7 @@
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="row space-f-top">
                 <div class="col-md-8">
@@ -238,7 +252,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <h6 class="love-btn"><a href="#">See More Great Articles</a></h6>
+                  <h6 class="love-btn"><a href="/blog">See More Great Articles</a></h6>
                 </div>
               </div>
             </div>
@@ -275,7 +289,7 @@
                     
                     <h3>ENTREPRENEUR TRAINING</h3>
                     <p>Learn how to build and fine tune the core of your business.</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
+                    <a class="readmoreBtn" href="/slides">Read More</a>
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
@@ -283,7 +297,7 @@
                     
                     <h3>PRINTING</h3>
                     <p>Enhance your promotional tactics through expectation print materials</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
+                    <a class="readmoreBtn" href="/printing-products">Read More</a>
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
@@ -291,7 +305,7 @@
                     
                     <h3>GRAPHIC DESIGN</h3>
                     <p>Empower your business through implementation of creative visual presentation</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
+                    <a class="readmoreBtn" href="/graphic-design">Read More</a>
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
@@ -307,7 +321,7 @@
                     
                     <h3>BUSINESS COACHING</h3>
                     <p>Develop and polish your core as a business owner to be an effective leader.</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
+                    <a class="readmoreBtn" href="/business-coaching">Read More</a>
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
@@ -324,7 +338,7 @@
                     
                     <h3>ERP DEVELOPMENT</h3>
                     <p>Centralize all businees functions and improve your business processes by 95%</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
+                    <a class="readmoreBtn" href="/erp-development">Read More</a>
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
@@ -332,7 +346,7 @@
                     
                     <h3>VIRTUAL STAFFING</h3>
                     <p>Cover more responsibilities through hiring thebest workforce.</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
+                    <a class="readmoreBtn" href="/virtual-staffing">Read More</a>
                   </div>
                 </div>
               </div>
