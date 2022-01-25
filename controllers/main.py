@@ -871,7 +871,7 @@ class WebsiteHuddleCustom(http.Controller):
     def web_how_works(self):
         return  request.render('wt_office_hunddle.how_it_work')
 
-    @http.route('/page/virtial_staffing', type='http', auth='public', website=True)
+    @http.route('/page/virtual-staffing', type='http', auth='public', website=True)
     def virtial_staffing_page(self):
         virtual_staffing_blog = request.env['blog.post'].search([('valid_page', '=', 'virtual_staffing')], limit=3)
         vals = {
