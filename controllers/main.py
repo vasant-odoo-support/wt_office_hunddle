@@ -871,6 +871,14 @@ class WebsiteHuddleCustom(http.Controller):
     def web_how_works(self):
         return  request.render('wt_office_hunddle.how_it_work')
 
+    @http.route('/page/virtial_staffing', type='http', auth='public', website=True)
+    def virtial_staffing_page(self):
+        virtual_staffing_blog = request.env['blog.post'].search([('valid_page', '=', 'virtual_staffing')], limit=3)
+        vals = {
+            'virtual_staffing_blog': virtual_staffing_blog,
+        }
+        return  request.render('wt_office_hunddle.virtual_staffing_oh', vals)
+
     @http.route('/video-design', type='http', auth='public', website=True)
     def video_design_office_huddle(self):
         return  request.render('wt_office_hunddle.video_design_officehuddle_template')
@@ -894,7 +902,7 @@ class WebsiteHuddleCustom(http.Controller):
         return  request.render('wt_office_hunddle.t_shirt_printing_design_selection_officehuddle_template')
 
     @http.route('/homepage', type='http', auth='public', website=True)
-    def tshirt_printing_office_huddle(self):
+    def officehuddle_home_page(self):
         blog_post_ids = request.env['blog.post'].search([], limit=3)
         return  request.render('wt_office_hunddle.officehuddle_home_page', {'blog_post_ids': blog_post_ids})
 

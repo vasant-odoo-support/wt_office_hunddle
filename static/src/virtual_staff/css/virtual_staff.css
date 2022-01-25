@@ -1,0 +1,377 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.virtual_staffing_wrap #hero {
+	width: 100%;
+	height: 100%;
+	background: url(/wt_office_hunddle/static/src/virtual_staff/images/business-people-video-call-meeting.jpg) top center;
+	background-size: cover;
+	position: relative;
+	margin-top: 0px;
+	padding: 130px 0 100px;
+}
+.virtual_staffing_wrap #hero:before {
+	content: "";
+	background: rgba(56, 64, 70, 0.5);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.virtual_staffing_wrap #hero .container {
+	z-index: 2;
+}
+.virtual_staffing_wrap #hero h1 {
+	margin: 0 0 10px 0;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 80px;
+	color: #fff;
+}
+.virtual_staffing_wrap #hero p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 0 150px;
+}
+.virtual_staffing_wrap #hero h1 span {
+	border-bottom: 4px solid #3498db;
+}
+.virtual_staffing_wrap #hero h2 {
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+.virtual_staffing_wrap #hero .btn-get-started {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: 12px 50px;
+	border-radius: 30px;
+	transition: ease-in-out 0.3s;
+	color: #fff;
+	background: #db974a;
+}
+.virtual_staffing_wrap #hero .btn-get-started:hover {
+	background: #4ea5e0;
+}
+
+.virtual_staffing_wrap .innerbnrmain {
+	background: url(/wt_office_hunddle/static/src/virtual_staff/images/banner2.jpg) top center !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	height: auto !important;
+	padding:240px 0 270px !important;
+}
+.virtual_staffing_wrap .innerbnrmain:before {
+	display:none;
+}
+.virtual_staffing_wrap .innerbnrmain .heroMain  span {
+color: #db974a;
+border: none !important;
+}
+.virtual_staffing_wrap .innerbnrmain .heroMain h4 {
+	color: #fff;
+	margin-bottom: 80px;
+}
+.virtual_staffing_wrap .innerbnrmain .heroMain .btn-get-started {
+	padding: 12px 80px !important;
+}
+.virtual_staffing_wrap .virtualstaff {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.virtual_staffing_wrap .virtualstaff img {
+	width: 546px;
+}
+
+.virtual_staffing_wrap .secMissing {
+	background: url(/wt_office_hunddle/static/src/virtual_staff/images/virtualstafBg.jpg) top center !important;
+	padding: 500px 0 150px 0;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom center !important;
+}
+.virtual_staffing_wrap .secMissingMain {
+	text-align: right;
+}
+.virtual_staffing_wrap .secMissingMain h5 {
+	font-size:31px;
+	font-weight: 400;
+	color:#fff;
+}
+.virtual_staffing_wrap .secMissingMain h3 {
+	color: #fff;
+	font-size: 38px;
+	font-weight: 700;
+}
+.virtual_staffing_wrap .secMissingMain h2 {
+	color: #db974a;
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 120px;
+}
+.virtual_staffing_wrap .secMissingMain a {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: 12px 50px;
+	border-radius: 30px;
+	transition: ease-in-out 0.3s;
+	color: #fff;
+	background: #db974a;
+}
+.virtual_staffing_wrap .secMissingMain a:hover , .secMissingMain a:focus {
+	background: #4ea5e0;
+}
+
+.virtual_staffing_wrap .wecanhelpRow {
+	padding: 70px 0;
+	background:#fff url(/wt_office_hunddle/static/src/virtual_staff/images/wecanhelpBg.png);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	text-align: center;
+}
+.virtual_staffing_wrap .wecanhelpbox {
+	background: #fff;
+	box-shadow: #1f1209 7px 0 18px;
+	padding:70px 40px ;
+	min-height: 350px;
+	text-align: center;
+	margin:  0 0 30px 0;
+	transition: all ease-in-out .3s;
+	position: relative;
+	overflow: hidden;
+}
+.virtual_staffing_wrap .wecanhelpbox:hover {
+	background: #db974a;
+}
+.virtual_staffing_wrap .wecanhelpbox > a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;;
+}
+
+.virtual_staffing_wrap .wecanhelpbox::after {
+	content: "";
+	width:100%;
+	height: 10px;
+	background: #04658f;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateX(-100%);
+	transition: all ease-in-out .3s;
+}
+.virtual_staffing_wrap .wecanhelpbox:hover:after {
+	transform: translateX(0%);
+}
+.virtual_staffing_wrap .wecanhelpbox .icon {
+	width: 100%;
+	text-align: center;
+	
+}
+.virtual_staffing_wrap .wecanhelpbox .icon img {
+	width:90px;
+}
+.virtual_staffing_wrap .wecanhelpbox h4 {
+	margin-left: 0;
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000;
+	margin-top: 20px;
+	line-height: 27px;
+}
+.virtual_staffing_wrap .wecanhelpbox h4 a {color: #000;}
+.virtual_staffing_wrap .wecanhelpRow h2 {
+	color: #000;
+	font-size: 45px;
+	line-height: 50px;
+	font-weight: 700;
+	margin: 30px 0 40px 0;
+}
+
+.virtual_staffing_wrap .customBtn {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: 12px 70px;
+	border-radius: 30px;
+	transition: ease-in-out 0.3s;
+	color: #fff;
+	background: #04658f;
+}
+.virtual_staffing_wrap .customBtn:hover , .virtual_staffing_wrap .customBtn:focus {
+	background: #db974a;
+	color: #fff;
+}
+.virtual_staffing_wrap .pickfromservices {
+	padding: 50px 0  100px 0;
+	background: #db984a;
+	text-align: center;
+}
+.virtual_staffing_wrap .pickfromservices h2 {
+	color: #000;
+	font-size: 70px;
+	line-height: 70px;
+	font-weight: 700;
+	margin:  0 0 40px 0;
+	
+}
+.virtual_staffing_wrap .pickfromserBox {
+	width: 100%;
+	background: #fff;
+	padding: 40px;
+	border-radius: 40px;
+	min-height: 310px;
+	box-shadow: rgba(0,0,0,.67) 0 0 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	transition: all ease-in-out .3s;
+	position: relative;
+	overflow: hidden;
+}
+
+.virtual_staffing_wrap .pickfromserBox::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #04658f;
+	position: absolute;
+	z-index: 1;
+	transform: translatey(100%);
+	transition: all ease-in-out .3s;
+}
+.virtual_staffing_wrap .pickfromserBox:hover::after {
+	transform:translatey(50%);
+}
+.virtual_staffing_wrap .pickfromserBox:hover h4 {
+color: #fff;
+}
+.virtual_staffing_wrap .pickfromservices .col-xl-3 {
+	padding: 0 8px;
+}
+.virtual_staffing_wrap .pickfromserBoxicon {
+	position: relative;
+	z-index: 2;
+}
+.virtual_staffing_wrap .pickfromserBox h4 {
+	width: 100%;
+	font-size: 20px;
+	color: #000;
+	font-weight: 600;
+	position: relative;
+	z-index: 2;
+	transition: all ease-in-out .3s;
+}
+
+.virtual_staffing_wrap .pickfromserBox a {
+	display: inline-block;
+	background: #04658f;
+	color: #fff;
+	text-align: center;
+	padding: 5px 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 20px;
+	letter-spacing: 1px;
+	border: 2px solid #fff;
+	position: relative;
+	z-index: 2;
+	transition: all ease-in-out .3s;
+}
+.virtual_staffing_wrap .pickfromserBox a:hover , .virtual_staffing_wrap .pickfromserBox a:focus {
+	background: #db984a;
+	color: #fff;
+}
+.virtual_staffing_wrap .pickfromserBoxicon img {
+	height:100px;
+}
+.virtual_staffing_wrap .pickfromservices .row {
+	padding: 0 7px;
+}
+
+.virtual_staffing_wrap .custhowvirtual h2 {
+	color: #fff;
+font-size: 70px;
+line-height: 70px;
+font-weight: 700;
+margin: 0 0 40px 0;
+}
+.virtual_staffing_wrap .custhowvirtual h2 span {
+	display: inline-block;
+	width: 100%;
+	font-size: 50px;
+	font-weight: 500;
+}
+.virtual_staffing_wrap .custhowvirtual .content-div p{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.virtual_staffing_wrap .custhowvirtual .content-div h3 {
+	margin-top: 10px;
+}
+.virtual_staffing_wrap .custhowvirtual .content-div {
+	min-height: 220px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.virtual_staffing_wrap .custhowvirtual .customBtn {
+	margin: 100px 0 0px 0;
+	padding: 12px 40px;
+}
+.virtual_staffing_wrap .custhowvirtual .love-text:hover {
+
+}
+.virtual_staffing_wrap .custhowvirtualImg img {
+	transition: all ease-in-out .3s;
+}
+.virtual_staffing_wrap .custhowvirtualImg {
+	overflow: hidden;
+}
+.virtual_staffing_wrap .custhowvirtual .love-text:hover .custhowvirtualImg img {
+	transform: scale(1.1);
+}
+.virtual_staffing_wrap .custombdr {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+.virtual_staffing_wrap .custombdr ul {
+	padding: 0;
+	margin: 0;
+}
+.virtual_staffing_wrap .custombdr ul li {
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	height: 20px;
+	float: left;
+}
+.virtual_staffing_wrap .custombdr ul li:nth-child(1) {background: #ee3c3a;}
+.virtual_staffing_wrap .custombdr ul li:nth-child(2) {background: #086eb9;}
+.virtual_staffing_wrap .custombdr ul li:nth-child(3) {background: #4fb52d;}
+.virtual_staffing_wrap .custombdr ul li:nth-child(4) {background: #4c31a2;}
+.virtual_staffing_wrap .custombdr ul li:nth-child(5) {background: #f1b547;}

@@ -1,0 +1,179 @@
+@media only screen and (min-width : 1024px) and (max-width : 1199px) {
+.virtual_staffing_wrap #hero {
+	height: auto;
+}
+.virtual_staffing_wrap #hero h1 {
+	font-size: 28px;
+	line-height: 35px;
+}
+.virtual_staffing_wrap .askRightImg img {
+	max-width: 400px;
+}
+.virtual_staffing_wrap .business-left h2, .virtual_staffing_wrap .ask-left h2, .virtual_staffing_wrap section.services.section-bg.Support-team h2, .virtual_staffing_wrap section.Seven-key h2, .virtual_staffing_wrap .love-bottom h2, .virtual_staffing_wrap section.testimonials.section-bg h2 {
+	font-size: 50px;
+	line-height: 52px;
+}
+.virtual_staffing_wrap .business-left h2 {
+	font-size: 50px;
+	line-height: 50px;
+}
+.virtual_staffing_wrap .business-left p, .virtual_staffing_wrap .ask-left p {
+	font-size: 15px;
+	line-height: 26px;
+}
+.virtual_staffing_wrap section.real-result h2 {
+	font-size: 50px;
+}
+.virtual_staffing_wrap .custlogosrow ul li img {
+	height: 80px;
+}
+.virtual_staffing_wrap .footer-logo img {
+	width: 60%;
+}
+.virtual_staffing_wrap #footer .social-links a {
+	padding: 5px;
+}
+.virtual_staffing_wrap .enter-t {
+	padding:20px 15px;
+	height:220px;
+}
+
+.virtual_staffing_wrap .enter-t h3 {
+	font-size: 19px;
+	line-height: 21px;
+}
+.virtual_staffing_wrap .enter-t p {
+	font-size:14px;
+	line-height:21px;
+	margin-bottom:10px;
+}
+.virtual_staffing_wrap h6.love-btn a {
+	font-size:15px;
+	letter-spacing:1px;
+	padding:12px 40px;
+}
+.virtual_staffing_wrap .virtualstaff img {
+	width: 380px;
+}
+.virtual_staffing_wrap .innerbnrmain {
+	padding: 140px 0 170px !important;
+}
+.virtual_staffing_wrap .innerbnrmain .heroMain  h1 {
+font-size: 50px !important;
+line-height: 52px !important;
+}
+.virtual_staffing_wrap .innerbnrmain .heroMain h4 {
+	font-size: 18px;
+	line-height: 26px;
+}
+.virtual_staffing_wrap .secMissing {
+	padding: 300px 0 150px 0;
+}
+.virtual_staffing_wrap .secMissingMain h2 {
+	font-size: 80px;
+	line-height: 90px;
+}
+.virtual_staffing_wrap .secMissingMain h3 {
+	font-size: 32px;
+	
+}
+.virtual_staffing_wrap .wecanhelpbox .icon img {
+	width: 80px;
+}
+.virtual_staffing_wrap .wecanhelpbox {
+	min-height: 340px;
+	padding: 50px 20px;
+}
+.virtual_staffing_wrap .pickfromservices h2 {
+	font-size: 50px;
+line-height: 52px;
+}
+.virtual_staffing_wrap .pickfromserBoxicon img {
+	height: 80px;
+}
+.virtual_staffing_wrap .pickfromserBox {
+	border-radius: 30px;
+}
+.virtual_staffing_wrap .custhowvirtual h2 {
+	font-size: 50px;
+	line-height: 52px;
+}
+.virtual_staffing_wrap .custhowvirtual h2 span {
+	font-size: 40px;
+}
+.virtual_staffing_wrap .custhowvirtual .content-div {
+	min-height: 280px;
+}
+.virtual_staffing_wrap .custhowvirtual .customBtn {
+	margin: 70px 0 0px 0;
+}
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1400px) {
+	.virtual_staffing_wrap #hero h1 {
+		font-size: 28px;
+		line-height: 35px;
+	}
+	.virtual_staffing_wrap .ask-left h2 , .virtual_staffing_wrap .business-left h2 , .virtual_staffing_wrap section.services.section-bg.Support-team h2  , .virtual_staffing_wrap section.Seven-key h2 , .virtual_staffing_wrap section.testimonials.section-bg h2 {
+		font-size:60px;
+		line-height:60px;
+	}
+	.virtual_staffing_wrap .ask-left h6 a, .virtual_staffing_wrap #hero .btn-get-started, .virtual_staffing_wrap .business-left h6 a {
+		letter-spacing: 1px;
+		font-size:16px;
+		padding:12px 40px;
+	}
+	.virtual_staffing_wrap section.services.section-bg.Support-team h5 {
+		font-size:20px;
+	}
+	.virtual_staffing_wrap .enter-t {
+		height:290px;
+	}
+	.virtual_staffing_wrap .askRightImg img {
+		max-width: 420px;
+	}
+	.virtual_staffing_wrap .enter-t {
+		padding:20px 15px;
+		height:220px;
+	}
+	
+	.virtual_staffing_wrap .enter-t h3 {
+		font-size: 20px;
+		line-height: 22px;
+	}
+	.virtual_staffing_wrap .enter-t p {
+		font-size:14px;
+		line-height:21px;
+		margin-bottom:10px;
+	}
+
+
+	.virtual_staffing_wrap .innerbnrmain {
+		padding: 150px 0 100px !important;
+	}
+	.virtual_staffing_wrap .innerbnrmain .heroMain h4 {
+		font-size: 20px;
+		line-height: normal;
+	}
+	.virtual_staffing_wrap .virtualstaff img {
+		width: 400px;
+	} 
+	.virtual_staffing_wrap .secMissing {
+		padding: 400px 0 150px 0;
+	}
+	.virtual_staffing_wrap .pickfromservices h2 , .virtual_staffing_wrap .custhowvirtual h2 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.virtual_staffing_wrap .custhowvirtual h2 span {font-size: 40px;}
+	.virtual_staffing_wrap .secMissingMain h2 {
+		font-size: 100px;
+		line-height: 100px;
+	}
+	.virtual_staffing_wrap .secMissingMain h3 {
+		font-size: 36px;
+	}
+	.virtual_staffing_wrap .secMissingMain h5 {
+		font-size: 29px;
+	}
+}

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="virtual_staffing_oh" name="Virtual Staffing">
+		<t t-call="website.layout">
+			<div id="wrap" class="virtual_staffing_wrap">
+				<!-- ======= Hero Section ======= -->
+				<section id="hero" class="d-flex flex-column justify-content-center innerbnrmain">
+				  <div class="container text-md-left" data-aos="fade-up">
+				    <div class="heroMain ">
+				      <h1>GET THE HELP YOU<br/>
+				NEED WITH<br/>
+				        <span>VIRTUAL STAFFING</span></h1>
+				      <h4>Cover bigger responsibilities,<br/> grab more opportunities.</h4>
+				      <a href="https://calendly.com/henrybdorris/60min?month=2021-08" target="_blank" class="btn-get-started scrollto">Get Started</a> </div>
+				  </div>
+				  <div class="virtualstaff"><img src="/wt_office_hunddle/static/src/virtual_staff/images/virtualstaf.png" /></div>
+				</section>
+				<!-- End Hero -->
+				<div class="modal fade pt-5 ceo_modal_main_cl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  					<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    					<div class="modal-content">
+          					 <iframe class="embed-responsive-item" t-attf-src="#{request.website.embed_five_code}?autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;mute=1" id="video" allowscriptaccess="always" allow="autoplay" allowfullscreen="true"></iframe>
+    					</div>
+  					</div>
+				</div>
+
+				<main id="main">
+					<!-- Better Life -->
+					<section class="secMissing">
+					    <div class="container">
+					      <div class="row">
+					        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					          <div class="secMissingMain">
+					            <h5>Missing the significant events of your life?</h5>
+					            <h3>WORK BETTER AND LIVE EASIER WITH OUR</h3>
+					            <h2>VIRTUAL STAFF.</h2>
+					            <a href="#" data-toggle="modal" data-target="#myModal" class="btn-get-started ">Watch Video</a> 
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					</section>
+
+					<section class="wecanhelpRow">
+					    <div class="container">
+					      <div class="row">
+					        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+					          <div class="wecanhelpbox">
+					            <div class="icon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconstuck.png" alt="" class="img-fluid"/></div>
+					            <h4>STUCK IN THE DAILY GRIND OF EVERYDAY ROUTINE?</h4>
+					            </div>
+					        </div>
+					        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+					          <div class="wecanhelpbox">
+					            <div class="icon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconnotime.png" alt="" class="img-fluid"/></div>
+					            <h4>NO TIME FOR OTHER IMPORTANT MATTERS?</h4>
+					        </div>
+					        </div>
+					        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+					          <div class="wecanhelpbox">
+					            <div class="icon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconInwork.png" alt="" class="img-fluid"/></div>
+					            <h4>MISSING SIGNIFICANT EVENTS OF YOUR LIFE BEACUSE YOU ARE DROWNING IN WORK?</h4>
+					        </div>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="col">
+					            <h2>WE CAN HELP.</h2>
+					            <a href="#" class="customBtn">Book A Demo</a> 
+					        </div>
+					      </div>
+					    </div>
+					</section>
+					<section class="pickfromservices text-center">
+						<div class="container">
+						    <div class="row">
+						      <div class="col">
+						        <h2>PICK FROM OUR VIRTUAL <br/> STAFFING SERVICES</h2>
+						      </div>
+						    </div>
+						    <div class="row">
+						      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						        <div class="pickfromserBox">
+						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconlead.png" /></div>
+						          <h4>Lead<br/> Generation</h4>
+						            <a href="#">Hire Us</a>
+						        </div>
+						      </div>
+						      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						        <div class="pickfromserBox">
+						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconsale.png" /></div>
+						          <h4>Sales<br/> Support</h4>
+						            <a href="#">Hire Us</a>
+						        </div>
+						      </div>
+						      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						        <div class="pickfromserBox">
+						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconbook.png" /></div>
+						          <h4>Bookkeeper</h4>
+						            <a href="#">Hire Us</a>
+						        </div>
+						      </div>
+						      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						        <div class="pickfromserBox">
+						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconadministrator.png" /></div>
+						          <h4>Virtual<br/> Administrator</h4>
+						            <a href="#">Hire Us</a>
+						        </div>
+						      </div>
+						    </div>
+						</div>
+					</section>
+
+					<!-- ======= We love Section ======= -->
+					<div class="homepage_wrap">
+		          	<section class="we-love custhowvirtual">
+		            	<div class="container">
+		            		<div class="row">
+						        <div class="text-center">
+						          <h2>HOW VIRTUAL STAFFING <br/>
+						            CAN HELP YOU.
+						            <span>CHECK OUT OUR ARTICLES</span></h2>
+						        </div>
+					      	</div>
+			              	<div class="row" t-if="virtual_staffing_blog">
+			                	<div class="col-md-4" t-foreach="virtual_staffing_blog" t-as="blog_id">
+				                  	<div class="love-text"> <img t-att-src="website.image_url(blog_id, 'bg_image')" alt="Lights" class="img-fluid"/>
+				                    	<div class="content-div">
+				                      		<h3><a href="#"><t t-esc="blog_id.name"/></a></h3>
+				                      		<p><t t-esc="blog_id.teaser"/></p>
+				                      		<ul>
+				                        		<li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/> Henry</a></li>
+				                        		<li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
+				                        		<li><a t-att-href="blog_id.website_url" title="" aria-describedby="tooltip231649">Read More →</a></li>
+				                      		</ul>
+				                    	</div>
+				                  	</div>
+			                	</div>
+			                </div>
+			              	<div class="row">
+						        <div class="col text-center">
+						            <a href="/blog" class="customBtn">See More Great Articles</a> 
+						        </div>
+						    </div>
+		            	</div>
+		            </section>
+		        	</div>
+		            <!-- End web love Section -->
+		            <div class="custombdr">
+				      <ul>
+				        <li></li>
+				        <li></li>
+				        <li></li>
+				        <li></li>
+				        <li></li>
+				      </ul>
+			    	</div>
+
+			    	<!-- Start Testimonials Section -->
+			    	<div class="homepage_wrap">
+		          	<section class="testimonials section-bg">
+			            <div class="container">
+			              <h2>OUR BUSINESS <br/>
+			                OWNERS <span>TRUST US</span></h2>
+			                <div class="owl-carousel">
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+			                      <h3>Cortez Springer,</h3>
+			                      <h4>Wealth Strategist</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			                  </div>
+
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+			                          <h3>Lemzel Johnson,</h3>
+			                          <h4>Motivational Speaker</h4>
+			                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                        </div>
+			                </div>
+			             <div class="item">
+			              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+			                      <h3>Oginga Carr,</h3>
+			                      <h4>High Performance Coach</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			             </div>
+			             <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+			                      <h3>Cortez Springer,</h3>
+			                      <h4>Wealth Strategist</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			                  </div>
+
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+			                          <h3>Lemzel Johnson,</h3>
+			                          <h4>Motivational Speaker</h4>
+			                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                        </div>
+			                </div>
+			             <div class="item">
+			              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+			                      <h3>Oginga Carr,</h3>
+			                      <h4>High Performance Coach</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			             </div>
+			             <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+			                      <h3>Cortez Springer,</h3>
+			                      <h4>Wealth Strategist</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			                  </div>
+
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+			                          <h3>Lemzel Johnson,</h3>
+			                          <h4>Motivational Speaker</h4>
+			                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                        </div>
+			                </div>
+			             <div class="item">
+			              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+			                      <h3>Oginga Carr,</h3>
+			                      <h4>High Performance Coach</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			             </div>
+			          </div>
+			          </div>
+			        </section>
+			        <!-- End Testimonials Section -->
+			    	</div>
+				</main>
+			</div>
+		</t>
+	</template>
+</odoo>
