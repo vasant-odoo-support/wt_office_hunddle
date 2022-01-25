@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <template id="officehuddle_home_page" name="Office Huddle">
-    <t t-call="web.login_layout">
+  <record id="homepage_template" model="ir.ui.view">
+      <field name="name">Home</field>
+      <field name="type">qweb</field>
+      <field name="key">website.homepage.custom</field>
+      <field name="arch" type="xml">
+          <t t-name="homepage_template">
+              <t t-call="website.layout">
+  <!-- <template id="officehuddle_home_page" name="Office Huddle">
+    <t t-call="web.login_layout"> -->
       <div id="wrap_homepage" class="homepage_wrap">
 
         <!-- ======= Hero Section ======= -->
@@ -264,7 +271,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-5">
-                  <div class="life-img"><img src="/wt_office_hunddle/static/src/home/images/happy-young-man-using-laptop-computer.jpg" alt="" class="img-fluid"/></div>
+                  <div class="life-img"><img src="/wt_office_hunddle/static/src/home/images/happy-young-man-using-laptop-computer_11zon.jpg" alt="" class="img-fluid"/></div>
                 </div>
                 <div class="col-md-7">
                   <div class="make-life">
@@ -456,7 +463,16 @@
           </section> -->
           <!-- End Client Logo Section --> 
         </main>
-      </div>
-    </t>
-  </template>
+        </div>
+        </t>
+        </t>
+      </field>
+  </record>
+
+  <record id="homepage_custom_template_menu_new" model="website.page">
+      <field name="website_published">True</field>
+      <field name="url">/home</field>
+      <field name="is_homepage">True</field>
+      <field name="view_id" ref="homepage_template" />
+  </record>
 </odoo>
