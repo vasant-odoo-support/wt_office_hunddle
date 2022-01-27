@@ -80,7 +80,7 @@ class WebsitAuthSignupHome(AuthSignupHome):
                             lang=user_sudo.lang,
                             auth_login=werkzeug.url_encode({'auth_login': user_sudo.email}),
                         ).send_mail(user_sudo.id, force_send=True)
-                if kw['assessment'] == '1':
+                if 'assessment' in kw and kw['assessment'] == '1':
                     uid = request.session.authenticate(request.session.db, qcontext.get('login'), qcontext.get('password'))
                     request.params['login_success'] = True
                     return request.redirect("/page/assessment")
