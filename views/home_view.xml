@@ -366,7 +366,7 @@
             <div class="container">
               <h2>OUR BUSINESS <br/>
                 OWNERS <span>TRUST US</span></h2>
-                <div class="owl-carousel">
+                <div class="owl-carousel" id="owlcarousel1">
                 <div class="item">
                   <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
                       <h3>Cortez Springer,</h3>

@@ -76,7 +76,7 @@
                 </div>
             </section> -->
             <div class="homepage_wrap">
-                <section class="brand">
+                <!-- <section class="brand">
                     <div class="container">
                       <div class="row">
                         <div class="col-md-12">
@@ -97,7 +97,33 @@
                         </div>
                       </div>
                     </div>
-                </section>
+                </section> -->
+                <!-- ======= Client logo  Section ======= -->
+                  <section class="brand">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h4>Just A Few Trusted Brands That We Value and Serve.</h4>
+                          <div class="brand-img"></div>
+                          <div class="custlogosrow">
+                            <ul>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients1.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients2.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients3.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients4.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients5.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients6.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients7.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients8.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients9.png" /></li>
+                              <li><img src="/wt_office_hunddle/static/src/home/images/clients10.png" /></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- End Client Logo Section --> 
 
                 <footer id="footer">
                     <div class="container-fluid ">

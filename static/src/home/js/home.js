@@ -8,7 +8,7 @@ odoo.define('wt_office_hunddle.Homepage', function (require) {
 	publicWidget.registry.Homepage = publicWidget.Widget.extend({
 	    selector: '.homepage_wrap',
 	    start: function () {
-	    	$('.owl-carousel').owlCarousel({
+	    	$('#owlcarousel1').owlCarousel({
             loop: true,
             center: true,
             items: 3,

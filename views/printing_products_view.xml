@@ -285,4 +285,218 @@
           </div>
         </t>
     </template>
+
+    <template id="printing_product_officehuddle_template_new" name="Printing Products">
+        <t t-call="website.layout">
+          <div class="printing_product_new_wrap" id="printing_products_new">
+            <section class="pickfromservices text-center custproductSec">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h2>PRODUCT THAT BOOST <br/>
+                      YOUR BUSINESS.</h2>
+                    <p>Reah your target markets and get your business image across traditional mediums with
+                      postcards, banners, flyers, brochures, and others. Even in the internet age, we can't ignore the
+                      importance of a handshake, eye contact, and the personal touch to reach your markets.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % postcards.id"/><span>Buy Now</span></div>
+                      <h4> Postcards</h4>
+                      <a t-attf-href="/shop/product/{{postcards.id}}"></a> </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % banners.id"/><span>Buy Now</span></div>
+                      <h4>Banners</h4>
+                      <a t-attf-href="/shop/product/{{banners.id}}"></a> </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % bussiness_card.id"/><span>Buy Now</span></div>
+                      <h4> Business Card</h4>
+                      <a t-attf-href="/shop/product/{{bussiness_card.id}}"></a> </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % stickers.id"/><span>Buy Now</span></div>
+                      <h4>Sticker</h4>
+                      <a t-attf-href="/shop/product/{{stickers.id}}"></a> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % brochures.id"/><span>Buy Now</span></div>
+                      <h4>Brochures</h4>
+                      <a t-attf-href="/shop/product/{{brochures.id}}"></a> </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % yard_sign.id"/><span>Buy Now</span></div>
+                      <h4>Yard Signs</h4>
+                      <a t-attf-href="/shop/product/{{yard_sign.id}}"></a> </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % flyers.id"/><span>Buy Now</span></div>
+                      <h4>flyers</h4>
+                      <a t-attf-href="/shop/product/{{flyers.id}}"></a> </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="custproductSecBox">
+                      <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % tshirt.id"/><span>Buy Now</span></div>
+                      <h4>Tshirts</h4>
+                      <a t-attf-href="/shop/product/{{tshirt.id}}"></a> </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ======= Services Section ======= -->
+            <section class="services section-bg Support-team custprintproduct">
+              <div class="container" data-aos="fade-up">
+                <h2>PRODUCT THAT BOOST <br/>
+                  <span> PRINTING NEEDS:</span></h2>
+                <p>At Office Huddle, we are proud to offer the highest quality custom online printing services 
+                  for businesses and creative individuals. We offer competitive pricing and fast, friendly customer service. 
+                  Whether you are a business owner or a graphic designer, our large selection of products will help you fulfill all of your printing needs.
+                  Choose from a variety of exclusive product 
+                  lines including business cards, postcards, brochures, and much more. </p>
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                      <div class="icon"><img src="/wt_office_hunddle/static/src/printing/powerful.png" alt="" class="img-fluid"/></div>
+                      <h4 class="title"><a href="#">Powerful Design Tools </a></h4>
+                      <p class="description">Create attractive design layouts using our intuitive Designer tool that allows you to add images, text, logo, and virtually anthing you want. Our professionally designed templates are also available for those that are looking for inspiration and ideas. </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                      <div class="icon"><img src="/wt_office_hunddle/static/src/printing/fastturn.png" alt="" class="img-fluid"/></div>
+                      <h4 class="title"><a href="#">Fast Turnaround Time </a></h4>
+                      <p class="description">Business expectations vary from one client to another and GotPrint makes sure to offer shipping options that suit every customer's needs. Orders are expected to be delivered as fast as 1-2days for those that choose quicker shipping options! </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                      <div class="icon"><img src="/wt_office_hunddle/static/src/printing/variety.png" alt="" class="img-fluid"/></div>
+                      <h4 class="title"><a href="#">Variety of Paper Stocks Options </a></h4>
+                      <p class="description">Whether you're considering glossy or matte, recycled or uncoated, thick or premium paper, we have the perfect paper stock that fits your needs. Why compromise with less when you can have the best paper in paper options. </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                      <div class="icon"><img src="/wt_office_hunddle/static/src/printing/highquality.png" alt="" class="img-fluid"/></div>
+                      <h4 class="title"><a href="#">High Quality Printing </a></h4>
+                      <p class="description">Quality is our priority. Our online printing services come with a 100% satisfaction guarantee for first-time customers. If any reason you are not entirely satisfied with your order, you may return it for a full refund of the printing cost. </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                      <div class="icon"><img src="/wt_office_hunddle/static/src/printing/varietyofpaper.png" alt="" class="img-fluid"/></div>
+                      <h4 class="title"><a href="#">Powerful Design Tools
+                        </a></h4>
+                      <p class="description">Honestly and reliability are what prompts thousands of business and professinal designers to use GotPrint to fulfill their custom prinitng needs. </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                      <div class="icon"><img src="/wt_office_hunddle/static/src/printing/customer2.png" alt="" class="img-fluid"/></div>
+                      <h4 class="title"><a href="#">Fast Turnaround Time </a></h4>
+                      <p class="description">Our customer support team will guide you through the entire ordeing process to ensure a great shopping experience. Customer service representatives are standing by to answer any questions about our online printing services via chat, phone, or email. </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h6 class="service-btn"><a href="#">Take The Assessment</a></h6>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Services Section -->
+            <!-- Start Testimonials Section -->
+            <div class="homepage_wrap">
+                <section class="testimonials section-bg">
+                  <div class="container">
+                    <h2>OUR BUSINESS <br/>
+                      OWNERS <span>TRUST US</span></h2>
+                      <div class="owl-carousel" id="owlcarousel1">
+                      <div class="item">
+                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+                            <h3>Cortez Springer,</h3>
+                            <h4>Wealth Strategist</h4>
+                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                          </div>
+                        </div>
+
+                      <div class="item">
+                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+                                <h3>Lemzel Johnson,</h3>
+                                <h4>Motivational Speaker</h4>
+                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                              </div>
+                      </div>
+                   <div class="item">
+                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+                            <h3>Oginga Carr,</h3>
+                            <h4>High Performance Coach</h4>
+                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                          </div>
+                   </div>
+                   <div class="item">
+                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+                            <h3>Cortez Springer,</h3>
+                            <h4>Wealth Strategist</h4>
+                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                          </div>
+                        </div>
+
+                      <div class="item">
+                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+                                <h3>Lemzel Johnson,</h3>
+                                <h4>Motivational Speaker</h4>
+                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                              </div>
+                      </div>
+                   <div class="item">
+                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+                            <h3>Oginga Carr,</h3>
+                            <h4>High Performance Coach</h4>
+                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                          </div>
+                   </div>
+                   <div class="item">
+                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+                            <h3>Cortez Springer,</h3>
+                            <h4>Wealth Strategist</h4>
+                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                          </div>
+                        </div>
+
+                      <div class="item">
+                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+                                <h3>Lemzel Johnson,</h3>
+                                <h4>Motivational Speaker</h4>
+                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                              </div>
+                      </div>
+                   <div class="item">
+                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+                            <h3>Oginga Carr,</h3>
+                            <h4>High Performance Coach</h4>
+                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+                          </div>
+                   </div>
+                </div>
+                </div>
+              </section>
+              <!-- End Testimonials Section -->
+            </div>
+          </div>
+        </t>
+    </template>
 </odoo>

@@ -1849,7 +1849,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .homepage_wrap .custlogosrow ul li {
     list-style: none;
-    width: 25%;
+    width: 20%;
     float: left;
     text-align: center;
     margin: 0 0 15px 0;
@@ -1857,6 +1857,17 @@ h1, h2, h3, h4, h5, h6 {
 .homepage_wrap .custlogosrow ul li img {
     width: auto;
     height: 120px;
+    filter: grayscale(100%);
+    filter: gray;
+    transition: all ease-in-out .3s;
+}
+.custlogosrow ul li:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
 }
 .homepage_wrap .custtestmonial {
     width: 100%;
