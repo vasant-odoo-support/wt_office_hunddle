@@ -2359,3 +2359,20 @@ opacity:0
 .homepage_wrap .virtualstaff img {
     width: 546px;
 }
+
+.homepage_wrap .customBtn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 70px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #04658f;
+}
+.homepage_wrap .customBtn:hover , .homepage_wrap .customBtn:focus {
+    background: #db974a;
+    color: #fff;
+}
