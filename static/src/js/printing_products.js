@@ -36,29 +36,61 @@ odoo.define('wt_office_hunddle.printing_products', function (require) {
 	publicWidget.registry.PrintingProductsNew = publicWidget.Widget.extend({
 	    selector: '#printing_products_new',
 	    start: function () {
-	    	console.log("============ ")
 	    	$('#owlcarousel2').owlCarousel({
             loop: true,
-            center: true,
-            items: 3,
-            margin: 30,
-            autoplay: true,
-            dots:true,
-            nav:false,
-            autoplayTimeout: 1500,
-            smartSpeed: 350,
-            responsive: {
-              0: {
-                items: 1
-              },
-              768: {
-                items: 2
-              },
-              1170: {
-                items: 3
-              }
-            }
-          });
+			margin: 10,
+			responsiveClass: true,
+		    autoplay:true,
+		    autoplayTimeout:2000,
+		    autoplayHoverPause:true,
+			responsive: {
+			  0: {
+				items: 1,
+				nav: true
+			  },
+			  600: {
+				items: 1,
+				nav: true
+			  },
+			  1000: {
+				items: 1,
+				nav: true,
+				loop: true,
+				margin: 0
+			  }
+			}
+		  });
+	      return this._super.apply(this, arguments);
+	    }
+	});
+
+	publicWidget.registry.PrintingProductsNew = publicWidget.Widget.extend({
+	    selector: '.homepage_wrap',
+	    start: function () {
+	    	$('#owlcarousel2').owlCarousel({
+            loop: true,
+			margin: 10,
+			responsiveClass: true,
+		    autoplay:true,
+		    autoplayTimeout:2000,
+		    autoplayHoverPause:true,
+			responsive: {
+			  0: {
+				items: 1,
+				nav: true
+			  },
+			  600: {
+				items: 1,
+				nav: true
+			  },
+			  1000: {
+				items: 1,
+				nav: true,
+				loop: true,
+				margin: 0
+			  }
+			}
+		  });
 	      return this._super.apply(this, arguments);
 	    }
 	});

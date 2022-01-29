@@ -289,6 +289,59 @@
     <template id="printing_product_officehuddle_template_new" name="Printing Products">
         <t t-call="website.layout">
           <div class="printing_product_new_wrap" id="printing_products_new">
+
+            <!-- Printing product slider -->
+
+            <div class="printslilder">
+              <div class="owl-carousel" id="owlcarousel2">
+                <div class="item" style="background: url(/wt_office_hunddle/static/src/printing/tshirt.jpeg);">
+                  <div class="printslildermain">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h1>Tshirt</h1>
+                          <h4>Engage Consumers, exiting customers <br/>
+                            and potential buyers in ways that traditional<br/>
+                            marketing can't. 
+                            Eye-catching tees spark<br/>
+                            conversation, spreading your brand's <br/>
+                            reach in an organic and totally un-salesy way.</h4>
+                          <a href="#about" class="customBtn">Get Started</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" style="background: url(/wt_office_hunddle/static/src/printing/bussiness-card.jpeg);">
+                  <div class="printslildermain">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h1>Business <br/>
+                            <span>Card</span></h1>
+                          <h4>Cover bigger responsibilities,<br/>
+                            grab more opportunities.</h4>
+                          <a href="#about" class="customBtn">Get Started</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" style="background: url(/wt_office_hunddle/static/src/printing/flyer1.jpeg);">
+                  <div class="printslildermain">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h1>Flyer <br/></h1>
+                          <h4>Cover bigger responsibilities,<br/>
+                            grab more opportunities.</h4>
+                          <a href="#about" class="customBtn">Get Started</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End printing product slider -->
             <section class="pickfromservices text-center custproductSec">
               <div class="container">
                 <div class="row">

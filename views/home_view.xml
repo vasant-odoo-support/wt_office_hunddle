@@ -11,20 +11,91 @@
     <t t-call="web.login_layout"> -->
       <div id="wrap_homepage" class="homepage_wrap">
 
-        <!-- ======= Hero Section ======= -->
-        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-          <div class="container text-center text-md-left" data-aos="fade-up">
-            <div class="heroMain">
-              <h1>RELIABLE BUSINESS <br/>
-                GROWTH SOLUTIONS</h1>
-              <p>With over 30 years of experience, we provide small businesses with reliable business growth
-                solutions from design and print to digital marketing, to lead generation and strategy.
-                We are your business solution provider that encompasses the values and services that
-                will enable your company to advance effectively and efficiently.</p>
-              <a href="/how-it-works" class="btn-get-started scrollto">Let’s Work Together</a> </div>
+        <div class="custhomeslider">
+          <div class="owl-carousel" id="owlcarousel2">
+            <div class="item">
+              <div class="d-flex flex-column justify-content-center homesldr custhomeslider1" style="background: url(/wt_office_hunddle/static/src/home/images/banner2.jpg);">
+                <div class="container text-md-left" data-aos="fade-up">
+                  <div class="custhomeslider1main">
+                    <h2>GET THE HELP YOU<br/>
+                      NEED WITH<br/>
+                      <span>VIRTUAL STAFFING</span></h2>
+                    <h4>Cover bigger responsibilities,<br/>
+                      grab more opportunities.</h4>
+                    <a href="#" class="customBtn">Get Started</a> </div>
+                </div>
+                <div class="virtualstaff"><img src="/wt_office_hunddle/static/src/home/images/virtualstaf.png"/></div>
+              </div>
+            </div>
+            <div class="item">
+            <div class="d-flex flex-column justify-content-center homesldr custhomeslider2" style="background: url(/wt_office_hunddle/static/src/home/images/slider2.jpg);">
+              <div class="container text-md-left" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="custhomeslider2main">
+                      <h2>WE ARE OFFERING <br/>WEB DEVELOPMENT<br/> INCLUDING ERP <br/>CUSTOMIZATION. </h2>
+                      <h4>NOT JUST A WEBSITE BUILDER... <br/>I WE OFFER A BUSINESS IN A BOX. </h4>
+                      <a href="#" class="customBtn">Let's Get Started</a> </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="slider2Img"><img src="/wt_office_hunddle/static/src/home/images/slider2Img.png"/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-        <!-- End Hero -->
+          <div class="item">
+            <div class="d-flex flex-column justify-content-center homesldr custhomeslider3" style="background: url(/wt_office_hunddle/static/src/home/images/slider3.jpg);">
+              <div class="container text-md-left" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="custhomeslider3main">
+                      <h3>WORLD CLASS 
+                      <span>ENTREPRENUERIAL TRAINING </span></h3>
+                      <h2>BOOST THE GROWTH OF YOUR BUSINESS THROUGH ENHANCING YOUR SKILLS. </h2>
+                      <a href="#" class="customBtn">Let's Get Started</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="d-flex flex-column justify-content-center homesldr custhomeslider4" style="background: url(/wt_office_hunddle/static/src/home/images/slider4.jpg);">
+              <div class="container text-md-left" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="custhomeslider4main">
+                      <h2>Grow Your Revenue
+                      <span>49% Faster </span></h2>
+                      <h4> By Using Video and Graphics <br/>in Your marketing Campaigns</h4>
+                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                        <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="d-flex flex-column justify-content-center homesldr custhomeslider5" style="background: url(/wt_office_hunddle/static/src/home/images/slider5.jpg);">
+              <div class="container text-md-left" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="custhomeslider5main">
+                      <h2>Getting Reliable<br/>  help Has <br/> Never Been <br/>Easier.</h2>
+                      <div class="slier5log"><img src="/wt_office_hunddle/static/src/home/images/slider5logo.png" /></div>
+                      <h4>  has world-Class Graphic Designer, Video-Editor, and Web Developers all
+                        dediceted to you.</h4>
+                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                        <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div> 
 
         <main id="main"> 
           <!-- ======= We have cracked  Section ======= -->
