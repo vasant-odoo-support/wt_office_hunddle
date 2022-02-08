@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="how_it_works_tmpl" name="How it works?">
+		<t t-call="website.layout">
+			<div id="wrap" class="how_it_works_cls how_it_works_dashedline">
+				<div class="custhowitworkbnr">
+				  <div class="container">
+				    <div class="row">
+				      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				        <div class="">
+				          <h1>the <span>game plan</span><br/>
+				            that winning <br/>
+				            businesses<br/>
+				            follow</h1>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-xl-12">
+				        <p>In your journey of entrepreneurship,  there will be times that it's just gonna be too much. As 
+				          you work it out, workload just seems to drown you even more. Eventually, you won't even know
+				          where to begin. You made the right choice to be here because you are 4 steps away from
+				          winning in business. The Game Plan is a simplified framework that allows you to systematize 
+				          and tune up core aspects of your company. At the end of the program, you'll be moving your 
+				          best foot forward in business everytime, at all times. </p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- Section 1 Start-->
+				<section class="thesevensuc">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-xl-12">
+				            <h2>the seven <span>successs systems</span></h2>
+				            <div class="thesevensucmainCont">
+				              <div class="leadershipDeverespo"><img src="/wt_office_hunddle/static/src/how_it_works/images/leadershipdevRespo.png" /></div>
+				              <div class="leadershipDeve">
+				                <img src="/wt_office_hunddle/static/src/how_it_works/images/leadershipdev.png" />
+				              </div>
+				              <div class="theseventxtbox theseventxtbox1">
+				                  <h3>Financial</h3>
+				                  <p>Boost your performance despite limited resources through forming healthy financial behavior and gaining strong credit file.</p>
+				              </div>
+				              <div class="theseventxtbox theseventxtbox2">
+				                  <h3>Marketing</h3>
+				                  <p>Increase your pie of the market by aligning proven marketing tactics and refined business branding.</p>
+				              </div>
+				              <div class="theseventxtbox theseventxtbox3">
+				                <h3>Leadership Development</h3>
+				                <p>Strengthen your foundation by starting at the root. Sharpening the core functions of your
+				                  business gives you good visual of your overall performance.  </p>
+				            </div>
+				            <div class="theseventxtbox theseventxtbox4">
+				              <h3>Team Development</h3>
+				              <p>Grab more business opportunities and avoid delays even you are not at work by building your dream team.</p>
+				          </div>
+				          <div class="theseventxtbox theseventxtbox5">
+				              <h3>Lead Generation</h3>
+				              <p>Create unlimited pool of
+				                customers through lead mining with an optimized content at the right place and at the right time.</p>
+				          </div>
+				          <div class="theseventxtbox theseventxtbox6">
+				              <h3>Lead Conversion</h3>
+				              <p>Design an approach to turn your potential clients into a financial source and improve your sales revenue.</p>
+				          </div>
+				          <div class="theseventxtbox theseventxtbox7">
+				            <h3>Lead Generation</h3>
+				            <p>Customer Fulfillment Engineer a fluent delivery flow that completes and satisfies your customer's desires which build client trust and loyalty. </p>
+				          </div>
+				            </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+				<!-- Section 1 END -->
+
+				<!-- Section 2 Start-->
+				<section class="stageSec" style="background: url(/wt_office_hunddle/static/src/how_it_works/images/stageSec1.jpg);">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12">
+				          <div class="stageSecmais">
+				            <div class="stepnumber bounce">
+				              <img src="/wt_office_hunddle/static/src/how_it_works/images/numberroundImg.png" />
+				            </div>
+				            <h2>stage one</h2>
+				            <h4>Locker Room</h4>
+				            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+				              <a href="#" class="custDownloadbtn">Download The Success Roadmap</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+				<!-- Section 2 END -->
+
+				<!-- Section 3 Start-->
+				<section class="stageSec stageSec2" style="background: url(/wt_office_hunddle/static/src/how_it_works/images/stageSec2.jpg);">
+				    <div class="container">
+				      <div class="row d-flex justify-content-end">
+				        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12">
+				          <div class="stageSecmais">
+				            <div class="stepnumber bounce">
+				              <img src="/wt_office_hunddle/static/src/how_it_works/images/numberroundImg2.png" />
+				            </div>
+				            <h2>stage one</h2>
+				            <h4>Locker Room</h4>
+				            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+				              <a href="#" class="custDownloadbtn">Download The Success Roadmap</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+				<!-- Section 3 END -->
+
+				<!-- Section 4 Start-->
+				<section class="stageSec" style="background: url(/wt_office_hunddle/static/src/how_it_works/images/stageSec3.jpg);">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12">
+				          <div class="stageSecmais">
+				            <div class="stepnumber bounce">
+				              <img src="/wt_office_hunddle/static/src/how_it_works/images/numberroundImg3.png" />
+				            </div>
+				            <h2>stage one</h2>
+				            <h4>Locker Room</h4>
+				            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+				              <a href="#" class="custDownloadbtn">Download The Success Roadmap</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+				<!-- Section 4 END -->
+
+				<!-- Section 6 Start-->
+				<section class="yourfirstSec">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+				          <div class="yourfirstSecLft">
+				            <img src="/wt_office_hunddle/static/src/how_it_works/images/yourfirstSecLft.jpg" />
+				          </div>
+				        </div>
+				        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+				          <div class="yourfirstSecRt">
+				            <div class="yourfirstSecRthead"><h2>your first session is on us!</h2></div>
+				            <h4>Take your best foot forward</h4>
+				            <p>No more delays; start working on your business with a clearer path! Our whole team is ready to hear you out and we are thrilled to present the approach that will change your game play. Don't let yourself miss another opportunity to score. Take on this first step to unleash the absolute solution to your business problem and find  powerful strategies towards financial freedom.</p>
+				            <a href="#" class="custDownloadbtn">Get Started</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+				<!-- Section 6 END -->
+
+				<!-- Section 7 Start-->
+				<!-- Start Testimonials Section -->
+	            <div class="homepage_wrap">
+	                <section class="testimonials section-bg">
+	                  <div class="container">
+	                    <h2>OUR BUSINESS <br/>
+	                      OWNERS <span>TRUST US</span></h2>
+	                      <div class="owl-carousel" id="owlcarousel1">
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+	                            <h3>Cortez Springer,</h3>
+	                            <h4>Wealth Strategist</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                        </div>
+
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+	                                <h3>Lemzel Johnson,</h3>
+	                                <h4>Motivational Speaker</h4>
+	                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                              </div>
+	                      </div>
+	                   <div class="item">
+	                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+	                            <h3>Oginga Carr,</h3>
+	                            <h4>High Performance Coach</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                   </div>
+	                   <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+	                            <h3>Cortez Springer,</h3>
+	                            <h4>Wealth Strategist</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                        </div>
+
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+	                                <h3>Lemzel Johnson,</h3>
+	                                <h4>Motivational Speaker</h4>
+	                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                              </div>
+	                      </div>
+	                   <div class="item">
+	                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+	                            <h3>Oginga Carr,</h3>
+	                            <h4>High Performance Coach</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                   </div>
+	                </div>
+	                </div>
+	              </section>
+	            </div>
+	            <!-- End Testimonials Section -->
+				<!-- Section 7 END -->
+
+				<!-- Section 8 Start-->
+
+				<!-- Section 8 END -->
+
+			</div>
+		</t>
+	</template>
+</odoo>

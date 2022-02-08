@@ -1,0 +1,302 @@
+/*************** How it work  *******************/
+.how_it_works_cls .custhowitworkbnr {
+	width: 100%;
+	background: url(/wt_office_hunddle/static/src/how_it_works/images/howitworkbnr.jpg) top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 190px 0 150px 0 ;
+}
+.how_it_works_dashedline {
+	position: relative;
+}
+.how_it_works_dashedline:before {
+	content: "";
+	width: 100%;
+	height: 4980px;
+	top: 250px;
+	background: url(/wt_office_hunddle/static/src/how_it_works/images/dashedline.png);
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+}
+.how_it_works_cls .custhowitworkbnr .container , 
+.how_it_works_cls .thesevensuc .container ,
+.how_it_works_cls .stageSec .container ,
+.how_it_works_cls .yourfirstSec .container {
+position: relative;
+z-index: 4;
+}
+.how_it_works_cls .custhowitworkbnr h1 {
+	margin: 0 0 50px 0;
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 70px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: right;
+}
+.how_it_works_cls .custhowitworkbnr h1 span {
+	color: #db974a;
+}
+.how_it_works_cls .custhowitworkbnr p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+	text-align: center;
+	padding: 0 20%;
+}
+.how_it_works_cls .thesevensuc {
+	background: #000;
+	width: 100%;
+	display: inline-block;
+	padding: 40px 0;
+	position: relative;
+}
+.how_it_works_cls .thesevensuc h2 {
+	text-align: center;
+	font-size: 62px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 62px;
+	text-transform: uppercase;
+}
+.how_it_works_cls .thesevensuc h2 span {
+display: block;
+color: #db974a;
+}
+
+.how_it_works_cls .thesevensucmainCont {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.how_it_works_cls .theseventxtbox {
+	max-width: 300px;
+	width: 100%;
+	text-align: left;
+	position: absolute;
+}
+.how_it_works_cls .theseventxtbox h3 {
+	font-size:20px;
+	color: #fff;
+	font-weight: 600;
+}
+.how_it_works_cls .theseventxtbox p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+}
+.how_it_works_cls .leadershipDeve {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin:  150px 0 150px 0 ;
+}
+.how_it_works_cls .leadershipDeverespo {
+	display: none;
+}
+.how_it_works_cls .theseventxtbox1 {
+	top: 190px;
+	left: 155px;
+}
+.how_it_works_cls .theseventxtbox2 {
+	top: 480px;
+	left: 110px;
+}
+.how_it_works_cls .theseventxtbox3 {
+	top: 710px;
+	left: 190px;
+}
+.how_it_works_cls .theseventxtbox4 {
+	top: 100px;
+	right: 300px;
+	left: auto;
+}
+
+.how_it_works_cls .theseventxtbox5 {
+	top: 320px;
+	right: 110px;
+	left: auto;
+}
+
+.how_it_works_cls .theseventxtbox6 {
+	top: 560px;
+	right: 140px;
+	left: auto;
+}
+.how_it_works_cls .theseventxtbox7 {
+	top: 750px;
+	right: 350px;
+	left: auto;
+}
+.how_it_works_cls .stageSec {
+	width: 100%;
+	padding: 250px 0;
+	display: inline-block;
+	background-size: cover !important;
+	background-position: center center !important;
+	position: relative;
+	background-attachment: fixed !important;
+}
+.how_it_works_cls .stageSecmais {
+	width: 100%;
+	float: left;
+	padding:0 0 0 180px;
+	position: relative;
+}
+.how_it_works_cls .stageSecmais h2 {
+	font-size: 62px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 62px;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.how_it_works_cls .stageSecmais p {
+	color: #fff;
+	line-height: 26px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+} 
+.how_it_works_cls .stepnumber {
+	position: absolute;
+	left: 0;
+	top: -300px;
+}
+
+.how_it_works_cls .bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-30px);
+	}
+	60% {
+	  transform: translateY(-15px);
+	}
+  }
+
+.how_it_works_cls .custDownloadbtn {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0px;
+	display: inline-block;
+	padding: 15px 40px;
+	border-radius: 30px;
+	transition: ease-in-out 0.3s;
+	color: #000;
+	background: #fcc585;
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-family: 'Poppins', sans-serif;
+}
+.how_it_works_cls .custDownloadbtn:hover {
+	background: #04658f;
+	color: #fff;
+}
+.how_it_works_cls .stageSecmais h4 {
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+	color: #fff;
+	margin:  10px 0 20px 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.how_it_works_cls .stageSec2 .stageSecmais {
+padding: 0 180px 0 0 ;
+text-align: right;
+}
+.how_it_works_cls .stageSec2 .stepnumber {
+	right: 0;
+	left: auto;
+}
+.how_it_works_cls .stageSec2 .custDownloadbtn {
+	background: #432e7d;
+	color: #fff;
+}
+.how_it_works_cls .stageSec2 .custDownloadbtn:hover {
+	background: #04658f;
+}
+
+
+
+
+.how_it_works_cls .yourfirstSec {
+	padding: 100px 0;
+}
+.how_it_works_cls .yourfirstSecLft {
+	width: 100%;
+	position: relative;
+}
+.how_it_works_cls .yourfirstSecLft:after {
+	content: "";
+	width: 150px;
+	height: 150px;
+	background: #fff;
+	border: 15px solid #fcc585;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	bottom: -70px;
+	right: -70px;
+	z-index: -1;
+	
+}
+.how_it_works_cls .yourfirstSecLft img {
+	width: 100%;
+}
+
+.how_it_works_cls .yourfirstSecRt {
+	width: 100%;
+	float: left;
+	padding:100px 0 0 20px;
+}
+.how_it_works_cls .yourfirstSecRthead {
+	background: #fcc585;
+	border-radius: 0 30px 30px 0;
+	padding: 20px;
+	left: -45px;
+	position: relative;
+	margin:  0 0 30px 0;
+}
+.how_it_works_cls .yourfirstSecRthead h2 {
+	margin: 0;
+	color: #000;
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-family: 'Poppins', sans-serif;
+}
+.how_it_works_cls .yourfirstSecRt h4 {
+	font-weight: 600;
+	font-style: italic;
+	color: #000;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+.how_it_works_cls .yourfirstSecRt p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+}
+.how_it_works_cls .yourfirstSecRt .custDownloadbtn {
+	padding: 15px 80px;
+	margin-left: 100px;
+}
+/*************** End How it work  *******************/

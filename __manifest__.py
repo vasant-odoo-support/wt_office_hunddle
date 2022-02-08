@@ -52,6 +52,7 @@
         'views/our_team_view.xml',
         'views/job_view.xml',
         'views/website_development_view.xml',
+        'views/how_it_works_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',
