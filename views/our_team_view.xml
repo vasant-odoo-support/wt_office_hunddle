@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<template id="our_team_tepmplate" name="Our Team">
+<t t-call="website.layout">
+<div id="wrap" class="our_team_cl">
+
+<div class="teambnr d-flex flex-column justify-content-center align-items-center text-center">
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-xl-12 col-lg-8 col-md-12 col-sm-12 col-12">
+        <div class="bnrmainCont">
+          <h1>Let's make a difference together.</h1>
+          <p>Improving the success rate of small businesses is what we do.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="ourcoreSec">
+  <div class="container">
+    <div class="row justify-content-xl-center justify-content-lg-center text-center">
+      <div class="col-xl-10">
+        <h2>OUR CORE VALUES IS WHAT DRIVES US</h2>
+        <p>Our core values are the components of our company's backbone. We're dedicated to adhere to them individually, as a team, and throughout our partnership with you.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="ourcoreSecLft"><img src="/wt_office_hunddle/static/src/our-team/ourcoreSecLft.jpg" /></div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="ourcoreRt">
+          <h3>Our core values are the components of our company's backbone. We're dedicated to adhere to them individually, as a team, and throughout our partnership with you.</h3>
+          <h3> Go above and beyond </h3>          
+          <p>It has always been our duty to elevate our methodologies and techniques in order to provide better quality of service and better solution each time. Part pf cracking the code is to find ways on how to go above and beyond despite the endeavor we are facing as a team. Each challenge is an opportunity to rise above our limitations and we in Office Huddle are always prepared to exceed what is expected of us. We ensure to perform with the best of our abilities in this as one of our ways to spark inspiration to others. This is the legacy we are building that we are hoping to be valued so mych by the people you continue to do what we do. </p>
+          <a href="#" class="customBtn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="plrxSec"></section>
+<section class=" text-center teambox">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2> Our Core Values </h2>
+        <h3>"This Is Our Legacy"</h3>
+      </div>
+    </div>
+    <div class="row justify-content-xl-center justify-content-lg-center">
+      <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
+        <div class="row justify-content-xl-center justify-content-lg-center">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="teamflipbox">
+              <div class="teamflipboxinner">
+                <div class="teamflipboxfront"> <img src="/wt_office_hunddle/static/src/our-team/teamiconadministrator.png"/>
+                  <h4>Trust</h4>
+                </div>
+                <div class="teamflipboxback">
+                  <p> Represents Trust - Trust in God and in each other. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="teamflipbox">
+              <div class="teamflipboxinner">
+                <div class="teamflipboxfront"> <img src="/wt_office_hunddle/static/src/our-team/teammegaphone.png"/>
+                  <h4>Harmony </h4>
+                </div>
+                <div class="teamflipboxback">
+                  <p>The Respresents Harmony - The alignment of our behavior, skills and experiences is our priority in order to achieve a healthy workplace and
+                    successfull partnership. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="teamflipbox">
+              <div class="teamflipboxinner">
+                <div class="teamflipboxfront"> <img src="/wt_office_hunddle/static/src/our-team/teamlist.png"/>
+                  <h4>Integrity </h4>
+                </div>
+                <div class="teamflipboxback">
+                  <p>The Represents Integrity - manage our operations, finances and responsibilities with honesty,effeciency and realibity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="teamflipbox">
+              <div class="teamflipboxinner">
+                <div class="teamflipboxfront"> <img src="/wt_office_hunddle/static/src/our-team/teamiconbook.png"/>
+                  <h4>Service </h4>
+                </div>
+                <div class="teamflipboxback">
+                  <p>The Respresents Service - Our deepest desire is to deliver what is promised to our cystomers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="teamflipbox">
+              <div class="teamflipboxinner">
+                <div class="teamflipboxfront"> <img src="/wt_office_hunddle/static/src/our-team/teaminnovationsicon.png"/>
+                  <h4>Innovations </h4>
+                </div>
+                <div class="teamflipboxback">
+                  <p>The Represents Innovations - We seek the answers to the questions that pleague our customer segment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="teamflipbox">
+              <div class="teamflipboxinner">
+                <div class="teamflipboxfront"> <img src="/wt_office_hunddle/static/src/our-team/teamiconsale.png"/>
+                  <h4>Legacy </h4>
+                </div>
+                <div class="teamflipboxback">
+                  <p>Represents Legacy - Our hope is to do our jobs so well that generation we want to continue to do what we do.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-lg-center">
+            <div class="col-xl-12">
+              <a href="/jobs-new" class="customBtn">Join Our Team</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</t>
+</template>
+</odoo>

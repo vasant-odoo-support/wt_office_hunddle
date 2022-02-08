@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="website_development_tmpl" name="Website Development">
+		<t t-call="website.layout">
+			<div id="wrap" class="website_dev_cls homepage_wrap">
+				<div class="custhomeslider">
+				  <div class="owl-carousel" id="owlcarousel2">
+				    <div class="item">
+				      <div class="d-flex flex-column justify-content-center homesldr webdevelopmentsldr" style="background: url(/wt_office_hunddle/static/src/website_development/images/webdevBnr2.jpg);">
+				        <div class="container text-md-left" data-aos="fade-up">
+				          <div class="custhomeslider1main">
+				            <h2>Custom Web <br/>design and <br/><span> development</span></h2>
+				            <p> Development of an interactive, engaging, and adaptable website is <br/>vital to develop effective brands in today's digital<br/>  environment underline-icon </p>
+				            <div class="custline"><img src="/wt_office_hunddle/static/src/website_development/images/line.svg" /></div>
+				            <p>In order to provide you with a purposeful website, our <br/>UI/UX professionals take the time to fully understand your brand's demands.</p>
+				            <a href="#" class="customBtn">Get Started</a> </div>
+				        </div>
+				      </div>
+				    </div>
+
+				    <div class="item">
+				      <div class="d-flex flex-column justify-content-center homesldr webdevelopmentsldr" style="background: url(/wt_office_hunddle/static/src/website_development/images/webdevBnr.jpg);">
+				        <div class="container text-md-left" data-aos="fade-up">
+				          <div class="custhomeslider1main">
+				            <h2>Custom Web <br/>design and <br/><span> development</span></h2>
+				            <p> Development of an interactive, engaging, and adaptable website is <br/>vital to develop effective brands in today's digital<br/>  environment underline-icon </p>
+				            <div class="custline"><img src="/wt_office_hunddle/static/src/website_development/images/line.svg" /></div>
+				            <p>In order to provide you with a purposeful website, our <br/>UI/UX professionals take the time to fully understand your brand's demands.</p>
+				            <a href="#" class="customBtn">Get Started</a> </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- Section 1 -->
+				<section class="approachSec">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				          <div class="laptop"><img src="/wt_office_hunddle/static/src/website_development/images/laptop.png" /></div>
+				        </div>
+					      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+					          <div class="approachRt">
+					            <h2>Our Approach </h2>
+					            <p>Website creation services from 'The Web Design Corp' are the result of joint efforts. We also provide you with special information on how to create user-friendly, engaging and secure websites. Aside from that, our front-end and back-end developers know how to respond to your web development request in a timely manner. Improve online traffic, lead generation, and revenue by creating data-driven websites
+					              Develop optimized and data-backed websites to increase web traffic, lead generation and </p>
+					              <a href="#" class="customBtn">Get Started</a>
+					          </div>
+					      </div>
+					    </div>
+					</div>
+				</section>
+
+				<!-- Section 2 -->
+				<section class="multifacetedSec">
+				    <div class="container">
+				      <div class="row justify-content-md-center">
+				        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center multifacetedhead">
+				          <h2>Multifaceted Custom Development Services</h2>
+				          <p>‘The Web Design Corp’ allows a range of custom web development services. Interestingly, our professional programmers work with you to deliver customized and meaningful web development services that help boost your business.</p>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				            <div class="multifacetedBox multifacetedLft">
+				              <div class="multifacetedBoxIcon">
+				                <i class="fa fa-wordpress" aria-hidden="true"></i>
+				              </div>
+				              <div class="multifacetedBoxRt">
+				                <h3><a href="#">WordPress Development</a></h3>
+				                <p>We foster adaptable substance the executives’ arrangements that convey a more noteworthy degree of usefulness contrasted with customary sites.</p>
+				              </div>
+				            </div>
+				            <div class="multifacetedBox multifacetedLft">
+				              <div class="multifacetedBoxIcon">
+				                <i class="fa fa-code" aria-hidden="true"></i>
+				              </div>
+				              <div class="multifacetedBoxRt">
+				                <h3><a href="#">PHP Development</a></h3>
+				                <p>At The Web Design Corp, discover demonstrated and proficient PHP advancement services fulfilling all your business needs. We have a pool of first-class PHP engineers to assist you with setting aside time and cash!</p>
+				              </div>
+				            </div>
+				            <div class="multifacetedBox multifacetedLft">
+				              <div class="multifacetedBoxIcon">
+				                <i class="fa fa-eye" aria-hidden="true"></i>
+				              </div>
+				              <div class="multifacetedBoxRt">
+				                <h3><a href="#">Frontend Development </a></h3>
+				                <p>First rate front-end WEB engineering and configuration services by our industry experienced designers. We offer viable arrangements that satisfy all your business needs.</p>
+				              </div>
+				            </div>
+				            <div class="multifacetedBox multifacetedLft">
+				              <div class="multifacetedBoxIcon">
+				                <i class="fa fa-cogs" aria-hidden="true"></i>
+				              </div>
+				              <div class="multifacetedBoxRt">
+				                <h3><a href="#">Backend Web Development </a></h3>
+				                <p>The Web Design Corp goes about as a development accomplice for each little, medium, and huge business attempting to enter the digital domain. We execute with center and relentless reason around significant, quantifiable outcomes with our back-end improvement services.</p>
+				              </div>
+				            </div>
+				        </div>
+				        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				            <div class="custmobileimg"><img src="/wt_office_hunddle/static/src/website_development/images/mobile.png" /></div>
+				        </div>
+				        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				          <div class="multifacetedBox">
+				            <div class="multifacetedBoxIcon">
+				              <i class="fa fa-eye" aria-hidden="true"></i>
+				            </div>
+				            <div class="multifacetedBoxRt">
+				              <h3><a href="#">Open Source Development</a></h3>
+				              <p>The Web Design Corp can convey publicly released applications and arrangements altered to meet the particular requirements of your business.</p>
+				            </div>
+				          </div>
+				          <div class="multifacetedBox">
+				            <div class="multifacetedBoxIcon">
+				              <i class="fa fa-drupal" aria-hidden="true"></i>
+				            </div>
+				            <div class="multifacetedBoxRt">
+				              <h3><a href="#">Drupal Development </a></h3>
+				              <p>There are several ways you can get started with our top-notch Drupal development, you'll be able to expand your business's reach.</p>
+				            </div>
+				          </div>
+				          <div class="multifacetedBox">
+				            <div class="multifacetedBoxIcon">
+				              <i class="fa fa-object-group" aria-hidden="true"></i>
+				            </div>
+				            <div class="multifacetedBoxRt">
+				              <h3><a href="#">CMS Development </a></h3>
+				              <p>It is possible to choose from different content management systems when using our customized CMS solutions. Some of our services include CRUDS, banner ads/news/blog/articles and other content types that are user-friendly for our clients to use and manage.</p>
+				            </div>
+				          </div>
+				          <div class="multifacetedBox">
+				            <div class="multifacetedBoxIcon">
+				              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				            </div>
+				            <div class="multifacetedBoxRt">
+				              <h3><a href="#">Shopify Development</a></h3>
+				              <p>We foster adaptable substance the executives’ arrangements that convey a more noteworthy degree of usefulness contrasted with customary sites.</p>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+
+				<!-- Section 3 -->
+				<section class="custPortfolio">
+				    <div class="container">
+				      <div class="row">
+				          <div class="col-xl-12">
+				            <h2>Portfolio</h2>
+				            <div class="portfolioImg">
+				              <ul>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                  
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				                <li>
+				                  <a href="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				                    <img  src="/wt_office_hunddle/static/src/website_development/images/lightbox/design.jpg" alt=""/>
+				                  </a>
+				                  <h3><a href="#">Project Name</a></h3>
+				                </li>
+				              </ul>
+				            </div>
+				          </div>
+				      </div>
+				      
+				    </div>
+				  </section>
+
+				  <!-- Section 4 -->
+
+				  <section class="pickfromservices text-center custspecial">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col">
+				          <h2>SPECIALTIES</h2>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				             </div>
+				            <h4>Responsive <br/>Design</h4>
+				              <p>
+				                Responsive websites are workable across multiple platforms to increase the reach of your brand.
+				                </p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				            </div>
+				            <h4>Conversion-driven <br/>Design</h4>
+				              <p>Our web applications are fabricated in a way that promotes lead conversion.</p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				             </div>
+				            <h4>Search Engine  <br/>Optimized</h4>
+				              <p>The Web Design Corp professionals give our partners optimized and keyword loaded web applications.</p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				              
+				            </div>
+				            <h4>Safety and  <br/>security</h4>
+				              <p>Our team fashions web applications that are secured with SSL certification.</p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				             </div>
+				            <h4>Mobile  <br/>Ready</h4>
+				              <p>It is advantageous for our partners to build applications that are also mobile-ready and convertible.</p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				            </div>
+				            <h4>User  <br/>Experience</h4>
+				              <p>Without proper induction of efficacious user experience, no web application is worthy for your brand.</p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				             </div>
+				            <h4>Speed </h4>
+				              <p>Google algorithms pick up those web applications that are easily loadable and speedy. Fortunately, our web developers have abundant skills to accelerate the web speed.
+				              </p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="pickfromserBox">
+				            <div class="pickfromserBoxicon">
+				            </div>
+				            <h4>Safety and  <br/>security</h4>
+				              <p>Our team fashions web applications that are secured with SSL certification.</p>
+				            <a href="#">Hire Us</a>
+				           </div>
+				        </div>
+				      </div>
+				    </div>
+				  </section> 
+
+				<!-- Section 5 -->
+				<section class="pickfromservices text-center custspecial custIndustries">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col">
+				          <h2>Industries We Serve </h2>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/retail-and-e-commerce.png"/>
+				                <h4>Retail and E-Commerce</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>We understand what makes an e-commerce strategy truly effective.</p>
+				              </div>
+				            </div>
+				          </div>
+				          
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/medical.png"/>
+				                <h4>Medical </h4>
+				              </div>
+				              <div class="flipboxback">
+				                  <p>The medical industry has a lot of nuances surrounding privacy and confidentiality. The Web Design Corp has experience successfully navigating these.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/legal.png"/>
+				                <h4>Legal</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  The care and ethics you take with your business should flow into your online strategy. Our team understand both.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/government.png"/>
+				                <h4>Government</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  We create proposals and respond to tenders in a way that enables government departments to understand their return on investment.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/utilities.png"/>
+				                <h4>Utilities</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  Working with brands, such as Water Corporation, means we understand the digital marketing needs of large-scale utilities.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/real-estate.png"/>
+				                <h4>Real Estate</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  Real estate isn’t the only industry all about location, location, location. Be found when it matters most.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/technology.png"/>
+				                <h4>Technology</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  Being an innovative technology company means your needs are constantly changing. Our team are experienced in creating strategies that adapt and evolve with you.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/finance.png"/>
+				                <h4>Finance</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  We know you like numbers. We do too. In a heavily contested digital marketplace, The Web Design Corp can create truly optimised campaigns that deliver on the business metrics that matter.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				      <div class="row justify-content-xl-center justify-content-lg-center">
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/beauty.png"/>
+				                <h4>Beauty</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  Beauty is no longer confined to magazines or in-stores. Understanding where your customers are spending their time and money online is vital.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+				          <div class="flipbox">
+				            <div class="flipboxinner">
+				              <div class="flipboxfront">
+				                <img src="/wt_office_hunddle/static/src/website_development/images/education.png"/>
+				                <h4>Education</h4>
+				              </div>
+				              <div class="flipboxback">
+				                <p>
+				                  We specialise in putting education providers front and centre so they attract the right pupils and parents.
+				                  </p>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        
+				      </div>
+				    </div>
+				  </section>
+
+				<!-- ERP -->
+
+
+				<!-- ERP END -->
+				<!-- Start Testimonials Section -->
+	            <div class="homepage_wrap">
+	                <section class="testimonials section-bg">
+	                  <div class="container">
+	                    <h2>OUR BUSINESS <br/>
+	                      OWNERS <span>TRUST US</span></h2>
+	                      <div class="owl-carousel" id="owlcarousel1">
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+	                            <h3>Cortez Springer,</h3>
+	                            <h4>Wealth Strategist</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                        </div>
+
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+	                                <h3>Lemzel Johnson,</h3>
+	                                <h4>Motivational Speaker</h4>
+	                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                              </div>
+	                      </div>
+	                   <div class="item">
+	                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+	                            <h3>Oginga Carr,</h3>
+	                            <h4>High Performance Coach</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                   </div>
+	                   <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+	                            <h3>Cortez Springer,</h3>
+	                            <h4>Wealth Strategist</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                        </div>
+
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+	                                <h3>Lemzel Johnson,</h3>
+	                                <h4>Motivational Speaker</h4>
+	                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                              </div>
+	                      </div>
+	                   <div class="item">
+	                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+	                            <h3>Oginga Carr,</h3>
+	                            <h4>High Performance Coach</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                   </div>
+	                </div>
+	                </div>
+	              </section>
+	            </div>
+	            <!-- End Testimonials Section -->
+	            <!-- Section 6 -->
+	            <section class="custseeOurpack">
+				  <div class="container">
+				    <div class="row">
+				      <div class="col-xl-12">
+				        <h2> See Our Packages </h2>
+				      </div>
+				    </div>
+				    
+				    <div class="row justify-content-xl-center justify-content-lg-center">
+				      <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12">
+				        <div class="row">
+				          <div  class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+				            <div class="custseeOurpackbox">
+				              <div class="custseeOurpacUp">
+				                <h3><span>Startup Website</span></h3>
+				                <div class="custprice">$245</div>
+				                <p>Suitable for potential super-startups and brand revamps for companies.</p>
+				              </div>
+				              <ul class="custseeOurkboxList">
+				                <li><i class="fa fa-check-circle"></i>5 Stock Photos</li>
+				                <li><i class="fa fa-check-circle"></i>5 Page Website</li>
+				                <li><i class="fa fa-check-circle"></i>3 Banner Design</li>
+				                <li><i class="fa fa-check-circle"></i>1 jQuery Slider Banner</li>
+				                <li><i class="fa fa-check-circle"></i>FREE Google Friendly Sitemap</li> 
+				                <li><i class="fa fa-check-circle"></i>Complete W3C Certified HTML</li>
+				                <li><i class="fa fa-check-circle"></i>Facebook Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>Twitter Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>YouTube Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>100% Satisfaction Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Unique Design Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Money Back Guarantee *</li>
+				                <li><i class="fa fa-check-circle"></i>Mobile Responsive will be Additional $99*</li>
+				                <li><i class="fa fa-check-circle"></i>CMS will be Additional $149*</li>
+				            </ul>
+				            <div class="custseeOurpacftr">
+				                <a href="#" class="custombtn">Order Now</a>
+				                <h4>Call: <a href="tel:(855)-266-6599">(855) 266-6599</a></h4>
+				            </div>
+				            </div>
+				          </div>
+				          <div  class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+				            <div class="custseeOurpackbox blue">
+				              <div class="custseeOurpacUp">
+				                <h3><span>Startup Website</span></h3>
+				                <div class="custprice">$245</div>
+				                <p>Suitable for potential super-startups and brand revamps for companies.</p>
+				              </div>
+				              <ul class="custseeOurkboxList">
+				                <li><i class="fa fa-check-circle"></i>5 Stock Photos</li>
+				                <li><i class="fa fa-check-circle"></i>5 Page Website</li>
+				                <li><i class="fa fa-check-circle"></i>3 Banner Design</li>
+				                <li><i class="fa fa-check-circle"></i>1 jQuery Slider Banner</li>
+				                <li><i class="fa fa-check-circle"></i>FREE Google Friendly Sitemap</li> 
+				                <li><i class="fa fa-check-circle"></i>Complete W3C Certified HTML</li>
+				                <li><i class="fa fa-check-circle"></i>Facebook Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>Twitter Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>YouTube Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>100% Satisfaction Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Unique Design Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Money Back Guarantee *</li>
+				                <li><i class="fa fa-check-circle"></i>Mobile Responsive will be Additional $99*</li>
+				                <li><i class="fa fa-check-circle"></i>CMS will be Additional $149*</li>
+				            </ul>
+				            <div class="custseeOurpacftr">
+				                <a href="#" class="custombtn">Order Now</a>
+				                <h4>Call: <a href="tel:(855)-266-6599">(855) 266-6599</a></h4>
+				            </div>
+				            </div>
+				          </div>
+				          <div  class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+				            <div class="custseeOurpackbox green">
+				              <div class="custseeOurpacUp">
+				                <h3><span>Startup Website</span></h3>
+				                <div class="custprice">$245</div>
+				                <p>Suitable for potential super-startups and brand revamps for companies.</p>
+				              </div>
+				              <ul class="custseeOurkboxList">
+				                <li><i class="fa fa-check-circle"></i>5 Stock Photos</li>
+				                <li><i class="fa fa-check-circle"></i>5 Page Website</li>
+				                <li><i class="fa fa-check-circle"></i>3 Banner Design</li>
+				                <li><i class="fa fa-check-circle"></i>1 jQuery Slider Banner</li>
+				                <li><i class="fa fa-check-circle"></i>FREE Google Friendly Sitemap</li> 
+				                <li><i class="fa fa-check-circle"></i>Complete W3C Certified HTML</li>
+				                <li><i class="fa fa-check-circle"></i>Facebook Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>Twitter Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>YouTube Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>100% Satisfaction Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Unique Design Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Money Back Guarantee *</li>
+				                <li><i class="fa fa-check-circle"></i>Mobile Responsive will be Additional $99*</li>
+				                <li><i class="fa fa-check-circle"></i>CMS will be Additional $149*</li>
+				            </ul>
+				            <div class="custseeOurpacftr">
+				                <a href="#" class="custombtn">Order Now</a>
+				                <h4>Call: <a href="tel:(855)-266-6599">(855) 266-6599</a></h4>
+				            </div>
+				            </div>
+				          </div>
+				          <div  class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+				            <div class="custseeOurpackbox purple">
+				              <div class="custseeOurpacUp">
+				                <h3><span>Startup Website</span></h3>
+				                <div class="custprice">$245</div>
+				                <p>Suitable for potential super-startups and brand revamps for companies.</p>
+				              </div>
+				              <ul class="custseeOurkboxList">
+				                <li><i class="fa fa-check-circle"></i>5 Stock Photos</li>
+				                <li><i class="fa fa-check-circle"></i>5 Page Website</li>
+				                <li><i class="fa fa-check-circle"></i>3 Banner Design</li>
+				                <li><i class="fa fa-check-circle"></i>1 jQuery Slider Banner</li>
+				                <li><i class="fa fa-check-circle"></i>FREE Google Friendly Sitemap</li> 
+				                <li><i class="fa fa-check-circle"></i>Complete W3C Certified HTML</li>
+				                <li><i class="fa fa-check-circle"></i>Facebook Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>Twitter Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>YouTube Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>100% Satisfaction Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Unique Design Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Money Back Guarantee *</li>
+				                <li><i class="fa fa-check-circle"></i>Mobile Responsive will be Additional $99*</li>
+				                <li><i class="fa fa-check-circle"></i>CMS will be Additional $149*</li>
+				            </ul>
+				            <div class="custseeOurpacftr">
+				                <a href="#" class="custombtn">Order Now</a>
+				                <h4>Call: <a href="tel:(855)-266-6599">(855) 266-6599</a></h4>
+				            </div>
+				            </div>
+				          </div>
+				          <div  class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+				            <div class="custseeOurpackbox orange">
+				              <div class="custseeOurpacUp">
+				                <h3><span>Startup Website</span></h3>
+				                <div class="custprice">$245</div>
+				                <p>Suitable for potential super-startups and brand revamps for companies.</p>
+				              </div>
+				              <ul class="custseeOurkboxList">
+				                <li><i class="fa fa-check-circle"></i>5 Stock Photos</li>
+				                <li><i class="fa fa-check-circle"></i>5 Page Website</li>
+				                <li><i class="fa fa-check-circle"></i>3 Banner Design</li>
+				                <li><i class="fa fa-check-circle"></i>1 jQuery Slider Banner</li>
+				                <li><i class="fa fa-check-circle"></i>FREE Google Friendly Sitemap</li> 
+				                <li><i class="fa fa-check-circle"></i>Complete W3C Certified HTML</li>
+				                <li><i class="fa fa-check-circle"></i>Facebook Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>Twitter Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>YouTube Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>100% Satisfaction Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Unique Design Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Money Back Guarantee *</li>
+				                <li><i class="fa fa-check-circle"></i>Mobile Responsive will be Additional $99*</li>
+				                <li><i class="fa fa-check-circle"></i>CMS will be Additional $149*</li>
+				            </ul>
+				            <div class="custseeOurpacftr">
+				                <a href="#" class="custombtn">Order Now</a>
+				                <h4>Call: <a href="tel:(855)-266-6599">(855) 266-6599</a></h4>
+				            </div>
+				            </div>
+				          </div>
+				          <div  class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+				            <div class="custseeOurpackbox darkblue">
+				              <div class="custseeOurpacUp">
+				                <h3><span>Startup Website</span></h3>
+				                <div class="custprice">$245</div>
+				                <p>Suitable for potential super-startups and brand revamps for companies.</p>
+				              </div>
+				              <ul class="custseeOurkboxList">
+				                <li><i class="fa fa-check-circle"></i>5 Stock Photos</li>
+				                <li><i class="fa fa-check-circle"></i>5 Page Website</li>
+				                <li><i class="fa fa-check-circle"></i>3 Banner Design</li>
+				                <li><i class="fa fa-check-circle"></i>1 jQuery Slider Banner</li>
+				                <li><i class="fa fa-check-circle"></i>FREE Google Friendly Sitemap</li> 
+				                <li><i class="fa fa-check-circle"></i>Complete W3C Certified HTML</li>
+				                <li><i class="fa fa-check-circle"></i>Facebook Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>Twitter Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>YouTube Page Design</li>
+				                <li><i class="fa fa-check-circle"></i>100% Satisfaction Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Unique Design Guarantee</li>
+				                <li><i class="fa fa-check-circle"></i>100% Money Back Guarantee *</li>
+				                <li><i class="fa fa-check-circle"></i>Mobile Responsive will be Additional $99*</li>
+				                <li><i class="fa fa-check-circle"></i>CMS will be Additional $149*</li>
+				            </ul>
+				            <div class="custseeOurpacftr">
+				                <a href="#" class="custombtn">Order Now</a>
+				                <h4>Call: <a href="tel:(855)-266-6599">(855) 266-6599</a></h4>
+				            </div>
+				            </div>
+				          </div>
+				  
+				          
+				        </div>
+				      </div>
+				    </div>
+				    
+				  </div>
+				</section>
+			</div>
+		</t>
+	</template>
+</odoo>

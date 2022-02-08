@@ -69,7 +69,7 @@
                       <h2>Grow Your Revenue
                       <span>49% Faster </span></h2>
                       <h4> By Using Video and Graphics <br/>in Your marketing Campaigns</h4>
-                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                      <a href="https://try.officehuddle.com/subscription1622665817271" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                         <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@
                       <div class="slier5log"><img src="/wt_office_hunddle/static/src/home/images/slider5logo.png" /></div>
                       <h4>  has world-Class Graphic Designer, Video-Editor, and Web Developers all
                         dediceted to you.</h4>
-                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                      <a href="https://try.officehuddle.com/subscription1622665817271" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                         <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                   </div>
                 </div>
@@ -363,69 +363,69 @@
             <div class="container">
               <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t red">
-                    
-                    <h3>ENTREPRENEUR TRAINING</h3>
-                    <p>Learn how to build and fine tune the core of your business.</p>
-                    <a class="readmoreBtn" href="/slides">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="/slides">
+                    <div class="enter-t red">
+                      <h3>ENTREPRENEUR TRAINING</h3>
+                      <p>Learn how to build and fine tune the core of your business.</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t blue">
-                    
-                    <h3>PRINTING</h3>
-                    <p>Enhance your promotional tactics through expectation print materials</p>
-                    <a class="readmoreBtn" href="/printing-products">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="/printing-products">
+                    <div class="enter-t blue">
+                      <h3>PRINTING</h3>
+                      <p>Enhance your promotional tactics through expectation print materials</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t green">
-                    
-                    <h3>GRAPHIC DESIGN</h3>
-                    <p>Empower your business through implementation of creative visual presentation</p>
-                    <a class="readmoreBtn" href="/graphic-design">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="/graphic-design">
+                    <div class="enter-t green">
+                      <h3>GRAPHIC DESIGN</h3>
+                      <p>Empower your business through implementation of creative visual presentation</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t purple">
-                    
-                    <h3>LEAD GENERATION</h3>
-                    <p>Create limitless income generation to live the life that you want.</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="#">
+                    <div class="enter-t purple">
+                      <h3>LEAD GENERATION</h3>
+                      <p>Create limitless income generation to live the life that you want.</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t red">
-                    
-                    <h3>BUSINESS COACHING</h3>
-                    <p>Develop and polish your core as a business owner to be an effective leader.</p>
-                    <a class="readmoreBtn" href="/business-coaching">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="/business-coaching">
+                    <div class="enter-t red">
+                      <h3>BUSINESS COACHING</h3>
+                      <p>Develop and polish your core as a business owner to be an effective leader.</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t blue">
-                    
-                    <h3>SALES <br/>
-                      SUPPORT</h3>
-                    <p>Startergize and convert leads into your personal financial resource.</p>
-                    <a class="readmoreBtn" href="#">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="#">
+                    <div class="enter-t blue">
+                      <h3>SALES <br/>
+                        SUPPORT</h3>
+                      <p>Startergize and convert leads into your personal financial resource.</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t green">
-                    
-                    <h3>ERP DEVELOPMENT</h3>
-                    <p>Centralize all businees functions and improve your business processes by 95%</p>
-                    <a class="readmoreBtn" href="/erp-development">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="/erp-development">
+                    <div class="enter-t green">
+                      <h3>ERP DEVELOPMENT</h3>
+                      <p>Centralize all businees functions and improve your business processes by 95%</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="enter-t purple">
-                    
-                    <h3>VIRTUAL STAFFING</h3>
-                    <p>Cover more responsibilities through hiring thebest workforce.</p>
-                    <a class="readmoreBtn" href="/virtual-staffing">Read More</a>
-                  </div>
+                  <a class="readmoreBtn" href="/virtual-staffing">
+                    <div class="enter-t purple">
+                      <h3>VIRTUAL STAFFING</h3>
+                      <p>Cover more responsibilities through hiring thebest workforce.</p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

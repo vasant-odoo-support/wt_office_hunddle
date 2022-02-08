@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<!--help-anteroz -->
-	<template id="graphic_design_form">
+	<template id="graphic_design_form" name="Graphic Design">
 		<t t-call="website.layout">
 			<div id="wrap" class="graphic_design_form_cl">
 				<form action="/submit-graphic-info" method="post">

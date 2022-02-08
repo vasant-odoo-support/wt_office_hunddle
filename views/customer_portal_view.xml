@@ -15,7 +15,8 @@
 
             <a href="#news">MY ACCOUNT</a>
             <a href="#order products">ORDER PRODUCTS</a>
-            <a href="#my orders">MY ORDERS</a>
+            <a href="/my/quotes">MY NEW ORDERS</a>
+            <a href="/my/orders">MY CONFIRM ORDERS</a>
             <a href="#save design">SAVE DESIGN</a>
             <a href="/my/assessment">ASSESSMENT</a><br/>
             <a href="#account">ACCOUNT</a>

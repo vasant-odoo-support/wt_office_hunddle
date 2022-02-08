@@ -1931,7 +1931,7 @@ h1, h2, h3, h4, h5, h6 {
 .homepage_wrap .homesldr {
     background-size:cover !important;
     background-repeat:no-repeat !important;
-    height: 100vh;
+    height: 80vh;
 }
 
 .homepage_wrap .custhomeslider1 {

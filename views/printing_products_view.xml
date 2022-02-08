@@ -358,25 +358,25 @@
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % postcards.id"/><span>Buy Now</span></div>
                       <h4> Postcards</h4>
-                      <a t-attf-href="/shop/product/{{postcards.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{postcards.id}}"></a> </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % banners.id"/><span>Buy Now</span></div>
                       <h4>Banners</h4>
-                      <a t-attf-href="/shop/product/{{banners.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{banners.id}}"></a> </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % bussiness_card.id"/><span>Buy Now</span></div>
                       <h4> Business Card</h4>
-                      <a t-attf-href="/shop/product/{{bussiness_card.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{bussiness_card.id}}"></a> </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % stickers.id"/><span>Buy Now</span></div>
                       <h4>Sticker</h4>
-                      <a t-attf-href="/shop/product/{{stickers.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{stickers.id}}"></a> </div>
                   </div>
                 </div>
                 <div class="row">
@@ -384,25 +384,25 @@
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % brochures.id"/><span>Buy Now</span></div>
                       <h4>Brochures</h4>
-                      <a t-attf-href="/shop/product/{{brochures.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{brochures.id}}"></a> </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % yard_sign.id"/><span>Buy Now</span></div>
                       <h4>Yard Signs</h4>
-                      <a t-attf-href="/shop/product/{{yard_sign.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{yard_sign.id}}"></a> </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % flyers.id"/><span>Buy Now</span></div>
                       <h4>flyers</h4>
-                      <a t-attf-href="/shop/product/{{flyers.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{flyers.id}}"></a> </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % tshirt.id"/><span>Buy Now</span></div>
                       <h4>Tshirts</h4>
-                      <a t-attf-href="/shop/product/{{tshirt.id}}"></a> </div>
+                      <a t-attf-href="/shop/printing/product/{{tshirt.id}}"></a> </div>
                   </div>
                 </div>
               </div>

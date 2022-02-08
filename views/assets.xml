@@ -25,6 +25,9 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/home/css/home_responsive.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/virtual_staff/css/virtual_staff.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/virtual_staff/css/responsive.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/our-team.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/jobs.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/website_development/css/website_development.css"/>
         </xpath>
     	<xpath expr="//script[last()]" position="after">
             <script src="/wt_office_hunddle/static/src/js/aos.js"></script>
@@ -38,6 +41,7 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/printing_products.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/owl.carousel.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/home.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/website_development/js/lightbox/lightbox.js"></script>
     	</xpath>
     </template>
 

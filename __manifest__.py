@@ -49,6 +49,9 @@
         'views/printing_products_view.xml',
         'views/home_view.xml',
         'views/virtual_staffing_view.xml',
+        'views/our_team_view.xml',
+        'views/job_view.xml',
+        'views/website_development_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',

@@ -6,6 +6,7 @@ from odoo.exceptions import UserError
 from odoo.addons.website.controllers.main import Website, QueryURL
 from odoo.addons.website_event.controllers.main import WebsiteEventController
 from odoo.addons.website_blog.controllers.main import WebsiteBlog
+from odoo.addons.website_sale.controllers.main import WebsiteSale
 from odoo.http import request, route
 from odoo.addons.http_routing.models.ir_http import slug
 from datetime import datetime, timedelta
@@ -23,6 +24,17 @@ from odoo.tools.mimetypes import guess_mimetype
 
 
 _logger = logging.getLogger(__name__)
+
+
+class WebsiteSaleOH(WebsiteSale):
+    @http.route(['/shop/confirmation'], type='http', auth="public", website=True, sitemap=False)
+    def payment_confirmation(self, **post):
+        sale_order_id = request.session.get('sale_last_order_id')
+        if sale_order_id:
+            order = request.env['sale.order'].sudo().browse(sale_order_id)
+            return request.redirect("/my/orders/%s" %(order.id))
+        else:
+            return request.redirect('/shop')
 
 
 class WebsiteSlidesHuddleCustom(WebsiteSlides):
@@ -894,12 +906,36 @@ class WebsiteHuddleCustom(http.Controller):
     @http.route('/graphic', type='http', auth='public', website=True)
     def graphics_office_huddle(self):
         if request.env.user.id == request.env.ref('base.public_user').id:
-            return request.redirect('/web/login')
+            return request.redirect('/pricing?new=new')
+        else:
+            active_sub = request.env['subscription.service'].search(
+                [
+                    ('partner_id', '=', request.env.user.partner_id.id),
+                    ('state', '=', 'open'),
+                ])
+            if not active_sub:
+                return request.redirect('/pricing')
         return  request.render('wt_office_hunddle.graphic_design_form')
 
     @http.route('/tshirt-printing', type='http', auth='public', website=True)
     def tshirt_printing_office_huddle(self):
         return  request.render('wt_office_hunddle.t_shirt_printing_design_selection_officehuddle_template')
+
+    @http.route('/our-team', type='http', auth='public', website=True)
+    def our_team_office_huddle(self):
+        print("==========")
+        return  request.render('wt_office_hunddle.our_team_tepmplate')
+
+    @http.route('/jobs-new', type='http', auth='public', website=True)
+    def job_office_huddle(self):
+        print("==========")
+        return  request.render('wt_office_hunddle.job_tepmplate')
+
+    @http.route('/web-development', type='http', auth='public', website=True)
+    def website_development_office_huddle(self):
+        print("==========")
+        return  request.render('wt_office_hunddle.website_development_tmpl')
+        
 
     @http.route('/homepage', type='http', auth='public', website=True)
     def officehuddle_home_page(self):
@@ -933,7 +969,7 @@ class WebsiteHuddleCustom(http.Controller):
     @http.route('/printing-products', type='http', auth='public', website=True)
     def printing_products_new_office_huddle(self):
         flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers')])
-        bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Rounded Business Cards')])
+        bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Business Cards')])
         banners = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Banners')])
         yard_sign = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Yard Signs')])
         tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt')])
