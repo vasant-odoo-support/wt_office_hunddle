@@ -229,7 +229,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
-				             </div>
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon1.png" /></div>
 				            <h4>Responsive <br/>Design</h4>
 				              <p>
 				                Responsive websites are workable across multiple platforms to increase the reach of your brand.
@@ -240,6 +240,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon2.png" />
 				            </div>
 				            <h4>Conversion-driven <br/>Design</h4>
 				              <p>Our web applications are fabricated in a way that promotes lead conversion.</p>
@@ -249,7 +250,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
-				             </div>
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon3.png" /></div>
 				            <h4>Search Engine  <br/>Optimized</h4>
 				              <p>The Web Design Corp professionals give our partners optimized and keyword loaded web applications.</p>
 				            <a href="#">Hire Us</a>
@@ -258,7 +259,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
-				              
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon4.png" />
 				            </div>
 				            <h4>Safety and  <br/>security</h4>
 				              <p>Our team fashions web applications that are secured with SSL certification.</p>
@@ -270,7 +271,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
-				             </div>
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon5.png" /></div>
 				            <h4>Mobile  <br/>Ready</h4>
 				              <p>It is advantageous for our partners to build applications that are also mobile-ready and convertible.</p>
 				            <a href="#">Hire Us</a>
@@ -279,6 +280,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon6.png" />
 				            </div>
 				            <h4>User  <br/>Experience</h4>
 				              <p>Without proper induction of efficacious user experience, no web application is worthy for your brand.</p>
@@ -288,7 +290,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
-				             </div>
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon7.png" /></div>
 				            <h4>Speed </h4>
 				              <p>Google algorithms pick up those web applications that are easily loadable and speedy. Fortunately, our web developers have abundant skills to accelerate the web speed.
 				              </p>
@@ -298,6 +300,7 @@
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 				          <div class="pickfromserBox">
 				            <div class="pickfromserBoxicon">
+				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon7.png" />
 				            </div>
 				            <h4>Safety and  <br/>security</h4>
 				              <p>Our team fashions web applications that are secured with SSL certification.</p>
@@ -306,7 +309,7 @@
 				        </div>
 				      </div>
 				    </div>
-				  </section> 
+				  </section>  
 
 				<!-- Section 5 -->
 				<section class="pickfromservices text-center custspecial custIndustries">
@@ -476,6 +479,84 @@
 
 				<!-- ERP -->
 
+				<section class="erpsec">
+				  <div class="container">
+				    <div class="row">
+				      <div class="col-xl-12">
+				        <h2>We provide all types of custom ERP software development solutions according to your business requirements with modern tools and technology.</h2>
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-xl-12">
+				        <div class="erpsecmain">
+				          <div class="erpseclft">
+				            <div class="erpseclftround">
+				              <h3>ERP</h3>
+				            </div>
+				          </div>
+				          <div class="erpsecRt">
+				            <div class="erpsecRtmain">
+				              <div class="erpsecRtmainCont">
+				                <div class="erpsecRtmainbox">
+				                  <div class="erpsecRtmainboxicon"><img src="/wt_office_hunddle/static/src/website_development/images/erpicon1.png" /></div>
+				                  <h4>Custom ERP Development</h4>
+				                  <div class="numbercol">1 </div>
+				                </div>
+				                <p>We customize off-the-shelf ERP solutions by automating workflows</p>
+				              </div>
+
+				              <div class="erpsecRtmainCont">
+				                <div class="erpsecRtmainbox">
+				                  <div class="erpsecRtmainboxicon"><img src="/wt_office_hunddle/static/src/website_development/images/erpicon2.png" /></div>
+				                  <h4>Expert ERP Implementation</h4>
+				                  <div class="numbercol">2 </div>
+				                </div>
+				                <p>Deploy and configure your custom networks, servers, security</p>
+				              </div>
+
+				              <div class="erpsecRtmainCont">
+				                <div class="erpsecRtmainbox">
+				                  <div class="erpsecRtmainboxicon"><img src="/wt_office_hunddle/static/src/website_development/images/erpicon3.png" /></div>
+				                  <h4>Seamless Data Migrations</h4>
+				                  <div class="numbercol">3 </div>
+				                </div>
+				                <p>Seamlessly migrate data from their current ERP environment </p>
+				              </div>
+
+				              <div class="erpsecRtmainCont">
+				                <div class="erpsecRtmainbox">
+				                  <div class="erpsecRtmainboxicon"><img src="/wt_office_hunddle/static/src/website_development/images/erpicon4.png" /></div>
+				                  <h4>ERP Integration Services</h4>
+				                  <div class="numbercol">4 </div>
+				                </div>
+				                <p>Leverage ready-to-use solutions and connect them with ERPs</p>
+				              </div>
+
+				              <div class="erpsecRtmainCont">
+				                <div class="erpsecRtmainbox">
+				                  <div class="erpsecRtmainboxicon"><img src="/wt_office_hunddle/static/src/website_development/images/erpicon5.png" /></div>
+				                  <h4>ERP System Configurations</h4>
+				                  <div class="numbercol">5 </div>
+				                </div>
+				                <p>We configure ERP software with specific roles, business intelligence</p>
+				              </div>
+
+				              <div class="erpsecRtmainCont">
+				                <div class="erpsecRtmainbox">
+				                  <div class="erpsecRtmainboxicon"><img src="/wt_office_hunddle/static/src/website_development/images/erpicon5.png" /></div>
+				                  <h4>Data Warehousing</h4>
+				                  <div class="numbercol">6 </div>
+				                </div>
+				                <p>Leverage your central repository data warehousing systems</p>
+				              </div>
+
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</section>
 
 				<!-- ERP END -->
 				<!-- Start Testimonials Section -->
