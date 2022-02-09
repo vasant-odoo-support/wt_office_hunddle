@@ -884,8 +884,12 @@ class WebsiteHuddleCustom(http.Controller):
         return  request.render('wt_office_hunddle.how_it_work')
 
     @http.route('/how-it-work', type='http', auth='public', website=True)
-    def web_how_works(self):
+    def web_how_work(self):
         return  request.render('wt_office_hunddle.how_it_works_tmpl')
+
+    @http.route('/business-coatching-new', type='http', auth='public', website=True)
+    def business_coatching_new(self):
+        return  request.render('wt_office_hunddle.business_couching_tmpl')
 
     @http.route('/page/virtual-staffing', type='http', auth='public', website=True)
     def virtial_staffing_page(self):

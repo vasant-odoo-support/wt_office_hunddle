@@ -29,6 +29,7 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/jobs.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/how_it_works/css/how_it_works.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/website_development/css/website_development.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/business-couching/css/business-couching.css"/>
         </xpath>
     	<xpath expr="//script[last()]" position="after">
             <script src="/wt_office_hunddle/static/src/js/aos.js"></script>

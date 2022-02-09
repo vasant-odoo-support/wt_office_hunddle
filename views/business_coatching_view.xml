@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="business_couching_tmpl" name="Business Couching">
+		<t t-call="website.layout">
+			<div id="wrap" class="business_couching_cl">
+				<!-- banner -->
+				<div class="custbusinesscoachBnr"> <img src="/wt_office_hunddle/static/src/business-couching/images/business.jpg" /> </div>
+				<!-- End banner -->
+				<section class="alwaysmoveSec">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+				          <div class="alwaysmoveLftCont">
+				            <h2>Helping Small Business owners
+				              develop proven processes along
+				              with recruiting the team to 
+				              manage them is our focus. </h2>
+				            <p>CEOs of small businesses who have been in business for some time realize that this is one of loneliest careers in the world.   Creating something that once only existed in your mind, can be deafening.  So, having someone to hold you accountable is an amazing gift.  With over 30 years of business development, management and marketing experience, we are well equipped with what is needed to help you  achieve  predictive growth.  Yes, you are the founder but we can be your supporting cast.  </p>
+				            <a class="customBtn" href="/page/assessment">Take Assessment</a>
+				          </div>
+				        </div>
+				        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+				          <div class="roundImg">
+				            <ul>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg1.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg2.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg3.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg4.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg5.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg6.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg7.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg8.png" /></li>
+				              <li><img src="/wt_office_hunddle/static/src/business-couching/images/roundImg9.png" /></li>
+				            </ul>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+
+				<section class="custtheoffice">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-md-6">
+				          <div class="custtheofficeLft">
+				            <h2>Our professional  business coaches will challenge your current  business model. In addition, we will enhance it using our proven Small Business Growth Solution systems.
+				              </h2>
+				            <p> The road to success has Seven Business Success Systems that was designed to crack the code on how to develop a winning enterprise. You can only yield quantified results if you know where to look and have corrective measures in place. Being equipped with these allows all business units to function simultaneously at their top performance. If you look closely, these might be some of the problems your business is currently facing that prohibit your growth. As you travel this road map dedicated to grooming you to be a successful CEO, you will divulge yourself into a more detailed interpretation of how these Seven Systems will escalate your business performance.</p>
+				            <a class="customBtn" href="/roadmap">Download The Success Roadmap</a> </div>
+				        </div>
+				        <div class="col-md-6">
+				          <div class="custtheofficeRt">
+				            <div class="custtheofficeRtMain"><img src="/wt_office_hunddle/static/src/business-couching/images/leadership.png" /></div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+
+
+
+				<section class="startegicgameSec">
+				    <div class="startegicgameBg"></div>
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-md-12">
+				          <div class="startegicgametxt">
+				            <h2>WHAT WILL YOUR<br/>
+				              COACH FOCUS ON?</h2>
+				            <p>The key to building a successful business is to have effective processes that implement the Seven Business Success Systems managed by the best people you can find.  Our Business Coaching process will hold you accountable while you work.</p>
+				          </div>
+				          <div class="strategicContMain">
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon1.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Develop Leadership</h4>
+				                <p>A solid culture of leadership starts with cultivating the essential skills to help you and your leadership team. Your leadership team needs to be able to focus their attention on where it is needed. This means being able to stay on top of your business rather than dwelling too much on a single favorite function. As you improve and solidify your culture of leadership you will learn to consolidate all the functions of your business by having improved your organizational skills.</p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon2.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Communicate Your Promise</h4>
+				                <p>Knowing how to create a functional marketing plan that aligns your marketing efforts with your target audience is key to communicating your promise. Start by identifying who your most-probable audience is. From here, you determine and conduct powerful tactics dedicated to advertise your business and communicate with your audience.This will serve as your benchmark so you can properly accomplish your sales objectives. </p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon3.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Know Your Numbers, Be Credible and Invest</h4>
+				                <p>A business, to aspire for growth and success, needs to have a financial system that is strong and flexible. First, is having a financial strategy to set everything right by maximizing the business’s value and to keep the business consistently on the right path. Having a strong and flexible financial system is having the capability, in different ways, of generating funds, keeping track of these funds, maximizing cash flow, and preventing unnecessary debts.</p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon4.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Recruit and Train Your Team</h4>
+				                <p>The Team Development System is an in-depth guide used for hiring, training, and aligning your employees with your business goals. This can be done through staff training dedicated to informing your workforce about their rights as employees, roles as part of your organization, and amplifying employee retention. It must be ensured that applicants are screened and evaluated carefully. This means that your staff should not only be skillful but should also share in your values and your vision of the company. Through proper implementation of the Team System, you allow your business to take on new roles, grab bigger responsibilities, and produce substantial improvements.</p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon5.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Qualify Your Leads</h4>
+				                <p>Lead Generation is structured to demonstrate effective ways supplemented by modern tools on how you can continuously fill your customer pipeline in such a way that will limit the downtime or lean days of your company. Even if you are running a seasonal product/service, in this program, you will still be able to perform through proven client acquisition practices.
+				                </p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon6.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Convert Leads to Customers</h4>
+				                <p>The Lead Conversion System is responsible for ensuring that the leads are transformed into a financial source. Always keep in mind that developing a good relationship with your customer should be a priority. Being able to send and deliver on a promise of catering to the customer needs will help foster a mutually beneficial relationship between your business and your customers. 
+				                </p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon7.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Deliver on Your Promise</h4>
+				                <p>Finally, it is important to establish a strong relationship with your customers and consistently deliver on addressing their needs better than any other business can. Among the 7 systems, this is what the customers care most about. A client is a customer that comes back time after time. The aim is to have a customer fulfillment system that lets you have the power to create a customer experience that satisfies and delights.</p>
+				              </div>
+				              <div class="btmbdr"></div>
+				            </div>
+				            <div class="strategicCont">
+				              <div class="strategicContRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/whatwillicon7.png" /> </div>
+				              <div class="strategicContLft">
+				                <h4>Next Step: Take  Assessment</h4>
+				                <p>So, what should you do if you are interested in starting a business or have started one in the last ten years?   This may seem shocking but most have never done this before.  Proceeding without taking this suggested step is not only risky but dangerous.  We have made the step simple, easy and free of charge.  No business should proceed without checking their strengths, weaknesses, opportunities and threats by taking a business assessment.</p>
+				              </div>
+				              <div class="btmbdr"></div>
+				              <div class="taketheassbtn"><a class="customBtn" href="/page/assessment">Take The Assessment</a></div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="custombdr">
+				      <ul>
+				        <li></li>
+				        <li></li>
+				        <li></li>
+				        <li></li>
+				        <li></li>
+				      </ul>
+				    </div>
+				</section>
+
+
+				<section class="yourfirstSec" style="background:url(/wt_office_hunddle/static/src/business-couching/images/yourfirstright1.jpg);">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-md-6 col-lg-6 col-md-6 col-sm-12 col-12">
+				          <div class="custtheofficeLft">
+				            <h2>Your first session
+				              session is on us!</h2>
+				            <h4>Take you best foot forward.</h4>
+				            <p>No more delays; start working on your business with a clearer path! Our whole team is ready to hear you out and we ar e thrilled to present the approach that will change your game play. 
+				              Don't let yourself miss another opportunity to score. Take on this first step to unleash the absolute solution to your 
+				              business problem and find  
+				              powerful strategies towards financial freedom.</p>
+				            <a class="customBtn" href="https://calendly.com/henrybdorris/60min">Get Started</a> </div>
+				        </div>
+				        <div class="col-md-6 col-lg-6 col-md-6 col-sm-12 col-12">
+				          <div class="yourfirstSecRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/yourfirstrightRespo1.jpg" /> </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+
+
+				<!-- Start Testimonials Section -->
+	            <div class="homepage_wrap">
+	                <section class="testimonials section-bg">
+	                  <div class="container">
+	                    <h2>OUR BUSINESS <br/>
+	                      OWNERS <span>TRUST US</span></h2>
+	                      <div class="owl-carousel" id="owlcarousel1">
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+	                            <h3>Cortez Springer,</h3>
+	                            <h4>Wealth Strategist</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                        </div>
+
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+	                                <h3>Lemzel Johnson,</h3>
+	                                <h4>Motivational Speaker</h4>
+	                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                              </div>
+	                      </div>
+	                   <div class="item">
+	                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+	                            <h3>Oginga Carr,</h3>
+	                            <h4>High Performance Coach</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                   </div>
+	                   <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+	                            <h3>Cortez Springer,</h3>
+	                            <h4>Wealth Strategist</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                        </div>
+
+	                      <div class="item">
+	                        <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+	                                <h3>Lemzel Johnson,</h3>
+	                                <h4>Motivational Speaker</h4>
+	                                <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                              </div>
+	                      </div>
+	                   <div class="item">
+	                    <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+	                            <h3>Oginga Carr,</h3>
+	                            <h4>High Performance Coach</h4>
+	                            <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+	                          </div>
+	                   </div>
+	                </div>
+	                </div>
+	              </section>
+	            </div>
+	            <!-- End Testimonials Section -->
+			</div>
+		</t>
+	</template>
+</odoo>

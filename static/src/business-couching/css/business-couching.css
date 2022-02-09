@@ -1,0 +1,321 @@
+/*********************** Business Coaching ***********/
+
+.business_couching_cl .custbusinesscoachBnr {
+	background-size: cover !important;
+	background-position: center !important;
+	padding: 0px 0;
+	height: auto;
+  }
+  .business_couching_cl .custbusinesscoachBnr img {
+	  width: 100%;
+  }
+  .business_couching_cl .custbusinesscoachMain {
+	padding: 0 120px;
+  }
+  .business_couching_cl .custbusinesscoachMain h2 {
+	  font-size:60px ;
+	  color: #605b5b;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  text-shadow: 5px 0 0 #fff, 
+	  -5px 0 0 #fff, 
+	  0 5px 0 #fff, 
+	  0 -5px 0 #fff, 
+	  4px 4px #fff, 
+	  -4px -4px 0 #fff, 
+	  4px -4px 0 #fff, 
+	  -4px 4px 0 #fff;
+  }
+
+  .business_couching_cl .alwaysmoveSec {
+	  width: 100%;
+	  padding: 50px 0 150px 0;
+	  background: #db974a;
+  }
+
+  .business_couching_cl .alwaysmoveLftCont {
+	  width: 90%;
+	  padding: 20px 0 0 0;
+	  text-align: center;
+  }
+  .business_couching_cl .alwaysmoveLftCont h2 {
+	  color: #0573a4;
+	  font-size: 40px;
+	  line-height: 50px;
+	  font-weight: bold;
+	  margin-bottom: 80px;
+	  text-align: left;
+  }
+  .business_couching_cl .alwaysmoveLftCont p {
+	  font-size: 20px;
+	  line-height: 32px;
+	  color: #000;
+	  text-align: left;
+	  
+  }
+  .business_couching_cl .alwaysmoveLftCont .customBtn {
+		margin:30px 0 0 0;
+  }
+  .business_couching_cl .alwaysmoveLftCont .customBtn:hover , .business_couching_cl .alwaysmoveLftCont .customBtn:focus {
+	  background: #4f3e82;
+  }
+  .business_couching_cl .roundImg {
+	  width: 100%;
+  }
+  .business_couching_cl .roundImg ul {
+	  padding: 0;
+	  margin: 0;
+	  max-width: 356px;
+	  height: 360px;
+	  position: relative;
+  }
+  .business_couching_cl .roundImg ul li {
+	  list-style: none;
+	  display: inline-block;
+	  position: absolute;
+
+  }
+  .business_couching_cl .roundImg ul li img {
+	  transition: all ease-in-out .3s;
+	  width: 120px;
+  }
+  .business_couching_cl .roundImg ul li:hover img {
+	  filter: grayscale(100%);
+	  transform: scale(1.1);
+  }
+  .business_couching_cl .roundImg ul li:nth-child(1) {}
+  .business_couching_cl .roundImg ul li:nth-child(2) {
+	top: 40px;
+	left: 200px;
+}
+.business_couching_cl .roundImg ul li:nth-child(3) {
+	top: 150px;
+	left: 80px;
+}
+.business_couching_cl .roundImg ul li:nth-child(4) {
+	top: 240px;
+	left: -60px;
+}
+.business_couching_cl .roundImg ul li:nth-child(5) {
+	top: 280px;
+	left: 200px;
+}
+.business_couching_cl .roundImg ul li:nth-child(6) {
+	top: 420px;
+left: 30px;
+}
+.business_couching_cl .roundImg ul li:nth-child(7) {
+	top: 440px;
+	left: 250px;
+}
+.business_couching_cl .roundImg ul li:nth-child(8) {
+	top: 560px;
+left: -100px;
+}
+.business_couching_cl .roundImg ul li:nth-child(9) {
+	top: 630px;
+left: 130px;
+}
+
+  .business_couching_cl .custtheoffice {
+	  padding: 80px 0;
+	  width: 100%;
+  }
+ .business_couching_cl .custtheofficeLft {
+	  
+  }
+  .business_couching_cl .custtheofficeLft h2 {
+	color: #000;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 45px;
+	margin-bottom: 20px;
+  }
+  .business_couching_cl .custtheofficeLft p {
+	font-size: 20px;
+	line-height: 32px;
+	color: #000;
+	padding-right: 30px;
+  }
+  .business_couching_cl .custtheofficeRt {
+	  width: 100%;
+  }
+  .business_couching_cl .custtheofficeRt img {
+	  width: 90%;
+	  float: right;
+	  transition: all ease-in-out .8s;
+  }
+  .business_couching_cl .custtheofficeRtMain {
+	transition: all ease-in-out .8s;
+	display: inline-block;
+	width: auto;
+  }
+  .business_couching_cl .custtheofficeRt:hover .custtheofficeRtMain {
+	  transform: rotate(10deg);
+	  
+  }
+  .business_couching_cl .custtheofficeRt:hover img {
+	  transform: rotate(10deg);
+	  transform:scale(1.1);
+	  -webkit-transform:scale(1.1);
+  }
+
+  .business_couching_cl .startegicgameSec {
+	  padding: 50px 0 0px 0;
+	  width: 100%;
+	  position: relative;
+  }
+  .business_couching_cl .startegicgameBg {
+	background: #db974a;
+	min-height: 230px;
+	width: 100%;
+	display: inline-block;
+  }
+  .business_couching_cl .startegicgametxt {
+	  width: 100%;
+	  text-align: center;
+	  padding: 50px 10px;
+	  background: #0573a4;
+	  margin: -145px 0 0 0;
+  }
+  .business_couching_cl .startegicgametxt h2 {
+	color: #000;
+	font-size: 70px;
+	line-height: 70px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin:  0 0 20px 0;
+  }
+  .business_couching_cl .startegicgametxt p {
+	font-size: 24px;
+	line-height: 32px;
+	color: #fff;
+	max-width: 710px;
+	margin: 0 auto;
+  }
+
+ .business_couching_cl  .yourfirstSec {
+	  padding: 60px 0;
+	background-position: right center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-size: 50% auto !important;
+  }
+ .business_couching_cl  .yourfirstSec h2 {
+	  font-size: 50px;
+	  line-height: 50px;
+	  color: #0573a4;
+	
+	  font-weight: bold;
+  }
+  .business_couching_cl .yourfirstSec h4 {
+	  font-size: 24px;
+	  line-height: 32px;
+	  color: #5d5c5c;
+  } 
+  .business_couching_cl .yourfirstSec p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #5d5c5c;
+  }
+  .business_couching_cl .yourfirstSecRt {
+	display: none;
+  }
+  .business_couching_cl .custtheofficeLft .customBtn {
+	margin: 50px 0 0 0;
+  }
+  .business_couching_cl .strategicCont {
+	float: left;
+	width: 100%;
+	padding: 0 5%;
+  }
+  .business_couching_cl .strategicContLft {
+	  width: 68%;
+	  float: left;
+	  padding: 10px 0 0 0;
+  }
+  .business_couching_cl .strategicContLft h4 {
+	  font-size: 24px;
+	  line-height: 24px;
+	  font-weight: bold;
+	  color: #0573a4;
+  }
+  .business_couching_cl .strategicContLft p {
+	font-size:16px;
+	line-height: 24px;
+	color: #000;
+}
+  .business_couching_cl .strategicContRt {
+	width: 30%;
+	float: right;
+  }
+  .business_couching_cl .strategicContRt img {
+	  width: 100%;
+  }
+  .business_couching_cl .strategicContMain {
+	  width: 100%;
+	  float: left;
+	  margin:100px 0 0 0;
+  }
+  .business_couching_cl .btmbdr {
+	  width: 100%;
+	  float: left;
+	  margin: 30px 0;
+	  height: 14px;
+	  background: url(/wt_office_hunddle/static/src/business-couching/images/dotImg.png);
+	  background-repeat:repeat-x;
+  }
+
+  .business_couching_cl .custombdr {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+	}
+	.business_couching_cl .custombdr ul {
+	padding: 0;
+	margin: 0;
+	}
+	.business_couching_cl .custombdr ul li {
+		list-style: none;
+		display: inline-block;
+		width: 20%;
+		height: 20px;
+		float: left;
+	}
+	.business_couching_cl .custombdr ul li:nth-child(1) {background: #ee3c3a;}
+	.business_couching_cl .custombdr ul li:nth-child(2) {background: #086eb9;}
+	.business_couching_cl .custombdr ul li:nth-child(3) {background: #4fb52d;}
+	.business_couching_cl .custombdr ul li:nth-child(4) {background: #4c31a2;}
+	.business_couching_cl .custombdr ul li:nth-child(5) {background: #f1b547;}
+
+	.business_couching_cl .taketheassbtn {
+		width: 100%;
+		float: left;
+		display: inline-block;
+		text-align: center;
+		margin: 40px 0  80px 0;
+	}
+
+.business_couching_cl .customBtn {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: 12px 70px;
+	border-radius: 30px;
+	transition: ease-in-out 0.3s;
+	color: #fff;
+	background: #04658f;
+}
+.business_couching_cl .customBtn:hover , .business_couching_cl .customBtn:focus {
+	background: #db974a;
+	color: #fff;
+}
+.business_couching_cl a:hover{
+	text-decoration: none;
+}
