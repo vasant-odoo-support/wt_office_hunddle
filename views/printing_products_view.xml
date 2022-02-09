@@ -354,7 +354,15 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                  <t t-foreach="printing_products" t-as="product">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                      <div class="custproductSecBox">
+                        <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % product.id"/><span>Buy Now</span></div>
+                        <h4><t t-esc="product.name"/></h4>
+                        <a t-attf-href="/shop/printing/product/{{product.id}}"></a> </div>
+                    </div>
+                  </t>
+                  <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="custproductSecBox">
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % postcards.id"/><span>Buy Now</span></div>
                       <h4> Postcards</h4>
@@ -403,7 +411,7 @@
                       <div class="custproductSecBoximg"><img t-att-src="'/web/image/product.template/%s/image_1920' % tshirt.id"/><span>Buy Now</span></div>
                       <h4>Tshirts</h4>
                       <a t-attf-href="/shop/printing/product/{{tshirt.id}}"></a> </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </section>
@@ -552,4 +560,140 @@
           </div>
         </t>
     </template>
+
+    <template id="printing_product" name="Product" track="1">
+      <t t-set="combination" t-value="product._get_first_possible_combination()"/>
+      <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+      <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+      <t t-call="website.layout">
+          <t t-set="additional_title" t-value="product.name" />
+          <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
+              <section t-attf-class="container py-2 oe_website_sale #{'discount' if combination_info['has_discounted_price'] else ''}" id="product_detail" t-att-data-view-track="view_track and '1' or '0'">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item">
+                                  <a href="/printing-products">Printing Products</a>
+                              </li>
+                              <li t-if="category" class="breadcrumb-item">
+                                  <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" t-field="category.name" />
+                              </li>
+                              <li class="breadcrumb-item active">
+                                  <span t-field="product.name" />
+                              </li>
+                          </ol>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="form-inline justify-content-end">
+                              <t t-call="website_sale.search">
+                                  <t t-set="search" t-value="False"/>
+                              </t>
+                              <t t-call="website_sale.pricelist_list">
+                                  <t t-set="_classes">ml-2</t>
+                              </t>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 col-xl-8">
+                          <t t-call="website_sale.shop_product_carousel"/>
+                      </div>
+                      <div class="col-md-6 col-xl-4" id="product_details">
+                          <h1 itemprop="name" t-field="product.name">Product Name</h1>
+                          <span itemprop="url" style="display:none;" t-esc="product.website_url"/>
+                          <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                              <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                              <div class="js_product js_main_product">
+                                  <t t-placeholder="select">
+                                      <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                      <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+                                      <t t-if="combination" t-call="sale.variants">
+                                          <t t-set="ul_class" t-value="'flex-column'" />
+                                          <t t-set="parent_combination" t-value="None" />
+                                      </t>
+                                      <t t-else="">
+                                          <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}"/>
+                                      </t>
+                                  </t>
+                                  <t t-call="website_sale.product_price" />
+                                  <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
+
+                                  <!-- ASK DESIGN -->
+                                  <!-- <div class="mt16 mb4">
+                                    <b><span style="font-size:30px;">Do you have Design? </span></b>
+                                    <br/>
+                                    <input type="radio" id="is_have_design" value="yes" name="is_have_design" class="is_have_design"/><b><span style="margin-right:10px;">Instantly Processed</span></b><br/>
+                                    <input type="radio" id="is_have_no_design" value="no" name="is_have_design" class="is_have_design"/><b><span>Let Us Design for You (+ design cost)</span></b>
+                                    <br/>
+                                  </div> -->
+                                  <!-- END ASK DESIGN -->
+
+                                  <!-- UPLOAD FILES -->
+                                  <!-- <div class="uploaded_images">
+                                    <div id="photos_front" style="display: inline;" class=""></div>
+                                    <div id="photos_front_back" style="display: inline;" class=""></div>
+                                  </div>
+                                  <div class="flex_div">
+                                    <div class="mr4 mt16 upload_button_front">
+                                      <div class="btn btn-primary mt8" style="border-radius:15px;">
+                                        <label for="photo_front" class="custom-file-upload">
+                                            Upload Front
+                                        </label>
+                                            <input type="file" class="form-control photo_front" id="photo_front" name="photo_front" accept=".png, .jpg, .jpeg" style="display:none;"/>
+                                          </div>
+                                          <br/>
+                                        </div>
+                                    <div class="ml4 mt16 upload_button_back">
+                                      <div class="btn btn-primary mt8" style="border-radius:15px;">
+                                        <label for="photo_front_back" class="custom-file-upload">
+                                            Upload Back
+                                        </label>
+                                            <input type="file" class="form-control photo_front_back" id="photo_front_back" name="photo_front_back" accept=".png, .jpg, .jpeg" style="display:none;"/>
+                                          </div>
+                                          <br/>
+                                        </div>
+                                      </div>
+                                      <br/>
+                                      <div class="image_description">
+                                        <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#"><i class="fa fa-shopping-cart"/> Add to Cart</a>
+                                      </div> -->
+                                      <!-- END UPLOAD FILES -->
+
+                                      <!-- ADD DESIGN -->
+                                      <!-- <div class="flex_div">
+                                        <div class="btn-letusdesign"><a href="/graphic">Design Service</a> </div>
+                                      </div>
+                                      <div class="image_data_div"></div> -->
+                                      <!-- END ADD DESIGN -->
+                                  
+                                  <div id="product_option_block"/>
+                              </div>
+                          </form>
+                          <p t-elif="not product.active" class="alert alert-warning">This product is no longer available.</p>
+                          <p t-else="" class="alert alert-warning">This product has no valid combination.</p>
+                          <hr t-if="product.description_sale" />
+                          <div>
+                              <p t-field="product.description_sale" class="text-muted mt-3" placeholder="A short description that will also appear on documents." />
+                              <div id="product_attributes_simple">
+                                  <hr t-if="sum([(1 if len(l.value_ids)==1 else 0) for l in product.attribute_line_ids])"/>
+                                  <p class="text-muted">
+                                      <t t-set="single_value_attributes" t-value="product.valid_product_template_attribute_line_ids._prepare_single_value_for_display()"/>
+                                      <t t-foreach="single_value_attributes" t-as="attribute">
+                                          <span t-field="attribute.name"/>:
+                                          <t t-foreach="single_value_attributes[attribute]" t-as="ptal">
+                                              <span t-field="ptal.product_template_value_ids._only_active().name"/><t t-if="not ptal_last">, </t>
+                                          </t>
+                                          <br/>
+                                      </t>
+                                  </p>
+                              </div>
+                          </div>
+                          <hr />
+                      </div>
+                  </div>
+              </section>
+              <div itemprop="description" t-field="product.website_description" class="oe_structure mt16" id="product_full_description" />
+          </div>
+      </t>
+  </template>
 </odoo>
