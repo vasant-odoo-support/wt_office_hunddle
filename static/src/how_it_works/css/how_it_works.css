@@ -300,3 +300,7 @@ text-align: right;
 	margin-left: 100px;
 }
 /*************** End How it work  *******************/
+
+.how_it_works_cls a:hover{
+	text-decoration: none;
+}
