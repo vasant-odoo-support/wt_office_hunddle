@@ -1659,6 +1659,10 @@ section.services.section-bg.Support-team .icon-box:hover a {
 .printing_product_new_wrap .printslilder .item {
     background-size: cover !important;
     background-position: center !important;
+    height: 55vh;
+    background-color: #192a48 !important;
+    background-repeat: no-repeat !important;
+    background-size:contain !important;
 }
 .printing_product_new_wrap .printslildermain {
     position: relative;
@@ -1666,7 +1670,8 @@ section.services.section-bg.Support-team .icon-box:hover a {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
-    padding: 250px 0;
+    /*padding: 250px 0;*/
+    padding:100px 0 !important;
 }
 .printing_product_new_wrap .printslildermain h1 {
     margin: 0 0 10px 0;

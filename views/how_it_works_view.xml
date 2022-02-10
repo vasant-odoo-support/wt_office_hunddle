@@ -87,7 +87,7 @@
 				            </div>
 				            <h2>stage one</h2>
 				            <h4>Locker Room</h4>
-				            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+				            <p><b>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</b></p>
 				              <a href="/roadmap" class="custDownloadbtn">Download The Success Roadmap</a>
 				          </div>
 				        </div>
@@ -106,8 +106,8 @@
 				              <img src="/wt_office_hunddle/static/src/how_it_works/images/numberroundImg2.png" />
 				            </div>
 				            <h2>stage two</h2>
-				            <h4>Locker Room</h4>
-				            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+				            <h4>The Design Suite</h4>
+				            <p><b>Now that you have brought out your equipment, next is to work on the design. Create a system that will resolve and refine the rusty areas of your business. An enhanced approach build with well planned action courses will allow you to better support your organization.</b></p>
 				              <a href="/roadmap" class="custDownloadbtn">Download The Success Roadmap</a>
 				          </div>
 				        </div>
@@ -126,8 +126,8 @@
 				              <img src="/wt_office_hunddle/static/src/how_it_works/images/numberroundImg3.png" />
 				            </div>
 				            <h2>stage third</h2>
-				            <h4>Locker Room</h4>
-				            <p>Your business foundation has to be solidified for everything else to function well. Lay out the tools that compose your core as its time to polish each.</p>
+				            <h4>The Dojo</h4>
+				            <p><b>This is your training field where you can use as your testing center. Evaluate the performance of your innovations and find out what works and what does not. From there, you can apply necessary adjustments to enable you implement solutions in a larger scale.</b></p>
 				              <a href="/roadmap" class="custDownloadbtn">Download The Success Roadmap</a>
 				          </div>
 				        </div>
@@ -135,6 +135,26 @@
 				    </div>
 				</section>
 				<!-- Section 4 END -->
+
+
+				<section class="stageSec stageSec2" style="background: url(/wt_office_hunddle/static/src/how_it_works/images/stageSec4.jpg);">
+				    <div class="container">
+				      <div class="row d-flex justify-content-end">
+				        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12">
+				          <div class="stageSecmais">
+				            <div class="stepnumber bounce">
+				              <img src="/wt_office_hunddle/static/src/how_it_works/images/numberroundImg4.png" />
+				            </div>
+				            <h2>stage four</h2>
+				            <h4>The Game</h4>
+				            <p><b>You have now turned your business into a mature one after laying out the tools, design the approach, and putting it to test. The game is where you launch the system you have created in anexpansive formate by activating and implementing the 7 Success Systems</b></p>
+				              <a href="/roadmap" class="custDownloadbtn">Download The Success Roadmap</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				</section>
+
 
 				<!-- Section 6 Start-->
 				<section class="yourfirstSec">

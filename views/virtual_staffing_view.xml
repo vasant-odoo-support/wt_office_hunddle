@@ -124,13 +124,13 @@
 					      	</div>
 			              	<div class="row" t-if="virtual_staffing_blog">
 			                	<div class="col-md-4" t-foreach="virtual_staffing_blog" t-as="blog_id">
-				                  	<div class="love-text"> <img t-att-src="website.image_url(blog_id, 'bg_image')" alt="Lights" class="img-fluid"/>
+				                  	<div class="love-text"> <a t-att-href="blog_id.website_url"><img t-att-src="website.image_url(blog_id, 'bg_image')" alt="Lights" class="img-fluid"/></a>
 				                    	<div class="content-div">
 				                      		<h3><a href="#"><t t-esc="blog_id.name"/></a></h3>
 				                      		<p><t t-esc="blog_id.teaser"/></p>
 				                      		<ul>
-				                        		<li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/> Henry</a></li>
-				                        		<li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
+				                        		<li><a href="#"><img style="margin-top: -20px;" src="/wt_office_hunddle/static/src/home/images/account.png" alt="" class="img-fluid"/><span style="margin-top:-10px; display:block;"><t t-esc="blog_id.author_id.name" /></span></a></li>
+                        						<li><a href="#"><img src="/wt_office_hunddle/static/src/home/images/chat.png" alt="" class="img-fluid"/> 0</a></li>
 				                        		<li><a t-att-href="blog_id.website_url" title="" aria-describedby="tooltip231649">Read More →</a></li>
 				                      		</ul>
 				                    	</div>
