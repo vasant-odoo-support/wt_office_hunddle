@@ -306,7 +306,7 @@
                             Eye-catching tees spark<br/>
                             conversation, spreading your brand's <br/>
                             reach in an organic and totally un-salesy way.</h4>
-                          <a href="#about" class="customBtn">Get Started</a> </div>
+                          <a t-attf-href="/shop/printing/product/{{tshirt.id}}" class="customBtn">Get Started</a> </div>
                       </div>
                     </div>
                   </div>
@@ -320,7 +320,7 @@
                             <span>Card</span></h1>
                           <h4>Cover bigger responsibilities,<br/>
                             grab more opportunities.</h4>
-                          <a href="#about" class="customBtn">Get Started</a> </div>
+                          <a t-attf-href="/shop/printing/product/{{bussiness_card.id}}" class="customBtn">Get Started</a> </div>
                       </div>
                     </div>
                   </div>
@@ -333,7 +333,7 @@
                           <h1>Flyer <br/></h1>
                           <h4>Cover bigger responsibilities,<br/>
                             grab more opportunities.</h4>
-                          <a href="#about" class="customBtn">Get Started</a> </div>
+                          <a t-attf-href="/shop/printing/product/{{flyers.id}}" class="customBtn">Get Started</a> </div>
                       </div>
                     </div>
                   </div>

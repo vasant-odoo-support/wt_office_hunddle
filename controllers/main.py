@@ -983,11 +983,11 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/printing-products', type='http', auth='public', website=True)
     def printing_products_new_office_huddle(self):
-        # flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers')])
-        # bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Business Cards')])
+        flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers'), ('active', '=', True)], limit=1)
+        bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Business Cards'),('active', '=', True)], limit=1)
         # banners = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Banners')])
         # yard_sign = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Yard Signs')])
-        # tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt')])
+        tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt'), ('active', '=', True)], limit=1)
         # postcards = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Postcards')])
         # stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
         # car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
@@ -995,6 +995,9 @@ class WebsiteHuddleCustom(http.Controller):
         printing_products = request.env['product.template'].with_context(bin_size=True).search([('is_printing_product', '=', True), ('active', '=', True)])
         vals = {
             'printing_products': printing_products,
+            'flyers': flyers,
+            'bussiness_card': bussiness_card,
+            'tshirt': tshirt,
         }
         return  request.render('wt_office_hunddle.printing_product_officehuddle_template_new', vals)
 
