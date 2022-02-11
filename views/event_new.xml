@@ -329,15 +329,15 @@
 				                </div>
 				              </div>
 				              <div class="schedule-details clearfix p-15 pt-10">
-				                <h5 class="font-16 title"><a t-attf-href="/event/register/#{slug(up_event_id)}"><t t-esc="up_event_id.name"/></a></h5>
+				                <h5 class="font-16 title"><a t-attf-href="/event/#{slug(up_event_id)}/register"><t t-esc="up_event_id.name"/></a></h5>
 				                <ul class="list-inline font-11 mb-20">
 				                  <li class="text-uppercase"><i class="fa fa-calendar mr-5"></i><t t-esc="up_event_id.with_context(tz=event.date_tz).date_begin.strftime('%%b %d/%Y')"/></li>
 				                  <li t-if="up_event_id.address_id"><i class="fa fa-map-marker mr-5"></i><t t-esc="up_event_id.address_id.city"/></li>
 				                </ul>
 				                <p><t t-esc="up_event_id.desc"/></p>
 				                <div class="mt-10">
-				                 <a class="btn btn-colored btn-theme-colored btn-sm" t-attf-href="/event/register/#{slug(up_event_id)}">Register</a>
-				                 <a class="btn btn-colored btn-dark-light btn-sm" t-attf-href="/event/register/#{slug(up_event_id)}">Details</a>
+				                 <a class="btn btn-colored btn-theme-colored btn-sm" t-attf-href="/event/#{slug(up_event_id)}/register">Register</a>
+				                 <a class="btn btn-colored btn-dark-light btn-sm" t-attf-href="/event/#{slug(up_event_id)}/register">Details</a>
 				                </div>
 				              </div>
 				            </div>
