@@ -11,6 +11,7 @@
     <t t-call="web.login_layout"> -->
       <div id="wrap_homepage" class="homepage_wrap">
 
+        <!-- Home slider  -->
         <div class="custhomeslider">
           <div class="owl-carousel" id="owlcarousel2">
             <div class="item">
@@ -31,14 +32,14 @@
             <div class="d-flex flex-column justify-content-center homesldr custhomeslider2" style="background: url(/wt_office_hunddle/static/src/home/images/slider2.jpg);">
               <div class="container text-md-left" data-aos="fade-up">
                 <div class="row">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="custhomeslider2main">
                       <h2>WE ARE OFFERING <br/>WEB DEVELOPMENT<br/> INCLUDING ERP <br/>CUSTOMIZATION. </h2>
                       <h4>NOT JUST A WEBSITE BUILDER... <br/>I WE OFFER A BUSINESS IN A BOX. </h4>
                       <a href="#" class="customBtn">Let's Get Started</a> </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="slider2Img"><img src="/wt_office_hunddle/static/src/home/images/slider2Img.png"/></div>
+                    <div class="slider2Img"><img src="/wt_office_hunddle/static/src/home/images/slider2Img.png" /></div>
                   </div>
                 </div>
               </div>
@@ -69,7 +70,7 @@
                       <h2>Grow Your Revenue
                       <span>49% Faster </span></h2>
                       <h4> By Using Video and Graphics <br/>in Your marketing Campaigns</h4>
-                      <a href="https://try.officehuddle.com/subscription1622665817271" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                         <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                   </div>
                 </div>
@@ -87,15 +88,51 @@
                       <div class="slier5log"><img src="/wt_office_hunddle/static/src/home/images/slider5logo.png" /></div>
                       <h4>  has world-Class Graphic Designer, Video-Editor, and Web Developers all
                         dediceted to you.</h4>
-                      <a href="https://try.officehuddle.com/subscription1622665817271" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                         <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="item">
+            <div class="d-flex flex-column justify-content-center homesldr custhomeslider6" style="background: url(/wt_office_hunddle/static/src/home/images/slider6.jpg);">
+              <div class="container text-md-left" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="custhomeslider6main">
+                      <h2>Always move <br/>Forward with a <br/>  <span>Business Coach</span> <br/>  behind your back.</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div> 
+
+          <div class="item">
+            <div class="d-flex justify-content-center homesldr custhomeslider7" style="background: url(/wt_office_hunddle/static/src/home/images/slider7.jpg);">
+              <div class="container text-md-left" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="custhomeslider7lft">
+                      <h2><span>Event </span> Lorem Ipsum <br/> Lorem Ipsum </h2>
+                      <h3>jan. xx,xxxx</h3>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="custhomeslider7Rt">
+                      <h2>00 PM <br/>00 PM</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>  
 
         <main id="main"> 
           <!-- ======= We have cracked  Section ======= -->
