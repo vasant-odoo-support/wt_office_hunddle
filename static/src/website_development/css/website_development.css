@@ -1062,3 +1062,520 @@ transition: 500ms ease;
   }
   /********* End ERP  ***********/
 /******************** End Web development  *******************/
+
+
+
+/**************** Responsive website-development **************/
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+	.website_dev_cls .owl-carousel .owl-item img{
+		height: auto !important;
+	}
+	.website_dev_cls .pickfromservices h2{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.website_dev_cls .webdevelopmentsldr p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.website_dev_cls .webdevelopmentsldr p br {
+		display: none;
+	}
+	.website_dev_cls .custline {
+		text-align: center;
+		width: 100%;
+	}
+	.website_dev_cls .custline img {
+		width: 150px !important;
+		display: inline-block !important;
+	}
+	.website_dev_cls .webdevelopmentsldr .custhomeslider1main h2 br {
+ 		display: none;
+	}
+	.website_dev_cls .approachSec , .website_dev_cls .multifacetedSec {
+		padding: 40px 0;
+	}
+	.website_dev_cls .laptop {
+		text-align: center;
+		margin: 0 0 15px 0;
+	
+	}
+	.website_dev_cls .approachRt h2 , .website_dev_cls .multifacetedSec h2 , .website_dev_cls .custPortfolio h2 , .website_dev_cls .custseeOurpack h2 , .website_dev_cls .erpsec h2 {
+		font-size: 28px;
+		line-height: 35px;
+	}
+	.website_dev_cls .multifacetedSec p {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.website_dev_cls .multifacetedLft {
+	
+	}
+	.website_dev_cls .approachRt {
+		text-align: center;
+	}
+	.website_dev_cls .approachRt p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxIcon {
+		left: 0;
+		right: auto;
+		position: relative;
+	}
+	.website_dev_cls .multifacetedBoxIcon {
+		position: relative;
+		width: 60px;
+		display: inline-block;
+		margin:  0 0 10px 0;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxRt {
+		text-align: center;
+	}
+	.website_dev_cls .multifacetedBox {
+		padding: 0;
+		text-align: center;
+	}
+	.website_dev_cls .multifacetedBox p {
+		font-size: 14px;
+	}
+	.website_dev_cls .custmobileimg {
+		display: none;
+	}
+	.website_dev_cls .portfolioImg ul li {
+		width: 48%;
+		margin: 0 1% 15px 1%;
+	}
+	.website_dev_cls .portfolioImg ul li > a {
+		height: 200px;
+	}
+	.website_dev_cls .portfolioImg ul li h3 {
+		font-size: 13px;
+	}
+	.website_dev_cls .pickfromservices .col-xl-3 {
+		padding:  0 15px;
+	}
+	.website_dev_cls .flipbox {
+		width: 250px;
+		margin: 0 auto 20px auto;
+	}
+	.website_dev_cls .flipboxback p {
+		font-size: 13px;
+		line-height: 22px;
+	}
+	.website_dev_cls .erpsec {
+		padding: 40px 0;
+	}
+	.website_dev_cls .erpsecmain {
+		padding: 40px 0;
+		flex-wrap: wrap;
+	} 
+	.website_dev_cls .erpseclft {
+		width: 100%;
+		justify-content: center;
+		margin:  0 0 20px 0;
+	} 
+	.website_dev_cls .erpseclftround::after , .website_dev_cls .erpsecRtmainCont::before {
+		display: none;
+	}
+	.website_dev_cls .erpsecRtmain {
+		border: none;
+	}
+	.website_dev_cls .erpsecRt {
+		width: 100%;
+	}
+	
+	.website_dev_cls .erpsecRtmainbox {
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0;
+	}
+	.website_dev_cls .erpsecRtmainCont p {
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.website_dev_cls .erpsecRtmainCont {
+		flex-wrap: wrap;
+		
+	}
+	.website_dev_cls .erpsecRtmainboxicon {
+		width: 50px;
+		height: 50px;
+		line-height: 30px;
+	}
+	.website_dev_cls .erpsecRtmainboxicon svg {
+		width: 25px;
+		height: 43px;
+	}
+	.website_dev_cls .erpsecRtmainbox h4 {
+		font-size: 13px;
+		padding-left: 5px;
+	}
+	.website_dev_cls .numbercol {
+		width: 40px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 23px;
+	}
+	
+}
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+	.website_dev_cls .owl-carousel .owl-item img{
+		height: auto !important;
+	}
+	.website_dev_cls .pickfromservices h2{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.website_dev_cls .webdevelopmentsldr p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.website_dev_cls .webdevelopmentsldr p br {
+		display: none;
+	}
+	.website_dev_cls .custline {
+		text-align: center;
+		width: 100%;
+	}
+	.website_dev_cls .custline img {
+		width: 150px !important;
+		display: inline-block !important;
+	}
+	.website_dev_cls .webdevelopmentsldr .custhomeslider1main h2 br {
+ 		display: none;
+	}
+	.website_dev_cls .approachSec , .website_dev_cls .multifacetedSec {
+		padding: 40px 0;
+	}
+	.website_dev_cls .laptop {
+		text-align: center;
+		margin: 0 0 15px 0;
+	
+	}
+	.website_dev_cls .approachRt h2 , .website_dev_cls .multifacetedSec h2 , .website_dev_cls .custPortfolio h2 , .website_dev_cls .custseeOurpack h2 , .website_dev_cls .erpsec h2 {
+		font-size: 28px;
+		line-height: 35px;
+	}
+	.website_dev_cls .multifacetedSec p {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.website_dev_cls .multifacetedLft {
+	
+	}
+	.website_dev_cls .approachRt {
+		text-align: center;
+	}
+	.website_dev_cls .approachRt p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxIcon {
+		left: 0;
+		right: auto;
+		position: relative;
+	}
+	.website_dev_cls .multifacetedBoxIcon {
+		position: relative;
+		width: 60px;
+		display: inline-block;
+		margin:  0 0 10px 0;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxRt {
+		text-align: center;
+	}
+	.multifacetedBox {
+		padding: 0;
+		text-align: center;
+	}
+	.website_dev_cls .multifacetedBox p {
+		font-size: 14px;
+	}
+	.website_dev_cls .custmobileimg {
+		display: none;
+	}
+	.website_dev_cls .portfolioImg ul li {
+		width: 48%;
+		margin: 0 1% 15px 1%;
+	}
+	.website_dev_cls .portfolioImg ul li > a {
+		height: 200px;
+	}
+	.website_dev_cls .portfolioImg ul li h3 {
+		font-size: 13px;
+	}
+	.website_dev_cls .pickfromservices .col-xl-3 {
+		padding:  0 15px;
+	}
+	.website_dev_cls .flipbox {
+		width: 250px;
+		margin: 0 auto 20px auto;
+	}
+	.website_dev_cls .flipboxback p {
+		font-size: 13px;
+		line-height: 22px;
+	}
+	.website_dev_cls .erpsec {
+		padding: 40px 0;
+	}
+	.website_dev_cls .erpsecmain {
+		padding: 40px 0;
+		flex-wrap: wrap;
+	} 
+	.website_dev_cls .erpseclft {
+		width: 100%;
+		justify-content: center;
+		margin:  0 0 20px 0;
+	} 
+	.website_dev_cls .erpseclftround::after , .website_dev_cls .erpsecRtmainCont::before {
+		display: none;
+	}
+	.website_dev_cls .erpsecRtmain {
+		border: none;
+	}
+	.website_dev_cls .erpsecRt {
+		width: 100%;
+	}
+	
+	.website_dev_cls .erpsecRtmainbox {
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0;
+	}
+	.website_dev_cls .erpsecRtmainCont p {
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.website_dev_cls .erpsecRtmainCont {
+		flex-wrap: wrap;
+		
+	}
+	.website_dev_cls .erpsecRtmainboxicon {
+		width: 50px;
+		height: 50px;
+		line-height: 30px;
+	}
+	.website_dev_cls .erpsecRtmainboxicon svg {
+		width: 25px;
+		height: 43px;
+	}
+	.website_dev_cls .erpsecRtmainbox h4 {
+		font-size: 17px;
+		padding-left: 5px;
+	}
+	.website_dev_cls .numbercol {
+		width: 40px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 23px;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.website_dev_cls .approachSec , .website_dev_cls .multifacetedSec {
+		padding: 40px 0;
+	}
+	.website_dev_cls .laptop {
+		text-align: center;
+	}
+	.website_dev_cls .laptop img {
+		width: 350px;
+	}
+	.website_dev_cls .approachRt h2 , .website_dev_cls .multifacetedSec h2 , .website_dev_cls .custPortfolio h2 ,.website_dev_cls .custseeOurpack h2 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.website_dev_cls .approachRt {
+		text-align:center;
+	}
+	.website_dev_cls .approachRt p , .website_dev_cls .multifacetedSec p {
+		font-size: 15px;
+	}
+	.website_dev_cls .multifacetedLft {
+		padding: 0 0px 0 80px;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxRt {
+		text-align: left;
+	}
+	.website_dev_cls .custmobileimg {
+		display: none;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxIcon {
+		left: 0;
+		right: auto;
+	  }
+	  .website_dev_cls .portfolioImg ul li h3 {
+		  font-size: 15px;
+	  }
+	  .website_dev_cls .flipbox {
+		margin: 0 auto 25px auto;
+	  }
+	  .website_dev_cls .erpsec h2 {
+		  font-size: 30px;
+		  line-height: 36px;
+	  }
+
+	  .website_dev_cls .erpsecRtmainCont p {
+		  font-size: 13px;
+		  line-height: 18px;
+	  }
+	  .website_dev_cls .erpseclft {
+		  width: 20%;
+	  }
+	  .website_dev_cls .erpseclftround h3 {
+		  font-size: 40px;
+	  }
+	  .website_dev_cls .erpseclftround {
+		  width: 110px;
+		  height: 110px;
+		  border-width: 5px;
+	  }
+	  .website_dev_cls .numbercol {
+		  width: 40px;
+		  list-style: none;
+		  font-size: 25px;
+		  line-height: 60px;
+	  }
+	  .website_dev_cls .erpsecRtmainboxicon svg {
+		  width: 30px;
+	  }
+	  .website_dev_cls .erpsecRtmainboxicon {
+		width: 60px;
+		height: 60px;
+		line-height: 50px;
+	  }
+	  .website_dev_cls .erpsecRtmainboxicon svg {
+		  height: 30px;
+	  }
+	  .website_dev_cls .erpsecRtmainbox h4 {
+		  font-size: 14px;
+		  padding-left: 5px;
+	  }
+	  .website_dev_cls .erpsecRt {
+		  width: 80%;
+	  }
+	  .website_dev_cls .erpsecRtmainbox {
+		  width: 55%;
+	  }
+}
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+	.website_dev_cls .approachSec , .website_dev_cls .multifacetedSec {
+		padding: 40px 0;
+	}
+	.website_dev_cls .laptop {
+		text-align: center;
+	}
+
+	.website_dev_cls .approachRt h2 , .website_dev_cls .multifacetedSec h2 , .website_dev_cls .custPortfolio h2 ,.website_dev_cls .custseeOurpack h2 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.website_dev_cls .approachRt {
+	}
+	.website_dev_cls .approachRt p , .website_dev_cls .multifacetedSec p {
+		font-size: 15px;
+	}
+	.website_dev_cls .multifacetedLft {
+		padding: 0 0px 0 80px;
+	}
+	.website_dev_cls .multifacetedLft .multifacetedBoxRt {
+		text-align: left;
+	}
+
+	.website_dev_cls .multifacetedLft .multifacetedBoxIcon {
+		left: 0;
+		right: auto;
+	  }
+	  .website_dev_cls .portfolioImg ul li h3 {
+		  font-size: 15px;
+	  }
+	  .website_dev_cls .flipbox {
+		margin: 0 auto 25px auto;
+	  }
+	  .website_dev_cls .erpsec h2 {
+		  font-size: 30px;
+		  line-height: 36px;
+	  }
+
+	  .website_dev_cls .erpsecRtmainCont p {
+		  font-size: 13px;
+		  line-height: 18px;
+	  }
+	  .website_dev_cls .erpseclft {
+		  width: 20%;
+	  }
+	  .website_dev_cls .erpseclftround h3 {
+		  font-size: 40px;
+	  }
+	  .website_dev_cls .erpseclftround {
+		  width: 110px;
+		  height: 110px;
+		  border-width: 5px;
+	  }
+	  .website_dev_cls .numbercol {
+		  width: 40px;
+		  list-style: none;
+		  font-size: 25px;
+		  line-height: 60px;
+	  }
+	  .website_dev_cls .erpsecRtmainboxicon svg {
+		  width: 30px;
+	  }
+	  .website_dev_cls .erpsecRtmainboxicon {
+		width: 60px;
+		height: 60px;
+		line-height: 50px;
+	  }
+	  .website_dev_cls .erpsecRtmainboxicon svg {
+		  height: 30px;
+	  }
+	  .website_dev_cls .erpsecRtmainbox h4 {
+		  font-size: 16px;
+		  padding-left: 5px;
+	  }
+	  .website_dev_cls .erpsecRt {
+		  width: 80%;
+	  }
+	  .website_dev_cls .erpsecRtmainbox {
+		  width: 55%;
+	  }
+	  .website_dev_cls .flipbox {
+		  width: 100%;
+	  }
+	  .website_dev_cls .flipboxback p {
+		  font-size: 13px;
+		  line-height: 18px;
+	  }
+}
+@media only screen and (min-width : 1200px) and (max-width : 1400px) {
+	.website_dev_cls .multifacetedBox h3 {
+		font-size: 18px;
+	}
+	.website_dev_cls .multifacetedSec , .website_dev_cls .erpsec {
+		padding: 50px 0;
+ 	}
+	.website_dev_cls .custPortfolio h2 , .website_dev_cls .custseeOurpack h2 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.website_dev_cls .flipbox {
+		width: 100%;
+	}
+	.website_dev_cls .flipboxback p {
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.website_dev_cls .erpsecRtmainbox {
+		width: 55%;
+	}
+	.website_dev_cls .erpsec h2 {
+		margin: 0;
+	}
+}
+
+/**************** End website-development **************/

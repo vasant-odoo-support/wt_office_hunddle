@@ -74,3 +74,47 @@
     max-width: 20%;
     font-weight: bold !important;
 }
+
+/*Login responsive*/
+
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+    .main-background .form-containt-right h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-top:0px;
+    }
+    .main-background .form-containt-right {
+        margin-right: -4%;
+    }
+    .login-img{
+        height: auto;
+    }
+    .main-background .form-custom{
+        max-width: 85%;
+        margin-left: 10%;
+    }
+    .main-background .login-button-custom {
+        max-width: 100%;
+    }
+
+}
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+    .main-background .form-containt-right h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-top:0px;
+    }
+    .main-background .form-containt-right {
+        margin-right: -4%;
+    }
+    .login-img{
+        height: auto;
+    }
+    .main-background .form-custom{
+        max-width: 85%;
+        margin-left: 10%;
+    }
+    .main-background .login-button-custom {
+        max-width: 100%;
+    }
+}
