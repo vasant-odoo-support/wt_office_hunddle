@@ -560,6 +560,7 @@
     border-radius: 30px;
     color: white;
     font-size: 24px;
+    max-width: 30% !important;
 }
 
 .signup_wrap .column-left {
@@ -570,4 +571,44 @@
 .signup_wrap .column-right {
     width: 50%;
     padding: 150px;
+}
+
+
+/*Signup responsive*/
+
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+  .signup_wrap .column-left{
+     padding: 10px;
+  }
+  .signup_wrap .column-right{
+    padding: 10px;
+  }
+  .signup_wrap .column-right p {
+    padding-top: 10px;
+    font-size: 19px;
+  }
+  .signup_wrap .column-right img {
+    height: 50px;
+    width: 50px;
+  }
+ .signup_wrap .captcha-area .captcha-img {
+    height: auto;
+    width: 110%;
+  }
+  .signup_wrap .wrapper .captcha-area{
+    width: 230%;
+    height: max-content;
+  }
+  .signup_wrap .sign-btn{
+    margin-left: 80px;
+    width: 100%;
+    max-width: 100% !important;
+    margin-top: 5px;
+  }
+  .signup_wrap .wrapper{
+    margin-top: -50%;
+  }
+}
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+    
 }

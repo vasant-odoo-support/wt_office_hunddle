@@ -167,7 +167,7 @@
 	                        </div>
 	                    <!-- <button class="sign-btn">Sign Up</button> -->
 	                    <div class="text-center oe_login_buttons pt-3">
-	                        <button type="submit" class="btn btn-primary btn-block sign-btn" style="max-width: 30% !important;"> Sign up</button>
+	                        <button type="submit" class="btn btn-primary btn-block sign-btn"> Sign up</button>
 	                        <!-- <a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm" role="button">Already have an account?</a> -->
 	                        <div class="o_login_auth"/>
 	                    </div>
