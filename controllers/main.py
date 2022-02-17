@@ -43,6 +43,97 @@ class WebsiteSaleOH(WebsiteSale):
 
         return request.render("wt_office_hunddle.printing_product", self._prepare_product_values(product, category, search, **kwargs))
 
+    @http.route(['/shop/cart/update'], type='http', auth="public", methods=['GET', 'POST'], website=True, csrf=False)
+    def cart_update(self, product_id, add_qty=1, set_qty=0, **kw):
+        """This route is called when adding a product to cart (no options)."""
+        print("========== 8")
+        sale_order = request.website.sudo().sale_get_order(force_create=True)
+        if sale_order.state != 'draft':
+            request.session['sale_order_id'] = None
+            sale_order = request.website.sudo().sale_get_order(force_create=True)
+
+        product_custom_attribute_values = None
+        if kw.get('product_custom_attribute_values'):
+            product_custom_attribute_values = json.loads(kw.get('product_custom_attribute_values'))
+
+        no_variant_attribute_values = None
+        if kw.get('no_variant_attribute_values'):
+            no_variant_attribute_values = json.loads(kw.get('no_variant_attribute_values'))
+
+        # # print ('___ kw : ', kw)
+        print("========== 4")
+        image_data = []
+        for child in range(0,10) :
+            image1 = 'img_front_data_'+str(child)
+            image2 = 'img_front_back_data_'+str(child)
+            image3 = 'img_sample_data_'+str(child)
+            print("========= image1 ------- ")
+            # print ('___ c : ', image1, image2, image3)
+            if kw.get(image1,False):
+                file = ast.literal_eval(kw.get(image1))
+                # # print ('___ file, type(file) : ', file, type(file))
+                
+                attachment_id = request.env['ir.attachment'].sudo().create({
+                    'name': file.get('name'),
+                    'type': 'binary',
+                    'datas': file.get('data'),
+                    'name': file.get('name'),
+                    'public': True,
+                    'res_model': 'sale.order',
+                    'res_id' : sale_order.id,
+                })
+                print("========= image1 ----dd--- ")
+                image_data.append((0,0,{
+                    'order_id' : sale_order.id,
+                    'product_id' : int(product_id),
+                    'image' : file.get('data'),
+                    'image_name' : file.get('name'),
+                    'attachment_id' : attachment_id.id,
+                    'text_description' : kw.get('image_description', ''),
+                    'image_type' : 'front'
+                }))
+                print("========= reyt ------- ")
+            if kw.get(image2, False):
+                file = ast.literal_eval(kw.get(image2))
+                # print ('___ file, type(file) : ', file, type(file))
+                
+                attachment_id = request.env['ir.attachment'].sudo().create({
+                    'name': file.get('name'),
+                    'type': 'binary',
+                    'datas': file.get('data'),
+                    'name': file.get('name'),
+                    'public': True,
+                    'res_model': 'sale.order',
+                    'res_id' : sale_order.id,
+                })
+                print("========= sdadd ------- ")
+                image_data.append((0,0,{
+                    'order_id' : sale_order.id,
+                    'product_id' : int(product_id),
+                    'image' : file.get('data'),
+                    'image_name' : file.get('name'),
+                    'attachment_id' : attachment_id.id,
+                    'text_description' : kw.get('image_description', ''),
+                    'image_type' : 'back'
+                }))
+                print("========= 333 ------- ")
+            break
+        # print ('___ image_data : ', image_data)
+        print("========== 1")
+        sale_order.sudo()._cart_update(
+            product_id=int(product_id),
+            add_qty=add_qty,
+            set_qty=set_qty,
+            product_custom_attribute_values=product_custom_attribute_values,
+            no_variant_attribute_values=no_variant_attribute_values,
+            images_lines=image_data
+        )
+        print("========== 2")
+        if kw.get('express'):
+            return request.redirect("/shop/checkout?express=1")
+
+        return request.redirect("/shop/cart")
+
 
 class WebsiteSlidesHuddleCustom(WebsiteSlides):
 
@@ -885,6 +976,29 @@ class WebsiteHuddleCustom(http.Controller):
 
         url = "/my/tasks?filterby=" + str(project.id)
         return request.redirect(url)
+
+    @http.route('/thankyou', type='http', auth='public', website=True)
+    def website_order_thankyou(self):
+        return  True
+
+    @http.route('/website-order', type='http', auth='public', website=True)
+    def website_order(self, **kw):
+        if not kw:
+            return request.redirect('/web-development')
+        name = kw.get('package-name') + " " + kw.get('package-price')
+        contact_name = kw.get('packageFormName') or ''
+        email_from = kw.get('packageFormEmail') or ''
+        phone = kw.get('packageFormPhone') or ''
+        description = kw.get('packageFormMsg') or ''
+        vals = {
+            'name': name or '',
+            'contact_name': contact_name,
+            'email_from': email_from,
+            'phone': phone,
+            'description': description
+        }
+        crm_lead = request.env['crm.lead'].sudo().create(vals)
+        return  request.render('wt_office_hunddle.website_thankyou_tmpl')
 
     @http.route('/how-it-works', type='http', auth='public', website=True)
     def web_how_works(self):

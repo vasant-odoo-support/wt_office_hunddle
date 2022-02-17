@@ -1,4 +1,4 @@
-@media only screen and (min-width : 1024px) and (max-width : 1199px) {
+/*@media only screen and (min-width : 1024px) and (max-width : 1199px) {
 .virtual_staffing_wrap #hero {
 	height: auto;
 }
@@ -107,6 +107,9 @@ line-height: 52px;
 .virtual_staffing_wrap .custhowvirtual .customBtn {
 	margin: 70px 0 0px 0;
 }
+.virtual_staffing_wrap .pickfromservices .col-xl-3{
+	padding: 10px 8px;
+}
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1400px) {
@@ -175,5 +178,56 @@ line-height: 52px;
 	}
 	.virtual_staffing_wrap .secMissingMain h5 {
 		font-size: 29px;
+	}
+}*/
+
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+	.virtual_staffing_wrap #hero {
+	    width: 100%;
+	    margin-top: 0px;
+	    height: auto !important;
+	    padding: 115px 0 130px !important;
+	}
+	.virtual_staffing_wrap #hero h1 {
+	    margin: 0 0 10px 0;
+	    font-size: 30px;
+	    font-weight: 700;
+	    line-height: 50px;
+	    color: #fff;
+	}
+	.virtual_staffing_wrap .virtualstaff img {
+		width: 276px;
+	}
+	.virtual_staffing_wrap .secMissing {
+		padding: 0px 0 0px 0 !important;
+		text-align: center !important;
+    	padding: 30px !important;
+	}
+	.virtual_staffing_wrap .secMissingMain{
+		text-align: center !important;
+	}
+	.virtual_staffing_wrap .secMissingMain h5{
+		font-size: 37px;
+    	font-weight: 400;
+	}
+	.virtual_staffing_wrap .secMissingMain h3{
+		font-size: 38px;
+	}
+	.virtual_staffing_wrap .secMissingMain h2{
+		font-size: 35px;
+	    line-height: 115px;
+	}
+	.virtual_staffing_wrap .pickfromservices h2{
+		font-size: 40px;
+	}
+	.virtual_staffing_wrap .pickfromservices .col-xl-3{
+		padding: 5px 8px;
+	}
+	.virtual_staffing_wrap .custhowvirtual h2 {
+		color: #db984a;
+	    font-size: 58px;
+    	line-height: 67px;
+	    font-weight: 700;
+	    margin: 0 0 40px 0;
 	}
 }

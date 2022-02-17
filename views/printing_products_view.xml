@@ -619,17 +619,17 @@
                                   <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
 
                                   <!-- ASK DESIGN -->
-                                  <!-- <div class="mt16 mb4">
-                                    <b><span style="font-size:30px;">Do you have Design? </span></b>
+                                  <div class="mt16 mb4">
+                                    <b><span style="font-size:30px;">Choose Design Options</span></b>
                                     <br/>
                                     <input type="radio" id="is_have_design" value="yes" name="is_have_design" class="is_have_design"/><b><span style="margin-right:10px;">Instantly Processed</span></b><br/>
                                     <input type="radio" id="is_have_no_design" value="no" name="is_have_design" class="is_have_design"/><b><span>Let Us Design for You (+ design cost)</span></b>
                                     <br/>
-                                  </div> -->
+                                  </div>
                                   <!-- END ASK DESIGN -->
 
                                   <!-- UPLOAD FILES -->
-                                  <!-- <div class="uploaded_images">
+                                  <div class="uploaded_images">
                                     <div id="photos_front" style="display: inline;" class=""></div>
                                     <div id="photos_front_back" style="display: inline;" class=""></div>
                                   </div>
@@ -656,14 +656,14 @@
                                       <br/>
                                       <div class="image_description">
                                         <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#"><i class="fa fa-shopping-cart"/> Add to Cart</a>
-                                      </div> -->
+                                      </div>
                                       <!-- END UPLOAD FILES -->
 
                                       <!-- ADD DESIGN -->
-                                      <!-- <div class="flex_div">
+                                      <div class="flex_div">
                                         <div class="btn-letusdesign"><a href="/graphic">Design Service</a> </div>
                                       </div>
-                                      <div class="image_data_div"></div> -->
+                                      <div class="image_data_div"></div>
                                       <!-- END ADD DESIGN -->
                                   
                                   <div id="product_option_block"/>

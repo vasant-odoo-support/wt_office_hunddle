@@ -1955,3 +1955,73 @@ opacity:0
         padding: 200px 0;
     }
 }
+
+
+#product_details .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+#product_details .upload_button_front, #product_details .upload_button_back, #product_details .image_description, #product_details .btn-letusdesign, #product_details .btn-send-design, #product_details .upload-send-text{
+    display: none;
+}
+
+#product_details .flex_div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#product_details .flex_2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#product_details .btn-letusdesign{
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 12px 10px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    border-radius: 15px;
+    background: #00A09D;
+}
+#product_details .btn-send-design{
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 12px 10px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    border-radius: 15px;
+    background: #db974a
+}
+#product_details .btn-send-design a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+#product_details .btn-letusdesign a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+
+#product_details .is_have_design{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#product_details .btn-letusdesign a{
+    color:#fff;
+}

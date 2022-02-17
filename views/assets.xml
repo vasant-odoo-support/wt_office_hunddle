@@ -30,6 +30,7 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/how_it_works/css/how_it_works.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/website_development/css/website_development.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/business-couching/css/business-couching.css"/>
+            <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/css/thankyou.css"/>
         </xpath>
     	<xpath expr="//script[last()]" position="after">
             <script src="/wt_office_hunddle/static/src/js/aos.js"></script>
@@ -44,6 +45,7 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/owl.carousel.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/home.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/website_development/js/lightbox/lightbox.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/js/variant_mixin.js"></script>
     	</xpath>
     </template>
 

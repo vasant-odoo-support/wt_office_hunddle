@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website_thankyou_tmpl" name="Thank You!">
+        <t t-call="website.layout">
+            <div id="wrap" class="website_thankyou">
+                <div class="jumbotron text-center">
+                    <h1 class="display-3">Thank You!</h1>
+                    <h3>We Will Get Back To You ASAP</h3>
+                    <hr/>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-sm" href="/" role="button">BACK TO HOME</a>
+                    </p>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

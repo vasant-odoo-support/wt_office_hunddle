@@ -1579,3 +1579,71 @@ transition: 500ms ease;
 }
 
 /**************** End website-development **************/
+
+
+/* modal css start */
+.website_dev_cls .custom-modal .modal-content {
+    background: #000;
+}
+.website_dev_cls .custom-modal input[type="text"] {
+    width: 100%;
+    margin: 0 0 0 0;
+    border: 1px solid #cbcbcb;
+    background: #ffffff00;
+    padding: 10px 15px;
+    color: #535353;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: 400;
+    outline: none !important;
+    margin: 0 0 15px 0;
+}
+
+.website_dev_cls .custom-modal input[type="email"] {
+    width: 100%;
+    margin: 0 0 0 0;
+    border: 1px solid #cbcbcb;
+    background: #ffffff00;
+    padding: 10px 15px;
+    color: #535353;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: 400;
+    outline: none !important;
+    margin: 0 0 15px 0;
+}
+
+.website_dev_cls .custom-modal textarea {
+    width: 100%;
+    margin: 0 0 0 0;
+    border: 1px solid #cbcbcb;
+    background: #ffffff00;
+    padding: 10px 15px;
+    color: #535353;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 90px;
+    font-weight: 400;
+    outline: none !important;
+    margin: 0 0 15px 0;
+}
+
+.website_dev_cls .custom-modal button.btn.text-uppercase.text-white {
+    background: #046582;
+    padding: 5px 20px;
+}
+
+.website_dev_cls .custom-modal button.close {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+}
+.website_dev_cls .custom-modal h5#exampleModalLabel {
+    color: #fff;
+}
+.website_dev_cls .custom-modal .modal-header {
+    border: none;
+}

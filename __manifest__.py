@@ -55,6 +55,7 @@
         'views/how_it_works_view.xml',
         'views/business_coatching_view.xml',
         'views/product_template_view.xml',
+        'views/thankyou_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',
