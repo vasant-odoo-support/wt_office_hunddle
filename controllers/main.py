@@ -995,7 +995,8 @@ class WebsiteHuddleCustom(http.Controller):
             'contact_name': contact_name,
             'email_from': email_from,
             'phone': phone,
-            'description': description
+            'description': description,
+            'type': 'lead',
         }
         crm_lead = request.env['crm.lead'].sudo().create(vals)
         return  request.render('wt_office_hunddle.website_thankyou_tmpl')
