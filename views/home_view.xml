@@ -23,7 +23,7 @@
                       <span>VIRTUAL STAFFING</span></h2>
                     <h4>Cover bigger responsibilities,<br/>
                       grab more opportunities.</h4>
-                    <a href="#" class="customBtn">Get Started</a> </div>
+                    <a href="/page/virtual-staffing" class="customBtn">Get Started</a> </div>
                 </div>
                 <div class="virtualstaff"><img src="/wt_office_hunddle/static/src/home/images/virtualstaf.png"/></div>
               </div>
@@ -36,7 +36,7 @@
                     <div class="custhomeslider2main">
                       <h2>WE ARE OFFERING <br/>WEB DEVELOPMENT<br/> INCLUDING ERP <br/>CUSTOMIZATION. </h2>
                       <h4>NOT JUST A WEBSITE BUILDER... <br/>I WE OFFER A BUSINESS IN A BOX. </h4>
-                      <a href="#" class="customBtn">Let's Get Started</a> </div>
+                      <a href="/web-development" class="customBtn">Let's Get Started</a> </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="slider2Img"><img src="/wt_office_hunddle/static/src/home/images/slider2Img.png" /></div>
@@ -88,7 +88,7 @@
                       <div class="slier5log"><img src="/wt_office_hunddle/static/src/home/images/slider5logo.png" /></div>
                       <h4>  has world-Class Graphic Designer, Video-Editor, and Web Developers all
                         dediceted to you.</h4>
-                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                      <a href="/tryofficehuddle.com" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                         <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                   </div>
                 </div>
@@ -119,6 +119,7 @@
                       <h2><span>Event </span> Lorem Ipsum <br/> Lorem Ipsum </h2>
                       <h3>jan. xx,xxxx</h3>
                     </div>
+                    <a href="/event" class="customBtn">Get Started</a>
                   </div>
                   <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
                     <div class="custhomeslider7Rt">
