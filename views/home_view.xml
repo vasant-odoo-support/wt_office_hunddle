@@ -54,7 +54,7 @@
                       <h3>WORLD CLASS 
                       <span>ENTREPRENUERIAL TRAINING </span></h3>
                       <h2>BOOST THE GROWTH OF YOUR BUSINESS THROUGH ENHANCING YOUR SKILLS. </h2>
-                      <a href="#" class="customBtn">Let's Get Started</a> </div>
+                      <a href="/e-learning" class="customBtn">Let's Get Started</a> </div>
                   </div>
                 </div>
               </div>
@@ -70,8 +70,8 @@
                       <h2>Grow Your Revenue
                       <span>49% Faster </span></h2>
                       <h4> By Using Video and Graphics <br/>in Your marketing Campaigns</h4>
-                      <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
-                        <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
+                      <a href="/graphic" class="customBtn">Let's Get Started</a> <br/>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -103,6 +103,7 @@
                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="custhomeslider6main">
                       <h2>Always move <br/>Forward with a <br/>  <span>Business Coach</span> <br/>  behind your back.</h2>
+                      <a href="/business-coatching-new" class="customBtn">Get Started</a>
                     </div>
                   </div>
                 </div>
@@ -268,43 +269,43 @@
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/team-leader.png" alt="" class="img-fluid"/></div>
                     <h4>Leadership Development System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/megaphone.png" alt="" class="img-fluid"/></div>
                     <h4>Marketing System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/financial-bar-chart.png" alt="" class="img-fluid"/></div>
                     <h4>Financial System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/networking.png" alt="" class="img-fluid"/></div>
                     <h4>Team Development System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/magnet.png" alt="" class="img-fluid"/></div>
                     <h4>Lead Generation System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/funnel.png" alt="" class="img-fluid"/></div>
                     <h4>Lead Conversion System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes">
                     <div class="seven-img"><img src="/wt_office_hunddle/static/src/home/images/customer.png" alt="" class="img-fluid"/></div>
                     <h4>Customer Fulfillment System</h4>
-                    <a href="#"><![CDATA[&nbsp;]]></a> </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="seven-boxes blue-bg">
@@ -425,7 +426,7 @@
                   </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <a class="readmoreBtn" href="#">
+                  <a class="readmoreBtn" href="/web-development">
                     <div class="enter-t purple">
                       <h3>LEAD GENERATION</h3>
                       <p>Create limitless income generation to live the life that you want.</p>
@@ -450,9 +451,9 @@
                   </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <a class="readmoreBtn" href="/erp-development">
+                  <a class="readmoreBtn" href="/web-development">
                     <div class="enter-t green">
-                      <h3>ERP DEVELOPMENT</h3>
+                      <h3>WEB DEVELOPMENT</h3>
                       <p>Centralize all businees functions and improve your business processes by 95%</p>
                     </div>
                   </a>
