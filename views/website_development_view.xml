@@ -225,7 +225,7 @@
 				              <p>
 				                Responsive websites are workable across multiple platforms to increase the reach of your brand.
 				                </p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-responsive">Hire Us</a>
 				           </div>
 				        </div>
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -235,7 +235,7 @@
 				            </div>
 				            <h4>Conversion-driven <br/>Design</h4>
 				              <p>Our web applications are fabricated in a way that promotes lead conversion.</p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-conversion-driven-design">Hire Us</a>
 				           </div>
 				        </div>
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -244,7 +244,7 @@
 				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon3.png" /></div>
 				            <h4>Search Engine  <br/>Optimized</h4>
 				              <p>The Web Design Corp professionals give our partners optimized and keyword loaded web applications.</p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-seo">Hire Us</a>
 				           </div>
 				        </div>
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -254,7 +254,7 @@
 				            </div>
 				            <h4>Safety and  <br/>security</h4>
 				              <p>Our team fashions web applications that are secured with SSL certification.</p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-satisfy-and-security">Hire Us</a>
 				           </div>
 				        </div>
 				      </div>
@@ -265,7 +265,7 @@
 				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon5.png" /></div>
 				            <h4>Mobile  <br/>Ready</h4>
 				              <p>It is advantageous for our partners to build applications that are also mobile-ready and convertible.</p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-mobile-ready">Hire Us</a>
 				           </div>
 				        </div>
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -275,7 +275,7 @@
 				            </div>
 				            <h4>User  <br/>Experience</h4>
 				              <p>Without proper induction of efficacious user experience, no web application is worthy for your brand.</p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-user-experience">Hire Us</a>
 				           </div>
 				        </div>
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -285,7 +285,7 @@
 				            <h4>Speed </h4>
 				              <p>Google algorithms pick up those web applications that are easily loadable and speedy. Fortunately, our web developers have abundant skills to accelerate the web speed.
 				              </p>
-				            <a href="#">Hire Us</a>
+				            <a href="#" data-toggle="modal" data-target="#model-speed">Hire Us</a>
 				           </div>
 				        </div>
 				        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -293,9 +293,9 @@
 				            <div class="pickfromserBoxicon">
 				              <img src="/wt_office_hunddle/static/src/website_development/images/specialicon7.png" />
 				            </div>
-				            <h4>Safety and  <br/>security</h4>
-				              <p>Our team fashions web applications that are secured with SSL certification.</p>
-				            <a href="#">Hire Us</a>
+				            <h4>ERP  <br/>Development</h4>
+				              <p>Our team expert provide perfect ERP system to manage enterpise resources.</p>
+				            <a href="#" data-toggle="modal" data-target="#model-erp-development">Hire Us</a>
 				           </div>
 				        </div>
 				      </div>
@@ -875,6 +875,446 @@
 				    
 				  </div>
 				</section>
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-responsive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Responsive Design</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="Responsive Design"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-conversion-driven-design" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Conversion-driven Design</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="Conversion-driven Design"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-seo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Search Engine Optimized</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="Search Engine Optimized"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-satisfy-and-security" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Safety and Security</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="Safety and Security"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-mobile-ready" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Mobile Ready</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="Mobile Ready"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-user-experience" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">User Experience</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="User Experience"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-speed" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Speed</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="Speed"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
+
+				<!-- Modal responsive-->
+				<div class="modal fade" id="model-erp-development" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog custom-modal" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">ERP Development</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span><![CDATA[&times;]]></span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       <div class="ban-form">
+                         <form id="packageForm" action="/website-order" method="POST" name="packageForm">
+                         	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" class="package-name" id="package-name" name="package-name" value="ERP Development"/>
+                            <input type="hidden" class="package-price" id="package-price" name="package-price" value=""/>
+                            <div class="row">
+                                  <div class="col-md-12 first">
+                                     <div class="fldset">
+                                     <input name="packageFormName" minlength="2" type="text" placeholder="Enter your name *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="email" name="packageFormEmail" placeholder="Enter email here *" required="1"/>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <input type="text" name="packageFormPhone" minlength="10" maxlength="14" placeholder="Enter number here *" required="1"/>
+                                     </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                     <div class="fldset">
+                                     <textarea name="packageFormMsg" rows="7" placeholder="Talk About Your Project"></textarea>
+                                     </div>
+                                  </div>
+                                  
+                                  <div class="col-md-12">
+                                     <div class="fldset text-center">
+                                     <button class="btn text-uppercase px-5 text-white py-2" type="submit">Send</button>
+                                     
+                                     </div>
+                                  </div>
+                            </div>
+                         </form>
+                         </div>
+				      </div>
+				   
+				    </div>
+				  </div>
+				</div>
+				<!-- order now modal end -->
 
 				<!-- Modal 1-->
 				<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

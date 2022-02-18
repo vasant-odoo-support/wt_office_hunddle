@@ -983,6 +983,7 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/website-order', type='http', auth='public', website=True)
     def website_order(self, **kw):
+        sales_id = request.env['res.users'].search([('login', '=', 'sales@officehuddle.com')])
         if not kw:
             return request.redirect('/web-development')
         name = kw.get('package-name') + " " + kw.get('package-price')
@@ -997,6 +998,7 @@ class WebsiteHuddleCustom(http.Controller):
             'phone': phone,
             'description': description,
             'type': 'lead',
+            'user_id': sales_id.id or False
         }
         crm_lead = request.env['crm.lead'].sudo().create(vals)
         return  request.render('wt_office_hunddle.website_thankyou_tmpl')
