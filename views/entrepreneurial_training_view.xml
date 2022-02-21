@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="entrepreneurial_training_tmpl" name="Entrepreneurial Training">
+		<t t-call="website.layout">
+			<div id="wrap" class="entrepreneurial_training_cl">
+				<!-- ======= Hero Section ======= -->
+				<div class="enterprice-top">
+				    <div class="container">
+				      <div class="row">
+					  <div class="col-lg-3 col-md-3 col-sm-12"></div>
+					     <div class="col-lg-9 col-md-9">
+						    <div class="enter-like">
+							  <h3>boost the growth of your</h3>
+							  <h1>business</h1>
+							  <h3>through enhancing your</h3>
+							  <div class="display-inline"><h1>skills</h1> <h6><a href="#">Find your courses</a></h6></div>
+							</div>
+				         </div>	
+					  </div>
+					</div>
+				</div>
+
+				<section class="enterprice-section">
+				    <div class="container">
+				      <div class="row">
+					  
+				        <div class="col-md-12">
+							<h4>what is unique about our offerings?</h4>
+							<h3>These aren't your typical entrepreneurial trainings</h3>
+					         <p>A strong foundation is the key to keep your business going. A weak core has an immense effect on the potential of your business to strive. It is often that the problematic areas of an organization is the fruit of a deficient foundation which should not happen in the first place. With that, our goal is to build and condition the fundamental principles of your company by starting at the roots. In this way, we can thoroughly cover the major source of problems that is often overlooked by business owners and create a strategic plan that permanently treats encountered issues to prevent the spread of damage. </p>
+				        </div>
+					  </div>
+
+				      <div class="row">	
+					    <div class="col-lg-6 col-md-6">
+						   <h2>You'll walk away with</h2>
+						   <ul>
+						    <li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Strong core of an organization.</li>
+							<li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Ability to properly outline and
+					effectively perform strategies that
+					target to improve business stamina.</li>
+							<li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Effeciently manage the essential
+					functions of a company.</li>
+							<li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Alignment of company's purpose. </li>
+						   </ul>
+						</div>
+						<div class="col-lg-6 col-md-6">
+						  <img src="/wt_office_hunddle/static/src/enter-training/images/walk-away.png" alt="" class="img-fluid"/>
+						</div>
+				      </div>	  
+					</div>
+			  	</section>
+			  	<!-- subscribe section end -->
+
+			  	<section class="online-course">
+				    <div class="container">
+					    <h3>Available Online Courses</h3>
+					  	<div class="row">
+					    <t t-foreach="courses" t-as='course'>
+						    <div class="col-lg-4 col-md-4">
+				    		   <a t-attf-href="/slides/#{slug(course)}" style="display:inline;">
+							   <div class="on-course">
+							    <img t-att-src="website.image_url(course, 'image_1920')" class="img-fluid-course"/>
+								<h5 class="course-name"><span t-field="course.name"/></h5>
+								<p class="course-content"><t t-esc="course.description" /></p>
+								   
+								    <div class="bottom-star">
+									   	<t t-if="course.enroll == 'public'">
+				                          <span>Free</span>
+				                        </t>
+				                        <t t-if="course.enroll == 'invite'">
+				                          <span>Private</span>
+				                        </t>
+				                        <t t-if="course.enroll == 'payment'">
+				                          <span>$<t t-esc="course.product_id.lst_price"/></span>
+				                        </t>
+								   		<!-- <div class="price-b">$xx.xx</div> -->
+								  	</div>
+							   	</div>
+							 </a>
+							</div>
+						</t>
+					  </div>
+					</div>
+				</section>
+
+				<!-- Start Testimonials Section -->
+		    	<div class="homepage_wrap">
+	          	<section class="testimonials section-bg">
+		            <div class="container">
+		              <h2>OUR BUSINESS <br/>
+		                OWNERS <span>TRUST US</span></h2>
+		                <div class="owl-carousel" id="owlcarousel1">
+		                <div class="item">
+		                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+		                      <h3>Cortez Springer,</h3>
+		                      <h4>Wealth Strategist</h4>
+		                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                    </div>
+		                  </div>
+
+		                <div class="item">
+		                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+		                          <h3>Lemzel Johnson,</h3>
+		                          <h4>Motivational Speaker</h4>
+		                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                        </div>
+		                </div>
+		             <div class="item">
+		              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+		                      <h3>Oginga Carr,</h3>
+		                      <h4>High Performance Coach</h4>
+		                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                    </div>
+		             </div>
+		             <div class="item">
+		                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+		                      <h3>Cortez Springer,</h3>
+		                      <h4>Wealth Strategist</h4>
+		                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                    </div>
+		                  </div>
+
+		                <div class="item">
+		                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+		                          <h3>Lemzel Johnson,</h3>
+		                          <h4>Motivational Speaker</h4>
+		                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                        </div>
+		                </div>
+		             <div class="item">
+		              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+		                      <h3>Oginga Carr,</h3>
+		                      <h4>High Performance Coach</h4>
+		                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                    </div>
+		             </div>
+		             <div class="item">
+		                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+		                      <h3>Cortez Springer,</h3>
+		                      <h4>Wealth Strategist</h4>
+		                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                    </div>
+		                  </div>
+
+		                <div class="item">
+		                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+		                          <h3>Lemzel Johnson,</h3>
+		                          <h4>Motivational Speaker</h4>
+		                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                        </div>
+		                </div>
+		             <div class="item">
+		              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+		                      <h3>Oginga Carr,</h3>
+		                      <h4>High Performance Coach</h4>
+		                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+		                    </div>
+		             </div>
+		          </div>
+		          </div>
+		        </section>
+		        <!-- End Testimonials Section -->
+		        </div>
+			</div>
+		</t>
+	</template>
+</odoo>

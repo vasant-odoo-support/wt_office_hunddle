@@ -1,0 +1,135 @@
+/* entrepreneurial-training page css start */
+
+.entrepreneurial_training_cl .enterprice-top {
+    width: 100%;
+    height: 100%;
+    background: url(/wt_office_hunddle/static/src/enter-training/images/enterprice-top.jpg);
+    position: relative;
+    margin-top: 0px;
+    padding: 200px 0 250px;
+    background-repeat: round;
+}
+.entrepreneurial_training_cl section.enterprice-section {
+    padding-top: 0;
+}
+.entrepreneurial_training_cl .enterprice-top .enter-like {
+    position: relative;
+    top: 130px;
+}
+.entrepreneurial_training_cl .course-name{
+    height: 50px;
+    overflow: hidden;
+}
+
+.entrepreneurial_training_cl .enterprice-top .enter-like h1 {
+    color: #db984a;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 80px;
+}
+.entrepreneurial_training_cl .enterprice-top .enter-like h3 {
+    color: #fff;
+    font-size: 47px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.entrepreneurial_training_cl .enterprice-top .display-inline {
+    display: inline-flex;
+}
+.entrepreneurial_training_cl .enterprice-top .display-inline h6 {
+    margin: 60px 0 0 50px;
+}
+.entrepreneurial_training_cl .enterprice-top .display-inline h6 a {
+    background: #db984a;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.entrepreneurial_training_cl section.enterprice-section h4 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.entrepreneurial_training_cl section.enterprice-section h3 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.entrepreneurial_training_cl section.enterprice-section p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+}
+.entrepreneurial_training_cl section.enterprice-section h2 {
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.entrepreneurial_training_cl section.enterprice-section img {
+    margin-right: 10px;
+}
+.entrepreneurial_training_cl section.enterprice-section ul li {
+    list-style: none;
+    display: flex;
+    color: #000;
+    font-size: 18px;
+}
+.entrepreneurial_training_cl .online-course .on-course {
+    box-shadow: rgb(0 0 0 / 67%) 0 0 13px;
+    padding: 10px 10px 40px;
+    text-align: center;
+}
+
+.entrepreneurial_training_cl .online-course .on-course ul {
+    padding: 0 0px 0px 2px;
+    width: 75%;
+    float: left;
+}
+.entrepreneurial_training_cl .online-course .on-course .img-fluid-course{
+    width: 250px;
+    height: 170px;
+}
+.entrepreneurial_training_cl .on-course ul li {
+    display: inline-block;
+}
+.entrepreneurial_training_cl .online-course .row {
+    margin-bottom: 70px;
+}
+.entrepreneurial_training_cl .online-course .on-course h5 {
+    color: #000;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.entrepreneurial_training_cl .online-course .on-course p {
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: scroll;
+    height: 100px;
+    text-align: left;
+}
+.entrepreneurial_training_cl section.online-course h3 {
+    color: #04658f;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.entrepreneurial_training_cl section.online-course .price-b {
+    float: left;
+    width: 25%;
+    color: #000;
+}
+
+/* entrepreneurial-training page css end */

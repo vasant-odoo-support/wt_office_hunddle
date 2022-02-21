@@ -236,6 +236,16 @@ class WebsitBlogPost(Website):
 
 
 class WebsiteHuddleCustom(http.Controller):
+    @http.route('/entrepreneurial-training', type='http', auth='public', website=True)
+    def entrepreneurial_training(self):
+        courses = request.env['slide.channel'].search([])
+        train_ceo_blog = request.env['blog.post'].sudo().search([('valid_page', '=', 'train_like_ceo')], limit=3)
+        vals ={
+            'courses': courses,
+            'train_ceo_blog': train_ceo_blog,
+        }
+        return  request.render('wt_office_hunddle.entrepreneurial_training_tmpl', vals)
+
     @http.route(['/get/video/details'], type='json', auth="public", methods=['POST'], website=True)
     def get_video_data(self, res_id=False, model=False, size=False, res_field=False, **kw):
         video_data = None

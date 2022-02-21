@@ -1,0 +1,83 @@
+@media (min-width: 320px) and (max-width:767px){
+.entrepreneurial_training_cl .enterprice-top .enter-like h1 {
+    font-size: 50px;
+    line-height: 60px;
+}
+.entrepreneurial_training_cl .enterprice-top .enter-like h3 {
+    font-size: 30px;
+}
+.entrepreneurial_training_cl .display-inline {
+    display: block !important;
+}
+.entrepreneurial_training_cl .enterprice-top .display-inline h6 {
+    margin: 25px 0 0 3px;
+}
+.entrepreneurial_training_cl .enterprice-top .display-inline h6 a {
+    font-size: 20px;
+    padding: 7px 40px;
+}
+.entrepreneurial_training_cl .enterprice-top {
+    padding: 150px 0 163px;
+}
+.entrepreneurial_training_cl section.enterprice-section {
+    padding-top: 30px;
+}
+.entrepreneurial_training_cl section.enterprice-section h4 {
+    font-size: 20px;
+}
+.entrepreneurial_training_cl section.enterprice-section h3 {
+    font-size: 24px;
+}
+.entrepreneurial_training_cl .enterprice-section ul {
+    padding: 0;
+}
+.entrepreneurial_training_cl section.enterprice-section ul li {
+    font-size: 16px;
+}
+.entrepreneurial_training_cl section.online-course h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.entrepreneurial_training_cl .online-course .row {
+    margin-bottom: 0px;
+}
+.entrepreneurial_training_cl .enterprice-top .enter-like {
+    top: 78px;
+}
+.entrepreneurial_training_cl section.enterprice-section h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .entrepreneurial_training_cl .enterprice-top .enter-like h3 {
+    font-size: 35px;
+}
+.entrepreneurial_training_cl .enterprice-top .enter-like h1 {
+    font-size: 60px;
+    line-height: 60px;
+}
+.entrepreneurial_training_cl .enterprice-top .display-inline h6 a {
+    font-size: 22px;
+    padding: 10px 40px;
+}
+.entrepreneurial_training_cl .enterprice-top .enter-like {
+    top: 110px;
+}
+.entrepreneurial_training_cl section.enterprice-section h2 {
+    font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.entrepreneurial_training_cl .enterprice-section ul {
+    padding: 0;
+}
+.entrepreneurial_training_cl section.online-course h3 {
+    font-size: 35px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
