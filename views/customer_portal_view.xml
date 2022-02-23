@@ -13,15 +13,15 @@
         <section id="virtual-middle" class="container-fluid">
           <div id="sidebar" class="container container-fluid col-md-6 col-lg-4 col-xl-3">
 
-            <a href="#news">MY ACCOUNT</a>
-            <a href="#order products">ORDER PRODUCTS</a>
+            <a href="/my/account">MY ACCOUNT</a>
+            <a href="/shop">ORDER PRODUCTS</a>
             <a href="/my/quotes">MY NEW ORDERS</a>
             <a href="/my/orders">MY CONFIRM ORDERS</a>
-            <a href="#save design">SAVE DESIGN</a>
+            <a href="/my/tasks">SAVE DESIGN</a>
             <a href="/my/assessment">ASSESSMENT</a><br/>
-            <a href="#account">ACCOUNT</a>
+            <a href="/my/account">ACCOUNT</a>
             <a href="#preference">PREFERENCE</a>
-            <a href="#change my info">CHANGE MY INFO</a>
+            <a href="/my/account">CHANGE MY INFO</a>
             <a href="#contacts">CONTACTS</a>
             <a href="#credits cards">CREDITS CARDS</a>
             <a href="#account address">ACCOUNT ADDRESS</a>
@@ -36,21 +36,21 @@
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>GRAPHIC DESIGN / VIDEO EDITING</h2>
-                    <a href="#" class="button1 buttons">GET STARTED</a>
+                    <a href="/graphic" class="button1 buttons">GET STARTED</a>
                   </div>
                 </div>
 
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>WEBSITE DEVELOPMENT</h2><br/>
-                    <a href="/graphic" class="button2 buttons">GET STARTED</a>
+                    <a href="/web-development" class="button2 buttons">GET STARTED</a>
                   </div>
                 </div>
 
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>BUSINESS COACHING</h2><br/>
-                    <a href="#" class="button3 buttons">HIRE US</a>
+                    <a href="/business-coatching-new" class="button3 buttons">HIRE US</a>
                   </div>
                 </div>
               </div>
@@ -59,21 +59,21 @@
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>PRINTING</h2><br/>
-                    <a href="/graphic" class="button4 buttons">GET STARTED</a>
+                    <a href="/printing-products" class="button4 buttons">GET STARTED</a>
                   </div>
                 </div>
 
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>ENTERPREUERIAL TRAINING</h2><br/>
-                    <a href="#" class="button5 buttons">HIRE US</a>
+                    <a href="/entrepreneurial-training" class="button5 buttons">HIRE US</a>
                   </div>
                 </div>
 
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>VIRTUAL STAFFING</h2><br/>
-                    <a href="#" class="button6 buttons">HIRE US</a>
+                    <a href="/virtual-staffing" class="button6 buttons">HIRE US</a>
                   </div>
                 </div>
               </div>
@@ -89,14 +89,14 @@
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>MERCHANDISE</h2><br/>
-                    <a href="#" class="button8 buttons">BUY</a>
+                    <a href="/shop" class="button8 buttons">BUY</a>
                   </div>
                 </div>
 
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>EVENTS TICKETS</h2><br/>
-                    <a href="#" class="button9 buttons">BUY</a>
+                    <a href="/event" class="button9 buttons">BUY</a>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h1>GET A GAME PLAN</h1><br/>
-                    <a href="#" class="button10">GET STARTED</a>
+                    <a href="/how-it-work" class="button10">GET STARTED</a>
                   </div>
                 </div>
               </div>

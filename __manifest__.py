@@ -57,6 +57,7 @@
         'views/product_template_view.xml',
         'views/thankyou_view.xml',
         'views/entrepreneurial_training_view.xml',
+        'views/sale_stock_portal_template.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',
