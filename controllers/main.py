@@ -210,7 +210,7 @@ class WebsitAuthSignupHome(AuthSignupHome):
 
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
-        values = { key: qcontext.get(key) for key in ('login', 'name', 'password', 'company_name', 'referrer_type', 'no_discount_on_product', 'website_link', 'bussiness_phone', 'employees', 'annual', 'leaders', 'business_date') }
+        values = { key: qcontext.get(key) for key in ('login', 'name', 'password', 'company_name', 'fax_no', 'zip', 'street', 'positioning_statement', 'moto', 'referrer_type', 'no_discount_on_product', 'website_link', 'bussiness_phone', 'employees', 'annual', 'leaders', 'business_date') }
         if not values:
             raise UserError(_("The form was not properly filled in."))
         if values.get('password') != qcontext.get('confirm_password'):
@@ -1035,7 +1035,31 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/video-design', type='http', auth='public', website=True)
     def video_design_office_huddle(self):
-        return  request.render('wt_office_hunddle.video_design_officehuddle_template')
+        if request.env.user.id == request.env.ref('base.public_user').id:
+            return request.redirect('/pricing?new=new')
+        else:
+            active_sub = request.env['subscription.service'].search(
+                [
+                    ('partner_id', '=', request.env.user.partner_id.id),
+                    ('state', '=', 'open'),
+                ])
+            if not active_sub:
+                return request.redirect('/pricing')
+        partner = request.env.user.partner_id
+        address = (partner.street or '') + " " + (partner.street2 or '')
+        vals = {
+            'user_company_name': partner.company_name or '',
+            'user_contact_name': partner.name or '',
+            'user_phone': partner.bussiness_phone or '',
+            'user_address': address or '',
+            'user_website': partner.website_link or '',
+            'user_email': partner.email or '',
+            'user_zip': partner.zip or '',
+            'user_moto': partner.moto or '',
+            'user_ps': partner.positioning_statement,
+            'user_fax': partner.fax
+        }
+        return  request.render('wt_office_hunddle.video_design_officehuddle_template', vals)
 
     @http.route('/tryofficehuddle.com', type='http', auth='public', website=True)
     def try_office_huddle(self):
@@ -1057,7 +1081,21 @@ class WebsiteHuddleCustom(http.Controller):
                 ])
             if not active_sub:
                 return request.redirect('/pricing')
-        return  request.render('wt_office_hunddle.graphic_design_form')
+        partner = request.env.user.partner_id
+        address = (partner.street or '') + " " + (partner.street2 or '')
+        vals = {
+            'user_company_name': partner.company_name or '',
+            'user_contact_name': partner.name or '',
+            'user_phone': partner.bussiness_phone or '',
+            'user_address': address or '',
+            'user_website': partner.website_link or '',
+            'user_email': partner.email or '',
+            'user_zip': partner.zip or '',
+            'user_moto': partner.moto or '',
+            'user_ps': partner.positioning_statement,
+            'user_fax': partner.fax
+        }
+        return  request.render('wt_office_hunddle.graphic_design_form', vals)
 
     @http.route('/tshirt-printing', type='http', auth='public', website=True)
     def tshirt_printing_office_huddle(self):

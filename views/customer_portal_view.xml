@@ -35,8 +35,15 @@
               <div class="row 1">
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
-                    <h2>GRAPHIC DESIGN / VIDEO EDITING</h2>
+                    <h2>GRAPHIC <br/>DESIGN</h2>
                     <a href="/graphic" class="button1 buttons">GET STARTED</a>
+                  </div>
+                </div>
+
+                <div class="col col-sm col-md col-lg col-xl">
+                  <div class="inside">
+                    <h2>VIDEO<br/> EDITING</h2>
+                    <a href="/video-design" class="button1 buttons">GET STARTED</a>
                   </div>
                 </div>
 
@@ -47,15 +54,17 @@
                   </div>
                 </div>
 
+              </div>
+
+              <div class="row 2">
+
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>BUSINESS COACHING</h2><br/>
                     <a href="/business-coatching-new" class="button3 buttons">HIRE US</a>
                   </div>
                 </div>
-              </div>
 
-              <div class="row 2">
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>PRINTING</h2><br/>
@@ -70,15 +79,17 @@
                   </div>
                 </div>
 
+              </div>
+
+              <div class="row 3">
+
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>VIRTUAL STAFFING</h2><br/>
                     <a href="/virtual-staffing" class="button6 buttons">HIRE US</a>
                   </div>
                 </div>
-              </div>
 
-              <div class="row 3">
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>EVENTS</h2><br/>
@@ -92,13 +103,7 @@
                     <a href="/shop" class="button8 buttons">BUY</a>
                   </div>
                 </div>
-
-                <div class="col col-sm col-md col-lg col-xl">
-                  <div class="inside">
-                    <h2>EVENTS TICKETS</h2><br/>
-                    <a href="/event" class="button9 buttons">BUY</a>
-                  </div>
-                </div>
+                
               </div>
               <hr style="width: 95%; border: solid rgb(109, 107, 107) 2px; margin-left: 20px;"/>
               <div class="row 4">

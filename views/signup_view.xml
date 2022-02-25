@@ -38,6 +38,16 @@
 	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
 	                        </div>
 	                        <div class="form-group">
+	                            <input type="text" id="fax_no" name="fax_no" class="form-control padz" placeholder="Fax"/>
+	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                        	<input type="text" required="required" class="form-control" id="street" placeholder="Address" name="street"/>
+	                        </div>
+	                        <div class="form-group">
+	                        	<input type="text" required="required" class="form-control" id="zip" placeholder="Zip" name="zip"/>
+	                        </div>
+	                        <div class="form-group">
 	                            <input required="required" id="login" type="email" name="login" class="form-control padz" placeholder="Email"/>
 	                            <!-- <label for="Email" hidden>Email</label> -->
 	                        </div>
@@ -52,6 +62,15 @@
 	                        <div class="form-group">
 	                            <input type="password" required="required" id="confirm_password" name="confirm_password" class="form-control padz"
 	                                placeholder="Confirm Password"/>
+	                            <!-- <label for="Confirm Password" hidden>Confirm Passowrd</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <textarea id="moto" name="moto" rows="6" placeholder="MOTO" class="form-control"></textarea>
+	                            <!-- <label for="Confirm Password" hidden>Confirm Passowrd</label> -->
+	                        </div>
+	                        <div class="form-group">
+	                            <textarea id="positioning_statement" name="positioning_statement" rows="6" placeholder="POSITIONING STATEMENT"
+			                class="form-control"></textarea>
 	                            <!-- <label for="Confirm Password" hidden>Confirm Passowrd</label> -->
 	                        </div>
 	                        <div class="form-group">

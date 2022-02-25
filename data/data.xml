@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate='0'>
+    <data noupdate='1'>
         <record id="menu_what_we_do" model="website.menu">
             <field name="name">WHAT WE DO</field>
             <field name="url">#</field>

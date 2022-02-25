@@ -160,6 +160,9 @@ class SpeakersPartner(models.Model):
     ], "No of leaders report directly")
     business_date = fields.Date("Bussiness Start Date")
     website_link = fields.Char()
+    fax_no = fields.Char()
+    positioning_statement = fields.Text()
+    moto = fields.Text()
 
 
 class EventEvent(models.Model):

@@ -11,9 +11,10 @@
 				<page name="business_info" string="Bussiness Information">
 					<group>
 						<group>
-			                		<field name="company_name" string="Company Name"/>
-			                		<field name="website_link"/>
-			                		<field name="bussiness_phone"/>
+	                		<field name="company_name" string="Company Name"/>
+	                		<field name="website_link"/>
+	                		<field name="bussiness_phone"/>
+	                		<field name="fax_no" />
 			                <field name="employees"/>
 			                <field name="annual"/>
 			                <field name="leaders"/>
@@ -22,6 +23,8 @@
 			            <group>
 			                <field name="referrer_type"/>
 			                <field name="no_discount_on_product"/>
+			                <field name="positioning_statement"/>
+			                <field name="moto"/>
 			            </group>
 		            		</group>
 	            		</page>

@@ -21,77 +21,73 @@
                             <!--company Name input -->
                             <div class="form-outline">
                                 <input type="checkbox" name="video" value="video" checked="checked" hidden="hidden"/>
-                                <input type="text" required="required" class="form-control" id="company_name" placeholder="COMPANY NAME"
-                                    name="company_name"/>
-                            </div>
+                                <input type="text" required="required" class="form-control" id="company_name" placeholder="COMPANY NAME" name="company_name" t-att-value="user_company_name"/>
                         </div>
-                        <div class="col-sm-3">
-                            <!-- Name input -->
-                            <div class="form-outline">
-                                <input type="text" required="required" class="form-control" id="contact_name" placeholder="CONTACT NAME"
-                                    name="contact_name"/>
-                            </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <!-- Name input -->
+                        <div class="form-outline">
+                          <input type="text" required="required" class="form-control" id="contact_name" placeholder="CONTACT NAME" name="contact_name" t-att-value="user_contact_name"/>
                         </div>
-                        <div class="col-sm-3">
-                            <!-- Email input -->
-                            <div class="form-outline">
-                                <input type="tel" required="required" class="form-control" id="phone" placeholder="PHONE" name="phone"/>
-                            </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <!-- Email input -->
+                        <div class="form-outline">
+                          <input type="tel" required="required" class="form-control" id="phone" placeholder="PHONE" name="phone" t-att-value="user_phone"/>
                         </div>
-                        <div class="col-sm-3">
-                            <!-- Email input -->
-                            <div class="form-outline">
-                                <input type="number" class="form-control" id="fax" placeholder="FAX" name="fax"/>
-                            </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <!-- Email input -->
+                        <div class="form-outline">
+                          <input type="number" class="form-control" id="fax" placeholder="FAX" name="fax" t-att-value="user_fax"/>
                         </div>
+                      </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-3">
-                            <!-- Name input -->
-                            <div class="form-outline">
-                                <input type="text" required="required" class="form-control" id="address" placeholder="ADDRESS" name="address"/>
-                            </div>
+                      <div class="col-sm-3">
+                        <!-- Name input -->
+                        <div class="form-outline">
+                          <input type="text" required="required" class="form-control" id="address" placeholder="ADDRESS" name="address" t-att-value="user_address"/>
                         </div>
-                        <div class="col-sm-3">
-                            <!-- Name input -->
-                            <div class="form-outline">
-                                <input type="text" class="form-control" id="website" placeholder="WEBSITE" name="website"/>
-                            </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <!-- Name input -->
+                        <div class="form-outline">
+                          <input type="text" class="form-control" id="website" placeholder="WEBSITE" name="website" t-att-value="user_website"/>
                         </div>
-                        <div class="col-sm-3">
-                            <!-- Email input -->
-                            <div class="form-outline">
-                                <input type="email" required="required" class="form-control" id="email" placeholder="EMAIL" name="email"/>
-                            </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <!-- Email input -->
+                        <div class="form-outline">
+                          <input type="email" required="required" class="form-control" id="email" placeholder="EMAIL" name="email" t-att-value="user_email"/>
                         </div>
-                        <div class="col-sm-3">
-                            <!-- Email input -->
-                            <div class="form-outline">
-                                <input required="required" type="text" class="form-control" id="city_zip" placeholder="CITY/ZIP"
-                                    name="city_zip"/>
-                            </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <!-- Email input -->
+                        <div class="form-outline">
+                          <input type="text" required="required" class="form-control" id="city_zip" placeholder="CITY/ZIP" name="city_zip" t-att-value="user_zip"/>
                         </div>
+                      </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-xs cold-sm col-md col-lg">
-                            <!-- MOTTO -->
-                            <div class="form-outline">
-                                <textarea id="motto" name="motto" rows="6" placeholder="MOTTO"
-                                    class="form-control"></textarea>
-                            </div>
+                      <div class="col-xs cold-sm col-md col-lg">
+                        <!-- MOTTO -->
+                        <div class="form-outline">
+                          <textarea id="motto" name="motto" rows="6" placeholder="MOTTO" class="form-control"><t t-esc="user_moto"/></textarea>
                         </div>
-                        <div class="col-xs cold-sm col-md col-lg">
-                            <!-- POSITIONING STATEMENT -->
-                            <div class="form-outline">
-                                <textarea id="statement" name="statement" rows="6" placeholder="POSITIONING STATEMENT"
-                                    class="form-control"></textarea>
-                            </div>
+                      </div>
+                      <div class="col-xs cold-sm col-md col-lg">
+                        <!-- POSITIONING STATEMENT -->
+                        <div class="form-outline">
+                          <textarea id="statement" name="statement" rows="6" placeholder="POSITIONING STATEMENT"
+                            class="form-control"><t t-esc="user_ps"/></textarea>
                         </div>
+                      </div>
                     </div>
-                </div>
-            </section>
+                  </div>
+                </section>
             <hr />
 
             <section id="bg-mid" class="container-fluid">
