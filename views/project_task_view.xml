@@ -62,6 +62,8 @@
                   <field name="g_gray"/>
                   <field name="g_pink"/>
                   <field name="g_black"/>
+                  <field name="g_white"/>
+                  <field name="g_fullcolor"/>
                 </group>
                 <group string="DESIGN LOCATIONS">
                   <field name="full_color_front"/>

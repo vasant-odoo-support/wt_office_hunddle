@@ -624,6 +624,8 @@ class WebsiteHuddleCustom(http.Controller):
         g_gray = False
         g_pink = False
         g_black = False
+        g_white = False
+        g_fullcolor = False
 
         full_color_front = False
         full_color_back = False
@@ -652,6 +654,10 @@ class WebsiteHuddleCustom(http.Controller):
                 g_pink = True
             if 'color10' in kw and kw['color10'] == 'black':
                 g_black = True
+            if 'color11' in kw and kw['color11'] == 'white':
+                g_white = True
+            if 'color12' in kw and kw['color12'] == 'fullcolor':
+                g_fullcolor = True
 
             # Design Location
             if 'design1' in kw and kw['design1'] == 'design1':
@@ -729,6 +735,8 @@ class WebsiteHuddleCustom(http.Controller):
             'g_gray': g_gray or False,
             'g_pink': g_pink or False,
             'g_black': g_black or False,
+            'g_white': g_white or False,
+            'g_fullcolor': g_fullcolor or False,
             'full_color_front': full_color_front or False,
             'full_color_back': full_color_back or False,
             'bw_front': bw_front or False,
@@ -1057,7 +1065,7 @@ class WebsiteHuddleCustom(http.Controller):
             'user_zip': partner.zip or '',
             'user_moto': partner.moto or '',
             'user_ps': partner.positioning_statement,
-            'user_fax': partner.fax
+            'user_fax': partner.fax_no
         }
         return  request.render('wt_office_hunddle.video_design_officehuddle_template', vals)
 
@@ -1093,8 +1101,9 @@ class WebsiteHuddleCustom(http.Controller):
             'user_zip': partner.zip or '',
             'user_moto': partner.moto or '',
             'user_ps': partner.positioning_statement,
-            'user_fax': partner.fax
+            'user_fax': partner.fax_no
         }
+        print("---------- ", vals)
         return  request.render('wt_office_hunddle.graphic_design_form', vals)
 
     @http.route('/tshirt-printing', type='http', auth='public', website=True)

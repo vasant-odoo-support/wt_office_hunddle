@@ -75,6 +75,8 @@ class ProjectTask(models.Model):
     g_gray = fields.Boolean("GRAY")
     g_pink = fields.Boolean("PINK")
     g_black = fields.Boolean("BLACK")
+    g_white = fields.Boolean("WHITE")
+    g_fullcolor = fields.Boolean("FULL COLOR")
 
     images_lines = fields.One2many('file.images','task_id',string='Attached Files')
     videos_lines = fields.One2many('file.videos','task_id',string='Attached Files')
