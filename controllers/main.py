@@ -294,12 +294,32 @@ class WebsiteHuddleCustom(http.Controller):
             mimetype = "video/mp4"
         return mimetype
 
+    @http.route(['/task/print'], type='json', auth="public", website=True)
+    def custom_cotroller(self, **post):
+        task = post.get('task_id')
+        project_task = request.env['project.task']
+        task_id = project_task.sudo().browse(task)
+        project_obj = request.env['project.project']
+        project = project_obj.sudo().search([('partner_id', '=', task_id.partner_id.id), ('project_type', '=', 'production')])
+        if not project:
+            project_vals = {
+                'name': request.env.user.name + " Print",
+                'partner_id': task_id.partner_id.id,
+                'privacy_visibility': 'portal',
+            }
+            project = project_obj.sudo().with_context(production=True).create(project_vals)
+            stage_id = request.env['project.task.type'].sudo().search([('stage_type', '=', 'new_print')])
+            task_id.sudo().write({'stage_id' : stage_id.id, 'project_id': project.id})
+
+        # Your Customise Code
+        return {'done': True}
+
     @http.route('/submit-graphic-info', type='http', auth='public', website=True, methods=["POST"], csrf=False,)
     def submit_graphic_form(self, **kw):
         if request.env.user.id == request.env.ref('base.public_user').id:
             return request.redirect('/web/login')
         project_obj = request.env['project.project']
-        project = project_obj.sudo().search([('partner_id', '=', request.env.user.partner_id.id)])
+        project = project_obj.sudo().search([('partner_id', '=', request.env.user.partner_id.id), ('project_type', '=', 'graphic')])
 
         graphic = False
         video = False
@@ -317,7 +337,7 @@ class WebsiteHuddleCustom(http.Controller):
                 'partner_id': request.env.user.partner_id.id,
                 'privacy_visibility': 'portal',
             }
-            project = project_obj.sudo().create(project_vals)
+            project = project_obj.sudo().with_context(gv=True).create(project_vals)
 
         item_name = ''
         size = ''
