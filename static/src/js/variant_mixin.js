@@ -19,6 +19,7 @@ odoo.define('wt_office_hunddle.VariantMixin', function (require) {
             $(".is_have_design").change(function(ev){
                 ev.preventDefault();
                 if($(this).val() == 'yes'){
+                    console.log("--------- test ------- ")
                     // $("#photos_sample").empty();
                     $('.upload_button_front').show();
                     $('.upload_button_back').show();
@@ -29,6 +30,7 @@ odoo.define('wt_office_hunddle.VariantMixin', function (require) {
                 }
                 if($(this).val() == 'no'){
                     // $("#photos_sample").empty();
+                    console.log("--------- test no------- ")
                     $('.upload_button_front').hide();
                     $('.upload_button_back').hide();
                     $('.image_description').hide();

@@ -308,8 +308,8 @@ class WebsiteHuddleCustom(http.Controller):
                 'privacy_visibility': 'portal',
             }
             project = project_obj.sudo().with_context(production=True).create(project_vals)
-            stage_id = request.env['project.task.type'].sudo().search([('stage_type', '=', 'new_print')])
-            task_id.sudo().write({'stage_id' : stage_id.id, 'project_id': project.id})
+        stage_id = request.env['project.task.type'].sudo().search([('stage_type', '=', 'new_print')])
+        task_id.sudo().write({'stage_id' : stage_id.id, 'project_id': project.id, 'user_id' : project.user_id.id})
 
         # Your Customise Code
         return {'done': True}
@@ -712,6 +712,7 @@ class WebsiteHuddleCustom(http.Controller):
         if video:
             task_name = "VIDEO DESIGN : " + item_name
         task_vals = {
+            'user_id': project.user_id.id,
             'design_type': design_type,
             'is_design': True,
             'project_id': project.id,
