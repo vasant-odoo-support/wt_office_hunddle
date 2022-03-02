@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="sale_order_view_form_ai" model="ir.ui.view">
+		<field name="name">sale.order.form.inherit.event.sale</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form" />
+		<field name="arch" type="xml">
+			<page name="order_lines" position="after">
+				<page name="images" string="Print Images">
+					<!-- <field name="design_approved" invisible="1"/>
+					<field name="design_rejected" invisible="1"/>
+					<button name="approve_design" type="object" string="Approve Design" attrs="{'invisible': ['|', ('design_approved', '=', True), ('design_rejected', '=', True)]}"/>
+					<button name="reject_design" type="object" string="Reject Design" attrs="{'invisible': ['|', ('design_approved', '=', True), ('design_rejected', '=', True)]}"/> -->
+					<field name="images_lines" nolabel="1" >  
+						<tree>
+							<field name="image_name" />
+							<field name="image_type" />
+							<field name="text_description" />
+							<field name="sale_line_id" />
+							<field name="product_id" />
+							<field name="image" widget="image" class="oe_avatar"/>
+						</tree>
+					</field>
+				</page>
+			</page>
+		</field>
+	</record>
+</odoo>
