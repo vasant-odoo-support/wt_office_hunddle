@@ -30,7 +30,7 @@
 	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
 	                        </div>
 	                        <div class="form-group">
-	                            <input type="url" id="website_link" name="website_link" class="form-control padz" placeholder="Website URL(Ex. https://officehuddle.com)" required="required"/>
+	                            <input type="text" id="website_link" name="website_link" class="form-control padz" placeholder="Website URL(Ex. www.officehuddle.com)" required="required"/>
 	                            <!-- <label for="Company" hidden>Company (optionlal)</label> -->
 	                        </div>
 	                        <div class="form-group">
@@ -65,7 +65,7 @@
 	                            <!-- <label for="Confirm Password" hidden>Confirm Passowrd</label> -->
 	                        </div>
 	                        <div class="form-group">
-	                            <textarea id="moto" name="moto" rows="6" placeholder="MOTO" class="form-control"></textarea>
+	                            <textarea id="moto" name="moto" rows="6" placeholder="MOTTO" class="form-control"></textarea>
 	                            <!-- <label for="Confirm Password" hidden>Confirm Passowrd</label> -->
 	                        </div>
 	                        <div class="form-group">

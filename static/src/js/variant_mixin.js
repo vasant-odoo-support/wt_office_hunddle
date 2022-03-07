@@ -12,9 +12,24 @@ odoo.define('wt_office_hunddle.VariantMixin', function (require) {
 
     publicWidget.registry.WebsiteSale.include({
 
+        init: function(){
+            var self = this;
+            var def = this._super.apply(this, arguments);
+            if($('#qty-business-card option:selected').val()){
+                $(".quantity").val($('#qty-business-card option:selected').val())
+                $(".quantity").change()
+            }
+        },
+
         start: function () {
             var self = this;
             var def = this._super.apply(this, arguments);
+
+            $("#qty-business-card").change(function(ev){
+                console.log("========= $(this).val(); ====== ", $(this).val())
+                $(".quantity").val($(this).val())
+                $(".quantity").change()
+            });
 
             $(".is_have_design").change(function(ev){
                 ev.preventDefault();

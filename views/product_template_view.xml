@@ -9,6 +9,21 @@
                 <field name="is_merchandise_product" />
                 <field name="is_printing_product" />
             </field>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Product QTY">
+                    <group>
+                        <field name="product_qty_ids">
+                            <tree>
+                                <field name="qty"/>
+                            </tree>
+                            <form>
+                                <field name="qty"/>
+                            </form>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
         </field>
     </record>
 </odoo>
