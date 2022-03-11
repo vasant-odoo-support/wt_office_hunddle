@@ -1150,6 +1150,7 @@ class WebsiteHuddleCustom(http.Controller):
         email_from = kw.get('packageFormEmail') or ''
         phone = kw.get('packageFormPhone') or ''
         description = kw.get('packageFormMsg') or ''
+        service_id = request.env['service.service'].search([('name', '=', 'WEB DEVELOPMENT')])
         vals = {
             'name': name or '',
             'contact_name': contact_name,
@@ -1157,7 +1158,8 @@ class WebsiteHuddleCustom(http.Controller):
             'phone': phone,
             'description': description,
             'type': 'lead',
-            'user_id': sales_id.id or False
+            'user_id': sales_id.id or False,
+            'service_id': service_id.id
         }
         crm_lead = request.env['crm.lead'].sudo().create(vals)
         return  request.render('wt_office_hunddle.website_thankyou_tmpl')
