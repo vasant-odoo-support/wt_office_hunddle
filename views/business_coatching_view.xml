@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<template id="business_couching_tmpl" name="Business Couching">
+	<template id="business_couching_tmpl" name="Business Coaching">
 		<t t-call="website.layout">
 			<div id="wrap" class="business_couching_cl">
 				<!-- banner -->
@@ -165,7 +165,7 @@
 				              Don't let yourself miss another opportunity to score. Take on this first step to unleash the absolute solution to your 
 				              business problem and find  
 				              powerful strategies towards financial freedom.</p>
-				            <a class="customBtn" href="https://calendly.com/henrybdorris/60min">Get Started</a> </div>
+				            <a class="customBtn" href="/business-coaching-free-demo">Get Started</a> </div>
 				        </div>
 				        <div class="col-md-6 col-lg-6 col-md-6 col-sm-12 col-12">
 				          <div class="yourfirstSecRt"> <img src="/wt_office_hunddle/static/src/business-couching/images/yourfirstrightRespo1.jpg" /> </div>

@@ -59,6 +59,8 @@
         'views/entrepreneurial_training_view.xml',
         'views/sale_stock_portal_template.xml',
         'views/sale_view.xml',
+        'views/demo_business_coaching_view.xml',
+        'views/bookkeeping_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',

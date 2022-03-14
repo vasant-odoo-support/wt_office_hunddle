@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="oh_bookkiping_tmpl" name="Bookkeeping">
+		<t t-call="website.layout">
+			<div id="wrap" class="sub-bc-cl">
+				<section class="first-section">
+			        <div class="container">
+			            <div class="row ">
+			                <div class="col-md-6 mx-auto">
+			                    <h3 class="text-center font-bold h1">Bookkeeping - Get Started</h3>
+			                </div>
+			            </div>
+			            <div class="row py-5">
+			                <div class="col-md-6 mx-auto">
+			                    <form>
+			                        <label class="main-label mb-1" for="name">Name<sub>*</sub></label>
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label for="name" class="mb-1">First</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6 mb-2">
+			                                <div class="form-group">
+			                                    <label for="name">Last</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="email">Email Address<sub>*</sub></label>
+			                                    <input type="email" class="form-control py-3" id="email"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="phone">Phone<sub>*</sub></label>
+			                                    <input type="number" class="form-control py-3" id="phone"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="name">Company Name</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="name">Company Website URL</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2 " for="name">Industry</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+
+			                        </div>
+			                        <div class="row pb-5">
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label" for="exampleFormControlSelect1">How many employess are at your company?</label>
+			                                    <select class="form-control py-2 select" id="select">
+			                                      <option >Select an option</option>
+			                                      <option>0-5</option>
+			                                      <option>6-40</option>
+			                                      <option>41-100</option>
+			                                      <option>101-300</option>
+			                                      <option>300+</option>
+			                                    </select>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <button type="button" class="btn button-item px-4 py-2 h4">Next</button>
+			                            </div>
+			                        </div>
+			                    </form>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="second-section">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-md-12 text-center">
+			                    <h3 class="font-bold h1">Make Your Bookkeeping Better</h3>
+			                    <button type="button" class="btn button-item ">Get Started</button>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			</div>
+		</t>
+	</template>
+</odoo>

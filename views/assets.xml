@@ -30,6 +30,7 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/how_it_works/css/how_it_works.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/website_development/css/website_development.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/business-couching/css/business-couching.css"/>
+            <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/business-couching/css/sub-bc.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/css/thankyou.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/enter-training/css/enterprice.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/enter-training/css/enterprice-responsive.css"/>

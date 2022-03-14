@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="business_coaching_free_demo_tmpl" name="Free Demo Business Coaching">
+		<t t-call="website.layout">
+			<div id="wrap" class="sub-bc-cl">
+				<div class="overflow-hidden-custom ">
+			        <div class="row overflow-hidden-custom ">
+			            <div class="col-lg-7 px-4 bg-blue-section  padding-top-section">
+			                <div class="section-margin">
+			                    <div class="row align-items-center px-4">
+			                        <div class="col-6">
+			                            <a href="#!"><img class="card-img-top" src="/wt_office_hunddle/static/src/business-couching/images/logoo.png" alt="..." /></a>
+			                        </div>
+			                        <div class="col-6 text-white justify-content-end d-flex align-items-center mt-2"> <i class="bi bi-telephone-fill sm-h1 h4 "></i> <a class=" mx-2 text-white sm-h3 h5 text-decoration-none" href="tel:6013489977"> 601-348-997</a></div>
+			                    </div>
+
+			                    <div class="px-3">
+			                        <h1 class="text-white  font-weight-bold heading-custom   mt-5-custom  px-4">Let's talk about your business </h1>
+			                        <p class="text-white px-4  mt-5-custom   font-weight-normal paragraph-text-custom">
+			                            Our Office Huddle coaching Program is design for owners and CEOs who want more-not just from their buisness, but from their life
+			                        </p>
+
+			                        <div class="d-flex justify-content-center mt-5-custom ">
+			                            <img class="d-block mx-auto mt-5-custom  mw-100" src="/wt_office_hunddle/static/src/business-couching/images/person.png" alt="..." />
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+
+			            <div class="col-lg-4 padding-top-section pl-4">
+			                <form class="sm-pl-5">
+			                    <div class="row px-4">
+			                        <div class="col-6">
+			                            <label class="label-custom  mb-1">First Name*</label>
+			                            <input type="text" class="form-control" placeholder="First name"/>
+			                        </div>
+			                        <div class="col-6">
+			                            <label class="label-custom  mb-1">Last Name*</label>
+			                            <input type="text" class="form-control" placeholder="Last name"/>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom  mb-1">Email*</label>
+			                                <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom  mb-1">Role*</label>
+			                                <select id="inputState" class="form-control">
+					                        	<option  selected="selected">-Please Select-</option>
+					                           	<option>Demo </option>
+					                        	<option>Demo </option>
+					                         	<option>Demo </option>
+			                         		</select>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom  mb-1">Buisness Name  *</label>
+			                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom   mb-1">What's your Phone Number  *</label>
+			                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+			                            </div>
+			                        </div>
+
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom   mb-1">How many peoples work there  *</label>
+			                                <select id="inputState" class="form-control">
+				                              <option  hidden="hidden" selected="selected">-Please Select-</option>
+				                              <option>Demo </option>
+				                              <option>Demo </option>
+				                              <option>Demo </option>
+			                            	</select>
+			                            </div>
+			                        </div>
+
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom   mb-1">What where your travel revenue last year (in USD) for all your buisnesses?  *</label>
+			                                <select id="inputState" class="form-control">
+					                         	<option  selected="selected">-Please Select-</option>
+					                        	<option>Demo </option>
+					                        	<option>Demo </option>
+					                         	<option>Demo </option>
+					                        </select>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom   mb-1">Where are you located ?  *</label>
+			                                <select id="inputState" class="form-control">
+				                              	<option  selected="selected">-Please Select-</option>
+				                             	<option>Demo </option>
+				                              	<option>Demo </option>
+				                              	<option>Demo </option>
+			                                </select>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom  mb-1">What's your biggest buisness frustration ?  *</label>
+			                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <div class="form-group mt-3">
+			                                <label for="formGroupExampleInput" class="label-custom   mb-1">Anything else we should know ?  *</label>
+			                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+			                            </div>
+			                        </div>
+			                        <div class="col-12">
+			                            <p class="mt-3 font-bold-custom">
+			                                Office Huddle needs to contact information you provided to us to contact you about our products and services.you may unsubscribe from these communication at anytime . by clicking this button , you agree to office Huddle
+			                                <a class="text-decoration-none" href="">Terms of Services. </a>
+			                            </p>
+			                            <button type="button" class="btn button-bg w-100 btn-sm py-2 font-bold-xl-custom  h4">Request a call </button>
+			                        </div>
+			            		</div>
+			        		</form>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+		</t>
+	</template>
+
+	<template id="oh_bookkiping_tmpl" name="Bookkeeping">
+		<t t-call="website.layout">
+			<div id="wrap" class="sub-bc-cl">
+				<section class="first-section">
+			        <div class="container">
+			            <div class="row ">
+			                <div class="col-md-6 mx-auto">
+			                    <h3 class="text-center font-bold h1">Bookkeeping - Get Started</h3>
+			                </div>
+			            </div>
+			            <div class="row py-5">
+			                <div class="col-md-6 mx-auto">
+			                    <form>
+			                        <label class="main-label mb-1" for="name">Name<sub>*</sub></label>
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label for="name" class="mb-1">First</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6 mb-2">
+			                                <div class="form-group">
+			                                    <label for="name">Last</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="email">Email Address<sub>*</sub></label>
+			                                    <input type="email" class="form-control py-3" id="email"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="phone">Phone<sub>*</sub></label>
+			                                    <input type="number" class="form-control py-3" id="phone"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="name">Company Name</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="name">Company Website URL</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2 " for="name">Industry</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+
+			                        </div>
+			                        <div class="row pb-5">
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label" for="exampleFormControlSelect1">How many employess are at your company?</label>
+			                                    <select class="form-control py-2 select" id="select">
+			                                      <option >Select an option</option>
+			                                      <option>0-5</option>
+			                                      <option>6-40</option>
+			                                      <option>41-100</option>
+			                                      <option>101-300</option>
+			                                      <option>300+</option>
+			                                    </select>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <button type="button" class="btn button-item px-4 py-2 h4">Next</button>
+			                            </div>
+			                        </div>
+			                    </form>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			    <section class="second-section">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-md-12 text-center">
+			                    <h3 class="font-bold h1">Make Your Bookkeeping Better</h3>
+			                    <button type="button" class="btn button-item ">Get Started</button>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			</div>
+		</t>
+	</template>
+</odoo>
