@@ -1,72 +1,72 @@
 /* Custom CSS  */
 
-.bg-blue-section {
+.sub-bc-cl .bg-blue-section {
     background-color: #069
 }
 
-.padding-top-section {
+.sub-bc-cl .padding-top-section {
     padding: 6rem 0!important
 }
 
-.heading-custom {
+.sub-bc-cl .heading-custom {
     font-size: 4rem!important;
     font-weight: 700!important
 }
 
-.mt-5-custom {
+.sub-bc-cl .mt-5-custom {
     margin-top: 3rem!important
 }
 
-.paragraph-text-custom {
+.sub-bc-cl .paragraph-text-custom {
     font-size: 1.5rem!important;
     font-weight: 400!important
 }
 
-.section-margin {
+.sub-bc-cl .section-margin {
     margin: 0 150px!important
 }
 
-.label-custom {
+.sub-bc-cl .label-custom {
     font-weight: 600!important
 }
 
-.font-bold-xl-custom {
+.sub-bc-cl .font-bold-xl-custom {
     font-weight: 900;
 }
 
-.button-bg {
+.sub-bc-cl .button-bg {
     background-color: #c93!important
 }
 
-#select {
+.sub-bc-cl #select {
     height: calc(3.25rem + 2px) !important;
 }
 
-.font-bold-custom {
+.sub-bc-cl .font-bold-custom {
     font-weight: 500!important
 }
 
-.pl-5 {
+.sub-bc-cl .pl-5 {
     padding-left: 25px !important;
 }
 
-.overflow-hidden-custom {
+.sub-bc-cl .overflow-hidden-custom {
     overflow-x: hidden !important;
 }
 
 @media only screen and (max-width:900px) {
-    .section-margin {
+    .sub-bc-cl .section-margin {
         margin: 0 70px!important
     }
 }
 
 @media only screen and (max-width:650px) {
-    .section-margin {
+    .sub-bc-cl .section-margin {
         margin: 0 0!important
     }
 }
 
-button.button-item {
+.sub-bc-cl button.button-item {
     background: #0773a2;
     color: #fff;
     border-radius: 33px;
@@ -74,23 +74,27 @@ button.button-item {
     padding: 10px 45px !important;
 }
 
-.header-main a.nav-link {
+.sub-bc-cl .header-main a.nav-link {
     font-size: 14px;
     font-weight: 500;
     color: #000!important;
     padding: .5rem 20px!important
 }
 
-.first-section {
+.sub-bc-cl .first-section {
     padding: 50px 0
 }
 
-.second-section {
-    background: #e8efff;
+.sub-bc-cl .second-section {
+    background: #d3e2fe;
     padding: 100px 0
 }
 
-.second-section button {
+.sub-bc-cl .light-label {
+    color: #acb0b2
+}
+
+.sub-bc-cl .second-section button {
     background: #0773a2;
     color: #fff;
     font-weight: 500;
@@ -99,28 +103,34 @@ button.button-item {
     margin-top: 20px
 }
 
-.body-main h3 {
+.sub-bc-cl .body-main h3 {
     color: #0773a2;
     font-weight: 700
 }
 
-label.main-label {
+.sub-bc-cl label.main-label {
     color: #0773a2;
     font-weight: 500;
     font-size: 16px;
     font-weight: 700
 }
 
-.body-main label {
+.sub-bc-cl .body-main label {
     color: #0773a2
 }
 
-.body-main .form-control {
+.sub-bc-cl .body-main .form-control {
     background: #e8efff;
     border-radius: 6px
 }
 
-.body-main sub {
+.sub-bc-cl .body-main sub {
     color: red;
     font-size: 14px
+}
+
+@media only screen and (max-width:372px) {
+    .sub-bc-cl .phone-number {
+        font-size: 14px !important;
+    }
 }

@@ -1184,7 +1184,12 @@ class WebsiteHuddleCustom(http.Controller):
         }
         return  request.render('wt_office_hunddle.business_coatching',values)
 
-    @http.route('/page/virtual-staffing', type='http', auth='public', website=True)
+    @http.route('/business-coaching-free-demo', type='http', auth='public', website=True)
+    def free_virtual_staff_demo_office_huddle(self):
+        countries = request.env['res.country'].search([])
+        return  request.render('wt_office_hunddle.business_coaching_free_demo_tmpl', {'countries': countries})
+
+    @http.route('/virtual-staffing', type='http', auth='public', website=True)
     def virtial_staffing_page(self):
         virtual_staffing_blog = request.env['blog.post'].search([('valid_page', '=', 'virtual_staffing')], limit=3)
         vals = {
@@ -1192,10 +1197,17 @@ class WebsiteHuddleCustom(http.Controller):
         }
         return  request.render('wt_office_hunddle.virtual_staffing_oh', vals)
 
-    @http.route('/business-coaching-free-demo', type='http', auth='public', website=True)
-    def free_virtual_staff_demo_office_huddle(self):
-        print("==========")
-        return  request.render('wt_office_hunddle.business_coaching_free_demo_tmpl')
+    @http.route('/virtual-staffing-old', type='http', auth='public', website=True)
+    def virtual_staffing(self):
+        virtual_staffing_blog = request.env['blog.post'].search([('valid_page', '=', 'virtual_staffing')], limit=3)
+        vals = {
+            'virtual_staffing_blog': virtual_staffing_blog,
+        }
+        return  request.render('wt_office_hunddle.virtual_staffing',vals)
+
+    @http.route('/bookkeeping', type='http', auth='public', website=True)
+    def bookkeeping_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_bookkiping_tmpl')
 
     @http.route('/video-design', type='http', auth='public', website=True)
     def video_design_office_huddle(self):
@@ -1280,12 +1292,6 @@ class WebsiteHuddleCustom(http.Controller):
     def website_development_office_huddle(self):
         print("==========")
         return  request.render('wt_office_hunddle.website_development_tmpl')
-
-    @http.route('/bookkeeping', type='http', auth='public', website=True)
-    def subbc2_office_huddle(self):
-        print("==========")
-        return  request.render('wt_office_hunddle.oh_bookkiping_tmpl')
-        
 
     @http.route('/homepage', type='http', auth='public', website=True)
     def officehuddle_home_page(self):
@@ -1630,13 +1636,6 @@ class WebsiteHuddleCustom(http.Controller):
         }
         return  request.render('wt_office_hunddle.graphic_design',vals)
 
-    @http.route('/virtual-staffing', type='http', auth='public', website=True)
-    def virtual_staffing(self):
-        virtual_staffing_blog = request.env['blog.post'].search([('valid_page', '=', 'virtual_staffing')], limit=3)
-        vals = {
-            'virtual_staffing_blog': virtual_staffing_blog,
-        }
-        return  request.render('wt_office_hunddle.virtual_staffing',vals)
 
 class WebsiteEventController(WebsiteEventController):
     def sitemap_event(env, rule, qs):
