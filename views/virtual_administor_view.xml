@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="oh_bookkiping_tmpl" name="Bookkeeping">
+    <template id="oh_virtual_administrator_tmpl" name="Virtual Administrator">
         <t t-call="website.layout">
             <div id="wrap" class="sub-bc-cl">
                 <section class="first-section">
                     <div class="container">
                         <div class="row ">
-                            <div class="col-md-6 mx-auto">
-                                <h3 class="text-center font-bold h1">Bookkeeping - Get Started</h3>
+                            <div class="col-md-8 mx-auto">
+                                <h3 class="text-center font-bold h1">Virtual Administrator - Get Started</h3>
                             </div>
                         </div>
                         <div class="row py-5">
                             <div class="col-md-6 mx-auto">
-                                <form action="/bookkeeping-get-start">
+                                <form action="/virtual-administrator-get-start">
                                     <label class="main-label mb-1" for="name">Name<sub>*</sub></label>
                                     <div class="row">
+
                                         <div class="col-md-6">
+
                                             <div class="form-group">
                                                 <label for="name" class="mb-1">First</label>
                                                 <input type="text" class="form-control py-3" id="name"/>
@@ -78,17 +80,22 @@
                                         <div class="col-md-6">
                                             <button type="submit" class="btn button-item px-4 py-2 h4">Next</button>
                                         </div>
+
                                     </div>
+
+
                                 </form>
                             </div>
                         </div>
+
+
                     </div>
                 </section>
                 <section class="second-section">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <h3 class="font-bold h1">Make Your Bookkeeping Better</h3>
+                                <h3 class="font-bold h1">Make Your Virtual Administrator Better.</h3>
                                 <button type="button" class="btn button-item ">Get Started</button>
                             </div>
                         </div>

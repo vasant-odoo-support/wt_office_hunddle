@@ -83,14 +83,14 @@
 						        <div class="pickfromserBox">
 						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconlead.png" /></div>
 						          <h4>Lead<br/> Generation</h4>
-						            <a href="#">Hire Us</a>
+						            <a href="/lead-generation">Hire Us</a>
 						        </div>
 						      </div>
 						      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						        <div class="pickfromserBox">
 						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconsale.png" /></div>
 						          <h4>Sales<br/> Support</h4>
-						            <a href="#">Hire Us</a>
+						            <a href="/sales-support">Hire Us</a>
 						        </div>
 						      </div>
 						      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -104,7 +104,7 @@
 						        <div class="pickfromserBox">
 						          <div class="pickfromserBoxicon"><img src="/wt_office_hunddle/static/src/virtual_staff/images/iconadministrator.png" /></div>
 						          <h4>Virtual<br/> Administrator</h4>
-						            <a href="#">Hire Us</a>
+						            <a href="/virtual-administrator">Hire Us</a>
 						        </div>
 						      </div>
 						    </div>

@@ -1209,6 +1209,34 @@ class WebsiteHuddleCustom(http.Controller):
     def bookkeeping_office_huddle(self):
         return  request.render('wt_office_hunddle.oh_bookkiping_tmpl')
 
+    @http.route('/bookkeeping-get-start', type='http', auth='public', website=True)
+    def bookkeeping_get_start_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_bookkiping_get_start_tmpl')
+
+    @http.route('/lead-generation', type='http', auth='public', website=True)
+    def leadgeneration_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_leadgeneration_tmpl')
+
+    @http.route('/lead-generation-get-start', type='http', auth='public', website=True)
+    def leadgeneration_get_start_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_leadgeneration_get_start_tmpl')
+
+    @http.route('/sales-support', type='http', auth='public', website=True)
+    def sales_support_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_sales_support_tmpl')
+
+    @http.route('/sales-support-get-start', type='http', auth='public', website=True)
+    def sales_support_get_start_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_sales_support_get_start_tmpl')
+
+    @http.route('/virtual-administrator', type='http', auth='public', website=True)
+    def virtual_administrator_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_virtual_administrator_tmpl')
+
+    @http.route('/virtual-administrator-get-start', type='http', auth='public', website=True)
+    def virtual_administrator_get_start_office_huddle(self):
+        return  request.render('wt_office_hunddle.oh_virtual_administrator_get_start_tmpl')
+
     @http.route('/video-design', type='http', auth='public', website=True)
     def video_design_office_huddle(self):
         if request.env.user.id == request.env.ref('base.public_user').id:

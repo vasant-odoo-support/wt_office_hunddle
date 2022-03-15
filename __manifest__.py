@@ -61,6 +61,13 @@
         'views/sale_view.xml',
         'views/demo_business_coaching_view.xml',
         'views/bookkeeping_view.xml',
+        'views/bookkeeping_get_start_view.xml',
+        'views/sales_support_view.xml',
+        'views/sales_support_get_start_view.xml',
+        'views/lead_generation_view.xml',
+        'views/lead_generation_get_start_view.xml',
+        'views/virtual_administor_view.xml',
+        'views/virtual_administor_get_start_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',

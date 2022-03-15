@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="oh_bookkiping_get_start_tmpl" name="BookKeeper">
+        <t t-call="website.layout">
+            <div id="wrap" class="sub-bc-cl">
+                <section class="first-section">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-8 mx-auto">
+                                <h3 class="text-center font-bold h1">BookKeeper - Get Started</h3>
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="col-md-6 mx-auto">
+                                <form>
+                                    <div>
+                                        <label class="main-label mb-1" for="name">What are some projects  you'd like to explore with Office Huddle?</label>
+                                        <p class="light-label">Choose as many as you like </p>
+                                        <div class="px-2">
+                                            <div class="form-check  mb-1">
+                                                <input class="form-check-input" type="radio" name="sales" id="sales" value="sales"/>
+                                                <label class="form-check-label" for="sales">
+                                                  sales
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-1">
+                                                <input class="form-check-input" type="radio" name="Recruiting" id="exampleRadios2" value="Recruiting"/>
+                                                <label class="form-check-label" for="Recruiting">
+                                                  Recruiting
+                                                </label>
+                                            </div>
+                                            <div class="form-check  mb-1">
+                                                <input class="form-check-input" type="radio" name="customerSupport" id="customerSupport" value=" Customer support"/>
+                                                <label class="form-check-label" for="customerSupport">
+                                                  Customer support
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-1">
+                                                <input class="form-check-input" type="radio" name="Marketing" id="Marketing" value="Marketing"/>
+                                                <label class="form-check-label" for="Marketing">
+                                                  Marketing
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check mb-1">
+                                                <input class="form-check-input" type="radio" name="executiveAssistance" id="executiveAssistance" value=" Executive Assistance"/>
+                                                <label class="form-check-label" for=" executiveAssistance">
+                                                  Executive Assistance
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-1">
+                                                <input class="form-check-input" type="radio" name="Others" id="Others" value="Others"/>
+                                                <label class="form-check-label" for="Others">
+                                                  Others
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="mt-5-custom">
+                                        <label class="main-label mb-3" for="name">What are some projects  you'd like to explore with Office Huddle?</label>
+                                        <div class="px-2">
+                                            <div class="form-check  mb-1">
+                                                <input class="form-check-input" type="radio" name="option" id="yes" value="yes"/>
+                                                <label class="form-check-label" for="yes">
+                                                  Yes
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-1">
+                                                <input class="form-check-input" type="radio" name="option" id="No" value="No"/>
+                                                <label class="form-check-label" for="No">
+                                                  No
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-5-custom">
+                                            <label class="main-label mb-3" for="name">How did you hear about Office Huddle ?</label>
+                                            <div class="px-2">
+                                                <div class="form-check  mb-1">
+                                                    <input class="form-check-input" type="radio" name="hearOfficeHuddle" id="Google" value="GoogleAd"/>
+                                                    <label class="form-check-label" for="Google">
+                                                      Google Ad
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="hearOfficeHuddle" id="YouTube" value="YouTubeAd"/>
+                                                    <label class="form-check-label" for="YouTube">
+                                                      YouTube ad    
+                                                    </label>
+                                                </div>
+                                                <div class="form-check  mb-1">
+                                                    <input class="form-check-input" type="radio" name="hearOfficeHuddle" id="WebSearch" value=" Web Search"/>
+                                                    <label class="form-check-label" for="WebSearch">
+                                                      Web Search
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="hearOfficeHuddle" id="LinkedIn" value="LinkedIn"/>
+                                                    <label class="form-check-label" for="LinkedIn">
+                                                      LinkedIn
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="hearOfficeHuddle" id="Email" value=" Email"/>
+                                                    <label class="form-check-label" for=" Email">
+                                                      Email
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="hearOfficeHuddle" id="Facebook" value="Facebook"/>
+                                                    <label class="form-check-label" for="Facebook">
+                                                      Facebook
+                                                    </label>
+                                                </div>
+
+                                                <div class="sm-w-25 w-50">
+                                                    <textarea class="form-control bg-white" rows="1" placeholder="Other" id="floatingTextarea2"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-5-custom">
+                                            <label class="main-label mb-3" for="name">What is Your Role ?</label>
+                                            <div class="px-2">
+                                                <div class="form-check  mb-1">
+                                                    <input class="form-check-input" type="radio" name="Role" id="Founder" value="Founder"/>
+                                                    <label class="form-check-label" for="Founder">
+                                                      Founder
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Role" id="CEO" value="CEO"/>
+                                                    <label class="form-check-label" for="CEO">
+                                                      CEO    
+                                                    </label>
+                                                </div>
+                                                <div class="form-check  mb-1">
+                                                    <input class="form-check-input" type="radio" name="Role" id="Executive" value=" Executive"/>
+                                                    <label class="form-check-label" for="Executive">
+                                                      Executive
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Role" id="VP/Director" value="VP/Director"/>
+                                                    <label class="form-check-label" for="VP/Director">
+                                                      VP/Director
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Role" id="Manager" value=" Manager"/>
+                                                    <label class="form-check-label" for=" Manager">
+                                                      Manager
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Role" id="Others" value="Others"/>
+                                                    <label class="form-check-label" for="Others">
+                                                      Others
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mt-5-custom">
+                                            <label class="main-label mb-3" for="name">What is Your preferred way of getting remote work done ?</label>
+                                            <p class="light-label">Choose as many as you like </p>
+                                            <div class="px-2">
+                                                <div class="form-check  mb-1">
+                                                    <input class="form-check-input" type="radio" name="Email" id="Email" value="Email"/>
+                                                    <label class="form-check-label" for="Email">
+                                                      Email
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Phone/Audio" id=" Phone/Audio" value=" Phone/Audio"/>
+                                                    <label class="form-check-label" for=" Phone/Audio">
+                                                      Phone/Audio Call    
+                                                    </label>
+                                                </div>
+                                                <div class="form-check  mb-1">
+                                                    <input class="form-check-input" type="radio" name="VideoChat" id="VideoChat" value=" Video Chat"/>
+                                                    <label class="form-check-label" for="VideoChat">
+                                                      Video Chat (Google Meet , Zoom)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Screenshare" id="Screenshare" value="Screenshare"/>
+                                                    <label class="form-check-label" for="Screenshare">
+                                                      Screenshare
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check mb-1">
+                                                    <input class="form-check-input" type="radio" name="Chat" id="Chat" value=" Chat"/>
+                                                    <label class="form-check-label" for=" Chat">
+                                                      Chat / Messaging (Slack ,Other)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="button " class="btn button-item px-4 py-2 h4 mt-4 ">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="second-section ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-md-12 text-center ">
+                                <h3 class="font-bold h1 ">Make Your BookKeeping Better.</h3>
+                                <button type="button " class="btn button-item ">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>
