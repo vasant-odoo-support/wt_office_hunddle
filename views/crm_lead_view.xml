@@ -19,10 +19,39 @@
         <field name="inherit_id" ref="crm.view_crm_case_leads_filter"/>
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='assigned_to_me']" position="before">
-                <filter string="Web Development"
+                <filter string="BUSINESS COACHING"
+                            name="businesscoaching"
+                            domain="[('service_id', 'ilike', 'BUSINESS COACHING')]"
+                            help="Leads for Business coaching"/>
+
+                <filter string="TRAIN LIKE A CEO"
+                            name="trainlikeceo"
+                            domain="[('service_id', 'ilike', 'TRAIN LIKE A CEO')]"
+                            help="Leads for Train like a CEO"/>
+
+                <filter string="GRAPHIC DESIGN"
+                            name="graphicdesign"
+                            domain="[('service_id', 'ilike', 'GRAPHIC DESIGN')]"
+                            help="Leads for Graphic Design"/>
+
+                <filter string="PRINTSHOP"
+                            name="printshop"
+                            domain="[('service_id', 'ilike', 'PRINTSHOP')]"
+                            help="Leads for Printshop"/>
+
+                <filter string="WEB DEVELOPMENT"
                             name="webdevelopment"
-                            domain="[('service_id', '!=', False)]"
-                            help="Leads for web development"/>
+                            domain="[('service_id', 'ilike', 'WEB DEVELOPMENT')]"
+                            help="Leads for Web development"/>
+
+                <filter string="VIRTUAL STAFFING"
+                            name="virtualstaffing"
+                            domain="[('service_id', 'ilike', 'VIRTUAL STAFFING')]"
+                            help="Leads for Virtual Staffing"/>
+            </xpath>
+
+            <xpath expr="//group/filter[@name='salesperson']" position="before">
+                <filter string="Service Type" name="service_type" context="{'group_by':'service_id'}"/>
             </xpath>
         </field>
     </record>
@@ -33,10 +62,39 @@
         <field name="inherit_id" ref="crm.view_crm_case_opportunities_filter"/>
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='assigned_to_me']" position="before">
-                <filter string="Web Development"
+
+                <filter string="BUSINESS COACHING"
+                            name="businesscoaching"
+                            domain="[('service_id', 'ilike', 'BUSINESS COACHING')]"
+                            help="Opportunity for Business coaching"/>
+
+                <filter string="TRAIN LIKE A CEO"
+                            name="trainlikeceo"
+                            domain="[('service_id', 'ilike', 'TRAIN LIKE A CEO')]"
+                            help="Opportunity for Train like a CEO"/>
+
+                <filter string="GRAPHIC DESIGN"
+                            name="graphicdesign"
+                            domain="[('service_id', 'ilike', 'GRAPHIC DESIGN')]"
+                            help="Opportunity for Graphic Design"/>
+
+                <filter string="PRINTSHOP"
+                            name="printshop"
+                            domain="[('service_id', 'ilike', 'PRINTSHOP')]"
+                            help="Opportunity for Printshop"/>
+
+                <filter string="WEB DEVELOPMENT"
                             name="webdevelopment"
-                            domain="[('service_id', '!=', False)]"
-                            help="Opportunity for web development"/>
+                            domain="[('service_id', 'ilike', 'WEB DEVELOPMENT')]"
+                            help="Opportunity for Web development"/>
+
+                <filter string="VIRTUAL STAFFING"
+                            name="virtualstaffing"
+                            domain="[('service_id', 'ilike', 'VIRTUAL STAFFING')]"
+                            help="Opportunity for Virtual Staffing"/>
+            </xpath>
+            <xpath expr="//group/filter[@name='salesperson']" position="before">
+                <filter string="Service Type" name="service_type" context="{'group_by':'service_id'}"/>
             </xpath>
         </field>
     </record>
@@ -48,7 +106,6 @@
         <field name="domain">[('type','=','opportunity'), ('service_id', '!=', False)]</field>
         <field name="context">{
                 'default_type': 'opportunity',
-                'search_default_webdevelopment':1
         }</field>
         <field name="search_view_id" ref="view_crm_case_opportunities_filter_inherit"/>
     </record>
@@ -62,7 +119,6 @@
         <field name="context">{
                 'default_type':'lead',
                 'search_default_type': 'lead',
-                'search_default_webdevelopment':1
             }
         </field>
     </record>
