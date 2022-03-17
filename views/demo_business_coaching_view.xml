@@ -52,66 +52,66 @@
                         </div>
 
                         <div class="col-lg-4 padding-top-section pl-4">
-                            <form class="sm-pl-5">
+                            <form class="sm-pl-5" action="/submit-business-couching">
                                 <div class="row px-4">
                                     <div class="col-6">
                                         <label class="label-custom  mb-1">First Name*</label>
-                                        <input type="text" class="form-control" placeholder="First name"/>
+                                        <input type="text" required="required" name="firstname" id="firstname" class="form-control" placeholder="First name"/>
                                     </div>
                                     <div class="col-6">
                                         <label class="label-custom  mb-1">Last Name*</label>
-                                        <input type="text" class="form-control" placeholder="Last name"/>
+                                        <input type="text" required="required" name="lastname" id="lastname" class="form-control" placeholder="Last name"/>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom  mb-1">Email*</label>
-                                            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+                                            <label for="email" class="label-custom  mb-1">Email*</label>
+                                            <input required="required" type="email" class="form-control" name="email" id="email" placeholder="info@officehuddle.com"/>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom  mb-1">Role*</label>
-                                            <select id="inputState" class="form-control">
-                                                <option  selected="selected">-Please Select-</option>
-                                                <option>Owner</option>
-                                                <option>Partner / Co-Owner</option>
-                                                <option>Executive</option>
-                                                <option>Employee / Other</option>
+                                            <label for="role" class="label-custom  mb-1">Role*</label>
+                                            <select required="required" id="role" name="role" class="form-control">
+                                                <option value="" selected="selected">-Please Select-</option>
+                                                <option value="Owner">Owner</option>
+                                                <option value="Partner / Co-Owner">Partner / Co-Owner</option>
+                                                <option value="Executive">Executive</option>
+                                                <option value="Employee / Other">Employee / Other</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom  mb-1">Buisness Name  *</label>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+                                            <label for="business_name" class="label-custom  mb-1">Buisness Name  *</label>
+                                            <input required="required" type="text" class="form-control" name="business_name" id="business_name" placeholder="Example input"/>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom   mb-1">What's your Phone Number  *</label>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+                                            <label for="phone" class="label-custom   mb-1">What's your Phone Number  *</label>
+                                            <input type="text" required="required" class="form-control" name="phone" id="phone" placeholder="Example input"/>
                                         </div>
                                     </div>
 
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom   mb-1">How many peoples work there  *</label>
-                                            <select id="inputState" class="form-control">
-                                              <option  hidden="hidden" selected="selected">-Please Select-</option>
-                                              <option>0-5</option>
-                                              <option>6-40</option>
-                                              <option>41-100</option>
-                                              <option>101-300</option>
-                                              <option>300+</option>
+                                            <label for="no_of_emp" class="label-custom   mb-1">How many peoples work there  *</label>
+                                            <select required="required" id="no_of_emp" name="no_of_emp" class="form-control">
+                                              <option value="" selected="selected">-Please Select-</option>
+                                              <option value="0-5">0-5</option>
+                                              <option value="6-40">6-40</option>
+                                              <option value="41-100">41-100</option>
+                                              <option value="101-300">101-300</option>
+                                              <option value="300+">300+</option>
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom   mb-1">What where your revenue last year (in USD) for all your buisnesses?  *</label>
-                                            <select id="inputState" class="form-control">
-                                                <option  selected="selected">-Please Select-</option>
+                                            <label for="revenue" class="label-custom   mb-1">What where your revenue last year (in USD) for all your buisnesses?  *</label>
+                                            <select required="required" id="revenue" class="form-control" name="revenue">
+                                                <option value="" selected="selected">-Please Select-</option>
                                                 <option value="0-50K"> 0-50K </option>
                                                 <option value="50K-100K"> 50K-100K </option>
                                                 <option value="100K-200K"> 100K-200K </option>
@@ -124,9 +124,9 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom   mb-1">Where are you located ?  *</label>
-                                            <select id="inputState" class="form-control">
-                                                <option  selected="selected">-Please Select-</option>
+                                            <label for="country_id" class="label-custom   mb-1">Where are you located ?  *</label>
+                                            <select id="country_id" name="country_id" class="form-control">
+                                                <option  required="required" selected="selected">-Please Select-</option>
                                                 <t t-foreach="countries" t-as="country">
                                                     <option t-att-value="country.id"><t t-esc="country.name"/></option>
                                                 </t>
@@ -135,14 +135,14 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom  mb-1">What's your biggest buisness frustration ?  *</label>
-                                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label for="frustration" class="label-custom  mb-1">What's your biggest buisness frustration ?  *</label>
+                                            <textarea required="required" class="form-control rounded-0" id="frustration" name="frustration" rows="3"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mt-3">
-                                            <label for="formGroupExampleInput" class="label-custom   mb-1">Anything else we should know ?  *</label>
-                                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label for="other_know" class="label-custom   mb-1">Anything else we should know ?  *</label>
+                                            <textarea required="required" class="form-control rounded-0" name="other_know" id="other_know" rows="3"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -150,7 +150,7 @@
                                             Office Huddle needs to contact information you provided to us to contact you about our products and services.you may unsubscribe from these communication at anytime . by clicking this button , you agree to office Huddle
                                             <a class="text-decoration-none" href="">Terms of Services. </a>
                                         </p>
-                                        <button type="button" class="btn button-bg w-100 btn-sm py-2 font-bold-xl-custom  h4">Request a call </button>
+                                        <button type="submit" class="btn button-bg w-100 btn-sm py-2 font-bold-xl-custom  h4">Request a call </button>
                                     </div>
                                 </div>
                             </form>

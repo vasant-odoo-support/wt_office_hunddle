@@ -1189,6 +1189,30 @@ class WebsiteHuddleCustom(http.Controller):
         countries = request.env['res.country'].search([])
         return  request.render('wt_office_hunddle.business_coaching_free_demo_tmpl', {'countries': countries})
 
+    @http.route('/submit-business-couching', type='http', auth='public', website=True)
+    def submit_business_coaching(self, **kw):
+        name = kw.get('firstname') + " " + kw.get('lastname')
+        description = kw.get('frustration') + "\n" + kw.get('other_know')
+        service_id = request.env['service.service'].search([('name', '=', 'BUSINESS COACHING')])
+        country_id = int(kw.get('country_id'))
+        sales_id = request.env['res.users'].search([('login', '=', 'sales@officehuddle.com')])
+        vals = {
+            'name': name or '',
+            'email_from': kw.get('email'),
+            'role': kw.get('role'),
+            'partner_name': kw.get('business_name'),
+            'phone': kw.get('phone'),
+            'number_of_employee': kw.get('no_of_emp'),
+            'gross_revenue_last_year': kw.get('revenue'),
+            'country_id': country_id,
+            'description': description,
+            'service_id': service_id.id,
+            'type': 'lead',
+            'user_id': sales_id.id,
+        }
+        crm_lead = request.env['crm.lead'].sudo().create(vals)
+        return request.render('wt_office_hunddle.website_thankyou_tmpl')
+
     @http.route('/virtual-staffing', type='http', auth='public', website=True)
     def virtial_staffing_page(self):
         virtual_staffing_blog = request.env['blog.post'].search([('valid_page', '=', 'virtual_staffing')], limit=3)
@@ -1205,37 +1229,95 @@ class WebsiteHuddleCustom(http.Controller):
         }
         return  request.render('wt_office_hunddle.virtual_staffing',vals)
 
+    @http.route('/submit-virtual-staffing', type='http', auth='public', website=True)
+    def submit_virtual_staffing(self, **kw):
+        name = kw.get('firstname') + " " + kw.get('lastname')
+        if not name:
+            request.redirect("/virtual-staffing")
+        service_id = request.env['service.service'].search([('name', '=', 'VIRTUAL STAFFING')])
+        sales_id = request.env['res.users'].search([('login', '=', 'sales@officehuddle.com')])
+        if 'generate_page' in kw:
+            if kw['generate_page'] == 'sales_support':
+                name = name + " :- Sales Support"
+            if kw['generate_page'] == 'lead_generation':
+                name = name + " :- Lead Generation"
+            if kw['generate_page'] == 'bookkeeping':
+                name = name + " :- BookKeeping"
+            if kw['generate_page'] == 'virtual_admin':
+                name = name + " :- Virtual Administrator"
+
+        vals = {
+            'name': name or '',
+            'email_from': kw.get('email'),
+            'partner_name': kw.get('company_name'),
+            'phone': kw.get('phone'),
+            'number_of_employee': kw.get('no_of_emp'),
+            'service_id': service_id.id,
+            'type': 'lead',
+            'user_id': sales_id.id,
+            'website': kw.get('website_url') or '',
+            'industry': kw.get('industry') or '',
+            'budget': kw.get('budget-info') or '',
+            'hear_about': kw.get('hearOfficeHuddle') or '',
+            'role': kw.get('Role') or '',
+        }
+        if 'sales' in kw:
+            vals.update({'sales' : True})
+        if 'Recruiting' in kw:
+            vals.update({'recruiting' : True})
+        if 'customerSupport' in kw:
+            vals.update({'customer_support' : True})
+        if 'Marketing' in kw:
+            vals.update({'marketing' : True})
+        if 'executiveAssistance' in kw:
+            vals.update({'executive_assistance' : True})
+        if 'Others' in kw:
+            vals.update({'others' : True})
+
+        if 'Email' in kw:
+            vals.update({'email_hear' : True})
+        if 'Phone/Audio' in kw:
+            vals.update({'phone_call_hear' : True})
+        if 'VideoChat' in kw:
+            vals.update({'vc' : True})
+        if 'Screenshare' in kw:
+            vals.update({'screenshare' : True})
+        if 'Chat' in kw:
+            vals.update({'chat_msg' : True})
+        crm_lead = request.env['crm.lead'].sudo().create(vals)
+        return request.render('wt_office_hunddle.website_thankyou_tmpl')
+
     @http.route('/bookkeeping', type='http', auth='public', website=True)
     def bookkeeping_office_huddle(self):
         return  request.render('wt_office_hunddle.oh_bookkiping_tmpl')
 
     @http.route('/bookkeeping-get-start', type='http', auth='public', website=True)
-    def bookkeeping_get_start_office_huddle(self):
-        return  request.render('wt_office_hunddle.oh_bookkiping_get_start_tmpl')
+    def bookkeeping_get_start_office_huddle(self, **kw):
+        return  request.render('wt_office_hunddle.oh_bookkiping_get_start_tmpl', kw)
 
     @http.route('/lead-generation', type='http', auth='public', website=True)
     def leadgeneration_office_huddle(self):
         return  request.render('wt_office_hunddle.oh_leadgeneration_tmpl')
 
     @http.route('/lead-generation-get-start', type='http', auth='public', website=True)
-    def leadgeneration_get_start_office_huddle(self):
-        return  request.render('wt_office_hunddle.oh_leadgeneration_get_start_tmpl')
+    def leadgeneration_get_start_office_huddle(self, **kw):
+        return  request.render('wt_office_hunddle.oh_leadgeneration_get_start_tmpl', kw)
 
     @http.route('/sales-support', type='http', auth='public', website=True)
     def sales_support_office_huddle(self):
         return  request.render('wt_office_hunddle.oh_sales_support_tmpl')
 
     @http.route('/sales-support-get-start', type='http', auth='public', website=True)
-    def sales_support_get_start_office_huddle(self):
-        return  request.render('wt_office_hunddle.oh_sales_support_get_start_tmpl')
+    def sales_support_get_start_office_huddle(self, **kw):
+        return  request.render('wt_office_hunddle.oh_sales_support_get_start_tmpl', kw)
 
     @http.route('/virtual-administrator', type='http', auth='public', website=True)
     def virtual_administrator_office_huddle(self):
         return  request.render('wt_office_hunddle.oh_virtual_administrator_tmpl')
 
     @http.route('/virtual-administrator-get-start', type='http', auth='public', website=True)
-    def virtual_administrator_get_start_office_huddle(self):
-        return  request.render('wt_office_hunddle.oh_virtual_administrator_get_start_tmpl')
+    def virtual_administrator_get_start_office_huddle(self, **kw):
+        return  request.render('wt_office_hunddle.oh_virtual_administrator_get_start_tmpl', kw)
 
     @http.route('/video-design', type='http', auth='public', website=True)
     def video_design_office_huddle(self):

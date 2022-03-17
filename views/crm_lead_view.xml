@@ -8,8 +8,37 @@
         <field name="arch" type="xml">
           <xpath expr="//form/sheet/div[2]" position="after">
             <label for="service_id"/>
-              <field name="service_id" widget="many2one" string="Service"/>
-          </xpath>
+                <field name="service_id" widget="many2one" string="Service"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Extra Info" name="extra_info">
+                    <separator string="What are some projects you'd like to explore with Office Huddle?"/>
+                    <group>
+                        <group>
+                            <field name="sales"/>
+                            <field name="recruiting"/>
+                            <field name="customer_support"/>
+                            <field name="marketing"/>
+                            <field name="executive_assistance"/>
+                            <field name="others"/>
+                        </group>
+                    </group>
+                    <separator string="Is your budget more than $1,000? per month?"/>
+                    <field name="budget" />
+                    <separator string="How did you hear about Office Huddle ?"/>
+                    <field name="hear_about" />
+                    <separator string="What is Your preferred way of getting remote work done ?"/>
+                    <group>
+                        <group>
+                            <field name="email_hear"/>
+                            <field name="phone_call_hear"/>
+                            <field name="vc"/>
+                            <field name="screenshare"/>
+                            <field name="chat_msg"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
         </field>
     </record>
 

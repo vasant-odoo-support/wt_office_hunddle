@@ -12,13 +12,24 @@
                         </div>
                         <div class="row py-5">
                             <div class="col-md-6 mx-auto">
-                                <form>
+                                <form action="/submit-virtual-staffing" method="post">
+                                    <input type="hidden" name="generate_page" value="virtual_admin" />
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                    <input type="text" t-att-value="firstname" name="firstname" class="form-control py-3" id="firstname" hidden="hidden"/>
+                                    <input type="text" t-att-value="lastname" class="form-control py-3" name="lastname" id="lastname" hidden="hidden"/>
+                                    <input type="email" t-att-value="email" class="form-control py-3" name="email" id="email" hidden="hidden"/>
+                                    <input type="number" t-att-value="phone" name="phone" class="form-control py-3" id="phone" hidden="hidden"/>
+                                    <input type="text" t-att-value="company_name" class="form-control py-3" name="company_name" id="company_name" hidden="hidden"/>
+                                    <input type="text" t-att-value="website_url" class="form-control py-3" name="website_url" id="website_url" hidden="hidden"/>
+                                    <input type="text" t-att-value="industry" class="form-control py-3" name="industry" id="industry" hidden="hidden"/>
+                                    <input type="text" t-att-value="no_of_emp" class="form-control py-3" name="no_of_emp" id="no_of_emp" hidden="hidden"/>
+
                                     <div>
-                                        <label class="main-label mb-1" for="name">What are some projects  you'd like to explore with Office Huddle?</label>
+                                        <label class="main-label mb-1" for="name">What are some projects you'd like to explore with Office Huddle?</label>
                                         <p class="light-label">Choose as many as you like </p>
                                         <div class="px-2">
                                             <div class="form-check  mb-1">
-                                                <input class="form-check-input" type="radio" name="sales" id="sales" value="sales"/>
+                                                <input class="form-check-input" type="radio" name="sales" id="sales" value="Sales"/>
                                                 <label class="form-check-label" for="sales">
                                                   sales
                                                 </label>
@@ -30,7 +41,7 @@
                                                 </label>
                                             </div>
                                             <div class="form-check  mb-1">
-                                                <input class="form-check-input" type="radio" name="customerSupport" id="customerSupport" value=" Customer support"/>
+                                                <input class="form-check-input" type="radio" name="customerSupport" id="customerSupport" value="Customer support"/>
                                                 <label class="form-check-label" for="customerSupport">
                                                   Customer support
                                                 </label>
@@ -43,7 +54,7 @@
                                             </div>
 
                                             <div class="form-check mb-1">
-                                                <input class="form-check-input" type="radio" name="executiveAssistance" id="executiveAssistance" value=" Executive Assistance"/>
+                                                <input class="form-check-input" type="radio" name="executiveAssistance" id="executiveAssistance" value="Executive Assistance"/>
                                                 <label class="form-check-label" for=" executiveAssistance">
                                                   Executive Assistance
                                                 </label>
@@ -57,18 +68,17 @@
                                         </div>
                                     </div>
 
-
                                     <div class="mt-5-custom">
-                                        <label class="main-label mb-3" for="name">What are some projects  you'd like to explore with Office Huddle?</label>
+                                        <label class="main-label mb-3" for="name">Is your budget more than $1,000? per month?</label>
                                         <div class="px-2">
                                             <div class="form-check  mb-1">
-                                                <input class="form-check-input" type="radio" name="option" id="yes" value="yes"/>
+                                                <input class="form-check-input" type="radio" name="budget-info" id="yes" value="yes"/>
                                                 <label class="form-check-label" for="yes">
                                                   Yes
                                                 </label>
                                             </div>
                                             <div class="form-check mb-1">
-                                                <input class="form-check-input" type="radio" name="option" id="No" value="No"/>
+                                                <input class="form-check-input" type="radio" name="budget-info" id="No" value="no"/>
                                                 <label class="form-check-label" for="No">
                                                   No
                                                 </label>
@@ -117,7 +127,8 @@
                                                 </div>
 
                                                 <div class="sm-w-25 w-50">
-                                                    <textarea class="form-control bg-white" rows="1" placeholder="Other" id="floatingTextarea2"></textarea>
+                                                    <b>OR</b>
+                                                    <input type="text" name="hearOfficeHuddle" class="form-control py-3" id="hearOfficeHuddle"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +176,6 @@
                                             </div>
                                         </div>
 
-
                                         <div class="mt-5-custom">
                                             <label class="main-label mb-3" for="name">What is Your preferred way of getting remote work done ?</label>
                                             <p class="light-label">Choose as many as you like </p>
@@ -204,7 +214,7 @@
                                             </div>
                                         </div>
 
-                                        <button type="button " class="btn button-item px-4 py-2 h4 mt-4 ">Submit</button>
+                                        <button type="submit " class="btn button-item px-4 py-2 h4 mt-4 ">Submit</button>
                                     </div>
                                 </form>
                             </div>

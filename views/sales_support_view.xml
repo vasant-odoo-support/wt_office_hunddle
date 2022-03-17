@@ -13,50 +13,51 @@
                         <div class="row py-5">
                             <div class="col-md-6 mx-auto">
                                 <form action="/sales-support-get-start">
-                                    <label class="main-label mb-1" for="name">Name<sub>*</sub></label>
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                    <label class="main-label mb-1" for="firstname">Name<sub>*</sub></label>
                                     <div class="row">
 
                                         <div class="col-md-6">
 
                                             <div class="form-group">
                                                 <label for="name" class="mb-1">First</label>
-                                                <input type="text" class="form-control py-3" id="name"/>
+                                                <input required="required" type="text" name="firstname" class="form-control py-3" id="firstname"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
                                             <div class="form-group">
-                                                <label for="name">Last</label>
-                                                <input type="text" class="form-control py-3" id="name"/>
+                                                <label for="lastname">Last</label>
+                                                <input required="required" type="text" class="form-control py-3" name="lastname" id="lastname"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="main-label mb-2" for="email">Email Address<sub>*</sub></label>
-                                                <input type="email" class="form-control py-3" id="email"/>
+                                                <input required="required" type="email" class="form-control py-3" name="email" id="email"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="main-label mb-2" for="phone">Phone<sub>*</sub></label>
-                                                <input type="number" class="form-control py-3" id="phone"/>
+                                                <input required="required" type="number" name="phone" class="form-control py-3" id="phone"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="main-label mb-2" for="name">Company Name</label>
-                                                <input type="text" class="form-control py-3" id="name"/>
+                                                <label class="main-label mb-2" for="company_name">Company Name</label>
+                                                <input required="required" type="text" class="form-control py-3" name="company_name" id="company_name"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="main-label mb-2" for="name">Company Website URL</label>
-                                                <input type="text" class="form-control py-3" id="name"/>
+                                                <label class="main-label mb-2" for="website_url">Company Website URL</label>
+                                                <input type="text" class="form-control py-3" name="website_url" id="website_url"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="main-label mb-2 " for="name">Industry</label>
-                                                <input type="text" class="form-control py-3" id="name"/>
+                                                <label class="main-label mb-2 " for="industry">Industry</label>
+                                                <input type="text" class="form-control py-3" name="industry" id="industry"/>
                                             </div>
                                         </div>
 
@@ -64,14 +65,14 @@
                                     <div class="row pb-5">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="main-label" for="exampleFormControlSelect1">How many employess are at your company?</label>
-                                                <select class="form-control py-2 select" id="select">
-                                                  <option >Select an option</option>
-                                                  <option>0-5</option>
-                                                  <option>6-40</option>
-                                                  <option>41-100</option>
-                                                  <option>101-300</option>
-                                                  <option>300+</option>
+                                                <label class="main-label" for="no_of_emp">How many employess are at your company?</label>
+                                                <select class="form-control py-2 select" name="no_of_emp" id="no_of_emp">
+                                                  <option value="">Select an option</option>
+                                                  <option value="0-5">0-5</option>
+                                                  <option value="6-40">6-40</option>
+                                                  <option value="41-100">41-100</option>
+                                                  <option value="41-100">101-300</option>
+                                                  <option value="300+">300+</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -80,7 +81,6 @@
                                         <div class="col-md-6">
                                             <button type="submit" class="btn button-item px-4 py-2 h4">Next</button>
                                         </div>
-
                                     </div>
 
 
@@ -96,7 +96,7 @@
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <h3 class="font-bold h1">Make Your Sales Support Better.</h3>
-                                <button type="button" class="btn button-item ">Get Started</button>
+                                <button type="submit" class="btn button-item ">Get Started</button>
                             </div>
                         </div>
                     </div>

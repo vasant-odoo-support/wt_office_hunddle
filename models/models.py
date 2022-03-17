@@ -99,6 +99,24 @@ class website_crm_lead(models.Model):
     _inherit = "crm.lead"
 
     service_id = fields.Many2one('service.service', string='Service')
+    industry = fields.Char()
+
+    sales = fields.Boolean()
+    recruiting = fields.Boolean()
+    customer_support = fields.Boolean()
+    marketing = fields.Boolean()
+    executive_assistance = fields.Boolean()
+    others = fields.Boolean()
+    budget = fields.Char()
+    hear_about = fields.Char()
+
+    email_hear = fields.Boolean()
+    phone_call_hear = fields.Boolean("Phone/Audio Call")
+    vc = fields.Boolean("Video Chat (Google Meet , Zoom)")
+    screenshare = fields.Boolean("Screenshare")
+    chat_msg = fields.Boolean("Chat / Messaging (Slack ,Other)")
+
+
 
 
 class ProductTemplate(models.Model):
