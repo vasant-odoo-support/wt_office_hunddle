@@ -133,7 +133,27 @@
                               <div class="footer-logo"><img src="/wt_office_hunddle/static/src/home/images/footer-logo.png" alt="" class="img-fluid"/></div>
                             </div>
                             <div class="col-md-4">
-                              <div class="social-links text-center text-md-right pt-3 pt-md-0"> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/facebook-app-symbol.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/linkedin.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/youtube.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/cloud-computing.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/google-glass-logo.png" alt="" class="img-fluid"/></a> <a href="#"><img src="/wt_office_hunddle/static/src/home/images/instagram.png" alt="" class="img-fluid"/></a> </div>
+                              <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                                <a target="_blank" href="https://www.facebook.com/OfficeHuddle">
+                                    <img src="/wt_office_hunddle/static/src/home/images/facebook-app-symbol.png" alt="" class="img-fluid"/>
+                                </a>
+                                <a target="_blank" href="https://www.linkedin.com/company/office-huddle-business-growth-solutions/">
+                                    <img src="/wt_office_hunddle/static/src/home/images/linkedin.png" alt="" class="img-fluid"/>
+                                </a> 
+                                <a target="_blank" href="https://www.youtube.com/channel/UC3tr1Ds5u8N7Zcos7EsI61Q">
+                                    <img src="/wt_office_hunddle/static/src/home/images/youtube.png" alt="" class="img-fluid"/>
+                                </a> 
+                                <a target="_blank" href="https://twitter.com/HuddleOffice">
+                                    <img src="/wt_office_hunddle/static/src/images/twiter-logo.png" alt="" class="img-fluid"/>
+                                </a>
+                                <a target="_blank" href="https://www.google.com/search?q=Office+Huddle+Small+Business+Growth+Solutions+130+Third+Street+Crowder%2C+MS+38622+United+States&amp;rlz=1C1UEAD">
+                                    <img src="/wt_office_hunddle/static/src/home/images/google-glass-logo.png" alt="" class="img-fluid"/>
+                                </a>
+
+                                <a target="_blank" href="https://www.instagram.com/officehuddleprint/">
+                                    <img src="/wt_office_hunddle/static/src/home/images/instagram.png" alt="" class="img-fluid"/>
+                                </a> 
+                               </div>
                             </div>
                             <div class="col-md-4"> <a href="#" class="phn-footer"><img src="/wt_office_hunddle/static/src/home/images/phone-call.png" alt="" class="img-fluid"/> 601-348-9977</a> </div>
                           </div>

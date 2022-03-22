@@ -93,7 +93,7 @@
                 <div class="col col-sm col-md col-lg col-xl">
                   <div class="inside">
                     <h2>EVENTS</h2><br/>
-                    <a href="#" class="button7 buttons">SPONSOR</a>
+                    <a href="/event" class="button7 buttons">SPONSOR</a>
                   </div>
                 </div>
 
@@ -119,7 +119,7 @@
           </div>
         </section>
 
-        <section class= "bg-white">
+        <!-- <section class= "bg-white">
           <div class="" style="padding: 0;">
             <div class="row">
               <div class="credits col-lg-6" style="width: 100%; margin-left: 25%;margin-top: -6%;">
@@ -141,7 +141,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
     </t>
   </template>
