@@ -36,13 +36,13 @@
 					    <div class="col-lg-6 col-md-6">
 						   <h2>You'll walk away with</h2>
 						   <ul>
-						    <li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Strong core of an organization.</li>
-							<li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Ability to properly outline and
+						    <li><span><img  class="oh_icon" src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Strong core of an organization.</li>
+							<li><span><img class="oh_icon" src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Ability to properly outline and
 					effectively perform strategies that
 					target to improve business stamina.</li>
-							<li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Effeciently manage the essential
+							<li><span><img class="oh_icon" src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Effeciently manage the essential
 					functions of a company.</li>
-							<li><span><img src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Alignment of company's purpose. </li>
+							<li><span><img class="oh_icon" src="/wt_office_hunddle/static/src/enter-training/images/round-icon.png" alt=""/></span> Alignment of company's purpose. </li>
 						   </ul>
 						</div>
 						<div class="col-lg-6 col-md-6">

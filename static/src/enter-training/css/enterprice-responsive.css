@@ -1,3 +1,8 @@
+@media screen and (max-width: 396px){
+    .entrepreneurial_training_cl .oh_icon{
+        height: 20px;
+    }
+}
 @media (min-width: 320px) and (max-width:767px){
 .entrepreneurial_training_cl .enterprice-top .enter-like h1 {
     font-size: 50px;
@@ -17,7 +22,8 @@
     padding: 7px 40px;
 }
 .entrepreneurial_training_cl .enterprice-top {
-    padding: 150px 0 163px;
+    padding: 10px 0 100px;
+    height: 450px;
 }
 .entrepreneurial_training_cl section.enterprice-section {
     padding-top: 30px;
@@ -42,7 +48,7 @@
     margin-bottom: 0px;
 }
 .entrepreneurial_training_cl .enterprice-top .enter-like {
-    top: 78px;
+    top: 10px;
 }
 .entrepreneurial_training_cl section.enterprice-section h2 {
     font-size: 25px;
@@ -63,7 +69,10 @@
     padding: 10px 40px;
 }
 .entrepreneurial_training_cl .enterprice-top .enter-like {
-    top: 110px;
+    top: -115px;
+}
+.entrepreneurial_training_cl .enterprice-top{
+    height: 500px;
 }
 .entrepreneurial_training_cl section.enterprice-section h2 {
     font-size: 30px;

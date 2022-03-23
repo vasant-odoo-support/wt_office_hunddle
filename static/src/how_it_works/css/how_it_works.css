@@ -304,3 +304,543 @@ text-align: right;
 .how_it_works_cls a:hover{
 	text-decoration: none;
 }
+
+/* Responsive */
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+	.how_it_works_cls .custhowitworkbnr {
+		padding: 70px 0 50px 0;
+	}
+	.how_it_works_cls .custhowitworkbnr h1 {
+		font-size: 28px;
+		line-height: 35px;
+		text-align: center;
+		margin: 0;
+	}
+	.how_it_works_cls .custhowitworkbnr h1 br {
+		display: none;
+	}
+	.how_it_works_cls .custhowitworkbnr p {
+		font-size: 13px;
+		line-height: 20px;
+		padding: 0;
+	}
+	.how_it_works_cls .thesevensuc {
+		padding: 20px 0;
+	}
+	.how_it_works_cls .theseventxtbox p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.how_it_works_cls .custDownloadbtn {
+		font-size: 13px;
+		padding: 12px 20px;
+	}
+
+	.how_it_works_cls .thesevensuc h2 {
+		font-size: 28px;
+		line-height:35px;
+	}
+
+	.how_it_works_cls .leadershipDeverespo {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin:  20px 0 20px 0;
+	}
+	.how_it_works_cls .leadershipDeverespo img {
+		width: 250px;
+	}
+	.how_it_works_cls .leadershipDeve {
+		display: none;
+	}
+	.how_it_works_cls .theseventxtbox {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: 0 0 30px 0;
+		max-width: 100%;
+	}
+	.how_it_works_cls .stepnumber {
+		display: none;
+	}
+	.how_it_works_cls .stageSec {
+		padding: 40px 0;
+	}
+	.how_it_works_cls .stageSecmais {
+		padding: 0 !important;
+		text-align: center !important;
+	}
+	.how_it_works_cls .stageSecmais h2 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.how_it_works_cls .stageSecmais p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.how_it_works_cls .yourfirstSec {
+		padding: 40px 0;
+	}
+	.how_it_works_cls .yourfirstSecLft::after {
+		width: 80px;
+		height: 80px;
+		border-width: 10px;
+		right: 40px;
+		bottom: -40px;
+		display: none;
+	}
+	.how_it_works_cls .yourfirstSecRt {
+		padding: 40px 0 0 0px;
+		text-align: center;
+	}
+	.how_it_works_cls .yourfirstSecRthead {
+		left: 0;
+		border-radius: 30px;
+	}
+	.how_it_works_cls .yourfirstSecRthead h2 {
+		font-size: 26px;
+	}
+	.how_it_works_cls .yourfirstSecRt h4 {
+		font-size: 17px;
+	}
+	.how_it_works_cls .yourfirstSecRt p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.how_it_works_cls .yourfirstSecRt .custDownloadbtn {
+		margin: 0;
+		padding: 12px 40px;
+	}
+	.how_it_works_cls .dashedline:before {
+		display: none;
+	}
+
+}
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+	.how_it_works_cls .custhowitworkbnr {
+		padding: 70px 0 40px 0;
+	}
+	.how_it_works_cls .custhowitworkbnr h1 {
+		font-size: 28px;
+		line-height: 35px;
+		text-align: center;
+		margin: 0;
+	}
+	.how_it_works_cls .custhowitworkbnr h1 br {
+		display: none;
+	}
+	.how_it_works_cls .custhowitworkbnr p {
+		font-size: 14px;
+		line-height: 26px;
+		padding: 0;
+	}
+	.how_it_works_cls .thesevensuc {
+		padding: 20px 0;
+	}
+	.how_it_works_cls .theseventxtbox p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.how_it_works_cls .custDownloadbtn {
+		font-size: 14px;
+		padding: 12px 30px;
+	}
+
+	.how_it_works_cls .thesevensuc h2 {
+		font-size: 28px;
+		line-height:35px;
+	}
+
+	.how_it_works_cls .leadershipDeverespo {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin:  20px 0 20px 0;
+	}
+	.how_it_works_cls .leadershipDeverespo img {
+		width: 250px;
+	}
+	.how_it_works_cls .leadershipDeve {
+		display: none;
+	}
+	.how_it_works_cls .theseventxtbox {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: 0 0 30px 0;
+		max-width: 100%;
+	}
+
+	.how_it_works_cls .stageSec {
+		padding: 40px 0;
+	}
+	.how_it_works_cls .stageSecmais {
+		padding: 0 0 0 80px;
+
+	}
+	.how_it_works_cls .stageSec2 .stageSecmais {
+		padding:  0 80px 0 0;
+	}
+	.how_it_works_cls .stepnumber {
+		top: -80px;
+	}
+	.how_it_works_cls .stepnumber img {
+		width: 50px;
+	}
+	.how_it_works_cls .stageSecmais h2 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.how_it_works_cls .stageSecmais p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.how_it_works_cls .yourfirstSec {
+		padding: 40px 0;
+	}
+	.how_it_works_cls .yourfirstSecLft::after {
+		width: 80px;
+		height: 80px;
+		border-width: 10px;
+		right: 40px;
+		bottom: -40px;
+		display: none;
+	}
+	.how_it_works_cls .yourfirstSecRt {
+		padding: 40px 0 0 0px;
+		text-align: center;
+	}
+	.how_it_works_cls .yourfirstSecRthead {
+		left: 0;
+		border-radius: 30px;
+	}
+	.how_it_works_cls .yourfirstSecRthead h2 {
+		font-size: 26px;
+	}
+	.how_it_works_cls .yourfirstSecRt h4 {
+		font-size: 17px;
+	}
+	.how_it_works_cls .yourfirstSecRt p {
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.how_it_works_cls .yourfirstSecRt .custDownloadbtn {
+		margin: 0;
+		padding: 12px 40px;
+	}
+	.how_it_works_cls .dashedline:before {
+		display: none;
+	}
+
+}
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.how_it_works_cls .custhowitworkbnr {
+		padding: 60px 0 30px 0;
+	}
+	.how_it_works_cls .custhowitworkbnr h1 {
+		font-size: 45px;
+		line-height: 45px;
+		margin: 0 0 10px 0;
+	}
+	.how_it_works_cls .custhowitworkbnr p {
+		padding: 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.how_it_works_cls .thesevensuc h2 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.how_it_works_cls .leadershipDeve img {
+		width:300px;
+	}
+	.how_it_works_cls .theseventxtbox h3 {
+		font-size: 17px;
+	}
+	.how_it_works_cls .theseventxtbox p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.how_it_works_cls .theseventxtbox {
+		max-width: 230px;
+	}
+
+	.how_it_works_cls .leadershipDeve {
+		margin: 100px 0 100px 0;
+	}
+	.how_it_works_cls .theseventxtbox1 {
+		top: 60px;
+		left: 65px;
+	  }
+
+	  .how_it_works_cls .theseventxtbox2 {
+		top: 210px;
+		left: 0px;
+	  }
+	  .how_it_works_cls .theseventxtbox3 {
+		top: 330px;
+		left: 30px;
+	  }
+	  .how_it_works_cls .theseventxtbox4 {
+		top: 40px;
+		right: 90px;
+		left: auto;
+	  }
+	  .how_it_works_cls .theseventxtbox5 {
+		top: 150px;
+		right: 0px;
+		left: auto;
+	  }
+	  .how_it_works_cls .theseventxtbox6 {
+		top: 290px;
+		right: 20px;
+	}
+	.how_it_works_cls .theseventxtbox7 {
+		top: 390px;
+		right: 170px;
+	}
+
+	.how_it_works_cls .stageSec {
+		padding: 80px 0;
+	}
+	.how_it_works_cls .stageSecmais h2 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.how_it_works_cls .stageSecmais h4 {
+		font-size: 16px;
+	}
+	.how_it_works_cls .stageSecmais p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.how_it_works_cls .stageSecmais {
+		padding: 0  0 0 120px;
+	}
+	.how_it_works_cls .stepnumber {
+		top: -130px;
+	}
+	.how_it_works_cls .stepnumber img {
+		width:80px;
+	}
+	.how_it_works_cls .custDownloadbtn {
+		font-size: 15px;
+		padding: 12px 30px;
+	}
+	.how_it_works_cls .stageSec2 .stageSecmais {
+		padding:  0 120px 0 0;
+	}
+	.how_it_works_cls .yourfirstSecRt {
+		padding: 50px 0 0 20px;
+	}
+	.how_it_works_cls .yourfirstSecRthead h2 {
+		font-size: 31px;
+	}
+	.how_it_works_cls .yourfirstSecRt p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.how_it_works_cls .yourfirstSecRt .custDownloadbtn {
+		margin-left:40px;
+	}
+	.how_it_works_cls .yourfirstSecLft::after {
+		width: 100px;
+		height: 100px;
+		bottom: -60px;
+		right: -30px;
+		border-width: 10px;
+	}
+	.how_it_works_cls .yourfirstSec {
+		padding: 50px 0;
+	}
+	.how_it_works_cls .dashedline:before {
+		display: none;
+	}
+}
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+	.how_it_works_cls .custhowitworkbnr {
+		padding: 60px 0 30px 0;
+	}
+	.how_it_works_cls .custhowitworkbnr h1 {
+		font-size: 50px;
+		line-height: 50px;
+		margin: 0 0 10px 0;
+	}
+	.how_it_works_cls .custhowitworkbnr p {
+		padding: 0 10%;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.how_it_works_cls .thesevensuc h2 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.how_it_works_cls .leadershipDeve img {
+		width:420px;
+	}
+	.how_it_works_cls .theseventxtbox h3 {
+		font-size: 18px;
+	}
+	.how_it_works_cls .theseventxtbox p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.how_it_works_cls .theseventxtbox {
+		max-width: 230px;
+	}
+
+	.how_it_works_cls .leadershipDeve {
+		margin: 150px 0 150px 0;
+	}
+	.how_it_works_cls .theseventxtbox1 {
+		top: 140px;
+		left: 95px
+	  }
+
+	  .how_it_works_cls .theseventxtbox2 {
+		top: 350px;
+		left: 50px;
+	  }
+	  .how_it_works_cls .theseventxtbox3 {
+		top: 500px;
+		left: 100px;
+	  }
+	  .how_it_works_cls .theseventxtbox4 {
+		top: 100px;
+			right: 210px;
+			left: auto;
+	  }
+	  .how_it_works_cls .theseventxtbox5 {
+		top: 250px;
+		right: 70px;
+		left: auto;
+	  }
+	  .how_it_works_cls .theseventxtbox6 {
+		top: 420px;
+		right: 100px;
+	}
+	.how_it_works_cls .theseventxtbox7 {
+		top: 550px;
+		right: 280px;
+	}
+
+	.how_it_works_cls .stageSec {
+		padding: 80px 0;
+	}
+	.how_it_works_cls .stageSecmais h2 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.how_it_works_cls .stageSecmais h4 {
+		font-size: 16px;
+	}
+	.how_it_works_cls .stageSecmais p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.how_it_works_cls .stageSecmais {
+		padding: 0  0 0 120px;
+	}
+	.how_it_works_cls .stepnumber {
+		top: -130px;
+	}
+	.how_it_works_cls .stepnumber img {
+		width:80px;
+	}
+	.how_it_works_cls .custDownloadbtn {
+		font-size: 15px;
+		padding: 12px 30px;
+	}
+	.how_it_works_cls .stageSec2 .stageSecmais {
+		padding:  0 120px 0 0;
+	}
+	.how_it_works_cls .yourfirstSecRt {
+		padding: 50px 0 0 20px;
+	}
+	.how_it_works_cls .yourfirstSecRthead h2 {
+		font-size: 31px;
+	}
+	.how_it_works_cls .yourfirstSecRt p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.how_it_works_cls .yourfirstSecRt .custDownloadbtn {
+		margin-left:40px;
+	}
+	.how_it_works_cls .yourfirstSecLft::after {
+		width: 100px;
+		height: 100px;
+		bottom: -60px;
+		right: -30px;
+		border-width: 10px;
+	}
+	.how_it_works_cls .yourfirstSec {
+		padding: 50px 0;
+	}
+
+	.how_it_works_cls .dashedline:before {
+		height: 2900px;
+		top: 170px;
+	}
+}
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+	.how_it_works_cls .theseventxtbox1 {
+		left: 75px;
+	}
+	.how_it_works_cls .theseventxtbox2 {
+		left: 20px;
+	}
+	.how_it_works_cls .theseventxtbox3 {
+		left: 80px;
+	}
+	.how_it_works_cls .theseventxtbox4 {
+		right: 220px;
+	}
+	.how_it_works_cls .theseventxtbox5 {
+		right: 20px;
+	}
+	.how_it_works_cls .theseventxtbox6 {
+		right: 40px;
+	}
+	.how_it_works_cls .theseventxtbox7 {
+		right: 270px;
+	}
+}
+@media only screen and (min-width : 1200px) and (max-width : 1400px) {
+	.how_it_works_cls .custhowitworkbnr h1 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.how_it_works_cls .custhowitworkbnr {
+		padding:120px 0 110px 0 ;
+	}
+	.how_it_works_cls .custhowitworkbnr p {
+		padding: 0 15%;
+	}
+	.how_it_works_cls .yourfirstSecRthead h2 {
+		font-size: 52px;
+	}
+	.how_it_works_cls .stageSec {
+		padding: 150px 0;
+	}
+	.how_it_works_cls .stepnumber {
+		top: -200px;
+	}
+	.how_it_works_cls .stepnumber img {
+		width: 100px;
+	}
+	.how_it_works_cls .stageSecmais {
+		padding: 0 0 0 130px;
+	}
+	.how_it_works_cls .stageSec2 .stageSecmais {
+		padding: 0 130px 0 0;
+	}
+	.how_it_works_cls .dashedline:before {
+		height: 4050px;
+		top: 170px;
+	}
+}
