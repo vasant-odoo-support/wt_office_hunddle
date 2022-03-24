@@ -137,16 +137,16 @@
         </div> -->
         <!-- Home Slider -->
         <div class="custhomeslider">
-          <div id="demo" class="carousel slide" data-bs-ride="carousel" data-touch="true">
+          <div id="demo" class="carousel slide" data-ride="carousel" data-touch="true">
               <!-- Indicators/dots -->
               <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                  <button type="button" data-target="#demo" data-slide-to="0" class="active"></button>
+                  <button type="button" data-target="#demo" data-slide-to="1"></button>
+                  <button type="button" data-target="#demo" data-slide-to="2"></button>
+                  <button type="button" data-target="#demo" data-slide-to="3"></button>
+                  <button type="button" data-target="#demo" data-slide-to="4"></button>
+                  <button type="button" data-target="#demo" data-slide-to="5"></button>
+                  <button type="button" data-target="#demo" data-slide-to="6"></button>
               </div>
               <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -274,6 +274,12 @@
                           </div>
                       </div>
                   </div>
+              </div>
+              <div class="carousel-control-prev" data-target="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon" title="Previous"></span>
+              </div>
+              <div class="carousel-control-next" data-target="#demo" data-slide="next">
+                <span class="carousel-control-next-icon" title="Next"></span>
               </div>
           </div>
       </div>
