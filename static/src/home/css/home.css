@@ -1539,6 +1539,9 @@ h1, h2, h3, h4, h5, h6 {
 .homepage_wrap .love-text {
     background: #fff;
 }
+.homepage_wrap .custhomeslider {
+    float: inherit !important;
+}
 .homepage_wrap .love-text .content-div {
     padding: 0 25px;
     text-align: center;
