@@ -1534,6 +1534,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin-top: 0px;
     padding: 80px 0 100px;
+    background-color: #f0f8ff;
 }
 .homepage_wrap .love-text {
     background: #fff;
@@ -1615,6 +1616,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .homepage_wrap section.life-make {
     padding: 0;
+    background-color: #f0f8ff;
 }
 .homepage_wrap .make-life h2 {
     font-size: 56px;
