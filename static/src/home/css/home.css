@@ -357,6 +357,9 @@ h1, h2, h3, h4, h5, h6 {
 .homepage_wrap #hero .btn-get-started:hover {
     background: #4ea5e0;
 }
+.homepage_wrap #homemain{
+    background: #0573a4;
+}
 .homepage_wrap .ask-us {
     width: 100%;
     height: 100%;
@@ -376,6 +379,22 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     line-height: 70px;
 }
+
+.homepage_wrap .carousel-indicators [data-target] {
+    width: 8px;
+    height: 15px;
+    border: 2px solid #db974a;
+    border-radius: 50%;
+}
+
+.homepage_wrap .carousel-indicators .active {
+    background: #db974a;
+}
+
+.homepage_wrap .carousel-control-next, .homepage_wrap .carousel-control-prev {
+    z-index: 5 !important;
+}
+
 .homepage_wrap .ask-left h4 {
     color: #db974a;
     font-size: 38px;
