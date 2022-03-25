@@ -34,6 +34,7 @@
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/css/thankyou.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/enter-training/css/enterprice.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/enter-training/css/enterprice-responsive.css"/>
+            <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/shop/css/shop.css"/>
 
         </xpath>
     	<xpath expr="//script[last()]" position="after">

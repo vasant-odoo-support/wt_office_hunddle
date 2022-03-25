@@ -68,6 +68,7 @@
         'views/lead_generation_get_start_view.xml',
         'views/virtual_administor_view.xml',
         'views/virtual_administor_get_start_view.xml',
+        'views/website_shop_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',
