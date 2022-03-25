@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .homepage_wrap .carousel-indicators [data-target] {
-    width: 8px;
+    width: 15px;
     height: 15px;
     border: 2px solid #db974a;
     border-radius: 50%;
@@ -1936,8 +1936,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 .homepage_wrap .custhomeslider .owl-carousel .owl-controls .owl-nav .owl-next, .homepage_wrap .custhomeslider .owl-carousel .owl-controls .owl-nav .owl-prev  {
       display: none !important;
-  }
-
+}
+.homepage_wrap .carousel-inner {
+    margin-bottom: -6px !important;
+}
 .homepage_wrap .custhomeslider .owl-dots {
       position: absolute !important;
       bottom: 0;

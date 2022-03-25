@@ -707,7 +707,20 @@
             </t>
           </select>
         </div>
-        <div class="css_quantity input-group" contenteditable="false" style="display:none;">
+        <div t-if="len(product.product_qty_ids) > 0" class="css_quantity input-group d-none" contenteditable="false">
+            <div class="input-group-prepend">
+                <a t-attf-href="#" class="btn btn-secondary js_add_cart_json" aria-label="Remove one" title="Remove one">
+                    <i class="fa fa-minus"></i>
+                </a>
+            </div>
+            <input type="text" class="form-control quantity" data-min="1" name="add_qty" t-att-value="add_qty or 1"/>
+            <div class="input-group-append">
+                <a t-attf-href="#" class="btn btn-secondary float_left js_add_cart_json" aria-label="Add one" title="Add one">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+        <div t-if="not len(product.product_qty_ids) > 0" class="css_quantity input-group" contenteditable="false">
             <div class="input-group-prepend">
                 <a t-attf-href="#" class="btn btn-secondary js_add_cart_json" aria-label="Remove one" title="Remove one">
                     <i class="fa fa-minus"></i>
@@ -772,5 +785,110 @@
                   </tr>
             </table>
         </div>
+    </template>
+
+    <template id="office_huddle_product" inherit_id="website_sale.product">
+      <xpath expr="//t[@t-call='website_sale.product_price']" position="before">
+        <div t-if="len(product.product_qty_ids) > 0">
+          <span style="font-size: revert; font-weight: 700; display:block;">Quantity</span>
+          <select name="qty-business-card" id="qty-business-card" style="padding: 5px; width: 100%; margin-bottom: 10px; background-color: white;">
+            <t t-foreach="product.product_qty_ids" t-as="qty_line">
+              <option t-att-value="qty_line.qty"><t t-esc="qty_line.qty"/></option>
+            </t>
+          </select>
+        </div>
+      </xpath>
+    </template>
+
+    <template id="office_huddle_product_price" inherit_id="website_sale.product_quantity">
+      <xpath expr="//div[@contenteditable='false']" position="replace">
+        <div t-if="len(product.product_qty_ids) > 0" class="css_quantity input-group d-none" contenteditable="false">
+            <div class="input-group-prepend">
+                <a t-attf-href="#" class="btn btn-secondary js_add_cart_json" aria-label="Remove one" title="Remove one">
+                    <i class="fa fa-minus"></i>
+                </a>
+            </div>
+            <input type="text" class="form-control quantity" data-min="1" name="add_qty" t-att-value="add_qty or 1"/>
+            <div class="input-group-append">
+                <a t-attf-href="#" class="btn btn-secondary float_left js_add_cart_json" aria-label="Add one" title="Add one">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+        <div t-if="not len(product.product_qty_ids) > 0" class="css_quantity input-group" contenteditable="false">
+            <div class="input-group-prepend">
+                <a t-attf-href="#" class="btn btn-secondary js_add_cart_json" aria-label="Remove one" title="Remove one">
+                    <i class="fa fa-minus"></i>
+                </a>
+            </div>
+            <input type="text" class="form-control quantity" data-min="1" name="add_qty" t-att-value="add_qty or 1"/>
+            <div class="input-group-append">
+                <a t-attf-href="#" class="btn btn-secondary float_left js_add_cart_json" aria-label="Add one" title="Add one">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+      </xpath>
+    </template>
+
+    <template id="officehuddle_product_price" inherit_id="website_sale.product_price">
+      <xpath expr="//div[@itemprop='offers']" position="replace">
+        <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price mt16">
+            <h4 class="oe_price_h4 css_editable_mode_hidden">
+                <span t-attf-class="text-danger oe_default_price {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="text-decoration: line-through; white-space: nowrap;"
+                    t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
+                />
+                <b class="oe_price" style="white-space: nowrap;" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                <span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
+                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+            </h4>
+            <h4 class="css_non_editable_mode_hidden decimal_precision" t-att-data-precision="str(2)">
+              <span t-field="product.list_price"
+                  t-options='{
+                     "widget": "monetary",
+                     "display_currency": product.currency_id,
+                 }'/>
+            </h4>
+        </div>
+      </xpath>
+    </template>
+
+    <template id="officehuddle_products_item" inherit_id="website_sale.products_item">
+      <xpath expr="//div[hasclass('product_price')]" position="replace">
+        <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget':'float', 'precision':2, 'display_currency': website.currency_id}" />
+            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget':'float', 'precision':2, 'display_currency': website.currency_id}"/>
+            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+        </div>
+      </xpath>
+    </template>
+
+    <template id="officehuddle_cart_lines" inherit_id="website_sale.cart_lines">
+      <xpath expr="//td[@name='price']" position="replace">
+        <td class="text-center td-price" name="price">
+            <t t-set="combination" t-value="line.product_id.product_template_attribute_value_ids + line.product_no_variant_attribute_value_ids"/>
+            <t t-set="combination_info" t-value="line.product_id.product_tmpl_id._get_combination_info(combination, pricelist=website_sale_order.pricelist_id)"/>
+
+            <t t-set="list_price_converted" t-value="website.currency_id._convert(combination_info['list_price'], website_sale_order.currency_id, website_sale_order.company_id, date)"/>
+            <t groups="account.group_show_line_subtotals_tax_excluded" t-if="(website_sale_order.pricelist_id.discount_policy == 'without_discount' and website_sale_order.currency_id.compare_amounts(list_price_converted, line.price_reduce_taxexcl) == 1) or website_sale_order.currency_id.compare_amounts(line.price_unit, line.price_reduce) == 1" name="order_line_discount">
+                <del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="list_price_converted" t-options="{'widget':'float', 'precision':2, 'display_currency': website_sale_order.currency_id}" />
+            </t>
+            <span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget':'float', 'precision':2, 'display_currency': website_sale_order.currency_id}" groups="account.group_show_line_subtotals_tax_excluded" />
+            <t groups="account.group_show_line_subtotals_tax_included" t-if="(website_sale_order.pricelist_id.discount_policy == 'without_discount' and website_sale_order.currency_id.compare_amounts(list_price_converted, line.price_reduce_taxinc) == 1) or website_sale_order.currency_id.compare_amounts(line.price_unit, line.price_reduce) == 1" name="order_line_discount">
+                <del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="list_price_converted" t-options="{'widget':'float', 'precision':2, 'display_currency': website_sale_order.currency_id}" />
+            </t>
+            <span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget':'float', 'precision':2, 'display_currency': website_sale_order.currency_id}" groups="account.group_show_line_subtotals_tax_included" />
+        </td>
+      </xpath>
+    </template>
+
+    <template id="officehuddle_cart_summary" inherit_id="website_sale.cart_summary">
+      <xpath expr="//td[hasclass('td-price')]" position="replace">
+        <td class="text-center td-price">
+            <span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget':'float', 'precision':2, 'display_currency': website_sale_order.currency_id}" groups="account.group_show_line_subtotals_tax_excluded" />
+            <span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget':'float', 'precision':2, 'display_currency': website_sale_order.currency_id}" groups="account.group_show_line_subtotals_tax_included" />
+        </td>
+      </xpath>
     </template>
 </odoo>
