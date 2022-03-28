@@ -71,14 +71,14 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     height: 80vh;
-    padding: 320px 0 350px !important;
+    padding: 300px 0 330px !important;
 
 }
 
 .shop-slider .custhomeslider1 {
     background-position: top center !important;
     background-size: cover !important;
-    padding: 320px 0 350px !important;
+    padding: 300px 0 330px !important;
 }
 
 .shop-slider .custhomeslider1 .container {
@@ -132,7 +132,7 @@
     background-position: right center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    padding: 320px 0 350px !important;
+    padding: 300px 0 330px !important;
 }
 
 .shop-slider .custhomeslider2 h2 {
@@ -178,6 +178,8 @@
     color: #ffff;
     padding: 20px;
 }
+
+
 
 .shop-slider .custhomeslider3main h3 span {
     text-transform: uppercase;
@@ -403,9 +405,9 @@
     z-index: 2;
 }
 
-.shop-slider .carousel-indicators [data-bs-target] {
-    width: 8px;
-    height: 8px;
+.shop-slider .carousel-indicators [data-target] {
+    width: 15px;
+    height: 15px;
     border: 2px solid #db974a;
     border-radius: 50%;
 }
@@ -418,3 +420,590 @@
 .shop-slider .carousel-control-prev {
     z-index: 5 !important;
 }
+
+
+
+
+
+
+/*Responsive*/
+
+
+
+/*************** Home slider  ***********/
+@media only screen and (min-width : 100px) and (max-width : 575px) {
+    .shop-slider .homesldr {
+        background-position:center !important;
+    }
+    .shop-slider .custhomeslider1main h2 , .shop-slider .custhomeslider2 h2 , .shop-slider .custhomeslider4main h2 , .shop-slider .custhomeslider5main h2 , .shop-slider .custhomeslider6main h2 , .shop-slider .custhomeslider7lft h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.shop-slider .custhomeslider1main h4 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+.shop-slider .custhomeslider1main p, .shop-slider .custhomeslider1main h2, .shop-slider .custhomeslider1main h4{
+    color: #fff;
+    text-shadow: none;
+}
+.shop-slider .custhomeslider1 {
+    padding:50px 0 50px 0px !important ;
+}
+.shop-slider .homesldr {
+    text-align: center;
+    height: 460px;
+}
+.shop-slider .custhomeslider2 h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.shop-slider .custhomeslider2main h4 {
+    font-size: 18px;
+}
+.shop-slider .custhomeslider2main .customBtn {
+    padding: 12px 40px;
+}
+.shop-slider .custhomeslider2 h2 , .shop-slider .custhomeslider2main h4 {
+    color: #fff;
+}
+.shop-slider .custhomeslider2main h4 {
+    font-size: 15px;
+}
+.shop-slider .custhomeslider3main {
+    width: 100%;
+    text-align: center;
+}
+.shop-slider .custhomeslider3main h2  {
+    font-size: 26px;
+}
+.shop-slider .custhomeslider3main h3 {
+    font-size: 28px;
+    line-height: 30px;
+}
+.shop-slider .custhomeslider3main h3 span {
+    font-size: 17px;
+}
+.shop-slider .custhomeslider3main .customBtn , .shop-slider .custhomeslider2main .customBtn {
+    margin: 20px 0 0 0;
+    padding: 12px 40px;
+}
+.shop-slider .custhomeslider4main h2 span {
+    font-size: 50px;
+    line-height: 50px;
+}
+.shop-slider .custhomeslider4main , .shop-slider .custhomeslider5main , .shop-slider .custhomeslider6main {
+    width: 100%;
+}
+.shop-slider .start7daysBtn {
+    font-size:14px;
+}
+.shop-slider .start7daysBtn span { 
+    font-size: 11px;
+    line-height: normal;
+}
+.shop-slider .custhomeslider4main h4 {
+    font-size: 20px;
+}
+.shop-slider .custhomeslider5main h2 br {
+    display: none;
+}
+.shop-slider .custhomeslider5main h4 {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.shop-slider .custhomeslider6main h2 {
+    color: #fff;
+}
+.shop-slider .custhomeslider6main h2 span {
+    font-size: 40px;
+    margin: 10px 0;
+    display: inline-block;
+    line-height: 52px;
+}
+.shop-slider .custhomeslider6 {
+    background-position: center bottom !important;
+}
+.shop-slider .slier5log img {
+    width: 170px !important;
+}
+.shop-slider .custhomeslider7lft {
+
+}
+.shop-slider .custhomeslider7lft h2 , .shop-slider .custhomeslider7lft h3 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+.shop-slider .custhomeslider7lft h2 span {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 70px;
+}
+.shop-slider .custhomeslider7Rt {
+    text-align: center;
+}
+.shop-slider .custhomeslider7Rt h2 {
+    font-size: 20px;
+}
+.shop-slider .custhomeslider7lft h3 {
+    font-size:28px;
+    line-height: 35px;
+    margin: 20px 0 10px 0 ;
+}
+
+.shop-slider .custhomeslider7Rt {
+    margin: 0;
+}
+.shop-slider .custhomeslider7 {
+    padding: 90px 0;
+}
+.shop-slider .custhomeslider7Rt p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.shop-slider .homesldr::after { 
+    display: block;
+}
+}
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+.shop-slider .homesldr {
+    background-position:center !important;
+}
+.shop-slider .custhomeslider1main h2 , .shop-slider .custhomeslider2 h2 , .shop-slider .custhomeslider4main h2 , .shop-slider .custhomeslider5main h2 , .shop-slider .custhomeslider6main h2 , .shop-slider .custhomeslider7lft h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.shop-slider .custhomeslider1main h4 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.shop-slider .custhomeslider1 {
+    padding:50px 0 50px 0px !important ;
+}
+.shop-slider .homesldr {
+    text-align: center;
+    height: 460px;
+}
+.shop-slider .custhomeslider2 h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.shop-slider .custhomeslider2main h4 {
+    font-size: 18px;
+}
+.shop-slider .custhomeslider2main .customBtn {
+    padding: 12px 40px;
+}
+.shop-slider .custhomeslider2 h2 , .shop-slider .custhomeslider2main h4 {
+    color: #fff;
+}
+.shop-slider .custhomeslider2main h4 {
+    font-size: 15px;
+}
+.shop-slider .custhomeslider3main {
+    width: 100%;
+    text-align: center;
+}
+.shop-slider .custhomeslider3main h2  {
+    font-size: 26px;
+}
+.shop-slider .custhomeslider3main h3 {
+    font-size: 28px;
+    line-height: 30px;
+}
+.shop-slider .custhomeslider3main h3 span {
+    font-size: 17px;
+}
+.shop-slider .custhomeslider3main .customBtn , .shop-slider .custhomeslider2main .customBtn {
+    margin: 20px 0 0 0;
+    padding: 12px 40px;
+}
+.shop-slider .custhomeslider4main h2 span {
+    font-size: 50px;
+    line-height: 50px;
+}
+.shop-slider .custhomeslider4main , .shop-slider .custhomeslider5main , .shop-slider .custhomeslider6main {
+    width: 100%;
+}
+.shop-slider .start7daysBtn {
+    font-size:14px;
+}
+.shop-slider .start7daysBtn span { 
+    font-size: 11px;
+    line-height: normal;
+}
+.shop-slider .custhomeslider4main h4 {
+    font-size: 20px;
+}
+.shop-slider .custhomeslider5main h2 br {
+    display: none;
+}
+.shop-slider .custhomeslider5main h4 {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.shop-slider .custhomeslider6main h2 {
+    color: #fff;
+}
+.shop-slider .custhomeslider6main h2 span {
+    font-size: 40px;
+    margin: 10px 0;
+    display: inline-block;
+    line-height: 52px;
+}
+.shop-slider .custhomeslider6 {
+    background-position: center bottom !important;
+}
+.shop-slider .slier5log img {
+    width: 170px !important;
+}
+.shop-slider .custhomeslider7lft {
+
+}
+.shop-slider .custhomeslider7lft h2 , .shop-slider .custhomeslider7lft h3 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+.shop-slider .custhomeslider7lft h2 span {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 70px;
+}
+.shop-slider .custhomeslider7Rt {
+    text-align: center;
+}
+.shop-slider .custhomeslider7Rt h2 {
+    font-size: 20px;
+}
+.shop-slider .custhomeslider7lft h3 {
+    font-size:28px;
+    line-height: 35px;
+    margin: 20px 0 10px 0 ;
+}
+
+.shop-slider .custhomeslider7Rt {
+    margin: 0;
+}
+.shop-slider .custhomeslider7 {
+    padding: 90px 0;
+}
+.shop-slider .custhomeslider7Rt p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.shop-slider .homesldr::after { 
+    display: block;
+}
+.shop-slider .custhomeslider1main p, .shop-slider .custhomeslider1main h2, .shop-slider .custhomeslider1main h4{
+    color: #fff;
+    text-shadow: none;
+}
+.shop-slider .custhomeslider2  p, .shop-slider .custhomeslider2 h2, .shop-slider .custhomeslider2 h4{
+    color: #fff;
+    text-shadow: none;
+}
+}
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .shop-slider .homesldr  {
+        height: 600px;
+        background-position: center !important;
+    }
+    .shop-slider .custhomeslider1main h2 , .shop-slider .custhomeslider4main h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .shop-slider .custhomeslider1main h4 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .shop-slider .virtualstaff img {
+        width: 246px !important;
+    }
+    .shop-slider .custhomeslider2 h2 br {
+        display: none;
+    }
+    .shop-slider .custhomeslider2main h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .shop-slider .custhomeslider2 h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .shop-slider .customBtn {
+        padding: 12px 40px;
+    }
+    .shop-slider .custhomeslider3main h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .shop-slider .custhomeslider3main h3 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .shop-slider .custhomeslider3main h3 span {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .shop-slider .custhomeslider3main .customBtn {
+        margin: 20px 20px 0 0;
+      }
+      .shop-slider .custhomeslider4main h2 span {
+          font-size: 60px;
+          line-height: 60px;
+      }
+      .shop-slider .custhomeslider4main h4 {
+          font-size: 20px;
+      }
+      .shop-slider .start7daysBtn {
+          font-size: 16px;
+      }
+      .shop-slider .start7daysBtn span {
+          font-size: 11px;
+          line-height: normal;
+      }
+      
+      .shop-slider .custhomeslider5main h4 {
+          font-size: 14px;
+          line-height: 24px;
+      }
+    
+      .shop-slider .custhomeslider5main h2 {
+          font-size: 30px;
+          line-height: 30px;
+      }
+      .shop-slider .custhomeslider5 {
+          padding: 100px 0;
+      }
+      .shop-slider .custhomeslider6main h2 {
+          font-size: 30px;
+          line-height: 30px;
+      }
+      .shop-slider .custhomeslider6main h2 span { 
+          font-size: 38px;
+          line-height: normal;
+          display: inline-block;
+      }
+      .shop-slider .custhomeslider7 {
+          padding: 140px 0;
+      }
+      .shop-slider .custhomeslider7lft h2 {
+          font-size: 30px;
+          line-height: 40px;
+          letter-spacing: 5px;
+      }
+      .shop-slider .custhomeslider7lft h2 span {
+          font-size: 60px;
+      }
+      .shop-slider .custhomeslider7lft h3 {
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+      .shop-slider .custhomeslider7Rt {
+          margin: 150px 0 0 0;
+      }
+      .shop-slider .custhomeslider7Rt p {
+          font-size: 14px;
+          line-height: 26px;
+          letter-spacing: 1px;
+      }
+}
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+    .shop-slider .homesldr  {
+        height: 600px;
+        background-position: center !important;
+    }
+    .shop-slider .custhomeslider1main h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .shop-slider .custhomeslider4main h2  {
+        font-size:40px;
+        line-height: 45px;
+    }
+    .shop-slider .custhomeslider1main h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .shop-slider .virtualstaff img {
+        width: 350px !important;
+    }
+    .shop-slider .custhomeslider2 h2 br {
+        display: none;
+    }
+    .shop-slider .custhomeslider2main h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .shop-slider .custhomeslider2 h2 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .shop-slider .customBtn {
+        padding: 12px 40px;
+    }
+    .shop-slider .custhomeslider3main h2 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .shop-slider .custhomeslider3main h3 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .shop-slider .custhomeslider3main h3 span {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .shop-slider .custhomeslider3main .customBtn {
+        margin: 20px 20px 0 0;
+      }
+      .shop-slider .custhomeslider4main h2 span {
+          font-size: 70px;
+          line-height: 70px;
+      }
+      .shop-slider .custhomeslider4main h4 {
+          font-size: 22px;
+      }
+      .shop-slider .start7daysBtn {
+          font-size: 16px;
+      }
+      .shop-slider .start7daysBtn span {
+          font-size: 11px;
+          line-height: normal;
+      }
+      
+      .shop-slider .custhomeslider5main h4 {
+          font-size: 14px;
+          line-height: 24px;
+      }
+    
+      .shop-slider .custhomeslider5main h2 {
+          font-size: 40px;
+          line-height: 40px;
+      }
+      .shop-slider .custhomeslider5 {
+          padding: 100px 0;
+      }
+      .shop-slider .custhomeslider6main h2 {
+          font-size: 40px;
+          line-height: 40px;
+      }
+      .shop-slider .custhomeslider6main h2 span { 
+          font-size: 38px;
+          line-height: normal;
+          display: inline-block;
+      }
+      .shop-slider .custhomeslider7 {
+          padding: 140px 0;
+      }
+      .shop-slider .custhomeslider7lft h2 {
+          font-size: 30px;
+          line-height: 40px;
+          letter-spacing: 5px;
+      }
+      .shop-slider .custhomeslider7lft h2 span {
+          font-size: 70px;
+          line-height: 70px;
+      }
+      .shop-slider .custhomeslider7lft h3 {
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+      .shop-slider .custhomeslider7Rt {
+          margin: 150px 0 0 0;
+      }
+      .shop-slider .custhomeslider7Rt p {
+          font-size: 14px;
+          line-height: 26px;
+          letter-spacing: 1px;
+      }
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1400px) {
+    .shop-slider .homesldr {
+        height: 80vh;
+    }
+    /* .shop-slider .custhomeslider1 {
+        padding: 90px 0 170px !important;
+    } */
+    .shop-slider .virtualstaff img {
+        width: 400px !important;
+      }
+      
+      .shop-slider .custhomeslider1main h2 {
+          font-size: 50px;
+          line-height:60px;
+      }
+      .shop-slider .custhomeslider2 h2 {
+          font-size: 45px;
+          line-height: 40px;
+      }
+      .shop-slider .custhomeslider3main h2 {
+          font-size: 38px;
+      }
+
+      .shop-slider .custhomeslider5 {
+          padding: 50px 0 0 0;
+      }
+       .shop-slider .custhomeslider5main h2 {
+          font-size: 38px;
+          line-height:40px;
+      } 
+      .shop-slider .custhomeslider5main h4 {
+          font-size: 17px;
+          line-height: 22px;
+      }
+
+      .shop-slider .custhomeslider6main {
+          margin: 50px 0 0 0;
+          width: 60%;
+      }
+      .shop-slider .custhomeslider6main h2 {
+          font-size: 40px;
+      }
+      .shop-slider .custhomeslider7 {
+          padding: 50px 0 30px 0;
+      }
+      .shop-slider .custhomeslider7lft h2 , .shop-slider .custhomeslider7lft h3 {
+          font-size: 30px;
+      }
+      .shop-slider .custhomeslider7lft h2 span {
+          font-size: 80px;
+      }
+      .shop-slider .custhomeslider7Rt {
+          margin: 200px 0 0 0;
+      }
+      .shop-slider .custhomeslider7Rt p {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 3px;
+      }
+      .shop-slider .custhomeslider7Rt h2 {
+          font-size: 30px;
+      }
+      /* .custhomeslider2main h4 {
+        font-size: 18px;
+      } */
+      .shop-slider .customBtn {
+          padding: 12px 60px;
+      }
+      .shop-slider .custhomeslider4 {
+            background-position: center !important;
+      }
+      .shop-slider .custhomeslider5 {
+          background-position: center !important;
+      }
+      .shop-slider .approachRt h2 , .shop-slider .multifacetedSec h2 {
+          font-size: 60px;
+          line-height: 60px;
+      }
+}
+/*************** End Home slider  ***********/
+
