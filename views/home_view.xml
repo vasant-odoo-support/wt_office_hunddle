@@ -157,7 +157,7 @@
                                       <h2>GET THE HELP YOU<br/> NEED WITH<br/>
                                           <span>VIRTUAL STAFFING</span></h2>
                                       <h4>Cover bigger responsibilities,<br/> grab more opportunities.</h4>
-                                      <a href="#" class="customBtn">Get Started</a> </div>
+                                      <a href="/virtual-staffing" class="customBtn">Get Started</a> </div>
                               </div>
                               <div class="virtualstaff"><img src="/wt_office_hunddle/static/src/home/images/virtualstaf.png"/></div>
                           </div>
@@ -172,7 +172,7 @@
                                           <div class="custhomeslider2main">
                                               <h2>WE ARE OFFERING <br/>WEB DEVELOPMENT<br/> INCLUDING ERP <br/>CUSTOMIZATION. </h2>
                                               <h4>NOT JUST A WEBSITE BUILDER... <br/>I WE OFFER A BUSINESS IN A BOX. </h4>
-                                              <a href="#" class="customBtn">Let's Get Started</a> </div>
+                                              <a href="/web-development" class="customBtn">Let's Get Started</a> </div>
                                       </div>
                                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                           <div class="slider2Img"><img src="/wt_office_hunddle/static/src/home/images/slider2Img.png" /></div>
@@ -192,7 +192,7 @@
                                               <h3>WORLD CLASS
                                                   <span>ENTREPRENUERIAL TRAINING </span></h3>
                                               <h2>BOOST THE GROWTH OF YOUR BUSINESS THROUGH ENHANCING YOUR SKILLS. </h2>
-                                              <a href="#" class="customBtn">Let's Get Started</a> </div>
+                                              <a href="/entrepreneurial-training" class="customBtn">Let's Get Started</a> </div>
                                       </div>
                                   </div>
                               </div>
@@ -209,7 +209,7 @@
                                               <h2>Grow Your Revenue
                                                   <span>49% Faster </span></h2>
                                               <h4> By Using Video and Graphics <br/>in Your marketing Campaigns</h4>
-                                              <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                                              <a href="/graphic-design" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                   <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                                       </div>
                                   </div>
@@ -228,7 +228,7 @@
                                               <h2>Getting Reliable<br/> help Has <br/> Never Been <br/>Easier.</h2>
                                               <div class="slier5log"><img src="/wt_office_hunddle/static/src/home/images/slider5logo.png" /></div>
                                               <h4> has world-Class Graphic Designer, Video-Editor, and Web Developers all dediceted to you.</h4>
-                                              <a href="#" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
+                                              <a href="/graphic-design" class="start7daysBtn">Start Your 7 Day Free trail Now! <br/>
                   <span>Make Us a Part of YOUR TEAM and Grow your business NOW</span></a> </div>
                                       </div>
                                   </div>
@@ -244,6 +244,7 @@
                                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                           <div class="custhomeslider6main">
                                               <h2>Always move <br/>Forward with a <br/> <span>Business Coach</span> <br/> behind your back.</h2>
+                                              <a href="/business-coaching" class="customBtn">Let's Get Started</a>
                                           </div>
                                       </div>
                                   </div>
@@ -261,6 +262,7 @@
                                           <div class="custhomeslider7lft">
                                               <h2><span>Event </span> Lorem Ipsum <br/> Lorem Ipsum </h2>
                                               <h3>jan. xx,xxxx</h3>
+                                              <a href="/event" class="customBtn">Let's Get Started</a>
                                           </div>
                                       </div>
                                       <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
@@ -551,7 +553,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <a class="readmoreBtn" href="/slides">
+                  <a class="readmoreBtn" href="/entrepreneurial-training">
                     <div class="enter-t red">
                       <h3>ENTREPRENEUR TRAINING</h3>
                       <p>Learn how to build and fine tune the core of your business.</p>
@@ -575,7 +577,7 @@
                   </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <a class="readmoreBtn" href="/web-development">
+                  <a class="readmoreBtn" href="/lead-generation">
                     <div class="enter-t purple">
                       <h3>LEAD GENERATION</h3>
                       <p>Create limitless income generation to live the life that you want.</p>
@@ -591,7 +593,7 @@
                   </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                  <a class="readmoreBtn" href="#">
+                  <a class="readmoreBtn" href="/sales-support">
                     <div class="enter-t blue">
                       <h3>SALES <br/>
                         SUPPORT</h3>
