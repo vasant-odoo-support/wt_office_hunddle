@@ -279,3 +279,10 @@
 	background: #db974a;
 	color: #fff;
 }
+.job_cl .job_row{
+	padding: 15px;
+}
+.job_cl .job-box{
+    border: solid 1px darkorange;
+    border-radius: 10px;
+}

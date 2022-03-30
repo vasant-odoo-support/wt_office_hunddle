@@ -81,7 +81,24 @@
       </div>
     </div>
   </section>
-
+  <section class="jobs section-bg">
+    <div class="container" data-aos="fade-up">
+      <h2>Opening position</h2>
+        <div class="row justify-content-md-left job-row">
+          <t t-foreach="jobs" t-as="job">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch job-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <a t-attf-href="/jobs/detail/#{ slug(job) }">
+                  <h3 class="job-title"><t t-esc="job.name"/></h3>
+                </a>
+                <h5>No of positions : <t t-esc="job.no_of_recruitment"/></h5>
+                <h6>Job Description : <span t-field="job.description"/></h6>
+              </div>
+            </div>
+          </t>
+        </div>
+    </div>
+  </section>
   <section class="services section-bg Support-team custjobsrv">
     <div class="container" data-aos="fade-up">
       <h2>Our Working Process</h2>
