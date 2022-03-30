@@ -103,7 +103,10 @@
 		<t t-call="website.layout">
 			<div id="wrap" class="event_new_office_hunddle_main_cl">
 				<div class="oe_structure"/>
-				<section id="home" class="divider" t-if="event and event.bg_image_ids">
+				<section id="no_event" class="no_event" t-if="not event">
+					<h1>There is no current or upcoming event</h1>
+				</section>
+				<section id="home" class="divider" t-if="event and len(event.bg_image_ids) > 1">
 			      <div class="fullwidth-carousel zindex-0 owl-carousel owl-theme">
 			      	<t t-foreach="event.bg_image_ids" t-as="bg_image">
 				        <div class="item bg-img-cover fullscreen" t-attf-style="background-image: url('/web/image/event.background.slider/#{bg_image.id}/image');">
@@ -250,7 +253,7 @@
 			      </div>
 			    </section>
 
-				<section>
+				<section t-if="event and event.schedule_ids">
 			      <div class="">
 			        <div class="container pb-80 pt-60">
 			          <div class="section-title mb-30">
