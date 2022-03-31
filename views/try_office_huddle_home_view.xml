@@ -4,499 +4,463 @@
 	<template id="tryofficehuddle_form" name="Try Office Huddle">
 		<t t-call="website.layout">
 			<div id="wrap" class="tryofficehuddle_form_cl">
-				<section id="header">
-			        <!-- <div class="row">
-			            <div class="col-md-12 toppings">
-			                <a href="#" style="font-size: 16px; color: white;">Schedule A Live Demo - Click Here to Reserve Your
-			                    Spot Now</a>
-			            </div>
-			        </div> -->
-			        <div class="row container container-fluid container-fluid-in">
-			            <!-- <div class="col-md-3" style="text-align: center;">
-			                <a href="#"><img src="/wt_office_hunddle/static/src/tryofficehuddle/OH-logo1.png" class="img-fluid"/></a>
-			            </div>
-			            <div class="col-md-3" style="text-align: center;">
-			                <p></p>
-			            </div>
-			            <div class="col-md-3" style="text-align: center;">
-			                <p></p>
-			            </div>
-			            <div class="col-md-3" style="text-align: center;">
-			                <button type="button" class="oh-btn">TRY FOR FREE</button>
-			            </div> -->
-			            <div class="col-md-12 toppings bg-dark">
-				            <a style="font-size: 24px; color: white;"><b>OFFICEHUDDLE:</b> Increasing Business Success Using Professionals and Proven Tools.</a>
+				<div class="top-header">
+			      <a href="#"><b>OFFICEHUDDLE:</b> Increasing Business Success Using Professionals and Proven Tools.</a>
+			    </div>
+			    <div class="bg-all">
+				    <section class="top-section">
+				      <div class="container-fluid">
+				        <div class="row">
+				          <div class="col-md-6">
+				            <div class="col-wrapper">
+				              <h1 class="text-center"><b>Grow Your Revenue</b></h1>
+				              <h1><b>49% Faster</b></h1>
+				              <p class="col-p"><b>By Using Video and Graphics in Your Marketing Campaigns</b></p>
+				              <h2>Try Office Huddle Graphics For Free</h2>
+				              <div class="trail-box">
+				                <a href="/pricing">
+				                  <h3>Start Your 7 Day FREE Trial Now!</h3>
+				                  <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+				                </a>
+				              </div>
+				            </div>
+				          </div>
+				          <div class="col-md-6">
+				            <div class="video-wrapper">
+				              <iframe allow="autoplay" src="https://player.vimeo.com/video/637209900?muted=1&amp;autoplay=1&amp;&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid140404"></iframe>
+				            </div>
+				          </div>
 				        </div>
-			        </div>
-			    </section>
-				<!-- New Section -->
-			    <section id="one" class="container-fluid container-fluid-in">
-			        <div class="row">
-			            <div class="col-md-6" style="text-align: center; padding: 30px;">
-			                <h1 style="color: white; font-size: 58px;">Grow Your Revenue</h1>
-			                <h1 style="color: white; font-size: 80px;">49% Faster</h1>
-			                <h2 style="color: white;">By Using Video and Graphics in Your<br/>Marketing Campaigns</h2>
-			                <h3 style="color: white; padding-top:20px;">Try Office Huddle Graphics For Free</h3>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			            </div>
-			            <div class="col-md-6" style="text-align: center; padding: 30px;">
-			                <iframe width="850" height="500" src="https://player.vimeo.com/video/637209900?title=0&amp;byline=0&amp;portrait=0" title="vimeo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align: center;">
-			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/6icons.png" class="img-fluid" style="padding: 60px;"/>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-md-6">
-			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/group1.png" class="img-fluid"/>
-			            </div>
-			            <div class="col-md-6" style="text-align: center; align-self: center;">
-			                <h1 style="color: white;">GETTING RELIABLE<br/>HELP HAS<br/>NEVER BEEN<br/>EASIER.</h1>
-			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/OH-logo2.png" class="img-fluid" style="height: 100px; width: 400px;"/>
-			                <p style="color: white;">has World-Class Graphic Designers, Video Editors, and Web Developers<br/>all
-			                    dedicated to you.</p>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="two">
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align:center;padding-bottom:7%;">
-			                <h1>HOW IT WORKS</h1>
-			                <iframe width="1100" height="619" src="https://www.youtube.com/embed/tf88GFLtj18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
-			                <p style="font-size:30px;padding-top: 20px;">Try Office Huddle Graphics For Free</p>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="three" class="contianer-fluid">
-			        <div class="row">
-			            <div class="col-md-3">
-			                <p></p>
-			            </div>
-			            <div class="col-md-10 container">
-			                <ul class="bullets">
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">SOCIAL MEDID: </span>presents a huge market: 246 Million
-			                        Americans engaged on social media in 2019.</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">VIDEOS: </span>93% of business gain new customer as a result of
-			                        posting videos on social media.</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">GRAPHICS: </span>Social media posts that feature visual assets
-			                        like images deliver a 650% higher engagements rate than plain text posts.</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">AN EFFECTIVE SOCIAL MEDIA CAPAIGN: </span>will require at least
-			                        2 videos and 20 images posted a month.</li>
-			                </ul>
-			            </div>
-			            <div class="col-md-3">
-			                <p></p>
-			            </div>
-			        </div>
-			        <div class="row" style="text-align: center;">
-			            <div class="col-sm col-md col-lg md-10">
-		                <h1 style="font-size:50px;">DON'T BE LEFT BEHIND.<br/>YOU NEED GRAPHICS AND VIDEOS FOR YOUR BUSINESS!</h1><br/>
-		                <p style="font-size:30px;">Try Office Huddle Graphics For Free</p>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="four" class="container-fluid" style="margin: 0px !important;padding: 0px !important;">
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align: center;">
-			                <h1>HOW WE MAKE YOUR BUSINESS BETTER</h1>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-md-2">
-			                <p></p>
-			            </div>
-			            <div class="col-md-4" style="font-size: 24px;">
-			                <ul class="checked">
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">UNLIMITED: </span>Request</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">UNLIMITED: </span>Revisions</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">UNLIMITED: </span>Brand Profiles</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">UNLIMITED: </span>User Management</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">UNLIMITED: </span>Live Support</li>
-			                    <li><i contenteditable="false" class="fa fa-fw fa-check" style="color: rgb(79, 158, 46);"></i><span
-			                            style="font-weight: bold;">No Risk: </span>Guarantee</li>
-			                </ul>
-			            </div>
-			            <div class="col-md-4" style="align-self: center;">
-			                <p style="text-align: justify; font-size: 20px;">If you are a small business owner looking to gain
-			                    attraction for your advertising needs, Office Huddle
-			                    can be the team behind you to take care of
-			                    everyhting. You don't need to hire your own people
-			                    for your graphics and videos. With Office Huddle,
-			                    you have a dedicated team of professionals giving
-			                    you their undivided attention.
-			                </p>
-			            </div>
-			            <div class="col-md-2">
-			                <p></p>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-sm col-md col-lg">
-			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/computer.png" class="img-fluid"/>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="five" class="container-fluid">
-			        <div class="row">
-			            <div class="col-sm col-md col-lg">
-			                <h1 style="text-align: center;">Why OFFICE HUDDLE is VITAL to your SUCCESS</h1>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-md-2">
-			                <p></p>
-			            </div>
-			            <div class="col-md-5">
-			                <div class="vid">
-			                    <iframe width="700" height="400" src="https://player.vimeo.com/video/635635579?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			                </div>
-			                <div class="text" style="text-align: center;">
-			                    <p style=" font-size: 24px;"><b>It is like</b> having your own <b>team</b> of graphic design
-			                    and<br/>
-			                    video editors, but at a <b>lower cost</b> and with <br/>MUCH <b>
-			                        LESS hassles.</b>
-			                    </p>
-			                </div>
-			                <div class="list">
-			                    <ul class="bullets">
-			                        <li><i contenteditable="false" class="fa fa-fw fa-check"
-			                                style="color: rgb(79, 158, 46);"></i><span style="font-weight: bold;">SOCIAL MEDID:
-			                            </span>presents a huge market: 246 Million
-			                            Americans engaged on social media in 2019.</li>
-			                        <li><i contenteditable="false" class="fa fa-fw fa-check"
-			                                style="color: rgb(79, 158, 46);"></i><span style="font-weight: bold;">VIDEOS: </span>93%
-			                            of business gain new customer as a result of
-			                            posting videos on social media.</li>
-			                        <li><i contenteditable="false" class="fa fa-fw fa-check"
-			                                style="color: rgb(79, 158, 46);"></i><span style="font-weight: bold;">GRAPHICS:
-			                            </span>Social media posts that feature visual assets
-			                            like images deliver a 650% higher engagements rate than plain text posts.</li>
-			                        <li><i contenteditable="false" class="fa fa-fw fa-check"
-			                                style="color: rgb(79, 158, 46);"></i><span style="font-weight: bold;">AN EFFECTIVE
-			                                SOCIAL MEDIA CAPAIGN: </span>will require at least
-			                            2 videos and 20 images posted a month.</li>
-			                    </ul>
-			                </div>
-			            </div>
-			            <div class="col-md-3">
-			                <div>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/a-2.png" class="img-fluid" style="margin-bottom: -35px;"/>
-			                </div>
-			                <div>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/a-1.png" class="img-fluid" style="margin-bottom: -35px;"/>
-			                </div>
-			                <div>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/a-3.png" class="img-fluid" style="margin-bottom: -35px;"/>
-			                </div>
-			                <div>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/a-4.png" class="img-fluid" style="margin-bottom: -35px;"/>
-			                </div>
-			                <div>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/a-5.png" class="img-fluid" style="margin-bottom: -35px;"/>
-			                </div>
-			                <div>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/a-6.png" class="img-fluid"/>
-			                </div>
-			            </div>
-			            <div class="col-md-2">
-			                <p></p>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align: center;">
-			                <p style="text-align: center !important;font-size: 30px !important; padding-top: 30px !important;">Try Office Huddle Graphics For Free</p>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="six" class="container-fluid">
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align: center;">
-			                <hr/>
-			                <div class="col-md-12 toppings bg-dark">
-			                    <a style="font-size: 24px; color: white; padding-top: 100px !important; padding: bottom 100px !important;">Products That Helped Our Clients Reach Their Growth Goals.</a>
-			                </div>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="seven" class="container-fluid">
-			        <div class="container">
-			            <div class="row" style="align-items: flex-start;">
-			                <div class="col" style="text-align: center;">
-			                    <p></p>
-			                </div>
-			                <div class="col-4">
-			                    <iframe width="500" height="300" src="https://player.vimeo.com/video/635635579?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			                    <p style="text-align: justify; font-size: 21px;"><br/>"With Office Huddle being a part of your team,
-			                        you
-			                        can reach your ideal market and communicate with
-			                        them through digital collateral media."
-			                    </p>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/flyers.png" height="237px" width="234px" class="img-fluid"/>
-			                    <br/><br/>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/yardfinal2.jpg" height="237px" width="234px" class="img-fluid"/>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/business.png" height="237px" width="234px" class="img-fluid"/>
-			                    <br/><br/>
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/brochuresfinal.png" height="237px" width="234px" class="img-fluid"/>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <p></p>
-			                </div>
-			            </div><br/><br/>
-			            <div class="row" style="align-items: flex-start;">
-			                <div class="col" style="text-align: center;">
-			                    <p></p>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/postcards.png" height="237px" width="234px" class="img-fluid"/>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/shirts.png" height="237px" width="234px" class="img-fluid"/>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/banners.png" height="237px" width="234px" class="img-fluid"/> 
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/stickers.png" height="237px" width="234px" class="img-fluid"/>
-			                </div>
-			                <div class="col" style="text-align: center;">
-			                    <p></p>
-			                </div>
-			            </div>
-			            <div class="row">
-			                <div class="col-sm col-md col-lg" style="text-align: center;">
-			                    <p style="text-align: center;font-size: 30px; padding-top: 30px;">Try Office Huddle Graphics For Free</p>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			                </div>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="eight" class="container-fluid" style="margin: 0px 0 30px 0 !important; padding: 100px 200px 50px 200px !important;">
-			        <div class="row">
-			            <div class="col" style="text-align: center;">
-			                <h1>What Our Satisfied Client Say About Us.</h1>
-			            </div>
-			        </div>
-			        <div class="row" style="margin: 30px 0 30px 0;">
-			            <div class="col">
-			                <iframe width="450" height="250" frameborder="0" title="vimeo-player" src="https://player.vimeo.com/video/635633971?title=0&amp;byline=0&amp;portrait=0" allowfullscreen="1"></iframe>
-			            </div>
-			            <div class="col">
-			                <iframe width="450" height="250" src="https://player.vimeo.com/video/635635313?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			            </div>
-			            <div class="col">
-			                <iframe width="450" height="250" src="https://player.vimeo.com/video/635635379?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			            </div>
-			        </div>
-			        <div class="row" style="margin: 30px 0 30px 0;">
-			            <div class="col">
-			                <iframe width="450" height="250" src="https://player.vimeo.com/video/635635468?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			            </div>
-			            <div class="col">
-			                <iframe width="450" height="250" src="https://player.vimeo.com/video/635636316?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			            </div>
-			            <div class="col">
-			                <iframe width="450" height="250" src="https://player.vimeo.com/video/635636029?title=0&amp;byline=0&amp;portrait=0" title="Vimeo player" allowfullscreen="1" wmode="opaque" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align: center;">
-			                <p style="text-align: center;font-size: 30px; padding-top: 30px;">Try Office Huddle Graphics For Free</p>
-			                <button type="button" class="oh-btn2">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
-			                </button>
-			            </div>
-			        </div>
-			    </section>
-			    <!-- New Section -->
-			    <section id="ten" class="container-fluid bg-dark" style="margin: 0px 0 0px 0 !important; padding: 100px 200px 50px 200px !important;">
-			        <div class="container">
-			            <div class="row" style="align-items: flex-start;">
-			                
-			                <div class="col" style="text-align: left;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/no risk.png" class="img-fluid" style="height: 50%; width: 70%;"/>
-			                </div>
-			                <div class="col-2">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/3o days.png" class="img-fluid" style="height: 60%; width: 90%;"/>
-                    			<img src="/wt_office_hunddle/static/src/tryofficehuddle/no contract.png" class="img-fluid" style="height: 40%; width: 70%;padding-top: 20px;"/>
-			                </div>
-			                <div class="col-2" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/unli rev.png" class="img-fluid" style="height: 60%; width: 90%;"/>
-                    			<img src="/wt_office_hunddle/static/src/tryofficehuddle/avial.png" class="img-fluid" style="height: 60%; width: 90%; padding-top: 20px;"/>
-			                </div>
-			                <div class="col-2" style="text-align: center;">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/unli edit.png" class="img-fluid" style="height: 40%; width: 70%;"/>
-                    			<img src="/wt_office_hunddle/static/src/tryofficehuddle/live sup.png" class="img-fluid" style="height: 40%; width: 70%; padding-top: 20px;"/>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <div class="col-sm col-md col-lg" style="text-align: center;">
-			                <h2 style="color: white;">Try Office Huddle Graphics For Free</h2>
-			                <button type="button" class="oh-btn3">
-			                    <h2>Start Your 7 Day FREE Trial Now!</h2>
-			                    <p>Start growing your business with having a Team behind you <br/>
-			                        for your graphics and Videos</p>
-			                </button>
-			            </div>
-			        </div>
+				      </div>
+				    </section>
+				    <section class="logos-section">
+				      <div class="container">
+				        <div class="row">
+				          <div class="col-md-12">
+				            <img src="/wt_office_hunddle/static/src/tryofficehuddle/logos-img.png" alt="" width="100%" class="img-gf"/>
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				    <section class="third-section">
+				      <div class="row m-0">
+				        <div class="col-md-6">
+				          <div class="layer-left">
+				            <img src="/wt_office_hunddle/static/src/tryofficehuddle/layer-left.png" alt="img-left" width="100%" />
+				          </div>
+				        </div>
+				        <div class="col-md-6">
+				          <div class="third-wrapper text-center">
+				            <h1 class="text-center text-white"><b>GETTING RELIABLE<br />
+				              HELP HAS<br />
+				              NEVER BEEN<br />
+				              EASIER.</b></h1>
+				              <img src="/wt_office_hunddle/static/src/tryofficehuddle/layer-logo.png" alt="img-logo" width="400" />
+				              <p>has World-Class Graphic Designers, Video-Editors, and Web Developers all dedicated to you.</p>
+				              <div class="trail-box">
+				                <a href="/pricing">
+				                  <h3>Start Your 7 Day FREE Trial Now!</h3>
+				                  <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+				                </a>
+				              </div>
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				</div>
 
-		            <hr/>
-		            <h2 class="text-center" style="font-size: 33px; color: white;"><b>OUR CLIENTS TRUST US...</b></h2>
+				<section class="how-we-work-section text-center">
+			      <div class="container">
 			        <div class="row">
-			            <div class="col-lg-4 order-2 order-lg-1">
-			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/icon quote.png" class="img-fluid" alt="" style="height: 15%; width: 20%;"/>
-			              <p style="color: white;font-style: italic;">A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a
-			                lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us
-			                and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my
-			                mind for about 6 months. Office Huddle team already knew what I need before I need it.. </p>
+			          <div class="col-md-12">
+			            <h1 class="text-center">HOW IT WORKS</h1>
+			            <div class="work-video">
+			              <iframe src="https://www.youtube.com/embed/tf88GFLtj18?autoplay=0&amp;controls=0&amp;showinfo=0&amp;title=0&amp;rel=0&amp;wmode=transparent" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" id="fitvid547087"></iframe>
 			            </div>
-			    
-			            <div class="col-1 order-2 order-lg-2">
-			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/Cortez Springer.png" class="img-fluid" id="picture" alt="" style="height: 80%; width: 80% "/>
-			            </div>
-			            <div class="col-sm-2 order-2 order-lg-2">
-			              <h5 style="color: white;">Cortez Springer, </h5>
-			              <h6 style="color: white;">Wealth Strategist</h6>
-			            </div>
-			    
-			            <div class="col-lg-4 order-2 order-lg-1">
-			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/icon quote.png" class="img-fluid" alt="" style="height: 15%; width: 20%;"/>
-			              <p style="color: white;font-style: italic; ">They took my company at a point where I was struggling try to understand how to put branding out, those
-			                pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to
-			                many, many people across the country and across the world. They can do wonders and take your business to the
-			                next level where you desire to go.
-			              </p>
-			            </div>
-			    
-			            <div class="col-1 order-2 order-lg-2" style="margin-left:8%;">
-			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/Lemzel Johnso.png" class="img-fluid" id="picture" alt="" style="height: 80%; width: 80% "/>
-			            </div>
-			            <div class="col-sm-2 order-2 order-lg-2">
-			              <h5 style="color: white;">Lemzel Johnson, </h5>
-			              <h6 style="color: white; font-weight: normal !important;">Motivational Speaker</h6>
-			            </div>
-			    
-			            <div class="col-lg-4 order-2 order-lg-1">
-			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/icon quote.png" class="img-fluid" alt="" style="height: 15%; width: 20%;"/>
-			              <p style="color: white; font-style: italic;">Just when I get the chance to get a session with Office Huddle team, I automatically come out with some
-			                clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken
-			                my business to the next level. They freed me up to be able to get things done and get better for my
-			                clients.</p>
-			            </div>
-			    
-			            <div class="col-1 order-2 order-lg-2" style="margin-left:8%;">
-			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/Oginga Carr.png" class="img-fluid" id="picture" alt="" style="height: 80%; width: 80% "/>
-			            </div>
-			            <div class="col-sm-2 order-2 order-lg-2 ">
-			              <h5 style="color: white;">Oginga Carr, </h5>
-			              <h6 style="color: white;">High Performance Coach</h6>
+			            <h2 class="mt-3">Try Office Huddle Graphics For Free</h2>
+			            <div class="trail-box">
+			              <a href="/pricing">
+			                <h3>Start Your 7 Day FREE Trial Now!</h3>
+			                <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+			              </a>
 			            </div>
 			          </div>
-			        </section>
-
-			        <section id="Branded">
-				        <div class="container bg-dark" style="padding-left: 120px;">
-				            <img src="/wt_office_hunddle/static/src/tryofficehuddle/Divider.png" alt="" class="img-fluid" style="padding-top: 50px;"/>
-			                <h5 class="text-center"><b>Just A Few Trusted Brands That We Value and Serve.</b></h5>
-			                <div class="row text-center">
-			                    <div class="col-lg-2">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/Bridge.png" alt="" class="img-fluid" style="height: 80%; width: 60%;"/>
-			                    </div>
-			                    <div class="col-lg-2">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/orange.png" alt="" class="img-fluid" style="height: 80%; width: 60%;"/>
-			                    </div>
-			                    <div class="col-lg-2">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/Iconic.png" alt="" class="img-fluid" style="height: 80%; width: 90%;"/>
-			                    </div>
-			                    <div class="col-lg-2">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/Davidson.png" alt="" class="img-fluid" style="height: 80%; width: 80%;"/>
-			                    </div>
-			                    <div class="col-lg-2">
-			                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/Lando.png" alt="" class="img-fluid" style="height: 80%; width: 60%;"/>
-			                    </div>
-			                </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="social-media-section">
+			      <div class="container">
+			        <div class="row">
+			          <div class="col-md-12">
+			            <ul>
+			              <li><i class='fa fa-check'></i>SOCIAL MEDIA presents a huge market: 246 Million Americans engaged on social media in 2019.</li>
+			              <li><i class='fa fa-check'></i>VIDEOS: 93% of businesses gain new customers as a result of posting videos on social media.</li>
+			              <li><i class='fa fa-check'></i>GRAPHICS: Social media posts that feature visual assets like images deliver a 650% higher engagements rate than plain text posts.</li>
+			              <li><i class='fa fa-check'></i>AN EFFECTIVE SOCIAL MEDIA CAMPAIGN will require at least 2 videos and 20 images posted a month.</li>
+			            </ul>
+			            <h1 class="text-center">
+			              DON'T BE LEFT BEHIND.<br />
+			YOU NEED GRAPHICS AND VIDEOS FOR YOUR BUSINESS!
+			            </h1>
+			            <div class="text-center">
+			            <h2 class="mt-3 text-white">Try Office Huddle Graphics For Free</h2>
+			            <div class="trail-box">
+			              <a href="/pricing">
+			                <h3>Start Your 7 Day FREE Trial Now!</h3>
+			                <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+			              </a>
 			            </div>
-			            <div class="container bg-dark">
-		                 <div class="row">
-		                    <div class="col-lg-2">
-		                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/small_bz.png" alt="" class="img-fluid" style="height: 60%; width: 80%;"/>
-		                    </div>
-		                    <div class="col-lg-2">
-		                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/St. Louis.png" alt="" class="img-fluid" style="height: 80%; width: 80%;"/>
-		                    </div>
-		                    <div class="col-lg-2">
-		                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/Gentlemen.png" alt="" class="img-fluid" style="height: 80%; width: 80%;"/>
-		                    </div>
-		                    <div class="col-lg-2">
-		                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/LTG.png" alt="" class="img-fluid" style="height: 80%; width: 80%;"/>
-		                    </div>
-		                    <div class="col-lg-2">
-		                    <img src="/wt_office_hunddle/static/src/tryofficehuddle/National Guard.png" alt="" class="img-fluid" style="height: 60%; width: 80%;"/>
-		                    </div>
-		                </div>
-		            </div>
+			          </div>
+			          </div>
+			        </div>
+			      </div>
 			    </section>
 
-		        <section id="Footer">
-		            <div class="col-sm col-md col-lg bg-primary bg-gradient" style="text-align: center;">
-		                <div class="container-fluid">
-		                    <button type="button" class="oh-btn3 center">
-		                        <h1 >Start your project with us today</h1>
-		                    </button>
-		                </div>
-		                <div class="text-light">
-		                    <p>2021 OfficeHuddle Business Growth Solution | Privacy</p>
-		                </div>
-		                <div class="img-fluid" style="max-width:50%; height:auto;">
-		                    <!-- <img src="/wt_office_hunddle/static/src/tryofficehuddle/footer logo.png" alt="" class="center"/> -->
-		                </div>
-		            </div>
-		        </section>
+			    <section class="business-better-section py-5">
+			      <h1>HOW WE MAKE YOUR BUSINESS BETTER</h1>
+			      <div class="container pt-4">
+			        <div class="row">
+			          <div class="col-md-6 ">
+			            <div class="ul-wrapper">
+			              <ul>
+			                <li>
+			                <i class="fa fa-check text-green"></i><b>Unlimited:</b> Request</li>
+			                <li >
+			                <i  class="fa fa-check text-green"></i><b>Unlimited:</b> Revisions</li>
+			                <li >
+			                <i  class="fa fa-check text-green"></i>​<b>Unlimited: </b>Brand Profiles<br/>
+			                </li>
+			                <li>
+			                <i class="fa fa-check text-green"></i>​<b>Unlimited: </b>User Management<br/>
+			                </li>
+			                <li>
+			                <i class="fa fa-check text-green"></i><b>​Unlimited:</b> Live Support<br/>
+			                </li>
+			                <li>
+			                <i class="fa fa-check text-green"></i><b>No Risk</b> Guarantee<br/>
+			                </li>
+			                </ul>
+			            </div>
+			          </div>
+			          <div class="col-md-6">
+			            <div class="content-wrapper">
+			              <p>
+			                If you are a small business owner looking to gain traction for your advertising needs, Office Huddle can be the team behind you to take care of everything. You don't need to hire your own people for your graphics and videos. With Office Huddle, you have a dedicated team of professionals giving you their undivided attention.
+			              </p>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="computer-section">
+			      <div class="container-fluid">
+			        <div class="row">
+			          <div class="col-md-12">
+			            <img src="/wt_office_hunddle/static/src/tryofficehuddle/computer.png" alt="computer" width="100%" />
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="success-section py-5">
+			      <h1>Why OFFICE HUDDLE is VITAL to your SUCCESS</h1>
+			      <div class="container pt-4">
+			        <div class="row">
+			          <div class="col-md-7">
+			            <div class="video-wrapper">
+			              <iframe allow="autoplay" src="https://player.vimeo.com/video/635635579?muted=1&amp;autoplay=1&amp;&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid647488"></iframe>
+			            </div>
+			            <div class="content mt-4">
+			              <div class="" style="text-align: center; font-size: 24px;" >
+			                <b>
+			                It is like</b> having your own <b>team</b> of graphic design and<br/>video editors, but at a <b>lower cost</b> and with<br/>MUCH <b>LESS hassles</b>.
+			              </div>
+			              <div class="ul-wrapper mt-4">
+			                <ul class=" ps-0">
+			                  <li>
+			                  <i class="fa fa-check text-green"></i><b>Unlike</b> hiring your own graphic artists and video editors, you don't need to worry about HR and associated costs.</li>
+			                  <li >
+			                  <i  class="fa fa-check text-green"></i><b>Unlike</b> doing it yourself, Office Huddle provides you with professional graphic artist and video editors who can do the job fast and with the highest quality.</li>
+			                  <li >
+			                  <i  class="fa fa-check text-green"></i>​<b>Unlike </b>using other graphic design sites, Office Huddle can do the job for you more consistently.<br/>
+			                  </li>
+			                  <li>
+			                  <i class="fa fa-check text-green"></i>​<b>Unlike </b>all other options, you can engage with the Office Huddle team directly. We know what you want and how you want it sooner than you expect it.
+			                  <br/>
+			                  </li>
+			                  
+			                  </ul>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-md-5">
+			            <div class="logo-wrapper">
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/success-1.png" alt="" width="100%" />
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/success-2.png" alt="" width="100%" />
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/success-3.png" alt="" width="100%" />
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/success-4.png" alt="" width="100%" />
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/success-5.png" alt="" width="100%" />
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/success-6.png" alt="" width="100%" />
+			            </div>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-md-12">
+			            <div class="text-center">
+			              <h2 class="mt-3 text-black" style="font-size: 23px;">Try Office Huddle Graphics For Free</h2>
+			            <div class="trail-box">
+			              <a href="/pricing">
+			                <h3>Start Your 7 Day FREE Trial Now!</h3>
+			                <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+			              </a>
+			            </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="client-section">
+			      <div class="container">
+			        <div class="row">
+			          <div class="col-md-12">
+			            <h1 class="text-center">Products That Helped Our Clients Reach Their Growth Goals.</h1>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="card-section py-5">
+			      <div class="container">
+			        <div class="row">
+			          <div class="col-md-6">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635635579?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid336438"></iframe>
+			            </div>
+			            <p class="mt-5" style="font-size: 21px; line-height: 30px; font-weight: 400;">"With Office Huddle being a part of your team, you can reach your ideal market and communicate with them through digital collateral media."</p>
+			          </div>
+			          <div class="col-md-6">
+			            <div class="row">
+			              <div class="col-md-6">
+			                <div class="px-2">
+			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/fly.jpg" width="100%" alt="" />
+			              </div>
+			              </div>
+			              <div class="col-md-6">
+			                <div class="px-2">
+			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/bcard.jpg" width="100%" alt="" />
+			                </div>
+			              </div>
+			              <div class="col-md-6">
+			                <div class="px-2">
+			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/yard.jpg" width="100%" alt="" />
+			                </div>
+			              </div>
+			              <div class="col-md-6">
+			                <div class="px-2">
+			                <img src="/wt_office_hunddle/static/src/tryofficehuddle/broc.jpg" width="100%" alt="" />
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-3">
+			            <div class="px-2">
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/post.jpg" width="100%" alt="" />
+			            </div>
+			          </div>
+			          <div class="col-md-3">
+			            <div class="px-2">
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/shirt.jpg" width="100%" alt="" />
+			            </div>
+			          </div>
+			          <div class="col-md-3">
+			            <div class="px-2">
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/banner.jpg" width="100%" alt="" />
+			            </div>
+			          </div>
+			          <div class="col-md-3">
+			            <div class="px-2">
+			              <img src="/wt_office_hunddle/static/src/tryofficehuddle/sticker.jpg" width="100%" alt="" />
+			            </div>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-md-12">
+			            <div class="text-center">
+			              <h2 class="mt-3 text-black" style="font-size: 23px;">Try Office Huddle Graphics For Free</h2>
+			            <div class="trail-box">
+			              <a href="/pricing">
+			                <h3>Start Your 7 Day FREE Trial Now!</h3>
+			                <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+			              </a>
+			            </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="satisfied-client-section py-5">
+			      <h1>What Our Satisfied Client Say About Us.</h1>
+			      <div class="container mt-4">
+			        <div class="row">
+			          <div class="col-md-4 mb-4">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635633971?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid348868"></iframe>
+			            </div>
+			          </div>
+			          <div class="col-md-4 mb-4">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635635313?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid410210"></iframe>
+			            </div>
+			          </div>
+			          <div class="col-md-4 mb-4">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635635379?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid946050"></iframe>
+			            </div>
+			          </div>
+			          <div class="col-md-4 mb-4">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635635468?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid425157"></iframe>
+			            </div>
+			          </div>
+			          <div class="col-md-4 mb-4">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635636316?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid23528"></iframe>
+			            </div>
+			          </div>
+			          <div class="col-md-4 mb-4">
+			            <div class="video-wrapper">
+			              <iframe src="https://player.vimeo.com/video/635636029?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid297501"></iframe>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-md-12">
+			            <div class="text-center">
+			              <h2 class="mt-3 text-black" style="font-size: 23px;">Try Office Huddle Graphics For Free</h2>
+			            <div class="trail-box">
+			              <a href="/pricing">
+			                <h3>Start Your 7 Day FREE Trial Now!</h3>
+			                <p>Make us a part of YOUR TEAM and Grow your business NOW</p>
+			              </a>
+			            </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="bottom-logo-section">
+			      <div class="container">
+			        <img src="/wt_office_hunddle/static/src/tryofficehuddle/no-risk.png" alt="" width="100%" />
+			        <div class="row">
+			          <div class="col-md-12">
+			            <div class="text-center">
+			              <h2 class="mt-3 text-white" style="font-size: 23px;">Try Office Huddle Graphics For Free</h2>
+			            <div class="trail-box">
+			              <a href="/pricing">
+			                <h3>Start Your 7 Day FREE Trial Now!</h3>
+			                <p>Start growing your business with having a Team behind you for your Graphics and Videos</p>
+			              </a>
+			            </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+			    <section class="footer-bottom-section text-center py-5">
+			      <div class="container">
+			        <div class="row">
+			          <div class="col-md-12">
+			            <div class="start-blue position-relative" style="margin-bottom: 80px;">
+			              <a href="/pricing" class=""  rel="noopener noreferrer">
+			                <span class="">Start your project with us today</span>
+			                
+			                </a>
+			            </div>
+			            <p class="text-white">2021 OfficeHuddle Business Growth Solution | Privacy</p>
+			            <img src="/wt_office_hunddle/static/src/tryofficehuddle/footer-white.png" alt="" width="350px" />
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+
+			    <!-- Start Testimonials Section -->
+		    	<div class="homepage_wrap">
+		          	<section class="testimonials section-bg">
+			            <div class="container">
+			              <h2>OUR BUSINESS <br/>
+			                OWNERS <span>TRUST US</span></h2>
+			                <div class="owl-carousel" id="owlcarousel1">
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+			                      <h3>Cortez Springer,</h3>
+			                      <h4>Wealth Strategist</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			                  </div>
+
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+			                          <h3>Lemzel Johnson,</h3>
+			                          <h4>Motivational Speaker</h4>
+			                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                        </div>
+			                </div>
+			             <div class="item">
+			              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+			                      <h3>Oginga Carr,</h3>
+			                      <h4>High Performance Coach</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			             </div>
+			             <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+			                      <h3>Cortez Springer,</h3>
+			                      <h4>Wealth Strategist</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			                  </div>
+
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+			                          <h3>Lemzel Johnson,</h3>
+			                          <h4>Motivational Speaker</h4>
+			                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                        </div>
+			                </div>
+			             <div class="item">
+			              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+			                      <h3>Oginga Carr,</h3>
+			                      <h4>High Performance Coach</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			             </div>
+			             <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt1.png" class="testimonial-img" alt=""/>
+			                      <h3>Cortez Springer,</h3>
+			                      <h4>Wealth Strategist</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> A lot of the things that we need as entrepreneurs to take our business to the next level, either cost us a lot early on in our entrepreneurial journey as we are having to hire people constantly to do the work for us and help us get some of things of the ground, Office Huddle helped me launched a podcast that has been on my mind for about 6 months. Office Huddle team already knew what I need before I need it.. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			                  </div>
+
+			                <div class="item">
+			                  <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt2.png" class="testimonial-img" alt=""/>
+			                          <h3>Lemzel Johnson,</h3>
+			                          <h4>Motivational Speaker</h4>
+			                          <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> They took my company at a point where I was struggling try to understand how to put branding out, those pictures and wordings came out the right way and put into fashion wherein it is sellable and marketable to many, many people across the country and across the world. They can do wonders and take your business to the next level where you desire to go. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                        </div>
+			                </div>
+			             <div class="item">
+			              <div class="testimonial-item"> <img src="/wt_office_hunddle/static/src/home/images/srt3.png" class="testimonial-img" alt=""/>
+			                      <h3>Oginga Carr,</h3>
+			                      <h4>High Performance Coach</h4>
+			                      <p> <i class="bx bxs-quote-alt-left quote-icon-left"></i> Just when I get the chance to get a session with Office Huddle team, I automatically come out with some clarity and some energy to what is that I need to create. Having my Office Huddle team around me has taken my business to the next level. They freed me up to be able to get things done and get better for my clients. <i class="bx bxs-quote-alt-right quote-icon-right"></i> </p>
+			                    </div>
+			             </div>
+			          </div>
+			          </div>
+			        </section>
+			    </div>
+		        <!-- End Testimonials Section -->
 			</div>
 		</t>
 	</template>

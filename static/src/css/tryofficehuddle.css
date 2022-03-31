@@ -1,251 +1,246 @@
-.tryofficehuddle_form_cl header {
-    padding-top: 20px;
+
+
+.tryofficehuddle_form_cl *{
+  box-sizing: border-box;
 }
-.tryofficehuddle_form_cl .img-fluid {
+.tryofficehuddle_form_cl{
+  font-family: 'Poppins', sans-serif;;
+}
+.tryofficehuddle_form_cl .bg-all{
+  background-image: url("/wt_office_hunddle/static/src/tryofficehuddle/bg-body.jpg");
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed !important;
+  background-repeat: repeat repeat !important;
+  background-position: center center;
+}
+.tryofficehuddle_form_cl .top-header{
+  text-align: center;
+  background: #348eef;
+  padding: 10px 0;
+}
+.tryofficehuddle_form_cl .top-header a{
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+.tryofficehuddle_form_cl .top-section{
+  padding-top: 20px;
+}
+.tryofficehuddle_form_cl .col-wrapper{
+  text-align: center;
+}
+.tryofficehuddle_form_cl .col-wrapper h1{
+  font-size: 60px;
+  color: #fff;
+}
+.tryofficehuddle_form_cl .col-wrapper p.col-p{
+  font-size: 32px;
+  color: #fff;
+}
+.tryofficehuddle_form_cl .col-wrapper h2{
+  font-size: 23px;
+  color: #fff;
+  margin-top: 20px;
+}
+.tryofficehuddle_form_cl .trail-box a{
+  color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgb(0, 73, 124);
+    font-size: 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+.tryofficehuddle_form_cl .trail-box a h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.tryofficehuddle_form_cl .trail-box a p{
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+.tryofficehuddle_form_cl .video-wrapper, .tryofficehuddle_form_cl .work-video{
+  position: relative;
+  padding-top: 56.25%;
+}
+.tryofficehuddle_form_cl .video-wrapper iframe, .tryofficehuddle_form_cl .work-video iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tryofficehuddle_form_cl .logos-section{
+  padding: 60px 0;
+}
+.tryofficehuddle_form_cl .third-wrapper{
+  margin-top: 50px;
+}
+.tryofficehuddle_form_cl .third-wrapper p{
+  font-size: 26px;
+  color: #fff;
+}
+.tryofficehuddle_form_cl .how-we-work-section{
+  background-image: url(/wt_office_hunddle/static/src/tryofficehuddle/bg-work.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -3px;
+  width: 100%;
+  padding: 20px 0;
+}
+.tryofficehuddle_form_cl .how-we-work-section h1{
+  font-size: 52px;
+  font-weight: 700;
+  color: rgb(47, 47, 47)
+}
+.tryofficehuddle_form_cl .how-we-work-section h2{
+  font-size: 23px;
+  font-weight: 500;
+}
+.tryofficehuddle_form_cl .social-media-section{
+  padding-top: 20px;
+    padding-bottom: 20px;
+    outline: none;
+    background-color: rgb(13, 31, 57);
+    color: #fff;
+}
+.tryofficehuddle_form_cl .social-media-section ul{
+  margin: 30px 0 0 30px;
+}
+.tryofficehuddle_form_cl .social-media-section ul li{
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.tryofficehuddle_form_cl .social-media-section ul li i {
+  color: rgb(79, 158, 46);
+  font-weight: 900;
+  margin-right: 15px;
+  font-size: 30px;
+}
+.tryofficehuddle_form_cl .social-media-section h2{
+  font-size: 23px;
+}
+.tryofficehuddle_form_cl .business-better-section h1{
+  text-align: center;
+  font-size: 36px;
+}
+.tryofficehuddle_form_cl .text-green{
+  color: #4f9e2e;
+}
+.tryofficehuddle_form_cl .business-better-section .ul-wrapper ul li {
+  font-size: 24px;
+  list-style: none;
+  border: 1px solid #eee;
+    border-bottom: 0;
+}
+.tryofficehuddle_form_cl .business-better-section .ul-wrapper ul li:last-child {
+  border-bottom: 1px solid #eee;
+}
+.tryofficehuddle_form_cl .business-better-section .ul-wrapper ul li i {
+  padding: 11px 9px;
+  background: #f9f9f9;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-right: 6px;
+  width: auto;
+  margin-left: 0 !important;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 30px;
+}
+.tryofficehuddle_form_cl .business-better-section .content-wrapper{
+  display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
-    
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 0 10px;
+    line-height: 28.5714px;
+    margin-left: 20px;
 }
-.tryofficehuddle_form_cl .container.d-flex.align-items-center{
-    padding-bottom: 40px;
-    padding-top: 50px;
+.tryofficehuddle_form_cl .success-section h1{
+  text-align: center;
+    color: rgb(0, 73, 124);
+    font-size: 42px;
 }
-.tryofficehuddle_form_cl .container {
-    max-width: 1900px;
-    padding-left: 120px;
+.tryofficehuddle_form_cl .success-section .ul-wrapper ul li {
+  font-size: 24px;
+  list-style: none;
 }
-.tryofficehuddle_form_cl .container-fluid {
-    margin: 30px 0 30px 0 !important;
-    padding: 0px 100px 0px 100px !important;
+.tryofficehuddle_form_cl .ul-wrapper ul li i {
+  width: auto;
+  font-weight: 900;
+  font-size: 30px;
+  color: #4f9e2e;
+  display: inline-block;
 }
-.tryofficehuddle_form_cl .container-fluid-in {
-    margin: 0px 0 0px 0 !important;;
-    padding: 0px 0px 0px 0px !important;
+.tryofficehuddle_form_cl section.client-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  background-color: rgb(26, 51, 75);
+  outline: none;
+  color: #fff;
 }
-.tryofficehuddle_form_cl .Footer .container-fluid{
-    margin:0px;
+.tryofficehuddle_form_cl section.client-section h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+  border-top: 3px solid #fff;
+  padding-top: 10px;
 }
-.tryofficehuddle_form_cl .col-sm.col-md.col-lg.bg-primary.bg-gradient{
-    background-image: linear-gradient(to bottom right, rgb(3, 45, 122), rgb(53, 148, 211)) !important;
-    padding-top: 20px;
+.tryofficehuddle_form_cl .card-section img{
+    -moz-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+.tryofficehuddle_form_cl .satisfied-client-section h1{
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+}
+.tryofficehuddle_form_cl .bottom-logo-section{
+  padding-top: 20px;
     padding-bottom: 20px;
+    outline: none;
+    background-color: rgb(21, 31, 41);
 }
-.tryofficehuddle_form_cl button.oh-btn3.center{
-    border-radius: 20px;
-    font-weight: bold;
+.tryofficehuddle_form_cl .footer-bottom-section{
+  background: linear-gradient(to bottom , #23537b,#97b5db);
 }
-.tryofficehuddle_form_cl header#header{
-    width: fit-content;  
+.tryofficehuddle_form_cl .footer-bottom p{
+  font-size: 22px;
+  font-weight: 500;
 }
-
-.tryofficehuddle_form_cl {
-    max-width: 1980px;
-    font-family: "Open Sans", sans-serif;
-    color: #444444;
+.tryofficehuddle_form_cl .start-blue a{
+  color: rgb(255, 255, 255);
+  background: rgb(30, 119, 180);
+  font-size: 54px;
+  border: 2px solid rgba(0,0,0,0.2);
+  padding: 5px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
 }
-
-.tryofficehuddle_form_cl h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins ExtraBold';
-    margin-top: 20px;
-}
-
-.tryofficehuddle_form_cl p {
-    width: 100%;
-    font-size: 18px;
-    font-family: 'Arial';
-}
-
-/* Codes Starts Here */
-.tryofficehuddle_form_cl .toppings {
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    background-color: rgb(52, 142, 239);
-    text-align: center;
+.tryofficehuddle_form_cl .start-blue::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid rgb(191, 187, 154);
+  width: 300px;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.tryofficehuddle_form_cl .oh-btn {
-    font-weight: bold;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 73, 124);
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 25px 10px 25px;
-    border-radius: 5px;
-}
-.tryofficehuddle_form_cl .oh-btn:hover {
-    background-color: rgb(4, 149, 253);
-}
-.tryofficehuddle_form_cl .oh-btn2 {
-    font-weight: bold;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 73, 124);
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 25px 10px 25px;
-}
-.tryofficehuddle_form_cl .oh-btn2:hover {
-    background-color: rgb(4, 149, 253);
-}
-
-.tryofficehuddle_form_cl .oh-btn3 {
-    font-weight: bold;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    color: rgb(255, 255, 255);
-    background: #00548f;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 25px 10px 25px;
-}
-.tryofficehuddle_form_cl .oh-btn3:hover {
-    background-color: rgb(4, 149, 253);
-}
-
-.tryofficehuddle_form_cl #one {
-    background-image: url(/wt_office_hunddle/static/src/tryofficehuddle/top-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.tryofficehuddle_form_cl #two {
-    background-image: url(/wt_office_hunddle/static/src/tryofficehuddle/top2bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.tryofficehuddle_form_cl #three {
-    background-color: #07132b;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: white;
-}
-.tryofficehuddle_form_cl #six {
-    background-color: #16202a;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.tryofficehuddle_form_cl #six hr {
-    height: 10px;
-    color: white;
-    background-color: currentColor;
-}
-
-.tryofficehuddle_form_cl ul.checked {
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid #eee;
-    background: #fff;
-    padding-left: 0;
-}
-.tryofficehuddle_form_cl ul.checked li {
-    padding: 0;
-    margin-bottom: 0;
-    border-bottom: 1px solid #eee;
-    background: #fff;
-}
-
-.tryofficehuddle_form_cl ul {
-    list-style: none;
-}
-.tryofficehuddle_form_cl ul.checked li i.fa {
-    padding: 11px 9px;
-    background: #f9f9f9;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    margin-right: 6px;
-    width: auto;
-    margin-left: 0 !important;
-    display: inline-block;
-}
-.tryofficehuddle_form_cl ul.bullets {
-    padding: 0;
-    list-style-type: none;
-}
-.tryofficehuddle_form_cl ul.bullets li {
-    padding-bottom: 6px;
-    list-style-type: none;
-    margin-bottom: 6px;
-    padding-left: 2em;
-    font-size: 20px;
-}
-
-.tryofficehuddle_form_cl ul.bullets li i.fa {
-    margin-left: -2em;
-    margin-right: 0.71428571em
-}
-
-.tryofficehuddle_form_cl #ten {
-    background: #023f92; 
-}
-
-.tryofficehuddle_form_cl #Branded {
-    padding-top: 0;
-    padding-bottom: 20px;
-    background: #023f92;
-    margin-top: -30px;
-}
-
-.tryofficehuddle_form_cl #Branded h5{
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    padding-top: 50px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.tryofficehuddle_form_cl #Branded .row {
-    text-align: center;
-    padding: 2% 0 0 5%;
-}
-
-.tryofficehuddle_form_cl .col-sm-2.order-2.order-lg-2 {
-    display: -webkit-inline-box;
-    width: fit-content;
-}
-.tryofficehuddle_form_cl h6 {
-    padding-top: 5px;
-    padding-left: 5px;
-    font-family: arial;
-}
-.tryofficehuddle_form_cl section#ten {
-    padding-top: 50px !important;
-}
-.tryofficehuddle_form_cl button.oh-btn2{
-    border-radius: 15px;
-}
-.tryofficehuddle_form_cl section#seven {
-    padding-top: 50px !important;
-}
-.tryofficehuddle_form_cl button.oh-btn {
-    margin-top: 30px;
-}
-.tryofficehuddle_form_cl .col-sm.col-md.col-lg {
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-.tryofficehuddle_form_cl button.oh-btn3 {
-    border-radius: 15px;
-}
-.tryofficehuddle_form_cl .col-lg-2 {
-    width: 20%;
-}
-.tryofficehuddle_form_cl b {
-    font-size: 25px;
+@media screen and (max-width: 396px){
+  .img-gf {
+    height: auto;
+  }
 }
