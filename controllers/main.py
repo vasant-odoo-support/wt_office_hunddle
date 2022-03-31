@@ -1792,7 +1792,7 @@ class WebsiteHuddleCustom(http.Controller):
         vals = {
             'graphic_design_blog': graphic_design_blog,
         }
-        return  request.render('wt_office_hunddle.graphic_design',vals)
+        return  request.render('wt_office_hunddle.tryofficehuddle_form')
 
 
 class WebsiteEventController(WebsiteEventController):
