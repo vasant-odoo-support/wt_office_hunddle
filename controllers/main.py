@@ -23,6 +23,7 @@ from odoo import http
 from odoo.tools.mimetypes import guess_mimetype
 from odoo.addons.website_sale.controllers.main import TableCompute
 from odoo.osv import expression
+from odoo.addons.website.models.ir_http import sitemap_qs2dom
 
 
 _logger = logging.getLogger(__name__)
@@ -1349,7 +1350,14 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/tryofficehuddle.com', type='http', auth='public', website=True)
     def try_office_huddle(self):
-        return  request.render('wt_office_hunddle.tryofficehuddle_form')
+        active_sub = request.env['subscription.service'].sudo().search(
+            [
+                ('partner_id', '=', request.env.user.partner_id.id),
+                ('state', '=', 'open'),
+            ])
+        if active_sub:
+            return request.redirect("/graphic")
+        return request.render('wt_office_hunddle.tryofficehuddle_form')
 
     @http.route('/customer-portal', type='http', auth='public', website=True)
     def customer_portal_office_huddle(self):
@@ -1360,7 +1368,7 @@ class WebsiteHuddleCustom(http.Controller):
         if request.env.user.id == request.env.ref('base.public_user').id:
             return request.redirect('/pricing?new=new')
         else:
-            active_sub = request.env['subscription.service'].search(
+            active_sub = request.env['subscription.service'].sudo().search(
                 [
                     ('partner_id', '=', request.env.user.partner_id.id),
                     ('state', '=', 'open'),
@@ -1792,6 +1800,14 @@ class WebsiteHuddleCustom(http.Controller):
         vals = {
             'graphic_design_blog': graphic_design_blog,
         }
+        active_sub = request.env['subscription.service'].sudo().search(
+            [
+                ('partner_id', '=', request.env.user.partner_id.id),
+                ('state', '=', 'open'),
+            ])
+        print("========= test ====== ", active_sub)
+        if active_sub:
+            return request.redirect("/graphic")
         return  request.render('wt_office_hunddle.tryofficehuddle_form')
 
 
