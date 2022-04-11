@@ -150,9 +150,18 @@ class WebsiteSaleOH(WebsiteSale):
 
     @http.route(['/shop/confirmation'], type='http', auth="public", website=True, sitemap=False)
     def payment_confirmation(self, **post):
+        print("-------- payment_confirmation ----------- ")
         sale_order_id = request.session.get('sale_last_order_id')
         if sale_order_id:
             order = request.env['sale.order'].sudo().browse(sale_order_id)
+            flag = False
+            for line in order.order_line:
+                if line.product_id.website_published and line.product_id.so_subscription:
+                    flag = True
+                    break
+            if flag:
+                return request.redirect("/tryofficehuddle.com")
+            print("--------- order ----- ", order)
             return request.redirect("/my/orders/%s" %(order.id))
         else:
             return request.redirect('/shop')
@@ -289,6 +298,8 @@ class WebsitAuthSignupHome(AuthSignupHome):
     @http.route('/web/signup', type='http', auth='public', website=True, sitemap=False)
     def web_auth_signup(self, *args, **kw):
         qcontext = self.get_auth_signup_qcontext()
+        qcontext.update(kw)
+        print("------- qcontext ------ ",kw, qcontext, qcontext.get('firstname'))
         if qcontext.get('firstname') and qcontext.get('lastname'):
             qcontext['name'] = qcontext.get('firstname') + " " + qcontext.get('lastname')
         if qcontext.get('is_need_product_info') == 'on':
@@ -340,6 +351,7 @@ class WebsitAuthSignupHome(AuthSignupHome):
         lang = request.context.get('lang', '')
         if lang in supported_lang_codes:
             values['lang'] = lang
+        print("-------- values ------- ", values)
         self._signup_with_values(qcontext.get('token'), values)
         request.env.cr.commit()
 

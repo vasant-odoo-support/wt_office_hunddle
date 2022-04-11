@@ -22,8 +22,19 @@ class ProductImage(models.Model):
 class SaleOrder(models.Model):
 	_inherit = 'sale.order'
 
-
 	images_lines = fields.One2many('image.lines','order_id',string='Image Lines')
+
+	def _compute_access_url(self):
+		super(SaleOrder, self)._compute_access_url()
+		for order in self:
+			order.access_url = '/my/orders/%s' % (order.id)
+			flag = False
+			for line in order.order_line:
+				if line.product_id.website_published and line.product_id.so_subscription:
+					flag = True
+					break
+			if flag:
+				order.access_url = "/tryofficehuddle.com"
 
 	def _cart_update(self, product_id=None, line_id=None, add_qty=0, set_qty=0, **kwargs):
 		""" Add or set product quantity, add_qty can be negative """
