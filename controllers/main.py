@@ -304,6 +304,8 @@ class WebsitAuthSignupHome(AuthSignupHome):
             qcontext['name'] = qcontext.get('firstname') + " " + qcontext.get('lastname')
         if qcontext.get('is_need_product_info') == 'on':
             qcontext['no_discount_on_product'] = True
+        if qcontext.get('bussiness_phone'):
+            qcontext['phone'] = qcontext.get('bussiness_phone')
         if not qcontext.get('token') and not qcontext.get('signup_enabled'):
             raise werkzeug.exceptions.NotFound()
 
@@ -342,7 +344,7 @@ class WebsitAuthSignupHome(AuthSignupHome):
 
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
-        values = { key: qcontext.get(key) for key in ('login', 'name', 'password', 'company_name', 'fax_no', 'zip', 'street', 'positioning_statement', 'moto', 'referrer_type', 'no_discount_on_product', 'website_link', 'bussiness_phone', 'employees', 'annual', 'leaders', 'business_date') }
+        values = { key: qcontext.get(key) for key in ('login', 'name', 'password', 'company_name', 'fax_no', 'city', 'zip', 'street', 'positioning_statement', 'moto', 'referrer_type', 'no_discount_on_product', 'website_link', 'bussiness_phone', 'employees', 'annual', 'leaders', 'business_date', 'phone') }
         if not values:
             raise UserError(_("The form was not properly filled in."))
         if values.get('password') != qcontext.get('confirm_password'):
@@ -844,6 +846,11 @@ class WebsiteHuddleCustom(http.Controller):
             task_name = "GRAPHIC DESIGN : " + item_name
         if video:
             task_name = "VIDEO DESIGN : " + item_name
+        approved_logo = False
+        if 'previous_task' in kw and kw['previous_task']:
+            previous_task = request.env['project.task'].sudo().browse(int(kw['previous_task']))
+            approved_logo = previous_task.approved_logo
+
         task_vals = {
             'user_id': project.user_id.id,
             'design_type': design_type,
@@ -859,6 +866,7 @@ class WebsiteHuddleCustom(http.Controller):
             'email': kw['email'] or '',
             'city_zip': kw['city_zip'] or '',
             'moto': kw['motto'] or '',
+            'approved_logo': approved_logo,
             'positioning_statement': kw['statement'] or '',
             'item_information': item_name,
             'size': size or '',
@@ -1376,7 +1384,7 @@ class WebsiteHuddleCustom(http.Controller):
         return  request.render('wt_office_hunddle.customer_portal_officehuddle_template')
 
     @http.route('/graphic', type='http', auth='public', website=True)
-    def graphics_office_huddle(self):
+    def graphics_office_huddle(self , **kw):
         if request.env.user.id == request.env.ref('base.public_user').id:
             return request.redirect('/pricing?new=new')
         else:
@@ -1389,6 +1397,10 @@ class WebsiteHuddleCustom(http.Controller):
                 return request.redirect('/pricing')
         partner = request.env.user.partner_id
         address = (partner.street or '') + " " + (partner.street2 or '')
+
+        task = False
+        if kw and 'task_id' in kw and kw['task_id']:
+            task = request.env['subscription.service'].sudo().browse(int(kw['task_id']))
         vals = {
             'user_company_name': partner.company_name or '',
             'user_contact_name': partner.name or '',
@@ -1399,9 +1411,9 @@ class WebsiteHuddleCustom(http.Controller):
             'user_zip': partner.zip or '',
             'user_moto': partner.moto or '',
             'user_ps': partner.positioning_statement,
-            'user_fax': partner.fax_no
+            'user_fax': partner.fax_no,
+            'task': task or False
         }
-        print("---------- ", vals)
         return  request.render('wt_office_hunddle.graphic_design_form', vals)
 
     @http.route('/tshirt-printing', type='http', auth='public', website=True)

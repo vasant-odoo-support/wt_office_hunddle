@@ -90,16 +90,30 @@
 			      </div>
 			    </section>
 			    <hr />
+				<t t-if="task">
+					<div class="row container-fluid" id="bg-mid" style="padding-bottom: 0px;">
+						<h1 style="color:green;">Contratulations! </h1><h1> Your logo is ready.</h1>
+					</div>
+					<div class="row container-fluid" id="bg-mid" style="padding-bottom: 0px;">
+						<img t-att-src="'/web/image/project.task/%s/approved_logo' % task.id" style="max-width:300px; max-height:300px; width:auto; height:auto; padding:10px;border:solid 1px;"/>
+
+						<input type="text" class="form-control" id="previous_task" placeholder="Task" name="previous_task" t-att-value="task.id" hidden="hidden"/>
+					</div>
+					<div class="row container-fluid" id="bg-mid">
+						<h2>Would you like to design the following including your new logo?</h2>
+					</div>
+				</t>
 			    <!--COL 1 -->
 			    <div class="row container-fluid" id="bg-mid">
 			      <div class="col-xs cold-sm col-md col-lg">
 			        <div class="form-check">
 			          <P><i>ITEM INFORMATION</i></P>
-			          <input class="form-check-input" type="radio" value="item0" id="item0" name="items"/>
-			          <label class="form-check-label" for="item0">
-			            LOGO
-			          </label><br/><br/>
-
+			          <t t-if="not task">
+				          <input class="form-check-input" type="radio" value="item0" id="item0" name="items"/>
+				          <label class="form-check-label" for="item0">
+				            LOGO
+				          </label><br/><br/>
+				      </t>
 			          <input class="form-check-input" type="radio" value="item1" id="item1" name="items" data-toggle="collapse"
 			            data-target=".card-sizes"/>
 			          <label class="form-check-label" for="item1">

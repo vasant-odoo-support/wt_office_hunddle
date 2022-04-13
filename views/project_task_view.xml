@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="project.view_task_form2"/>
         <field name="arch" type="xml">
           <xpath expr="//field[@name='tag_ids']" position="after">
-            <field name="is_design" invisible="1"/>
+            <field name="is_design"/>
           </xpath>
           <xpath expr="//notebook" position="inside">
             <page string="Graphic Information" name="design_info" attrs="{'invisible': [('is_design', '!=', True)]}">
