@@ -109,12 +109,12 @@
 			        <div class="form-check">
 			          <P><i>ITEM INFORMATION</i></P>
 			          <t t-if="not task">
-				          <input class="form-check-input" type="radio" value="item0" id="item0" name="items"/>
+				          <input class="form-check-input select-design-product" type="radio" value="item0" id="item0" name="items"/>
 				          <label class="form-check-label" for="item0">
 				            LOGO
 				          </label><br/><br/>
 				      </t>
-			          <input class="form-check-input" type="radio" value="item1" id="item1" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item1" id="item1" name="items" data-toggle="collapse"
 			            data-target=".card-sizes"/>
 			          <label class="form-check-label" for="item1">
 			            BUSINESS CARD
@@ -129,7 +129,7 @@
 			            <option value="5">3.5" x 4" pre-scored to fold to 2" x 3.5"</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item2" id="item2" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item2" id="item2" name="items" data-toggle="collapse"
 			            data-target=".postcard"/>
 			          <label class="form-check-label" for="item2">
 			            POSTCARD
@@ -144,7 +144,7 @@
 			            <option value="5">8.5" x 11"</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item3" id="item3" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item3" id="item3" name="items" data-toggle="collapse"
 			            data-target=".flyers"/>
 			          <label class="form-check-label" for="item3">
 			            FLYERS
@@ -167,7 +167,7 @@
 			      <div class="col-xs cold-sm col-md col-lg">
 			        <div class="form-check">
 			          <br/><br/>
-			          <input class="form-check-input" type="radio" value="item6" id="item6" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item6" id="item6" name="items" data-toggle="collapse"
 			            data-target=".vinyl-banner"/>
 			          <label class="form-check-label" for="item6">
 			            VINYL BANNER
@@ -191,7 +191,7 @@
 			            <option value="14">4ft x 10ft</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item7" id="item7" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item7" id="item7" name="items" data-toggle="collapse"
 			            data-target=".sell-sheet"/>
 			          <label class="form-check-label" for="item7">
 			            SELL SHEET
@@ -208,7 +208,7 @@
 			      <div class="col-xs cold-sm col-md col-lg">
 			        <div class="form-check">
 			          <br/><br/>
-			          <input class="form-check-input" type="radio" value="item10" id="item10" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item10" id="item10" name="items" data-toggle="collapse"
 			            data-target=".poster"/>
 			          <label class="form-check-label" for="item10">
 			            POSTER
@@ -224,7 +224,7 @@
 			            <option value="6">27" x 39"</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item12" id="item12" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item12" id="item12" name="items" data-toggle="collapse"
 			            data-target=".event-ticket"/>
 			          <label class="form-check-label" for="item12">
 			            EVENT TICKET
@@ -235,7 +235,7 @@
 			            <option value="1">4" x 10"</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item13" id="item13" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item13" id="item13" name="items" data-toggle="collapse"
 			            data-target=".me-nu"/>
 			          <label class="form-check-label" for="item13">
 			            MENU
@@ -246,7 +246,7 @@
 			            <option value="1">8.5" x 11"</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item9" id="item9" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item9" id="item9" name="items" data-toggle="collapse"
 			            data-target=".newsletter"/>
 			          <label class="form-check-label" for="item9">
 			            NEWSLETTER
@@ -259,7 +259,7 @@
 			            <option value="3">5.5" x 17" (8pages)</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item14" id="item14" name="items"/>
+			          <input class="form-check-input select-design-product" type="radio" value="item14" id="item14" name="items"/>
 			          <label class="form-check-label" for="item14">
 			            TSHIRT
 			          </label>
@@ -269,7 +269,7 @@
 			      <div class="col-xs cold-sm col-md col-lg">
 			        <div class="form-check">
 			          <br/><br/>
-			          <input class="form-check-input" type="radio" value="item4" id="item4" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item4" id="item4" name="items" data-toggle="collapse"
 			            data-target=".cd-dvd"/>
 			          <label class="form-check-label" for="item4">
 			            CD/DVD INSERT
@@ -282,7 +282,7 @@
 			            <option value="3">w/o Tray Card</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item5" id="item5" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item5" id="item5" name="items" data-toggle="collapse"
 			            data-target=".brochure"/>
 			          <label class="form-check-label" for="item5">
 			            BROCHURE
@@ -296,7 +296,7 @@
 			            <option value="4">11" x 17"</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item11" id="item11" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item11" id="item11" name="items" data-toggle="collapse"
 			            data-target=".presentation-folder"/>
 			          <label class="form-check-label" for="item11">
 			            PRESENTATION FOLDER
@@ -310,7 +310,7 @@
 			            <option value="4">9" x 12" Standard Folder</option>
 			          </select><br/>
 
-			          <input class="form-check-input" type="radio" value="item8" id="item8" name="items" data-toggle="collapse"
+			          <input class="form-check-input select-design-product" type="radio" value="item8" id="item8" name="items" data-toggle="collapse"
 			            data-target=".door-hanger"/>
 			          <label class="form-check-label" for="item8">
 			            DOOR HANGER
@@ -467,7 +467,7 @@
 			        </div>
 			      </div>
 			      <!-- COL2 -->
-			      <div class="col-xs cold-sm col-md col-lg">
+			      <div class="col-xs cold-sm col-md col-lg logo-hide">
 			        <div class="form-check">
 			          <p><i>DESIGN LOCATION</i></p>
 			          <input class="form-check-input" type="checkbox" value="design1" id="design1" name="design1"/>
@@ -629,11 +629,11 @@
 			    </div>
 			    <hr />
 			    <div class="form-group container-fluid">
-			      <label for="comment">FRONT DESIGN DESCRIPTION</label>
-			      <textarea class="form-control" rows="10" name="front_comment" id="front_comment"></textarea>
+			      <label class="logo-hide" for="comment">FRONT DESIGN DESCRIPTION</label>
+			      <textarea class="form-control logo-hide" rows="10" name="front_comment" id="front_comment"></textarea>
 
-			      <label for="comment">BACK DESIGN DESCRIPTION</label>
-			      <textarea class="form-control" rows="10" name="back_comment" id="back_comment"></textarea>
+			      <label class="logo-hide" for="comment">BACK DESIGN DESCRIPTION</label>
+			      <textarea class="form-control logo-hide" rows="10" name="back_comment" id="back_comment"></textarea>
 
 			      <label for="comment">SPECIAL INSTRUCTION</label>
 			      <textarea class="form-control" rows="10" name="special_comment" id="special_comment"></textarea>

@@ -243,3 +243,37 @@ odoo.define('wt_office_hunddle.VariantMixin', function (require) {
 //                     // this._hidePreviewColumn();
 //                     return;
 //                 }
+
+
+odoo.define('wt_office_hunddle.graphics', function (require) {
+'use strict';
+
+    var core = require('web.core');
+    var publicWidget = require('web.public.widget');
+
+    var currentTab = 0;
+    publicWidget.registry.NewAssessmentOffice = publicWidget.Widget.extend({
+        selector: '.graphic_design_form_cl',
+
+        start: function () {
+            var def = this._super.apply(this, arguments);
+            $(".select-design-product").change(function(ev){
+                ev.preventDefault();
+                if($(":radio:checked").val() == 'item0'){
+                    for(var i=0; i < $('.logo-hide').length; i++){
+                        $('.logo-hide')[i].style.display = 'none'
+
+                    }
+                }
+                else{
+                    for(var i=0; i < $('.logo-hide').length; i++){
+                        $('.logo-hide')[i].style.display = 'block'
+                    }
+                }
+            });
+            return def;
+        },
+
+    });
+});
+

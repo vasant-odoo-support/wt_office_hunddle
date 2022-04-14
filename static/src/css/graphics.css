@@ -50,10 +50,13 @@
 
 .graphic_design_form_cl p {
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Poppins';
 
+}
+.graphic_design_form_cl .form-check-label{
+    font-size: 20px;
 }
 /*--------------------------------------------------------------
 # Navigation Menu
