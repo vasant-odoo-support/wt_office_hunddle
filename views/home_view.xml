@@ -324,7 +324,7 @@
                       TEAM</h2>
                     <p>You are in business for yourself.<br/>
                       Why be by yourself?</p>
-                    <h6><a href="#" data-toggle="modal" data-target="#myModal">Watch Video</a></h6>
+                    <h6><a data-toggle="modal" data-target="#myModal">Watch Video</a></h6>
                   </div>
                 </div>
                 <div class="col-md-9"></div>
