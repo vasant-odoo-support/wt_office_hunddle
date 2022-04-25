@@ -112,63 +112,6 @@
 			            <a class="btn" href="#">View All T-shirts</a>
 			        </div>
 			    </section>
-			    <section class="category-section bg-grey-section last-section">
-			        <div class="container-fluid">
-			            <h3>T-Shirt Design Templates</h3>
-			            <p>Customize one of our popular t-shirt design templates.</p>
-			            <div class="row">
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-1.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-2.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-3.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-4.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-4.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-1.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-2.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			                <div class="col-md-3 mb-5">
-			                    <div class="card">
-			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-3.jpg" alt="" />
-			                        <button>Customize</button>
-			                    </div>
-			                </div>
-			            </div>
-			            <a class="btn" href="#">View more templates</a>
-			        </div>
-			    </section>
 			</div>
 		</t>
 	</template>
