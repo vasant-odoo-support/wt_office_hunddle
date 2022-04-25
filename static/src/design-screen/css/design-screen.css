@@ -1,0 +1,289 @@
+.design-service .slider-section {
+    background-image: url("../images/hero-img.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 200px 0 175px;
+}
+
+.design-service .wrapper {
+    background-image: url("../images/ink-white.avif");
+    background-size: contain;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+}
+
+.design-service .wrapper h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.design-service .wrapper h2 {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.design-service .wrapper a.btn {
+    color: #ffffff;
+    border: 2px solid #27a6ff;
+    display: inline-block;
+    padding: 0.75rem 3rem 0.75rem;
+    position: relative;
+    font-size: 1.25rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    font-family: "ProximaSoft", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    user-select: none;
+    border-radius: 999px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #27a6ff;
+}
+
+.design-service .second-section {
+    padding: 20px;
+}
+
+.design-service .second-section .container {
+    position: relative;
+    border-top: 8px solid #27a6ff;
+    margin-top: -4rem;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.design-service .second-section .content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid #e5e7ea;
+}
+
+.design-service .second-section .content svg {
+    width: 48px;
+    height: 48px;
+}
+
+.design-service .second-section .text {
+    padding-left: 25px;
+}
+
+.design-service .second-section .text h3 {
+    font-size: 1.125rem;
+    font-family: "ProximaSoft", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.design-service .second-section .text p {
+    font-size: 1rem;
+    font-family: "ProximaSoft", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.design-service .second-section.text span {
+    color: #27a6ff;
+    font-weight: 600;
+}
+
+.design-service section.category-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.design-service section.category-section .card:hover {
+    border: 1px solid #d0d0d0;
+}
+
+.design-service section.category-section h3 {
+    font-size: 1.75rem;
+    font-family: "ProximaSoft", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.design-service section.category-section p {
+    font-family: "ProximaSoft", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.design-service section.category-section h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+.design-service section.category-section a.btn {
+    color: #27a6ff;
+    border: 2px solid #27a6ff;
+    margin: 0 auto 3rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem 0.5rem;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    font-family: "ProximaSoft", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    user-select: none;
+    border-radius: 999px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.design-service section.category-section a.btn:hover {
+    color: #ffffff;
+    border-color: #27a6ff;
+    background-color: #27a6ff;
+}
+
+.design-service .bg-grey {
+    background-color: #faad07;
+}
+
+.design-service .last-section .card:hover img {
+    filter: brightness(40%);
+}
+
+.design-service .last-section .card img {
+    transition: filter .5s;
+}
+
+.design-service .last-section {
+    padding-top: 40px !important;
+}
+
+.design-service .bg-grey-section {
+    background-color: #f0f2f5 !important;
+}
+
+.design-service .last-section .card button {
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    width: 150px;
+    border: none;
+    height: 38px;
+    opacity: 0;
+    position: absolute;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s;
+    border-radius: 24px;
+    text-transform: uppercase;
+    background-color: #27a6ff;
+}
+
+.design-service .last-section .card:hover button {
+    opacity: 1;
+}
+.design-service .category-a-tag{
+    text-decoration: none;
+}
+
+.design-service .select {
+    color: #444a57;
+    margin: 0 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 1rem !important;
+}
+
+.design-service .select-color {
+    width: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    height: 32px;
+    margin: 0 0.75rem 10px 1rem;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.design-service .select-color:hover {
+    cursor: pointer;
+    border-color: #27a6ff;
+}
+
+.design-service .text-left {
+    text-align: left !important;
+}
+
+.design-service .bg-black {
+    background-color: #000;
+}
+
+.design-service .bg-green {
+    background-color: green;
+}
+
+.design-service .bg-blue {
+    background-color: blue;
+}
+
+.design-service .bg-orange {
+    background-color: orange;
+}
+
+.design-service section.category-section.top-section a.btn {
+    color: #ffffff;
+    border: 2px solid #27a6ff;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.75rem 3rem 0.75rem;
+    position: relative;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    user-select: none;
+    border-radius: 999px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #27a6ff;
+    -webkit-appearance: none;
+    margin: 20px 0;
+}
+
+.design-service .top-section svg {
+    width: 1rem;
+    height: 1rem;
+    color: #fff;
+    fill: currentColor;
+}
+
+@media only screen and (max-width: 600px) {
+    .design-service section.category-section {
+        padding: 0px !important;
+    }
+}

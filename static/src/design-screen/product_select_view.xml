@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!--help-anteroz -->
+	<template id="design_product" name="Design Service">
+		<t t-call="website.layout">
+			<div id="wrap" class="design-service">
+
+				<section class="category-section top-section" style="padding-bottom: 40px;">
+			        <div class="container">
+			            <h3>Design Custom T-Shirts</h3>
+			            <p>Make and print your own shirt design</p>
+
+			            <div class="row">
+			                <div class="col-md-6">
+			                    <div class="card-wrap d-flex justify-content-end">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/design.jpg" alt="" width="635" height="635" class="w-100 h-auto" />
+			                    </div>
+			                </div>
+			                <div class="col-md-6">
+			                    <div class="card-wrap text-left ps-md-4">
+			                        <h3>Design Custom T-Shirts</h3>
+			                        <a href="">Change Product</a>
+			                        <div class="d-flex align-items-center mb-4">
+			                            <p class="select mb-0">Selected Color:</p>
+			                            <div class="select-color" style="background-color: rgb(255, 255, 255);  border: 1px solid rgba(0,0,0,0.15);"></div>
+			                            <p class="color-code mb-0">White</p>
+			                        </div>
+			                        <div class="d-flex align-items-center flex-wrap">
+			                            <div class="select-color bg-grey"></div>
+			                            <div class="select-color bg-green"></div>
+			                            <div class="select-color bg-blue"></div>
+			                            <div class="select-color bg-orange"></div>
+			                            <div class="select-color bg-grey"></div>
+			                            <div class="select-color bg-black"></div>
+			                            <div class="select-color bg-grey"></div>
+			                            <div class="select-color bg-green"></div>
+			                            <div class="select-color bg-blue"></div>
+			                            <div class="select-color bg-orange"></div>
+			                            <div class="select-color bg-grey"></div>
+			                            <div class="select-color bg-black"></div>
+			                            <div class="select-color bg-grey"></div>
+			                            <div class="select-color bg-green"></div>
+			                            <div class="select-color bg-blue"></div>
+			                            <div class="select-color bg-orange"></div>
+			                            <div class="select-color bg-grey"></div>
+			                            <div class="select-color bg-black"></div>
+			                        </div>
+			                        <a class="btn" href="">Start Designing<svg class="" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg></a>
+			                        <p class="mb-0 text-left" style="font-size: 1rem;">Creating your own t-shirt design at RushOrderTees is simple. Start with a t-shirt from our broad inventory and quickly personalize it using our intuitive Design Studio. Upload your artwork or use our free clipart, fonts, and design
+			                            templates to make your own shirt in no time.</p>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+				
+				<section class="category-section">
+			        <div class="container-fluid">
+			            <h3 style="margin-bottom: 20px">Find the Right Shirt</h3>
+
+			            <div class="row">
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>T-Shirts</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-1.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>Sweatshirts &amp; Hoodies</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-2.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>Outerwear</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-3.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>Polo Shirts</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-4.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>Hats</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-1.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>Women's</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-2.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>Team Uniforms &amp; Jerseys</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-3.avif" alt="" />
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <h4>No Minimums</h4>
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt-4.avif" alt="" />
+			                    </div>
+			                </div>
+			            </div>
+			            <a class="btn" href="#">View All T-shirts</a>
+			        </div>
+			    </section>
+			    <section class="category-section bg-grey-section last-section">
+			        <div class="container-fluid">
+			            <h3>T-Shirt Design Templates</h3>
+			            <p>Customize one of our popular t-shirt design templates.</p>
+			            <div class="row">
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-1.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-2.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-3.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-4.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-4.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-1.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-2.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			                <div class="col-md-3 mb-5">
+			                    <div class="card">
+			                        <img src="/wt_office_hunddle/static/src/design-screen/images/template-3.jpg" alt="" />
+			                        <button>Customize</button>
+			                    </div>
+			                </div>
+			            </div>
+			            <a class="btn" href="#">View more templates</a>
+			        </div>
+			    </section>
+			</div>
+		</t>
+	</template>
+</odoo>
