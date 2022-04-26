@@ -173,6 +173,30 @@ class WebsiteSaleOH(WebsiteSale):
 
         return request.render("wt_office_hunddle.printing_product", self._prepare_product_values(product, category, search, **kwargs))
 
+    @http.route(['/design-product/<model("product.template"):product>'], type='http', auth="public", website=True)
+    def design_product_office_huddle(self, product, category='', search='', **kwargs):
+        # flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers'), ('active', '=', True)], limit=1)
+        # bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Business Cards'),('active', '=', True)], limit=1)
+        # banners = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Banners')])
+        # yard_sign = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Yard Signs')])
+        # tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt'), ('active', '=', True)], limit=1)
+        # postcards = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Postcards')])
+        # stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
+        # car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
+        # brochures = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Brochures')])
+        printing_categories = request.env['product.public.category'].search([('parent_id', '=', False)])
+        print('========= product ===== ',product)
+        if product:
+            product = request.env['product.template'].search([('id', '=', product.id)])
+        # product_variant = request.env['product.product'].search([('id', '=', 28828)])
+        vals = {
+            'printing_categories': printing_categories,
+            'product': product,
+            # 'product_variant': product_variant,
+        }
+        print("--------- vals -------- ", product, category, search, kwargs)
+        return  request.render('wt_office_hunddle.design_product', self._prepare_product_values(product, category, search, **kwargs))
+
     @http.route(['/shop/cart/update'], type='http', auth="public", methods=['GET', 'POST'], website=True, csrf=False)
     def cart_update(self, product_id, add_qty=1, set_qty=0, **kw):
         """This route is called when adding a product to cart (no options)."""
@@ -1532,6 +1556,23 @@ class WebsiteHuddleCustom(http.Controller):
         }
         return  request.render('wt_office_hunddle.printing_product_officehuddle_template_new', vals)
 
+    @http.route('/screen-printing-products', type='http', auth='public', website=True)
+    def screen_printing_products_new_office_huddle(self):
+        # flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers'), ('active', '=', True)], limit=1)
+        # bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Business Cards'),('active', '=', True)], limit=1)
+        # banners = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Banners')])
+        # yard_sign = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Yard Signs')])
+        # tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt'), ('active', '=', True)], limit=1)
+        # postcards = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Postcards')])
+        # stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
+        # car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
+        # brochures = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Brochures')])
+        printing_products = request.env['product.template'].with_context(bin_size=True).search([('is_merchandise_product', '=', True), ('active', '=', True)])
+        vals = {
+            'printing_products': printing_products,
+        }
+        return  request.render('wt_office_hunddle.product_selection_officehuddle_template_new', vals)
+
     @http.route('/design-service', type='http', auth='public', website=True)
     def design_service_office_huddle(self):
         # flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers'), ('active', '=', True)], limit=1)
@@ -1548,23 +1589,6 @@ class WebsiteHuddleCustom(http.Controller):
             'printing_categories': printing_categories,
         }
         return  request.render('wt_office_hunddle.design_service', vals)
-
-    @http.route('/design-product', type='http', auth='public', website=True)
-    def design_product_office_huddle(self):
-        # flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers'), ('active', '=', True)], limit=1)
-        # bussiness_card = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Business Cards'),('active', '=', True)], limit=1)
-        # banners = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Banners')])
-        # yard_sign = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Yard Signs')])
-        # tshirt = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Tshirt'), ('active', '=', True)], limit=1)
-        # postcards = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Postcards')])
-        # stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
-        # car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
-        # brochures = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Brochures')])
-        printing_categories = request.env['product.public.category'].search([('parent_id', '=', False)])
-        vals = {
-            'printing_categories': printing_categories,
-        }
-        return  request.render('wt_office_hunddle.design_product', vals)
 
     @http.route('/my/assessment', type='http', auth='public', website=True)
     def my_assessments(self):

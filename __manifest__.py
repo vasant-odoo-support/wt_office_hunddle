@@ -71,6 +71,7 @@
         'views/website_shop_view.xml',
         'static/src/design-screen/design_service_home_view.xml',
         'static/src/design-screen/product_select_view.xml',
+        'static/src/design-screen/product_selection_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',
