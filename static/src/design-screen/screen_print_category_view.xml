@@ -12,153 +12,55 @@
 			            <p class="text-color mt-2 text-center paragraph ">Printed by Office Huddle</p>
 			            <div class="row mt-5">
 			                <div class="col-md-4 md-mb-0 mb-5 md-px-0 px-3 ">
-			                    <h2 class="h4 fw-bold text-color"> All Products</h2>
+			                    <a href="/screen-printing-category"><h2 class="h4 fw-bold text-color"> All Products</h2></a>
 			                    <div class="pe-md-4 pe-0">
 			                        <div class="accordion bg-ligh-blue" id="myAccordion">
-			                            <div class="accordion-item  border-top-custom bg-ligh-blue ">
-			                                <h2 class="accordion-header" id="headingOne bg-ligh-blue">
-			                                    <button type="button" class="accordion-button collapsed bg-ligh-blue fw-bold p-0 py-3" data-toggle="collapse" data-target="#collapseOne">T-Shirts</button>
-			                                </h2>
-			                                <div id="collapseOne" class="accordion-collapse collapse bg-ligh-blue" data-parent="#myAccordion">
-			                                    <div>
-			                                        <ul class="accordian-List">
-			                                            <li class="cursor-pointer "> <a href="#" class="text-decoration-none text-color"> Short Sleeve T-Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Long Sleeve T-Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Soft &amp; Fitted T-Shirts  </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Performance Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's T-Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Tank Tops &amp; Sleeveless </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids T-Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">V-Neck T-Shirts  </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Pocket T-Shirts </a> </li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Ringer Tees </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Baseball Tees  </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Shirts Made in the USA </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">View All </a></li>
-			                                        </ul>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                            <div class="accordion-item border-top-custom bg-ligh-blue ">
-			                                <h2 class="accordion-header" id="headingTwo bg-ligh-blue">
-			                                    <button type="button" class="accordion-button collapsed fw-bold bg-ligh-blue p-0 py-3" data-toggle="collapse" data-target="#collapseTwo"> Sweatshirts &amp; Hoodies</button>
-			                                </h2>
-			                                <div id="collapseTwo" class="accordion-collapse collapse bg-ligh-blue " data-parent="#myAccordion">
-			                                    <div>
-			                                        <ul class="accordian-List">
-			                                            <li class="cursor-pointer "> <a href="#" class="text-decoration-none text-color"> Hoodies </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Crew Neck Sweatshirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Zip Up Hoodies </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Sweatshirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Quarter Zip Up Pullovers </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Lightweight Sweatshirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Heavyweight Sweatshirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Performance Sweatshirts  </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Premium Sweatshirts </a> </li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Embroidered Sweatshirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids Hoodies </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Sweatpants   </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">View All </a></li>
-			                                        </ul>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                            <div class="accordion-item border-top-custom bg-ligh-blue ">
-			                                <h2 class="accordion-header" id="headingThree  bg-ligh-blue">
-			                                    <button type="button" class="accordion-button collapsed fw-bold bg-ligh-blue p-0 py-3" data-toggle="collapse" data-target="#collapseThree">  Women's </button>
-			                                </h2>
-			                                <div id="collapseThree" class="accordion-collapse collapse bg-ligh-blue" data-parent="#myAccordion">
-			                                    <div>
-			                                        <ul class="accordian-List">
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's T-Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Sweatshirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Long Sleeve Shirts  </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Polo Shirts </a> </li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Jackets </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Activewear </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Women's Button Ups   </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">View All </a></li>
-			                                        </ul>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                            <div class="accordion-item border-top-custom bg-ligh-blue ">
-			                                <h2 class="accordion-header" id="headingThree  bg-ligh-blue">
-			                                    <button type="button" class="accordion-button collapsed fw-bold bg-ligh-blue p-0 py-3" data-toggle="collapse" data-target="#collapseFour">  Kids </button>
-			                                </h2>
-			                                <div id="collapseFour" class="accordion-collapse collapse bg-ligh-blue" data-parent="#myAccordion">
-			                                    <div>
-			                                        <ul class="accordian-List">
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids T-Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids Hoodies </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids Long Sleeve Shirts  </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids Activewear </a> </li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids Polo Shirts </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Kids Sweatpants </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Toddler   </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">Baby   </a></li>
-			                                            <li class="cursor-pointer mt-2"><a href="#" class="text-decoration-none text-color">View All </a></li>
-			                                        </ul>
-			                                    </div>
-			                                </div>
-			                            </div>
+			                        	<t t-foreach="parent_categories" t-as="category">
+				                            <div class="accordion-item  border-top-custom bg-ligh-blue ">
+				                                <h2 class="accordion-header" id="headingOne bg-ligh-blue">
+				                                    <button type="button" class="accordion-button collapsed bg-ligh-blue fw-bold p-0 py-3" data-toggle="collapse" t-att-data-target="'#collapse' + str(category.id)"><t t-esc="category.name"/></button>
+				                                </h2>
+				                                <div t-att-id="'collapse'+ str(category.id)" class="accordion-collapse collapse bg-ligh-blue" data-parent="#myAccordion">
+				                                    <div>
+				                                        <ul class="accordian-List">
+				                                        	<t t-foreach="p_sub_cat[category.id]" t-as="sub_category">
+				                                            	<li class="cursor-pointer "> <a t-attf-href="/screen-printing-category/{{sub_category.id}}" class="text-decoration-none text-color"> <t t-esc="sub_category.name"/> </a></li>
+				                                        	</t>
+				                                        </ul>
+				                                    </div>
+				                                </div>
+				                            </div>
+			                        	</t>
 			                        </div>
 			                    </div>
 			                </div>
 			                <div class="col-md-8 ">
 			                    <div class="category-section">
 			                        <div class="row">
-			                            <div class="col-md-6 mb-5">
-			                                <div class="card">
-			                                    <h4>T-Shirts</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product.avif" alt="" />
-			                                </div>
-			                            </div>
-			                            <div class="col-md-6 mb-5">
-			                                <div class="card">
-			                                    <h4>Sweatshirts &amp; Hoodies</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product-2.avif" alt="" />
-			                                </div>
-			                            </div>
-
-			                            <div class="col-md-4 mb-5">
-			                                <div class="card">
-			                                    <h4>Women's</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product-6.avif" alt="" />
-			                                </div>
-			                            </div>
-			                           
-			                            <div class="col-md-4 mb-5">
-			                                <div class="card">
-			                                    <h4>Kids</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/kids.avif" alt="" />
-			                                </div>
-			                            </div>
-			                            <div class="col-md-4 mb-5">
-			                                <div class="card">
-			                                    <h4>Polo Shirts</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product-4.avif" alt="" />
-			                                </div>
-			                            </div>
-
-			                            <div class="col-md-4 mb-5">
-			                                <div class="card">
-			                                    <h4>T-Shirts</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product.avif" alt="" />
-			                                </div>
-			                            </div>
-			                            <div class="col-md-4 mb-5">
-			                                <div class="card">
-			                                    <h4>Sweatshirts &amp; Hoodies</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product-2.avif" alt="" />
-			                                </div>
-			                            </div>
-			                            <div class="col-md-4 mb-5">
-			                                <div class="card">
-			                                    <h4>Outerwear</h4>
-			                                    <img src="/wt_office_hunddle/static/src/design-screen/images/product-3.avif" alt="" />
-			                                </div>
-			                            </div>
+			                        	<t t-set="flag" t-value="0"/>
+			                        	<t t-foreach="categories" t-as="category">
+			                        		<t t-if="flag &lt;= 1">
+					                            <div class="col-md-6 mb-5">
+					                            	<a t-attf-href="/screen-printing-category/{{category.id}}">
+						                                <div class="card">
+						                                    <h4><t t-esc="category.name"/></h4>
+						                                    <img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id" alt="" />
+						                                </div>
+					                                </a>
+					                            </div>
+					                            <t t-set="flag" t-value="flag + 1"/>
+					                        </t>
+					                        <t t-if="flag > 1">
+					                        	<div class="col-md-4 mb-5">
+					                            	<a t-attf-href="/screen-printing-category/{{category.id}}">
+						                                <div class="card">
+						                                    <h4><t t-esc="category.name"/></h4>
+						                                    <img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id" alt="" />
+						                                </div>
+					                                </a>
+					                            </div>
+					                        </t>
+				                        </t>
 			                        </div>
 			                    </div>
 			                </div>

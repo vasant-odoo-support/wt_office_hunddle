@@ -174,8 +174,35 @@ class WebsiteSaleOH(WebsiteSale):
         return request.render("wt_office_hunddle.printing_product", self._prepare_product_values(product, category, search, **kwargs))
 
     @http.route(['/screen-printing-category'], type='http', auth="public", website=True)
-    def printing_product(self):
-        return request.render("wt_office_hunddle.screen_print_category")
+    def screen_printing_category(self):
+        parent_categories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', False)])
+        vals = {'parent_categories': parent_categories, 'categories': parent_categories}
+        vals.update({'sub_cat': {}, 'p_sub_cat':{}})
+        for sc in parent_categories:
+            sub_cat_ids = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', sc.id)])
+            vals['p_sub_cat'].update({sc.id : sub_cat_ids})
+            vals['sub_cat'].update({sc.id : sub_cat_ids})
+        print("======= vals ====== ", vals)
+        return request.render("wt_office_hunddle.screen_print_category", vals)
+
+    @http.route(['/screen-printing-category/<model("product.public.category"):category>'], type='http', auth="public", website=True)
+    def screen_printing_sub_category(self, category):
+        print("-------- category ---- ", category)
+        parent_categories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', False)])
+        if category:
+            sc_catagories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', category.id)])
+        else:
+            sc_catagories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', False)])
+        vals = {'parent_categories': parent_categories, 'categories': sc_catagories}
+        vals.update({'p_sub_cat': {}, 'sub_cat': {}})
+        for sc in parent_categories:
+            sub_cat_ids = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', sc.id)])
+            vals['p_sub_cat'].update({sc.id : sub_cat_ids})
+        for sc in sc_catagories:
+            sub_cat_ids = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', sc.id)])
+            vals['sub_cat'].update({sc.id : sub_cat_ids})
+        print("======= vals ====== ", vals)
+        return request.render("wt_office_hunddle.screen_print_category", vals)
 
     @http.route(['/design-product/<model("product.template"):product>'], type='http', auth="public", website=True)
     def design_product_office_huddle(self, product, category='', search='', **kwargs):
@@ -1588,7 +1615,7 @@ class WebsiteHuddleCustom(http.Controller):
         # stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
         # car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
         # brochures = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Brochures')])
-        printing_categories = request.env['product.public.category'].search([('parent_id', '=', False)])
+        printing_categories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', False)])
         vals = {
             'printing_categories': printing_categories,
         }

@@ -26,4 +26,17 @@
             </xpath>
         </field>
     </record>
+
+    <record model="ir.ui.view" id="product_public_category_form_view_inherits">
+        <field name="name">product.public.category.inherits</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='sequence']" position="after">
+                <field name="is_screen_printing"/>
+            </xpath>
+        </field>
+
+    </record>
+    
 </odoo>

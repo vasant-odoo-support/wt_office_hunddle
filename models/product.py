@@ -8,6 +8,13 @@ class ProductQuantity(models.Model):
     product_tmpl_id = fields.Many2one('product.template')
 
 
+class ProductPublicCategory(models.Model):
+    _inherit = "product.public.category"
+
+    is_screen_printing = fields.Boolean('Show Screen Printing')
+    
+
+
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
