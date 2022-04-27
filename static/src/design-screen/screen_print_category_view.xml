@@ -37,29 +37,23 @@
 			                <div class="col-md-8 ">
 			                    <div class="category-section">
 			                        <div class="row">
-			                        	<t t-set="flag" t-value="0"/>
 			                        	<t t-foreach="categories" t-as="category">
-			                        		<t t-if="flag &lt;= 1">
-					                            <div class="col-md-6 mb-5">
-					                            	<a t-attf-href="/screen-printing-category/{{category.id}}">
-						                                <div class="card">
-						                                    <h4><t t-esc="category.name"/></h4>
-						                                    <img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id" alt="" />
-						                                </div>
-					                                </a>
-					                            </div>
-					                            <t t-set="flag" t-value="flag + 1"/>
-					                        </t>
-					                        <t t-if="flag > 1">
-					                        	<div class="col-md-4 mb-5">
-					                            	<a t-attf-href="/screen-printing-category/{{category.id}}">
-						                                <div class="card">
-						                                    <h4><t t-esc="category.name"/></h4>
-						                                    <img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id" alt="" />
-						                                </div>
-					                                </a>
-					                            </div>
-					                        </t>
+				                            <div class="col-md-4 mb-5">
+				                            	<a t-attf-href="/screen-printing-category/{{category.id}}">
+					                                <div class="card">
+					                                    <h4><t t-esc="category.name"/></h4>
+					                                    <img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id" alt="" />
+					                                </div>
+				                                </a>
+				                            </div>
+				                        	<!-- <div class="col-md-4 mb-5">
+				                            	<a t-attf-href="/screen-printing-category/{{category.id}}">
+					                                <div class="card">
+					                                    <h4><t t-esc="category.name"/></h4>
+					                                    <img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id" alt="" />
+					                                </div>
+				                                </a>
+				                            </div> -->
 				                        </t>
 			                        </div>
 			                    </div>
