@@ -44,7 +44,7 @@
                       </div>
                       <div class="col-md-6 col-xl-4" id="product_details">
                           <h3><t t-esc="product.name"/></h3>
-                          <a href="/screen-printing-products">Change Product</a>
+                          <a href="/screen-printing-category">Change Product</a>
                           <span itemprop="url" style="display:none;" t-esc="product.website_url"/>
                           <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
                               <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />

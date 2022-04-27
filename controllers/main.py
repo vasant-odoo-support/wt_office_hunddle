@@ -173,6 +173,10 @@ class WebsiteSaleOH(WebsiteSale):
 
         return request.render("wt_office_hunddle.printing_product", self._prepare_product_values(product, category, search, **kwargs))
 
+    @http.route(['/screen-printing-category'], type='http', auth="public", website=True)
+    def printing_product(self):
+        return request.render("wt_office_hunddle.screen_print_category")
+
     @http.route(['/design-product/<model("product.template"):product>'], type='http', auth="public", website=True)
     def design_product_office_huddle(self, product, category='', search='', **kwargs):
         # flyers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Flyers'), ('active', '=', True)], limit=1)

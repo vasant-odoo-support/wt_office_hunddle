@@ -288,3 +288,167 @@
         padding: 0px !important;
     }
 }
+
+
+.sc-category .bg-ligh-blue {
+     background-color: #f0f2f5 !important;
+ }
+ 
+ .sc-category .text-color {
+     color: #22252c !important;
+ }
+ 
+ .sc-category .text-blue {
+     color: #27a6ff !important;
+ }
+ 
+ .sc-category .cursor-pointer {
+     cursor: pointer !important;
+ }
+ 
+ .sc-category .paragraph {
+     font-size: 20px !important;
+ }
+ 
+ .sc-category .accordion-button::after {
+     /*background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");*/
+     transform: scale(.7) !important;
+ }
+ 
+ .sc-category .accordion-button:not(.collapsed)::after {
+     /*background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");*/
+ }
+ 
+ .sc-category .accordion-button:not(.collapsed) {
+     box-shadow: none !important;
+     color: #27a6ff !important;
+     background-color: transparent !important;
+ }
+ 
+ .sc-category .accordion-item {
+     border-left: none !important;
+     border-right: none !important;
+     box-shadow: none !important;
+     outline: none !important;
+     border-color: transparent !important;
+ }
+ 
+ .sc-category .accordion-button:focus {
+     box-shadow: none !important;
+ }
+
+ .sc-category .accordion-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+ 
+ .sc-category .accordian-List {
+     padding: 0 !important;
+     list-style: none !important;
+ }
+ 
+ .sc-category .accordian-List li {
+     padding-left: 10px !important;
+ }
+ 
+ .sc-category .border-top-custom {
+     border-bottom: 1px solid #e5e7ea !important;
+ }
+ 
+ .sc-category .accordian-List li a:hover {
+     color: #27a6ff !important;
+ }
+ 
+ .sc-category .category-section {
+     /* padding: 20px; */
+     text-align: center;
+ }
+ 
+ .sc-category .category-section .sc-category .card:hover {
+     border: 1px solid #d0d0d0;
+ }
+ 
+ .sc-category .category-section h3 {
+     font-size: 1.75rem;
+     font-family: "ProximaSoft", sans-serif;
+     font-weight: 600;
+     line-height: 1.2;
+ }
+ 
+ .sc-category .category-section p {
+     font-family: "ProximaSoft", sans-serif;
+     font-weight: 400;
+     line-height: 1.5;
+     font-size: 1.25rem;
+     text-align: center;
+     margin-bottom: 1.5rem;
+ }
+ 
+ .sc-category .category-section h4 {
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 0;
+     padding: 10px 0;
+ }
+
+.sc-category .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.sc-category button:focus:not(:focus-visible) {
+    outline: 0;
+}
+.sc-category .accordion-button:focus {
+    box-shadow: none !important;
+}
+.sc-category .accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+}
+.sc-category .accordion-button:hover {
+    z-index: 2;
+}
+.sc-category [type=button]:not(:disabled),.sc-category  [type=reset]:not(:disabled), .sc-category [type=submit]:not(:disabled), .sc-category button:not(:disabled) {
+    cursor: pointer;
+}
+.sc-category .bg-ligh-blue {
+    background-color: #f0f2f5 !important;
+}
+.sc-category .fw-bold {
+    font-weight: 700!important;
+}
+.sc-category .py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.sc-category .p-0 {
+    padding: 0!important;
+}
+.sc-category .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
