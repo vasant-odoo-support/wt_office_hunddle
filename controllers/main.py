@@ -215,18 +215,15 @@ class WebsiteSaleOH(WebsiteSale):
         # stickers = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Stickers')])
         # car_magnets = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Car Magnets')])
         # brochures = request.env['product.template'].with_context(bin_size=True).search([('name', '=', 'Brochures')])
-        printing_categories = request.env['product.public.category'].search([('parent_id', '=', False)])
+        printing_categories = request.env['product.public.category'].search([('parent_id', '=', False), ('is_screen_printing', '=', True),])
         print('========= product ===== ',product)
         if product:
             product = request.env['product.template'].search([('id', '=', product.id)])
         # product_variant = request.env['product.product'].search([('id', '=', 28828)])
-        vals = {
-            'printing_categories': printing_categories,
-            'product': product,
-            # 'product_variant': product_variant,
-        }
-        print("--------- vals -------- ", product, category, search, kwargs)
-        return  request.render('wt_office_hunddle.design_product', self._prepare_product_values(product, category, search, **kwargs))
+        vals = self._prepare_product_values(product, category, search, **kwargs)
+        print("--------- vals ----dddd---- ", vals)
+        vals.update({'printing_categories': printing_categories})
+        return  request.render('wt_office_hunddle.design_product', vals)
 
     @http.route(['/shop/cart/update'], type='http', auth="public", methods=['GET', 'POST'], website=True, csrf=False)
     def cart_update(self, product_id, add_qty=1, set_qty=0, **kw):

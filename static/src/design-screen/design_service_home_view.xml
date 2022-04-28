@@ -12,7 +12,7 @@
 				                <div class="wrapper">
 				                    <h1 class="">Custom T-Shirts &amp; Apparel</h1>
 				                    <h2 class="">For your team, business, and events</h2>
-				                    <a class="btn" href="/design-product/11808" title="Start Designing">Start Designing</a>
+				                    <a class="btn" href="/design-product/9347" title="Start Designing">Start Designing</a>
 				                </div>
 				            </div>
 				        </div>
@@ -25,7 +25,7 @@
 				        <div class="row">
 				        	<t t-foreach="printing_categories" t-as="category">
 					            <div class="col-md-3 mb-5">
-					            	<a t-attf-href="/shop/category/{{category.id}}" class="category-a-tag">
+					            	<a t-attf-href="/screen-printing-category/{{category.id}}" class="category-a-tag">
 						                <div class="card">
 						                    <h4><t t-esc="category.name"/></h4>
 						                    	<img t-att-src="'/web/image/product.public.category/%s/image_1920' % category.id"/>
