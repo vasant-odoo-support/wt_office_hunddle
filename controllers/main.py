@@ -170,7 +170,6 @@ class WebsiteSaleOH(WebsiteSale):
     def printing_product(self, product, category='', search='', **kwargs):
         if not product.can_access_from_current_website():
             raise NotFound()
-
         return request.render("wt_office_hunddle.printing_product", self._prepare_product_values(product, category, search, **kwargs))
 
     @http.route(['/screen-printing-category'], type='http', auth="public", website=True)
@@ -187,7 +186,7 @@ class WebsiteSaleOH(WebsiteSale):
 
     @http.route(['/screen-printing-category/<model("product.public.category"):category>'], type='http', auth="public", website=True)
     def screen_printing_sub_category(self, category):
-        print("-------- category ---- ", category)
+        print("-------- category -fff--- ", category)
         parent_categories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', False)])
         if category:
             sc_catagories = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', category.id)])
@@ -201,7 +200,11 @@ class WebsiteSaleOH(WebsiteSale):
         for sc in sc_catagories:
             sub_cat_ids = request.env['product.public.category'].search([('is_screen_printing', '=', True), ('parent_id', '=', sc.id)])
             vals['sub_cat'].update({sc.id : sub_cat_ids})
-        print("======= vals ====== ", vals)
+
+        if 'sub_cat' in vals and len(vals['sub_cat']) == 0:
+            products = request.env['product.template'].search([('public_categ_ids', 'child_of', category.id)])
+            vals.update({'products': products})
+            return request.render("wt_office_hunddle.screen_printing_products_temp", vals)
         return request.render("wt_office_hunddle.screen_print_category", vals)
 
     @http.route(['/design-product/<model("product.template"):product>'], type='http', auth="public", website=True)

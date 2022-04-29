@@ -74,6 +74,7 @@
         'static/src/design-screen/product_selection_view.xml',
         'static/src/design-screen/product_selection_view.xml',
         'static/src/design-screen/screen_print_category_view.xml',
+        'static/src/design-screen/screen_printing_products_view.xml',
     ],
     'qweb': [
         'static/src/xml/binary_preview.xml',

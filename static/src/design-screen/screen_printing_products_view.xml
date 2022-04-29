@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="screen_printing_products_temp" name="Screen Printing Products">
+		<t t-call="website.layout">
+			<div id="wrap" class="sc-category">
+				<section class="bg-ligh-blue py-5">
+			        <div class="container">
+			            <h1 class="text-color h1 text-center">
+			                Custom Apparel - Free Shipping &amp; No Minimums
+			            </h1>
+			            <p class="text-color mt-2 text-center paragraph ">Printed by Office Huddle</p>
+			            <div class="row mt-5">
+			                <div class="col-md-3 md-mb-0 mb-5 md-px-0 px-3 ">
+			                    <a href="/screen-printing-category"><h2 class="h4 fw-bold text-color"> All Products</h2></a>
+			                    <div class="pe-md-4 pe-0">
+			                        <div class="accordion bg-ligh-blue" id="myAccordion">
+			                        	<t t-foreach="parent_categories" t-as="category">
+				                            <div class="accordion-item  border-top-custom bg-ligh-blue ">
+				                                <h2 class="accordion-header" id="headingOne bg-ligh-blue">
+				                                    <button type="button" class="accordion-button collapsed bg-ligh-blue fw-bold p-0 py-3" data-toggle="collapse" t-att-data-target="'#collapse' + str(category.id)"><t t-esc="category.name"/></button>
+				                                </h2>
+				                                <div t-att-id="'collapse'+ str(category.id)" class="accordion-collapse collapse bg-ligh-blue" data-parent="#myAccordion">
+				                                    <div>
+				                                        <ul class="accordian-List">
+				                                        	<t t-foreach="p_sub_cat[category.id]" t-as="sub_category">
+				                                            	<li class="cursor-pointer "> <a t-attf-href="/screen-printing-category/{{sub_category.id}}" class="text-decoration-none text-color"> <t t-esc="sub_category.name"/> </a></li>
+				                                        	</t>
+				                                        </ul>
+				                                    </div>
+				                                </div>
+				                            </div>
+			                        	</t>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="col-md-8 ">
+			                    <div class="category-section">
+			                        <div class="row">
+			                        	<t t-foreach="products" t-as="product">
+				                            <div class="col-md-4 mb-3">
+				                            	<a t-attf-href="/design-product/{{product.id}}">
+					                                <div class="card">
+					                                    <img t-att-src="'/web/image/product.template/%s/image_1920' % product.id" alt="" />
+					                                    <h4><t t-esc="product.name"/></h4>
+					                                </div>
+				                                </a>
+				                            </div>
+				                        </t>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			</div>
+		</t>
+	</template>
+</odoo>

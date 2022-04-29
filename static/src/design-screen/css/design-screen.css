@@ -360,7 +360,8 @@
  }
  
  .sc-category .accordian-List li {
-     padding-left: 10px !important;
+    padding: 5px;
+    padding-left: 10px !important;
  }
  
  .sc-category .border-top-custom {
