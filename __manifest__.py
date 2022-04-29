@@ -7,7 +7,7 @@
     'summary': 'Website',
     'category': 'Website',
     'author': 'Warlock Technologies',
-    'depends': ['website', 'website_event', 'sale', 'website_event_track', 'auth_oauth', 'website_blog', 'portal', 'auth_signup', 'website_slides', 'base', 'web', 'mail', 'sale_stock'],
+    'depends': ['website', 'website_event', 'sale', 'website_event_track', 'auth_oauth', 'website_blog', 'portal', 'auth_signup', 'website_slides', 'base', 'web', 'mail', 'sale_stock', 'mrp_workorder'],
     'website': 'http://www.warlocktechnologies.com',
     'data':[
         'security/ir.model.access.csv',
@@ -69,6 +69,7 @@
         'views/virtual_administor_view.xml',
         'views/virtual_administor_get_start_view.xml',
         'views/website_shop_view.xml',
+        'views/mrp_workorder_view.xml',
         'static/src/design-screen/design_service_home_view.xml',
         'static/src/design-screen/product_select_view.xml',
         'static/src/design-screen/product_selection_view.xml',

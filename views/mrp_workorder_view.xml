@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="mrp_workorder_view_form_tablet_inherit" model="ir.ui.view">
+        <field name="name">mrp.workorder.view.form.inherit.quality.tablet.new.inherit</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp_workorder.mrp_workorder_view_form_tablet"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='duration']" position="before">
+        		<div>
+        			Expected Time : <field name="duration_expected" readonly="1"/>
+        		</div>
+        	</xpath>
+        </field>
+    </record>
+</odoo>
