@@ -8,6 +8,16 @@
     color: #8d9095 !important
 }
 
+.design-tool .overlay {
+    position: absolute;
+    top: 16%;
+    width: 26.5%;
+    height: 65%;
+    transition: .5s ease;
+    overflow: hidden;
+    padding: 0;
+}
+
 .design-tool .tiny-text {
     font-size: .75em !important
 }
