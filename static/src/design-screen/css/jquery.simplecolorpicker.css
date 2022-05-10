@@ -10,7 +10,7 @@
  * See http://twitter.github.com/bootstrap/assets/css/bootstrap.css
  */
 
-.simplecolorpicker:before {
+.design-tool .simplecolorpicker:before {
   position: absolute;
   top: -7px;
   left: 9px;
@@ -22,7 +22,7 @@
   content: '';
 }
 
-.simplecolorpicker:after {
+.design-tool .simplecolorpicker:after {
   position: absolute;
   top: -6px;
   left: 10px;
@@ -33,7 +33,7 @@
   content: '';
 }
 
-.simplecolorpicker.picker {
+.design-tool .simplecolorpicker.picker {
   position: absolute;
   top: 100%;
   left: 0;
@@ -68,14 +68,14 @@
           background-clip: padding-box;
 }
 
-  .simplecolorpicker.inline {
+.design-tool   .simplecolorpicker.inline {
     display: inline-block;
     height: 18px;
     padding: 4px 0;
   }
 
-  .simplecolorpicker.icon,
-  .simplecolorpicker div {
+.design-tool .simplecolorpicker.icon,
+.design-tool .simplecolorpicker div {
     cursor: pointer;
     display: inline-block;
 
@@ -85,11 +85,10 @@
 
     border: 1px solid transparent;
   }
-  .simplecolorpicker div {
+.design-tool .simplecolorpicker div {
     margin: 0 4px 4px 0;
   }
-
-  .simplecolorpicker div:hover,
-  .simplecolorpicker div.selected {
+.design-tool .simplecolorpicker div:hover,
+.design-tool .simplecolorpicker div.selected {
     border: 1px solid black;
   }

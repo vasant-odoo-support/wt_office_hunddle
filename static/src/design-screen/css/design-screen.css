@@ -9,6 +9,16 @@
 
 }
 
+.overlay {
+    position: absolute;
+    top: 16%;
+    width: 26.5%;
+    height: 65%;
+    transition: .5s ease;
+    overflow: hidden;
+    padding: 0;
+}
+
 .design-service .wrapper {
     background-image: url("../images/ink-white.avif");
     background-size: contain;

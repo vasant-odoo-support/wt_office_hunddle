@@ -1683,9 +1683,11 @@
 				    </div>
 			    </div>
 			</div>
-
-			<script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/fabric.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="/wt_office_hunddle/static/src/design-screen/js/jquery.min.js "></script>
+		    <script src="/wt_office_hunddle/static/src/design-screen/js/fabric.js"></script>
+		    <script src="/wt_office_hunddle/static/src/design-screen/js/popper.min.js "></script>
+		    <script src="/wt_office_hunddle/static/src/design-screen/js/jscolor.js"></script>
+		    <script src="/wt_office_hunddle/static/src/design-screen/js/fabrichistory.js"></script>
 			<script>
 				  console.log("========== called -------- ")
 			      var bcanvas = new fabric.Canvas("bcanvas");
