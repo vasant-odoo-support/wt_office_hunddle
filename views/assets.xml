@@ -25,7 +25,10 @@
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/home/css/home_responsive.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/virtual_staff/css/virtual_staff.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/virtual_staff/css/responsive.css"/>
-             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/design-screen/css/design-screen.css"/>
+             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/design-screen.css"/>
+             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/design-tool.css"/>
+             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/jquery.miniColors.css"/>
+             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/jquery.simplecolorpicker.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/our-team.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/jobs.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/how_it_works/css/how_it_works.css"/>
@@ -36,6 +39,7 @@
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/enter-training/css/enterprice.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/enter-training/css/enterprice-responsive.css"/>
             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/shop/css/shop.css"/>
+
 
         </xpath>
     	<xpath expr="//script[last()]" position="after">
@@ -53,6 +57,13 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/home.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/website_development/js/lightbox/lightbox.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/variant_mixin.js"></script>
+
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/jscolor.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/fabrichistory.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/popper.min.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/tshirtEditor.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/jquery.miniColors.min.js"></script>
+
     	</xpath>
     </template>
 

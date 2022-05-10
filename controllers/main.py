@@ -426,6 +426,11 @@ class WebsitBlogPost(Website):
 
 
 class WebsiteHuddleCustom(http.Controller):
+
+    @http.route('/design-tool', type='http', auth='public', website=True)
+    def design_tool(self):
+        return  request.render('wt_office_hunddle.design_service_tmpl')
+
     @http.route('/entrepreneurial-training', type='http', auth='public', website=True)
     def entrepreneurial_training(self):
         courses = request.env['slide.channel'].search([])

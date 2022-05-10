@@ -1,0 +1,669 @@
+/* utility classes  */
+
+.design-tool .color-blue {
+    color: #27a6ff !important
+}
+
+.design-tool .light-text {
+    color: #8d9095 !important
+}
+
+.design-tool .tiny-text {
+    font-size: .75em !important
+}
+
+.design-tool .cursor-pointer {
+    cursor: pointer !important;
+}
+
+.design-tool .bg-blue {
+    background-color: #27a6ff !important;
+}
+
+.design-tool .display-6{
+    font-size: 40px;
+}
+
+
+/* header CSS */
+
+.design-tool .header {
+    height: 70px !important;
+    /*box-shadow: 0 2px 8px 0 rgb(204 207 214 / 50%);*/
+}
+
+.design-tool .logo-container {
+    width: 100px !important;
+    height: 70px !important;
+    /*box-shadow: 3px 0 12px 0 rgb(0 0 0 / 10%) !important;*/
+}
+
+
+/* main Upper Tabs */
+
+.design-tool .upperTabs {
+    border: none !important;
+}
+
+.design-tool .upperTabs .nav-link span {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background-color: #424447 !important;
+    color: white !important;
+}
+
+.design-tool .upperTabs .nav-link.active span {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    transition: background-color .25s linear !important;
+    background-color: #27a6ff !important;
+    color: white !important;
+}
+
+.design-tool .upperTabs .nav-link.active {
+    border-bottom: 3px solid blue !important;
+    color: #27a6ff !important;
+    transition: color .25s linear !important;
+}
+
+.design-tool .tab-text-color {
+    color: #424447 !important;
+    font-weight: 500 !important;
+}
+
+
+/* .quantity-img-container {
+    height: calc(100vh - 110px) !important;
+} */
+
+.design-tool .quantity-img-container img {
+    margin-top: -175px !important;
+    z-index: -3 !important;
+    width: 100%;
+}
+
+.design-tool .calculatePricing-button {
+    font-size: 18px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: #27a6ff;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    border-color: #27a6ff;
+    box-shadow: none;
+    color: white;
+}
+
+
+/* Main Design SideBar Tabs  */
+
+.design-tool .sidebar-tabs {
+    width: 105px !important;
+    height: caslc(80vh) !important;
+    /*box-shadow: 3px 0 12px 0 rgb(0 0 0 / 10%) !important;*/
+}
+
+.design-tool .designVerticalTabs .nav-link.active {
+    background-color: #27a6ff !important;
+    border-radius: 5px !important;
+    border: none !important;
+}
+
+.design-tool .designVerticalTabs .nav-link.active svg {
+    fill: white !important;
+}
+
+.design-tool .designVerticalTabs .nav-link.active h6 {
+    color: white !important;
+}
+
+.design-tool .sideBar-tabs-text {
+    font-weight: 700 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+}
+
+.design-tool svg {
+    display: block !important;
+    width: 40% !important;
+    height: auto !important;
+    max-height: 100% !important;
+}
+
+
+/* Design Tab's Products Tab Css  */
+
+.design-tool .productDetailBox {
+    /*box-shadow: 3px 0 12px 0 rgb(0 0 0 / 10%) !important;*/
+    border: 1px solid #e3e7eb;
+    border-radius: 8px;
+    background-color: #f5f8f8;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.design-tool .productdetail-image-wrapper {
+    position: relative !important;
+    border: 1px solid #27a6ff !important;
+    border-radius: 8px !important;
+    /* -webkit-transition: #27a6ff.25s linear; */
+    transition: #27a6ff .25s linear;
+    margin-bottom: 4px !important;
+    text-align: center !important;
+}
+
+.design-tool .productdetail-text-wrapper {
+    width: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 78%;
+}
+
+.design-tool .productdetail-Change-wrapper {
+    padding: 5px;
+    color: #27a6ff;
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #fff;
+    /*box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: color .2s linear, #27a6ff .2s linear, whiter .2s linear;
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+.design-tool .addProduct-wrapper {
+    color: #8d9095;
+    border: 1px dashed #8d9095;
+    transition: color .25s linear, #8d9095 .25s linear;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    top: -12px;
+    background: #fff;
+    z-index: -1;
+}
+
+
+/* Add Text Tab CSS */
+
+.design-tool .addTextTabRow {
+    line-height: 20px;
+    border: 1px solid #cccfd6;
+    border-radius: 4px;
+    background-color: #fff;
+    transform: scale(1);
+    transition: all .15s linear;
+    user-select: none;
+}
+
+
+/* .addTextTabRow:hover {
+    transform: scale(1.1) !important;
+} */
+
+
+/* Upload Art Tab Css  */
+
+.design-tool .uploadAt-container {
+    position: relative;
+    border: 2px dashed #b5b8c1;
+    background-color: #f2f2f2;
+}
+
+.design-tool .uploadArt-button {
+    color: #fff;
+    white-space: nowrap;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    border-color: #27a6ff;
+    box-shadow: none;
+    background-color: #27a6ff;
+    -webkit-transition: #27a6ff .1s linear, box-shadow .1s linear, background .1s linear;
+    transition: #27a6ff .1s linear, box-shadow .1s linear, background .1s linear;
+    user-select: none;
+}
+
+.design-tool .dropBox-container {
+    border: 1px solid #b5b8c1;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    -webkit-transition: color .25s linear, border-color .25s linear;
+    transition: color .25s linear, border-color .25s linear;
+    flex-grow: 1;
+    white-space: nowrap;
+}
+
+
+/* Add Clipart Tab Css  */
+
+.design-tool .addClipart-column {
+    font-weight: 700;
+    border: 1px solid #cccfd6;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .15s linear, box-shadow .15s linear;
+    transition: transform .15s linear, box-shadow .15s linear;
+    user-select: none;
+}
+
+.design-tool .addClipart-column:hover {
+    transform: scale(1.1);
+}
+
+.design-tool .addClipart-column svg {
+    width: 30px !important;
+    display: inline !important;
+}
+
+.design-tool .addClipart-column-imgWrapper {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+/* Numebrs and Names Tab CSS  */
+
+.design-tool .numberTab-button {
+    color: #fff;
+    white-space: nowrap;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    border-color: #27a6ff;
+    box-shadow: none;
+    background-color: #27a6ff;
+    -webkit-transition: #27a6ff .1s linear, box-shadow .1s linear, background .1s linear;
+    transition: #27a6ff .1s linear, box-shadow .1s linear, background .1s linear;
+    user-select: none;
+}
+
+
+/* Footer section Css  */
+
+.design-tool .footer-main {
+    height: 120px;
+    border-top: 2px solid #e5e7ea !important;
+    background-color: #fbfbfb;
+}
+
+.design-tool .footer-small-button {
+    color: #27a6ff;
+    white-space: nowrap;
+    outline: 0;
+    border: 1px solid #27a6ff;
+    border-radius: 999px;
+    box-shadow: none;
+    /* background-color: #27a6ff; */
+    -webkit-transition: border-color .1s linear, box-shadow .1s linear, background .1s linear;
+    transition: border-color .1s linear, box-shadow .1s linear, background .1s linear;
+    user-select: none;
+}
+
+.design-tool .footer-big-button {
+    color: white;
+    white-space: nowrap;
+    outline: 0;
+    border: 1px solid #27a6ff;
+    border-radius: 999px;
+    box-shadow: none;
+    background-color: #27a6ff;
+    -webkit-transition: border-color .1s linear, box-shadow .1s linear, background .1s linear;
+    transition: border-color .1s linear, box-shadow .1s linear, background .1s linear;
+    user-select: none;
+}
+
+
+/* ================ Review And Price Section =================== */
+
+.design-tool .bg-green {
+    border: 1px solid #d0e9c6 !important;
+    background-color: #d4edda !important;
+}
+
+
+/* Image Preview Tabs CSs  */
+
+.design-tool .image-previewTabs {
+    padding: 5px;
+    width: 70px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    z-index: 2;
+    text-transform: uppercase;
+    text-transform: initial;
+}
+
+.design-tool .image-previewTabs svg {
+    width: 100% !important;
+}
+
+.design-tool .text-base {
+    font-size: 16px !important;
+    line-height: 21px !important;
+}
+
+.design-tool .icons span {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+    width: 70px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #fff;
+    /*box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.design-tool .icons span.redo {
+    
+    pointer-events: cursor;
+}
+
+.design-tool .quantity-btns {
+    position: absolute;
+    display: block;
+    top: 100px;
+    transform: translateY(-5%);
+}
+
+.design-tool .quantity-btns .nav-link {
+    flex-direction: row !important;
+    font-size: 12px;
+    background-color: #fff;
+    /*box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);*/
+    backface-visibility: hidden;
+    -webkit-transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    z-index: 2;
+    text-transform: uppercase;
+    position: relative;
+    top: auto;
+    right: auto;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 999px;
+}
+
+.design-tool .quantity-btns svg {
+    width: 16px !important;
+    margin-right: 10px !important;
+}
+
+.design-tool span.zoom {
+    display: inline-flex !important;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #fff;
+    /*box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    z-index: 2;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.design-tool span.share {
+    flex-direction: column;
+    justify-content: space-between;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #fff;
+    /*box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.design-tool .main-wrapper {
+    overflow-y: auto;
+    height: 455px;
+}
+
+.design-tool .main-wrapper:not(.main-menu-toolbar)::-webkit-scrollbar,
+.design-tool .sidebar-tabs .upperTabs:not(.main-menu-toolbar)::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+}
+
+.design-tool .main-wrapper:not(.main-menu-toolbar)::-webkit-scrollbar-thumb,
+.design-tool .sidebar-tabs .upperTabs:not(.main-menu-toolbar)::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #fbfbfb;
+}
+
+.design-tool .main-wrapper:not(.main-menu-toolbar)::-webkit-scrollbar-track,
+.design-tool .sidebar-tabs .upperTabs:not(.main-menu-toolbar)::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fbfbfb;
+}
+
+.design-tool .height-row {
+    height: 75vh;
+}
+
+.design-tool .nav-tabs .nav-link {
+    margin-bottom: 0 !important;
+}
+
+.design-tool button {
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:991px) {
+    .design-tool .height-row {
+        height: 100%;
+    }
+    .design-tool .image-previewTabs {
+        flex-direction: row !important;
+        width: 100%;
+        justify-content: center !important;
+    }
+    .design-tool .tab-bottom-icons {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .design-tool .col-7-content {
+        margin-top: 40px;
+    }
+    .design-tool .quantity-img-container img {
+        margin-top: -90px !important;
+    }
+    .design-tool .footer-main {
+        justify-content: center !important;
+        width: 100%;
+    }
+}
+
+@media (min-width:600px) and (max-width:991px) {
+    .design-tool .sidebar-tabs {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .design-tool .main-row-data {
+        flex-direction: column;
+    }
+    .design-tool .sidebar-tabs {
+        width: 100% !important;
+        display: block;
+    }
+    .design-tool .sidebar-tabs .upperTabs .nav-link {
+        margin-top: 0 !important;
+    }
+    .design-tool .sidebar-tabs .upperTabs {
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width:455px) {
+    .design-tool .circleNavigationcircle {
+        display: none !important;
+    }
+    .design-tool .upperTabs h6 {
+        font-size: 12px !important;
+    }
+}
+.design-tool .galleryImg>img{
+height: 100px;
+width: 100px;
+margin: 2px 4px;
+}
+.design-tool .galleryImg>img:hover{
+    border: 1px solid;
+    }
+.design-tool .color-tabs>li{
+  vertical-align: top;
+  display: inline-block;
+  cursor: pointer;
+  margin:4px 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px grey;
+}
+.design-tool #font-editor{
+    margin: 0;
+    padding: 0;
+}
+.design-tool #font-editor>li>label{
+    margin-right: 100px;
+    
+}
+
+.design-tool #font-editor>li{
+    display: block;
+    margin: 10px 0px;
+    padding: 10px 5px;
+    border-bottom: 1px solid;
+    box-shadow: 2px  0px 2px black;
+
+}
+.design-tool #canvas-wraper{
+
+    padding: 0;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .design-tool #canvas-wraper{
+        
+        position: absolute;
+        top:810px;
+        height: 220px;
+        width: 140px;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .design-tool #canvas-wraper{
+    
+        position: absolute;
+        top: 700px;
+        height: 250px;
+        width: 150px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .design-tool #canvas-wraper{
+    
+        position: absolute;
+        top: 720px;
+        height:280px ;
+        width: 160px;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .design-tool #canvas-wraper{
+        
+        position: absolute;
+        top: 100px;
+        width: 140px;
+        height: 250px;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .design-tool #canvas-wraper{
+        
+        position: absolute;
+        top: 22%;
+        height: 50%;
+        width:13.7%;
+    }
+  }
+  
