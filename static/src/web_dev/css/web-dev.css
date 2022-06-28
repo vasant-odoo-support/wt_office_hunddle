@@ -1,0 +1,326 @@
+/* Custom CSS  */
+
+.bg-blue-section {
+    background-color: #069
+}
+
+.padding-top-section {
+    padding: 6rem 0!important
+}
+
+.heading-custom {
+    font-size: 4rem!important;
+    font-weight: 700!important
+}
+
+.mt-5-custom {
+    margin-top: 3rem!important
+}
+
+.paragraph-text-custom {
+    font-size: 1.5rem!important;
+    font-weight: 400!important
+}
+
+.section-margin {
+    margin: 0 150px!important
+}
+
+.label-custom {
+    font-weight: 600!important
+}
+
+.font-bold-xl-custom {
+    font-weight: 900;
+}
+
+.button-bg {
+    background-color: #c93!important
+}
+
+#select {
+    height: calc(3.25rem + 2px) !important;
+}
+
+.font-bold-custom {
+    font-weight: 500!important
+}
+
+.pl-5 {
+    padding-left: 25px !important;
+}
+
+.overflow-hidden-custom {
+    overflow-x: hidden !important;
+}
+
+@media only screen and (max-width:900px) {
+    .section-margin {
+        margin: 0 70px!important
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .section-margin {
+        margin: 0 0!important
+    }
+}
+
+button.button-item {
+    background: #0773a2;
+    color: #fff;
+    border-radius: 33px;
+    font-weight: 700 !important;
+    padding: 5px 40px !important;
+    margin-bottom: 0 !important;
+}
+button.button-item i{
+    font-size: 30px;
+}
+.form-check-label{
+    font-weight: 500;
+}
+.header-main a.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000!important;
+    padding: .5rem 20px!important
+}
+
+.first-section {
+    padding: 50px 0
+}
+
+.second-section {
+    background: #d3e2fe;
+    padding: 100px 0
+}
+.section{
+    padding: 100px 0;
+}
+.bg-blue-light{
+    background: #d3e2fe;
+}
+.bg-yellow{
+    background-color: #db984a;
+}
+.text-yellow{
+    color: #db984a;
+}
+.payment-section {
+    padding: 50px 0;
+}
+.light-label {
+    color: #acb0b2
+}
+.text-blue{
+    color: #0773a2;
+}
+.bg-blue{
+    background-color: #0773a2;
+}
+
+.second-section button {
+    background: #0773a2;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 33px;
+    padding: 5px 30px;
+    margin-top: 20px
+}
+
+.body-main h3 {
+    color: #0773a2;
+    font-weight: 700
+}
+
+label.main-label {
+    color: #0773a2;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.body-main label {
+    color: #0773a2
+}
+
+.body-main .form-control {
+    background: #e8efff;
+    border-radius: 6px
+}
+
+.body-main sub {
+    color: red;
+    font-size: 14px
+}
+
+.input-file-box {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-file-box input{
+    position: relative;
+    z-index: 111;
+    top: 10px;
+    opacity: 0;
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+}
+.input-file-box .image{
+    position: absolute;
+    width: 30%;
+    border: 5px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.input-file-box .image img{
+    height: 90px;
+    width: 100%;
+    object-fit: contain;
+}
+.input-file-box .image h5{
+    position: absolute;
+    bottom: -40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.text-black{
+    color: #000 !important;
+}
+.banner-section{
+    background-image: url(/wt_office_hunddle/static/src/web_dev/images/banner-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.banner-section h1{
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+.banner-section h1 span{
+    color: #db984a;
+}
+.banner-section p, .banner-section a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.banner-section button{
+    width: 200px;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #000;
+}
+.des span{
+    color: red;
+}
+.mock-up-section{
+    background-image: url(/wt_office_hunddle/static/src/web_dev/images/mock-up-bg.png);
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mock-up-section label, .logo-design-section label, .last-section-bg label{
+    color: #fff;
+}
+.logo-design-section{
+    background-image: url(/wt_office_hunddle/static/src/web_dev/images/logo-design.png);
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.last-section-bg{
+    background-image: url(/wt_office_hunddle/static/src/web_dev/images/laptop.png);
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dateSection label{
+    font-size: 30px;
+    font-weight: 500;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.dateSection input {
+    margin-top: 10px;
+    background: none;
+    color: #fff;
+    border: 0;
+    border-bottom: 1.5px solid rgb(255 255 255 / 50%);
+    padding-bottom: 4px;
+}
+.dateSection input:focus-visible{
+    outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1)
+}
+.ml-auto{
+    margin-left: auto;
+}
+.a-link{
+    text-align: right;
+text-decoration: underline;
+}
+.priority-div .form-check{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.paypl-section {
+    background: #db984a;
+}
+.wrap{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #000;
+}
+.wrap img{
+    margin-bottom: 10px;
+    height: 80px;
+    object-fit: contain;
+}
+.wrap .form-check{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrap .form-check-label{
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:372px) {
+    .phone-number {
+        font-size: 14px !important;
+    }
+}

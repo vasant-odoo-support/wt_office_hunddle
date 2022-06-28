@@ -427,6 +427,10 @@ class WebsitBlogPost(Website):
 
 class WebsiteHuddleCustom(http.Controller):
 
+    @http.route('/web-dev', type='http', auth='public', website=True)
+    def web_dev(self):
+        return  request.render('wt_office_hunddle.web_dev_tmpl')
+
     @http.route('/design-tool', type='http', auth='public', website=True)
     def design_tool(self):
         return  request.render('wt_office_hunddle.design_service_tmpl')

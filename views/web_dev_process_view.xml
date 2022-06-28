@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="web_dev_tmpl" name="Web Development Process">
+		<t t-call="website.layout">
+			<div id="wrap" class="web_dev_cl">
+				<body class="body-main">
+			        <section class="banner-section">
+			            <div class="container">
+			                <div class="row">
+			                    <div class="col-md-6">
+			                        <div class="bammer-wrapper">
+			                            <h1>Tell Us About <span>Your Project?</span></h1>
+			                            <p>Please contact us at <a href="tel:6013489977">(601) 348 1977</a><br />
+			                            or <a href="mailto:marketing@officehuddle.com">marketing@officehuddle.com</a></p>
+			                            <button type="button" class="btn bg-yellow">Get Started</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </section>
+
+			        <form>
+			        <section class="first-section" id="first-form">
+				        <div class="container-fluid">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class=" font-bold h1">Website Development Requirement Form</h3>
+				                    <p class="des"><b>The Name and photo associated with your google account will be recorded when you upload files and submit this form. Only the email you enter is part of your response. <br /><span>*Required</span></b></p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <label class="main-label mb-1" for="name">Name<sub>*</sub></label>
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label for="name" class="mb-1">First</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6 mb-2">
+			                                <div class="form-group">
+			                                    <label for="name">Last</label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="email">Email Address<sub>*</sub></label>
+			                                    <input type="email" class="form-control py-3" id="email"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="phone">Phone<sub>*</sub></label>
+			                                    <input type="number" class="form-control py-3" id="phone"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2" for="name">Buisness Name<sub>*</sub></label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="main-label mb-2 " for="name">Industry<sub>*</sub></label>
+			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto" style="text-align: right">
+				                    <a href="#second-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="second-section" id="second-form">
+				        <div class="container-fluid">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1">What type of website do you need?<sub>*</sub></h3>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="retail" value="retail"/>
+			                                    <label class="form-check-label" for="retail">
+			                                      Retail and e-commerce
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="real" value="real"/>
+			                                    <label class="form-check-label" for="real">
+			                                      Real estate
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="medical" value="medical"/>
+			                                    <label class="form-check-label" for="medical">
+			                                      Medical
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="technology" value="technology"/>
+			                                    <label class="form-check-label" for="technology">
+			                                      Technology
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="legal" value="legal"/>
+			                                    <label class="form-check-label" for="legal">
+			                                      Legal
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="finance" value="finance"/>
+			                                    <label class="form-check-label" for="finance">
+			                                      Finance
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="government" value="government"/>
+			                                    <label class="form-check-label" for="government">
+			                                        Government
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="construction" value="construction"/>
+			                                    <label class="form-check-label" for="construction">
+			                                      Construction
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="utilities" value="utilities"/>
+			                                    <label class="form-check-label" for="utilities">
+			                                        Utilities
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="retail" id="informational" value="informational"/>
+			                                    <label class="form-check-label" for="informational">
+			                                      Informational
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="gateway" id="other9" value="other"/>
+			                                    <label class="form-check-label" for="other9">
+			                                      Other
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <textarea class="form-control py-3"></textarea>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#first-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#third-form"> <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+				        
+				    <section class="section" id="third-form">
+				        <div class="container">
+				            <div class="row">
+				                <div class="col-md-8 mx-auto" style="margin-bottom: 100px">
+				                    <label class="text-black"><b>If you want to sell your products on website, please upload your<br /> product/products description document here (inclue product name(s),<br /> pictures, products details and prices)</b></label>
+				                <div class="input-file-box">
+				                    <input type="file" />
+				                    <div class="image">
+				                        <img src="/wt_office_hunddle/static/src/web_dev/images/upload.png" alt="upload icon" class="upload-img" />
+				                        <h5>Upload File</h5>
+				                    </div>
+				                </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#second-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#fourth-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="payment-section bg-blue-light" id="fourth-form">
+				        <div class="container-fluid">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1">Do you need any Payment Gateway<sub>*</sub></h3>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="gateway" id="yes" value="yes"/>
+			                                    <label class="form-check-label" for="yes">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="gateway" id="no" value="no"/>
+			                                    <label class="form-check-label" for="no">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="gateway" id="maybe" value="maybe"/>
+			                                    <label class="form-check-label" for="maybe">
+			                                      Maybe
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#third-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#fifth-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="first-section paypl-section" id="fifth-form">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1 text-black">Which payment gateway do you need?</h3>
+				                </div>
+				            </div>
+				            <div class="row mt-4">
+				                <div class="col-md-6 mx-auto">
+				                    <div class="row">
+				                        <div class="col-md-4">
+				                            <div class="wrap">
+				                                <img src="/wt_office_hunddle/static/src/web_dev/images/paypal-icon.png" alt="" />
+				                                <div class="form-check">
+				                                    <label class="form-check-label" for="paypal">
+				                                        paypal
+				                                    </label>
+				                                    <input class="form-check-input" type="radio" name="paypal" id="paypal" value="paypal"/>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <div class="col-md-4">
+				                            <div class="wrap">
+				                                <img src="/wt_office_hunddle/static/src/web_dev/images/stripe-icon.png" alt="" />
+				                                <div class="form-check ">
+				                                    <label class="form-check-label" for="stripe">
+				                                        stripe
+				                                    </label>
+				                                    <input class="form-check-input" type="radio" name="paypal" id="stripe" value="stripe"/>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <div class="col-md-4">
+				                            <div class="wrap">
+				                                <img src="/wt_office_hunddle/static/src/web_dev/images/others-layer.png" alt="" />
+				                                <div class="form-check ">
+				                                    <label class="form-check-label" for="others0">
+				                                        Other
+				                                    </label>
+				                                    <input class="form-check-input" type="radio" name="paypal" id="others0" value="others"/>
+				                                </div>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="row mt-2">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#fourth-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#sixth-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="mock-up-section" id="sixth-form">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1 text-white">Do you have a design mockup of your website?<sub>*</sub></h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="mockup" id="yes1" value="yes"/>
+			                                    <label class="form-check-label" for="yes1">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="mockup" id="no1" value="no"/>
+			                                    <label class="form-check-label" for="no1">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto" style="margin-bottom: 100px">
+				                    <p class="text-white" style="font-size: 20px">If you have design mockup of your website, please upload here</p>
+				                <div class="input-file-box">
+				                    <input type="file" />
+				                    <div class="image" style="background-color: #fff">
+				                        <img src="/wt_office_hunddle/static/src/web_dev/images/upload.png" alt="upload icon" class="upload-img" />
+				                        <h5 class="text-white">Upload File</h5>
+				                    </div>
+				                </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#fifth-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#seven-form"> <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+				    <img src="/wt_office_hunddle/static/src/web_dev/images/colors.png" alt="" width="100%" />
+
+				    <section class="logo-design-section" id="seven-form">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class=" font-bold h1 text-white">Do you have a logo?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="logo" id="yes2" value="yes"/>
+			                                    <label class="form-check-label" for="yes2">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="logo" id="no2" value="no"/>
+			                                    <label class="form-check-label" for="no2">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto" style="margin-bottom: 100px">
+				                    <p class="text-white" style="font-size: 20px">If you have a logo design, please upload here</p>
+				                <div class="input-file-box">
+				                    <input type="file" />
+				                    <div class="image" style="background-color: #fff">
+				                        <img src="/wt_office_hunddle/static/src/web_dev/images/upload.png" alt="upload icon" class="upload-img" />
+				                        <h5 class="text-white">Upload File</h5>
+				                    </div>
+				                </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#sixth-form">   <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#eight-form"> <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="first-section bg-blue-light" id="eight-form">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class=" font-bold h1">Do you have content for your pages?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="content" id="yes3" value="yes"/>
+			                                    <label class="form-check-label" for="yes3">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="content" id="no3" value="no"/>
+			                                    <label class="form-check-label" for="no3">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto" style="margin-bottom: 100px">
+				                    <p class="text-blue" style="font-size: 20px">If you have content for the pages, please upload the document(s) here</p>
+				                <div class="input-file-box">
+				                    <input type="file" />
+				                    <div class="image" style="background-color: #fff">
+				                        <img src="/wt_office_hunddle/static/src/web_dev/images/upload.png" alt="upload icon" class="upload-img" />
+				                        <h5 class="text-blue">Upload File</h5>
+				                    </div>
+				                </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#seven-form"> <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#nine-form"> <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="first-section ">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1">What type of services does your business offer?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+				                    <div class="form-group">
+				                        <label for="name" class="mb-1">Your Answer</label>
+				                        <textarea class="form-control py-3" rows="3"></textarea>
+				                    </div>
+				                    
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#eight-form"><button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#ten-form">  <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+				    <section class="second-section" id="ten-form">
+				        <div class="container-fluid">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1">Which CMS or Framework do you need for your website?</h3>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    
+			                                    <label class="form-check-label" for="wordpress">
+			                                        <input class="form-check-input" type="radio" name="cmsframe" id="wordpress" value="wordpress"/>
+			                                      Wordpress
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="cmsframe" id="laravel" value="laravel"/>
+			                                    <label class="form-check-label" for="laravel">
+			                                      Laravel
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="cmsframe" id="shopify" value="shopify"/>
+			                                    <label class="form-check-label" for="shopify">
+			                                      Shopify
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="cmsframe" id="codeignite" value="codeignite"/>
+			                                    <label class="form-check-label" for="codeignite">
+			                                      Codeignite
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="cmsframe" id="php" value="php"/>
+			                                    <label class="form-check-label" for="php">
+			                                      Php
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="cmsframe" id="other" value="other"/>
+			                                    <label class="form-check-label" for="other">
+			                                      Other
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <textarea class="form-control py-3"></textarea>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#nine-form">  <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#eleven-form">  <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="first-section" id="eleven-form">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1">Please update <br /> your contact information here</h3>
+				                <p class="text-blue text-center">Phone,Email,Address,Country,State,City,Zipcode,</p>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+				                    <div class="form-group">
+				                        <label for="name" class="mb-1">Your Answer</label>
+				                        <textarea class="form-control py-3" rows="3"></textarea>
+				                    </div>
+				                    
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="font-bold h1">Priority<sub>*</sub></h3>
+				                </div>
+				            </div>
+				            <div class="row priority-div mt-3">
+				                <div class="col-md-6 mx-auto">
+				                    <div class="d-flex" style="justify-content: space-around">
+				                        <div class="form-check">
+				                            <label class="form-check-label">Very High</label>
+				                        </div>
+				                        <div class="form-check mb-1">
+				                            <label class="form-check-label" for="1">
+				                                1
+				                              </label>
+				                            <input class="form-check-input" type="radio" name="priority" id="1" value="1"/>
+				                        </div>
+				                        <div class="form-check mb-1">
+				                            <label class="form-check-label" for="2">
+				                                2
+				                              </label>
+				                            <input class="form-check-input" type="radio" name="priority" id="2" value="2"/>
+				                        </div>
+				                        <div class="form-check mb-1">
+				                            <label class="form-check-label" for="3">
+				                                3
+				                              </label>
+				                            <input class="form-check-input" type="radio" name="priority" id="3" value="3"/>
+				                        </div>
+				                        <div class="form-check mb-1">
+				                            <label class="form-check-label" for="4">
+				                                4
+				                              </label>
+				                            <input class="form-check-input" type="radio" name="priority" id="4" value="4"/>
+				                        </div>
+				                        <div class="form-check mb-1">
+				                            <label class="form-check-label" for="5">
+				                                5
+				                              </label>
+				                            <input class="form-check-input" type="radio" name="priority" id="5" value="5"/>
+				                        </div>
+				                        <div class="form-check">
+				                            <label class="form-check-label">Very Low</label>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+				                    <div class="form-group">
+				                        <label for="name" class="mb-1">Your Answer</label>
+				                        <textarea class="form-control py-3" rows="3"></textarea>
+				                    </div>
+				                    
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class=" font-bold h1">Do you want to promote your buisness with SEO/PPC/Social Media?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="promote" id="yes4" value="yes"/>
+			                                    <label class="form-check-label" for="yes4">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="promote" id="no4" value="no"/>
+			                                    <label class="form-check-label" for="no4">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="promote" id="maybe4" value="maybe"/>
+			                                    <label class="form-check-label" for="maybe4">
+			                                      Maybe
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class=" font-bold h1">Do you need a mobile app for your buisness?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="mobile-app" id="yes5" value="yes"/>
+			                                    <label class="form-check-label" for="yes5">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="mobile-app" id="no5" value="no"/>
+			                                    <label class="form-check-label" for="no5">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="mobile-app" id="maybe5" value="maybe"/>
+			                                    <label class="form-check-label" for="maybe5">
+			                                      Maybe
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-center font-bold h1">What type of mobile app do you need?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    
+			                                    <label class="form-check-label" for="android">
+			                                        <input class="form-check-input" type="radio" name="need" id="android" value="android"/>
+			                                      Android
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="need" id="webapp" value="webapp"/>
+			                                    <label class="form-check-label" for="webapp">
+			                                      Webapp
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="need" id="ios" value="ios"/>
+			                                    <label class="form-check-label" for="ios">
+			                                      iOS
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="need" id="other1" value="other"/>
+			                                    <label class="form-check-label" for="other1">
+			                                      Other
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="need" id="both" value="Both Android/iOs"/>
+			                                    <label class="form-check-label" for="both">
+			                                      Both Android/iOs
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <textarea class="form-control py-3"></textarea>
+			                                </div>
+			                            </div>
+			                   
+			                        </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto mb-5" style="text-align:right">
+				                    <a href="#" class="a-link text-blue"><b>Clear Selection</b></a>
+				                </div>
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#ten-form">  <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                    <a href="#twelve-form">     <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-right'></i></button></a>
+				                </div>
+				                </div>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+
+				    <section class="first-section last-section-bg" id="twelve-form">
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-white font-bold h1">Do you have a domain name for this website?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="domain" id="yes6" value="yes"/>
+			                                    <label class="form-check-label" for="yes6">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="domain" id="no6" value="no"/>
+			                                    <label class="form-check-label" for="no6">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row ">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="text-white font-bold h1">Do you have web hosting or server?</h3>
+				                </div>
+				            </div>
+				            <div class="row py-5">
+				                <div class="col-md-6 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="host" id="yes7" value="yes"/>
+			                                    <label class="form-check-label" for="yes7">
+			                                      Yes
+			                                    </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12">
+			                                <div class="form-check  mb-1">
+			                                    <input class="form-check-input" type="radio" name="host" id="no7" value="no"/>
+			                                    <label class="form-check-label" for="no7">
+			                                      No
+			                                    </label>
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container dateSection">
+				            <div class="row py-3">
+				                <div class="col-md-8 mx-auto">
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <div class="form-check  mb-1">
+			                                    
+			                                    <label class="form-check-label" for="startDate">
+			                                      When do you want to start your project?
+			                                    </label>
+			                                    <input class="form-check-input" type="date" name="date" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6 d-flex justify-content-end">
+			                                <div class="form-check  mb-1">
+			                                    <label class="form-check-label" for="endtDate">
+			                                       Due Date
+			                                      </label>
+			                                      <input class="form-check-input" type="date" name="date" />
+			                                </div>
+			                            </div>
+			                        </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="container">
+				            <div class="row py-5">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="font-bold h1 text-center text-white mb-4">What is your website budget?</h3>
+				                </div>
+				                <div class="col-md-6 mx-auto">
+				                    <div class="form-group">
+				                        <label for="name" class="mb-1">Your Answer</label>
+				                        <textarea class="form-control py-3" rows="3"></textarea>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="row py-3">
+				                <div class="col-md-8 mx-auto">
+				                    <h3 class="font-bold h1 text-center text-white mb-4">Additional details</h3>
+				                </div>
+				                <div class="col-md-6 mx-auto">
+				                    <div class="form-group">
+				                        <label for="name" class="mb-1">Your Answer</label>
+				                        <textarea class="form-control py-3" rows="3"></textarea>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="row">
+				                <div class="col-md-8 mx-auto mb-2" style="text-align:right">
+				                    <a href="#" class="a-link text-white"><b>Clear Selection</b></a>
+				                </div>
+				                <div class="col-md-8 mx-auto">
+				                    <div class="row">
+				                <div class="col-md-6" style="text-align: left">
+				                    <a href="#eleven-form">  <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
+				                </div>
+				                <div class="col-md-6" style="text-align: right">
+				                      <button type="button" class="btn button-item px-4 py-2 h4">Submit</button>
+				                </div>
+				                </div>
+				            </div>
+				            <div class="col-md-6 mx-auto">
+				                <p class="text-white mt-3" style="font-size: 24px">Never submit passwords through Forms.</p>
+				            </div>
+				            </div>
+				        </div>
+				    </section>
+					</form>
+			    </body>
+			</div>
+		</t>
+	</template>
+</odoo>

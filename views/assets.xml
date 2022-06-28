@@ -30,6 +30,7 @@
              <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/design-tool.css"/>
              <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/jquery.miniColors.css"/>
              <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/design-screen/css/jquery.simplecolorpicker.css"/>
+             <link rel="stylesheet" type="text/css" href="/wt_office_hunddle/static/src/web_dev/css/web-dev.css"/>
 
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/our-team.css"/>
             <link rel="stylesheet" type="text/scss" href="/wt_office_hunddle/static/src/our-team/jobs.css"/>
