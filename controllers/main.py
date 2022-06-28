@@ -427,7 +427,7 @@ class WebsitBlogPost(Website):
 
 class WebsiteHuddleCustom(http.Controller):
 
-    @http.route('/web-dev', type='http', auth='public', website=True)
+    @http.route('/website-development-form', type='http', auth='public', website=True)
     def web_dev(self):
         return  request.render('wt_office_hunddle.web_dev_tmpl')
 
