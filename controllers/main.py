@@ -431,9 +431,10 @@ class WebsiteHuddleCustom(http.Controller):
     def web_dev(self):
         return  request.render('wt_office_hunddle.web_dev_tmpl')
 
-    @http.route('/design-tool', type='http', auth='public', website=True)
-    def design_tool(self):
-        return  request.render('wt_office_hunddle.design_service_tmpl')
+    @http.route(['/design-tool/<model("product.template"):product>'], type='http', auth='public', website=True)
+    def design_tool(self, product, **kwargs):
+        print(" ------ product ----- ", product)
+        return  request.render('wt_office_hunddle.design_service_tmpl', {'product': product})
 
     @http.route('/entrepreneurial-training', type='http', auth='public', website=True)
     def entrepreneurial_training(self):

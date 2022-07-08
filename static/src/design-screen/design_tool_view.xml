@@ -3,86 +3,87 @@
 	<template id="design_service_tmpl" name="Design Service">
 		<t t-call="website.layout">
 			<div id="design_tool_wrap" class="design-tool">
-				<div class="d-flex align-items-center header ">
-					<div class="d-flex justify-content-center align-items-center logo-container">
-				        <img src="/wt_office_hunddle/static/src/design-screen/images/logo.png" width="48" height="48" alt="logo" />
-				    </div>
-				    <div class="ms-3" style="padding-top: 15px">
-				        <nav>
-				          <div class="nav nav-tabs upperTabs" id="nav-tab" role="tablist">
-				            <div
-				              class="nav-link active d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
-				              onclick=""
-				              id="nav-design-tab"
-				              name="CardTab"
-				              data-toggle="tab"
-				              data-target="#design"
-				              type="button"
-				              href="#design"
-				              role="tab"
-				              aria-controls="design"
-				              aria-selected="false"
-				            >
-				              <span
-				                class="circleNavigationcircle d-flex align-items-center justify-content-center me-2"
-				              >
-				                1
-				              </span>
-				              <h6 class="m-0">DESIGNS</h6>
-				            </div>
-				            <div
-				              class="nav-link d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
-				              id="nav-quantity-tab"
-				              onclick=""
-				              name="BankTab"
-				              data-toggle="tab"
-				              data-target="#nav-quantity"
-				              type="button"
-				              role="tab"
-				              href="#nav-quantity"
-				              aria-controls="nav-quantity"
-				              aria-selected="false"
-				            >
-				              <span
-				                class="circleNavigationcircle d-flex align-items-center justify-content-center me-2"
-				              >
-				                2
-				              </span>
-				              <h6 class="m-0">QUANTITY &amp; SIZES</h6>
-				            </div>
-				            <div
-				              class="nav-link d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
-				              id="nav-reviewPrice-tab"
-				              onclick=""
-				              name="BankTab"
-				              data-toggle="tab"
-				              data-target="#nav-reviewPrice"
-				              type="button"
-				              role="tab"
-				              href="#nav-reviewPrice"
-				              aria-controls="nav-reviewPrice"
-				              aria-selected="false"
-				            >
-				              <span
-				                class="circleNavigationcircle d-flex align-items-center justify-content-center me-2"
-				              >
-				                3
-				              </span>
-				              <h6 class="m-0">REVIEW PRICE</h6>
-				            </div>
-				          </div>
-				        </nav>
-				    </div>
+				<div class="d-flex align-items-center header">
+			      <div
+			        class="d-flex justify-content-center align-items-center logo-container"
+			      >
+			        <img src="/wt_office_hunddle/static/src/design-screen/images/logo.png" width="48" height="48" alt="logo" />
+			      </div>
+			      <div class="ms-3" style="padding-top: 15px">
+			        <nav>
+			          <div class="nav nav-tabs upperTabs" id="nav-tab" role="tablist">
+			            <div
+			              class="nav-link active d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
+			              onclick=""
+			              id="nav-design-tab"
+			              name="CardTab"
+			              data-toggle="tab"
+			              data-target="#design"
+			              type="button"
+			              href="#design"
+			              role="tab"
+			              aria-controls="design"
+			              aria-selected="false"
+			            >
+			              <span
+			                class="circleNavigationcircle d-flex align-items-center justify-content-center me-2"
+			              >
+			                1
+			              </span>
+			              <h6 class="m-0">DESIGNS</h6>
+			            </div>
+			            <div
+			              class="nav-link d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
+			              id="nav-quantity-tab"
+			              onclick=""
+			              name="BankTab"
+			              data-toggle="tab"
+			              data-target="#nav-quantity"
+			              type="button"
+			              role="tab"
+			              href="#nav-quantity"
+			              aria-controls="nav-quantity"
+			              aria-selected="false"
+			            >
+			              <span
+			                class="circleNavigationcircle d-flex align-items-center justify-content-center me-2"
+			              >
+			                2
+			              </span>
+			              <h6 class="m-0">QUANTITY &amp; SIZES</h6>
+			            </div>
+			            <div
+			              class="nav-link d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
+			              id="nav-reviewPrice-tab"
+			              onclick=""
+			              name="BankTab"
+			              data-toggle="tab"
+			              data-target="#nav-reviewPrice"
+			              type="button"
+			              role="tab"
+			              href="#nav-reviewPrice"
+			              aria-controls="nav-reviewPrice"
+			              aria-selected="false"
+			            >
+			              <span
+			                class="circleNavigationcircle d-flex align-items-center justify-content-center me-2"
+			              >
+			                3
+			              </span>
+			              <h6 class="m-0">REVIEW PRICE</h6>
+			            </div>
+			          </div>
+			        </nav>
+			      </div>
 			    </div>
 
 			    <div class="tab-content" id="nav-tabContent">
 			    	<!-- ====================== First Tab =========================== -->
-
 			      	<div
-			        	class="tab-pane fade show active"
-			        	id="design"
-			        	role="tabpanel"
-			        	aria-labelledby="nav-design-tab"
+			        class="tab-pane fade show active"
+			        id="design"
+			        role="tabpanel"
+			        aria-labelledby="nav-design-tab"
 			      	>
 			        <div class="d-flex overflow-hidden main-row-data">
 			          <div class="sidebar-tabs pt-3">
@@ -102,7 +103,13 @@
 			                    aria-controls="products"
 			                    aria-selected="false"
 			                  >
-			                  <h6 class="mt-2 sideBar-tabs-text">Products</h6>
+			                  <!-- id="productTab" -->
+			                    <img
+			                      src="/wt_office_hunddle/static/src/design-screen/images/tshirtLogo.png"
+			                      style="width: 40%"
+			                      alt=""
+			                    />
+			                    <h6 class="mt-2 sideBar-tabs-text">Products</h6>
 			                  </div>
 			                  <div
 			                    class="nav-link d-flex align-items-center flex-column justify-content-center border-0 tab-text-color d-flex align-items-center mt-3"
@@ -117,6 +124,11 @@
 			                    aria-controls="addText"
 			                    aria-selected="false"
 			                  >
+			                    <img
+			                      src="/wt_office_hunddle/static/src/design-screen/images/draw-text-field-pngrepo-com.png"
+			                      style="width: 40%"
+			                      alt=""
+			                    />
 			                    <h6 class="mt-2 sideBar-tabs-text" id="add-text">
 			                      Add Text
 			                    </h6>
@@ -134,33 +146,33 @@
 			                    aria-controls="uploadArt"
 			                    aria-selected="false"
 			                  >
-			                    <svg
-			                      version="1.0"
-			                      id="ICONS"
-			                      x="0px"
-			                      y="0px"
-			                      viewBox="0 0 19.948 18.2"
-			                      style="enable-background: new 0 0 19.948 18.2"
-			                      xml:space="preserve"
-			                    >
-			                      <g>
-			                        <path
-			                          class="st0"
-			                          d="M9.948,18.2c0.5,0,0.8-0.4,0.8-0.8V8.6l1.1,1.1c0.3,0.3,0.9,0.3,1.2,0c0.3-0.3,0.3-0.9,0-1.2l-2.5-2.5
-			                                                c-0.3-0.3-0.9-0.3-1.2,0l0,0l-2.5,2.5c-0.3,0.3-0.3,0.9,0,1.2c0.3,0.3,0.9,0.3,1.2,0l1.1-1.1v8.8C9.148,17.9,9.448,18.2,9.948,18.2
-			                                                z"
-			                        ></path>
-			                        <path
-			                          class="st0"
-			                          d="M15.748,4.2c-0.2-2.4-2.2-4.2-4.6-4.2c-1.4,0-2.5,0.5-3.4,1.7h-0.7c-2.5,0-4.5,2-4.6,4.5
-			                                                c-2.1,0.9-3,3.4-2.1,5.5c0.6,1.4,2.1,2.4,3.8,2.4h2.5c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8h-2.5c-1.4,0-2.5-1.2-2.5-2.5
-			                                                c0-1.1,0.8-2.1,1.9-2.4c0.4-0.1,0.7-0.6,0.6-1c0-0.1,0-0.2,0-0.3c0-1.6,1.3-2.9,2.9-2.9h1.2c0.3,0,0.6-0.2,0.7-0.4
-			                                                c0.5-0.9,1.2-1.3,2.2-1.3c1.6,0,2.9,1.3,2.9,2.9l0,0V5c0,0.5,0.4,0.8,0.8,0.8c1.8,0,3.3,1.5,3.3,3.3s-1.5,3.3-3.3,3.3h-1.7
-			                                                c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h1.8c2.8,0,5-2.2,5-5C19.948,6.7,18.148,4.6,15.748,4.2z"
-			                        ></path>
-			                      </g>
-			                    </svg>
+			                    <img
+			                      src="/wt_office_hunddle/static/src/design-screen/images/uploadImage.png"
+			                      style="width: 40%"
+			                      alt=""
+			                    />
 			                    <h6 class="mt-2 sideBar-tabs-text">Upload Art</h6>
+			                  </div>
+
+			                  <div
+			                    class="nav-link d-flex align-items-center flex-column justify-content-center border-0 tab-text-color d-flex align-items-center mt-3"
+			                    id="nav-addClipkart-tab"
+			                    onclick=""
+			                    name="BankTab"
+			                    data-toggle="tab"
+			                    data-target="#addClipkart"
+			                    type="button"
+			                    role="tab"
+			                    href="#addClipkart"
+			                    aria-controls="addClipkart"
+			                    aria-selected="false"
+			                  >
+			                    <img
+			                      src="/wt_office_hunddle/static/src/design-screen/images/clipart.png"
+			                      style="width: 40%"
+			                      alt=""
+			                    />
+			                    <h6 class="mt-2 sideBar-tabs-text">Add Clipart</h6>
 			                  </div>
 			                </div>
 			              </nav>
@@ -180,23 +192,18 @@
 			                  >
 			                    <div class="main-wrapper">
 			                      <div class="px-2">
-			                        <span class="tiny-text font-weight-bold color-blue">
+			                        <span class="tiny-text fw-bold color-blue">
 			                          PRODUCTS
 			                        </span>
-			                        <h3 class="h4 font-weight-bold">Manage Your Products</h3>
+			                        <h3 class="h4 fw-bold">Manage Your Products</h3>
 			                        <p class="tiny-text light-text">
 			                          You can select multiple products and colors.
 			                        </p>
 			                        <div class="border-top">
 			                          <div class="productDetailBox p-3 mt-3">
-			                            <h3 class="h6 font-weight-bold m-0" style="font-size: 14px">
+			                            <h3 class="h6 fw-bold m-0" style="font-size: 14px">
 			                              RT2000 RushOrderTees Classic Tee
 			                            </h3>
-			                            <!-- <span
-			                              style="font-size: 13px !important"
-			                              class="tiny-text color-blue"
-			                              >Change Product</span
-			                            > -->
 			                            <div
 			                              class="d-flex justify-content-between align-items-center mt-2"
 			                              onclick="colorList()"
@@ -249,15 +256,15 @@
 			                    aria-labelledby="nav-addText-tab"
 			                  >
 			                    <div class="main-wrapper">
-			                      <span class="tiny-text font-weight-bold color-blue">
+			                      <span class="tiny-text fw-bold color-blue">
 			                        TEXT EDITOR
 			                      </span>
 			                      <div
 			                        class="d-flex justify-content-between mb-3 align-items-center"
 			                      >
-			                        <h3 class="h4 font-weight-bold">Add New Text</h3>
+			                        <h3 class="h4 fw-bold">Add New Text</h3>
 			                        <i
-			                          class="bx bx-x display-6 fa fa-times moveBaxk fa fa-times"
+			                          class="bx bx-x display-6 fa fa-times moveBaxk"
 			                        ></i>
 			                      </div>
 			                      <div class="border-top">
@@ -300,10 +307,10 @@
 			                            >
 			                              <div class="form-group">
 			                                <textarea
+			                                  id="text-string"
 			                                  class="form-control"
 			                                  placeholder="Begin Typing..."
 			                                  style="resize: none"
-			                                  id="text-string"
 			                                  rows="3"
 			                                ></textarea>
 			                                <button
@@ -313,6 +320,13 @@
 			                                >
 			                                  Add Text
 			                                </button>
+			                                <button
+			                                  type="button"
+			                                  class="btn btn-info mt-3"
+			                                  id="changeTextBox"
+			                                >
+			                                  Change
+			                                </button>
 			                              </div>
 			                            </div>
 			                            <div>
@@ -321,9 +335,9 @@
 			                                  <label for="">Font Size</label>
 			                                  <input
 			                                    type="range"
+			                                    id="FontRange"
 			                                    min="20"
 			                                    max="90"
-			                                    id="FontRange"
 			                                  />
 			                                </li>
 			                                <li>
@@ -346,6 +360,39 @@
 			                                      aria-labelledby="dropdownMenuButton1"
 			                                      style="overflow-y: scroll; height: 150px"
 			                                    >
+			                                    <li>
+			                                      <a
+			                                        tabindex="-1"
+			                                        href="#"
+			                                        onclick="setFont('Dancing Script');"
+			                                        class="dropdown-item"
+			                                        >Dancing Script</a
+			                                      >
+			                                    </li>
+			                                    <li>
+			                                      <a href="#" tabindex="-1" class="dropdown-item" onclick="setFont('Parisienne')">
+			                                        Parisienne
+			                                      </a>
+			                                    </li>
+			                                    <li>
+			                                      <a
+			                                        tabindex="-1"
+			                                        href="#"
+			                                        onclick="setFont('Water Brush');"
+			                                        class="dropdown-item"
+			                                        >Water Brush</a
+			                                      >
+			                                    </li>
+			                                    <li>
+			                                      <a 
+			                                      tabindex="-1"
+			                                      href="#"
+			                                      onclick="setFont('Lobster')"
+			                                      class="dropdown-item"
+			                                      >
+			                                        Lobster
+			                                      </a>
+			                                    </li>
 			                                      <li>
 			                                        <a
 			                                          tabindex="-1"
@@ -472,6 +519,34 @@
 			                                          >Engagement</a
 			                                        >
 			                                      </li>
+			                                      <li>
+			                                        <a
+			                                          tabindex="-1"
+			                                          href="#"
+			                                          onclick="setFont('Roboto');"
+			                                          class="dropdown-item"
+			                                          >Roboto</a
+			                                        >
+			                                      </li>
+			                                      <li>
+			                                        <a
+			                                          tabindex="-1"
+			                                          href="#"
+			                                          onclick="setFont('Macondo');"
+			                                          class="dropdown-item"
+			                                          >Macondo</a
+			                                        >
+			                                      </li>
+
+			                                      <li>
+			                                        <a
+			                                          tabindex="-1"
+			                                          href="#"
+			                                          onclick="setFont('Oleo Script Swash Caps');"
+			                                          class="dropdown-item"
+			                                          >Oleo Script Swash Caps</a
+			                                        >
+			                                      </li>
 			                                    </ul>
 			                                  </div>
 			                                </li>
@@ -495,7 +570,6 @@
 			                                    Italic
 			                                  </button>
 			                                </li>
-			                                <!-- <li><button type="button" id="underline" class="btn btn-info">Underline</button></li> -->
 			                                <li>
 			                                  <label for="">Font Color</label>
 			                                  <input
@@ -532,13 +606,13 @@
 			                    aria-labelledby="nav-uploadArt-tab"
 			                  >
 			                    <div class="main-wrapper">
-			                      <span class="tiny-text font-weight-bold color-blue">
+			                      <span class="tiny-text fw-bold color-blue">
 			                        UPLOAD ART
 			                      </span>
 			                      <div
 			                        class="d-flex justify-content-between mb-3 align-items-center"
 			                      >
-			                        <h3 class="h4 font-weight-bold">Choose file to upload</h3>
+			                        <h3 class="h4 fw-bold">Choose file to upload</h3>
 			                        <i
 			                          class="bx bx-x display-6 fa fa-times moveupBaxk"
 			                        ></i>
@@ -550,19 +624,6 @@
 			                          >Design Notes.</a
 			                        >
 			                      </p>
-			                      <div class="border-top">
-			                        <div
-			                          class="d-flex justify-content-center align-items-center flex-column uploadAt-container p-4"
-			                        >
-			                          <h5 class="h6">Select File From Library</h5>
-			                          <button
-			                            id="imageList"
-			                            class="uploadArt-button py-2 px-4 mt-1 mb-2"
-			                          >
-			                            Choose File
-			                          </button>
-			                        </div>
-			                      </div>
 			                      <div class="position-relative mt-2">
 			                        <input
 			                          type="file"
@@ -573,34 +634,34 @@
 			                        <div
 			                          class="addProduct-wrapper py-1 mt-2 justify-content-center d-flex align-items-center"
 			                        >
-			                          <span id="imgbtn" class="h3 font-weight-bold me-1">+</span>
+			                          <span id="imgbtn" class="h3 fw-bold me-1">+</span>
 			                          Upload Your Image
 			                        </div>
 			                      </div>
 
 			                      <div class="border-top border-bottom mt-4 py-4">
-			                        <span class="font-weight-bold">
+			                        <span class="fw-bold">
 			                          Upload ANY file type, but we prefer vector, high-res,
 			                          or large files such as:
 			                        </span>
 			                        <div class="d-flex justify-content-between mt-3">
 			                          <div>
-			                            <span class="tiny-text font-weight-bold"> .AI </span>
+			                            <span class="tiny-text fw-bold"> .AI </span>
 			                          </div>
 			                          <div>
-			                            <span class="tiny-text font-weight-bold"> .EPS </span>
+			                            <span class="tiny-text fw-bold"> .EPS </span>
 			                          </div>
 			                          <div>
-			                            <span class="tiny-text font-weight-bold"> .TIFF </span>
+			                            <span class="tiny-text fw-bold"> .TIFF </span>
 			                          </div>
 			                          <div>
-			                            <span class="tiny-text font-weight-bold"> .PSD </span>
+			                            <span class="tiny-text fw-bold"> .PSD </span>
 			                          </div>
 			                          <div>
-			                            <span class="tiny-text font-weight-bold"> .JPG </span>
+			                            <span class="tiny-text fw-bold"> .JPG </span>
 			                          </div>
 			                          <div>
-			                            <span class="tiny-text font-weight-bold"> .PNG </span>
+			                            <span class="tiny-text fw-bold"> .PNG </span>
 			                          </div>
 			                        </div>
 			                      </div>
@@ -616,385 +677,183 @@
 			                    aria-labelledby="nav-addClipkart-tab"
 			                  >
 			                    <div class="main-wrapper">
-			                      <span class="tiny-text font-weight-bold color-blue">
+			                      <span class="tiny-text fw-bold color-blue">
 			                        CLIPART
 			                      </span>
 			                      <div
 			                        class="d-flex justify-content-between mb-3 align-items-center"
 			                      >
-			                        <h3 class="h4 font-weight-bold">Add Clipart</h3>
-			                        <i class="bx bx-x display-6 cursor-pointer"></i>
+			                        <h3 class="h4 fw-bold">Add Clipart</h3>
+			                        <i
+			                          class="bx bx-x display-6 fa fa-times cursor-pointer CloseArt"
+			                        ></i>
 			                      </div>
-			                      <p class="tiny-text">
-			                        Choose from over 50,000 Clipart Designs! or
-			                        <a class="ms-1 text-decoration-none" href="#"
-			                          >Upload Your Own Image</a
-			                        >
-			                      </p>
-			                      <div class="border-top mt-3 pt-3 d-flex">
-			                        <div class="relative w-100">
-			                          <input
-			                            type="text"
-			                            placeholder="Search For Clipart"
-			                            class="form-control w-full py-2"
-			                            id="exampleInputEmail1"
-			                            aria-describedby="emailHelp"
+			                      <p class="tiny-text">Choose Image From List Below:<a href="#" id="ReloadTab">Back</a></p>
+			                      
+
+			                      <div class="row border-top mt-3 pt-3 mx-0" id="tabIcon">
+			                        <div class="col-6 mb-2 pe-2">
+			                          <div
+			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
+			                            id="FlagsGallery"
+			                          >
+			                            <img
+			                              src="/wt_office_hunddle/static/src/design-screen/images/flags.png"
+			                              style="width: 20%"
+			                              alt=""
+			                            />
+			                            <span class="ms-3 tiny-text">Flags</span>
+			                          </div>
+			                        </div>
+			                        <div class="col-6 mb-2 pe-2">
+			                          <div
+			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
+			                            id="DesignGallery"
+			                          >
+			                            <img
+			                              src="/wt_office_hunddle/static/src/design-screen/images/brush.png"
+			                              style="width: 20%"
+			                              alt=""
+			                            />
+			                            <span class="ms-3 tiny-text">Design</span>
+			                          </div>
+			                        </div>
+			                        <div class="col-6 mb-2 pe-2">
+			                          <div
+			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
+			                            id="FoodGallery"
+			                          >
+			                            <img
+			                              src="/wt_office_hunddle/static/src/design-screen/images/foods.png"
+			                              style="width: 20%"
+			                              alt=""
+			                            />
+			                            <span class="ms-3 tiny-text">Food</span>
+			                          </div>
+			                        </div>
+			                        <div class="col-6 mb-2 pe-2">
+			                          <div
+			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
+			                            id="AnimalGallery"
+			                          >
+			                            <img
+			                              src="/wt_office_hunddle/static/src/design-screen/images/hen.png"
+			                              style="width: 20%"
+			                              alt=""
+			                            />
+			                            <span class="ms-3 tiny-text">Animals</span>
+			                          </div>
+			                        </div>
+			                      </div>
+			                      <div
+			                        class="row border-top mt-3 pt-3 mx-0"
+			                        id="galleryFlags"
+			                      >
+			                        <div class="galleryImg">
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/usa.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/world.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/indiaflag.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/random.png"
+			                            class="image-polaroid"
+			                            alt=""
 			                          />
 			                        </div>
-			                        <div
-			                          class="absolute d-flex justify-content-center align-items-center bg-blue right-0 top-0"
-			                        >
-			                          <i class="bx bx-search text-white h5 m-0 px-3"></i>
+			                      </div>
+
+			                      <div
+			                        class="row border-top mt-3 pt-3 mx-0"
+			                        id="galleryDesign"
+			                      >
+			                        <div class="galleryImg">
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/kisspng-xiaomi-mi-a1-smartphone-internet-business-xiaomi-logo-5b5d3d831162e9.0024346515328372510712.jpg"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/Apple-logo.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/DC_Comics_logo.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/png-clipart-logo-marvel-comics-marvel-entertainment-marvel-studios-others-comics-avengers.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
 			                        </div>
 			                      </div>
-			                      <div class="row mt-3 mx-0">
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 28"
-			                            >
-			                              <title>Animals</title>
-			                              <circle
-			                                cx="9.333"
-			                                cy="5.833"
-			                                r="1.167"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                              <path
-			                                d="M26.838,8.186H15.171V5.853a5.833,5.833,0,1,0-11.666,0H1.171a1.167,1.167,0,0,0,0,2.333H3.505v1.75a12.248,12.248,0,0,0,8.166,11.535v5.382a1.167,1.167,0,0,0,2.334,0V22.046a12.35,12.35,0,0,0,1.75.14,12.373,12.373,0,0,0,1.75-.14v4.807a1.167,1.167,0,0,0,2.333,0V21.471A12.249,12.249,0,0,0,28.005,9.936V9.353A1.167,1.167,0,0,0,26.838,8.186ZM15.755,19.853A9.917,9.917,0,0,1,5.838,9.936V5.853a3.5,3.5,0,0,1,7,0v3.5a1.166,1.166,0,0,0,1.167,1.166H25.654A9.918,9.918,0,0,1,15.755,19.853Z"
-			                                transform="translate(-0.005 -0.019)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Animals</span>
-			                          </div>
+
+			                      <div
+			                        class="row border-top mt-3 pt-3 mx-0"
+			                        id="galleryFood"
+			                      >
+			                        <div class="galleryImg">
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/iced-coffee-cold-drink-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/burger-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/pizza-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/noodles-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
 			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 25.688"
-			                            >
-			                              <title>Designs</title>
-			                              <path
-			                                d="M.565,22.623a2.6,2.6,0,0,0-.292,2.761,2.57,2.57,0,0,0,2.336,1.46H6.987a5.839,5.839,0,0,0,5.825-5.852q0-.3-.033-.608L25.4,8.816a4.414,4.414,0,1,0-6.025-6.452c-.074.069-.147.142-.216.217L7.6,15.206a5.838,5.838,0,0,0-6.448,5.8A2.541,2.541,0,0,1,.565,22.623ZM20.882,4.16a2.081,2.081,0,0,1,3.062,2.82c-.038.041-.078.081-.12.119L11.964,17.964a5.766,5.766,0,0,0-1.944-1.947ZM2.4,24.065a4.849,4.849,0,0,0,1.088-3.059,3.486,3.486,0,0,1,1.323-2.741A3.451,3.451,0,0,1,6.97,17.5a3.878,3.878,0,0,1,.846.1,3.5,3.5,0,0,1-.829,6.91H2.609a.241.241,0,0,1-.234-.143A.269.269,0,0,1,2.4,24.065Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M4.652,4.659A1.168,1.168,0,0,0,3.484,5.827V6.994H2.317a1.168,1.168,0,1,0,0,2.335H3.484V10.5a1.168,1.168,0,0,0,2.336,0V9.329H6.987a1.168,1.168,0,1,0,0-2.335H5.82V5.827A1.168,1.168,0,0,0,4.652,4.659Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M28.005,19.838a1.168,1.168,0,0,0-1.168-1.168H24.5V16.335a1.168,1.168,0,0,0-2.336,0V18.67H19.831a1.168,1.168,0,0,0,0,2.336h2.335v2.335a1.168,1.168,0,0,0,2.336,0V21.006h2.335A1.168,1.168,0,0,0,28.005,19.838Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <circle
-			                                cx="12.225"
-			                                cy="1.751"
-			                                r="1.751"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Military</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 28"
-			                            >
-			                              <title>Animals</title>
-			                              <circle
-			                                cx="9.333"
-			                                cy="5.833"
-			                                r="1.167"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                              <path
-			                                d="M26.838,8.186H15.171V5.853a5.833,5.833,0,1,0-11.666,0H1.171a1.167,1.167,0,0,0,0,2.333H3.505v1.75a12.248,12.248,0,0,0,8.166,11.535v5.382a1.167,1.167,0,0,0,2.334,0V22.046a12.35,12.35,0,0,0,1.75.14,12.373,12.373,0,0,0,1.75-.14v4.807a1.167,1.167,0,0,0,2.333,0V21.471A12.249,12.249,0,0,0,28.005,9.936V9.353A1.167,1.167,0,0,0,26.838,8.186ZM15.755,19.853A9.917,9.917,0,0,1,5.838,9.936V5.853a3.5,3.5,0,0,1,7,0v3.5a1.166,1.166,0,0,0,1.167,1.166H25.654A9.918,9.918,0,0,1,15.755,19.853Z"
-			                                transform="translate(-0.005 -0.019)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Animals</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 25.688"
-			                            >
-			                              <title>Designs</title>
-			                              <path
-			                                d="M.565,22.623a2.6,2.6,0,0,0-.292,2.761,2.57,2.57,0,0,0,2.336,1.46H6.987a5.839,5.839,0,0,0,5.825-5.852q0-.3-.033-.608L25.4,8.816a4.414,4.414,0,1,0-6.025-6.452c-.074.069-.147.142-.216.217L7.6,15.206a5.838,5.838,0,0,0-6.448,5.8A2.541,2.541,0,0,1,.565,22.623ZM20.882,4.16a2.081,2.081,0,0,1,3.062,2.82c-.038.041-.078.081-.12.119L11.964,17.964a5.766,5.766,0,0,0-1.944-1.947ZM2.4,24.065a4.849,4.849,0,0,0,1.088-3.059,3.486,3.486,0,0,1,1.323-2.741A3.451,3.451,0,0,1,6.97,17.5a3.878,3.878,0,0,1,.846.1,3.5,3.5,0,0,1-.829,6.91H2.609a.241.241,0,0,1-.234-.143A.269.269,0,0,1,2.4,24.065Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M4.652,4.659A1.168,1.168,0,0,0,3.484,5.827V6.994H2.317a1.168,1.168,0,1,0,0,2.335H3.484V10.5a1.168,1.168,0,0,0,2.336,0V9.329H6.987a1.168,1.168,0,1,0,0-2.335H5.82V5.827A1.168,1.168,0,0,0,4.652,4.659Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M28.005,19.838a1.168,1.168,0,0,0-1.168-1.168H24.5V16.335a1.168,1.168,0,0,0-2.336,0V18.67H19.831a1.168,1.168,0,0,0,0,2.336h2.335v2.335a1.168,1.168,0,0,0,2.336,0V21.006h2.335A1.168,1.168,0,0,0,28.005,19.838Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <circle
-			                                cx="12.225"
-			                                cy="1.751"
-			                                r="1.751"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Military</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 28"
-			                            >
-			                              <title>Animals</title>
-			                              <circle
-			                                cx="9.333"
-			                                cy="5.833"
-			                                r="1.167"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                              <path
-			                                d="M26.838,8.186H15.171V5.853a5.833,5.833,0,1,0-11.666,0H1.171a1.167,1.167,0,0,0,0,2.333H3.505v1.75a12.248,12.248,0,0,0,8.166,11.535v5.382a1.167,1.167,0,0,0,2.334,0V22.046a12.35,12.35,0,0,0,1.75.14,12.373,12.373,0,0,0,1.75-.14v4.807a1.167,1.167,0,0,0,2.333,0V21.471A12.249,12.249,0,0,0,28.005,9.936V9.353A1.167,1.167,0,0,0,26.838,8.186ZM15.755,19.853A9.917,9.917,0,0,1,5.838,9.936V5.853a3.5,3.5,0,0,1,7,0v3.5a1.166,1.166,0,0,0,1.167,1.166H25.654A9.918,9.918,0,0,1,15.755,19.853Z"
-			                                transform="translate(-0.005 -0.019)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Animals</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 25.688"
-			                            >
-			                              <title>Designs</title>
-			                              <path
-			                                d="M.565,22.623a2.6,2.6,0,0,0-.292,2.761,2.57,2.57,0,0,0,2.336,1.46H6.987a5.839,5.839,0,0,0,5.825-5.852q0-.3-.033-.608L25.4,8.816a4.414,4.414,0,1,0-6.025-6.452c-.074.069-.147.142-.216.217L7.6,15.206a5.838,5.838,0,0,0-6.448,5.8A2.541,2.541,0,0,1,.565,22.623ZM20.882,4.16a2.081,2.081,0,0,1,3.062,2.82c-.038.041-.078.081-.12.119L11.964,17.964a5.766,5.766,0,0,0-1.944-1.947ZM2.4,24.065a4.849,4.849,0,0,0,1.088-3.059,3.486,3.486,0,0,1,1.323-2.741A3.451,3.451,0,0,1,6.97,17.5a3.878,3.878,0,0,1,.846.1,3.5,3.5,0,0,1-.829,6.91H2.609a.241.241,0,0,1-.234-.143A.269.269,0,0,1,2.4,24.065Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M4.652,4.659A1.168,1.168,0,0,0,3.484,5.827V6.994H2.317a1.168,1.168,0,1,0,0,2.335H3.484V10.5a1.168,1.168,0,0,0,2.336,0V9.329H6.987a1.168,1.168,0,1,0,0-2.335H5.82V5.827A1.168,1.168,0,0,0,4.652,4.659Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M28.005,19.838a1.168,1.168,0,0,0-1.168-1.168H24.5V16.335a1.168,1.168,0,0,0-2.336,0V18.67H19.831a1.168,1.168,0,0,0,0,2.336h2.335v2.335a1.168,1.168,0,0,0,2.336,0V21.006h2.335A1.168,1.168,0,0,0,28.005,19.838Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <circle
-			                                cx="12.225"
-			                                cy="1.751"
-			                                r="1.751"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Military</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 28"
-			                            >
-			                              <title>Animals</title>
-			                              <circle
-			                                cx="9.333"
-			                                cy="5.833"
-			                                r="1.167"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                              <path
-			                                d="M26.838,8.186H15.171V5.853a5.833,5.833,0,1,0-11.666,0H1.171a1.167,1.167,0,0,0,0,2.333H3.505v1.75a12.248,12.248,0,0,0,8.166,11.535v5.382a1.167,1.167,0,0,0,2.334,0V22.046a12.35,12.35,0,0,0,1.75.14,12.373,12.373,0,0,0,1.75-.14v4.807a1.167,1.167,0,0,0,2.333,0V21.471A12.249,12.249,0,0,0,28.005,9.936V9.353A1.167,1.167,0,0,0,26.838,8.186ZM15.755,19.853A9.917,9.917,0,0,1,5.838,9.936V5.853a3.5,3.5,0,0,1,7,0v3.5a1.166,1.166,0,0,0,1.167,1.166H25.654A9.918,9.918,0,0,1,15.755,19.853Z"
-			                                transform="translate(-0.005 -0.019)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Animals</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 25.688"
-			                            >
-			                              <title>Designs</title>
-			                              <path
-			                                d="M.565,22.623a2.6,2.6,0,0,0-.292,2.761,2.57,2.57,0,0,0,2.336,1.46H6.987a5.839,5.839,0,0,0,5.825-5.852q0-.3-.033-.608L25.4,8.816a4.414,4.414,0,1,0-6.025-6.452c-.074.069-.147.142-.216.217L7.6,15.206a5.838,5.838,0,0,0-6.448,5.8A2.541,2.541,0,0,1,.565,22.623ZM20.882,4.16a2.081,2.081,0,0,1,3.062,2.82c-.038.041-.078.081-.12.119L11.964,17.964a5.766,5.766,0,0,0-1.944-1.947ZM2.4,24.065a4.849,4.849,0,0,0,1.088-3.059,3.486,3.486,0,0,1,1.323-2.741A3.451,3.451,0,0,1,6.97,17.5a3.878,3.878,0,0,1,.846.1,3.5,3.5,0,0,1-.829,6.91H2.609a.241.241,0,0,1-.234-.143A.269.269,0,0,1,2.4,24.065Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M4.652,4.659A1.168,1.168,0,0,0,3.484,5.827V6.994H2.317a1.168,1.168,0,1,0,0,2.335H3.484V10.5a1.168,1.168,0,0,0,2.336,0V9.329H6.987a1.168,1.168,0,1,0,0-2.335H5.82V5.827A1.168,1.168,0,0,0,4.652,4.659Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M28.005,19.838a1.168,1.168,0,0,0-1.168-1.168H24.5V16.335a1.168,1.168,0,0,0-2.336,0V18.67H19.831a1.168,1.168,0,0,0,0,2.336h2.335v2.335a1.168,1.168,0,0,0,2.336,0V21.006h2.335A1.168,1.168,0,0,0,28.005,19.838Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <circle
-			                                cx="12.225"
-			                                cy="1.751"
-			                                r="1.751"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Military</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 28"
-			                            >
-			                              <title>Animals</title>
-			                              <circle
-			                                cx="9.333"
-			                                cy="5.833"
-			                                r="1.167"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                              <path
-			                                d="M26.838,8.186H15.171V5.853a5.833,5.833,0,1,0-11.666,0H1.171a1.167,1.167,0,0,0,0,2.333H3.505v1.75a12.248,12.248,0,0,0,8.166,11.535v5.382a1.167,1.167,0,0,0,2.334,0V22.046a12.35,12.35,0,0,0,1.75.14,12.373,12.373,0,0,0,1.75-.14v4.807a1.167,1.167,0,0,0,2.333,0V21.471A12.249,12.249,0,0,0,28.005,9.936V9.353A1.167,1.167,0,0,0,26.838,8.186ZM15.755,19.853A9.917,9.917,0,0,1,5.838,9.936V5.853a3.5,3.5,0,0,1,7,0v3.5a1.166,1.166,0,0,0,1.167,1.166H25.654A9.918,9.918,0,0,1,15.755,19.853Z"
-			                                transform="translate(-0.005 -0.019)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Animals</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 25.688"
-			                            >
-			                              <title>Designs</title>
-			                              <path
-			                                d="M.565,22.623a2.6,2.6,0,0,0-.292,2.761,2.57,2.57,0,0,0,2.336,1.46H6.987a5.839,5.839,0,0,0,5.825-5.852q0-.3-.033-.608L25.4,8.816a4.414,4.414,0,1,0-6.025-6.452c-.074.069-.147.142-.216.217L7.6,15.206a5.838,5.838,0,0,0-6.448,5.8A2.541,2.541,0,0,1,.565,22.623ZM20.882,4.16a2.081,2.081,0,0,1,3.062,2.82c-.038.041-.078.081-.12.119L11.964,17.964a5.766,5.766,0,0,0-1.944-1.947ZM2.4,24.065a4.849,4.849,0,0,0,1.088-3.059,3.486,3.486,0,0,1,1.323-2.741A3.451,3.451,0,0,1,6.97,17.5a3.878,3.878,0,0,1,.846.1,3.5,3.5,0,0,1-.829,6.91H2.609a.241.241,0,0,1-.234-.143A.269.269,0,0,1,2.4,24.065Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M4.652,4.659A1.168,1.168,0,0,0,3.484,5.827V6.994H2.317a1.168,1.168,0,1,0,0,2.335H3.484V10.5a1.168,1.168,0,0,0,2.336,0V9.329H6.987a1.168,1.168,0,1,0,0-2.335H5.82V5.827A1.168,1.168,0,0,0,4.652,4.659Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M28.005,19.838a1.168,1.168,0,0,0-1.168-1.168H24.5V16.335a1.168,1.168,0,0,0-2.336,0V18.67H19.831a1.168,1.168,0,0,0,0,2.336h2.335v2.335a1.168,1.168,0,0,0,2.336,0V21.006h2.335A1.168,1.168,0,0,0,28.005,19.838Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <circle
-			                                cx="12.225"
-			                                cy="1.751"
-			                                r="1.751"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Military</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 28"
-			                            >
-			                              <title>Animals</title>
-			                              <circle
-			                                cx="9.333"
-			                                cy="5.833"
-			                                r="1.167"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                              <path
-			                                d="M26.838,8.186H15.171V5.853a5.833,5.833,0,1,0-11.666,0H1.171a1.167,1.167,0,0,0,0,2.333H3.505v1.75a12.248,12.248,0,0,0,8.166,11.535v5.382a1.167,1.167,0,0,0,2.334,0V22.046a12.35,12.35,0,0,0,1.75.14,12.373,12.373,0,0,0,1.75-.14v4.807a1.167,1.167,0,0,0,2.333,0V21.471A12.249,12.249,0,0,0,28.005,9.936V9.353A1.167,1.167,0,0,0,26.838,8.186ZM15.755,19.853A9.917,9.917,0,0,1,5.838,9.936V5.853a3.5,3.5,0,0,1,7,0v3.5a1.166,1.166,0,0,0,1.167,1.166H25.654A9.918,9.918,0,0,1,15.755,19.853Z"
-			                                transform="translate(-0.005 -0.019)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Animals</span>
-			                          </div>
-			                        </div>
-			                        <div class="col-6 mb-2 pe-2">
-			                          <div
-			                            class="addClipart-column d-flex justify-content-center align-items-center p-2"
-			                          >
-			                            <svg
-			                              xmlns="http://www.w3.org/2000/svg"
-			                              viewBox="0 0 28 25.688"
-			                            >
-			                              <title>Designs</title>
-			                              <path
-			                                d="M.565,22.623a2.6,2.6,0,0,0-.292,2.761,2.57,2.57,0,0,0,2.336,1.46H6.987a5.839,5.839,0,0,0,5.825-5.852q0-.3-.033-.608L25.4,8.816a4.414,4.414,0,1,0-6.025-6.452c-.074.069-.147.142-.216.217L7.6,15.206a5.838,5.838,0,0,0-6.448,5.8A2.541,2.541,0,0,1,.565,22.623ZM20.882,4.16a2.081,2.081,0,0,1,3.062,2.82c-.038.041-.078.081-.12.119L11.964,17.964a5.766,5.766,0,0,0-1.944-1.947ZM2.4,24.065a4.849,4.849,0,0,0,1.088-3.059,3.486,3.486,0,0,1,1.323-2.741A3.451,3.451,0,0,1,6.97,17.5a3.878,3.878,0,0,1,.846.1,3.5,3.5,0,0,1-.829,6.91H2.609a.241.241,0,0,1-.234-.143A.269.269,0,0,1,2.4,24.065Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M4.652,4.659A1.168,1.168,0,0,0,3.484,5.827V6.994H2.317a1.168,1.168,0,1,0,0,2.335H3.484V10.5a1.168,1.168,0,0,0,2.336,0V9.329H6.987a1.168,1.168,0,1,0,0-2.335H5.82V5.827A1.168,1.168,0,0,0,4.652,4.659Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <path
-			                                d="M28.005,19.838a1.168,1.168,0,0,0-1.168-1.168H24.5V16.335a1.168,1.168,0,0,0-2.336,0V18.67H19.831a1.168,1.168,0,0,0,0,2.336h2.335v2.335a1.168,1.168,0,0,0,2.336,0V21.006h2.335A1.168,1.168,0,0,0,28.005,19.838Z"
-			                                transform="translate(-0.005 -1.156)"
-			                                fill="#27a6ff"
-			                              ></path>
-			                              <circle
-			                                cx="12.225"
-			                                cy="1.751"
-			                                r="1.751"
-			                                fill="#27a6ff"
-			                              ></circle>
-			                            </svg>
-			                            <span class="ms-3 tiny-text">Military</span>
-			                          </div>
+			                      </div>
+
+			                      <div
+			                        class="row border-top mt-3 pt-3 mx-0"
+			                        id="galleryAnimal"
+			                      >
+			                        <div class="galleryImg">
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/crocodile-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/owl-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/wolf-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
+			                          <img
+			                            src="/wt_office_hunddle/static/src/design-screen/images/shark-pngrepo-com.png"
+			                            class="image-polaroid"
+			                            alt=""
+			                          />
 			                        </div>
 			                      </div>
 			                    </div>
@@ -1008,14 +867,14 @@
 			                    aria-labelledby="nav-namesNumbers-tab"
 			                  >
 			                    <div class="main-wrapper">
-			                      <span class="tiny-text font-weight-bold color-blue">
+			                      <span class="tiny-text fw-bold color-blue">
 			                        NAMES &amp; NUMBERS
 			                      </span>
 			                      <div
 			                        class="d-flex justify-content-between mb-3 align-items-center"
 			                      >
-			                        <h3 class="h4 font-weight-bold">Add Names &amp; Numbers</h3>
-			                        <i class="bx bx-x display-6 cursor-pointer"></i>
+			                        <h3 class="h4 fw-bold">Add Names &amp; Numbers</h3>
+			                        <i class="bx bx-x display-6 fa fa-times"></i>
 			                      </div>
 			                      <p class="tiny-text">
 			                        Use personalized Names &amp; Numbers for projects like team
@@ -1178,7 +1037,7 @@
 			                      <div class="modal-content">
 			                        <div class="modal-header border-bottom pb-2">
 			                          <span
-			                            class="modal-title font-weight-bold color-blue"
+			                            class="modal-title fw-bold color-blue"
 			                            id="staticBackdropLabel"
 			                            >More Print Areas</span
 			                          >
@@ -1194,7 +1053,7 @@
 			                            <div class="bg-danger col-8 mx-auto">
 			                              <div class="d-flex">
 			                                <div class="border">
-			                                  <img src="i" alt="" />
+			                                  <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt.png" alt="" />
 			                                </div>
 			                              </div>
 			                            </div>
@@ -1221,19 +1080,19 @@
 			                  class="footer-main d-flex justify-content-end align-items-center pe-4"
 			                >
 			                  <div
-			                    class="footer-small-button d-flex justify-content-center align-items-center px-3 py-2 cursor-pointer"
+			                    class="footer-small-button d-flex justify-content-center align-items-center px-3 py-2 fa fa-times"
 			                  >
 			                    <i class="bx bx-purchase-tag h4 m-0 me-2 color-blue"></i>
-			                    <span class="font-weight-bold">Get Price</span>
+			                    <span class="fw-bold">Get Price</span>
 			                  </div>
 			                  <div
-			                    class="footer-small-button d-flex justify-content-center align-items-center px-3 py-2 ms-4 cursor-pointer"
+			                    class="footer-small-button d-flex justify-content-center align-items-center px-3 py-2 ms-4 fa fa-times"
 			                  >
 			                    <i class="bx bx-cloud-download h4 m-0 me-2 color-blue"></i>
-			                    <span class="font-weight-bold">Save Design</span>
+			                    <span class="fw-bold">Save Design</span>
 			                  </div>
 			                  <div
-			                    class="footer-big-button d-flex justify-content-center align-items-center px-5 py-3 ms-4 cursor-pointer"
+			                    class="footer-big-button d-flex justify-content-center align-items-center px-5 py-3 ms-4 fa fa-times"
 			                  >
 			                    <h4 class="m-0">NEXT STEP</h4>
 			                    <i class="bx bx-right-arrow-alt h3 ps-2 m-0 text-white"></i>
@@ -1268,10 +1127,10 @@
 			              >
 			                <div class="d-flex align-items-center">
 			                  <i class="bx bx-arrow-back h4 m-0"></i>
-			                  <h5 class="h4 ms-3 font-weight-bold">Choose Quantity &amp; Sizes</h5>
+			                  <h5 class="h4 ms-3 fw-bold">Choose Quantity &amp; Sizes</h5>
 			                </div>
 			                <div>
-			                  <i class="bx bx-x h3 cursor-pointer m-0"></i>
+			                  <i class="bx bx-x h3 fa fa-times m-0"></i>
 			                </div>
 			              </div>
 			              <div>
@@ -1286,7 +1145,7 @@
 			                  <i class="bx bx-chevron-down h1"></i>
 			                  <img src="/wt_office_hunddle/static/src/design-screen/images/tiny.jpg " alt=" " class="me-2" />
 			                  <div>
-			                    <h2 class="h6 font-weight-bold">RT2000 RushOrderTees Classic Tee</h2>
+			                    <h2 class="h6 fw-bold">RT2000 RushOrderTees Classic Tee</h2>
 			                    <span> Carolina Blue </span>
 			                  </div>
 			                </div>
@@ -1296,79 +1155,79 @@
 			              </div>
 
 			              <div class="mt-5">
-			                <h2 class="h6 font-weight-bold">Adult Sizes</h2>
+			                <h2 class="h6 fw-bold">Adult Sizes</h2>
 			                <div class="d-flex mt-2">
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >S</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >M</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >L</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >XL</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >2XL</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >3XL</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >4XL</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                </div>
-			                <h2 class="h6 font-weight-bold mt-4">Youth Sizes</h2>
+			                <h2 class="h6 fw-bold mt-4">Youth Sizes</h2>
 			                <div class="d-flex mt-2">
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >YXS</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >YS</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >YM</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >YL</label
 			                    >
 			                    <input type="text " class="form-control" />
 			                  </div>
 			                  <div class="me-1">
-			                    <label class="form-label font-weight-bold text-center h6 d-block"
+			                    <label class="form-label fw-bold text-center h6 d-block"
 			                      >YXL</label
 			                    >
 			                    <input type="text " class="form-control" />
@@ -1388,105 +1247,107 @@
 			          </div>
 			        </div>
 			      </div>
+
 			      <!-- ======================== Third Tab ========================= -->
-				    <div
-				        class="tab-pane fade show"
-				        id="nav-reviewPrice"
-				        role="tabpanel"
-				        aria-labelledby="nav-reviewPrice-tab"
-				      >
-				        <div class="container-fluid p- m-0">
-				          <div class="row">
-				            <div class="col-lg-8 d-lg-block d-none">
-				              <div class="quantity-img-container d-flex justify-content-center">
-				                <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt.png " alt="t-shirt " />
-				              </div>
-				            </div>
-				            <div class="col-lg-4 px-5 mt-4">
-				              <span class="color-blue tiny-text">REVIEW YOUR ORDER</span>
-				              <div
-				                class="d-flex justify-content-between align-items-center mt-3"
-				              >
-				                <div class="d-flex align-items-center">
-				                  <i class="bx bx-arrow-back h4 m-0"></i>
-				                  <h5 class="h4 ms-3 font-weight-bold">Your Products &amp; Pricing</h5>
-				                </div>
-				                <div>
-				                  <i class="bx bx-x h3 cursor-pointer m-0"></i>
-				                </div>
-				              </div>
-				              <div>
-				                <p class="tiny-text light-text">
-				                  Your order includes a professional design review, a
-				                  satisfaction guarantee, and guaranteed on-time delivery
-				                </p>
-				              </div>
 
-				              <div class="border-top border-bottom py-4">
-				                <div class="d-flex align-items-center">
-				                  <div>
-				                    <img
-				                      src="/wt_office_hunddle/static/src/design-screen/images/truck.png"
-				                      width="25"
-				                      height="25"
-				                      alt="truck"
-				                    />
-				                  </div>
-				                  <span class="ms-3">
-				                    <b> Free </b> Delivery on May 6 or <b> Rush</b> Delivery on
-				                    April 27
-				                  </span>
-				                </div>
+			      <div
+			        class="tab-pane fade show"
+			        id="nav-reviewPrice"
+			        role="tabpanel"
+			        aria-labelledby="nav-reviewPrice-tab"
+			      >
+			        <div class="container-fluid p- m-0">
+			          <div class="row">
+			            <div class="col-lg-8 d-lg-block d-none">
+			              <div class="quantity-img-container d-flex justify-content-center">
+			                <img src="/wt_office_hunddle/static/src/design-screen/images/t-shirt.png " alt="t-shirt " />
+			              </div>
+			            </div>
+			            <div class="col-lg-4 px-5 mt-4">
+			              <span class="color-blue tiny-text">REVIEW YOUR ORDER</span>
+			              <div
+			                class="d-flex justify-content-between align-items-center mt-3"
+			              >
+			                <div class="d-flex align-items-center">
+			                  <i class="bx bx-arrow-back h4 m-0"></i>
+			                  <h5 class="h4 ms-3 fw-bold">Your Products &amp; Pricing</h5>
+			                </div>
+			                <div>
+			                  <i class="bx bx-x h3 fa fa-times m-0"></i>
+			                </div>
+			              </div>
+			              <div>
+			                <p class="tiny-text light-text">
+			                  Your order includes a professional design review, a
+			                  satisfaction guarantee, and guaranteed on-time delivery
+			                </p>
+			              </div>
 
-				                <div
-				                  class="d-flex justify-content-between align-items-center mt-4"
-				                >
-				                  <div class="d-flex align-items-center product-description">
-				                    <img src="/wt_office_hunddle/static/src/design-screen/images/tiny.jpg" alt=" " class="me-2" />
-				                    <div>
-				                      <h2 class="h6 font-weight-bold">
-				                        RT2000 RushOrderTees Classic Tee
-				                      </h2>
-				                      <span> Carolina Blue </span>
-				                    </div>
-				                  </div>
-				                  <div>
-				                    <span class="h6">100 Items</span>
-				                  </div>
-				                </div>
-				              </div>
+			              <div class="border-top border-bottom py-4">
+			                <div class="d-flex align-items-center">
+			                  <div>
+			                    <img
+			                      src="/wt_office_hunddle/static/src/design-screen/images/truck.png"
+			                      width="25"
+			                      height="25"
+			                      alt="truck"
+			                    />
+			                  </div>
+			                  <span class="ms-3">
+			                    <b> Free </b> Delivery on May 6 or <b> Rush</b> Delivery on
+			                    April 27
+			                  </span>
+			                </div>
 
-				              <div>
-				                <div class="bg-green px-2 py-3">
-				                  <div class="d-flex align-items-center">
-				                    <img src="/wt_office_hunddle/static/src/design-screen/images/piggybank.png" alt="" />
-				                    <span class="font-weight-bold ms-2">Buy More Save More!</span>
-				                  </div>
-				                  <div
-				                    class="d-flex mt-2 justify-content-between align-items-center"
-				                  >
-				                    <span> Buy <b> 27 More</b> items and save $0.18 each</span>
-				                    <span> <b>$05.05</b> each </span>
-				                  </div>
-				                  <div
-				                    class="d-flex justify-content-between align-items-center"
-				                  >
-				                    <span> Buy <b> 27 More</b> items and save $0.18 each</span>
-				                    <span> <b>$05.05</b> each </span>
-				                  </div>
-				                </div>
-				                <div class="bg-green mt-2 px-2 py-3">
-				                  <span
-				                    >You cannot purchase blank products in our studio.
-				                    <a href="#" class="text-decoration-none"> Click Here </a> to
-				                    add a design to your product</span
-				                  >
-				                </div>
-				              </div>
-				            </div>
-				          </div>
-				        </div>
-				      </div>
+			                <div
+			                  class="d-flex justify-content-between align-items-center mt-4"
+			                >
+			                  <div class="d-flex align-items-center product-description">
+			                    <img src="/wt_office_hunddle/static/src/design-screen/images/tiny.jpg" alt=" " class="me-2" />
+			                    <div>
+			                      <h2 class="h6 fw-bold">
+			                        RT2000 RushOrderTees Classic Tee
+			                      </h2>
+			                      <span> Carolina Blue </span>
+			                    </div>
+			                  </div>
+			                  <div>
+			                    <span class="h6">100 Items</span>
+			                  </div>
+			                </div>
+			              </div>
+
+			              <div>
+			                <div class="bg-green px-2 py-3">
+			                  <div class="d-flex align-items-center">
+			                    <img src="/wt_office_hunddle/static/src/design-screen/images//piggybank.png" alt="" />
+			                    <span class="fw-bold ms-2">Buy More Save More!</span>
+			                  </div>
+			                  <div
+			                    class="d-flex mt-2 justify-content-between align-items-center"
+			                  >
+			                    <span> Buy <b> 27 More</b> items and save $0.18 each</span>
+			                    <span> <b>$05.05</b> each </span>
+			                  </div>
+			                  <div
+			                    class="d-flex justify-content-between align-items-center"
+			                  >
+			                    <span> Buy <b> 27 More</b> items and save $0.18 each</span>
+			                    <span> <b>$05.05</b> each </span>
+			                  </div>
+			                </div>
+			                <div class="bg-green mt-2 px-2 py-3">
+			                  <span
+			                    >You cannot purchase blank products in our studio.
+			                    <a href="#" class="text-decoration-none"> Click Here </a> to
+			                    add a design to your product</span
+			                  >
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
 				    </div>
 
 				    <div
@@ -1571,111 +1432,13 @@
 				          <div class="modal-body">
 				            <div class="row">
 				              <ul class="color-tabs">
-				                <li
-				                  class="color-preview"
-				                  title="White"
-				                  style="background-color: #ffffff"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Dark Heather"
-				                  style="background-color: #616161"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Gray"
-				                  style="background-color: #f0f0f0"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Charcoal"
-				                  style="background-color: #5b5b5b"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Black"
-				                  style="background-color: #222222"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Heather Orange"
-				                  style="background-color: #fc8d74"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Heather Dark Chocolate"
-				                  style="background-color: #432d26"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Salmon"
-				                  style="background-color: #eead91"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Chesnut"
-				                  style="background-color: #806355"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Dark Chocolate"
-				                  style="background-color: #382d21"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Citrus Yellow"
-				                  style="background-color: #faef93"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Avocado"
-				                  style="background-color: #aeba5e"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Kiwi"
-				                  style="background-color: #8aa140"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Irish Green"
-				                  style="background-color: #1f6522"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Scrub Green"
-				                  style="background-color: #13afa2"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Teal Ice"
-				                  style="background-color: #b8d5d7"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Heather Sapphire"
-				                  style="background-color: #15aeda"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Sky"
-				                  style="background-color: #a5def8"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Antique Sapphire"
-				                  style="background-color: #0f77c0"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Heather Navy"
-				                  style="background-color: #3469b7"
-				                ></li>
-				                <li
-				                  class="color-preview"
-				                  title="Cherry Red"
-				                  style="background-color: #c50404"
-				                ></li>
+				              	<t t-foreach="product.valid_product_template_attribute_line_ids" t-as="ptal">
+				              		<!-- <h1>1 : <t t-esc="ptal.product_template_value_ids._only_active()"/></h1> -->
+				              		<t t-if="ptal.attribute_id.display_type == 'color'">
+				              			<li t-foreach="ptal.product_template_value_ids._only_active()" t-as="ptav" class="list-inline-item color-preview" t-attf-style="background-color:#{ptav.html_color or ffffff}">
+                                		</li>
+							        </t>
+							    </t>
 				              </ul>
 				            </div>
 				          </div>
@@ -1705,10 +1468,9 @@
 			      fabric.Object.prototype.transparentCorners = false;
 			      fabric.Object.prototype.cornerColor = "blue";
 			      fabric.Object.prototype.cornerStyle = "circle";
-
+			      //Add Text
 			      function AddText(texter) {
 			        var status = $("#imageBack").hasClass("active");
-			        console.log("---------- called -------- ")
 			        var rect = new fabric.Text(texter, {
 			          left: 50,
 			          top: 50,
@@ -1724,13 +1486,14 @@
 			          bcanvas.add(rect);
 			          bcanvas.item(canvas.item.length - 1).hasRotatingPoint = true;
 			          bcanvas.requestRenderAll();
-			           bcanvas.setActiveObject(rect);
+			          bcanvas.setActiveObject(rect);
 			        } else {
 			          canvas.add(rect);
 			          canvas.item(canvas.item.length - 1).hasRotatingPoint = true;
 			          canvas.requestRenderAll();
-			           canvas.setActiveObject(rect);
+			          canvas.setActiveObject(rect);
 			        }
+			        $("#text-string").val("");
 			      }
 
 			      fabric.Object.prototype.controls.deleteControl = new fabric.Control({
@@ -1758,34 +1521,44 @@
 			        ctx.drawImage(img, -size / 2, -size / 2, size, size);
 			        ctx.restore();
 			      }
-
+			      //add Text-Box
 			      $("#add-textBox").on("click", function () {
 			        var text = $("#text-string").val();
-			        console.log("------------- add p-tte ----")
 			        if (text == "") {
 			        } else {
 			          AddText(text);
-			          
 			          $("#font-editor").css({ display: "block" });
+			          $("#changeTextBox").show();
 			        }
 			      });
-			      $("#text-string").keyup(function(){
+			      $("#changeTextBox").click(function(){
 			        var status = $("#imageBack").hasClass("active");
-					if (status == true) {
-					  var activeObject = bcanvas.getActiveObject();
-							      if (activeObject &amp;&amp; activeObject.type === 'text') {
-							    	  activeObject.text = this.value;
-							    	  bcanvas.renderAll();
-							      }
-					}else{
-					  var activeObject = canvas.getActiveObject();
-							      if (activeObject &amp;&amp; activeObject.type === 'text') {
-							    	  activeObject.text = this.value;
-							    	  canvas.renderAll();
-							      }
-					}
+			        if (status == true) {
+			          var activeObject = bcanvas.getActiveObject();
+			          $("#text-string").val(activeObject.text)
+			        }else{
+			          var activeObject = canvas.getActiveObject();
+			          $("#text-string").val(activeObject.text)
+			        }
+			      })
+			      $("#text-string").keyup(function () {
+			        var status = $("#imageBack").hasClass("active");
+			        if (status == true) {
+			          var activeObject = bcanvas.getActiveObject();
+			          if (activeObject &amp;&amp; activeObject.type === "text") {
+			            activeObject.text = this.value;
+			            bcanvas.renderAll();
+			          }
+			        } else {
+			          var activeObject = canvas.getActiveObject();
+			          
+			          if (activeObject &amp;&amp; activeObject.type === "text") {
+			            activeObject.text = this.value;
+			            canvas.renderAll();
+			          }
+			        }
 			      });
-
+			      //Bold Text
 			      $("#bold").click(function () {
 			        var status = $("#imageBack").hasClass("active");
 
@@ -1812,6 +1585,8 @@
 			          canvas.renderAll();
 			        }
 			      });
+
+			      //Font-Size
 			      $("#FontRange").on("change", function () {
 			        var size = $(this).val();
 			        var status = $("#imageBack").hasClass("active");
@@ -1834,6 +1609,7 @@
 			          }
 			        }
 			      });
+			      //Font-Italic
 			      $("#italic").click(function () {
 			        var status = $("#imageBack").hasClass("active");
 
@@ -1856,7 +1632,7 @@
 			          }
 			        }
 			      });
-
+			      //Text Color Change
 			      $("#TextColor").on("change", function () {
 			        var status = $("#imageBack").hasClass("active");
 			        var color = $(this).val();
@@ -1876,7 +1652,7 @@
 			          }
 			        }
 			      });
-
+			      //Font-Family
 			      function setFont(fontDaata) {
 			        var status = $("#imageBack").hasClass("active");
 			        if (status == true) {
@@ -1893,7 +1669,7 @@
 			          }
 			        }
 			      }
-
+			      //Text Outlined Color
 			      $("#BorderColor").on("change", function () {
 			        var status = $("#imageBack").hasClass("active");
 			        var color = $(this).val();
@@ -1913,11 +1689,11 @@
 			          }
 			        }
 			      });
-
+			      //T-shirt Color Change
 			      function colorList() {
 			        $(".colorTab").modal("show");
 			      }
-
+			      //ColorPreview Selector
 			      $(".color-preview").hover(function () {
 			        var color = $(this).css("background-color");
 
@@ -1929,14 +1705,15 @@
 			        });
 			        $(".borderColor").css({ borderColor: color });
 			      });
+			      //Color Preview Modal Hide
 			      $(".color-preview").click(function () {
 			        $(".colorTab").modal("hide");
 			      });
-
+			      //image Modal
 			      $("#imageList").on("click", function () {
 			        $(".modalImageList").modal("show");
 			      });
-
+			      //Add Image On Canvas
 			      $(".image-polaroid").click(function (e) {
 			        var status = $("#imageBack").hasClass("active");
 			        var el = e.target;
@@ -1970,9 +1747,8 @@
 			        $(".modalImageList").modal("hide");
 			        /*temp code*/
 			      });
-
+			      // Undo
 			      $(".undo").click(function () {
-			        console.log("---------- called s -------- ")
 			        var status = $("#imageBack").hasClass("active");
 			        if (status == true) {
 			          bcanvas.undo();
@@ -1980,9 +1756,8 @@
 			          canvas.undo();
 			        }
 			      });
-
+			      //Redo
 			      $(".redo").click(function () {
-			        console.log("---------- called d-------- ")
 			        var status = $("#imageBack").hasClass("active");
 			        if (status == true) {
 			          bcanvas.redo();
@@ -1990,31 +1765,40 @@
 			          canvas.redo();
 			        }
 			      });
-
+			      //fornt
 			      $(".Front").click(function () {
 			        var active = bcanvas.getActiveObject();
 			        bcanvas.remove(active);
 			        canvas.add(active);
 			      });
-
+			      //Back
 			      $(".Back").click(function () {
 			        var active = canvas.getActiveObject();
 			        canvas.remove(active);
 			        bcanvas.add(active);
 			      });
+			      //Cancel Button addtext
 			      $(".moveBaxk").click(function () {
 			        $("#nav-products-tab").addClass("active");
 			        $("#nav-addText-tab").removeClass("active");
 			        $("#addText").removeClass("active show");
 			        $("#products").addClass("active show");
 			      });
+			      //Cancel Button Upload Image
 			      $(".moveupBaxk").click(function () {
 			        $("#nav-products-tab").addClass("active");
 			        $("#nav-uploadArt-tab").removeClass("active");
 			        $("#uploadArt").removeClass("active show");
 			        $("#products").addClass("active show");
 			      });
-
+			      //Cancel Button Clip Art
+			      $(".CloseArt").click(function () {
+			        $("#nav-products-tab").addClass("active");
+			        $("#nav-addClipkart-tab").removeClass("active");
+			        $("#addClipKart").removeClass("active show");
+			        $("#products").addClass("active show");
+			      });
+			      //Upload Brand image
 			      $("#uploadImg").on("change", function (e) {
 			        var status = $("#imageBack").hasClass("active");
 			        var str = URL.createObjectURL(e.target.files[0]);
@@ -2045,6 +1829,30 @@
 			            canvas.setActiveObject(image);
 			          });
 			        }
+			      });
+
+			      $("#FlagsGallery").on("click", function () {
+			        $("#tabIcon").hide();
+			        $("#galleryFlags").show();
+			      });
+			      $("#DesignGallery").on("click", function () {
+			        $("#tabIcon").hide();
+			        $("#galleryDesign").show();
+			      });
+			      $("#FoodGallery").on("click", function () {
+			        $("#tabIcon").hide();
+			        $("#galleryFood").show();
+			      });
+			      $("#AnimalGallery").on("click", function () {
+			        $("#tabIcon").hide();
+			        $("#galleryAnimal").show();
+			      });
+			      $("#ReloadTab").click(function () {
+			        $("#tabIcon").show();
+			        $("#galleryFlags").hide();
+			        $("#galleryDesign").hide();
+			        $("#galleryFood").hide();
+			        $("#galleryAnimal").hide();
 			      });
 		    
 		    </script>

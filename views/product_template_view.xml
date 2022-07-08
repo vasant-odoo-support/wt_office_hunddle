@@ -38,5 +38,26 @@
         </field>
 
     </record>
+
+    <record model="ir.ui.view" id="product_normal_form_view_inherits">
+        <field name="name">product.product.inherits</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="custom_page" string="Custom Page">
+                    <group name="images" string="Front-Back Images">
+                        <group>
+                            <field name="front_image" widget="image" width="50" height="50"/>
+                        </group>
+                        <group>
+                            <field name="back_image" widget="image" width="50" height="50"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+
+    </record>
     
 </odoo>

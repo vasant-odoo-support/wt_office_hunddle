@@ -22,7 +22,6 @@ class ProductTemplate(models.Model):
     is_merchandise_product = fields.Boolean("Is Merchandise?")
     product_qty_ids = fields.One2many('product.quantity', 'product_tmpl_id')
 
-
     def _get_combination_info(self, combination=False, product_id=False, add_qty=1, pricelist=False, parent_combination=False, only_template=False):
         """Override for website, where we want to:
             - take the website pricelist if no pricelist is set
@@ -75,3 +74,10 @@ class ProductTemplate(models.Model):
                     price=(price * add_qty)
                 )
         return combination_info
+
+
+class ProductProduct(models.Model):
+    _inherit = "product.product"
+
+    front_image = fields.Binary()
+    back_image = fields.Binary()
