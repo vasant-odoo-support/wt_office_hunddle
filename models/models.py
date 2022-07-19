@@ -303,3 +303,42 @@ class website(models.Model):
     def _compute_six_embed_code(self):
         for rec in self:
             rec.embed_six_code = rec.get_video_embed_url_code(rec.video_six) or rec.video_six
+
+
+class ResUsers(models.Model):
+    _inherit = 'res.users'
+
+    user_design_ids = fields.One2many('user.design', 'user_id')
+
+    @api.model
+    def check_work(self):
+        print("========= it calles ====== ", self, self._context)
+        if 'front-image' in self._context and self._context['front-image']:
+            exist = self.env['user.design'].search([('name', '=', 'Front Design'), ('user_id', '=', self.env.user.id)])
+            if exist:
+                exist.unlink()
+            vals = {
+                'name': "Front Design",
+                'save_design': self._context['front-image'],
+                'user_id': self.env.user.id
+            }
+            self.env['user.design'].create(vals)
+        if 'back-image' in self._context and self._context['back-image']:
+            exist = self.env['user.design'].search([('name', '=', 'Back Design'), ('user_id', '=', self.env.user.id)])
+            if exist:
+                exist.unlink()
+            vals = {
+                'name': "Back Design",
+                'save_design': self._context['back-image'],
+                'user_id': self.env.user.id
+            }
+            self.env['user.design'].create(vals)
+        return {'res': True}
+
+
+class UserDesigns(models.Model):
+    _name = "user.design"
+
+    save_design = fields.Binary("Design")
+    name = fields.Char("Name")
+    user_id = fields.Many2one('res.users')

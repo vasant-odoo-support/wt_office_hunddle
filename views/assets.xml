@@ -58,6 +58,7 @@
             <script type="text/javascript" src="/wt_office_hunddle/static/src/home/js/home.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/website_development/js/lightbox/lightbox.js"></script>
             <script type="text/javascript" src="/wt_office_hunddle/static/src/js/variant_mixin.js"></script>
+            <script type="text/javascript" src="/wt_office_hunddle/static/src/design-screen/js/design_tools.js"></script>
 
     	</xpath>
     </template>

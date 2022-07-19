@@ -32,7 +32,7 @@
 			              </span>
 			              <h6 class="m-0">DESIGNS</h6>
 			            </div>
-			            <div
+			            <!-- <div
 			              class="nav-link d-flex align-items-center border-0 tab-text-color d-flex align-items-center pb-4"
 			              id="nav-quantity-tab"
 			              onclick=""
@@ -71,7 +71,7 @@
 			                3
 			              </span>
 			              <h6 class="m-0">REVIEW PRICE</h6>
-			            </div>
+			            </div> -->
 			          </div>
 			        </nav>
 			      </div>
@@ -361,46 +361,42 @@
 			                                      style="overflow-y: scroll; height: 150px"
 			                                    >
 			                                    <li>
-			                                      <a
-			                                        tabindex="-1"
-			                                        href="#"
-			                                        onclick="setFont('Dancing Script');"
-			                                        class="dropdown-item"
-			                                        >Dancing Script</a
-			                                      >
-			                                    </li>
-			                                    <li>
-			                                      <a href="#" tabindex="-1" class="dropdown-item" onclick="setFont('Parisienne')">
-			                                        Parisienne
-			                                      </a>
-			                                    </li>
-			                                    <li>
-			                                      <a
-			                                        tabindex="-1"
-			                                        href="#"
-			                                        onclick="setFont('Water Brush');"
-			                                        class="dropdown-item"
-			                                        >Water Brush</a
-			                                      >
-			                                    </li>
-			                                    <li>
-			                                      <a 
-			                                      tabindex="-1"
-			                                      href="#"
-			                                      onclick="setFont('Lobster')"
-			                                      class="dropdown-item"
-			                                      >
-			                                        Lobster
-			                                      </a>
-			                                    </li>
+			                                        <a
+			                                          tabindex="-1"
+			                                          href="#"
+			                                          onclick="setFont('Dancing Script');"
+			                                          class="dropdown-item"
+			                                          >Dancing Script</a
+			                                        >
+			                                      </li>
+			                                      <li>
+			                                        <a
+			                                          href="#"
+			                                          tabindex="-1"
+			                                          class="dropdown-item"
+			                                          onclick="setFont('Parisienne')"
+			                                        >
+			                                          Parisienne
+			                                        </a>
+			                                      </li>
 			                                      <li>
 			                                        <a
 			                                          tabindex="-1"
 			                                          href="#"
-			                                          onclick="setFont('Arial');"
+			                                          onclick="setFont('Water Brush');"
 			                                          class="dropdown-item"
-			                                          >Arial</a
+			                                          >Water Brush</a
 			                                        >
+			                                      </li>
+			                                      <li>
+			                                        <a
+			                                          tabindex="-1"
+			                                          href="#"
+			                                          onclick="setFont('Lobster')"
+			                                          class="dropdown-item"
+			                                        >
+			                                          Lobster
+			                                        </a>
 			                                      </li>
 			                                      <li>
 			                                        <a
@@ -688,7 +684,11 @@
 			                          class="bx bx-x display-6 fa fa-times cursor-pointer CloseArt"
 			                        ></i>
 			                      </div>
-			                      <p class="tiny-text">Choose Image From List Below:<a href="#" id="ReloadTab">Back</a></p>
+			                      <p class="tiny-text">
+			                        Choose Image From List Below:<a href="#" id="ReloadTab"
+			                          >Back</a
+			                        >
+			                      </p>
 			                      
 
 			                      <div class="row border-top mt-3 pt-3 mx-0" id="tabIcon">
@@ -921,7 +921,7 @@
 			                      >
 			                    </div>
 
-			                    <div
+			                    <div id="DesignImgFront"
 			                      class="quantity-img-container h-100 d-flex justify-content-center position-relative"
 			                    >
 			                      <img
@@ -952,7 +952,7 @@
 			                        ><i class="bx bx-redo"></i>REDO</span
 			                      >
 			                    </div>
-			                    <div
+			                    <div id="DesignImgBack"
 			                      class="quantity-img-container h-100 d-flex justify-content-center position-relative"
 			                    >
 			                      <img
@@ -1079,27 +1079,72 @@
 			                <div
 			                  class="footer-main d-flex justify-content-end align-items-center pe-4"
 			                >
-			                  <div
+			                  <!-- <div
 			                    class="footer-small-button d-flex justify-content-center align-items-center px-3 py-2 fa fa-times"
 			                  >
 			                    <i class="bx bx-purchase-tag h4 m-0 me-2 color-blue"></i>
 			                    <span class="fw-bold">Get Price</span>
-			                  </div>
-			                  <div
+			                  </div> -->
+			                  <div id="save-design"
 			                    class="footer-small-button d-flex justify-content-center align-items-center px-3 py-2 ms-4 fa fa-times"
 			                  >
 			                    <i class="bx bx-cloud-download h4 m-0 me-2 color-blue"></i>
 			                    <span class="fw-bold">Save Design</span>
 			                  </div>
-			                  <div
+			                 <!--  <div
 			                    class="footer-big-button d-flex justify-content-center align-items-center px-5 py-3 ms-4 fa fa-times"
 			                  >
 			                    <h4 class="m-0">NEXT STEP</h4>
 			                    <i class="bx bx-right-arrow-alt h3 ps-2 m-0 text-white"></i>
-			                  </div>
+			                  </div> -->
 			                </div>
 			              </div>
 			            </div>
+
+			            <div class="container" style="margin-top:-15px;">
+							<h3>Saved Designs</h3>
+							<form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+								<div class="row">
+									<t t-foreach="design_ids" t-as="design">
+										<t t-if="design.name == 'Front Design'">
+											<div class="col-sm-4 text-center">
+											   	<h6>Front</h6>
+										      	<img style="width:250px;" t-att-src="'/web/image/user.design/%s/save_design' % design.id" />
+										      	<input type="checkbox" name="front" value="front"/>
+										    </div>
+										</t>
+									</t>
+									<t t-foreach="design_ids" t-as="design">
+										<t t-if="design.name == 'Back Design'">
+											<div class="col-sm-4 text-center">
+											   	<h6>Back</h6>
+										      	<img style="width:250px;" t-att-src="'/web/image/user.design/%s/save_design' % design.id" />
+										      	<input type="checkbox" name="back" value="back"/>
+										    </div>
+										</t>
+									</t>
+
+								    <!-- <div class="col-sm-4 text-center">
+								        <h6>Back</h6>
+								      	<img style="width:250px;" src="/wt_office_hunddle/static/src/design-screen/images/t-shirt.png" alt="" />
+								    </div> -->
+
+								</div>
+							
+							    <t t-set="combination" t-value="product._get_first_possible_combination()"/>
+						        <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+						        <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+						    	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+						    	<input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+							    <div class="col-sm-4" t-if="design_ids and len(design_ids) > 0">
+							    	<div class="image_description">
+					      				<button role="button" type="submit" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#"><i class="fa fa-shopping-cart"/> Add to Cart</button>
+					      			</div>
+							    </div>
+							</form>
+						</div>
+
 			          </div>
 			          <div></div>
 			        </div>
@@ -1451,12 +1496,13 @@
 		    <script src="/wt_office_hunddle/static/src/design-screen/js/popper.min.js "></script>
 		    <script src="/wt_office_hunddle/static/src/design-screen/js/jscolor.js"></script>
 		    <script src="/wt_office_hunddle/static/src/design-screen/js/fabrichistory.js"></script>
+		    <script src="/wt_office_hunddle/static/src/design-screen/js/html2canvas.min.js"></script>
 			<script>
 				  console.log("========== called -------- ")
 			      var bcanvas = new fabric.Canvas("bcanvas");
-			      bcanvas.setDimensions({ width: 180, height: 300 });
+			      bcanvas.setDimensions({ width: 250, height: 450 });
 			      var canvas = new fabric.Canvas("tcanvas");
-			      canvas.setDimensions({ width: 180, height: 300 });
+			      canvas.setDimensions({ width: 250, height: 450 });
 			      console.log("--------- test ------- ", canvas)
 			      // create a rect object
 			      var deleteIcon =
@@ -1531,16 +1577,16 @@
 			          $("#changeTextBox").show();
 			        }
 			      });
-			      $("#changeTextBox").click(function(){
+			      $("#changeTextBox").click(function () {
 			        var status = $("#imageBack").hasClass("active");
 			        if (status == true) {
 			          var activeObject = bcanvas.getActiveObject();
-			          $("#text-string").val(activeObject.text)
-			        }else{
+			          $("#text-string").val(activeObject.text);
+			        } else {
 			          var activeObject = canvas.getActiveObject();
-			          $("#text-string").val(activeObject.text)
+			          $("#text-string").val(activeObject.text);
 			        }
-			      })
+			      });
 			      $("#text-string").keyup(function () {
 			        var status = $("#imageBack").hasClass("active");
 			        if (status == true) {
@@ -1830,6 +1876,33 @@
 			          });
 			        }
 			      });
+
+			      function saveDesign() {
+			      	console.log("============")
+			        var status = $("#imageBack").hasClass("active");
+			        if (status == true) {
+			          saveImage("b");
+			        } else {
+			          saveImage("a");
+			        }
+			      }
+			      function saveImage(e) {
+			        if (e == "b") {
+			          var node = document.getElementById("DesignImgBack");
+			          html2canvas(node,{allowTaint:true}).then((c) => {
+						var base64String = c.toDataURL("image/jpeg").split(';base64,')[1];
+						console.log(base64String);
+			            $("body").append(c);
+			          });
+			        } else if (e == "a") {
+			          var node = document.getElementById("DesignImgFront");
+			          html2canvas(node,{allowTaint:true}).then((c) => {
+			           var base64String = c.toDataURL("image/jpeg").split(';base64,')[1];
+			           console.log(base64String);
+			           $("body").append(c);
+			          });
+			        }
+			      }
 
 			      $("#FlagsGallery").on("click", function () {
 			        $("#tabIcon").hide();

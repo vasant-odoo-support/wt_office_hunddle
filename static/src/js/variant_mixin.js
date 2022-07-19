@@ -204,6 +204,7 @@ odoo.define('wt_office_hunddle.VariantMixin', function (require) {
             var cart_alert = $('#product_details').parent().find('#data_warning');
             cart_alert.empty();
 
+            console.log("======== ")
             var $aSubmit = $(ev.currentTarget);
             var $form = $aSubmit.closest('form');
             var image = $form.find('#photo');
@@ -252,7 +253,7 @@ odoo.define('wt_office_hunddle.graphics', function (require) {
     var publicWidget = require('web.public.widget');
 
     var currentTab = 0;
-    publicWidget.registry.NewAssessmentOffice = publicWidget.Widget.extend({
+    publicWidget.registry.GraphicDesign = publicWidget.Widget.extend({
         selector: '.graphic_design_form_cl',
 
         start: function () {

@@ -231,7 +231,7 @@ class WebsiteSaleOH(WebsiteSale):
     @http.route(['/shop/cart/update'], type='http', auth="public", methods=['GET', 'POST'], website=True, csrf=False)
     def cart_update(self, product_id, add_qty=1, set_qty=0, **kw):
         """This route is called when adding a product to cart (no options)."""
-        print("========== 8")
+        print("========== 8", kw)
         sale_order = request.website.sudo().sale_get_order(force_create=True)
         if sale_order.state != 'draft':
             request.session['sale_order_id'] = None
@@ -245,9 +245,49 @@ class WebsiteSaleOH(WebsiteSale):
         if kw.get('no_variant_attribute_values'):
             no_variant_attribute_values = json.loads(kw.get('no_variant_attribute_values'))
 
-        # # print ('___ kw : ', kw)
-        print("========== 4")
         image_data = []
+        # # print ('___ kw : ', kw)
+        print(" ===== ===== 4")
+        if 'front' in kw and kw['front'] == 'front':
+            design = request.env['user.design'].search([('name', '=', 'Front Design'), ('user_id', '=', request.env.user.id)])
+            attachment_id = request.env['ir.attachment'].sudo().create({
+                'name': "Front Design",
+                'type': 'binary',
+                'datas': design.save_design,
+                'public': True,
+                'res_model': 'sale.order',
+                'res_id' : sale_order.id,
+            })
+            print("========= image1 rr----dd--- ", attachment_id)
+            image_data.append((0,0,{
+                'order_id' : sale_order.id,
+                'product_id' : int(product_id),
+                'image' : design.save_design,
+                'image_name' : 'Front Design',
+                'attachment_id' : attachment_id.id,
+                'image_type' : 'front'
+            }))
+
+        if 'back' in kw and kw['back'] == 'back':
+            design = request.env['user.design'].search([('name', '=', 'Back Design'), ('user_id', '=', request.env.user.id)])
+            attachment_id = request.env['ir.attachment'].sudo().create({
+                'name': "Back Design",
+                'type': 'binary',
+                'datas': design.save_design,
+                'public': True,
+                'res_model': 'sale.order',
+                'res_id' : sale_order.id,
+            })
+            print("========= image1 ----dd--- 66", attachment_id)
+            image_data.append((0,0,{
+                'order_id' : sale_order.id,
+                'product_id' : int(product_id),
+                'image' : design.save_design,
+                'image_name' : 'Back Design',
+                'attachment_id' : attachment_id.id,
+                'image_type' : 'back'
+            }))
+
         for child in range(0,10) :
             image1 = 'img_front_data_'+str(child)
             image2 = 'img_front_back_data_'+str(child)
@@ -431,10 +471,15 @@ class WebsiteHuddleCustom(http.Controller):
     def web_dev(self):
         return  request.render('wt_office_hunddle.web_dev_tmpl')
 
-    @http.route(['/design-tool/<model("product.template"):product>'], type='http', auth='public', website=True)
+    @http.route(['/design-tool/<model("product.template"):product>'], type='http', auth='user', website=True)
     def design_tool(self, product, **kwargs):
         print(" ------ product ----- ", product)
-        return  request.render('wt_office_hunddle.design_service_tmpl', {'product': product})
+        vals = {
+            'product': product
+        }
+        if request.env and request.env.user and request.env.user.user_design_ids:
+            vals.update({'design_ids': request.env.user.user_design_ids})
+        return  request.render('wt_office_hunddle.design_service_tmpl', vals)
 
     @http.route('/entrepreneurial-training', type='http', auth='public', website=True)
     def entrepreneurial_training(self):

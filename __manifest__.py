@@ -71,6 +71,7 @@
         'views/virtual_administor_get_start_view.xml',
         'views/website_shop_view.xml',
         'views/mrp_workorder_view.xml',
+        'views/res_users_view.xml',
         'static/src/design-screen/design_service_home_view.xml',
         'static/src/design-screen/product_select_view.xml',
         'static/src/design-screen/product_selection_view.xml',
