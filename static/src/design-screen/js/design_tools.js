@@ -9,6 +9,7 @@ odoo.define('wt_office_hunddle.DesignTools', function (require) {
 	    selector: '#design_tool_wrap',
 	    events: {
 	        'click #save-design': '_saveDesign',
+	        'click #confirm_order': '_confirmOrder',
 	    },
 	    start: function () {
 	        return this._super.apply(this, arguments);
@@ -61,6 +62,24 @@ odoo.define('wt_office_hunddle.DesignTools', function (require) {
 	           // $("body").append(c);
 	          });
 	        }
+        },
+        _confirmOrder: function(e) {
+        	var front = $('#front').is(':checked')
+        	var back = $('#back').is(':checked')
+        	var product = $('#front_image').attr('data-id')
+        	var description = $('#design-desc').val()
+        	var quantity = $('#quantity').val()
+        	ajax.jsonRpc('/web/dataset/call_kw', 'call', {
+			    'model': 'project.task',
+			    'method': 'create_design_tasks',
+			    'args': [{'front': front, 'back': back, 'product': product, 'description': description, 'quantity': quantity}],
+			    'kwargs': {
+			        'context': {},
+			    }
+			}).then(function (data) {
+			    // Do something here
+			    location.href = "/thankyou"
+			});
         }
 	});
 });

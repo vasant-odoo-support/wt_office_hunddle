@@ -1269,7 +1269,7 @@ class WebsiteHuddleCustom(http.Controller):
 
     @http.route('/thankyou', type='http', auth='public', website=True)
     def website_order_thankyou(self):
-        return  True
+        return request.render('wt_office_hunddle.website_thankyou_tmpl')
 
     @http.route('/website-order', type='http', auth='public', website=True)
     def website_order(self, **kw):

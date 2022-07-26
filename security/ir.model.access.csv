@@ -31,4 +31,4 @@ access_file_images_portal,access_file_images,model_file_images,base.group_portal
 access_file_videos_portal,access_file_videos,model_file_videos,base.group_portal,1,1,1,0
 access_image_lines,access_image_lines,model_image_lines,,1,1,1,1
 access_product_quantity,access_product_quantity,model_product_quantity,,1,1,1,1
-access_user_design,access_user_design,model_user_design,base.group_user,1,1,1,1
+access_user_design,access_user_design,model_user_design,,1,1,1,1
