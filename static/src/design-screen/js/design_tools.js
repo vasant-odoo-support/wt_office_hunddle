@@ -15,19 +15,40 @@ odoo.define('wt_office_hunddle.DesignTools', function (require) {
 	        return this._super.apply(this, arguments);
 	    },
 	    _saveDesign: function(ev){
-	    	console.log("------------ called -----")
-	    	console.log("============")
-	        var status = $("#imageBack").hasClass("active");
-	        if (status == true) {
-	          this.saveImage("b");
-	        } else {
-	          this.saveImage("a");
-	        }
+	    	this.saveImage(ev);
 	    },
       	saveImage: function(e) {
-	        if (e == "b") {
-	          var node = document.getElementById("DesignImgBack");
-	          html2canvas(node,{allowTaint:true}).then((c) => {
+		  this.save_front()
+	      this.save_back()
+        },
+        save_front: function(){
+        	$("#imageFront").addClass("active");
+        	var status = $("#imageFront").click()
+        	var node2 = document.getElementById("DesignImgFront");
+        	html2canvas(node2,{allowTaint:true}).then((c) => {
+		        var base64String = c.toDataURL("image/jpeg").split(';base64,')[1];
+		        console.log(base64String);
+	           	ajax.jsonRpc('/web/dataset/call_kw', 'call', {
+				    'model': 'res.users',
+				    'method': 'check_work',
+				    'args': [],
+				    'kwargs': {
+				        'context': {'front-image': base64String},
+				    }
+				}).then(function (data) {
+				    if(data){
+				    	return true
+				    }
+				});
+			});
+        },
+        save_back: function(){
+        	var el = $("#imageBack")
+        	el.addClass("active");
+        	el.click()
+        	var node1 = document.getElementById("DesignImgBack");
+          	console.log("-------- node 1 ===== ", node1)
+          	html2canvas(node1,{allowTaint:true}).then((c) => {
 				var base64String = c.toDataURL("image/jpeg").split(';base64,')[1];
 				console.log(base64String);
 				ajax.jsonRpc('/web/dataset/call_kw', 'call', {
@@ -38,30 +59,12 @@ odoo.define('wt_office_hunddle.DesignTools', function (require) {
 				        'context': {'back-image': base64String},
 				    }
 				}).then(function (data) {
-				    // Do something here
-				    location.reload()
-				});
-	            // $("body").append(c);
-	          });
-	        } else if (e == "a") {
-	          var node = document.getElementById("DesignImgFront");
-	          html2canvas(node,{allowTaint:true}).then((c) => {
-	           var base64String = c.toDataURL("image/jpeg").split(';base64,')[1];
-	           console.log(base64String);
-	           ajax.jsonRpc('/web/dataset/call_kw', 'call', {
-				    'model': 'res.users',
-				    'method': 'check_work',
-				    'args': [],
-				    'kwargs': {
-				        'context': {'front-image': base64String},
+				    console.log("---------data ----- ", data)
+				    if(data){
+				    	location.reload()
 				    }
-				}).then(function (data) {
-				    // Do something here
-				    location.reload()
 				});
-	           // $("body").append(c);
-	          });
-	        }
+          	});
         },
         _confirmOrder: function(e) {
         	var front = $('#front').is(':checked')

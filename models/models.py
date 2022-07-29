@@ -315,24 +315,27 @@ class ResUsers(models.Model):
         print("========= it calles ====== ", self, self._context)
         if 'front-image' in self._context and self._context['front-image']:
             exist = self.env['user.design'].search([('name', '=', 'Front Design'), ('user_id', '=', self.env.user.id)])
-            if exist:
-                exist.unlink()
             vals = {
                 'name': "Front Design",
                 'save_design': self._context['front-image'],
                 'user_id': self.env.user.id
             }
-            self.env['user.design'].create(vals)
+            if exist:
+                exist.write(vals)
+            else:
+                self.env['user.design'].create(vals)
+            print("========= it calles ====== ", vals)
         if 'back-image' in self._context and self._context['back-image']:
             exist = self.env['user.design'].search([('name', '=', 'Back Design'), ('user_id', '=', self.env.user.id)])
-            if exist:
-                exist.unlink()
             vals = {
                 'name': "Back Design",
                 'save_design': self._context['back-image'],
                 'user_id': self.env.user.id
             }
-            self.env['user.design'].create(vals)
+            if exist:
+                exist.write(vals)
+            else:
+                self.env['user.design'].create(vals)
         return {'res': True}
 
 

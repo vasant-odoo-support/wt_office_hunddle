@@ -195,14 +195,14 @@
 			                        <span class="tiny-text fw-bold color-blue">
 			                          PRODUCTS
 			                        </span>
-			                        <h3 class="h4 fw-bold">Manage Your Products</h3>
-			                        <p class="tiny-text light-text">
+			                        <h3 class="h4 fw-bold">Manage Your Products : <a href="/screen-printing-category">Change Product</a></h3>
+			                        <!-- <p class="tiny-text light-text">
 			                          You can select multiple products and colors.
-			                        </p>
+			                        </p> -->
 			                        <div class="border-top">
 			                          <div class="productDetailBox p-3 mt-3">
 			                            <h3 class="h6 fw-bold m-0" style="font-size: 14px">
-			                              RT2000 RushOrderTees Classic Tee
+			                              <t t-esc="product.name"/>
 			                            </h3>
 			                            <div
 			                              class="d-flex justify-content-between align-items-center mt-2"
@@ -568,23 +568,21 @@
 			                                </li>
 			                                <li>
 			                                  <label for="">Font Color</label>
-			                                  <input
-			                                    title="Text Color"
-			                                    value="#3399ff"
-			                                    style="border: none"
-			                                    id="TextColor"
-			                                    data-jscolor="{}"
-			                                  />
+			                                  <button
+			                                    id="ADDTEXTCOLOR"
+			                                    class="btn btn-secondary mt-3"
+			                                  >
+			                                    Font Color
+			                                  </button>
 			                                </li>
 			                                <li>
 			                                  <label for="">Font Outline</label>
-			                                  <input
-			                                    title="Border Color"
-			                                    value="#3399FF"
-			                                    style="border: none"
-			                                    id="BorderColor"
-			                                    data-jscolor="{}"
-			                                  />
+			                                  <button
+			                                    id="ADDOUTCOLOR"
+			                                    class="btn btn-secondary mt-3"
+			                                  >
+			                                    Font outline
+			                                  </button>
 			                                </li>
 			                              </ul>
 			                            </div>
@@ -667,7 +665,7 @@
 			                  <!-- ===================== Add ClipArt Tab ===================== -->
 
 			                  <div
-			                    class="tab-pane fade show"
+			                    class="tab-pane fade show ADDClipKArt"
 			                    id="addClipkart"
 			                    role="tabpanel"
 			                    aria-labelledby="nav-addClipkart-tab"
@@ -1487,7 +1485,7 @@
 				              	<t t-foreach="product.valid_product_template_attribute_line_ids" t-as="ptal">
 				              		<!-- <h1>1 : <t t-esc="ptal.product_template_value_ids._only_active()"/></h1> -->
 				              		<t t-if="ptal.attribute_id.display_type == 'color'">
-				              			<li t-foreach="ptal.product_template_value_ids._only_active()" t-as="ptav" class="list-inline-item color-preview" t-attf-style="background-color:#{ptav.html_color or ffffff}">
+				              			<li t-foreach="ptal.product_template_value_ids._only_active()" t-as="ptav" class="list-inline-item color-preview" t-attf-style="background-color:#{ptav.html_color or ffffff}" t-att-title="ptav.name">
                                 		</li>
 							        </t>
 							    </t>
@@ -1496,6 +1494,467 @@
 				          </div>
 				        </div>
 				    </div>
+			    </div>
+
+			    <!-- text color -->
+			    <div
+			      class="modal fade textColorTab"
+			      id="staticBackdrop"
+			      data-bs-backdrop="static"
+			      data-bs-keyboard="false"
+			      tabindex="-1"
+			      aria-labelledby="staticBackdropLabel"
+			      aria-hidden="true"
+			    >
+			      <div class="modal-dialog modal-dialog-centered" style="width: 20%">
+			        <div class="modal-content">
+			          <div class="modal-header border-bottom pb-2">
+			            <span
+			              class="modal-title fw-bold color-blue"
+			              id="staticBackdropLabel"
+			            >
+			              Add Text Color
+			            </span>
+			            <button
+			              type="button"
+			              class="btn-close fa fa-times"
+			              data-dismiss="modal"
+			              aria-label="Close"
+			            ></button>
+			          </div>
+			          <div class="modal-body">
+			            <div class="row">
+			              <ul class="color-tabs">
+			                <li
+			                  class="textcolor-preview"
+			                  title="Lemon Yellow"
+			                  style="background-color: #f3ff00"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Chrome Yellow"
+			                  style="background-color: #f6fa00"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Golden Yellow"
+			                  style="background-color: #f9df00"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Orange"
+			                  style="background-color: #ff6b15"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Burnt Orange"
+			                  style="background-color: #ff1417"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Univercity Orange"
+			                  style="background-color: #f95c24"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Flag Red"
+			                  style="background-color: #ff0036"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Scarlet Red"
+			                  style="background-color: #ff001b"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Brite Red"
+			                  style="background-color: #ff0028"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Cool Pink"
+			                  style="background-color: #fea2f9"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Maroon"
+			                  style="background-color: #d6002c"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Cardinal Red"
+			                  style="background-color: #cc2433"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Lilac"
+			                  style="background-color: #ed93f1"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Magenta"
+			                  style="background-color: #8d0285"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Rose Magenta"
+			                  style="background-color: #b50085"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Deep Purple"
+			                  style="background-color: #65137f"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Ultramarin Blue"
+			                  style="background-color: #4f00c8"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Navy"
+			                  style="background-color: #362d42"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Light Navy"
+			                  style="background-color: #322653"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Royal Blue"
+			                  style="background-color: #370090"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Mono Blue"
+			                  style="background-color: #4e2ed2"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Columbia Blue"
+			                  style="background-color: #4a6ebb"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Univercity Blue"
+			                  style="background-color: #a4cafb"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Brite Blue"
+			                  style="background-color: #5279fe"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Peackock Blue"
+			                  style="background-color: #58b5f9"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Aqua Marine"
+			                  style="background-color: #2b9dbb"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Tahiti Green"
+			                  style="background-color: #0e7b48"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Lime Green"
+			                  style="background-color: #00c841"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Brite Green"
+			                  style="background-color: #009638"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Kelly Green"
+			                  style="background-color: #235947"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Chrome Green"
+			                  style="background-color: #314237"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Dark Brown"
+			                  style="background-color: #3a2829"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Sienna Brown"
+			                  style="background-color: #783527"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Khaki"
+			                  style="background-color: #f2e79a"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Cream"
+			                  style="background-color: #fcfff4"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Rebel Gold"
+			                  style="background-color: #d3cf59"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Vegas Gold"
+			                  style="background-color: #ebea84"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Light Gray"
+			                  style="background-color: #b4b9c9"
+			                ></li>
+			                <li
+			                  class="textcolor-preview"
+			                  title="Dark Gray"
+			                  style="background-color: #94a0a2"
+			                ></li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- text outline -->
+			    <div
+			      class="modal fade textOutTab"
+			      id="staticBackdrop"
+			      data-bs-backdrop="static"
+			      data-bs-keyboard="false"
+			      tabindex="-1"
+			      aria-labelledby="staticBackdropLabel"
+			      aria-hidden="true"
+			    >
+			      <div class="modal-dialog modal-dialog-centered" style="width: 20%">
+			        <div class="modal-content">
+			          <div class="modal-header border-bottom pb-2">
+			            <span
+			              class="modal-title fw-bold color-blue"
+			              id="staticBackdropLabel"
+			            >
+			              Add Text Outline
+			            </span>
+			            <button
+			              type="button"
+			              class="btn-close fa fa-times"
+			              data-dismiss="modal"
+			              aria-label="Close"
+			            ></button>
+			          </div>
+			          <div class="modal-body">
+			            <div class="row">
+			              <ul class="color-tabs">
+			                <li
+			                  class="textoutline-preview"
+			                  title="Lemon Yellow"
+			                  style="background-color: #f3ff00"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Chrome Yellow"
+			                  style="background-color: #f6fa00"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Golden Yellow"
+			                  style="background-color: #f9df00"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Orange"
+			                  style="background-color: #ff6b15"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Burnt Orange"
+			                  style="background-color: #ff1417"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Univercity Orange"
+			                  style="background-color: #f95c24"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Flag Red"
+			                  style="background-color: #ff0036"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Scarlet Red"
+			                  style="background-color: #ff001b"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Brite Red"
+			                  style="background-color: #ff0028"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Cool Pink"
+			                  style="background-color: #fea2f9"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Maroon"
+			                  style="background-color: #d6002c"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Cardinal Red"
+			                  style="background-color: #cc2433"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Lilac"
+			                  style="background-color: #ed93f1"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Magenta"
+			                  style="background-color: #8d0285"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Rose Magenta"
+			                  style="background-color: #b50085"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Deep Purple"
+			                  style="background-color: #65137f"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Ultramarin Blue"
+			                  style="background-color: #4f00c8"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Navy"
+			                  style="background-color: #362d42"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Light Navy"
+			                  style="background-color: #322653"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Royal Blue"
+			                  style="background-color: #370090"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Mono Blue"
+			                  style="background-color: #4e2ed2"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Columbia Blue"
+			                  style="background-color: #4a6ebb"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Univercity Blue"
+			                  style="background-color: #a4cafb"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Brite Blue"
+			                  style="background-color: #5279fe"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Peackock Blue"
+			                  style="background-color: #58b5f9"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Aqua Marine"
+			                  style="background-color: #2b9dbb"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Tahiti Green"
+			                  style="background-color: #0e7b48"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Lime Green"
+			                  style="background-color: #00c841"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Brite Green"
+			                  style="background-color: #009638"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Kelly Green"
+			                  style="background-color: #235947"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Chrome Green"
+			                  style="background-color: #314237"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Dark Brown"
+			                  style="background-color: #3a2829"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Sienna Brown"
+			                  style="background-color: #783527"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Khaki"
+			                  style="background-color: #f2e79a"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Cream"
+			                  style="background-color: #fcfff4"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Rebel Gold"
+			                  style="background-color: #d3cf59"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Vegas Gold"
+			                  style="background-color: #ebea84"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Light Gray"
+			                  style="background-color: #b4b9c9"
+			                ></li>
+			                <li
+			                  class="textoutline-preview"
+			                  title="Dark Gray"
+			                  style="background-color: #94a0a2"
+			                ></li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
 			    </div>
 			</div>
 			<script src="/wt_office_hunddle/static/src/design-screen/js/jquery.min.js "></script>
@@ -1639,6 +2098,57 @@
 			        }
 			      });
 
+			      //Text COLOR Tab
+			      $("#ADDTEXTCOLOR").click(function () {
+			        $(".textColorTab").modal("show");
+			      });
+			      $(".textcolor-preview").hover(function () {
+			        var color = $(this).css("background-color");
+			        var status = $("#imageBack").hasClass("active");
+			        if (status == true) {
+			          var activeObject = bcanvas.getActiveObject();
+			          if (activeObject &amp;&amp; activeObject.type === "text") {
+			            activeObject.set({ fill: color, stroke: color });
+			            bcanvas.renderAll();
+			          }
+			        } else {
+			          var activeObject = canvas.getActiveObject();
+
+			          if (activeObject &amp;&amp; activeObject.type === "text") {
+			            activeObject.set({ fill: color, stroke: color });
+			            canvas.renderAll();
+			          }
+			        }
+			      });
+			      $(".textcolor-preview").click(function () {
+			        $(".textColorTab").modal("hide");
+			      });
+			      //Text Outline Tab
+			      $("#ADDOUTCOLOR").click(function () {
+			        $(".textOutTab").modal("show");
+			      });
+			      $(".textoutline-preview").hover(function () {
+			        var color = $(this).css("background-color");
+			        var status = $("#imageBack").hasClass("active");
+			        if (status == true) {
+			          var activeObject = bcanvas.getActiveObject();
+			          if (activeObject &amp;&amp; activeObject.type === "text") {
+			            activeObject.set({  stroke: color });
+			            bcanvas.renderAll();
+			          }
+			        } else {
+			          var activeObject = canvas.getActiveObject();
+
+			          if (activeObject &amp;&amp; activeObject.type === "text") {
+			            activeObject.set({  stroke: color });
+			            canvas.renderAll();
+			          }
+			        }
+			      });
+			      $(".textoutline-preview").click(function () {
+			        $(".textOutTab").modal("hide");
+			      });
+
 			      //Font-Size
 			      $("#FontRange").on("change", function () {
 			        var size = $(this).val();
@@ -1750,6 +2260,8 @@
 			      $(".color-preview").hover(function () {
 			        var color = $(this).css("background-color");
 
+			        $(".productdetail-text-wrapper").text($(this).attr('title'))
+
 			        $(".shirt").css({
 			          "background-color": color,
 			        });
@@ -1849,6 +2361,7 @@
 			        $("#nav-products-tab").addClass("active");
 			        $("#nav-addClipkart-tab").removeClass("active");
 			        $("#addClipKart").removeClass("active show");
+			        $(".ADDClipKArt").removeClass("active show");
 			        $("#products").addClass("active show");
 			      });
 			      //Upload Brand image
