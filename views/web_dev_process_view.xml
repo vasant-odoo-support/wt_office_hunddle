@@ -19,7 +19,7 @@
 			            </div>
 			        </section>
 
-			        <form>
+			        <form action="/get-web-development-request">
 			        <section class="first-section" id="first-form">
 				        <div class="container-fluid">
 				            <div class="row ">
@@ -38,25 +38,25 @@
 			                            <div class="col-md-6">
 			                                <div class="form-group">
 			                                    <label for="name" class="mb-1">First</label>
-			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                    <input type="text" class="form-control py-3" id="name" required="required"/>
 			                                </div>
 			                            </div>
 			                            <div class="col-md-6 mb-2">
 			                                <div class="form-group">
 			                                    <label for="name">Last</label>
-			                                    <input type="text" class="form-control py-3" id="name"/>
+			                                    <input type="text" class="form-control py-3" id="name" required="required"/>
 			                                </div>
 			                            </div>
 			                            <div class="col-md-6">
 			                                <div class="form-group">
 			                                    <label class="main-label mb-2" for="email">Email Address<sub>*</sub></label>
-			                                    <input type="email" class="form-control py-3" id="email"/>
+			                                    <input type="email" class="form-control py-3" id="email" required="required"/>
 			                                </div>
 			                            </div>
 			                            <div class="col-md-6">
 			                                <div class="form-group">
 			                                    <label class="main-label mb-2" for="phone">Phone<sub>*</sub></label>
-			                                    <input type="number" class="form-control py-3" id="phone"/>
+			                                    <input type="number" class="form-control py-3" id="phone" required="required"/>
 			                                </div>
 			                            </div>
 			                            <div class="col-md-6">
@@ -96,7 +96,7 @@
 			                        <div class="row">
 			                            <div class="col-md-6">
 			                                <div class="form-check  mb-1">
-			                                    <input class="form-check-input" type="radio" name="retail" id="retail" value="retail"/>
+			                                    <input class="form-check-input" type="radio" name="retail" id="retail" value="retail" required="required"/>
 			                                    <label class="form-check-label" for="retail">
 			                                      Retail and e-commerce
 			                                    </label>
@@ -176,7 +176,7 @@
 			                            </div>
 			                            <div class="col-md-6">
 			                                <div class="form-check  mb-1">
-			                                    <input class="form-check-input" type="radio" name="gateway" id="other9" value="other"/>
+			                                    <input class="form-check-input" type="radio" name="retail" id="other9" value="other"/>
 			                                    <label class="form-check-label" for="other9">
 			                                      Other
 			                                    </label>
@@ -249,7 +249,7 @@
 			                        <div class="row">
 			                            <div class="col-md-12">
 			                                <div class="form-check  mb-1">
-			                                    <input class="form-check-input" type="radio" name="gateway" id="yes" value="yes"/>
+			                                    <input class="form-check-input" type="radio" name="gateway" id="yes" value="yes" required="required"/>
 			                                    <label class="form-check-label" for="yes">
 			                                      Yes
 			                                    </label>
@@ -257,7 +257,7 @@
 			                            </div>
 			                            <div class="col-md-12">
 			                                <div class="form-check  mb-1">
-			                                    <input class="form-check-input" type="radio" name="gateway" id="no" value="no"/>
+			                                    <input class="form-check-input" type="radio" name="gateway" id="no" value="no" required="required"/>
 			                                    <label class="form-check-label" for="no">
 			                                      No
 			                                    </label>
@@ -265,7 +265,7 @@
 			                            </div>
 			                            <div class="col-md-12">
 			                                <div class="form-check  mb-1">
-			                                    <input class="form-check-input" type="radio" name="gateway" id="maybe" value="maybe"/>
+			                                    <input class="form-check-input" type="radio" name="gateway" id="maybe" value="maybe" required="required"/>
 			                                    <label class="form-check-label" for="maybe">
 			                                      Maybe
 			                                    </label>
@@ -303,7 +303,7 @@
 				                            <div class="wrap">
 				                                <img src="/wt_office_hunddle/static/src/web_dev/images/paypal-icon.png" alt="" />
 				                                <div class="form-check">
-				                                    <label class="form-check-label" for="paypal">
+				                                    <label class="form-check-label label-payment-method" for="paypal">
 				                                        paypal
 				                                    </label>
 				                                    <input class="form-check-input" type="radio" name="paypal" id="paypal" value="paypal"/>
@@ -314,7 +314,7 @@
 				                            <div class="wrap">
 				                                <img src="/wt_office_hunddle/static/src/web_dev/images/stripe-icon.png" alt="" />
 				                                <div class="form-check ">
-				                                    <label class="form-check-label" for="stripe">
+				                                    <label class="form-check-label label-payment-method" for="stripe">
 				                                        stripe
 				                                    </label>
 				                                    <input class="form-check-input" type="radio" name="paypal" id="stripe" value="stripe"/>
@@ -325,7 +325,7 @@
 				                            <div class="wrap">
 				                                <img src="/wt_office_hunddle/static/src/web_dev/images/others-layer.png" alt="" />
 				                                <div class="form-check ">
-				                                    <label class="form-check-label" for="others0">
+				                                    <label class="form-check-label label-payment-method" for="others0">
 				                                        Other
 				                                    </label>
 				                                    <input class="form-check-input" type="radio" name="paypal" id="others0" value="others"/>
@@ -981,7 +981,7 @@
 				                    <a href="#eleven-form">  <button type="button" class="btn button-item px-4 py-2 h4"><i class='fa fa-arrow-left'></i></button></a>
 				                </div>
 				                <div class="col-md-6" style="text-align: right">
-				                      <button type="button" class="btn button-item px-4 py-2 h4">Submit</button>
+				                      <button type="submit" class="btn button-item px-4 py-2 h4">Submit</button>
 				                </div>
 				                </div>
 				            </div>

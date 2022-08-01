@@ -75,7 +75,7 @@ odoo.define('wt_office_hunddle.DesignTools', function (require) {
         	ajax.jsonRpc('/web/dataset/call_kw', 'call', {
 			    'model': 'project.task',
 			    'method': 'create_design_tasks',
-			    'args': [{'front': front, 'back': back, 'product': product, 'description': description, 'quantity': quantity}],
+			    'args': [{'front_image': front, 'back_image': back, 'design_product_id': product, 'description': description, 'quantity': quantity}],
 			    'kwargs': {
 			        'context': {},
 			    }

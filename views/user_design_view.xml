@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_save_user_design_tree" model="ir.ui.view">
+            <field name="name">save.user.design.tree</field>
+            <field name="model">save.user.design</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="User Design">
+                <field name="user_id"/>
+                <field name="save_front_design" widget="image" class="oe_avatar"/>
+                <field name="save_back_design" widget="image" class="oe_avatar"/>
+            </tree>
+            </field>
+        </record>
+        <record id="view_save_user_design_form" model="ir.ui.view">
+            <field name="name">save.user.design.form</field>
+            <field name="model">save.user.design</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="User Design">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="user_id"/>
+                                <field name="save_front_design" widget="image" class="oe_avatar"/>
+                            </group>
+                            <group>
+                                <field name="save_back_design" widget="image" class="oe_avatar"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_save_user_design_search" model="ir.ui.view">
+            <field name="name">save.user.design.search</field>
+            <field name="model">save.user.design</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <search string="User Design">
+                <field name="user_id" select="True"/>
+            </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_save_user_design_view">
+            <field name="name">User Design</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">save.user.design</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_save_user_design_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_save_user_design_view_form">
+            <field name="act_window_id" ref="act_open_save_user_design_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_save_user_design_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_save_user_design_view_tree">
+            <field name="act_window_id" ref="act_open_save_user_design_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_save_user_design_tree"/>
+        </record>
+        <menuitem id="menu_save_user_design"
+            parent="website.menu_website_configuration"
+            sequence="20"
+            action="act_open_save_user_design_view"/>
+    </data>
+</odoo>

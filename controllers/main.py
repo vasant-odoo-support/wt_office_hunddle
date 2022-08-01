@@ -388,6 +388,7 @@ class WebsiteSlidesHuddleCustom(WebsiteSlides):
         })
         return  request.render('wt_office_hunddle.elearning_officehuddle_template', values)
 
+
 class WebsitAuthSignupHome(AuthSignupHome):
 
     @http.route('/web/signup', type='http', auth='public', website=True, sitemap=False)
@@ -467,6 +468,11 @@ class WebsitBlogPost(Website):
 
 class WebsiteHuddleCustom(http.Controller):
 
+    @http.route('/get-web-development-request', type='http', auth='public', website=True)
+    def get_web_development_request(self, **kw):
+        print("------------- ", kw)
+        return  request.render('wt_office_hunddle.website_thankyou_tmpl')
+    
     @http.route('/website-development-form', type='http', auth='public', website=True)
     def web_dev(self):
         return  request.render('wt_office_hunddle.web_dev_tmpl')

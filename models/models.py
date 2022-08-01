@@ -314,7 +314,7 @@ class ResUsers(models.Model):
     def check_work(self):
         print("========= it calles ====== ", self, self._context)
         if 'front-image' in self._context and self._context['front-image']:
-            exist = self.env['user.design'].search([('name', '=', 'Front Design'), ('user_id', '=', self.env.user.id)])
+            exist = self.env['user.design'].search([('name', '=', 'Front Design'), ('user_id', '=', self.env.user.id)], limit=1)
             vals = {
                 'name': "Front Design",
                 'save_design': self._context['front-image'],
@@ -325,8 +325,9 @@ class ResUsers(models.Model):
             else:
                 self.env['user.design'].create(vals)
             print("========= it calles ====== ", vals)
+
         if 'back-image' in self._context and self._context['back-image']:
-            exist = self.env['user.design'].search([('name', '=', 'Back Design'), ('user_id', '=', self.env.user.id)])
+            exist = self.env['user.design'].search([('name', '=', 'Back Design'), ('user_id', '=', self.env.user.id)], limit=1)
             vals = {
                 'name': "Back Design",
                 'save_design': self._context['back-image'],
@@ -337,11 +338,3 @@ class ResUsers(models.Model):
             else:
                 self.env['user.design'].create(vals)
         return {'res': True}
-
-
-class UserDesigns(models.Model):
-    _name = "user.design"
-
-    save_design = fields.Binary("Design")
-    name = fields.Char("Name")
-    user_id = fields.Many2one('res.users')
